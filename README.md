@@ -54,6 +54,19 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | [Hot Mess Theory](scholar_inbox/hot_mess_theory.md) | - | AI 失败的 bias-variance 分析 |
 | [Diffusion for Compression](scholar_inbox/diffusion_compression.md) | - | 用 diffusion 做图像压缩 |
 
+## 🔬 Daily Survey
+
+深度研究调研文档
+
+| 文档 | 内容 |
+|------|------|
+| [Karpathy Insights](daily-survey/karpathy_insights.md) | Karpathy 最新项目分析 (nanochat, hn-time-capsule) |
+| [Ordering Theory Draft](daily-survey/ordering_theory_draft.md) | dLLM Ordering 的信息论框架草稿 |
+| [Answer-Anchored CoT Experiment](daily-survey/answer_anchored_cot_experiment.md) | 实验设计：先给答案再填 CoT |
+| [dLLM Codebase Survey](daily-survey/dllm_codebase_survey.md) | 主流 dLLM 代码库评估 (LLaDA, Dream, MDLM...) |
+| [Token Difficulty Related Work](daily-survey/token_difficulty_related_work.md) | Token Difficulty 相关工作调研 |
+| [Ordering Paper Outline](daily-survey/ordering_paper_outline.md) | Ordering 论文大纲草稿 |
+
 ## 🔥 Hacker News
 
 Daily AI/ML highlights from Hacker News
@@ -64,6 +77,6 @@ Daily AI/ML highlights from Hacker News
 
 ---
 
-**Total: 20 papers**
+**Total: 20 papers + 6 survey docs**
 
 Updated daily at 8:00 AM Pacific
