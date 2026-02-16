@@ -13,6 +13,15 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | [DAWN: Dependency-Aware](scholar_inbox/dawn_dependency_aware.md) | 2602.06953 | 基于依赖图的快速推理 |
 | [RCD: Residual Context](scholar_inbox/rcd_residual_context.md) | 2601.22954 | 回收被丢弃 token 的计算 |
 | [LLaDA2.1: T2T + RL](scholar_inbox/llada21_t2t_rl.md) | 2602.08676 | Token 编辑 + 强化学习对齐 |
+| [XDLM: Unified Framework](scholar_inbox/xdlm_unified.md) | 2602.01362 | 统一 MDLM 和 UDLM |
+
+### dLLM - Decoding & Search
+
+| Paper | arXiv | Topic |
+|-------|-------|-------|
+| [Self-Rewarding SMC](scholar_inbox/self_rewarding_smc.md) | 2602.01849 | SMC 提升采样质量和多样性 |
+| [SOAR: Adaptive Search](scholar_inbox/soar_adaptive_search.md) | 2602.10953 | 低 confidence 搜索，高 confidence 加速 |
+| [RDD: Reversible Decoding](scholar_inbox/rdd_reversible_decoding.md) | 2602.00150 | 可逆解码，从错误中恢复 |
 
 ### dLLM - Efficiency
 
@@ -55,6 +64,6 @@ Daily AI/ML highlights from Hacker News
 
 ---
 
-**Total: 16 papers**
+**Total: 20 papers**
 
 Updated daily at 8:00 AM Pacific
