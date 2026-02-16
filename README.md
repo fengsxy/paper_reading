@@ -75,6 +75,7 @@ Curated picks from [Andrej Karpathy's RSS feeds](https://youmind.com/rss/pack/an
 | Date | Highlights |
 |------|------------|
 | [2026-02-16](karpathy_rss/2026-02-16-karpathy-rss-digest.md) | AI Vampire (Yegge), Deep Blue 焦虑 (Willison), $20/月的投降 (Duggan), 社区三难困境 (Doctorow) |
+| [2026-02-01](karpathy_rss/2026-02-01-karpathy-rss-digest.md) | Moltbook AI 社交网络 (Willison), Vibe-Knowing (Diallo), OpenClaw Docker, GPT-2 成本降 600x |
 
 ## 🔥 Hacker News
 
@@ -93,6 +94,6 @@ Daily AI/ML highlights from Hacker News
 
 ---
 
-**Total: 20 papers + 7 research docs + 1 essay + 1 RSS digest**
+**Total: 20 papers + 7 research docs + 1 essay + 2 RSS digests**
 
 Updated daily at 8:00 AM Pacific
