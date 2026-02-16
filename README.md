@@ -76,8 +76,15 @@ Daily AI/ML highlights from Hacker News
 |------|------------|
 | [2026-02-16](hackernews/2026-02-16.md) | DeepMind 数学研究, Audio AI 小团队, MicroGPT 可视化, AGI 讨论 |
 
+## ✍️ Essays
+
+| Date | Title |
+|------|-------|
+| [2026-02-16 (中文)](essays/2026-02-16-openclaw-reflections-zh.md) | 大年三十的 OpenClaw 思考 |
+| [2026-02-16 (EN)](essays/2026-02-16-openclaw-reflections-en.md) | Reflections on OpenClaw: Chinese New Year's Eve Thoughts |
+
 ---
 
-**Total: 20 papers + 7 research docs**
+**Total: 20 papers + 7 research docs + 1 essay**
 
 Updated daily at 8:00 AM Pacific
