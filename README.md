@@ -32,11 +32,11 @@ Academic papers on Diffusion Models, dLLM, Information Theory
 
 ## 🔥 Hacker News
 
-Interesting AI/ML discussions and projects
+Daily AI/ML highlights from Hacker News
 
-| Date | Title | Link |
-|------|-------|------|
-| *Coming soon* | | |
+| Date | Highlights |
+|------|------------|
+| [2026-02-16](hackernews/2026-02-16.md) | DeepMind 数学研究, Audio AI 小团队, MicroGPT 可视化, AGI 讨论 |
 
 ---
 
