@@ -4,6 +4,13 @@
 
 ---
 
+![New Year's Eve Dinner](images/nye-dinner-1.jpg)
+![New Year's Eve Dinner](images/nye-dinner-2.jpg)
+![New Year's Eve Dinner](images/nye-dinner-3.jpg)
+![New Year's Eve Dinner](images/nye-dinner-4.jpg)
+
+---
+
 It's Chinese New Year's Eve, and I'm still using OpenClaw. I set it up on a $30/month AWS server with Claude API as the backend. The API cost runs about $100/day—switching to Kimi's subscription would be cheaper, maybe just tens of dollars.
 
 What I've realized is that you only understand OpenClaw's design philosophy by actually using it. Before this, I thought it was just "Claude Code with extra steps." I was wrong.

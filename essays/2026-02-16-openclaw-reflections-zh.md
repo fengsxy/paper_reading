@@ -4,6 +4,13 @@
 
 ---
 
+![年夜饭](images/nye-dinner-1.jpg)
+![年夜饭](images/nye-dinner-2.jpg)
+![年夜饭](images/nye-dinner-3.jpg)
+![年夜饭](images/nye-dinner-4.jpg)
+
+---
+
 大年三十，还在使用OpenClaw， 我用一台30刀一个月的亚马逊服务器搭建起来了OpenClaw， 背后配置了一下Claude驱动的API， 首先是成本大概是一天100刀的API预算， 如果用Kimi，订阅服务应该会便宜一点，可能几十就可以了比较便宜。
 
 然后我发现只有用了才能知道OpenClaw究竟设计在哪里， 在没有之前，我觉得这就是大号的Claude Code，我觉得区别不大。
