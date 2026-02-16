@@ -68,6 +68,14 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | [Token Difficulty Related Work](research/token_difficulty_related_work.md) | Token Difficulty 相关工作调研 |
 | [Ordering Paper Outline](research/ordering_paper_outline.md) | Ordering 论文大纲草稿 |
 
+## 📡 Karpathy RSS Digest
+
+Curated picks from [Andrej Karpathy's RSS feeds](https://youmind.com/rss/pack/andrej-karpathy-curated-rss) - 92 sources covering AI, tech, and independent blogs.
+
+| Date | Highlights |
+|------|------------|
+| [2026-02-16](karpathy_rss/2026-02-16-karpathy-rss-digest.md) | AI Vampire (Yegge), Deep Blue 焦虑 (Willison), $20/月的投降 (Duggan), 社区三难困境 (Doctorow) |
+
 ## 🔥 Hacker News
 
 Daily AI/ML highlights from Hacker News
@@ -85,6 +93,6 @@ Daily AI/ML highlights from Hacker News
 
 ---
 
-**Total: 20 papers + 7 research docs + 1 essay**
+**Total: 20 papers + 7 research docs + 1 essay + 1 RSS digest**
 
 Updated daily at 8:00 AM Pacific
