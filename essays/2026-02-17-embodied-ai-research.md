@@ -48,6 +48,65 @@
 - 比 Figure、Tesla 便宜一个数量级
 - 中国供应链优势明显
 
+### 2.3 宇树 vs Boston Dynamics：真实对比
+
+来自 Hacker News 用户（实际使用过两者）的评价：
+
+> "As someone who has worked with both Unitree and Boston Dynamics I can tell you there is a marked difference in the ability for Boston Dynamic's ability to walk vs Unitree's."
+
+> "What Unitree is lacking is good software... they may be able to incrementally catch up while maintaining a relatively low pricepoint."
+
+> "It's like an agile idiot, very physically capable but no purpose."
+
+**客观对比**：
+
+| 维度 | 宇树 | Boston Dynamics | 判断 |
+|------|------|-----------------|------|
+| **行走能力** | 好 | 更好 | BD 领先 |
+| **软件/算法** | 弱 | 强 | BD 明显领先 |
+| **价格** | $16k (G1) | $75k+ (Spot) | 宇树 5x 便宜 |
+| **控制方式** | 神经网络 | 传统控制为主 | 宇树路线可能更有潜力 |
+| **商业化** | 更激进 | 更保守 | 宇树更快 |
+
+**核心结论**：
+1. **技术上宇树不领先**，Boston Dynamics 仍然是技术标杆
+2. **宇树的优势是性价比**：5x 便宜，80% 的能力
+3. **宇树用神经网络控制**，BD 用传统控制 → 长期看宇树路线可能更有潜力（数据飞轮）
+4. **"agile idiot"** — 物理能力强，但缺乏智能
+
+### 2.4 远程操控模式：过渡期的杀手级应用？
+
+一个被忽视的思路：**就算 VLA/AI 做不好，全让人远程操作，也能实现 1 人帮 N 人**。
+
+**已有案例**：
+- **Icarus Robotics**（太空站机器人）：明确说"先 teleoperation，后 autonomy"
+- 创始人原话："The labor arbitrage margin is so big" — 在太空站，一个地面操作员控制机器人，比送宇航员上去便宜太多
+
+**1 人能控制几台机器人？**
+
+| 任务复杂度 | 1 人可控数量 | 瓶颈 |
+|-----------|-------------|------|
+| 简单重复任务 | 10-50 台 | 监控为主，偶尔介入 |
+| 中等复杂任务 | 3-10 台 | 需要频繁切换注意力 |
+| 复杂精细任务 | 1-2 台 | 全程操控 |
+
+**关键瓶颈：延迟**
+- 本地（工厂内）：<50ms，可行
+- 同城：50-100ms，勉强
+- 跨国：200ms+，很难做精细操作
+
+**潜在应用场景**：
+- **养老护理**：菲佣远程操控机器人照顾老人
+- **工厂**：一个熟练工人远程操控 10 台机器人
+- **危险环境**：核电站、矿井、太空站
+
+**远程操控 + 宇树 = 可能的杀手组合**：
+- 宇树硬件便宜、物理能力够用
+- 软件/AI 不行？→ 让人远程操控
+- 1 个熟练工人 + 10 台宇树 G1 = 可能比 1 台 Boston Dynamics 更实用
+
+**这可能是中国机器人的差异化路径**：不追求技术最强，追求"够用 + 便宜 + 人机协作"
+
 ---
 
 ## 三、技术发展现状
