@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Karpathy RSS 精选 2026-02-18"
+permalink: /karpathy_rss/2026-02-18-karpathy-rss-digest/
+---
+
 # Karpathy RSS 精选 | 2026-02-18
 
 > Karpathy 订阅了 92 个 RSS 源，这是他的信息食谱。今天过去 24 小时里冒出来的东西不少：模型更新、软件分发基础设施、以及开源社区被 AI PR 淹没后的“自救指南”。
