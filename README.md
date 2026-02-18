@@ -20,13 +20,15 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 ## 📚 Scholar Inbox
 
-README 这里以后只放“按时间排序”的入口，不在首页堆太多论文。
+Daily curated papers pulled from Scholar Inbox.
 
-- [Scholar Inbox Index](scholar_inbox/)
-- Daily digests:
-  - [2026-02-17 - Diffusion/dLLM](scholar_inbox/2026-02-17-diffusion-dllm.md)
-  - [2026-02-16 - Diffusion/dLLM](scholar_inbox/2026-02-16-diffusion-dllm.md)
-  - [2026-02-15 - Diffusion/dLLM](scholar_inbox/2026-02-15-diffusion-dllm-papers.md)
+| Date | Highlights |
+|------|------------|
+| [2026-02-17](scholar_inbox/2026-02-17-diffusion-dllm.md) | Diffusion/dLLM：形式语法约束、投票/一致性推理增强、生成顺序搜索、少步蒸馏、rerank |
+| [2026-02-16](scholar_inbox/2026-02-16-diffusion-dllm.md) | Diffusion/dLLM：形式语法约束、dLLM voting、（已验证条目） |
+| [2026-02-15](scholar_inbox/2026-02-15-diffusion-dllm-papers.md) | Diffusion/dLLM：方向扫盲、候选论文清单 |
+
+Index: [scholar_inbox/](scholar_inbox/)
 
 ## 🔬 Research Notes
 
