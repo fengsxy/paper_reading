@@ -20,55 +20,13 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 ## 📚 Scholar Inbox
 
-### Diffusion LLM (dLLM) - Core
+README 这里以后只放“按时间排序”的入口，不在首页堆太多论文。
 
-| Paper | arXiv | Topic |
-|-------|-------|-------|
-| [McDiffuSE: MCTS for Ordering](scholar_inbox/mcdiffuse_mcts_ordering.md) | 2602.12586 | 用 MCTS 搜索最优生成顺序 |
-| [dVoting: Fast Voting](scholar_inbox/dvoting.md) | 2602.12153 | 不需要训练的 voting 加速 |
-| [DAWN: Dependency-Aware](scholar_inbox/dawn_dependency_aware.md) | 2602.06953 | 基于依赖图的快速推理 |
-| [RCD: Residual Context](scholar_inbox/rcd_residual_context.md) | 2601.22954 | 回收被丢弃 token 的计算 |
-| [LLaDA2.1: T2T + RL](scholar_inbox/llada21_t2t_rl.md) | 2602.08676 | Token 编辑 + 强化学习对齐 |
-| [XDLM: Unified Framework](scholar_inbox/xdlm_unified.md) | 2602.01362 | 统一 MDLM 和 UDLM |
-
-### dLLM - Decoding & Search
-
-| Paper | arXiv | Topic |
-|-------|-------|-------|
-| [Self-Rewarding SMC](scholar_inbox/self_rewarding_smc.md) | 2602.01849 | SMC 提升采样质量和多样性 |
-| [SOAR: Adaptive Search](scholar_inbox/soar_adaptive_search.md) | 2602.10953 | 低 confidence 搜索，高 confidence 加速 |
-| [RDD: Reversible Decoding](scholar_inbox/rdd_reversible_decoding.md) | 2602.00150 | 可逆解码，从错误中恢复 |
-
-### dLLM - Efficiency
-
-| Paper | arXiv | Topic |
-|-------|-------|-------|
-| [SureLock: Early Stopping](scholar_inbox/surelock_early_stopping.md) | 2602.06412 | 跳过已收敛 token 的计算 (ICLR 2026) |
-| [FOCUS: Dynamic Batching](scholar_inbox/focus_dynamic_batching.md) | 2601.23278 | 动态聚焦可解码 token |
-
-### dLLM - Generation Quality
-
-| Paper | arXiv | Topic |
-|-------|-------|-------|
-| [Positional Alignment + CTC](scholar_inbox/positional_alignment_ctc.md) | 2601.22947 | 用 CTC 解决位置对齐问题 |
-| [LR-DLLM: Length Regularization](scholar_inbox/lr_dllm_length_regularization.md) | 2602.07546 | 解决变长生成的长度偏差 |
-| [Diffinity: Constrained Gen](scholar_inbox/diffinity_constrained_generation.md) | 2602.12468 | 让 dLLM 遵守正则表达式约束 |
-
-### Diffusion Theory & Methods
-
-| Paper | arXiv | Topic |
-|-------|-------|-------|
-| [Drifting Models](scholar_inbox/drifting_models.md) | 2502.04770 | One-step generation 新范式 |
-| [Wright-Fisher Unified Diffusion](scholar_inbox/wright_fisher_unified_diffusion.md) | 2512.15923 | 统一 discrete/Gaussian/simplicial diffusion |
-| [Information-Estimation Metric](scholar_inbox/information_estimation_metric.md) | 2510.02514 | 用 denoising error 定义距离 |
-
-### Other
-
-| Paper | arXiv | Topic |
-|-------|-------|-------|
-| [Parallel Token Generation](scholar_inbox/parallel_token_generation.md) | - | Flow-based 并行生成 |
-| [Hot Mess Theory](scholar_inbox/hot_mess_theory.md) | - | AI 失败的 bias-variance 分析 |
-| [Diffusion for Compression](scholar_inbox/diffusion_compression.md) | - | 用 diffusion 做图像压缩 |
+- [Scholar Inbox Index](scholar_inbox/)
+- Daily digests:
+  - [2026-02-17 - Diffusion/dLLM](scholar_inbox/2026-02-17-diffusion-dllm.md)
+  - [2026-02-16 - Diffusion/dLLM](scholar_inbox/2026-02-16-diffusion-dllm.md)
+  - [2026-02-15 - Diffusion/dLLM](scholar_inbox/2026-02-15-diffusion-dllm-papers.md)
 
 ## 🔬 Research Notes
 
