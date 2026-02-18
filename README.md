@@ -80,3 +80,4 @@ Updated daily at 8:00 AM Pacific
 
 - 张小珺: /transcripts/xiaojun/
 - Dwarkesh: /transcripts/dwarkesh/
+- WhynotTV: /transcripts/whynot/
