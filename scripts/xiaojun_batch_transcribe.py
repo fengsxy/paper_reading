@@ -126,7 +126,26 @@ def audio_duration_seconds(path: Path) -> float:
 
 
 def to_mp3(src: Path, dst: Path) -> None:
-    run(["ffmpeg", "-y", "-i", str(src), "-vn", "-acodec", "libmp3lame", "-q:a", "5", str(dst), "-loglevel", "error"])
+    # Some YouTube audio streams have timestamp discontinuities.
+    # Force monotonic timestamps during re-encode.
+    run([
+        "ffmpeg",
+        "-y",
+        "-fflags",
+        "+genpts",
+        "-i",
+        str(src),
+        "-vn",
+        "-af",
+        "aresample=async=1:first_pts=0",
+        "-acodec",
+        "libmp3lame",
+        "-q:a",
+        "5",
+        str(dst),
+        "-loglevel",
+        "error",
+    ])
 
 
 def segment_mp3(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
@@ -136,6 +155,8 @@ def segment_mp3(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
     run([
         "ffmpeg",
         "-y",
+        "-fflags",
+        "+genpts",
         "-i",
         str(src),
         "-f",
@@ -144,6 +165,8 @@ def segment_mp3(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
         str(segment_seconds),
         "-reset_timestamps",
         "1",
+        "-af",
+        "aresample=async=1:first_pts=0",
         "-acodec",
         "libmp3lame",
         "-q:a",
