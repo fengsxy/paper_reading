@@ -1,0 +1,21 @@
+[
+  {
+    "series": "xiaojun",
+    "name": "Xiaojun Podcast",
+    "url": "https://www.youtube.com/@xiaojunpodcast/videos",
+    "language": "zh"
+  },
+  {
+    "series": "dwarkesh",
+    "name": "Dwarkesh Podcast",
+    "url": "https://www.youtube.com/@dwarkeshpatel/videos",
+    "language": "en"
+  },
+  {
+    "series": "crossroad",
+    "name": "罗永浩 十字路口",
+    "url": "",
+    "language": "zh",
+    "notes": "TODO: fill exact YouTube channel/videos URL"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-02-18T17:21:17Z",
+  "results": [
+    {
+      "series": "xiaojun",
+      "status": "ok",
+      "count": 151,
+      "md": "podcast_index/xiaojun/index.md",
+      "json": "podcast_index/xiaojun/index.json"
+    },
+    {
+      "series": "dwarkesh",
+      "status": "ok",
+      "count": 185,
+      "md": "podcast_index/dwarkesh/index.md",
+      "json": "podcast_index/dwarkesh/index.json"
+    },
+    {
+      "series": "crossroad",
+      "status": "skipped",
+      "reason": "missing url",
+      "count": 0
+    }
+  ]
+}

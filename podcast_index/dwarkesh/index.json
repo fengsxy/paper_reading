@@ -1,0 +1,1856 @@
+{
+  "series": "dwarkesh",
+  "generated_at": "2026-02-18T17:21:17Z",
+  "items": [
+    {
+      "episode": 1,
+      "slug": "1_dario_amodei_we_are_near_the_end_of_the_exponential",
+      "title": "Dario Amodei — “We are near the end of the exponential”",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=n1E9IZfvGMA",
+      "video_id": "n1E9IZfvGMA",
+      "duration": "8540.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 2,
+      "slug": "2_elon_musk_in_36_months_the_cheapest_place_to_put_ai_will_be_space",
+      "title": "Elon Musk – \"In 36 months, the cheapest place to put AI will be space”",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=BYXbuik3dgA",
+      "video_id": "BYXbuik3dgA",
+      "duration": "10186.0",
+      "channel": "Dwarkesh Patel and Stripe"
+    },
+    {
+      "episode": 3,
+      "slug": "3_adam_marblestone_ai_is_missing_something_fundamental_about_the_brain",
+      "title": "Adam Marblestone – AI is missing something fundamental about the brain",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=_9V_Hbe-N1A",
+      "video_id": "_9V_Hbe-N1A",
+      "duration": "6594.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 4,
+      "slug": "4_what_are_we_scaling",
+      "title": "What are we scaling?",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=_zgnSbu5GqE",
+      "video_id": "_zgnSbu5GqE",
+      "duration": "755.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 5,
+      "slug": "5_sarah_paine_why_russia_lost_the_cold_war",
+      "title": "Sarah Paine – Why Russia Lost the Cold War",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=FdkpWrlR5zg",
+      "video_id": "FdkpWrlR5zg",
+      "duration": "6895.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 6,
+      "slug": "6_ilya_sutskever_we_re_moving_from_the_age_of_scaling_to_the_age_of_research",
+      "title": "Ilya Sutskever – We're moving from the age of scaling to the age of research",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=aR20FWCCjAs",
+      "video_id": "aR20FWCCjAs",
+      "duration": "5764.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 7,
+      "slug": "7_satya_nadella_how_microsoft_thinks_about_agi",
+      "title": "Satya Nadella – How Microsoft thinks about AGI",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=8-boBsWcr5A",
+      "video_id": "8-boBsWcr5A",
+      "duration": "5322.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 8,
+      "slug": "8_sarah_paine_how_russia_sabotaged_china_s_rise",
+      "title": "Sarah Paine — How Russia sabotaged China's rise",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=RH_ycZYH8-s",
+      "video_id": "RH_ycZYH8-s",
+      "duration": "5484.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 9,
+      "slug": "9_andrej_karpathy_we_re_summoning_ghosts_not_building_animals",
+      "title": "Andrej Karpathy — “We’re summoning ghosts, not building animals”",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=lXUZvyajciY",
+      "video_id": "lXUZvyajciY",
+      "duration": "8768.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 10,
+      "slug": "10_i_find_it_almost_disturbing_that_the_universe_favors_life_this_strongly_nick_lan",
+      "title": "“I find it almost disturbing that the universe favors life this strongly” – Nick Lane",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=0GMWxuYuxJI",
+      "video_id": "0GMWxuYuxJI",
+      "duration": "4853.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 11,
+      "slug": "11_some_thoughts_on_the_sutton_interview",
+      "title": "Some thoughts on the Sutton interview",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=u3HBJVjpXuw",
+      "video_id": "u3HBJVjpXuw",
+      "duration": "700.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 12,
+      "slug": "12_richard_sutton_father_of_rl_thinks_llms_are_a_dead_end",
+      "title": "Richard Sutton – Father of RL thinks LLMs are a dead end",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=21EYKqUsPfg",
+      "video_id": "21EYKqUsPfg",
+      "duration": "4029.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 13,
+      "slug": "13_fully_autonomous_robots_are_much_closer_than_you_think_sergey_levine",
+      "title": "Fully autonomous robots are much closer than you think – Sergey Levine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=48pxVdmkMIE",
+      "video_id": "48pxVdmkMIE",
+      "duration": "5309.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 14,
+      "slug": "14_sarah_paine_how_hitler_almost_starved_britain",
+      "title": "Sarah Paine – How Hitler almost starved Britain",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=SdMgOXfSBQw",
+      "video_id": "SdMgOXfSBQw",
+      "duration": "5768.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 15,
+      "slug": "15_evolution_designed_us_to_die_fast_we_can_change_that_jacob_kimmel",
+      "title": "Evolution designed us to die fast; we can change that — Jacob Kimmel",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=XCLODgdCmKA",
+      "video_id": "XCLODgdCmKA",
+      "duration": "6321.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 16,
+      "slug": "16_china_is_killing_the_us_on_energy_does_that_mean_they_ll_win_agi_casey_handmer",
+      "title": "China is killing the US on energy. Does that mean they’ll win AGI? — Casey Handmer",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=3cDHx2_QbPE",
+      "video_id": "3cDHx2_QbPE",
+      "duration": "4102.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 17,
+      "slug": "17_artificial_meat_is_harder_than_artificial_intelligence_lewis_bollard",
+      "title": "Artificial meat is harder than artificial intelligence — Lewis Bollard",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=kWcPg8t1kJ4",
+      "video_id": "kWcPg8t1kJ4",
+      "duration": "4085.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 18,
+      "slug": "18_why_i_don_t_think_agi_is_right_around_the_corner",
+      "title": "Why I don’t think AGI is right around the corner",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=nyvmYnz6EAg",
+      "video_id": "nyvmYnz6EAg",
+      "duration": "1034.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 19,
+      "slug": "19_sarah_paine_how_imperial_japan_defeated_tsarist_russia_qing_china",
+      "title": "Sarah Paine — How Imperial Japan defeated Tsarist Russia & Qing China",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=KxIeJjEGLdo",
+      "video_id": "KxIeJjEGLdo",
+      "duration": "6982.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 20,
+      "slug": "20_stephen_kotkin_how_stalin_became_the_most_powerful_dictator_in_history",
+      "title": "Stephen Kotkin — How Stalin became the most powerful dictator in history",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=YMfd3EoHfPI",
+      "video_id": "YMfd3EoHfPI",
+      "duration": "8015.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 21,
+      "slug": "21_a_billion_years_of_evolution_in_a_single_afternoon_george_church",
+      "title": "A billion years of evolution in a single afternoon — George Church",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=olmHHxFQwxo",
+      "video_id": "olmHHxFQwxo",
+      "duration": "5669.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 22,
+      "slug": "22_why_china_s_manufacturing_economy_is_dominating_arthur_kroeber",
+      "title": "Why China's manufacturing economy is dominating — Arthur Kroeber",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=qb644F-iE_s",
+      "video_id": "qb644F-iE_s",
+      "duration": "8850.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 23,
+      "slug": "23_china_is_digging_out_of_a_crisis_and_america_s_luck_is_wearing_thin_ken_rogoff",
+      "title": "\"China is digging out of a crisis. And America’s luck is wearing thin.\" — Ken Rogoff",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=P2b4TjQa4gk",
+      "video_id": "P2b4TjQa4gk",
+      "duration": "5765.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 24,
+      "slug": "24_xi_jinping_s_paranoid_approach_to_agi_debt_crisis_politburo_politics_victor_shih",
+      "title": "Xi Jinping’s paranoid approach to AGI, debt crisis, & Politburo politics — Victor Shih",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=b1TeeIG6Uaw",
+      "video_id": "b1TeeIG6Uaw",
+      "duration": "5397.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 25,
+      "slug": "25_is_rl_llms_enough_for_agi_sholto_douglas_trenton_bricken",
+      "title": "Is RL + LLMs enough for AGI? — Sholto Douglas & Trenton Bricken",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=64lXQP6cs5M",
+      "video_id": "64lXQP6cs5M",
+      "duration": "8642.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 26,
+      "slug": "26_what_will_automated_firms_look_like",
+      "title": "What will automated firms look like?",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=bJD1NpdMY5s",
+      "video_id": "bJD1NpdMY5s",
+      "duration": "618.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 27,
+      "slug": "27_mark_zuckerberg_ai_will_write_most_meta_code_in_18_months",
+      "title": "Mark Zuckerberg — AI will write most Meta code in 18 months",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=rYXeQbTuVl0",
+      "video_id": "rYXeQbTuVl0",
+      "duration": "4550.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 28,
+      "slug": "28_why_rome_actually_fell_plagues_slavery_ice_age_kyle_harper",
+      "title": "Why Rome actually fell: plagues, slavery, & ice age — Kyle Harper",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=QFzgSmN8Ng8",
+      "video_id": "QFzgSmN8Ng8",
+      "duration": "5053.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 29,
+      "slug": "29_agi_is_still_30_years_away_ege_erdil_tamay_besiroglu",
+      "title": "AGI is still 30 years away — Ege Erdil & Tamay Besiroglu",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=WLBsUarvWTw",
+      "video_id": "WLBsUarvWTw",
+      "duration": "11344.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 30,
+      "slug": "30_ai_2027_month_by_month_model_of_intelligence_explosion_scott_alexander_daniel_ko",
+      "title": "AI 2027: month-by-month model of intelligence explosion — Scott Alexander & Daniel Kokotajlo",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=htOvH12T7mU",
+      "video_id": "htOvH12T7mU",
+      "duration": "11117.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 31,
+      "slug": "31_ama_career_advice_given_agi_how_i_research_ft_sholto_trenton",
+      "title": "AMA: career advice given AGI, how I research ft. Sholto & Trenton",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=XLaRfZ4AHn8",
+      "video_id": "XLaRfZ4AHn8",
+      "duration": "2974.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 32,
+      "slug": "32_joseph_henrich_humans_defeated_smarter_species_with_cultural_evolution",
+      "title": "Joseph Henrich — Humans defeated smarter species with cultural evolution",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=TcfhrThp1OU",
+      "video_id": "TcfhrThp1OU",
+      "duration": "6832.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 33,
+      "slug": "33_notes_on_china",
+      "title": "Notes on China",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=UU9jbImVsNY",
+      "video_id": "UU9jbImVsNY",
+      "duration": "1172.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 34,
+      "slug": "34_the_hardest_thing_about_being_ceo_satya_nadella",
+      "title": "The Hardest thing About Being CEO – Satya Nadella",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=cn-k7KUpydE",
+      "video_id": "cn-k7KUpydE",
+      "duration": "298.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 35,
+      "slug": "35_satya_nadella_shows_me_the_first_majorana_1_quantum_computing_chip",
+      "title": "Satya Nadella shows me the first Majorana 1 Quantum Computing chip",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=itkvrQUSJC0",
+      "video_id": "itkvrQUSJC0",
+      "duration": "361.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 36,
+      "slug": "36_satya_nadella_microsoft_s_agi_plan_quantum_breakthrough",
+      "title": "Satya Nadella — Microsoft’s AGI plan & quantum breakthrough",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=4GLSzuYXh6w",
+      "video_id": "4GLSzuYXh6w",
+      "duration": "4615.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 37,
+      "slug": "37_jeff_dean_noam_shazeer_25_years_at_google_from_pagerank_to_agi",
+      "title": "Jeff Dean & Noam Shazeer — 25 years at Google: from PageRank to AGI",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=v0gjI__RyCY",
+      "video_id": "v0gjI__RyCY",
+      "duration": "8136.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 38,
+      "slug": "38_20th_century_s_most_lethal_leader_sarah_paine_lecture_excerpt",
+      "title": "20th Century's Most Lethal Leader – Sarah Paine (Lecture Excerpt)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=AFsf-00tsrw",
+      "video_id": "AFsf-00tsrw",
+      "duration": "233.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 39,
+      "slug": "39_the_limits_of_american_power_sarah_paine",
+      "title": "The Limits of American Power – Sarah Paine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=tlNHLGVRKlc",
+      "video_id": "tlNHLGVRKlc",
+      "duration": "570.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 40,
+      "slug": "40_the_brilliance_of_communism_sarah_paine",
+      "title": "\"The Brilliance of Communism\" – Sarah Paine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=OoSh7qJcZWA",
+      "video_id": "OoSh7qJcZWA",
+      "duration": "398.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 41,
+      "slug": "41_sarah_paine_how_mao_conquered_china_lecture_interview",
+      "title": "Sarah Paine — How Mao conquered China (lecture & interview)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=4l3Sa8ImGFQ",
+      "video_id": "4l3Sa8ImGFQ",
+      "duration": "6541.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 42,
+      "slug": "42_attacking_america_is_a_devastating_miscalculation_sarah_paine",
+      "title": "Attacking America Is a Devastating Miscalculation – Sarah Paine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=eebSpobsPmM",
+      "video_id": "eebSpobsPmM",
+      "duration": "344.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 43,
+      "slug": "43_sarah_paine_why_japan_lost_wwii_lecture_interview",
+      "title": "Sarah Paine — Why Japan lost WWII (lecture & interview)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Znk5QINe01A",
+      "video_id": "Znk5QINe01A",
+      "duration": "7640.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 44,
+      "slug": "44_was_the_war_against_japan_avoidable_sarah_paine",
+      "title": "Was The War Against Japan Avoidable? - Sarah Paine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=dPDndeV_mTU",
+      "video_id": "dPDndeV_mTU",
+      "duration": "505.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 45,
+      "slug": "45_unlimited_war_putin_vs_bismarck_sarah_paine",
+      "title": "Unlimited War: Putin vs Bismarck – Sarah Paine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ZACAzNyfyxs",
+      "video_id": "ZACAzNyfyxs",
+      "duration": "225.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 46,
+      "slug": "46_sarah_paine_the_war_for_india_lecture_interview",
+      "title": "Sarah Paine — The war for India (lecture & interview)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=LbkO84MsmyM",
+      "video_id": "LbkO84MsmyM",
+      "duration": "8011.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 47,
+      "slug": "47_sarah_paine_we_thought_the_soviets_were_going_to_win",
+      "title": "Sarah Paine: We Thought The Soviets Were Going to Win",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=fx6fakjQBdo",
+      "video_id": "fx6fakjQBdo",
+      "duration": "151.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 48,
+      "slug": "48_why_space_elevators_can_t_mine_black_holes_adam_brown",
+      "title": "Why Space Elevators Can't Mine Black Holes – Adam Brown",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=zfOYEMnpqdM",
+      "video_id": "zfOYEMnpqdM",
+      "duration": "634.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 49,
+      "slug": "49_tyler_cowen_the_1_bottleneck_to_ai_progress_is_humans",
+      "title": "Tyler Cowen — The #1 bottleneck to AI progress is humans",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=GT_sXIUJPUo",
+      "video_id": "GT_sXIUJPUo",
+      "duration": "3634.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 50,
+      "slug": "50_how_far_are_we_from_an_ai_einstein_adam_brown",
+      "title": "How Far Are We From An AI Einstein? - Adam Brown",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=LjY0i2B-Avc",
+      "video_id": "LjY0i2B-Avc",
+      "duration": "579.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 51,
+      "slug": "51_how_black_holes_reveal_a_holographic_reality",
+      "title": "How Black Holes Reveal a Holographic Reality",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ZT07mR7DnFI",
+      "video_id": "ZT07mR7DnFI",
+      "duration": "1422.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 52,
+      "slug": "52_adam_brown_bubble_universes_space_elevators_ads_cft",
+      "title": "Adam Brown — Bubble universes, space elevators, & AdS/CFT",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=XhB3qH_TFds",
+      "video_id": "XhB3qH_TFds",
+      "duration": "9866.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 53,
+      "slug": "53_the_grand_theory_of_intelligence_gwern",
+      "title": "The Grand Theory of Intelligence – Gwern",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=IMkqAUsVAfc",
+      "video_id": "IMkqAUsVAfc",
+      "duration": "224.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 54,
+      "slug": "54_how_gwern_saw_ai_scaling_coming",
+      "title": "How Gwern saw AI scaling coming",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=5fkqmNzFni8",
+      "video_id": "5fkqmNzFni8",
+      "duration": "344.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 55,
+      "slug": "55_gwern_anonymous_writer_who_predicted_ai_trajectory_on_12k_year_salary",
+      "title": "Gwern — Anonymous writer who predicted AI trajectory on $12K/year salary",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=a42key59cZQ",
+      "video_id": "a42key59cZQ",
+      "duration": "5804.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 56,
+      "slug": "56_10b_openai_microsoft_cluster_in_2025_dylan_patel_asianometry",
+      "title": "$10B OpenAI & Microsoft Cluster in 2025 – Dylan Patel & @Asianometry",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=J7yvSkIOZLw",
+      "video_id": "J7yvSkIOZLw",
+      "duration": "314.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 57,
+      "slug": "57_taiwan_invasion_timeline_to_global_collapse_asianometry_dylan_patel",
+      "title": "Taiwan Invasion: Timeline to Global Collapse – @Asianometry & Dylan Patel",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=DTOU3vchBE0",
+      "video_id": "DTOU3vchBE0",
+      "duration": "203.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 58,
+      "slug": "58_asianometry_dylan_patel_how_the_semiconductor_industry_actually_works",
+      "title": "@Asianometry & Dylan Patel — How the semiconductor industry actually works",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=pE3KKUKXcTM",
+      "video_id": "pE3KKUKXcTM",
+      "duration": "7854.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 59,
+      "slug": "59_the_caste_system_transformed_indian_genetics_david_reich",
+      "title": "The caste system transformed Indian genetics – David Reich",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=7OfV16_xngQ",
+      "video_id": "7OfV16_xngQ",
+      "duration": "252.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 60,
+      "slug": "60_oil_decided_world_war_ii_daniel_yergin",
+      "title": "Oil Decided World War II – Daniel Yergin",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=M7fyL79PvNQ",
+      "video_id": "M7fyL79PvNQ",
+      "duration": "147.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 61,
+      "slug": "61_daniel_yergin_oil_destroyed_hitler_fracking_destroyed_putin",
+      "title": "Daniel Yergin — Oil destroyed Hitler, fracking destroyed Putin",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=sveBcfz0fHk",
+      "video_id": "sveBcfz0fHk",
+      "duration": "5297.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 62,
+      "slug": "62_how_horse_nomads_took_over_europe_5000_years_ago_david_reich",
+      "title": "How horse nomads took over Europe 5000 years ago – David Reich",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=sqDE7znrHsw",
+      "video_id": "sqDE7znrHsw",
+      "duration": "231.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 63,
+      "slug": "63_our_biggest_difference_with_neanderthals_david_reich",
+      "title": "Our biggest difference with Neanderthals – David Reich",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=KwC7rcnThX4",
+      "video_id": "KwC7rcnThX4",
+      "duration": "253.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 64,
+      "slug": "64_a_key_period_in_human_evolution_wasn_t_in_africa_david_reich",
+      "title": "A key period in human evolution wasn't in Africa – David Reich",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=1SbyMBvJzkE",
+      "video_id": "1SbyMBvJzkE",
+      "duration": "273.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 65,
+      "slug": "65_why_no_other_human_species_survived_david_reich",
+      "title": "Why no other human species survived – David Reich",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=rW_Lgwqqe3I",
+      "video_id": "rW_Lgwqqe3I",
+      "duration": "350.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 66,
+      "slug": "66_david_reich_how_one_small_tribe_conquered_the_world_70_000_years_ago",
+      "title": "David Reich — How one small tribe conquered the world 70,000 years ago",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Uj6skZIxPuI",
+      "video_id": "Uj6skZIxPuI",
+      "duration": "7024.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 67,
+      "slug": "67_the_bacteria_that_shaped_history_yersinia_pestis_david_reich",
+      "title": "The bacteria that shaped history: Yersinia pestis – David Reich",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=oX76K-mNdaM",
+      "video_id": "oX76K-mNdaM",
+      "duration": "402.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 68,
+      "slug": "68_joe_carlsmith_preventing_an_ai_takeover",
+      "title": "Joe Carlsmith — Preventing an AI takeover",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=5XsL_7TnfLU",
+      "video_id": "5XsL_7TnfLU",
+      "duration": "9073.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 69,
+      "slug": "69_the_biggest_money_laundering_scheme_in_history_patrick_mckenzie",
+      "title": "The Biggest Money Laundering Scheme In History – Patrick McKenzie",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ciZMI5ZrFLo",
+      "video_id": "ciZMI5ZrFLo",
+      "duration": "247.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 70,
+      "slug": "70_patrick_mckenzie_money_laundering_big_tech_censorship_sbf_japan",
+      "title": "Patrick McKenzie — Money laundering, big tech censorship, SBF & Japan",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=18zpjpPNWRw",
+      "video_id": "18zpjpPNWRw",
+      "duration": "7338.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 71,
+      "slug": "71_does_tony_blair_regret_bringing_china_into_world_order",
+      "title": "Does Tony Blair regret bringing China into world order?",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=4hk9np05A64",
+      "video_id": "4hk9np05A64",
+      "duration": "177.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 72,
+      "slug": "72_lee_kuan_yew_s_3_key_decisions_that_made_singapore_rich_tony_blair",
+      "title": "Lee Kuan Yew’s 3 key decisions that made Singapore rich – Tony Blair",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Ko9uQvR93kw",
+      "video_id": "Ko9uQvR93kw",
+      "duration": "202.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 73,
+      "slug": "73_tony_blair_why_political_leaders_keep_failing_at_major_change",
+      "title": "Tony Blair — Why political leaders keep failing at major change",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=zSLWR3AbF3c",
+      "video_id": "zSLWR3AbF3c",
+      "duration": "3172.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 74,
+      "slug": "74_government_is_a_conspiracy_of_distraction_tony_blair",
+      "title": "Government is a conspiracy of distraction – Tony Blair",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=RWBZyQ4Na4o",
+      "video_id": "RWBZyQ4Na4o",
+      "duration": "309.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 75,
+      "slug": "75_if_an_llm_solves_this_then_we_ll_probably_have_agi_francois_chollet",
+      "title": "If an LLM solves this then we'll probably have AGI – Francois Chollet",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=wZ0ToxtXz5g",
+      "video_id": "wZ0ToxtXz5g",
+      "duration": "309.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 76,
+      "slug": "76_scaling_laws_are_explained_by_memorization_and_not_intelligence_francois_chollet",
+      "title": "Scaling laws are explained by memorization and not intelligence – Francois Chollet",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=rl7B-LHiaNo",
+      "video_id": "rl7B-LHiaNo",
+      "duration": "369.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 77,
+      "slug": "77_francois_chollet_why_the_biggest_ai_models_can_t_solve_simple_puzzles",
+      "title": "Francois Chollet — Why the biggest AI models can't solve simple puzzles",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=UakqL6Pj9xo",
+      "video_id": "UakqL6Pj9xo",
+      "duration": "5680.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 78,
+      "slug": "78_ai_labs_are_extremely_vulnerable_to_espionage_leopold_aschenbrenner",
+      "title": "AI Labs are extremely vulnerable to espionage – Leopold Aschenbrenner",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=667IffkMDmU",
+      "video_id": "667IffkMDmU",
+      "duration": "305.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 79,
+      "slug": "79_how_the_us_china_ai_race_will_play_out_leopold_aschenbrenner",
+      "title": "How the US-China AI Race Will Play Out – Leopold Aschenbrenner",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ghluOfM-Xik",
+      "video_id": "ghluOfM-Xik",
+      "duration": "458.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 80,
+      "slug": "80_ai_nationalization_is_inevitable_leopold_aschenbrenner",
+      "title": "AI Nationalization is Inevitable – Leopold Aschenbrenner",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=K0Pa5oudUp4",
+      "video_id": "K0Pa5oudUp4",
+      "duration": "743.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 81,
+      "slug": "81_leopold_aschenbrenner_2027_agi_china_us_super_intelligence_race_the_return_of_hi",
+      "title": "Leopold Aschenbrenner — 2027 AGI, China/US super-intelligence race, & the return of history",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=zdbVtZIn9IM",
+      "video_id": "zdbVtZIn9IM",
+      "duration": "16327.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 82,
+      "slug": "82_the_inside_story_of_how_chatgpt_was_built_openai_cofounder_john_schulman",
+      "title": "The inside story of how ChatGPT was built – OpenAI cofounder John Schulman",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ERpNuLzKmJY",
+      "video_id": "ERpNuLzKmJY",
+      "duration": "449.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 83,
+      "slug": "83_why_gpt_4_is_much_smarter_than_it_was_a_year_ago_openai_cofounder_john_schulman",
+      "title": "Why GPT-4 is much smarter than it was a year ago – OpenAI cofounder John Schulman",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=JclnqKZBTUU",
+      "video_id": "JclnqKZBTUU",
+      "duration": "304.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 84,
+      "slug": "84_john_schulman_openai_cofounder_reasoning_rlhf_plan_for_2027_agi",
+      "title": "John Schulman (OpenAI Cofounder) — Reasoning, RLHF, & plan for 2027 AGI",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Wo95ob_s_NI",
+      "video_id": "Wo95ob_s_NI",
+      "duration": "5751.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 86,
+      "slug": "86_llms_will_hit_the_data_wall_if_they_can_t_generalize_openai_cofounder_john_schul",
+      "title": "LLMs will hit the data wall if they can’t generalize – OpenAI cofounder John Schulman",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=V6X_tLCxsZk",
+      "video_id": "V6X_tLCxsZk",
+      "duration": "265.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 87,
+      "slug": "87_japan_had_no_military_but_didn_t_surrender_richard_rhodes",
+      "title": "Japan had no military. But didn’t surrender – Richard Rhodes",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=xDMYMOjcKa4",
+      "video_id": "xDMYMOjcKa4",
+      "duration": "471.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 88,
+      "slug": "88_robert_oppenheimer_s_worst_enemy_richard_rhodes",
+      "title": "Robert Oppenheimer's Worst Enemy – Richard Rhodes",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=UG22Ytgj4uc",
+      "video_id": "UG22Ytgj4uc",
+      "duration": "362.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 89,
+      "slug": "89_why_mark_zuckerberg_turned_down_1b_for_facebook",
+      "title": "Why Mark Zuckerberg turned down $1B for Facebook",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=EwJFSZE2kws",
+      "video_id": "EwJFSZE2kws",
+      "duration": "236.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 90,
+      "slug": "90_can_synthetic_data_unlock_ai_recursive_self_improvement_mark_zuckerberg",
+      "title": "Can synthetic data unlock AI recursive self-improvement? — Mark Zuckerberg",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=9TU0XjJqpOg",
+      "video_id": "9TU0XjJqpOg",
+      "duration": "246.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 91,
+      "slug": "91_energy_not_compute_will_be_the_1_bottleneck_to_ai_progress_mark_zuckerberg",
+      "title": "Energy, not compute, will be the #1 bottleneck to AI progress – Mark Zuckerberg",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=i-o5YbNfmh0",
+      "video_id": "i-o5YbNfmh0",
+      "duration": "217.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 92,
+      "slug": "92_what_mark_zuckerberg_learned_from_caesar_augustus",
+      "title": "What Mark Zuckerberg learned from Caesar Augustus",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=_VjyPShDsjo",
+      "video_id": "_VjyPShDsjo",
+      "duration": "205.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 93,
+      "slug": "93_will_ai_gatekeepers_tell_you_what_you_can_build_mark_zuckerberg",
+      "title": "Will AI Gatekeepers Tell You What You Can Build? – Mark Zuckerberg",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=QmPopAPmPcM",
+      "video_id": "QmPopAPmPcM",
+      "duration": "249.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 94,
+      "slug": "94_mark_zuckerberg_llama_3_10b_models_caesar_augustus_1_gw_datacenters",
+      "title": "Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=bc6uFV9CJGg",
+      "video_id": "bc6uFV9CJGg",
+      "duration": "4718.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 95,
+      "slug": "95_if_we_don_t_get_agi_by_gpt_7_1t_will_we_just_never_get_it_sholto_douglas_trenton",
+      "title": "If we don’t get AGI by GPT-7 (~$1T), will we just never get it? – Sholto Douglas & Trenton Bricken",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=WpGqsKR26Cw",
+      "video_id": "WpGqsKR26Cw",
+      "duration": "262.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 96,
+      "slug": "96_distinction_between_small_large_models_will_go_away_sholto_douglas_trenton_brick",
+      "title": "Distinction between small & large models will go away – Sholto Douglas & Trenton Bricken",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=AOt0GwY8IvU",
+      "video_id": "AOt0GwY8IvU",
+      "duration": "342.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 97,
+      "slug": "97_hitler_put_russians_on_death_ground_sarah_paine",
+      "title": "Hitler put Russians on Death Ground - Sarah Paine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=X3tuS9bgBfo",
+      "video_id": "X3tuS9bgBfo",
+      "duration": "580.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 98,
+      "slug": "98_ai_progress_is_about_to_rapidly_accelerate_in_2025_sholto_douglas_trenton_bricke",
+      "title": "AI progress is about to rapidly accelerate in 2025 – Sholto Douglas & Trenton Bricken",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=UeI29-AdhQI",
+      "video_id": "UeI29-AdhQI",
+      "duration": "529.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 99,
+      "slug": "99_how_they_became_leading_ai_researchers_in_just_1_year_sholto_douglas_trenton_bri",
+      "title": "How They Became Leading AI Researchers in Just 1 Year – Sholto Douglas & Trenton Bricken",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=cPu3SecmgUU",
+      "video_id": "cPu3SecmgUU",
+      "duration": "658.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 100,
+      "slug": "100_sholto_douglas_trenton_bricken_how_llms_actually_think",
+      "title": "Sholto Douglas & Trenton Bricken — How LLMs actually think",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=UTuuTTnjxMQ",
+      "video_id": "UTuuTTnjxMQ",
+      "duration": "11593.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 101,
+      "slug": "101_why_america_failed_in_afghanistan_sarah_paine",
+      "title": "Why America Failed In Afghanistan | Sarah Paine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=xkxy5zo2kJ8",
+      "video_id": "xkxy5zo2kJ8",
+      "duration": "327.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 102,
+      "slug": "102_what_a_gpt_7_intelligence_explosion_looks_like_carl_shulman",
+      "title": "What a GPT-7 Intelligence Explosion Looks Like | Carl Shulman",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=D_WsPbdJKUg",
+      "video_id": "D_WsPbdJKUg",
+      "duration": "620.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 103,
+      "slug": "103_sarah_paine_maritime_vs_continental_powers",
+      "title": "Sarah Paine – Maritime vs Continental Powers",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=oEahPLq1qBU",
+      "video_id": "oEahPLq1qBU",
+      "duration": "447.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 104,
+      "slug": "104_how_much_will_china_risk_for_taiwan_sarah_paine_naval_war_college",
+      "title": "How Much Will China Risk for Taiwan? – Sarah Paine (Naval War College)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=qSTuahfAZf0",
+      "video_id": "qSTuahfAZf0",
+      "duration": "265.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 105,
+      "slug": "105_everyone_was_wrong_about_intelligence_dario_amodei_anthropic_ceo",
+      "title": "Everyone Was Wrong About Intelligence – Dario Amodei (Anthropic CEO)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=4hiXbxUnWd8",
+      "video_id": "4hiXbxUnWd8",
+      "duration": "498.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 106,
+      "slug": "106_are_we_on_path_towards_superhuman_intelligence_dario_amodei_anthropic_ceo",
+      "title": "Are We On Path Towards Superhuman Intelligence? – Dario Amodei (Anthropic CEO)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=wo4o09lKAQQ",
+      "video_id": "wo4o09lKAQQ",
+      "duration": "411.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 107,
+      "slug": "107_how_did_dario_ilya_know_llms_could_lead_to_agi",
+      "title": "How Did Dario & Ilya Know LLMs Could Lead to AGI?",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Iq4YStiGADs",
+      "video_id": "Iq4YStiGADs",
+      "duration": "404.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 108,
+      "slug": "108_the_ai_field_is_acting_crazy_demis_hassabis_google_deepmind_ceo",
+      "title": "The AI Field is Acting Crazy – Demis Hassabis (Google DeepMind CEO)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=wJzwbY2CwZQ",
+      "video_id": "wJzwbY2CwZQ",
+      "duration": "247.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 109,
+      "slug": "109_multimodality_the_next_big_step_demis_hassabis_google_deepmind_ceo",
+      "title": "Multimodality: The Next Big Step (Demis Hassabis - Google DeepMind CEO)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=bFwWkyZ7yMo",
+      "video_id": "bFwWkyZ7yMo",
+      "duration": "173.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 110,
+      "slug": "110_demis_hassabis_scaling_superhuman_ais_alphazero_atop_llms_alphafold",
+      "title": "Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLMs, AlphaFold",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=qTogNUV3CAI",
+      "video_id": "qTogNUV3CAI",
+      "duration": "3694.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 111,
+      "slug": "111_the_fastest_way_to_agi_llms_tree_search_demis_hassabis_google_deepmind_ceo",
+      "title": "The Fastest Way to AGI: LLMs + Tree Search – Demis Hassabis (Google DeepMind CEO)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=eqXfhejDeqA",
+      "video_id": "eqXfhejDeqA",
+      "duration": "314.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 112,
+      "slug": "112_scaling_llms_further_is_an_artform_demis_hassabis_google_deepmind_ceo",
+      "title": "Scaling LLMs further is an artform - Demis Hassabis (Google DeepMind CEO)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=666XgM38jJE",
+      "video_id": "666XgM38jJE",
+      "duration": "293.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 113,
+      "slug": "113_patrick_collison_s_advice_to_20_30_year_olds_don_t_move_to_sf",
+      "title": "Patrick Collison’s Advice to 20-30 Year Olds: Don't Move to SF",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=XrFIKOle0n8",
+      "video_id": "XrFIKOle0n8",
+      "duration": "348.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 114,
+      "slug": "114_patrick_collison_why_silicon_valley_s_most_talented_should_leave",
+      "title": "Patrick Collison — Why Silicon Valley's most talented should leave",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=WU-lBOAS1VQ",
+      "video_id": "WU-lBOAS1VQ",
+      "duration": "6932.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 115,
+      "slug": "115_tyler_cowen_hayek_keynes_smith_on_ai_animal_spirits_anarchy_growth",
+      "title": "Tyler Cowen — Hayek, Keynes, & Smith on AI, animal spirits, anarchy, & growth",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=EY2nbAVZB-k",
+      "video_id": "EY2nbAVZB-k",
+      "duration": "6142.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 116,
+      "slug": "116_agi_by_2028_shane_legg_deepmind_founder",
+      "title": "AGI by 2028 - Shane Legg (DeepMind Founder)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=N84ZntqkO4I",
+      "video_id": "N84ZntqkO4I",
+      "duration": "189.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 117,
+      "slug": "117_why_openai_gave_up_on_robotics_ilya_sutskever_openai_chief_scientist",
+      "title": "Why OpenAI gave up on robotics - Ilya Sutskever (OpenAI Chief Scientist)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=7tL1Jy_b_3Y",
+      "video_id": "7tL1Jy_b_3Y",
+      "duration": "118.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 118,
+      "slug": "118_why_next_token_prediction_is_enough_for_agi_ilya_sutskever_openai_chief_scientis",
+      "title": "Why next-token prediction is enough for AGI - Ilya Sutskever (OpenAI Chief Scientist)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=YEUclZdj_Sc",
+      "video_id": "YEUclZdj_Sc",
+      "duration": "128.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 119,
+      "slug": "119_will_an_ai_smart_enough_to_win_math_competitions_be_agi_grant_sanderson_3blue1br",
+      "title": "Will an AI smart enough to win math competitions be AGI? (Grant Sanderson @3blue1brown)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=GnMPfCFp6TA",
+      "video_id": "GnMPfCFp6TA",
+      "duration": "450.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 120,
+      "slug": "120_where_should_society_allocate_mathematicians_grant_sanderson_3blue1brown",
+      "title": "Where should society allocate mathematicians? (Grant Sanderson @3Blue1Brown)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=BHjtXKBzbF0",
+      "video_id": "BHjtXKBzbF0",
+      "duration": "381.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 121,
+      "slug": "121_jung_chang_wild_swans_author_living_through_history_s_largest_man_made_famine",
+      "title": "Jung Chang (Wild Swans author) — Living through history's largest man-made famine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=-VeZp2d7mDs",
+      "video_id": "-VeZp2d7mDs",
+      "duration": "5476.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 122,
+      "slug": "122_andrew_roberts_why_hitler_lost_wwii_churchill_as_applied_historian_napoleon_as_s",
+      "title": "Andrew Roberts — Why Hitler lost WWII, Churchill as applied historian, & Napoleon as startup founder",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=tM9ZMYUYhTk",
+      "video_id": "tM9ZMYUYhTk",
+      "duration": "4730.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 123,
+      "slug": "123_dominic_cummings_inside_the_collapse_of_western_government",
+      "title": "Dominic Cummings — Inside the collapse of western government",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=3i7ym_Qh7BA",
+      "video_id": "3i7ym_Qh7BA",
+      "duration": "9305.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 124,
+      "slug": "124_paul_christiano_preventing_an_ai_takeover",
+      "title": "Paul Christiano — Preventing an AI takeover",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=9AAhTLa0dT0",
+      "video_id": "9AAhTLa0dT0",
+      "duration": "11222.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 125,
+      "slug": "125_shane_legg_deepmind_founder_2028_agi_superhuman_alignment_new_architectures",
+      "title": "Shane Legg (DeepMind Founder) — 2028 AGI, superhuman alignment, new architectures",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Kc1atfJkiJU",
+      "video_id": "Kc1atfJkiJU",
+      "duration": "2659.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 126,
+      "slug": "126_grant_sanderson_3blue1brown_past_present_future_of_mathematics",
+      "title": "Grant Sanderson (@3blue1brown) — Past, present, & future of mathematics",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=oDyviiN4NVo",
+      "video_id": "oDyviiN4NVo",
+      "duration": "5481.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 127,
+      "slug": "127_are_we_risking_nuclear_war_by_supporting_ukraine",
+      "title": "Are we risking nuclear war by supporting Ukraine?",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=UUNYqAFrlFA",
+      "video_id": "UUNYqAFrlFA",
+      "duration": "536.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 128,
+      "slug": "128_how_xi_putin_think_maritime_vs_continental_powers",
+      "title": "How Xi & Putin think - maritime vs continental powers",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Yf8mCThmsGc",
+      "video_id": "Yf8mCThmsGc",
+      "duration": "197.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 129,
+      "slug": "129_sarah_c_m_paine_why_dictators_keep_making_the_same_fatal_mistake",
+      "title": "Sarah C. M. Paine — Why dictators keep making the same fatal mistake",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=YcVSgYz5SJ8",
+      "video_id": "YcVSgYz5SJ8",
+      "duration": "8673.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 130,
+      "slug": "130_what_if_the_third_reich_survived_ww2",
+      "title": "What if the Third Reich survived WW2?",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=uxRf4JLbQGc",
+      "video_id": "uxRf4JLbQGc",
+      "duration": "217.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 131,
+      "slug": "131_why_microsoft_paid_7_5_billion_for_github_nat_friedman",
+      "title": "Why Microsoft paid $7.5 billion for GitHub (Nat Friedman)",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=vwbXiITmxTU",
+      "video_id": "vwbXiITmxTU",
+      "duration": "492.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 132,
+      "slug": "132_dario_amodei_anthropic_ceo_the_hidden_pattern_behind_every_ai_breakthrough",
+      "title": "Dario Amodei (Anthropic CEO) — The hidden pattern behind every AI breakthrough",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Nlkk3glap_U",
+      "video_id": "Nlkk3glap_U",
+      "duration": "7124.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 133,
+      "slug": "133_andy_matuschak_the_reason_most_learning_tools_fail",
+      "title": "Andy Matuschak — The reason most learning tools fail",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=dmeRQN9z504",
+      "video_id": "dmeRQN9z504",
+      "duration": "8560.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 134,
+      "slug": "134_carl_shulman_pt_2_ai_takeover_bio_cyber_attacks_detecting_deception_humanity_s_f",
+      "title": "Carl Shulman (Pt 2) — AI Takeover, bio & cyber attacks, detecting deception, & humanity's far future",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=KUieFuV1fuo",
+      "video_id": "KUieFuV1fuo",
+      "duration": "11235.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 135,
+      "slug": "135_carl_shulman_pt_1_intelligence_explosion_primate_evolution_robot_doublings_align",
+      "title": "Carl Shulman (Pt 1) — Intelligence explosion, primate evolution, robot doublings, & alignment",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=_kRg-ZP1vQc",
+      "video_id": "_kRg-ZP1vQc",
+      "duration": "9813.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 136,
+      "slug": "136_richard_rhodes_the_making_of_the_atomic_bomb",
+      "title": "Richard Rhodes — The making of the atomic bomb",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=tMdMiYsfHKo",
+      "video_id": "tMdMiYsfHKo",
+      "duration": "9457.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 137,
+      "slug": "137_eliezer_yudkowsky_why_ai_will_kill_us_aligning_llms_nature_of_intelligence_scifi",
+      "title": "Eliezer Yudkowsky — Why AI will kill us, aligning LLMs, nature of intelligence, SciFi, & rationality",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=41SUp-TRVlg",
+      "video_id": "41SUp-TRVlg",
+      "duration": "14605.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 138,
+      "slug": "138_ilya_sutskever_openai_chief_scientist_why_next_token_prediction_could_surpass_hu",
+      "title": "Ilya Sutskever (OpenAI Chief Scientist) — Why next-token prediction could surpass human intelligence",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Yf1o0TQzry8",
+      "video_id": "Yf1o0TQzry8",
+      "duration": "2861.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 139,
+      "slug": "139_nat_friedman_github_ceo_reading_ancient_scrolls_open_source_ai",
+      "title": "Nat Friedman (Github CEO) — Reading ancient scrolls, open source, & AI",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=qcvMjoJdck4",
+      "video_id": "qcvMjoJdck4",
+      "duration": "5904.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 140,
+      "slug": "140_brett_harrison_ftx_us_former_president_speaks_out",
+      "title": "Brett Harrison — FTX US former president speaks out",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=yXgDlIlB93A",
+      "video_id": "yXgDlIlB93A",
+      "duration": "9458.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 141,
+      "slug": "141_marc_andreessen_ai_crypto_1000_elon_musks_regrets_vulnerabilities_managerial_rev",
+      "title": "Marc Andreessen — AI, crypto, 1000 Elon Musks, regrets, vulnerabilities, & managerial revolution",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=kNsi5XVDTTM",
+      "video_id": "kNsi5XVDTTM",
+      "duration": "4818.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 142,
+      "slug": "142_garett_jones_immigration_national_iq_less_democracy",
+      "title": "Garett Jones — Immigration, national IQ, & less democracy",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ZruyslAe26g",
+      "video_id": "ZruyslAe26g",
+      "duration": "4441.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 143,
+      "slug": "143_lars_doucet_progress_poverty_georgism_why_rent_is_too_damn_high",
+      "title": "Lars Doucet — Progress, poverty, Georgism, & why rent is too damn high",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=sL-qkv7Pzxo",
+      "video_id": "sL-qkv7Pzxo",
+      "duration": "5998.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 144,
+      "slug": "144_holden_karnofsky_history_s_most_important_century",
+      "title": "Holden Karnofsky — History's most important century",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=UckqpcOu5SY",
+      "video_id": "UckqpcOu5SY",
+      "duration": "6971.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 145,
+      "slug": "145_bethany_mclean_enron_ftx_2008_musk_frauds_visionaries",
+      "title": "Bethany McLean — Enron, FTX, 2008, Musk, frauds, & visionaries",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=m3oM69YHLeo",
+      "video_id": "m3oM69YHLeo",
+      "duration": "5158.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 146,
+      "slug": "146_nadia_asparouhova_tech_elites_democracy_open_source_philanthropy",
+      "title": "Nadia Asparouhova — Tech elites, democracy, open source, & philanthropy",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=nvL3vqMzznY",
+      "video_id": "nvL3vqMzznY",
+      "duration": "4931.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 147,
+      "slug": "147_byrne_hobart_ftx_drugs_twitter_taiwan_monasticism",
+      "title": "Byrne Hobart - FTX, Drugs, Twitter, Taiwan, & Monasticism",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=9P2rk0Gtd0I",
+      "video_id": "9P2rk0Gtd0I",
+      "duration": "5451.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 148,
+      "slug": "148_edward_glaeser_cities_terrorism_housing_remote_work",
+      "title": "Edward Glaeser - Cities, Terrorism, Housing, & Remote Work",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=MpttoDJ3pH8",
+      "video_id": "MpttoDJ3pH8",
+      "duration": "3432.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 149,
+      "slug": "149_kenneth_t_jackson_robert_moses_hero_of_new_york",
+      "title": "Kenneth T. Jackson - Robert Moses, Hero of New York?",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Gumo8zmgLqM",
+      "video_id": "Gumo8zmgLqM",
+      "duration": "5598.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 150,
+      "slug": "150_brian_potter_future_of_construction_ugly_modernism_environmental_review",
+      "title": "Brian Potter - Future of Construction, Ugly Modernism, & Environmental Review",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=m9ErXK5h-oU",
+      "video_id": "m9ErXK5h-oU",
+      "duration": "8758.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 151,
+      "slug": "151_bryan_caplan_feminists_billionaires_and_demagogues",
+      "title": "Bryan Caplan - Feminists, Billionaires, and Demagogues",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=jmWmrx6ki9Q",
+      "video_id": "jmWmrx6ki9Q",
+      "duration": "7552.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 152,
+      "slug": "152_tyler_cowen_why_society_will_collapse_why_sex_is_pessimistic",
+      "title": "Tyler Cowen - Why Society Will Collapse & Why Sex is Pessimistic",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=AHkmEnl55jo",
+      "video_id": "AHkmEnl55jo",
+      "duration": "5697.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 153,
+      "slug": "153_charles_c_mann_americas_before_columbus_scientific_wizardry",
+      "title": "Charles C. Mann - Americas Before Columbus & Scientific Wizardry",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=1Z35PqPQU2M",
+      "video_id": "1Z35PqPQU2M",
+      "duration": "5550.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 154,
+      "slug": "154_austin_vernon_energy_superabundance_starship_missiles_finding_alpha",
+      "title": "Austin Vernon - Energy Superabundance, Starship Missiles, & Finding Alpha",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=YSgfu7XprIM",
+      "video_id": "YSgfu7XprIM",
+      "duration": "8653.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 155,
+      "slug": "155_steve_hsu_intelligence_embryo_selection_the_future_of_humanity",
+      "title": "Steve Hsu - Intelligence, Embryo Selection, & The Future of Humanity",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=80BhjRh-Q-s",
+      "video_id": "80BhjRh-Q-s",
+      "duration": "8483.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 156,
+      "slug": "156_will_macaskill_longtermism_effective_altruism_history_technology",
+      "title": "Will MacAskill - Longtermism, Effective Altruism, History, & Technology",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=SMEfl5maB8k",
+      "video_id": "SMEfl5maB8k",
+      "duration": "3423.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 157,
+      "slug": "157_joseph_carlsmith_utopia_ai_infinite_ethics",
+      "title": "Joseph Carlsmith - Utopia, AI, & Infinite Ethics",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=M3TUe4zUCKk",
+      "video_id": "M3TUe4zUCKk",
+      "duration": "5530.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 158,
+      "slug": "158_fin_moorhouse_longtermism_space_entrepreneurship",
+      "title": "Fin Moorhouse - Longtermism, Space, & Entrepreneurship",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=snMWoyvmkhg",
+      "video_id": "snMWoyvmkhg",
+      "duration": "8443.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 159,
+      "slug": "159_alexander_mikaberidze_napoleon_war_progress_and_global_order",
+      "title": "Alexander Mikaberidze - Napoleon, War, Progress, and Global Order",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=E65CHSV6Ads",
+      "video_id": "E65CHSV6Ads",
+      "duration": "5029.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 160,
+      "slug": "160_sam_bankman_fried_crypto_ftx_altruism_leadership",
+      "title": "Sam Bankman-Fried - Crypto, FTX, Altruism, & Leadership",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=5Af0d2DbK5w",
+      "video_id": "5Af0d2DbK5w",
+      "duration": "2771.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 161,
+      "slug": "161_agustin_lebron_trading_crypto_and_adverse_selection",
+      "title": "Agustin Lebron - Trading, Crypto, and Adverse Selection",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=3BBNG0TlVwM",
+      "video_id": "3BBNG0TlVwM",
+      "duration": "3881.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 162,
+      "slug": "162_ananyo_bhattacharya_john_von_neumann_jewish_genius_and_nuclear_war",
+      "title": "Ananyo Bhattacharya - John von Neumann, Jewish Genius, and Nuclear War",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=faZI6OBOopE",
+      "video_id": "faZI6OBOopE",
+      "duration": "3285.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 163,
+      "slug": "163_manifold_markets_founder_predictions_markets_revolutionizing_governance",
+      "title": "Manifold Markets Founder - Predictions Markets & Revolutionizing Governance",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=XoRXrnHg084",
+      "video_id": "XoRXrnHg084",
+      "duration": "3054.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 164,
+      "slug": "164_pradyu_prasad_imperial_japan_the_god_emperor_and_militarization_in_the_modern_wo",
+      "title": "Pradyu Prasad - Imperial Japan, the God Emperor, and Militarization in the Modern World",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=rsJxlybPByM",
+      "video_id": "rsJxlybPByM",
+      "duration": "6001.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 165,
+      "slug": "165_razib_khan_genomics_intelligence_and_the_church_of_science",
+      "title": "Razib Khan - Genomics, Intelligence, and The Church of Science",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=sh04dEtBAoE",
+      "video_id": "sh04dEtBAoE",
+      "duration": "3881.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 166,
+      "slug": "166_jimmy_soni_peter_thiel_elon_musk_and_the_paypal_mafia",
+      "title": "Jimmy Soni - Peter Thiel, Elon Musk, and the Paypal Mafia",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=OEcOUgXvz7g",
+      "video_id": "OEcOUgXvz7g",
+      "duration": "4102.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 167,
+      "slug": "167_bryan_caplan_labor_econ_poverty_mental_illness",
+      "title": "Bryan Caplan - Labor Econ, Poverty, & Mental Illness",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=i70j-ZCPhXg",
+      "video_id": "i70j-ZCPhXg",
+      "duration": "3821.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 168,
+      "slug": "168_richard_hanania_foreign_policy_fertility_and_experts",
+      "title": "Richard Hanania - Foreign Policy, Fertility, and Experts",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=QyWs-XomCk0",
+      "video_id": "QyWs-XomCk0",
+      "duration": "3723.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 169,
+      "slug": "169_david_deutsch_ai_america_fun_bayes",
+      "title": "David Deutsch - AI, America, Fun, & Bayes",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=EVwjofV5TgU",
+      "video_id": "EVwjofV5TgU",
+      "duration": "5047.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 170,
+      "slug": "170_byrne_hobart_optionality_stagnation_and_secret_societies",
+      "title": "Byrne Hobart - Optionality, Stagnation, and Secret Societies",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ZI_tDsOhd5I",
+      "video_id": "ZI_tDsOhd5I",
+      "duration": "4293.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 171,
+      "slug": "171_david_friedman_dating_markets_legal_systems_bitcoin_and_automation",
+      "title": "David Friedman - Dating Markets, Legal Systems, Bitcoin, and Automation",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=3svashDgB50",
+      "video_id": "3svashDgB50",
+      "duration": "5034.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 172,
+      "slug": "172_sarah_fitz_claridge_taking_children_seriously_the_lunar_society_15",
+      "title": "Sarah Fitz-Claridge - Taking Children Seriously | The Lunar Society #15",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=BV6Qice6Lrc",
+      "video_id": "BV6Qice6Lrc",
+      "duration": "3495.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 173,
+      "slug": "173_michael_huemer_anarchy_capitalism_and_progress",
+      "title": "Michael Huemer - Anarchy, Capitalism, and Progress",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=--xKsIgv7tE",
+      "video_id": "--xKsIgv7tE",
+      "duration": "5825.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 174,
+      "slug": "174_uncle_bob_the_long_reach_of_code_automating_programming_and_developing_coding_ta",
+      "title": "Uncle Bob - The Long Reach of Code, Automating Programming, and Developing Coding Talent",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ldTPVd3vO9Q",
+      "video_id": "ldTPVd3vO9Q",
+      "duration": "2751.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 175,
+      "slug": "175_scott_aaronson_quantum_computing_complexity_and_creativity",
+      "title": "Scott Aaronson - Quantum Computing, Complexity, and Creativity",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Uy5fvwdw8x4",
+      "video_id": "Uy5fvwdw8x4",
+      "duration": "5226.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 176,
+      "slug": "176_scott_young_ultralearning_the_mit_challenge",
+      "title": "Scott Young - Ultralearning, The MIT Challenge",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=R5sBycV80c8",
+      "video_id": "R5sBycV80c8",
+      "duration": "5938.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 177,
+      "slug": "177_charles_murray_human_accomplishment_and_the_future_of_liberty_the_lunar_society_",
+      "title": "Charles Murray - Human Accomplishment and the Future of Liberty | The Lunar Society #10",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=yYtyKmPZBto",
+      "video_id": "yYtyKmPZBto",
+      "duration": "6739.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 178,
+      "slug": "178_alex_tabarrok_prizes_prices_and_public_goods",
+      "title": "Alex Tabarrok - Prizes, Prices, and Public Goods",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=i75KvXVrtLw",
+      "video_id": "i75KvXVrtLw",
+      "duration": "5162.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 179,
+      "slug": "179_caleb_watney_america_s_innovation_engine",
+      "title": "Caleb Watney - America's Innovation Engine",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Ayewh_O0LPQ",
+      "video_id": "Ayewh_O0LPQ",
+      "duration": "3307.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 180,
+      "slug": "180_robin_hanson_the_long_view_and_the_elephant_in_the_brain",
+      "title": "Robin Hanson - The Long View and The Elephant in the Brain",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=aagyRGKv66g",
+      "video_id": "aagyRGKv66g",
+      "duration": "6030.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 181,
+      "slug": "181_jason_crawford_the_roots_of_progress_the_history_of_technology",
+      "title": "Jason Crawford - The Roots of Progress & the History of Technology",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=otyrj5SnS4I",
+      "video_id": "otyrj5SnS4I",
+      "duration": "2918.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 182,
+      "slug": "182_matja_leonardis_science_identity_and_probability",
+      "title": "Matjaž Leonardis - Science, Identity and Probability",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=fTfDZO-p5Fo",
+      "video_id": "fTfDZO-p5Fo",
+      "duration": "2073.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 183,
+      "slug": "183_tyler_cowen_the_great_reset",
+      "title": "Tyler Cowen - The Great Reset",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ayUZreGysTo",
+      "video_id": "ayUZreGysTo",
+      "duration": "2802.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 184,
+      "slug": "184_bryan_caplan_nurturing_orphaned_ideas_education_and_ubi",
+      "title": "Bryan Caplan - Nurturing Orphaned Ideas, Education, and UBI",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=r4AkTmqvWzM",
+      "video_id": "r4AkTmqvWzM",
+      "duration": "3433.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 185,
+      "slug": "185_rubik_s_cube_encryption_demo",
+      "title": "Rubik's Cube Encryption Demo",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=fAaxahG39Dk",
+      "video_id": "fAaxahG39Dk",
+      "duration": "67.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 2025,
+      "slug": "2025_2025_models_will_be_more_like_coworkers_than_search_engines_openai_cofounder_joh",
+      "title": "2025 models will be more like coworkers than search engines – OpenAI cofounder John Schulman",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=1fmcdz2EO_c",
+      "video_id": "1fmcdz2EO_c",
+      "duration": "336.0",
+      "channel": "NA"
+    }
+  ]
+}
