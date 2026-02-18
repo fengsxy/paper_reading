@@ -115,3 +115,8 @@ Daily AI/ML highlights from Hacker News
 **Total: 20 papers + 7 research docs + 1 essay + 4 RSS digests**
 
 Updated daily at 8:00 AM Pacific
+
+## Timelines
+
+- 张小珺: /transcripts/xiaojun/
+- Dwarkesh: /transcripts/dwarkesh/
