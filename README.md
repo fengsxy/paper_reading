@@ -34,20 +34,6 @@ Daily curated papers pulled from Scholar Inbox.
 
 Index: [scholar_inbox/](scholar_inbox/)
 
-## 🔬 Research Notes
-
-深度研究调研文档
-
-| 文档 | 内容 |
-|------|------|
-| [Overnight Summary](research/overnight_summary.md) | 一夜研究总结：核心收获与下一步 |
-| [Karpathy Insights](research/karpathy_insights.md) | Karpathy 最新项目分析 (nanochat, hn-time-capsule) |
-| [Ordering Theory Draft](research/ordering_theory_draft.md) | dLLM Ordering 的信息论框架草稿 |
-| [Answer-Anchored CoT Experiment](research/answer_anchored_cot_experiment.md) | 实验设计：先给答案再填 CoT |
-| [dLLM Codebase Survey](research/dllm_codebase_survey.md) | 主流 dLLM 代码库评估 (LLaDA, Dream, MDLM...) |
-| [Token Difficulty Related Work](research/token_difficulty_related_work.md) | Token Difficulty 相关工作调研 |
-| [Ordering Paper Outline](research/ordering_paper_outline.md) | Ordering 论文大纲草稿 |
-
 ## 📡 Karpathy RSS Digest
 
 Curated picks from [Andrej Karpathy's RSS feeds](https://youmind.com/rss/pack/andrej-karpathy-curated-rss) - 92 sources covering AI, tech, and independent blogs.
