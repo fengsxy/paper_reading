@@ -90,18 +90,38 @@ def format_time(seconds):
 
 
 def format_transcript(result, fmt="text"):
+    # Handle both dict and Pydantic objects
+    if hasattr(result, 'model_dump'):
+        result = result.model_dump()
+    elif hasattr(result, 'text') and not isinstance(result, dict):
+        # Pydantic object without model_dump
+        result = {"text": result.text, "segments": getattr(result, 'segments', []), "language": getattr(result, 'language', 'unknown')}
+    
     if fmt == "text":
-        return result["text"]
+        return result.get("text", str(result)) if isinstance(result, dict) else result
     elif fmt == "json":
-        return json.dumps(result, ensure_ascii=False, indent=2)
+        return json.dumps(result, ensure_ascii=False, indent=2, default=str)
     elif fmt == "markdown":
-        lines = [f"# Transcript\n\n**Language:** {result.get('language', 'unknown')}\n"]
-        for seg in result.get("segments", []):
-            start = format_time(seg.get("start", 0))
-            text = seg.get("text", "").strip()
-            lines.append(f"**[{start}]** {text}\n")
+        text = result.get("text", "") if isinstance(result, dict) else str(result)
+        lang = result.get("language", "unknown") if isinstance(result, dict) else "unknown"
+        segments = result.get("segments", []) if isinstance(result, dict) else []
+        
+        lines = [f"# Transcript\n\n**Language:** {lang}\n"]
+        if segments:
+            for seg in segments:
+                if hasattr(seg, 'start'):
+                    start = format_time(seg.start)
+                    seg_text = seg.text.strip() if hasattr(seg, 'text') else str(seg)
+                elif isinstance(seg, dict):
+                    start = format_time(seg.get("start", 0))
+                    seg_text = seg.get("text", "").strip()
+                else:
+                    continue
+                lines.append(f"**[{start}]** {seg_text}\n")
+        else:
+            lines.append(text)
         return "\n".join(lines)
-    return result["text"]
+    return result.get("text", str(result)) if isinstance(result, dict) else str(result)
 
 
 def main():
