@@ -125,9 +125,8 @@ def audio_duration_seconds(path: Path) -> float:
     return float(out)
 
 
-def to_mp3(src: Path, dst: Path) -> None:
-    # Some YouTube audio streams have timestamp discontinuities.
-    # Force monotonic timestamps during re-encode.
+def to_m4a(src: Path, dst: Path) -> None:
+    # Avoid MP3 muxer DTS issues by using M4A (AAC). OpenAI supports m4a.
     run([
         "ffmpeg",
         "-y",
@@ -138,44 +137,57 @@ def to_mp3(src: Path, dst: Path) -> None:
         "-vn",
         "-af",
         "aresample=async=1:first_pts=0",
-        "-acodec",
-        "libmp3lame",
-        "-q:a",
-        "5",
+        "-c:a",
+        "aac",
+        "-b:a",
+        "96k",
         str(dst),
         "-loglevel",
         "error",
     ])
 
 
-def segment_mp3(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
+def chunk_audio(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
+    """Chunk by re-encoding each segment with -ss/-t.
+
+    This avoids ffmpeg segment muxer timestamp pitfalls.
+    """
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_tmpl = str(out_dir / "part_%03d.mp3")
-    # Re-encode segments to avoid non-monotonic DTS issues that can happen with stream copy.
-    run([
-        "ffmpeg",
-        "-y",
-        "-fflags",
-        "+genpts",
-        "-i",
-        str(src),
-        "-f",
-        "segment",
-        "-segment_time",
-        str(segment_seconds),
-        "-reset_timestamps",
-        "1",
-        "-af",
-        "aresample=async=1:first_pts=0",
-        "-acodec",
-        "libmp3lame",
-        "-q:a",
-        "5",
-        out_tmpl,
-        "-loglevel",
-        "error",
-    ])
-    return sorted(out_dir.glob("part_*.mp3"))
+
+    total = audio_duration_seconds(src)
+    chunks: list[Path] = []
+    start = 0
+    idx = 0
+    while start < int(total) + 1:
+        out = out_dir / f"part_{idx:03d}.m4a"
+        run([
+            "ffmpeg",
+            "-y",
+            "-fflags",
+            "+genpts",
+            "-ss",
+            str(start),
+            "-t",
+            str(segment_seconds),
+            "-i",
+            str(src),
+            "-vn",
+            "-af",
+            "aresample=async=1:first_pts=0",
+            "-c:a",
+            "aac",
+            "-b:a",
+            "96k",
+            str(out),
+            "-loglevel",
+            "error",
+        ])
+        if out.exists() and out.stat().st_size > 0:
+            chunks.append(out)
+        start += segment_seconds
+        idx += 1
+
+    return chunks
 
 
 def fmt_time(seconds: float) -> str:
@@ -330,11 +342,11 @@ def main() -> None:
 
         with tempfile.TemporaryDirectory() as td:
             td_path = Path(td)
-            mp3 = td_path / f"{item.slug}.mp3"
-            to_mp3(audio_file, mp3)
+            m4a = td_path / f"{item.slug}.m4a"
+            to_m4a(audio_file, m4a)
 
             seg_dir = td_path / "chunks"
-            chunks = segment_mp3(mp3, seg_dir, args.segment_seconds)
+            chunks = chunk_audio(m4a, seg_dir, args.segment_seconds)
 
             merged = {"segments": []}
             offset = 0.0
