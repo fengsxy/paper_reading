@@ -1,0 +1,236 @@
+{
+  "series": "whynot",
+  "generated_at": "2026-02-18T18:25:12Z",
+  "items": [
+    {
+      "episode": 1,
+      "slug": "1_翁家翌_openai_gpt_强化学习_infra_后训练_天授_tuixue_开源_cmu_清华_whynottv_podcast_4",
+      "title": "翁家翌：OpenAI，GPT，强化学习，Infra，后训练，天授，tuixue，开源，CMU，清华｜WhynotTV Podcast #4",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=I0DrcsDf3Os",
+      "video_id": "I0DrcsDf3Os",
+      "duration": "7366.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 2,
+      "slug": "2_陈天奇_机器学习系统_长期主义_初心_xgboost_mxnet_tvm_mlc_llm_octoml_cmu_uw_acm班",
+      "title": "陈天奇：机器学习系统，长期主义，初心，XGBoost，MXNet，TVM，MLC LLM，OctoML，CMU，UW，ACM班",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=jvqsvbntEFQ",
+      "video_id": "jvqsvbntEFQ",
+      "duration": "9611.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 3,
+      "slug": "3_胡渊鸣_meshy_ai_太极_mit_清华姚班_图形学_物理仿真模拟_开源_商业化_勇气_智慧_whynottv_podcast_2",
+      "title": "胡渊鸣：Meshy AI，太极，MIT，清华姚班，图形学，物理仿真模拟，开源，商业化，勇气 ，智慧 ｜ WhynotTV Podcast #2",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=6EyUOLGsuk4",
+      "video_id": "6EyUOLGsuk4",
+      "duration": "11060.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 4,
+      "slug": "4_杨硕_妙动科技_特斯拉optimus_cmu大疆_无人机_人形机器人_whynottv_podcast_1",
+      "title": "杨硕：妙动科技，特斯拉Optimus，CMU大疆，无人机，人形机器人 ｜ WhynotTV Podcast #1",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=Zn8EYNFRMGs",
+      "video_id": "Zn8EYNFRMGs",
+      "duration": "5382.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 5,
+      "slug": "5_机器人博士前两年总结_任尔东西南北风",
+      "title": "机器人博士前两年总结——任尔东西南北风",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ONjYMuZruys",
+      "video_id": "ONjYMuZruys",
+      "duration": "1273.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 6,
+      "slug": "6_我做出了铁甲钢拳里的机器人_实现了12岁的梦想",
+      "title": "我做出了铁甲钢拳里的机器人！实现了12岁的梦想！！！",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=2__B8p_EKX4",
+      "video_id": "2__B8p_EKX4",
+      "duration": "772.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 7,
+      "slug": "7_赴美读博_人生何处不青山",
+      "title": "赴美读博-人生何处不青山",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=lGeDJ9wKvcA",
+      "video_id": "lGeDJ9wKvcA",
+      "duration": "606.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 8,
+      "slug": "8_人工智能vs人类_谁才是更好的英语口语老师",
+      "title": "人工智能vs人类！ 谁才是更好的英语口语老师？",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=J5G_MYAv_ks",
+      "video_id": "J5G_MYAv_ks",
+      "duration": "681.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 9,
+      "slug": "9_如何从零准备一次留学申请_mit哈佛cmu录取经验分享",
+      "title": "如何从零准备一次留学申请-MIT哈佛CMU录取经验分享",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=XvLzAxjCAUI",
+      "video_id": "XvLzAxjCAUI",
+      "duration": "795.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 10,
+      "slug": "10_我被mit哈佛cmu录取了_计算机博士申请季纪实",
+      "title": "我被MIT哈佛CMU录取了！计算机博士申请季纪实",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=QBfwZwGn7-M",
+      "video_id": "QBfwZwGn7-M",
+      "duration": "890.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 11,
+      "slug": "11_t1_vs_jdg半决赛现场_我真的在努力控温了",
+      "title": "T1 vs JDG半决赛现场！我真的在努力控温了！",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=8W7J4jLAakY",
+      "video_id": "8W7J4jLAakY",
+      "duration": "598.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 12,
+      "slug": "12_当_无可奉告_无可奉告_反思与告别",
+      "title": "当「无可奉告」无可奉告——反思与告别",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=gs9s7oETqHQ",
+      "video_id": "gs9s7oETqHQ",
+      "duration": "990.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 13,
+      "slug": "13_假如我不再敷衍",
+      "title": "假如我不再敷衍",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=HviUbj2r8Zw",
+      "video_id": "HviUbj2r8Zw",
+      "duration": "491.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 14,
+      "slug": "14_回到成都_回到我的家",
+      "title": "回到成都，回到我的家",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ZFQW0yEc7PM",
+      "video_id": "ZFQW0yEc7PM",
+      "duration": "390.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 15,
+      "slug": "15_高考686分学长手把手教你做错题本_附pdf电子版_错题本经验分享_高考错题本教程_whynottv_neal",
+      "title": "高考686分学长手把手教你做错题本-附PDF电子版-错题本经验分享-高考错题本教程【WhynotTV】【Neal】",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=mIISR3foXfU",
+      "video_id": "mIISR3foXfU",
+      "duration": "608.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 16,
+      "slug": "16_我采访到交大最壮的男人_从另一个角度看世界",
+      "title": "我采访到交大最壮的男人--从另一个角度看世界",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=ew_hMqXLC0s",
+      "video_id": "ew_hMqXLC0s",
+      "duration": "1199.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 17,
+      "slug": "17_暑假无聊_这是一份上交学长的终极暑假指南_请查收",
+      "title": "暑假无聊？这是一份上交学长的终极暑假指南，请查收！",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=j7Bp2Jl7zME",
+      "video_id": "j7Bp2Jl7zME",
+      "duration": "512.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 18,
+      "slug": "18_八个男人共处一室_会发生什么_杭州vlog_狼人杀_freestyle_battle_whynottv_neal_vlog_6",
+      "title": "八个男人共处一室？会发生什么？【杭州vlog】 | 狼人杀 | freestyle battle | WhynotTV | Neal |【vlog#6】",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=qga6YJrAX1k",
+      "video_id": "qga6YJrAX1k",
+      "duration": "1180.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 19,
+      "slug": "19_我在上海交大考试周的一天_健身_study_for_final_one_day_with_me_和我过一天_whynottv_vlog_5",
+      "title": "我在上海交大考试周的一天 | 健身 | Study for final | One day with me 和我过一天【WhynotTV】【vlog#5】",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=mpf9WWgDyGI",
+      "video_id": "mpf9WWgDyGI",
+      "duration": "568.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 20,
+      "slug": "20_实录_我是怎么被自己的网站榨干的_vlog_4_whynottv_neal_canon_m50",
+      "title": "实录 | 我是怎么被自己的网站榨干的？【Vlog#4】【WhynotTV】【Neal】【Canon-M50】",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=KA6-QJaqKnA",
+      "video_id": "KA6-QJaqKnA",
+      "duration": "642.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 21,
+      "slug": "21_分享_上交学长教你如何在高考前3天踢好临门一脚_上海交通大学_干货_考前焦虑_高考加油_whynottv_neal_vlog_3",
+      "title": "分享 | 上交学长教你如何在高考前3天踢好临门一脚【上海交通大学】【干货】【考前焦虑】【高考加油】【WhynotTV】【Neal】【vlog#3】",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=B0lnnhA4McE",
+      "video_id": "B0lnnhA4McE",
+      "duration": "582.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 22,
+      "slug": "22_the_principal_teaches_you_how_to_relieve_anxiety_30_days_before_the_college_entr",
+      "title": "The principal teaches you how to relieve anxiety 30 days before the college entrance examination",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=PyFn9VnZCCQ",
+      "video_id": "PyFn9VnZCCQ",
+      "duration": "418.0",
+      "channel": "NA"
+    },
+    {
+      "episode": 23,
+      "slug": "23_一年学费17万的中国大学是什么样_昆山杜克大学游记_vlog_1",
+      "title": "一年学费17万的中国大学是什么样？【昆山杜克大学游记】【vlog#1】",
+      "date": "NA",
+      "url": "https://www.youtube.com/watch?v=uqNEthI6Df8",
+      "video_id": "uqNEthI6Df8",
+      "duration": "941.0",
+      "channel": "NA"
+    }
+  ]
+}

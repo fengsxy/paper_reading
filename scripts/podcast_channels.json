@@ -17,5 +17,11 @@
     "url": "https://www.youtube.com/@%E7%BD%97%E6%B0%B8%E6%B5%A9%E7%9A%84%E5%8D%81%E5%AD%97%E8%B7%AF%E5%8F%A3/videos",
     "language": "zh",
     "notes": "TODO: fill exact YouTube channel/videos URL"
+  },
+  {
+    "series": "whynot",
+    "name": "WhynotTV",
+    "url": "https://www.youtube.com/@whynottv1999/videos",
+    "language": "zh"
   }
 ]
