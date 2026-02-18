@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local/agent workspace (never commit)
+.openclaw/
+.xiaohongshu/
+memory/
+config/
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+cookies.json
+youtube_cookies.txt
+email_draft_greg.md
+idea7_tc_deep_dive.md
+
+tools/
+xhs_*.py
+xhs_*.png
+xiaohongshu-*
+xiaohongshu_post_draft.md
+
+# Downloads / large binaries
+/tmp/
+data/audio/
+*.mp3
+*.webm

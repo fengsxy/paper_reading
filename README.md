@@ -2,6 +2,10 @@
 
 Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Riverside
 
+## 🧭 Timeline
+
+- [张小珺访谈 Timeline](transcripts/xiaojun/)
+
 ## 🆕 最近更新
 
 | 日期 | 更新内容 |
