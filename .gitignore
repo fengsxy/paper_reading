@@ -31,3 +31,8 @@ xiaohongshu_post_draft.md
 data/audio/
 *.mp3
 *.webm
+.logs/
+.tmp/
+
+# Blog repo should not track pipeline code
+scripts/
