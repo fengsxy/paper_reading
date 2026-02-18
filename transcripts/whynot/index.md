@@ -12,5 +12,5 @@ permalink: /transcripts/whynot/
 | Episode | Guest | Title | Transcript | Analysis |
 |---:|---|---|---|---|
 {% for p in items %}
-| {{ p.episode }} | {{ p.guest | default: "" }} | {{ p.title }} | [Transcript]({{ p.permalink | relative_url }}) | [Analysis]({{ p.analysis_url | relative_url }}) |
+| {{ p.episode }} | {{ p.guest | default: "" }} | {{ p.title }} | [Transcript]({{ p.permalink | relative_url }}) | {% if p.analysis_url %}[Analysis]({{ p.analysis_url | relative_url }}){% else %}-{% endif %} |
 {% endfor %}

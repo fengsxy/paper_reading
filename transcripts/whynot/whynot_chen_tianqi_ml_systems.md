@@ -1,9 +1,13 @@
 ---
+layout: default
 type: transcript
 series: whynot
 episode: 2
+guest: "陈天奇"
 title: 陈天奇：机器学习系统，长期主义，初心，XGBoost，MXNet，TVM，MLC LLM，OctoML，CMU，UW，ACM班
 source_url: https://www.youtube.com/watch?v=jvqsvbntEFQ
+analysis_url: /transcripts/whynot/whynot_chen_tianqi_ml_systems.analysis/
+permalink: /transcripts/whynot/whynot_chen_tianqi_ml_systems/
 ---
 
 # Transcript: EP2 - 陈天奇：机器学习系统，长期主义，初心，XGBoost，MXNet，TVM，MLC LLM，OctoML，CMU，UW，ACM班

@@ -5,6 +5,8 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 ## 🧭 Timeline
 
 - [张小珺访谈 Timeline](transcripts/xiaojun/)
+- [WhynotTV Timeline](transcripts/whynot/)
+- [Dwarkesh Timeline](transcripts/dwarkesh/)
 
 ## 🆕 最近更新
 
