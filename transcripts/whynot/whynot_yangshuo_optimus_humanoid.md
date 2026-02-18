@@ -3,9 +3,11 @@ layout: default
 type: transcript
 series: whynot
 episode: 1
-guest: "杨硕"
-title: 杨硕：妙动科技，特斯拉Optimus，CMU大疆，无人机，人形机器人｜WhynotTV Podcast #1
-source_url: https://www.youtube.com/watch?v=Zn8EYNFRMGs
+date: 2026-02-18
+guest: 杨硕
+org: 妙动科技/Tesla/CMU
+title: "EP1 杨硕（妙动科技/Tesla/CMU）- Optimus 与人形机器人创业路径"
+source_url: "https://www.youtube.com/watch?v=Zn8EYNFRMGs"
 analysis_url: /transcripts/whynot/whynot_yangshuo_optimus_humanoid.analysis/
 permalink: /transcripts/whynot/whynot_yangshuo_optimus_humanoid/
 ---

@@ -1,29 +1,32 @@
 ---
 layout: default
-title: "WhynotTV Podcast #4 Analysis - 翁家翌"
-series: whynot
 type: analysis
+series: whynot
 episode: 4
-guest: "翁家翌"
+date: 2026-02-18
+guest: 翁家翌
+org: OpenAI
+title: "EP4 翁家翌（OpenAI）- 分析"
+source_url: "https://www.youtube.com/watch?v=I0DrcsDf3Os"
 transcript_url: /transcripts/whynot/004_whynottv_wengjiayi_openai_rl_infra/
 permalink: /transcripts/whynot/004_whynottv_wengjiayi_openai_rl_infra.analysis/
 ---
 
 # Analysis: WhynotTV Podcast #4
 
-## 核心观点
+## 0. 3-5 句摘要
 
 这期真正有价值的地方，是把“模型效果”与“基础设施能力”放在同一张账本里讨论。很多团队会把后训练当成算法问题，但嘉宾反复强调：如果实验调度、数据管道、回滚机制不稳定，算法优势很难转化为可持续收益。换句话说，后训练不是单点突破，而是系统工程。你可以把它理解为三层耦合：目标定义（要优化什么）、训练机制（怎么优化）、平台能力（能否稳定复现并上线）。
 
 另一个关键点是，研究团队和 infra 团队之间的接口设计，决定了迭代速度上限。接口不清晰时，研究结论会在落地阶段“蒸发”；接口清晰时，哪怕单次改进不大，也能形成稳定复利。
 
-## 信息密度拆解
+## 1. 反共识/非显然观点
 
 - 研究层：后训练并不是“再喂更多数据”，而是要把奖励信号、偏好对齐、失效模式分析串成闭环。
 - 系统层：吞吐、稳定性、成本三角不可同时最大化，必须有明确优先级。
 - 组织层：研究与工程要共享统一指标集，否则会出现“离线变好、线上变差”的错配。
 
-## 对研究/工作流的可执行启发
+## 2. 可学习的点（可迁移的方法论）
 
 - 建立双指标看板：每个实验同时记录“能力收益指标 + 系统成本指标”。
 - 引入实验分级：探索性实验（快）与上线前实验（稳）分开治理。
@@ -35,3 +38,11 @@ permalink: /transcripts/whynot/004_whynottv_wengjiayi_openai_rl_infra.analysis/
 - 需要验证：当规模继续扩大时，当前 infra 组织方式是否仍具可扩展性。
 - 需要验证：后训练收益在不同任务域（编码、推理、多语言）是否一致。
 - 需要验证：系统复杂度上升后，故障恢复时间是否吞噬了模型迭代收益。
+
+## 3. 提问技巧（采访方法）
+
+待基于完整 transcript 精读补充（含时间戳 ref）。
+
+## 4. 可进一步验证/挖坑
+
+待基于完整 transcript 精读补充（含时间戳 ref）。

@@ -3,9 +3,11 @@ layout: default
 type: analysis
 series: whynot
 episode: 3
-guest: "胡渊鸣"
-title: 胡渊鸣：Meshy AI，太极，MIT，清华姚班，图形学，物理仿真模拟，开源，商业化，勇气，智慧｜WhynotTV Podcast #2
-source_url: https://www.youtube.com/watch?v=6EyUOLGsuk4
+date: 2026-02-18
+guest: 胡渊鸣
+org: Meshy/Taichi
+title: "EP3 胡渊鸣（Meshy/Taichi）- 分析"
+source_url: "https://www.youtube.com/watch?v=6EyUOLGsuk4"
 transcript_url: /transcripts/whynot/whynot_huyuanming_meshy_taichi/
 permalink: /transcripts/whynot/whynot_huyuanming_meshy_taichi.analysis/
 ---

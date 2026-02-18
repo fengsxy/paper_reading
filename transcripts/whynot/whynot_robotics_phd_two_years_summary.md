@@ -1,9 +1,15 @@
 ---
+layout: default
 type: transcript
 series: whynot
 episode: 5
-title: 机器人博士前两年总结——任尔东西南北风
-source_url: https://www.youtube.com/watch?v=ONjYMuZruys
+date: 2026-02-18
+guest: WhynotTV
+org: Robotics PhD
+title: "EP5 WhynotTV（Robotics PhD）- 机器人博士前两年总结——任尔东西南北风"
+source_url: "https://www.youtube.com/watch?v=ONjYMuZruys"
+analysis_url: /transcripts/whynot/whynot_robotics_phd_two_years_summary.analysis/
+permalink: /transcripts/whynot/whynot_robotics_phd_two_years_summary/
 ---
 
 # Transcript: EP5 - 机器人博士前两年总结——任尔东西南北风
