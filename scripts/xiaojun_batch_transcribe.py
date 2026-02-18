@@ -46,6 +46,21 @@ def run(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
+def run_retry(cmd: list[str], tries: int = 3, sleep_seconds: int = 10) -> None:
+    last = None
+    for i in range(tries):
+        try:
+            run(cmd)
+            return
+        except subprocess.CalledProcessError as e:
+            last = e
+            if i < tries - 1:
+                print(f"[warn] command failed, retry {i+1}/{tries}: {' '.join(cmd)}")
+                subprocess.run(["bash", "-lc", f"sleep {sleep_seconds}"], check=False)
+    raise last  # type: ignore[misc]
+
+
+
 def ensure_deps() -> None:
     for bin_name in ["yt-dlp", "ffmpeg", "ffprobe"]:
         if subprocess.call(["bash", "-lc", f"command -v {bin_name} >/dev/null 2>&1"]) != 0:
@@ -74,11 +89,25 @@ def download_audio(item: Item, audio_dir: Path, cookies: Path) -> Path:
     audio_dir.mkdir(parents=True, exist_ok=True)
     # Prefer deterministic filename, but keep original container (webm/m4a)
     out_tmpl = str(audio_dir / f"{item.slug}.%(ext)s")
-    cmd = ["yt-dlp", "-f", "bestaudio", "-o", out_tmpl]
+    cmd = [
+        "yt-dlp",
+        "-f",
+        "bestaudio",
+        "-o",
+        out_tmpl,
+        "--no-progress",
+        "--retries",
+        "10",
+        "--fragment-retries",
+        "10",
+        "--retry-sleep",
+        "5",
+    ]
     if cookies.exists():
         cmd += ["--cookies", str(cookies)]
     cmd.append(item.url)
-    run(cmd)
+
+    run_retry(cmd, tries=3, sleep_seconds=15)
 
     # Find the downloaded file
     candidates = sorted(audio_dir.glob(f"{item.slug}.*"))
@@ -226,6 +255,7 @@ def main() -> None:
     ap.add_argument("--cookies", type=Path, default=DEFAULT_COOKIES)
     ap.add_argument("--language", default="zh")
     ap.add_argument("--segment-seconds", type=int, default=900)
+    ap.add_argument("--download-missing", action="store_true", help="if audio missing, download via yt-dlp")
     args = ap.parse_args()
 
     ensure_deps()
@@ -247,7 +277,14 @@ def main() -> None:
         if candidates:
             audio_file = max(candidates, key=lambda p: p.stat().st_size)
         else:
-            audio_file = download_audio(item, args.audio_dir, args.cookies)
+            if not args.download_missing:
+                print(f"[skip missing audio] {item.slug} (pass --download-missing to auto-download)")
+                continue
+            try:
+                audio_file = download_audio(item, args.audio_dir, args.cookies)
+            except Exception as e:
+                print(f"[error download] {item.slug}: {e}")
+                continue
 
         with tempfile.TemporaryDirectory() as td:
             td_path = Path(td)
