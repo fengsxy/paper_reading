@@ -1,0 +1,843 @@
+{
+  "admin_proceedings_msg": "",
+  "conf_notification_text": "",
+  "current_digest_date": "2026-02-08",
+  "custom_digest_range": false,
+  "digest_df": [
+    {
+      "abbreviation": null,
+      "abstract": "Embedding models are a fundamental component of modern AI systems such as semantic search and retrieval-augmented generation. Recent advances in large foundation models have substantially accelerated the development of embedding models, including those based on Large Language Models (LLMs), Vision Language Models (VLMs), and Multimodal LLMs. More recently, Large Diffusion Language Models (dLLMs) and Multimodal dLLMs have emerged as competitive alternatives to autoregressive models, offering advantages such as bidirectional attention and parallel generation. This progress naturally raises a critical yet unexplored question: can Multimodal dLLMs serve as effective multimodal embedding models? To answer this, we present the first systematic study of converting Multimodal dLLMs into embedding models. We evaluate state-of-the-art Multimodal dLLMs and Autoregressive VLMs across three categories of embedding tasks: classification, visual question answering, and information retrieval. Our results show that Multimodal dLLM embeddings generally underperform their autoregressive VLM counterparts. The stronger diffusion-based model, LaViDa, lags by only 3.5 points on classification, 2.5 points on VQA, and 4.4 points on retrieval tasks, whereas the other diffusion-based model, MMaDA, exhibits substantially larger performance gaps, exceeding 20 points across all tasks. Further analysis reveals insufficient image-text alignment in diffusion-based models, accounting for the observed limitations in their embedding performance.",
+      "affiliations": null,
+      "arxiv_id": "2602.06056",
+      "arxives_doi": null,
+      "authors": "Zihang Wang, Siyue Zhang, Yilun Zhao, Jingyi Yang, Tingyu Song, Anh Tuan Luu, Chen Zhao",
+      "bookmarked": 0,
+      "cache_file_name": "Wang2026ARXIV_Analyzing_Diffusion_and_Autoregressive.pdf",
+      "category": "Computer Science",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1770595200000,
+      "display_venue": "ArXiv 2026 (January 19)",
+      "first_page_image": {
+        "imageUrl": "/first_pages/4576881.jpeg"
+      },
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2602.06056",
+      "inferredHighlights": [
+        {
+          "endIndex": 806,
+          "highlightClass": "primary-highlight",
+          "startIndex": 700
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Wang2026ARXIV_Analyzing_Diffusion_and_Autoregressive.pdf",
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172224,
+      "paper_id": 4576881,
+      "paper_source_id": "2602.06056",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-19",
+      "ranking_score": 0.9847948834,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "cefb975ce698430692d089ff33c9c4a5ac79c4bb",
+      "shortened_authors": "Zihang Wang, Siyue Zhang, Yilun Zhao, Jingyi Yang, Tingyu Song, Anh Tuan Luu, Chen Zhao",
+      "source": "arxiv",
+      "summaries": {},
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Average performance on three multimodal embedding meta-tasks. Overall, Diffusion VLM embeddings underperform Autoregressive VLM embed-dings, despite the use of bidirectional attention; however, performance varies substantially across diffusion models, with LaViDa remaining competitive while MMaDA shows a substantial gap.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576881.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: General architectures of Autoregressive VLMs (left) and Diffusion VLMs (right). For both types of models, the input image is encoded into tokens by a vision encoder ( e.g., SigLIP (Tschannen et al., 2025) and VQ-GAN (Esser et al., 2021)) and interleaved with text tokens as input to the language model. Autoregressive VLMs are pretrained using causal attention for next-token prediction, while Diffusion VLMs are pretrained using bidirectional attention for token unmasking.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576881.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Performance comparison across 10 classification tasks. Best results are shown in bold for each task. Tasks highlighted in gray are in-domain, meaning their data have been included during contrastive fine-tuning.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576881.2.jpeg"
+        },
+        {
+          "caption": "Table 2: Performance comparison across 10 VQA tasks. Best results are shown in bold for each task. Tasks highlighted in yellow are in-domain, meaning their data have been included during contrastive fine-tuning.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576881.3.jpeg"
+        },
+        {
+          "caption": "Table 3: Performance comparison across 12 retrieval tasks. Best results are shown in bold for each task. Tasks highlighted in gray are in-domain, meaning their data have been included during contrastive fine-tuning.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576881.4.jpeg"
+        },
+        {
+          "caption": "Figure 3: Embedding performance of Autoregressive and Diffusion VLMs under varying fine-tuning data scales. VLM2Vec reflects performance after large-scale training on 662k samples aggregated across all meta-tasks. In contrast, the fine-tuning curves show that the majority of performance gains are achieved with substantially smaller datasets, with diminishing returns as data scale increases. As VLM2Vec is trained in a multi-task setting, it may underperform on certain tasks ( e.g., VQA) compared to other models fine-tuned specifically for a single meta-task.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576881.5.jpeg"
+        },
+        {
+          "caption": "Table 4: Performance comparison across 10 VQA tasks with frozen versus unfrozen vision encoders for MMaDA.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576881.6.jpeg"
+        },
+        {
+          "caption": "Figure 4: t-SNE visualization of query\u2013target embedding pairs on the MSCOCO_i2t dataset for LaViDa and LLaVA-1.6 fine-tuned with different amounts of training data. Circles represent query embeddings and triangles represent target embeddings. Dashed lines connect corresponding query\u2013target pairs, indicating their relative distances in the projected embedding space.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576881.7.jpeg"
+        }
+      ],
+      "title": "Analyzing Diffusion and Autoregressive Vision Language Models in Multimodal Embedding Space",
+      "total_likes": 0,
+      "total_read": 3,
+      "url": "https://arxiv.org/pdf/2602.06056",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2602.06056.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Attention efficiency is critical to large language model (LLM) inference. While prior advances optimize attention execution for individual requests (e.g., FlashAttention), production LLM serving relies on batching requests with highly heterogeneous sequence lengths for high serving throughput. This mismatch induces severe computation and I/O imbalance, exacerbates stragglers, and underutilizes GPU resources. We present PackInfer, a kernel-level attention framework that enables compute- and I/O-aware execution for heterogeneous batched inference. PackInfer orchestrates batched requests into load-balanced execution groups, effectively saturating GPU utilization by packing multiple requests into unified kernel launches. By constructing attention kernels directly over packed query-key regions, PackInfer eliminates redundant computation and balances thread-block execution. It then incorporates I/O-aware grouping that co-locates shared-prefix requests and reorganizes KV caches into group-contiguous layouts, reducing memory fragmentation and redundant data movement as generation evolves. Evaluations on real-world workloads show that PackInfer reduces inference latency by 13.0-20.1%, and improves throughput by 20% compared to the state-of-the-art FlashAttention.",
+      "affiliations": null,
+      "arxiv_id": "2602.06072",
+      "arxives_doi": null,
+      "authors": "Rui Ning, Wei Zhang, Fan Lai",
+      "bookmarked": 0,
+      "cache_file_name": "Ning2026ARXIV_PackInfer_Compute_and_I.pdf",
+      "category": "Computer Science",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9789012149,
+        0.8467682048,
+        0.7859433252,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1770595200000,
+      "display_venue": "ArXiv 2026 (February 3)",
+      "first_page_image": {
+        "imageUrl": "/first_pages/4576833.jpeg"
+      },
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2602.06072",
+      "inferredHighlights": [
+        {
+          "endIndex": 550,
+          "highlightClass": "primary-highlight",
+          "startIndex": 412
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Ning2026ARXIV_PackInfer_Compute_and_I.pdf",
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172176,
+      "paper_id": 4576833,
+      "paper_source_id": "2602.06072",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-02-03",
+      "ranking_score": 0.5732049964,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "15caa0cb7e7a04fcd7b817f37eee43d4911129ce",
+      "shortened_authors": "Rui Ning, Wei Zhang, Fan Lai",
+      "source": "arxiv",
+      "summaries": {},
+      "teaser_figures": [
+        {
+          "caption": "Table 3. Kernel utilization metrics.",
+          "figureNumber": 11,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.11.jpeg"
+        },
+        {
+          "caption": "Figure 9. Performance Breakdown by components.",
+          "figureNumber": 12,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.12.jpeg"
+        },
+        {
+          "caption": "Figure 2. PackInfer overview. It adaptively packs requests of heterogeneous input lengths into computation and I/O load-balanced groups.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.2.jpeg"
+        },
+        {
+          "caption": "Figure 3. Real-world inference workloads exhibit highly heterogeneous request lengths, with many shorter than 128 tokens.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.3.jpeg"
+        },
+        {
+          "caption": "Figure 4. Contiguous Memory Consolidation in PackInfer . PackIn-fer re-aligns scattered KV cache blocks into a unified, high-density buffer to maximize I/O throughput. A pre-allocated headroom is reserved for each request to accommodate future tokens.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.4.jpeg"
+        },
+        {
+          "caption": "Figure 5. PackInfer improves time-to-last-token (TTLT",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.5.jpeg"
+        },
+        {
+          "caption": "Figure 7. PackInfer improves serving performance for MoE model.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.6.jpeg"
+        },
+        {
+          "caption": "Table 2. PackInfer achieves better time-to-first-token (TTFT) latency (ms) across datasets and backends.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576833.7.jpeg"
+        },
+        {
+          "caption": "Figure 8. End-to-end throughput on Mistral and Qwen3 workloads, where P99 denotes the upper bound of throughput.",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.8.jpeg"
+        },
+        {
+          "caption": "Figure 6. PackInfer improves time-between-tokens (TBT) latency.",
+          "figureNumber": 9,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.9.jpeg"
+        },
+        {
+          "caption": "Figure 10. PackInfer consistently outperforms across group size and batch size settings.",
+          "figureNumber": 10,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.10.jpeg"
+        },
+        {
+          "caption": "Table 1. Context length imbalance introduces severe tail effects.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576833.1.jpeg"
+        },
+        {
+          "caption": "Figure 1. Heterogeneity reduces GPU utilization.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576833.0.jpeg"
+        }
+      ],
+      "title": "PackInfer: Compute- and I/O-Efficient Attention for Batched LLM Inference",
+      "total_likes": 0,
+      "total_read": 0,
+      "url": "https://arxiv.org/pdf/2602.06072",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2602.06072.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "The high computational demands of Large Language Models (LLMs) motivate methods that reduce parameter count and accelerate inference. In response, model pruning emerges as an effective strategy, yet current methods typically focus on a single dimension-depth or width. We introduce MoP (Mixture of Pruners), an iterative framework that unifies these dimensions. At each iteration, MoP generates two branches-pruning in depth versus pruning in width-and selects a candidate to advance the path. On LLaMA-2 and LLaMA-3, MoP advances the frontier of structured pruning, exceeding the accuracy of competing methods across a broad set of compression regimes. It also consistently outperforms depth-only and width-only pruning. Furthermore, MoP translates structural pruning into real speedup, reducing end-to-end latency by 39% at 40% compression. Finally, extending MoP to the vision-language model LLaVA-1.5, we notably improve computational efficiency and demonstrate that text-only recovery fine-tuning can restore performance even on visual tasks.",
+      "affiliations": null,
+      "arxiv_id": "2602.06127",
+      "arxives_doi": null,
+      "authors": "Bruno Lopes Yamamoto, Lucas Lauton de Alcantara, Victor Zacarias, Leandro Giusti Mugnaini, Keith Ando Ogawa, Lucas Pellicer, Rosimeire Pereira Costa, Edson Bollis, Anna Helena Reali Costa, Artur Jordao",
+      "bookmarked": 0,
+      "cache_file_name": "Yamamoto2026ARXIV_Compressing_LLMs_with_MoP.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9228955068,
+        0.9173856276,
+        0.9142097584,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1770595200000,
+      "display_venue": "ArXiv 2026 (February 5)",
+      "first_page_image": {
+        "imageUrl": "/first_pages/4576864.jpeg"
+      },
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2602.06127",
+      "inferredHighlights": [
+        {
+          "endIndex": 360,
+          "highlightClass": "primary-highlight",
+          "startIndex": 269
+        },
+        {
+          "endIndex": 492,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 362
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Yamamoto2026ARXIV_Compressing_LLMs_with_MoP.pdf",
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172207,
+      "paper_id": 4576864,
+      "paper_source_id": "2602.06127",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-02-05",
+      "ranking_score": 0.5037389144,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "dcb5c65b56db8475070b99c861c17e836b936d60",
+      "shortened_authors": "Bruno Lopes Yamamoto, Lucas Lauton de Alcantara, Victor Zacarias, Leandro Giusti Mugnaini, Keith Ando Ogawa, Lucas Pellicer, Rosimeire Pereira Costa, Edson Bollis, Anna Helena Reali Costa, Artur Jordao",
+      "source": "arxiv",
+      "summaries": {},
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Illustration of MoP combining depth pruning (removing transformer layers) and width pruning (removing attention heads and MLP neurons).",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576864.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Average accuracy on five standard commonsense benchmarks, comparing depth pruning, width pruning, and MoP (combining both) on LLaMA-2 7B. MoP achieves a Pareto improvement over single-dimension approaches.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576864.1.jpeg"
+        },
+        {
+          "caption": "Table 1. Performance comparison of path selection criteria for MoP on LLaMA 7B at a 30% compression ratio. We highlight the highest accuracy across criteria in bold.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576864.2.jpeg"
+        },
+        {
+          "caption": "Table 2. Performance of MoP relative to other state-of-the-art pruning methods. We highlight the best results in bold for each compression ratio and model.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576864.3.jpeg"
+        },
+        {
+          "caption": "Figure 3. Impact of pruning on LLaVA-1.5 7B with MoP and recovery with text-only fine-tuning. We present the mean accuracy of three runs for ScienceQA and VizWiz across varying compression ratios. Shaded regions denote the standard deviation.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576864.4.jpeg"
+        },
+        {
+          "caption": "re-Table 3. MoP results on LLaVA-1.5 7B across varying compression rates.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576864.5.jpeg"
+        }
+      ],
+      "title": "Compressing LLMs with MoP: Mixture of Pruners",
+      "total_likes": 1,
+      "total_read": 1,
+      "url": "https://arxiv.org/pdf/2602.06127",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2602.06127.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Despite the remarkable capabilities of Large Vision Language Models (LVLMs), they still lack detailed knowledge about specific entities. Retrieval-augmented Generation (RAG) is a widely adopted solution that enhances LVLMs by providing additional contexts from an external Knowledge Base. However, we observe that previous decoding methods for RAG are sub-optimal as they fail to sufficiently leverage multiple relevant contexts and suppress the negative effects of irrelevant contexts. To this end, we propose Relevance-aware Multi-context Contrastive Decoding (RMCD), a novel decoding method for RAG. RMCD outputs a final prediction by combining outputs predicted with each context, where each output is weighted based on its relevance to the question. By doing so, RMCD effectively aggregates useful information from multiple relevant contexts while also counteracting the negative effects of irrelevant ones. Experiments show that RMCD consistently outperforms other decoding methods across multiple LVLMs, achieving the best performance on three knowledge-intensive visual question-answering benchmarks. Also, RMCD can be simply applied by replacing the decoding method of LVLMs without additional training. Analyses also show that RMCD is robust to the retrieval results, consistently performing the best across the weakest to the strongest retrieval results. Code is available at <a href='https://github.com/mlvlab/RMCD' target='_blank'>https://github.com/mlvlab/RMCD</a>.",
+      "affiliations": null,
+      "arxiv_id": "2602.06050",
+      "arxives_doi": null,
+      "authors": "Jongha Kim, Byungoh Ko, Jeehye Na, Jinsung Yoon, Hyunwoo J. Kim",
+      "bookmarked": 0,
+      "cache_file_name": "Kim2026ARXIV_Relevance_aware_Multi_context.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7618972408,
+        0.8389164864,
+        0.9997391671,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1770595200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": {
+        "imageUrl": "/first_pages/4576836.jpeg"
+      },
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2602.06050",
+      "inferredHighlights": [
+        {
+          "endIndex": 601,
+          "highlightClass": "primary-highlight",
+          "startIndex": 487
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Kim2026ARXIV_Relevance_aware_Multi_context.pdf",
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172179,
+      "paper_id": 4576836,
+      "paper_source_id": "2602.06050",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/mlvlab/RMCD",
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4574315541,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "ce1ba641a1de6a6ab990e3bc0022a4eea23fd379",
+      "shortened_authors": "Jongha Kim, Byungoh Ko, Jeehye Na, Jinsung Yoon, Hyunwoo J. Kim",
+      "source": "arxiv",
+      "summaries": {},
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Motivation. RMCD generates better responses without additional training by contrasting outputs based on relevance of contexts, thereby effectively leveraging multiple relevant contexts and counteracting irrelevant contexts.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576836.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Relevance-aware Multi-context Contrastive Decoding (RMCD). An LVLM M \u03b8 outputs multiple predictions q ( y i | c j ) provided contexts c j \u2208 C r retrieved from a knowledge base. Using the retrieval score s c j of a",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576836.1.jpeg"
+        },
+        {
+          "caption": "Table 1. Performance on InfoSeek [8] and Encyclopedic-VQA [45] by decoding method. Best results on each benchmark among the same baseline LVLM are marked bold .",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576836.2.jpeg"
+        },
+        {
+          "caption": "Table 2. Performance on OK-VQA [43]. n : # retrieved contexts. Train: Require additional training, GPT-3: Use GPT-3 [4], Acc: VQA Score [43]. Coefficients in decoding cost denote # model forwarding for ensemble (KAT, REVIVE, Prophet) and beam width (FLMR, PreFLMR). The best result is marked bold .",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576836.3.jpeg"
+        },
+        {
+          "caption": "Table 3. Decoding cost comparison. Latency: seconds per sample. The coefficient on the cost of FLMR denotes beam width.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576836.4.jpeg"
+        },
+        {
+          "caption": "Figure 3. Accuracy by the number of contexts n used.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576836.5.jpeg"
+        },
+        {
+          "caption": "Figure 4. Retrieval Recall@ k ( k = 1 , 3 , 5 ) by the size of KBs.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4576836.6.jpeg"
+        },
+        {
+          "caption": "Figure 5. Accuracy by the size of KBs. Retrieval gets more difficult in larger KBs.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4576836.7.jpeg"
+        }
+      ],
+      "title": "Relevance-aware Multi-context Contrastive Decoding for Retrieval-augmented Visual Question Answering",
+      "total_likes": 0,
+      "total_read": 0,
+      "url": "https://arxiv.org/pdf/2602.06050",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2602.06050.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Single-sequence protein structure prediction has drawn increasing attention due to the high computational costs associated with obtaining homologous information. Here, we propose a visual-like 2D geometric template diffusion method, named TDFold, to generate high-quality pairwise geometries (including pairwise distances and orientations) for achieving accurate and highly efficient single-sequence 3D structure prediction for proteins. Given a protein sequence, TDFold initially generates high-quality inter-residue geometries from a probabilistic diffusion perspective. Since inter-residue geometries can be encoded as multi-channel feature matrices, analogous to image feature maps, we construct an image-level 2D geometric template diffusion module by adapting the stable diffusion (SD) model from text-vision generation to sequence-geometry diffusion for proteins. Subsequently, a lightweight sequence-geometry collaborative learning (SCL) network is constructed to facilitate accurate and efficient protein structure prediction. As a result, TDFold possesses three highlights: (i) better single-sequence prediction performance: TDFold greatly outperforms existing protein language models (PLMs, e.g. ESMFold and OmegaFold) and homology-based methods (e.g. AlphaFold2, AlphaFold3 and RoseTTAFold) on homology-insufficient datasets such as Orphan and Orphan25, while also achieving promising results on the popular CASP14, CASP15 and CASP16 benchmarks; (ii) low resource consumption: By utilizing the lightweight SCL architecture, the GPU memory consumption of TDFold is generally lower than that of popular methods such as AlphaFold2 and ESMFold; (iii) higher efficiency in training and inference: TDFold can be trained within a week using a single NVIDIA 4090 GPU. Furthermore, the inference time of TDFold is significantly shorter (about 10x to 100x) than that of existing methods (ESMFold, AlphaFold2 and AlphaFold3) for long protein sequences. This work demonstrates the effectiveness of leveraging powerful vision diffusion models to enhance protein 2D geometric template generation, thereby establishing a new paradigm for single-sequence protein structure prediction. It also accelerates protein-related research, particularly for resource-limited universities and academic institutions. The code has been released to speed up biological research.",
+      "affiliations": null,
+      "arxiv_id": null,
+      "arxives_doi": "10.1101/2025.07.03.662909",
+      "authors": "Wang, X.,  Zhang, T.,  Cui, Z.,  Guo, X.,  Wang, F.,  Wang, Y.,  Cai, X.,  Zheng, W.",
+      "bookmarked": 0,
+      "cache_file_name": "Wang2026BIORXIV_Visual_like_2D_Geometric.pdf",
+      "category": "Biology",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.5942310492,
+        0.6598950643,
+        0.9188334132,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1770595200000,
+      "display_venue": "bioRxiv 2026 (February 7)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://www.biorxiv.org/content/10.1101/2025.07.03.662909v1.full",
+      "inferredHighlights": [
+        {
+          "endIndex": 436,
+          "highlightClass": "primary-highlight",
+          "startIndex": 162
+        },
+        {
+          "endIndex": 571,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 438
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4171562,
+      "paper_id": 4577000,
+      "paper_source_id": "10.1101/2025.07.03.662909",
+      "pdf_download_success": null,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-02-07",
+      "ranking_score": 0.4156876495,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": null,
+      "shortened_authors": "Wang, X.,  Zhang, T.,  Cui, Z.,  Guo, X.,  Wang, ..., W.",
+      "source": "biorxiv",
+      "summaries": {},
+      "teaser_figures": null,
+      "title": "Visual-like 2D Geometric Template Diffusion for Boosting Single-Sequence Protein Structure Prediction",
+      "total_likes": 1,
+      "total_read": 3,
+      "url": "https://www.biorxiv.org/content/10.1101/2025.07.03.662909v2.full.pdf",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F2025.07.03.662909v2.full.pdf.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    }
+  ],
+  "digest_papers": 5,
+  "display_next_date": true,
+  "empty_digest": false,
+  "first_paper_id_below_decision_boundary": 4576836,
+  "from_date": "Mon, 09 Feb 2026 00:00:00 GMT",
+  "has_more_papers_in_digest": false,
+  "next_date": "2026-02-10",
+  "no_weekdays_selected": false,
+  "pdf_viewer_url": null,
+  "prev_date": "2026-02-06",
+  "read_paper_ids": [],
+  "seen_welcome_tutorial": true,
+  "success": true,
+  "to_date": "Mon, 09 Feb 2026 00:00:00 GMT",
+  "total_papers": "588",
+  "trending": [
+    {
+      "abstract": "Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/",
+      "author": "Li et al.",
+      "authors": "Chunyang Li, Yuanbo Yang, Jiahao Shao, Hongyu Zhou, Katja Schwarz, Yiyi Liao",
+      "cache_file_name": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174518,
+      "paper_id": 4579856,
+      "pdf_download_success": true,
+      "publication_date": 1770576550000,
+      "ranking_score": 0.1357062383,
+      "rating": null,
+      "read": false,
+      "short_title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "source": "arxiv",
+      "title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "total_dislikes": 8,
+      "total_likes": 47,
+      "total_read": 176,
+      "url": "https://arxiv.org/pdf/2602.08068"
+    },
+    {
+      "abstract": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders, rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation, RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+      "author": "Kumar et al.",
+      "authors": "Amandeep Kumar, Vishal M. Patel",
+      "cache_file_name": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176575,
+      "paper_id": 4581913,
+      "pdf_download_success": true,
+      "publication_date": 1770753484000,
+      "ranking_score": 0.8327815131,
+      "rating": null,
+      "read": false,
+      "short_title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "source": "arxiv",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "total_dislikes": 6,
+      "total_likes": 36,
+      "total_read": 134,
+      "url": "https://arxiv.org/pdf/2602.10099"
+    },
+    {
+      "abstract": "We introduce MotionCrafter, a video diffusion-based framework that jointly reconstructs 4D geometry and estimates dense motion from a monocular video. The core of our method is a novel joint representation of dense 3D point maps and 3D scene flows in a shared coordinate system, and a novel 4D VAE to effectively learn this representation. Unlike prior work that forces the 3D value and latents to align strictly with RGB VAE latents-despite their fundamentally different distributions-we show that such alignment is unnecessary and leads to suboptimal performance. Instead, we introduce a new data normalization and VAE training strategy that better transfers diffusion priors and greatly improves reconstruction quality. Extensive experiments across multiple datasets demonstrate that MotionCrafter achieves state-of-the-art performance in both geometry reconstruction and dense scene flow estimation, delivering 38.64% and 25.0% improvements in geometry and motion reconstruction, respectively, all without any post-optimization. Project page: https://ruijiezhu94.github.io/MotionCrafter_Page",
+      "author": "Zhu et al.",
+      "authors": "Ruijie Zhu, Jiahao Lu, Wenbo Hu, Xiaoguang Han, Jianfei Cai, Ying Shan, Chuanxia Zheng",
+      "cache_file_name": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4175456,
+      "paper_id": 4580794,
+      "pdf_download_success": true,
+      "publication_date": 1770663492000,
+      "ranking_score": 0.1515375946,
+      "rating": null,
+      "read": false,
+      "short_title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "source": "arxiv",
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "total_dislikes": 6,
+      "total_likes": 29,
+      "total_read": 102,
+      "url": "https://arxiv.org/pdf/2602.08961"
+    },
+    {
+      "abstract": "Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \\textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \\textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \\textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+      "author": "Xiang et al.",
+      "authors": "Chendong Xiang, Jiajun Liu, Jintao Zhang, Xiao Yang, Zhengwei Fang, Shizun Wang, Zijun Wang, Yingtian Zou, Hang Su, Jun Zhu",
+      "cache_file_name": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174295,
+      "paper_id": 4579633,
+      "pdf_download_success": true,
+      "publication_date": 1770541276000,
+      "ranking_score": 0.2729207035,
+      "rating": null,
+      "read": false,
+      "short_title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "source": "arxiv",
+      "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "total_dislikes": 2,
+      "total_likes": 18,
+      "total_read": 59,
+      "url": "https://arxiv.org/pdf/2602.07854"
+    },
+    {
+      "abstract": "Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$\u0394$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.",
+      "author": "Jiang et al.",
+      "authors": "Yuxin Jiang, Yuchao Gu, Ivor W. Tsang, Mike Zheng Shou",
+      "cache_file_name": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176574,
+      "paper_id": 4581912,
+      "pdf_download_success": true,
+      "publication_date": 1770753521000,
+      "ranking_score": 0.1189741714,
+      "rating": null,
+      "read": false,
+      "short_title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "source": "arxiv",
+      "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "total_dislikes": 3,
+      "total_likes": 15,
+      "total_read": 58,
+      "url": "https://arxiv.org/pdf/2602.10104"
+    },
+    {
+      "abstract": "Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility, visual realism, and physical stability. Through iterative reasoning and adaptive tool selection, it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training. Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI. Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage.",
+      "author": "Xia et al.",
+      "authors": "Hongchi Xia, Xuan Li, Zhaoshuo Li, Qianli Ma, Jiashu Xu, Ming-Yu Liu, Yin Cui, Tsung-Yi Lin, Wei-Chiu Ma, Shenlong Wang, Shuran Song, Fangyin Wei",
+      "cache_file_name": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176614,
+      "paper_id": 4581952,
+      "pdf_download_success": true,
+      "publication_date": 1770753595000,
+      "ranking_score": 0.0253882568,
+      "rating": null,
+      "read": false,
+      "short_title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "source": "arxiv",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "total_dislikes": 3,
+      "total_likes": 11,
+      "total_read": 51,
+      "url": "https://arxiv.org/pdf/2602.10116"
+    },
+    {
+      "abstract": "End-to-end (E2E) autonomous driving has recently attracted increasing interest in unifying Vision-Language-Action (VLA) with World Models to enhance decision-making and forward-looking imagination. However, existing methods fail to effectively unify future scene evolution and action planning within a single architecture due to inadequate sharing of latent states, limiting the impact of visual imagination on action decisions. To address this limitation, we propose DriveWorld-VLA, a novel framework that unifies world modeling and planning within a latent space by tightly integrating VLA and world models at the representation level, which enables the VLA planner to benefit directly from holistic scene-evolution modeling and reducing reliance on dense annotated supervision. Additionally, DriveWorld-VLA incorporates the latent states of the world model as core decision-making states for the VLA planner, facilitating the planner to assess how candidate actions impact future scene evolution. By conducting world modeling entirely in the latent space, DriveWorld-VLA supports controllable, action-conditioned imagination at the feature level, avoiding expensive pixel-level rollouts. Extensive open-loop and closed-loop evaluations demonstrate the effectiveness of DriveWorld-VLA, which achieves state-of-the-art performance with 91.3 PDMS on NAVSIMv1, 86.8 EPDMS on NAVSIMv2, and 0.16 3-second average collision rate on nuScenes. Code and models will be released in https://github.com/liulin815/DriveWorld-VLA.git.",
+      "author": "jia et al.",
+      "authors": "Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen",
+      "cache_file_name": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172917,
+      "paper_id": 4578255,
+      "pdf_download_success": true,
+      "publication_date": 1770373548000,
+      "ranking_score": 0.265241331,
+      "rating": null,
+      "read": false,
+      "short_title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Drivi",
+      "source": "arxiv",
+      "title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving",
+      "total_dislikes": 0,
+      "total_likes": 21,
+      "total_read": 46,
+      "url": "https://arxiv.org/pdf/2602.06521"
+    },
+    {
+      "abstract": "Diffusion and flow models have become the dominant paradigm for generative modeling on Riemannian manifolds, with successful applications in protein backbone generation and DNA sequence design. However, these methods require tens to hundreds of neural network evaluations at inference time, which can become a computational bottleneck in large-scale scientific sampling workflows. We introduce Riemannian MeanFlow~(RMF), a framework for learning flow maps directly on manifolds, enabling high-quality generations with as few as one forward pass. We derive three equivalent characterizations of the manifold average velocity (Eulerian, Lagrangian, and semigroup identities), and analyze parameterizations and stabilization techniques to improve training on high-dimensional manifolds. In promoter DNA design and protein backbone generation settings, RMF achieves comparable sample quality to prior methods while requiring up to 10$\\times$ fewer function evaluations. Finally, we show that few-step flow maps enable efficient reward-guided design through reward look-ahead, where terminal states can be predicted from intermediate steps at minimal additional cost.",
+      "author": "Woo et al.",
+      "authors": "Dongyeop Woo, Marta Skreta, Seonghyun Park, Sungsoo Ahn, Kirill Neklyudov",
+      "cache_file_name": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174186,
+      "paper_id": 4579524,
+      "pdf_download_success": true,
+      "publication_date": 1770514877000,
+      "ranking_score": 0.3225612556,
+      "rating": null,
+      "read": false,
+      "short_title": "Riemannian MeanFlow",
+      "source": "arxiv",
+      "title": "Riemannian MeanFlow",
+      "total_dislikes": 3,
+      "total_likes": 12,
+      "total_read": 45,
+      "url": "https://arxiv.org/pdf/2602.07744"
+    }
+  ],
+  "use_scholar_inbox_pdf_server": false,
+  "username": "Longxuan Yu"
+}

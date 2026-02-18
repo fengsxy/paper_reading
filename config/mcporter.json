@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "xiaohongshu": {
+      "command": "npx",
+      "args": ["mcp-xiaohongshu", "--stdio"],
+      "env": {
+        "DISPLAY": ":99",
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

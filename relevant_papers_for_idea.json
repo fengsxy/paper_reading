@@ -1,0 +1,1402 @@
+[
+  {
+    "title": "Manifold Trajectories in Next-Token Prediction: From Replicator Dynamics to Softmax Equilibrium",
+    "arxiv_id": "2508.21186",
+    "abstract": "Decoding in large language models is often described as scoring tokens and normalizing with softmax. We give a minimal, self-contained account of this step as a constrained variational principle on the probability simplex. The discrete, normalization-respecting ascent is the classical multiplicative"
+  },
+  {
+    "title": "Efficient Diffusion-Based 3D Human Pose Estimation with Hierarchical Temporal Pruning",
+    "arxiv_id": "2508.21363",
+    "abstract": "Diffusion models have demonstrated strong capabilities in generating high-fidelity 3D human poses, yet their iterative nature and multi-hypothesis requirements incur substantial computational cost. In this paper, we propose an Efficient Diffusion-Based 3D Human Pose Estimation framework with a Hiera"
+  },
+  {
+    "title": "Masked Diffusion Language Models with Frequency-Informed Training",
+    "arxiv_id": "2509.05056",
+    "abstract": "We present a masked diffusion language modeling framework for data-efficient training for the BabyLM 2025 Challenge. Our approach applies diffusion training objectives to language modeling under strict data constraints, incorporating frequency-informed masking that prioritizes learning from rare tok"
+  },
+  {
+    "title": "KVCompose: Efficient Structured KV Cache Compression with Composite Tokens",
+    "arxiv_id": "2509.05165",
+    "abstract": "Large language models (LLMs) rely on key-value (KV) caches for efficient autoregressive decoding; however, cache size grows linearly with context length and model depth, becoming a major bottleneck in long-context inference. Prior KV cache compression methods either enforce rigid heuristics, disrupt"
+  },
+  {
+    "title": "FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies",
+    "arxiv_id": "2509.04996",
+    "abstract": "Developing efficient Vision-Language-Action (VLA) policies is crucial for practical robotics deployment, yet current approaches face prohibitive computational costs and resource requirements. Existing diffusion-based VLA policies require multi-billion-parameter models and massive datasets to achieve"
+  },
+  {
+    "title": "Communication-Efficient Collaborative LLM Inference via Distributed Speculative Decoding",
+    "arxiv_id": "2509.04576",
+    "abstract": "Speculative decoding is an emerging technique that accelerates large language model (LLM) inference by allowing a smaller draft model to predict multiple tokens in advance, which are then verified or corrected by a larger target model. In AI-native radio access networks (AI-RAN), this paradigm is we"
+  },
+  {
+    "title": "No Clustering, No Routing: How Transformers Actually Process Rare Tokens",
+    "arxiv_id": "2509.04479",
+    "abstract": "Large language models struggle with rare token prediction, yet the mechanisms driving their specialization remain unclear. Prior work identified specialized ``plateau'' neurons for rare tokens following distinctive three-regime influence patterns \\cite{liu2025emergent}, but their functional organiza"
+  },
+  {
+    "title": "Scaling Up, Speeding Up: A Benchmark of Speculative Decoding for Efficient LLM Test-Time Scaling",
+    "arxiv_id": "2509.04474",
+    "abstract": "Test-time scaling has emerged as a powerful paradigm for enhancing the reasoning capabilities of large language models (LLMs) by allocating additional computational resources during inference. However, this paradigm is inherently inefficient due to the generation of redundant and repetitive reasonin"
+  },
+  {
+    "title": "STADI: Fine-Grained Step-Patch Diffusion Parallelism for Heterogeneous GPUs",
+    "arxiv_id": "2509.04719",
+    "abstract": "The escalating adoption of diffusion models for applications such as image generation demands efficient parallel inference techniques to manage their substantial computational cost. However, existing diffusion parallelism inference schemes often underutilize resources in heterogeneous multi-GPU envi"
+  },
+  {
+    "title": "PDTrim: Targeted Pruning for Prefill-Decode Disaggregation in Inference",
+    "arxiv_id": "2509.04467",
+    "abstract": "Large Language Models (LLMs) demonstrate exceptional capabilities across various tasks, but their deployment is constrained by high computational and memory costs. Model pruning provides an effective means to alleviate these demands. However, existing methods often ignore the characteristics of pref"
+  },
+  {
+    "title": "Inpainting-Guided Policy Optimization for Diffusion Large Language Models",
+    "arxiv_id": "2509.10396",
+    "abstract": "Masked diffusion large language models (dLLMs) are emerging as promising alternatives to autoregressive LLMs, offering competitive performance while supporting unique generation capabilities such as inpainting. We explore how inpainting can inform RL algorithm design for dLLMs. Aligning LLMs with re"
+  },
+  {
+    "title": "Color Me Correctly: Bridging Perceptual Color Spaces and Text Embeddings for Improved Diffusion Generation",
+    "arxiv_id": "2509.10058",
+    "abstract": "Accurate color alignment in text-to-image (T2I) generation is critical for applications such as fashion, product visualization, and interior design, yet current diffusion models struggle with nuanced and compound color terms (e.g., Tiffany blue, lime green, hot pink), often producing images that are"
+  },
+  {
+    "title": "Compute Only 16 Tokens in One Timestep: Accelerating Diffusion Transformers with Cluster-Driven Feature Caching",
+    "arxiv_id": "2509.10312",
+    "abstract": "Diffusion transformers have gained significant attention in recent years for their ability to generate high-quality images and videos, yet still suffer from a huge computational cost due to their iterative denoising process. Recently, feature caching has been introduced to accelerate diffusion trans"
+  },
+  {
+    "title": "LAVa: Layer-wise KV Cache Eviction with Dynamic Budget Allocation",
+    "arxiv_id": "2509.09754",
+    "abstract": "KV Cache is commonly used to accelerate LLM inference with long contexts, yet its high memory demand drives the need for cache compression. Existing compression methods, however, are largely heuristic and lack dynamic budget allocation. To address this limitation, we introduce a unified framework fo"
+  },
+  {
+    "title": "Latency and Token-Aware Test-Time Compute",
+    "arxiv_id": "2509.09864",
+    "abstract": "Inference-time scaling has emerged as a powerful way to improve large language model (LLM) performance by generating multiple candidate responses and selecting among them. However, existing work on dynamic allocation for test-time compute typically considers only parallel generation methods such as "
+  },
+  {
+    "title": "InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis",
+    "arxiv_id": "2509.10441",
+    "abstract": "Arbitrary resolution image generation provides a consistent visual experience across devices, having extensive applications for producers and consumers. Current diffusion models increase computational demand quadratically with resolution, causing 4K image generation delays over 100 seconds. To solve"
+  },
+  {
+    "title": "Vision-Language Models as Differentiable Semantic and Spatial Rewards for Text-to-3D Generation",
+    "arxiv_id": "2509.15772",
+    "abstract": "Score Distillation Sampling (SDS) enables high-quality text-to-3D generation by supervising 3D models through the denoising of multi-view 2D renderings, using a pretrained text-to-image diffusion model to align with the input prompt and ensure 3D consistency. However, existing SDS-based methods face"
+  },
+  {
+    "title": "DiffusionNFT: Online Diffusion Reinforcement with Forward Process",
+    "arxiv_id": "2509.16117",
+    "abstract": "Online reinforcement learning (RL) has been central to post-training language models, but its extension to diffusion models remains challenging due to intractable likelihoods. Recent works discretize the reverse sampling process to enable GRPO-style training, yet they inherit fundamental drawbacks, "
+  },
+  {
+    "title": "ViSpec: Accelerating Vision-Language Models with Vision-Aware Speculative Decoding",
+    "arxiv_id": "2509.15235",
+    "abstract": "Speculative decoding is a widely adopted technique for accelerating inference in large language models (LLMs), yet its application to vision-language models (VLMs) remains underexplored, with existing methods achieving only modest speedups ($<1.5\\times$). This gap is increasingly significant as mult"
+  },
+  {
+    "title": "MaskAttn-SDXL: Controllable Region-Level Text-To-Image Generation",
+    "arxiv_id": "2509.15357",
+    "abstract": "Text-to-image diffusion models achieve impressive realism but often suffer from compositional failures on prompts with multiple objects, attributes, and spatial relations, resulting in cross-token interference where entities entangle, attributes mix across objects, and spatial cues are violated. To "
+  },
+  {
+    "title": "Dynamic Classifier-Free Diffusion Guidance via Online Feedback",
+    "arxiv_id": "2509.16131",
+    "abstract": "Classifier-free guidance (CFG) is a cornerstone of text-to-image diffusion models, yet its effectiveness is limited by the use of static guidance scales. This \"one-size-fits-all\" approach fails to adapt to the diverse requirements of different prompts; moreover, prior solutions like gradient-based c"
+  },
+  {
+    "title": "Generating Detailed Character Motion from Blocking Poses",
+    "arxiv_id": "2509.16064",
+    "abstract": "We focus on the problem of using generative diffusion models for the task of motion detailing: converting a rough version of a character animation, represented by a sparse set of coarsely posed, and imprecisely timed blocking poses, into a detailed, natural looking character animation. Current diffu"
+  },
+  {
+    "title": "SAGE: Semantic-Aware Shared Sampling for Efficient Diffusion",
+    "arxiv_id": "2509.15865",
+    "abstract": "Diffusion models manifest evident benefits across diverse domains, yet their high sampling cost, requiring dozens of sequential model evaluations, remains a major limitation. Prior efforts mainly accelerate sampling via optimized solvers or distillation, which treat each query independently. In cont"
+  },
+  {
+    "title": "UniGist: Towards General and Hardware-aligned Sequence-level Long Context Compression",
+    "arxiv_id": "2509.15763",
+    "abstract": "Large language models are increasingly capable of handling long-context inputs, but the memory overhead of KV cache remains a major bottleneck for general-purpose deployment. While many compression strategies have been explored, sequence-level compression is particularly challenging due to its tende"
+  },
+  {
+    "title": "RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation",
+    "arxiv_id": "2509.15257",
+    "abstract": "The rapid advancement of diffusion models has enabled high-fidelity and semantically rich text-to-image generation; however, ensuring fairness and safety remains an open challenge. Existing methods typically improve fairness and safety at the expense of semantic fidelity and image quality. In this w"
+  },
+  {
+    "title": "SLaM-DiMM: Shared Latent Modeling for Diffusion Based Missing Modality Synthesis in MRI",
+    "arxiv_id": "2509.16019",
+    "abstract": "Brain MRI scans are often found in four modalities, consisting of T1-weighted with and without contrast enhancement (T1ce and T1w), T2-weighted imaging (T2w), and Flair. Leveraging complementary information from these different modalities enables models to learn richer, more discriminative features "
+  },
+  {
+    "title": "Diffusion-Based Cross-Modal Feature Extraction for Multi-Label Classification",
+    "arxiv_id": "2509.15553",
+    "abstract": "Multi-label classification has broad applications and depends on powerful representations capable of capturing multi-label interactions. We introduce \\textit{Diff-Feat}, a simple but powerful framework that extracts intermediate features from pre-trained diffusion-Transformer models for images and t"
+  },
+  {
+    "title": "LowDiff: Efficient Diffusion Sampling with Low-Resolution Condition",
+    "arxiv_id": "2509.15342",
+    "abstract": "Diffusion models have achieved remarkable success in image generation but their practical application is often hindered by the slow sampling speed. Prior efforts of improving efficiency primarily focus on compressing models or reducing the total number of denoising steps, largely neglecting the poss"
+  },
+  {
+    "title": "Learning to Parallel: Accelerating Diffusion Large Language Models via Learnable Parallel Decoding",
+    "arxiv_id": "2509.25188",
+    "abstract": "Autoregressive decoding in large language models (LLMs) requires $\\mathcal{O}(n)$ sequential steps for $n$ tokens, fundamentally limiting inference throughput. Recent diffusion-based LLMs (dLLMs) enable parallel token generation through iterative denoising. However, current parallel decoding strateg"
+  },
+  {
+    "title": "AdaBlock-dLLM: Semantic-Aware Diffusion LLM Inference via Adaptive Block Size",
+    "arxiv_id": "2509.26432",
+    "abstract": "Diffusion-based large language models (dLLMs) are gaining attention for their inherent capacity for parallel decoding, offering a compelling alternative to autoregressive LLMs. Among various decoding strategies, blockwise semi-autoregressive (semi-AR) approaches are widely adopted due to their natur"
+  },
+  {
+    "title": "Aligning Visual Foundation Encoders to Tokenizers for Diffusion Models",
+    "arxiv_id": "2509.25162",
+    "abstract": "In this work, we propose aligning pretrained visual encoders to serve as tokenizers for latent diffusion models in image generation. Unlike training a variational autoencoder (VAE) from scratch, which primarily emphasizes low-level details, our approach leverages the rich semantic structure of found"
+  },
+  {
+    "title": "Fast-dLLM v2: Efficient Block-Diffusion LLM",
+    "arxiv_id": "2509.26328",
+    "abstract": "Autoregressive (AR) large language models (LLMs) have achieved remarkable performance across a wide range of natural language tasks, yet their inherent sequential decoding limits inference efficiency. In this work, we propose Fast-dLLM v2, a carefully designed block diffusion language model (dLLM) t"
+  },
+  {
+    "title": "dParallel: Learnable Parallel Decoding for dLLMs",
+    "arxiv_id": "2509.26488",
+    "abstract": "Diffusion large language models (dLLMs) have recently drawn considerable attention within the research community as a promising alternative to autoregressive generation, offering parallel token prediction and lower inference latency. Yet, their parallel decoding potential remains largely underexplor"
+  },
+  {
+    "title": "Stitch: Training-Free Position Control in Multimodal Diffusion Transformers",
+    "arxiv_id": "2509.26644",
+    "abstract": "Text-to-Image (T2I) generation models have advanced rapidly in recent years, but accurately capturing spatial relationships like \"above\" or \"to the right of\" poses a persistent challenge. Earlier methods improved spatial relationship following with external position control. However, as architecture"
+  },
+  {
+    "title": "EVODiff: Entropy-aware Variance Optimized Diffusion Inference",
+    "arxiv_id": "2509.26096",
+    "abstract": "Diffusion models (DMs) excel in image generation, but suffer from slow inference and the training-inference discrepancies. Although gradient-based solvers like DPM-Solver accelerate the denoising inference, they lack theoretical foundations in information transmission efficiency. In this work, we in"
+  },
+  {
+    "title": "Double Descent as a Lens for Sample Efficiency in Autoregressive vs. Discrete Diffusion Models",
+    "arxiv_id": "2509.24974",
+    "abstract": "Data scarcity drives the need for more sample-efficient large language models. In this work, we use the double descent phenomenon to holistically compare the sample efficiency of discrete diffusion and autoregressive models. We show that discrete diffusion models require larger capacity and more tra"
+  },
+  {
+    "title": "DC-Gen: Post-Training Diffusion Acceleration with Deeply Compressed Latent Space",
+    "arxiv_id": "2509.25180",
+    "abstract": "Existing text-to-image diffusion models excel at generating high-quality images, but face significant efficiency challenges when scaled to high resolutions, like 4K image generation. While previous research accelerates diffusion models in various aspects, it seldom handles the inherent redundancy wi"
+  },
+  {
+    "title": "Ultra-Fast Language Generation via Discrete Diffusion Divergence Instruct",
+    "arxiv_id": "2509.25035",
+    "abstract": "Fast and high-quality language generation is the holy grail that people pursue in the age of AI. In this work, we introduce Discrete Diffusion Divergence Instruct (DiDi-Instruct), a training-based method that initializes from a pre-trained (masked) discrete diffusion language model (dLLM) and distil"
+  },
+  {
+    "title": "IMG: Calibrating Diffusion Models via Implicit Multimodal Guidance",
+    "arxiv_id": "2509.26231",
+    "abstract": "Ensuring precise multimodal alignment between diffusion-generated images and input prompts has been a long-standing challenge. Earlier works finetune diffusion weight using high-quality preference data, which tends to be limited and difficult to scale up. Recent editing-based methods further refine "
+  },
+  {
+    "title": "Attention Surgery: An Efficient Recipe to Linearize Your Video Diffusion Transformer",
+    "arxiv_id": "2509.24899",
+    "abstract": "Transformer-based video diffusion models (VDMs) deliver state-of-the-art video generation quality but are constrained by the quadratic cost of self-attention, making long sequences and high resolutions computationally expensive. While linear attention offers sub-quadratic complexity, prior attempts "
+  },
+  {
+    "title": "RFG: Test-Time Scaling for Diffusion Large Language Model Reasoning with Reward-Free Guidance",
+    "arxiv_id": "2509.25604",
+    "abstract": "Diffusion large language models (dLLMs) have shown great potential in large-scale language modeling, and there is an increasing interest in further improving the capacity to solve complex problems by guiding the reasoning process step by step. Common practice for autoregressive language models typic"
+  },
+  {
+    "title": "How Diffusion Models Memorize",
+    "arxiv_id": "2509.25705",
+    "abstract": "Despite their success in image generation, diffusion models can memorize training data, raising serious privacy and copyright concerns. Although prior work has sought to characterize, detect, and mitigate memorization, the fundamental question of why and how it occurs remains unresolved. In this pap"
+  },
+  {
+    "title": "Advantage Weighted Matching: Aligning RL with Pretraining in Diffusion Models",
+    "arxiv_id": "2509.25050",
+    "abstract": "Reinforcement Learning (RL) has emerged as a central paradigm for advancing Large Language Models (LLMs), where pre-training and RL post-training share the same log-likelihood formulation. In contrast, recent RL approaches for diffusion models, most notably Denoising Diffusion Policy Optimization (D"
+  },
+  {
+    "title": "dVLA: Diffusion Vision-Language-Action Model with Multimodal Chain-of-Thought",
+    "arxiv_id": "2509.25681",
+    "abstract": "Vision-Language-Action (VLA) models are emerging as a next-generation paradigm for robotics. We introduce dVLA, a diffusion-based VLA that leverages a multimodal chain-of-thought to unify visual perception, language reasoning, and robotic control in a single system. dVLA jointly optimizes perception"
+  },
+  {
+    "title": "MARCOS: Deep Thinking by Markov Chain of Continuous Thoughts",
+    "arxiv_id": "2509.25020",
+    "abstract": "The current paradigm for reasoning in large language models (LLMs) involves models \"thinking out loud\" via a sequence of tokens, known as chain-of-thought (CoT). This approach, while effective, has several significant drawbacks. Firstly, inference requires autoregressive generation of often thousand"
+  },
+  {
+    "title": "Query-Kontext: An Unified Multimodal Model for Image Generation and Editing",
+    "arxiv_id": "2509.26641",
+    "abstract": "Unified Multimodal Models (UMMs) have demonstrated remarkable performance in text-to-image generation (T2I) and editing (TI2I), whether instantiated as assembled unified frameworks which couple powerful vision-language model (VLM) with diffusion-based generator, or as naive Unified Multimodal Models"
+  },
+  {
+    "title": "LUMA: Low-Dimension Unified Motion Alignment with Dual-Path Anchoring for Text-to-Motion Diffusion Model",
+    "arxiv_id": "2509.25304",
+    "abstract": "While current diffusion-based models, typically built on U-Net architectures, have shown promising results on the text-to-motion generation task, they still suffer from semantic misalignment and kinematic artifacts. Through analysis, we identify severe gradient attenuation in the deep layers of the "
+  },
+  {
+    "title": "Learning to See Before Seeing: Demystifying LLM Visual Priors from Language Pre-training",
+    "arxiv_id": "2509.26625",
+    "abstract": "Large Language Models (LLMs), despite being trained on text alone, surprisingly develop rich visual priors. These priors allow latent visual capabilities to be unlocked for vision tasks with a relatively small amount of multimodal data, and in some cases, to perform visual tasks without ever having "
+  },
+  {
+    "title": "Score-based Membership Inference on Diffusion Models",
+    "arxiv_id": "2509.25003",
+    "abstract": "Membership inference attacks (MIAs) against diffusion models have emerged as a pressing privacy concern, as these models may inadvertently reveal whether a given sample was part of their training set. We present a theoretical and empirical study of score-based MIAs, focusing on the predicted noise v"
+  },
+  {
+    "title": "GLASS Flows: Transition Sampling for Alignment of Flow and Diffusion Models",
+    "arxiv_id": "2509.25170",
+    "abstract": "The performance of flow matching and diffusion models can be greatly improved at inference time using reward alignment algorithms, yet efficiency remains a major limitation. While several algorithms were proposed, we demonstrate that a common bottleneck is the sampling method these algorithms rely o"
+  },
+  {
+    "title": "FlashOmni: A Unified Sparse Attention Engine for Diffusion Transformers",
+    "arxiv_id": "2509.25401",
+    "abstract": "Multi-Modal Diffusion Transformers (DiTs) demonstrate exceptional capabilities in visual synthesis, yet their deployment remains constrained by substantial computational demands. To alleviate this bottleneck, many sparsity-based acceleration methods have been proposed. However, their diverse sparsit"
+  },
+  {
+    "title": "Free Lunch Alignment of Text-to-Image Diffusion Models without Preference Image Pairs",
+    "arxiv_id": "2509.25771",
+    "abstract": "Recent advances in diffusion-based text-to-image (T2I) models have led to remarkable success in generating high-quality images from textual prompts. However, ensuring accurate alignment between the text and the generated image remains a significant challenge for state-of-the-art diffusion models. To"
+  },
+  {
+    "title": "MAD: Manifold Attracted Diffusion",
+    "arxiv_id": "2509.24710",
+    "abstract": "Score-based diffusion models are a highly effective method for generating samples from a distribution of images. We consider scenarios where the training data comes from a noisy version of the target distribution, and present an efficiently implementable modification of the inference procedure to ge"
+  },
+  {
+    "title": "Environment-Aware Satellite Image Generation with Diffusion Models",
+    "arxiv_id": "2509.24875",
+    "abstract": "Diffusion-based foundation models have recently garnered much attention in the field of generative modeling due to their ability to generate images of high quality and fidelity. Although not straightforward, their recent application to the field of remote sensing signaled the first successful trials"
+  },
+  {
+    "title": "HilbertA: Hilbert Attention for Image Generation with Diffusion Models",
+    "arxiv_id": "2509.26538",
+    "abstract": "Designing sparse attention for diffusion transformers requires reconciling two-dimensional spatial locality with GPU efficiency, a trade-off that current methods struggle to achieve. Existing approaches enforce two-dimensional spatial locality but often incur uncoalesced memory access. We present Hi"
+  },
+  {
+    "title": "SDPose: Exploiting Diffusion Priors for Out-of-Domain and Robust Pose Estimation",
+    "arxiv_id": "2509.24980",
+    "abstract": "Pre-trained diffusion models provide rich multi-scale latent features and are emerging as powerful vision backbones. While recent works such as Marigold and Lotus adapt diffusion priors for dense prediction with strong cross-domain generalization, their potential for structured outputs remains under"
+  },
+  {
+    "title": "Bringing Emerging Architectures to Sequence Labeling in NLP",
+    "arxiv_id": "2509.25918",
+    "abstract": "Pretrained Transformer encoders are the dominant approach to sequence labeling. While some alternative architectures-such as xLSTMs, structured state-space models, diffusion models, and adversarial learning-have shown promise in language modeling, few have been applied to sequence labeling, and most"
+  },
+  {
+    "title": "CO3: Contrasting Concepts Compose Better",
+    "arxiv_id": "2509.25940",
+    "abstract": "We propose to improve multi-concept prompt fidelity in text-to-image diffusion models. We begin with common failure cases-prompts like \"a cat and a dog\" that sometimes yields images where one concept is missing, faint, or colliding awkwardly with another. We hypothesize that this happens when the di"
+  },
+  {
+    "title": "SemShareKV: Efficient KVCache Sharing for Semantically Similar Prompts via Token-Level LSH Matching",
+    "arxiv_id": "2509.24832",
+    "abstract": "As large language models (LLMs) continue to scale, the memory footprint of Key-Value (KV) caches during inference has become a significant bottleneck. Existing approaches primarily focus on compressing KV caches within a single prompt or reusing shared prefixes or frequently occurred text segments a"
+  },
+  {
+    "title": "From Perception to Cognition: A Survey of Vision-Language Interactive Reasoning in Multimodal Large Language Models",
+    "arxiv_id": "2509.25373",
+    "abstract": "Multimodal Large Language Models (MLLMs) strive to achieve a profound, human-like understanding of and interaction with the physical world, but often exhibit a shallow and incoherent integration when acquiring information (Perception) and conducting reasoning (Cognition). This disconnect leads to a "
+  },
+  {
+    "title": "Act to See, See to Act: Diffusion-Driven Perception-Action Interplay for Adaptive Policies",
+    "arxiv_id": "2509.25822",
+    "abstract": "Existing imitation learning methods decouple perception and action, which overlooks the causal reciprocity between sensory representations and action execution that humans naturally leverage for adaptive behaviors. To bridge this gap, we introduce Action-Guided Diffusion Policy (DP-AG), a unified re"
+  },
+  {
+    "title": "InfLLM-V2: Dense-Sparse Switchable Attention for Seamless Short-to-Long Adaptation",
+    "arxiv_id": "2509.24663",
+    "abstract": "Long-sequence processing is a critical capability for modern large language models. However, the self-attention mechanism in the standard Transformer architecture faces severe computational and memory bottlenecks when processing long sequences. While trainable sparse attention methods offer a promis"
+  },
+  {
+    "title": "Contrastive Diffusion Guidance for Spatial Inverse Problems",
+    "arxiv_id": "2509.26489",
+    "abstract": "We consider the inverse problem of reconstructing the spatial layout of a place, a home floorplan for example, from a user`s movements inside that layout. Direct inversion is ill-posed since many floorplans can explain the same movement trajectories. We adopt a diffusion-based posterior sampler to g"
+  },
+  {
+    "title": "Hyperbolic Optimization",
+    "arxiv_id": "2509.25206",
+    "abstract": "This work explores optimization methods on hyperbolic manifolds. Building on Riemannian optimization principles, we extend the Hyperbolic Stochastic Gradient Descent (a specialization of Riemannian SGD) to a Hyperbolic Adam optimizer. While these methods are particularly relevant for learning on the"
+  },
+  {
+    "title": "On Powerful Ways to Generate: Autoregression, Diffusion, and Beyond",
+    "arxiv_id": "2510.06190",
+    "abstract": "Diffusion language models have recently emerged as a competitive alternative to autoregressive language models. Beyond next-token generation, they are more efficient and flexible by enabling parallel and any-order token generation. However, despite empirical successes, their computational power and "
+  },
+  {
+    "title": "Improving Discrete Diffusion Unmasking Policies Beyond Explicit Reference Policies",
+    "arxiv_id": "2510.05725",
+    "abstract": "Masked diffusion models (MDMs) have recently emerged as a novel framework for language modeling. MDMs generate sentences by iteratively denoising masked sequences, filling in [MASK] tokens step by step. Although MDMs support any-order sampling, performance is highly sensitive to the choice of which "
+  },
+  {
+    "title": "CreditDecoding: Accelerating Parallel Decoding in Diffusion Large Language Models with Trace Credits",
+    "arxiv_id": "2510.06133",
+    "abstract": "Diffusion large language models (dLLMs) generate text through iterative denoising steps, achieving parallel decoding by denoising only high-confidence positions at each step. However, existing approaches often repetitively remask tokens due to initially low confidence scores, leading to redundant it"
+  },
+  {
+    "title": "Discrete Diffusion Models with MLLMs for Unified Medical Multimodal Generation",
+    "arxiv_id": "2510.06131",
+    "abstract": "Recent advances in generative medical models are constrained by modality-specific scenarios that hinder the integration of complementary evidence from imaging, pathology, and clinical notes. This fragmentation limits their evolution into foundation models that can learn and reason across the full sp"
+  },
+  {
+    "title": "LightCache: Memory-Efficient, Training-Free Acceleration for Video Generation",
+    "arxiv_id": "2510.05367",
+    "abstract": "Training-free acceleration has emerged as an advanced research area in video generation. The redundancy of latents in diffusion model inference provides a natural entry point for acceleration. We decompose the inference process into the encoding, denoising, and decoding stages, and observe that cach"
+  },
+  {
+    "title": "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval",
+    "arxiv_id": "2510.05381",
+    "abstract": "Large language models (LLMs) often fail to scale their performance on long-context tasks performance in line with the context lengths they support. This gap is commonly attributed to retrieval failures\u2014the models' inability to identify information in the long inputs that is relevant to the task they"
+  },
+  {
+    "title": "Every Step Counts: Decoding Trajectories as Authorship Fingerprints of dLLMs",
+    "arxiv_id": "2510.05148",
+    "abstract": "Discrete Diffusion Large Language Models (dLLMs) have recently emerged as a competitive paradigm for non-autoregressive language modeling. Their distinctive decoding mechanism enables faster inference speed and strong performance in code generation and mathematical tasks. In this work, we show that "
+  },
+  {
+    "title": "Decoding Partial Differential Equations: Cross-Modal Adaptation of Decoder-only Models to PDEs",
+    "arxiv_id": "2510.05278",
+    "abstract": "Large language models have shown great success on natural language tasks in recent years, but they have also shown great promise when adapted to new modalities, e.g., for scientific machine learning tasks. Even though decoder-only models are more popular within NLP and scale exceedingly well at gene"
+  },
+  {
+    "title": "Be Tangential to Manifold: Discovering Riemannian Metric for Diffusion Models",
+    "arxiv_id": "2510.05509",
+    "abstract": "Diffusion models are powerful deep generative models (DGMs) that generate high-fidelity, diverse content. However, unlike classical DGMs, they lack an explicit, tractable low-dimensional latent space that parameterizes the data manifold. This absence limits manifold-aware analysis and operations, su"
+  },
+  {
+    "title": "DiffSDA: Unsupervised Diffusion Sequential Disentanglement Across Modalities",
+    "arxiv_id": "2510.05717",
+    "abstract": "Unsupervised representation learning, particularly sequential disentanglement, aims to separate static and dynamic factors of variation in data without relying on labels. This remains a challenging problem, as existing approaches based on variational autoencoders and generative adversarial networks "
+  },
+  {
+    "title": "Draft, Verify, and Improve: Toward Training-Aware Speculative Decoding",
+    "arxiv_id": "2510.05421",
+    "abstract": "Autoregressive (AR) decoding is a major latency bottleneck for large language models. Speculative decoding (SD) accelerates AR by letting a drafter propose multi-token blocks that a verifier accepts or rejects. However, many SD systems require heavy offline training or extra components. These choice"
+  },
+  {
+    "title": "VecInfer: Efficient LLM Inference with Low-Bit KV Cache via Outlier-Suppressed Vector Quantization",
+    "arxiv_id": "2510.06175",
+    "abstract": "The Key-Value (KV) cache introduces substantial memory overhead during large language model (LLM) inference. Although existing vector quantization (VQ) methods reduce KV cache usage and provide flexible representational capacity across bit-widths, they suffer severe performance degradation at ultra-"
+  },
+  {
+    "title": "Revisiting Long-context Modeling from Context Denoising Perspective",
+    "arxiv_id": "2510.05862",
+    "abstract": "Long-context models (LCMs) have demonstrated great potential in processing long sequences, facilitating many real-world applications. The success of LCMs can be attributed to their ability to locate implicit critical information within the context for further prediction. However, recent research rev"
+  },
+  {
+    "title": "Data Factory with Minimal Human Effort Using VLMs",
+    "arxiv_id": "2510.05722",
+    "abstract": "Generating enough and diverse data through augmentation offers an efficient solution to the time-consuming and labour-intensive process of collecting and annotating pixel-wise images. Traditional data augmentation techniques often face challenges in manipulating high-level semantic attributes, such "
+  },
+  {
+    "title": "KVLinC : KV Cache Quantization with Hadamard Rotation and Linear Correction",
+    "arxiv_id": "2510.05373",
+    "abstract": "Quantizing the key-value (KV) cache is a promising strategy for improving the inference efficiency of large language models (LLMs). However, aggressive quantization to very low precision (e.g., 2 bits) introduces significant errors in the stored key and value tensors, which propagate through the dot"
+  },
+  {
+    "title": "Teamwork: Collaborative Diffusion with Low-rank Coordination and Adaptation",
+    "arxiv_id": "2510.05532",
+    "abstract": "Large pretrained diffusion models can provide strong priors beneficial for many graphics applications. However, generative applications such as neural rendering and inverse methods such as SVBRDF estimation and intrinsic image decomposition require additional input or output channels. Current soluti"
+  },
+  {
+    "title": "Fine-grained Defocus Blur Control for Generative Image Models",
+    "arxiv_id": "2510.06215",
+    "abstract": "Current text-to-image diffusion models excel at generating diverse, high-quality images, yet they struggle to incorporate fine-grained camera metadata such as precise aperture settings. In this work, we introduce a novel text-to-image diffusion framework that leverages camera metadata, or EXIF data,"
+  },
+  {
+    "title": "H1B-KV: Hybrid One-Bit Caches for Memory-Efficient Large Language Model Inference",
+    "arxiv_id": "2510.05529",
+    "abstract": "Autoregressive decoding in large language models (LLMs) requires caching a growing list of past key-value (KV) pairs, making long-context inference a memory-bound problem. While recent methods have explored quantizing the cache, evicting tokens, or using binary sketches for keys (e.g., Loki), these "
+  },
+  {
+    "title": "Diffusion Models for Low-Light Image Enhancement: A Multi-Perspective Taxonomy and Performance Analysis",
+    "arxiv_id": "2510.05976",
+    "abstract": "Low-light image enhancement (LLIE) is vital for safety-critical applications such as surveillance, autonomous navigation, and medical imaging, where visibility degradation can impair downstream task performance. Recently, diffusion models have emerged as a promising generative paradigm for LLIE due "
+  },
+  {
+    "title": "Mitigating Diffusion Model Hallucinations with Dynamic Guidance",
+    "arxiv_id": "2510.05356",
+    "abstract": "Diffusion models, despite their impressive demos, often produce hallucinatory samples with structural inconsistencies that lie outside of the support of the true data distribution. Such hallucinations can be attributed to excessive smoothing between modes of the data distribution. However, semantic "
+  },
+  {
+    "title": "Thermodynamic Performance Limits for Score-Based Diffusion Models",
+    "arxiv_id": "2510.06174",
+    "abstract": "We establish a fundamental connection between score-based diffusion models and non-equilibrium thermodynamics by deriving performance limits based on entropy rates. Our main theoretical contribution is a lower bound on the negative log-likelihood of the data that relates model performance to entropy"
+  },
+  {
+    "title": "Context Matters: Learning Global Semantics via Object-Centric Representation",
+    "arxiv_id": "2510.05674",
+    "abstract": "Recent advances in language modeling have witnessed the rise of highly desirable emergent capabilities, such as reasoning and in-context learning. However, vision models have yet to exhibit comparable progress in these areas. In this paper, we argue that this gap could stem from the lack of semantic"
+  },
+  {
+    "title": "Diffusion Transformers with Representation Autoencoders",
+    "arxiv_id": "2510.11690",
+    "abstract": "Latent generative modeling, where a pretrained autoencoder maps pixels into a latent space for the diffusion process, has become the standard strategy for Diffusion Transformers (DiT); however, the autoencoder component has barely evolved. Most DiTs continue to rely on the original VAE encoder, whic"
+  },
+  {
+    "title": "LayerSync: Self-aligning Intermediate Layers",
+    "arxiv_id": "2510.12581",
+    "abstract": "We propose LayerSync, a domain-agnostic approach for improving the generation quality and the training efficiency of diffusion models. Prior studies have highlighted the connection between the quality of generation and the representations learned by diffusion models, showing that external guidance o"
+  },
+  {
+    "title": "UniFusion: Vision-Language Model as Unified Encoder in Image Generation",
+    "arxiv_id": "2510.12789",
+    "abstract": "Although recent advances in visual generation have been remarkable, most existing architectures still depend on distinct encoders for images and text. This separation constrains diffusion models' ability to perform cross-modal reasoning and knowledge transfer. Prior attempts to bridge this gap often"
+  },
+  {
+    "title": "There is No VAE: End-to-End Pixel-Space Generative Modeling via Self-Supervised Pre-training",
+    "arxiv_id": "2510.12586",
+    "abstract": "Pixel-space generative models are often more difficult to train and generally underperform compared to their latent-space counterparts, leaving a persistent performance and efficiency gap. In this paper, we introduce a novel two-stage training framework that closes this gap for pixel-space diffusion"
+  },
+  {
+    "title": "Boundary-Guided Policy Optimization for Memory-efficient RL of Diffusion Large Language Models",
+    "arxiv_id": "2510.11683",
+    "abstract": "A key challenge in applying reinforcement learning (RL) to diffusion large language models (dLLMs) lies in the intractability of their likelihood functions, which are essential for the RL objective, necessitating corresponding approximation in each training step. While existing methods approximate t"
+  },
+  {
+    "title": "Direct Multi-Token Decoding",
+    "arxiv_id": "2510.11958",
+    "abstract": "Decoder-only transformers have become the standard architecture for large language models (LLMs) due to their strong performance. Recent studies suggest that, in pre-trained LLMs, early, middle, and late layers may serve distinct roles: Early layers focus on understanding the input context, middle l"
+  },
+  {
+    "title": "BIGFix: Bidirectional Image Generation with Token Fixing",
+    "arxiv_id": "2510.12231",
+    "abstract": "Recent advances in image and video generation have raised significant interest from both academia and industry. A key challenge in this field is improving inference efficiency, as model size and the number of inference steps directly impact the commercial viability of generative models while also po"
+  },
+  {
+    "title": "DiSTAR: Diffusion over a Scalable Token Autoregressive Representation for Speech Generation",
+    "arxiv_id": "2510.12210",
+    "abstract": "Recent attempts to interleave autoregressive (AR) sketchers with diffusion-based refiners over continuous speech representations have shown promise, but they remain brittle under distribution shift and offer limited levers for controllability. We introduce DISTAR, a zero-shot text-to-speech framewor"
+  },
+  {
+    "title": "Mitigating the Noise Shift for Denoising Generative Models via Noise Awareness Guidance",
+    "arxiv_id": "2510.12497",
+    "abstract": "Existing denoising generative models rely on solving discretized reverse-time SDEs or ODEs. In this paper, we identify a long-overlooked yet pervasive issue in this family of models: a misalignment between the pre-defined noise level and the actual noise level encoded in intermediate states during s"
+  },
+  {
+    "title": "Hierarchical Koopman Diffusion: Fast Generation with Interpretable Diffusion Trajectory",
+    "arxiv_id": "2510.12220",
+    "abstract": "Diffusion models have achieved impressive success in high-fidelity image generation but suffer from slow sampling due to their inherently iterative denoising process. While recent one-step methods accelerate inference by learning direct noise-to-image mappings, they sacrifice the interpretability an"
+  },
+  {
+    "title": "DiffEM: Learning from Corrupted Data with Diffusion Models via Expectation Maximization",
+    "arxiv_id": "2510.12691",
+    "abstract": "Diffusion models have emerged as powerful generative priors for high-dimensional inverse problems, yet learning them when only corrupted or noisy observations are available remains challenging. In this work, we propose a new method for training diffusion models with Expectation-Maximization (EM) fro"
+  },
+  {
+    "title": "Diffusion Models for Reinforcement Learning: Foundations, Taxonomy, and Development",
+    "arxiv_id": "2510.12253",
+    "abstract": "Diffusion Models (DMs), as a leading class of generative models, offer key advantages for reinforcement learning (RL), including multi-modal expressiveness, stable training, and trajectory-level planning. This survey delivers a comprehensive and up-to-date synthesis of diffusion-based RL. We first p"
+  },
+  {
+    "title": "Latent Discrete Diffusion Models",
+    "arxiv_id": "2510.18114",
+    "abstract": "We study discrete diffusion for language and other categorical data and focus on a common limitation of masked denoisers: reverse transitions typically factorize across positions, which can weaken joint structure and degrade quality in few-step generation. We propose \\emph{Latent Discrete Diffusion "
+  },
+  {
+    "title": "Vision Foundation Models Can Be Good Tokenizers for Latent Diffusion Models",
+    "arxiv_id": "2510.18457",
+    "abstract": "While latent diffusion models (LDMs) have demonstrated remarkable success in visual generation, the visual tokenizers has proven crucial for effective LDM training. While recent advances have explored incorporating Vision Foundation Model (VFM) representations into visual tokenizers through distilla"
+  },
+  {
+    "title": "Planned Diffusion",
+    "arxiv_id": "2510.18087",
+    "abstract": "A central challenge in large language model inference is the trade-off between generation speed and output quality. Autoregressive models produce high-quality text but generate tokens sequentially. Diffusion models can generate tokens in parallel but often need many iterations to match the same qual"
+  },
+  {
+    "title": "How Efficient Are Diffusion Language Models? A Critical Examination of Efficiency Evaluation Practices",
+    "arxiv_id": "2510.18480",
+    "abstract": "Diffusion language models (DLMs) have emerged as a promising alternative to the long-dominant autoregressive (AR) paradigm, offering a parallelable decoding process that could yield greater efficiency. Yet, in practice, current open-source DLMs often underperform their AR counterparts in speed, limi"
+  },
+  {
+    "title": "Saber: An Efficient Sampling with Adaptive Acceleration and Backtracking Enhanced Remasking for Diffusion Language Model",
+    "arxiv_id": "2510.18165",
+    "abstract": "Diffusion language models (DLMs) are emerging as a powerful and promising alternative to the dominant autoregressive paradigm, offering inherent advantages in parallel generation and bidirectional context modeling. However, the performance of DLMs on code generation tasks, which have stronger struct"
+  },
+  {
+    "title": "UniRL-Zero: Reinforcement Learning on Unified Models with Joint Language Model and Diffusion Model Experts",
+    "arxiv_id": "2510.17937",
+    "abstract": "We present UniRL-Zero, a unified reinforcement learning (RL) framework that boosts, multimodal language model understanding and reasoning, diffusion model multimedia generation, and their beneficial interaction capabilities within a unified model. Our work defines six scenarios for unified model rei"
+  },
+  {
+    "title": "Adamas: Hadamard Sparse Attention for Efficient Long-Context Inference",
+    "arxiv_id": "2510.18413",
+    "abstract": "Large language models (LLMs) now support context windows of hundreds of thousands to millions of tokens, enabling applications such as long-document summarization, large-scale code synthesis, multi-document question answering and persistent multi-turn dialogue. However, such extended contexts exacer"
+  },
+  {
+    "title": "How Do LLMs Use Their Depth?",
+    "arxiv_id": "2510.18871",
+    "abstract": "Growing evidence suggests that large language models do not use their depth uniformly, yet we still lack a fine-grained understanding of their layer-wise prediction dynamics. In this paper, we trace the intermediate representations of several open-weight models during inference and reveal a structur"
+  },
+  {
+    "title": "A Frequentist Statistical Introduction to Variational Inference, Autoencoders, and Diffusion Models",
+    "arxiv_id": "2510.18777",
+    "abstract": "While Variational Inference (VI) is central to modern generative models like Variational Autoencoders (VAEs) and Denoising Diffusion Models (DDMs), its pedagogical treatment is split across disciplines. In statistics, VI is typically framed as a Bayesian method for posterior approximation. In machin"
+  },
+  {
+    "title": "Shortcutting Pre-trained Flow Matching Diffusion Models is Almost Free Lunch",
+    "arxiv_id": "2510.17858",
+    "abstract": "We present an ultra-efficient post-training method for shortcutting large-scale pre-trained flow matching diffusion models into efficient few-step samplers, enabled by novel velocity field self-distillation.  While shortcutting in flow matching, originally introduced by shortcut models, offers flexi"
+  },
+  {
+    "title": "Long-Context Attention Benchmark: From Kernel Efficiency to Distributed Context Parallelism",
+    "arxiv_id": "2510.17896",
+    "abstract": "Transformer-based large language models (LLMs) have achieved remarkable success, yet their standard attention mechanism incurs quadratic computation and memory costs with respect to sequence length, posing a major bottleneck for long-context training. Prior work tackles this challenge along two dire"
+  },
+  {
+    "title": "Ranking-based Preference Optimization for Diffusion Models from Implicit User Feedback",
+    "arxiv_id": "2510.18353",
+    "abstract": "Direct preference optimization (DPO) methods have shown strong potential in aligning text-to-image diffusion models with human preferences by training on paired comparisons. These methods improve training stability by avoiding the REINFORCE algorithm but still struggle with challenges such as accura"
+  },
+  {
+    "title": "From Quarter to All: Accelerating Speculative LLM Decoding via Floating-Point Exponent Remapping and Parameter Sharing",
+    "arxiv_id": "2510.18525",
+    "abstract": "Large language models achieve impressive performance across diverse tasks but exhibit high inference latency due to their large parameter sizes. While quantization reduces model size, it often leads to performance degradation compared to the full model. Speculative decoding remains lossless but typi"
+  },
+  {
+    "title": "HyperDiffusionFields (HyDiF): Diffusion-Guided Hypernetworks for Learning Implicit Molecular Neural Fields",
+    "arxiv_id": "2510.18122",
+    "abstract": "We introduce HyperDiffusionFields (HyDiF), a framework that models 3D molecular conformers as continuous fields rather than discrete atomic coordinates or graphs. At the core of our approach is the Molecular Directional Field (MDF), a vector field that maps any point in space to the direction of the"
+  },
+  {
+    "title": "Continuous Autoregressive Language Models",
+    "arxiv_id": "2510.27688",
+    "abstract": "The efficiency of large language models (LLMs) is fundamentally limited by their sequential, token-by-token generation process. We argue that overcoming this bottleneck requires a new design axis for LLM scaling: increasing the semantic bandwidth of each generative step. To this end, we introduce Co"
+  },
+  {
+    "title": "E-MMDiT: Revisiting Multimodal Diffusion Transformer Design for Fast Image Synthesis under Limited Resources",
+    "arxiv_id": "2510.27135",
+    "abstract": "Diffusion models have shown strong capabilities in generating high-quality images from text prompts. However, these models often require large-scale training data and significant computational resources to train, or suffer from heavy structure with high latency. To this end, we propose Efficient Mul"
+  },
+  {
+    "title": "Diffuse Thinking: Exploring Diffusion Language Models as Efficient Thought Proposers for Reasoning",
+    "arxiv_id": "2510.27469",
+    "abstract": "In recent years, large language models (LLMs) have witnessed remarkable advancements, with the test-time scaling law consistently enhancing the reasoning capabilities. Through systematic evaluation and exploration of a diverse spectrum of intermediate thoughts, LLMs demonstrate the potential to gene"
+  },
+  {
+    "title": "Dual-Stream Diffusion for World-Model Augmented Vision-Language-Action Model",
+    "arxiv_id": "2510.27607",
+    "abstract": "Recently, augmenting vision-language-action models (VLAs) with world-models has shown promise in robotic policy learning. However, it remains challenging to jointly predict next-state observations and action sequences because of the inherent difference between the two modalities. To address this, we"
+  },
+  {
+    "title": "Probability Distributions Computed by Hard-Attention Transformers",
+    "arxiv_id": "2510.27118",
+    "abstract": "Most expressivity results for transformers treat them as language recognizers (which accept or reject strings), and not as they are used in practice, as language models (which generate strings autoregressively and probabilistically). Here, we characterize the probability distributions that transform"
+  },
+  {
+    "title": "Higher-order Linear Attention",
+    "arxiv_id": "2510.27258",
+    "abstract": "The quadratic cost of scaled dot-product attention is a central obstacle to scaling autoregressive language models to long contexts. Linear-time attention and State Space Models (SSMs) provide scalable alternatives but are typically restricted to first-order or kernel-based approximations, which can"
+  },
+  {
+    "title": "H2-Cache: A Novel Hierarchical Dual-Stage Cache for High-Performance Acceleration of Generative Diffusion Models",
+    "arxiv_id": "2510.27171",
+    "abstract": "Diffusion models have emerged as state-of-the-art in image generation, but their practical deployment is hindered by the significant computational cost of their iterative denoising process. While existing caching techniques can accelerate inference, they often create a challenging trade-off between "
+  },
+  {
+    "title": "Elastic Architecture Search for Efficient Language Models",
+    "arxiv_id": "2510.27037",
+    "abstract": "As large pre-trained language models become increasingly critical to natural language understanding (NLU) tasks, their substantial computational and memory requirements have raised significant economic and environmental concerns. Addressing these challenges, this paper introduces the Elastic Languag"
+  },
+  {
+    "title": "Causal Masking on Spatial Data: An Information-Theoretic Case for Learning Spatial Datasets with Unimodal Language Models",
+    "arxiv_id": "2510.27009",
+    "abstract": "Language models are traditionally designed around causal masking. In domains with spatial or relational structure, causal masking is often viewed as inappropriate, and sequential linearizations are instead used. Yet the question of whether it is viable to accept the information loss introduced by ca"
+  },
+  {
+    "title": "Rethinking Robust Adversarial Concept Erasure in Diffusion Models",
+    "arxiv_id": "2510.27285",
+    "abstract": "Concept erasure aims to selectively unlearning undesirable content in diffusion models (DMs) to reduce the risk of sensitive content generation. As a novel paradigm in concept erasure, most existing methods employ adversarial training to identify and suppress target concepts, thus reducing the likel"
+  },
+  {
+    "title": "Wasserstein Convergence of Critically Damped Langevin Diffusions",
+    "arxiv_id": "2511.02419",
+    "abstract": "Score-based Generative Models (SGMs) have achieved impressive performance in data generation across a wide range of applications and benefit from strong theoretical guarantees. Recently, methods inspired by statistical mechanics, in particular, Hamiltonian dynamics, have introduced Critically-damped"
+  },
+  {
+    "title": "SpecAttn: Speculating Sparse Attention",
+    "arxiv_id": "2510.27641",
+    "abstract": "Large Language Models (LLMs) face significant computational bottlenecks during inference due to the quadratic complexity of self-attention mechanisms, particularly as context lengths increase. We introduce SpecAttn, a novel training-free approach that seamlessly integrates with existing speculative "
+  },
+  {
+    "title": "Linearly Constrained Diffusion Implicit Models",
+    "arxiv_id": "2411.00359",
+    "abstract": "We introduce Linearly Constrained Diffusion Implicit Models (CDIM), a fast and accurate approach to solving noisy linear inverse problems using diffusion models. Traditional diffusion-based inverse methods rely on numerous projection steps to enforce measurement consistency in addition to unconditio"
+  },
+  {
+    "title": "UMAMI: Unifying Masked Autoregressive Models and Deterministic Rendering for View Synthesis",
+    "arxiv_id": "2512.20107",
+    "abstract": "Novel view synthesis (NVS) seeks to render photorealistic, 3D\u2011consistent images of a scene from unseen camera poses given only a sparse set of posed views. Existing deterministic networks render observed regions quickly but blur unobserved areas, whereas stochastic diffusion\u2011based methods hallucinat"
+  },
+  {
+    "title": "Stateful KV Cache Management for LLMs: Balancing Space, Time, Accuracy, and Positional Fidelity",
+    "arxiv_id": "2511.04686",
+    "abstract": "The Key-Value (KV) cache is integral to efficient autoregressive inference in large language models (LLMs), yet its unbounded growth in stateful multi-turn scenarios presents major challenges. This paper examines the interplay between KV cache management strategies, the architectural context limits "
+  },
+  {
+    "title": "LoPT: Lossless Parallel Tokenization Acceleration for Long Context Inference of Large Language Model",
+    "arxiv_id": "2511.04952",
+    "abstract": "Long context inference scenarios have become increasingly important for large language models, yet they introduce significant computational latency. While prior research has optimized long-sequence inference through operators, model architectures, and system frameworks, tokenization remains an overl"
+  },
+  {
+    "title": "TRIM: Scalable 3D Gaussian Diffusion Inference with Temporal and Spatial Trimming",
+    "arxiv_id": "2511.16642",
+    "abstract": "Recent advances in 3D Gaussian diffusion models suffer from time-intensive denoising and post-denoising processing due to the massive number of Gaussian primitives, resulting in slow generation and limited scalability along sampling trajectories.\nTo improve the efficiency of 3D diffusion models, \nwe"
+  },
+  {
+    "title": "The Causal Round Trip: Generating Authentic Counterfactuals by Eliminating Information Loss",
+    "arxiv_id": "2511.05236",
+    "abstract": "Judea Pearl's vision of Structural Causal Models (SCMs) as engines for counterfactual reasoning hinges on faithful abduction: the precise inference of latent exogenous noise. For decades, operationalizing this step for complex, non-linear mechanisms has remained a significant computational challenge"
+  },
+  {
+    "title": "Sublinear iterations can suffice even for DDPMs",
+    "arxiv_id": "2511.04844",
+    "abstract": "SDE-based methods such as denoising diffusion probabilistic models (DDPMs) have shown remarkable success in real-world sample generation tasks. Prior analyses of DDPMs have been focused on the exponential Euler discretization, showing guarantees that generally depend at least linearly on the dimensi"
+  },
+  {
+    "title": "Trained on Tokens, Calibrated on Concepts: The Emergence of Semantic Calibration in LLMs",
+    "arxiv_id": "2511.04869",
+    "abstract": "Large Language Models (LLMs) often lack meaningful confidence estimates for their outputs. While base LLMs are known to exhibit next-token calibration, it remains unclear whether they can assess confidence in the actual meaning of their responses beyond the token level. We find that, when using a ce"
+  },
+  {
+    "title": "STEAD: Robust Provably Secure Linguistic Steganography with Diffusion Language Model",
+    "arxiv_id": "2601.14778",
+    "abstract": "Recent provably secure linguistic steganography (PSLS) methods rely on mainstream autoregressive language models (ARMs) to address historically challenging tasks, that is, to disguise covert communication as ``innocuous'' natural language communication.\n  However, due to the characteristic of sequen"
+  },
+  {
+    "title": "Less Is More: Generating Time Series with LLaMA-Style Autoregression in Simple Factorized Latent Spaces",
+    "arxiv_id": "2511.04973",
+    "abstract": "Generative models for multivariate time series are essential for data augmentation, simulation, and privacy preservation, yet current state-of-the-art diffusion-based approaches are slow and limited to fixed-length windows. We propose FAR-TS, a simple yet effective framework that combines disentangl"
+  },
+  {
+    "title": "Bridging Hidden States in Vision-Language Models",
+    "arxiv_id": "2511.11526",
+    "abstract": "Vision-Language Models (VLMs) are a new family of models that align image content with natural language. Existing approaches typically fuse either (a) early: by mixing tokens/features inside the encoders, or (b) late: by comparing pooled embeddings. Many methods also tie fusion to an autoregressive "
+  },
+  {
+    "title": "LiteAttention: A Temporal Sparse Attention for Diffusion Transformers",
+    "arxiv_id": "2511.11062",
+    "abstract": "Diffusion Transformers, particularly for video generation, achieve remarkable quality but suffer from quadratic attention complexity, leading to prohibitive latency. Existing acceleration methods face a fundamental trade-off: dynamically estimating sparse attention patterns at each denoising step in"
+  },
+  {
+    "title": "CountSteer: Steering Attention for Object Counting in Diffusion Models",
+    "arxiv_id": "2511.11253",
+    "abstract": "Text-to-image diffusion models generate realistic and coherent images but often fail to follow numerical instructions in text, revealing a gap between language and visual representation. Interestingly, we found that these models are not entirely blind to numbers-they are implicitly aware of their ow"
+  },
+  {
+    "title": "DiffPro: Joint Timestep and Layer-Wise Precision Optimization for Efficient Diffusion Inference",
+    "arxiv_id": "2511.11446",
+    "abstract": "Diffusion models produce high quality images but inference is costly due to many denoising steps and heavy matrix operations. We present DiffPro, a post-training, hardware-faithful framework that works with the exact integer kernels used in deployment and jointly tunes timesteps and per-layer precis"
+  },
+  {
+    "title": "Evaluating Latent Generative Paradigms for High-Fidelity 3D Shape Completion from a Single Depth Image",
+    "arxiv_id": "2511.11074",
+    "abstract": "While generative models have seen significant adoption across a wide range of data modalities, including 3D data, a consensus on which model is best suited for which task has yet to be reached. Further, conditional information such as text and images to steer the generation process are frequently em"
+  },
+  {
+    "title": "Fast and Expressive Multi-Token Prediction with Probabilistic Circuits",
+    "arxiv_id": "2511.11346",
+    "abstract": "Multi-token prediction (MTP) is a prominent strategy to significantly speed up generation in large language models (LLMs), including byte-level LLMs, which are tokeniser-free but prohibitively slow. However, existing MTP methods often sacrifice expressiveness by assuming independence between future "
+  },
+  {
+    "title": "Hi-DREAM: Brain Inspired Hierarchical Diffusion for fMRI Reconstruction via ROI Encoder and visuAl Mapping",
+    "arxiv_id": "2511.11437",
+    "abstract": "Mapping human brain activity to natural images offers a new window into vision and cognition, yet current diffusion-based decoders face a core difficulty: most condition directly on fMRI features without analyzing how visual information is organized across the cortex. This overlooks the brain's hier"
+  },
+  {
+    "title": "Draft and Refine with Visual Experts",
+    "arxiv_id": "2511.11005",
+    "abstract": "While recent Large Vision-Language Models (LVLMs) exhibit strong multimodal reasoning abilities, they often produce ungrounded or hallucinated responses because they rely too heavily on linguistic priors instead of visual evidence. This limitation highlights the absence of a quantitative measure of "
+  },
+  {
+    "title": "UniModel: A Visual-Only Framework for Unified Multimodal Understanding and Generation",
+    "arxiv_id": "2511.16917",
+    "abstract": "We present UniModel, a unified generative model that jointly supports visual understanding and visual generation within a single pixel-to-pixel diffusion framework. Our goal is to achieve unification along three axes: the model, the tasks, and the representations. At the representation level, we eli"
+  },
+  {
+    "title": "Align & Invert: Solving Inverse Problems with Diffusion and Flow-based Models via Representational Alignment",
+    "arxiv_id": "2511.16870",
+    "abstract": "Enforcing the alignment of internal representations in diffusion or flow-based models with those from pretrained self-supervised models during training has recently been shown to provide a powerful inductive bias, significantly improving both convergence speed and the quality of generated images. In"
+  },
+  {
+    "title": "Spanning Tree Autoregressive Visual Generation",
+    "arxiv_id": "2511.17089",
+    "abstract": "We present Spanning Tree Autoregressive (STAR) modeling, which can incorporate prior knowledge of images, such as center bias and locality, to maintain sampling performance while also providing sufficiently flexible sequence orders to accommodate image editing at inference. Approaches that expose ra"
+  },
+  {
+    "title": "PEPPER: Perception-Guided Perturbation for Robust Backdoor Defense in Text-to-Image Diffusion Models",
+    "arxiv_id": "2511.16830",
+    "abstract": "Recent studies show that text to image (T2I) diffusion models are vulnerable to backdoor attacks, where a trigger in the input prompt can steer generation toward harmful or unintended content. To address this, we introduce PEPPER (PErcePtion Guided PERturbation), a backdoor defense that rewrites the"
+  },
+  {
+    "title": "DAPS++: Rethinking Diffusion Inverse Problems with Decoupled Posterior Annealing",
+    "arxiv_id": "2511.17038",
+    "abstract": "From a Bayesian perspective, score-based diffusion solves inverse problems through joint inference, embedding the likelihood with the prior to guide the sampling process. However, this formulation fails to explain its practical behavior: the prior offers limited guidance, while reconstruction is lar"
+  },
+  {
+    "title": "C$^2$DLM: Causal Concept-Guided Diffusion Large Language Models",
+    "arxiv_id": "2511.22146",
+    "abstract": "Autoregressive (AR) language models and Diffusion Language Models (DLMs) constitute the two principal paradigms of large language models. However, both paradigms suffer from insufficient reasoning capabilities. Human reasoning inherently relies on causal knowledge and thought, which are reflected in"
+  },
+  {
+    "title": "Orchestrating Dual-Boundaries: An Arithmetic Intensity Inspired Acceleration Framework for Diffusion Language Models",
+    "arxiv_id": "2511.21759",
+    "abstract": "Diffusion-based large language models (dLLMs) have recently gained significant attention for their exceptional performance and inherent potential for parallel decoding. Existing frameworks further enhance its inference efficiency by enabling KV caching. However, its bidirectional attention mechanism"
+  },
+  {
+    "title": "ITS3D: Inference-Time Scaling for Text-Guided 3D Diffusion Models",
+    "arxiv_id": "2511.22456",
+    "abstract": "We explore inference-time scaling in text-guided 3D diffusion models to enhance generative quality without additional training. To this end, we introduce ITS3D, a framework that formulates the task as an optimization problem to identify the most effective Gaussian noise input. The framework is drive"
+  },
+  {
+    "title": "db-SP: Accelerating Sparse Attention for Visual Generative Models with Dual-Balanced Sequence Parallelism",
+    "arxiv_id": "2511.23113",
+    "abstract": "Scaling Diffusion Transformer (DiT) inference via sequence parallelism is critical for reducing latency in visual generation, but is severely hampered by workload imbalance when applied to models employing block-wise sparse attention. The imbalance stems from the inherent variation in sparsity acros"
+  },
+  {
+    "title": "Toward Diffusible High-Dimensional Latent Spaces: A Frequency Perspective",
+    "arxiv_id": "2511.22249",
+    "abstract": "Latent diffusion has become the default paradigm for visual generation, yet we observe a persistent reconstruction-generation trade-off as latent dimensionality increases: higher-capacity autoencoders improve reconstruction fidelity but generation quality eventually declines. We trace this gap to th"
+  },
+  {
+    "title": "Masked Diffusion for Generative Recommendation",
+    "arxiv_id": "2511.23021",
+    "abstract": "Generative recommendation (GR) with semantic IDs (SIDs) has emerged as a promising alternative to traditional recommendation approaches due to its performance gains, capitalization on semantic information provided through language model embeddings, and inference and storage efficiency. Existing GR w"
+  },
+  {
+    "title": "BlockVid: Block Diffusion for High-Quality and Consistent Minute-Long Video Generation",
+    "arxiv_id": "2511.22973",
+    "abstract": "Generating minute-long videos is a critical step toward developing world models, providing a foundation for realistic extended scenes and advanced AI simulators. The emerging semi-autoregressive (block diffusion) paradigm integrates the strengths of diffusion and autoregressive models, enabling arbi"
+  },
+  {
+    "title": "Visual Generation Tuning",
+    "arxiv_id": "2511.23469",
+    "abstract": "Large Vision Language Models (VLMs) effectively bridge the modality gap through extensive pretraining, acquiring sophisticated visual representations aligned with language. However, it remains underexplored whether these representations, optimized for multimodal understanding tasks, harbor an inhere"
+  },
+  {
+    "title": "Closed-Loop Transformers: Autoregressive Modeling as Iterative Latent Equilibrium",
+    "arxiv_id": "2511.21882",
+    "abstract": "Contemporary autoregressive transformers operate in open loop: each hidden state is computed in a single forward pass and never revised, causing errors to propagate uncorrected through the sequence. We identify this open-loop bottleneck as a fundamental architectural limitation underlying well-docum"
+  },
+  {
+    "title": "TTSnap: Test-Time Scaling of Diffusion Models via Noise-Aware Pruning",
+    "arxiv_id": "2511.22242",
+    "abstract": "A prominent approach to test-time scaling for text-to-image diffusion models formulates the problem as a search over multiple noise seeds, selecting the one that maximizes a certain image-reward function. The effectiveness of this strategy heavily depends on the number and diversity of noise seeds e"
+  },
+  {
+    "title": "Controllable 3D Object Generation with Single Image Prompt",
+    "arxiv_id": "2511.22194",
+    "abstract": "Recently, the impressive generative capabilities of diffusion models have been demonstrated, producing images with remarkable fidelity. Particularly, existing methods for the 3D object generation tasks, which is one of the fastest-growing segments in computer vision, pre-dominantly use text-to-image"
+  },
+  {
+    "title": "From Points to Clouds: Learning Robust Semantic Distributions for Multi-modal Prompts",
+    "arxiv_id": "2511.22897",
+    "abstract": "Multimodal Prompt Learning (MPL) has emerged as a pivotal technique for adapting large-scale Visual Language Models (VLMs). However, current MPL methods are fundamentally limited by their optimization of a single, static point representation. This paradigm is inherently brittle, leads to overfitting"
+  },
+  {
+    "title": "FoldSAE: Learning to Steer Protein Folding Through Sparse Representations",
+    "arxiv_id": "2511.22519",
+    "abstract": "RFdiffusion is a popular and well-established model for generation of protein structures. However, this generative process offers limited insight into its internal representations and how they contribute to the final protein structure. Concurrently, recent work in mechanistic interpretability has su"
+  },
+  {
+    "title": "Guiding Visual Autoregressive Models through Spectrum Weakening",
+    "arxiv_id": "2511.22991",
+    "abstract": "Classifier-free guidance (CFG) has become a widely adopted and practical approach for enhancing generation quality and improving condition alignment. Recent studies have explored guidance mechanisms for unconditional generation, yet these approaches remain fundamentally tied to assumptions specific "
+  },
+  {
+    "title": "Training-Free Loosely Speculative Decoding: Accepting Semantically Correct Drafts Beyond Exact Match",
+    "arxiv_id": "2511.22972",
+    "abstract": "Large language models (LLMs) achieve strong performance across diverse tasks but suffer from high inference latency due to their autoregressive generation. Speculative Decoding (SPD) mitigates this issue by verifying candidate tokens in parallel from a smaller draft model, yet its strict exact-match"
+  },
+  {
+    "title": "Scalable Diffusion Transformer for Conditional 4D fMRI Synthesis",
+    "arxiv_id": "2511.22870",
+    "abstract": "Generating whole-brain 4D fMRI sequences conditioned on cognitive tasks remains challenging due to the high-dimensional, heterogeneous BOLD dynamics across subjects/acquisitions and the lack of neuroscience-grounded validation. We introduce the first diffusion transformer for voxelwise 4D fMRI condi"
+  },
+  {
+    "title": "Designing Instance-Level Sampling Schedules via REINFORCE with James-Stein Shrinkage",
+    "arxiv_id": "2511.22177",
+    "abstract": "Most post-training methods for text-to-image samplers focus on model weights: either fine-tuning the backbone for alignment or distilling it for few-step efficiency. We take a different route: rescheduling the sampling timeline of a frozen sampler. Instead of a fixed, global schedule, we learn insta"
+  },
+  {
+    "title": "Test-time scaling of diffusions with flow maps",
+    "arxiv_id": "2511.22688",
+    "abstract": "A common recipe to improve diffusion models at test-time so that samples score highly against a user-specified reward is to introduce the gradient of the reward into the dynamics of the diffusion itself. This procedure is often ill posed, as user-specified rewards are usually only well defined on th"
+  },
+  {
+    "title": "ReasonEdit: Towards Reasoning-Enhanced Image Editing Models",
+    "arxiv_id": "2511.22625",
+    "abstract": "Recent advances in image editing models have shown remarkable progress. A common architectural design couples a multimodal large language model (MLLM) encoder with a diffusion decoder, as seen in systems such as Step1X-Edit and Qwen-Image-Edit, where the MLLM encodes both the reference image and the"
+  },
+  {
+    "title": "Optimizing Multimodal Language Models through Attention-based Interpretability",
+    "arxiv_id": "2511.23375",
+    "abstract": "Modern large language models become multimodal, analyzing various data formats like text and images. While fine-tuning is effective for adapting these multimodal language models (MLMs) to downstream tasks, full fine-tuning is computationally expensive. Parameter-Efficient Fine-Tuning (PEFT) methods "
+  },
+  {
+    "title": "Decoupled DMD: CFG Augmentation as the Spear, Distribution Matching as the Shield",
+    "arxiv_id": "2511.22677",
+    "abstract": "Diffusion model distillation has emerged as a powerful technique for creating efficient few-step and single-step generators. Among these, Distribution Matching Distillation (DMD) and its variants stand out for their impressive performance, which is widely attributed to their core mechanism of matchi"
+  },
+  {
+    "title": "Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer",
+    "arxiv_id": "2511.22699",
+    "abstract": "The landscape of high-performance image generation models is currently dominated by proprietary systems, such as Nano Banana Pro and Seedream 4.0. Leading open-source alternatives, including Qwen-Image, Hunyuan-Image-3.0 and FLUX.2, are characterized by massive parameter counts (20B to 80B), making "
+  },
+  {
+    "title": "Markovian Scale Prediction: A New Era of Visual Autoregressive Generation",
+    "arxiv_id": "2511.23334",
+    "abstract": "Visual AutoRegressive modeling (VAR) based on next-scale prediction has revitalized autoregressive visual generation. Although its full-context dependency, i.e., modeling all previous scales for next-scale prediction, facilitates more stable and comprehensive representation learning by leveraging co"
+  },
+  {
+    "title": "Fast3Dcache: Training-free 3D Geometry Synthesis Acceleration",
+    "arxiv_id": "2511.22533",
+    "abstract": "Diffusion models have achieved impressive generative quality across modalities like 2D images, videos, and 3D shapes, but their inference remains computationally expensive due to the iterative denoising process. While recent caching-based methods effectively reuse redundant computations to speed up "
+  },
+  {
+    "title": "VQRAE: Representation Quantization Autoencoders for Multimodal Understanding, Generation and Reconstruction",
+    "arxiv_id": "2511.23386",
+    "abstract": "Unifying multimodal understanding, generation and reconstruction representation in a single tokenizer remains a key challenge in building unified models. Previous research predominantly attempts to address this in a dual encoder paradigm, e.g., utilizing the separate encoders for understanding and g"
+  },
+  {
+    "title": "ParaUni: Enhance Generation in Unified Multimodal Model with Reinforcement-driven Hierarchical Parallel Information Interaction",
+    "arxiv_id": "2512.05422",
+    "abstract": "Unified multimodal models significantly improve visual generation by combining vision-language models (VLMs) with diffusion models. However, existing methods struggle to fully balance sufficient interaction and flexible implementation due to vast representation difference. Considering abundant and h"
+  },
+  {
+    "title": "EFDiT: Efficient Fine-grained Image Generation Using Diffusion Transformer Models",
+    "arxiv_id": "2512.05152",
+    "abstract": "Diffusion models are highly regarded for their controllability and the diversity of images they generate. However, class-conditional generation methods based on diffusion models often focus on more common categories. In large-scale fine-grained image generation, issues of semantic information entang"
+  },
+  {
+    "title": "USV: Unified Sparsification for Accelerating Video Diffusion Models",
+    "arxiv_id": "2512.05754",
+    "abstract": "The scalability of high-fidelity video diffusion models (VDMs) is constrained by two key sources of redundancy: the quadratic complexity of global spatio-temporal attention and the computational overhead of long iterative denoising trajectories. Existing accelerators -- such as sparse attention and "
+  },
+  {
+    "title": "ShaRP: SHAllow-LayeR Pruning for Video Large Language Models Acceleration",
+    "arxiv_id": "2512.05385",
+    "abstract": "Video Large Language Models (VLLMs) face the challenge of high computational load during the pre-filling stage due to the processing of an enormous number of visual tokens. Although attention-based pruning methods are widely used to accelerate inference, trials at early decoder layers often result i"
+  },
+  {
+    "title": "InvarDiff: Cross-Scale Invariance Caching for Accelerated Diffusion Models",
+    "arxiv_id": "2512.05134",
+    "abstract": "Diffusion models deliver high-fidelity synthesis but remain slow due to iterative sampling. We empirically observe there exists feature invariance in deterministic sampling, and present InvarDiff, a training-free acceleration method that exploits the relative temporal invariance across timestep-scal"
+  },
+  {
+    "title": "One-Step Diffusion Samplers via Self-Distillation and Deterministic Flow",
+    "arxiv_id": "2512.05251",
+    "abstract": "Sampling from unnormalized target distributions is a fundamental yet challenging task in machine learning and statistics. Existing sampling algorithms typically require many iterative steps to produce high-quality samples, leading to high computational costs. We introduce one-step diffusion samplers"
+  },
+  {
+    "title": "Your Latent Mask is Wrong: Pixel-Equivalent Latent Compositing for Diffusion Models",
+    "arxiv_id": "2512.05198",
+    "abstract": "Latent inpainting in diffusion models still relies almost universally on linearly interpolating VAE latents under a downsampled mask. We propose a key principle for compositing image latents: Pixel-Equivalent Latent Compositing (PELC). An equivalent latent compositor should be the same as compositin"
+  },
+  {
+    "title": "Delving into Latent Spectral Biasing of Video VAEs for Superior Diffusability",
+    "arxiv_id": "2512.05394",
+    "abstract": "Latent diffusion models pair VAEs with diffusion backbones, and the structure of VAE latents strongly influences the difficulty of diffusion training. However, existing video VAEs typically focus on reconstruction fidelity, overlooking latent structure. We present a statistical analysis of video VAE"
+  },
+  {
+    "title": "HQ-DM: Single Hadamard Transformation-Based Quantization-Aware Training for Low-Bit Diffusion Models",
+    "arxiv_id": "2512.05746",
+    "abstract": "Diffusion models have demonstrated significant applications in the field of image generation. However, their high computational and memory costs pose challenges for deployment. Model quantization has emerged as a promising solution to reduce storage overhead and accelerate inference. Nevertheless, e"
+  },
+  {
+    "title": "Exploring MLLM-Diffusion Information Transfer with MetaCanvas",
+    "arxiv_id": "2512.11464",
+    "abstract": "Multimodal learning has rapidly advanced visual understanding, largely via multimodal large language models (MLLMs) that use powerful LLMs as cognitive cores. In visual generation, however, these powerful core models are typically reduced to global text encoders for diffusion models, leaving most of"
+  },
+  {
+    "title": "AutoRefiner: Improving Autoregressive Video Diffusion Models via Reflective Refinement Over the Stochastic Sampling Path",
+    "arxiv_id": "2512.11203",
+    "abstract": "Autoregressive video diffusion models (AR-VDMs) show strong promise as scalable alternatives to bidirectional VDMs, enabling real-time and interactive applications. Yet there remains room for improvement in their sample fidelity. A promising solution is inference-time alignment, which optimizes the "
+  },
+  {
+    "title": "SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder",
+    "arxiv_id": "2512.11749",
+    "abstract": "Visual generation grounded in Visual Foundation Model (VFM) representations offers a highly promising unified pathway for integrating visual understanding, perception, and generation. Despite this potential, training large-scale text-to-image diffusion models entirely within the VFM representation s"
+  },
+  {
+    "title": "Infinity and Beyond: Compositional Alignment in VAR and Diffusion T2I Models",
+    "arxiv_id": "2512.11542",
+    "abstract": "Achieving compositional alignment between textual descriptions and generated images - covering objects, attributes, and spatial relationships - remains a core challenge for modern text-to-image (T2I) models. Although diffusion-based architectures have been widely studied, the compositional behavior "
+  },
+  {
+    "title": "AdaSD: Adaptive Speculative Decoding for Efficient Language Model Inference",
+    "arxiv_id": "2512.11280",
+    "abstract": "Large language models (LLMs) have achieved remarkable performance across a wide range of tasks, but their increasing parameter sizes significantly slow down inference. Speculative decoding mitigates this issue by leveraging a smaller draft model to predict candidate tokens, which are then verified b"
+  },
+  {
+    "title": "Beyond Memorization: Gradient Projection Enables Selective Learning in Diffusion Models",
+    "arxiv_id": "2512.11194",
+    "abstract": "Memorization in large-scale text-to-image diffusion models poses significant security and intellectual property risks, enabling adversarial attribute extraction and the unauthorized reproduction of sensitive or proprietary features. While conventional dememorization techniques, such as regularizatio"
+  },
+  {
+    "title": "Speculative Decoding Speed-of-Light: Optimal Lower Bounds via Branching Random Walks",
+    "arxiv_id": "2512.11718",
+    "abstract": "Speculative generation has emerged as a promising technique to accelerate inference in large language models (LLMs) by leveraging parallelism to verify multiple draft tokens simultaneously. However, the fundamental limits on the achievable speedup remain poorly understood. In this work, we establish"
+  },
+  {
+    "title": "Adaptive Soft Rolling KV Freeze with Entropy-Guided Recovery: Sublinear Memory Growth for Efficient LLM Inference",
+    "arxiv_id": "2512.11221",
+    "abstract": "We present Adaptive Soft Rolling KV Freeze with Entropy-Guided Recovery (ASR-KF-EGR), a training-free inference-time framework for efficient large language model generation. Our method introduces a reversible soft-freeze mechanism that temporarily suspends key-value (KV) updates for low-importance t"
+  },
+  {
+    "title": "REST: Diffusion-based Real-time End-to-end Streaming Talking Head Generation via ID-Context Caching and Asynchronous Streaming Distillation",
+    "arxiv_id": "2512.11229",
+    "abstract": "Diffusion models have significantly advanced the field of talking head generation. However, the slow inference speeds and non-autoregressive paradigms severely constrain the application of diffusion-based THG models. In this study, we propose REST, the first diffusion-based, real-time, end-to-end st"
+  },
+  {
+    "title": "A Simple Generalisation of the Implicit Dynamics of In-Context Learning",
+    "arxiv_id": "2512.11255",
+    "abstract": "In-context learning (ICL) refers to the ability of a model to learn new tasks from examples in its input without any parameter updates. In contrast to previous theories of ICL relying on toy models and data settings, recently it has been shown that an abstraction of a transformer block can be seen a"
+  },
+  {
+    "title": "Structure From Tracking: Distilling Structure-Preserving Motion for Video Generation",
+    "arxiv_id": "2512.11792",
+    "abstract": "Reality is a dance between rigid constraints and deformable structures. For video models, that means generating motion that preserves fidelity as well as structure. Despite progress in diffusion models, producing realistic structure-preserving motion remains challenging, especially for articulated a"
+  },
+  {
+    "title": "InfSplign: Inference-Time Spatial Alignment of Text-to-Image Diffusion Models",
+    "arxiv_id": "2512.17851",
+    "abstract": "Text-to-image (T2I) diffusion models generate high-quality images but often fail to capture the spatial relations specified in text prompts. This limitation can be traced to two factors: lack of fine-grained spatial supervision in training data and inability of CLIP text embeddings to encode spatial"
+  },
+  {
+    "title": "Taming the Memory Footprint Crisis: System Design for Production Diffusion LLM Serving",
+    "arxiv_id": "2512.17077",
+    "abstract": "Diffusion Large Language Models (dLLMs) have emerged as a promising alternative to Autoregressive Models (ARMs), utilizing parallel decoding to overcome sequential bottlenecks. However, existing research focuses primarily on kernel-level optimizations, lacking a holistic serving framework that addre"
+  },
+  {
+    "title": "Both Semantics and Reconstruction Matter: Making Representation Encoders Ready for Text-to-Image Generation and Editing",
+    "arxiv_id": "2512.17909",
+    "abstract": "Modern Latent Diffusion Models (LDMs) typically operate in low-level Variational Autoencoder (VAE) latent spaces that are primarily optimized for pixel-level reconstruction. To unify vision generation and understanding, a burgeoning trend is to adopt high-dimensional features from representation enc"
+  },
+  {
+    "title": "Disentangled representations via score-based variational autoencoders",
+    "arxiv_id": "2512.17127",
+    "abstract": "We present the Score-based Autoencoder for Multiscale Inference (SAMI), a method for unsupervised representation learning that combines the theoretical frameworks of diffusion models and VAEs. By unifying their respective evidence lower bounds, SAMI formulates a principled objective that learns repr"
+  },
+  {
+    "title": "EMAG: Self-Rectifying Diffusion Sampling with Exponential Moving Average Guidance",
+    "arxiv_id": "2512.17303",
+    "abstract": "In diffusion and flow-matching generative models, guidance techniques are widely used to improve sample quality and consistency. Classifier-free guidance (CFG) is the de facto choice in modern systems and achieves this by contrasting conditional and unconditional samples. Recent work explores contra"
+  },
+  {
+    "title": "Weighted Stochastic Differential Equation to Implement Wasserstein-Fisher-Rao Gradient Flow",
+    "arxiv_id": "2512.17878",
+    "abstract": "Score-based diffusion models currently constitute the state of the art in continuous generative modeling. These methods are typically formulated via overdamped or underdamped Ornstein--Uhlenbeck-type stochastic differential equations, in which sampling is driven by a combination of deterministic dri"
+  },
+  {
+    "title": "Learning What to Write: Write-Gated KV for Efficient Long-Context Inference",
+    "arxiv_id": "2512.17452",
+    "abstract": "Long-context LLM inference is bottlenecked by the quadratic attention complexity and linear KV cache growth. Prior approaches mitigate this via post-hoc selection or eviction but overlook the root inefficiency: indiscriminate writing to persistent memory. In this paper, we formalize KV cache managem"
+  },
+  {
+    "title": "Compression is Routing: Reconstruction Error as an Intrinsic Signal for Modular Language Models",
+    "arxiv_id": "2512.16963",
+    "abstract": "Current Large Language Models (LLMs) face three major challenges: context length limitations, high inference costs, and catastrophic forgetting during continual learning. While Mixture-of-Experts (MoE) architectures mitigate some of these conflicts, their routing mechanisms typically rely on explici"
+  },
+  {
+    "title": "Can Synthetic Images Serve as Effective and Efficient Class Prototypes?",
+    "arxiv_id": "2512.17160",
+    "abstract": "Vision-Language Models (VLMs) have shown strong performance in zero-shot image classification tasks. However, existing methods, including Contrastive Language-Image Pre-training (CLIP), all rely on annotated text-to-image pairs for aligning visual and textual modalities. This dependency introduces s"
+  },
+  {
+    "title": "Mitty: Diffusion-based Human-To-Robot Video Generation",
+    "arxiv_id": "2512.17253",
+    "abstract": "Robots that can learn directly from human demonstration videos promise scalable cross-task and cross-environment generalization, yet existing approaches rely on intermediate representations such as keypoints or trajectories, losing critical spatio-temporal detail and suffering from cumulative error."
+  },
+  {
+    "title": "Vision-Language Model Guided Image Restoration",
+    "arxiv_id": "2512.17292",
+    "abstract": "Many image restoration (IR) tasks require both pixel-level fidelity and high-level semantic understanding to recover realistic photos with fine-grained details. However, previous approaches often struggle to effectively leverage both the visual and linguistic knowledge. Recent efforts have attempted"
+  },
+  {
+    "title": "InSPECT: Invariant Spectral Features Preservation of Diffusion Models",
+    "arxiv_id": "2512.17873",
+    "abstract": "Modern diffusion models (DMs) have achieved state-of-the-art image generation. However, the fundamental design choice of diffusing data all the way to white noise and then reconstructing it leads to an extremely difficult and computationally intractable prediction task. To overcome this limitation, "
+  },
+  {
+    "title": "XLM: A Python package for non-autoregressive language models",
+    "arxiv_id": "2512.17065",
+    "abstract": "In recent years, there has been a resurgence of interest in non-autoregressive text generation in the context of general language modeling. Unlike the well-established autoregressive language modeling paradigm, which has a plethora of standard training and inference libraries, implementations of non"
+  },
+  {
+    "title": "Bridging the Discrete-Continuous Gap: Unified Multimodal Generation via Coupled Manifold Discrete Absorbing Diffusion",
+    "arxiv_id": "2601.04056",
+    "abstract": "The bifurcation of generative modeling into autoregressive approaches for discrete data (text) and diffusion approaches for continuous data (images) hinders the development of truly unified multimodal systems. While Masked Language Models (MLMs) offer efficient bidirectional context, they traditiona"
+  },
+  {
+    "title": "Diffusion-DRF: Differentiable Reward Flow for Video Diffusion Fine-Tuning",
+    "arxiv_id": "2601.04153",
+    "abstract": "Direct Preference Optimization (DPO) has recently improved Text-to-Video (T2V) generation by enhancing visual fidelity and text alignment. However, current methods rely on non-differentiable preference signals from human annotations or learned reward models. This reliance makes training label-intens"
+  },
+  {
+    "title": "DiffCoT: Diffusion-styled Chain-of-Thought Reasoning in LLMs",
+    "arxiv_id": "2601.03559",
+    "abstract": "Chain-of-Thought (CoT) reasoning improves multi-step mathematical problem solving in large language models but remains vulnerable to exposure bias and error accumulation, as early mistakes propagate irreversibly through autoregressive decoding. In this work, we propose DiffCoT, a diffusion-styled Co"
+  },
+  {
+    "title": "ResTok: Learning Hierarchical Residuals in 1D Visual Tokenizers for Autoregressive Image Generation",
+    "arxiv_id": "2601.03955",
+    "abstract": "Existing 1D visual tokenizers for autoregressive (AR) generation largely follow the design principles of language modeling, as they are built directly upon transformers whose priors originate in language, yielding single-hierarchy latent tokens and treating visual data as flat sequential token strea"
+  },
+  {
+    "title": "LLMDiRec: LLM-Enhanced Intent Diffusion for Sequential Recommendation",
+    "arxiv_id": "2601.03259",
+    "abstract": "Existing sequential recommendation models, even advanced diffusion-based approaches, often struggle to capture the rich semantic intent underlying user behavior, especially for new users or long-tail items. This limitation stems from their reliance on ID-based embeddings, which lack semantic groundi"
+  },
+  {
+    "title": "Gen3R: 3D Scene Generation Meets Feed-Forward Reconstruction",
+    "arxiv_id": "2601.04090",
+    "abstract": "We present Gen3R, a method that bridges the strong priors of foundational reconstruction models and video diffusion models for scene-level 3D generation. We repurpose the VGGT reconstruction model to produce geometric latents by training an adapter on its tokens, which are regularized to align with "
+  },
+  {
+    "title": "Mind the Generative Details: Direct Localized Detail Preference Optimization for Video Diffusion Models",
+    "arxiv_id": "2601.04068",
+    "abstract": "Aligning text-to-video diffusion models with human preferences is crucial for generating high-quality videos. Existing Direct Preference Otimization (DPO) methods rely on multi-sample ranking and task-specific critic models, which is inefficient and often yields ambiguous global supervision. To addr"
+  },
+  {
+    "title": "Inference Attacks Against Graph Generative Diffusion Models",
+    "arxiv_id": "2601.03701",
+    "abstract": "Graph generative diffusion models have recently emerged as a powerful paradigm for generating complex graph structures, effectively capturing intricate dependencies and relationships within graph data. However, the privacy risks associated with these models remain largely unexplored. In this paper, "
+  },
+  {
+    "title": "Spectral Generative Flow Models: A Physics-Inspired Replacement for Vectorized Large Language Models",
+    "arxiv_id": "2601.08893",
+    "abstract": "We introduce Spectral Generative Flow Models (SGFMs), a physics-inspired alternative to transformer-based large language models. Instead of representing text or video as sequences of discrete tokens processed by attention, SGFMs treat generation as the evolution of a continuous field governed by con"
+  },
+  {
+    "title": "Breaking the Bottlenecks: Scalable Diffusion Models for 3D Molecular Generation",
+    "arxiv_id": "2601.08963",
+    "abstract": "Diffusion models have emerged as a powerful class of generative models for molecular design, capable of capturing complex structural distributions and achieving high fidelity in 3D molecule generation. However, their widespread use remains constrained by long sampling trajectories, stochastic varian"
+  },
+  {
+    "title": "SpatialJB: How Text Distribution Art Becomes the \"Jailbreak Key\" for LLM Guardrails",
+    "arxiv_id": "2601.09321",
+    "abstract": "While Large Language Models (LLMs) have powerful capabilities, they remain vulnerable to jailbreak attacks, which is a critical barrier to their safe web real-time application. Current commercial LLM providers deploy output guardrails to filter harmful outputs, yet these defenses are not impenetrabl"
+  },
+  {
+    "title": "Bias Dynamics in BabyLMs: Towards a Compute-Efficient Sandbox for Democratising Pre-Training Debiasing",
+    "arxiv_id": "2601.09421",
+    "abstract": "Pre-trained language models (LMs) have, over the last few years, grown substantially in both societal adoption and training costs. This rapid growth in size has constrained progress in understanding and mitigating their biases. Since re-training LMs is prohibitively expensive, most debiasing work ha"
+  },
+  {
+    "title": "Diffusion In Diffusion: Reclaiming Global Coherence in Semi-Autoregressive Diffusion",
+    "arxiv_id": "2601.13599",
+    "abstract": "One of the most compelling features of global discrete diffusion language models is their global bidirectional contextual capability. However, existing block-based diffusion studies tend to introduce autoregressive priors, which, while offering benefits, can cause models to lose this global coherenc"
+  },
+  {
+    "title": "Top 10 Open Challenges Steering the Future of Diffusion Language Model and Its Variants",
+    "arxiv_id": "2601.14041",
+    "abstract": "The paradigm of Large Language Models (LLMs) is currently defined by auto-regressive (AR) architectures, which generate text through a sequential ``brick-by-brick'' process. Despite their success, AR models are inherently constrained by a causal bottleneck that limits global structural foresight and"
+  },
+  {
+    "title": "The Flexibility Trap: Why Arbitrary Order Limits Reasoning Potential in Diffusion Language Models",
+    "arxiv_id": "2601.15165",
+    "abstract": "Diffusion Large Language Models (dLLMs) break the rigid left-to-right constraint of traditional LLMs, enabling token generation in arbitrary orders. Intuitively, this flexibility implies a solution space that strictly supersets the fixed autoregressive trajectory, theoretically unlocking superior re"
+  },
+  {
+    "title": "Mechanism Shift During Post-training from Autoregressive to Masked Diffusion Language Models",
+    "arxiv_id": "2601.14758",
+    "abstract": "Post-training pretrained Autoregressive models (ARMs) into Masked Diffusion models (MDMs) has emerged as a cost-effective strategy to overcome the limitations of sequential generation. However, the internal algorithmic transformations induced by this paradigm shift remain unexplored, leaving it uncl"
+  },
+  {
+    "title": "GCG Attack On A Diffusion LLM",
+    "arxiv_id": "2601.14266",
+    "abstract": "While most LLMs are autoregressive, diffusion-based LLMs have recently emerged as an alternative method for generation. Greedy Coordinate Gradient (GCG) attacks have proven effective against autoregressive models, but their applicability to diffusion language models remains largely unexplored. In th"
+  },
+  {
+    "title": "Dynamic Differential Linear Attention: Enhancing Linear Diffusion Transformer for High-Quality Image Generation",
+    "arxiv_id": "2601.13683",
+    "abstract": "Diffusion transformers (DiTs) have emerged as a powerful architecture for high-fidelity image generation, yet the quadratic cost of self-attention poses a major scalability bottleneck. To address this, linear attention mechanisms have been adopted to reduce computational cost; unfortunately, the res"
+  },
+  {
+    "title": "Reconstruction-Anchored Diffusion Model for Text-to-Motion Generation",
+    "arxiv_id": "2601.14788",
+    "abstract": "Diffusion models have seen widespread adoption for text-driven human motion generation and related tasks due to their impressive generative capabilities and flexibility. However, current motion diffusion models face two major limitations: a representational gap caused by pre-trained text encoders th"
+  },
+  {
+    "title": "Principled Latent Diffusion for Graphs via Laplacian Autoencoders",
+    "arxiv_id": "2601.13780",
+    "abstract": "Graph diffusion models achieve state-of-the-art performance in graph generation but suffer from quadratic complexity in the number of nodes -- and much of their capacity is wasted modeling the absence of edges in sparse graphs. Inspired by latent diffusion in other modalities, a natural idea is to c"
+  },
+  {
+    "title": "Diffusion Large Language Models for Black-Box Optimization",
+    "arxiv_id": "2601.14446",
+    "abstract": "Offline black-box optimization (BBO) aims to find optimal designs based solely on an offline dataset of designs and their labels. Such scenarios frequently arise in domains like DNA sequence design and robotics, where only a few labeled data points are available. Traditional methods typically rely o"
+  },
+  {
+    "title": "Iterative Refinement Improves Compositional Image Generation",
+    "arxiv_id": "2601.15286",
+    "abstract": "Text-to-image (T2I) models have achieved remarkable progress, yet they continue to struggle with complex prompts that require simultaneously handling multiple objects, relations, and attributes. Existing inference-time strategies, such as parallel sampling with verifiers or simply increasing denoisi"
+  },
+  {
+    "title": "Chain-of-Thought Compression Should Not Be Blind: V-Skip for Efficient Multimodal Reasoning via Dual-Path Anchoring",
+    "arxiv_id": "2601.13879",
+    "abstract": "While Chain-of-Thought (CoT) reasoning significantly enhances the performance of Multimodal Large Language Models (MLLMs), its autoregressive nature incurs prohibitive latency constraints. Current efforts to mitigate this via token compression often fail by blindly applying text-centric metrics to m"
+  },
+  {
+    "title": "LURE: Latent Space Unblocking for Multi-Concept Reawakening in Diffusion Models",
+    "arxiv_id": "2601.14330",
+    "abstract": "Concept erasure aims to suppress sensitive content in diffusion models, but recent studies show that erased concepts can still be reawakened, revealing vulnerabilities in erasure methods. Existing reawakening methods mainly rely on prompt-level optimization to manipulate sampling trajectories, negle"
+  },
+  {
+    "title": "Towards Holistic Modeling for Video Frame Interpolation with Auto-regressive Diffusion Transformers",
+    "arxiv_id": "2601.14959",
+    "abstract": "Existing video frame interpolation (VFI) methods often adopt a frame-centric approach, processing videos as independent short segments (e.g., triplets), which leads to temporal inconsistencies and motion artifacts. To overcome this, we propose a holistic, video-centric paradigm named \\textbf{L}ocal "
+  },
+  {
+    "title": "TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control",
+    "arxiv_id": "2601.14945",
+    "abstract": "Large-scale Vision-Language-Action (VLA) models offer semantic generalization but suffer from high inference latency, limiting them to low-frequency batch-and-execute paradigm. This frequency mismatch creates an execution blind spot, causing failures in dynamic environments where targets move during"
+  },
+  {
+    "title": "Render-of-Thought: Rendering Textual Chain-of-Thought as Images for Visual Latent Reasoning",
+    "arxiv_id": "2601.14750",
+    "abstract": "Chain-of-Thought (CoT) prompting has achieved remarkable success in unlocking the reasoning capabilities of Large Language Models (LLMs). Although CoT prompting enhances reasoning, its verbosity imposes substantial computational overhead. Recent works often focus exclusively on outcome alignment and"
+  },
+  {
+    "title": "An Elementary Approach to Scheduling in Generative Diffusion Models",
+    "arxiv_id": "2601.13602",
+    "abstract": "An elementary approach to characterizing the impact of noise scheduling and time discretization in generative diffusion models is developed. Considering a simplified model where the source distribution is multivariate Gaussian with a given covariance matrix, the explicit closed-form evolution trajec"
+  },
+  {
+    "title": "Search over Self-Edit Strategies for LLM Adaptation",
+    "arxiv_id": "2601.14532",
+    "abstract": "Many LLM-based open-ended search systems freeze the foundation model that proposes improvements to existing solutions, which may bottleneck long-run progress. Recent work has explored updating the proposal model at test time [arXiv:2511.23473], but the update strategy is still typically hand-specifi"
+  },
+  {
+    "title": "HeteroCache: A Dynamic Retrieval Approach to Heterogeneous KV Cache Compression for Long-Context LLM Inference",
+    "arxiv_id": "2601.13684",
+    "abstract": "The linear memory growth of the KV cache poses a significant bottleneck for LLM inference in long-context tasks. Existing static compression methods often fail to preserve globally important information, principally because they overlook the attention drift phenomenon where token significance evolve"
+  },
+  {
+    "title": "POCI-Diff: Position Objects Consistently and Interactively with 3D-Layout Guided Diffusion",
+    "arxiv_id": "2601.14056",
+    "abstract": "We propose a diffusion-based approach for Text-to-Image (T2I) generation with consistent and interactive 3D layout control and editing. While prior methods improve spatial adherence using 2D cues or iterative copy-warp-paste strategies, they often distort object geometry and fail to preserve consist"
+  },
+  {
+    "title": "Lost in the Prompt Order: Revealing the Limitations of Causal Attention in Language Models",
+    "arxiv_id": "2601.14152",
+    "abstract": "Large language models exhibit surprising sensitivity to the structure of the prompt, but the mechanisms underlying this sensitivity remain poorly understood. In this work, we conduct an in-depth investigation on a striking case: in multiple-choice question answering, placing context before the quest"
+  },
+  {
+    "title": "Mirai: Autoregressive Visual Generation Needs Foresight",
+    "arxiv_id": "2601.14671",
+    "abstract": "Autoregressive (AR) visual generators model images as sequences of discrete tokens and are trained with next token likelihood. This strict causality supervision optimizes each step only by its immediate next token, which diminishes global coherence and slows convergence. We ask whether foresight, tr"
+  },
+  {
+    "title": "On the Runway Cascade of Transformers for Language Modeling",
+    "arxiv_id": "2601.14522",
+    "abstract": "In decoder-only (causal) transformers, the computation graph created by causal masking routes information through both direct-path attention and indirect paths formed by intermediate tokens. We denote these indirect paths between token pairs as their runways. We argue that certain failure modes of c"
+  },
+  {
+    "title": "Relaxing Positional Alignment in Masked Diffusion Language Models",
+    "arxiv_id": "2601.22947",
+    "abstract": "Masked diffusion language models (MDLMs) have emerged as a promising alternative to dominant autoregressive approaches. Although they achieve competitive performance on several tasks, a substantial gap remains in open-ended text generation. We hypothesize that one cause of this gap is that strict po"
+  },
+  {
+    "title": "FOCUS: DLLMs Know How to Tame Their Compute Bound",
+    "arxiv_id": "2601.23278",
+    "abstract": "Diffusion Large Language Models (DLLMs) offer a compelling alternative to Auto-Regressive models, but their deployment is constrained by high decoding cost. In this work, we identify a key inefficiency in DLLM decoding: while computation is parallelized over token blocks, only a small subset of toke"
+  },
+  {
+    "title": "Residual Context Diffusion Language Models",
+    "arxiv_id": "2601.22954",
+    "abstract": "Diffusion Large Language Models (dLLMs) have emerged as a promising alternative to purely autoregressive language models because they can decode multiple tokens in parallel. However, state-of-the-art block-wise dLLMs rely on a \"remasking\" mechanism that decodes only the most confident tokens and dis"
+  },
+  {
+    "title": "$\u03c1$-$\\texttt{EOS}$: Training-free Bidirectional Variable-Length Control for Masked Diffusion LLMs",
+    "arxiv_id": "2601.22527",
+    "abstract": "Beyond parallel generation and global context modeling, current masked diffusion large language models (dLLMs) suffer from a fundamental limitation: they require a predefined, fixed generation length, which lacks flexibility and forces an inevitable trade-off between output quality and computational"
+  },
+  {
+    "title": "FourierSampler: Unlocking Non-Autoregressive Potential in Diffusion Language Models via Frequency-Guided Generation",
+    "arxiv_id": "2601.23182",
+    "abstract": "Despite the non-autoregressive potential of diffusion language models (dLLMs), existing decoding strategies demonstrate positional bias, failing to fully unlock the potential of arbitrary generation. In this work, we delve into the inherent spectral characteristics of dLLMs and present the first fre"
+  },
+  {
+    "title": "Time-Annealed Perturbation Sampling: Diverse Generation for Diffusion Language Models",
+    "arxiv_id": "2601.22629",
+    "abstract": "Diffusion language models (Diffusion-LMs) introduce an explicit temporal dimension into text generation, yet how this structure can be leveraged to control generation diversity for exploring multiple valid semantic or reasoning paths remains underexplored. In this paper, we show that Diffusion-LMs, "
+  },
+  {
+    "title": "Training-Free Representation Guidance for Diffusion Models with a Representation Alignment Projector",
+    "arxiv_id": "2601.22468",
+    "abstract": "Recent progress in generative modeling has enabled high-quality visual synthesis with diffusion-based frameworks, supporting controllable sampling and large-scale training. Inference-time guidance methods such as classifier-free and representative guidance enhance semantic alignment by modifying sam"
+  },
+  {
+    "title": "dgMARK: Decoding-Guided Watermarking for Diffusion Language Models",
+    "arxiv_id": "2601.22985",
+    "abstract": "We propose dgMARK, a decoding-guided watermarking method for discrete diffusion language models (dLLMs). Unlike autoregressive models, dLLMs can generate tokens in arbitrary order. While an ideal conditional predictor would be invariant to this order, practical dLLMs exhibit strong sensitivity to th"
+  },
+  {
+    "title": "DiffuSpeech: Silent Thought, Spoken Answer via Unified Speech-Text Diffusion",
+    "arxiv_id": "2601.22889",
+    "abstract": "Current speech language models generate responses directly without explicit reasoning, leading to errors that cannot be corrected once audio is produced. We introduce \\textbf{``Silent Thought, Spoken Answer''} -- a paradigm where speech LLMs generate internal text reasoning alongside spoken response"
+  },
+  {
+    "title": "Tuning the Implicit Regularizer of Masked Diffusion Language Models: Enhancing Generalization via Insights from $k$-Parity",
+    "arxiv_id": "2601.22450",
+    "abstract": "Masked Diffusion Language Models have recently emerged as a powerful generative paradigm, yet their generalization properties remain understudied compared to their auto-regressive counterparts. In this work, we investigate these properties within the setting of the $k$-parity problem (computing the "
+  },
+  {
+    "title": "Context Structure Reshapes the Representational Geometry of Language Models",
+    "arxiv_id": "2601.22364",
+    "abstract": "Large Language Models (LLMs) have been shown to organize the representations of input sequences into straighter neural trajectories in their deep layers, which has been hypothesized to facilitate next-token prediction via linear extrapolation. Language models can also adapt to diverse tasks and lear"
+  },
+  {
+    "title": "LINA: Linear Autoregressive Image Generative Models with Continuous Tokens",
+    "arxiv_id": "2601.22630",
+    "abstract": "Autoregressive models with continuous tokens form a promising paradigm for visual generation, especially for text-to-image (T2I) synthesis, but they suffer from high computational cost. We study how to design compute-efficient linear attention within this framework. Specifically, we conduct a system"
+  },
+  {
+    "title": "DIFFA-2: A Practical Diffusion Large Language Model for General Audio Understanding",
+    "arxiv_id": "2601.23161",
+    "abstract": "Autoregressive (AR) large audio language models (LALMs) such as Qwen-2.5-Omni have achieved strong performance on audio understanding and interaction, but scaling them remains costly in data and computation, and strictly sequential decoding limits inference efficiency. Diffusion large language model"
+  },
+  {
+    "title": "VisionTrim: Unified Vision Token Compression for Training-Free MLLM Acceleration",
+    "arxiv_id": "2601.22674",
+    "abstract": "Multimodal large language models (MLLMs) suffer from high computational costs due to excessive visual tokens, particularly in high-resolution and video-based scenarios. Existing token reduction methods typically focus on isolated pipeline components and often neglect textual alignment, leading to pe"
+  },
+  {
+    "title": "DART-ing Through the Drift: Dynamic Tracing of Knowledge Neurons for Adaptive Inference-Time Pruning",
+    "arxiv_id": "2601.22632",
+    "abstract": "Large Language Models (LLMs) exhibit substantial parameter redundancy, particularly in Feed-Forward Networks (FFNs). Existing pruning methods suffer from two primary limitations. First, reliance on dataset-specific calibration introduces significant data dependency and computational overhead. Second"
+  },
+  {
+    "title": "MoVE: Mixture of Value Embeddings -- A New Axis for Scaling Parametric Memory in Autoregressive Models",
+    "arxiv_id": "2601.22887",
+    "abstract": "Autoregressive sequence modeling stands as the cornerstone of modern Generative AI, powering results across diverse modalities ranging from text generation to image generation. However, a fundamental limitation of this paradigm is the rigid structural coupling of model capacity to computational cost"
+  },
+  {
+    "title": "Stabilizing Consistency Training: A Flow Map Analysis and Self-Distillation",
+    "arxiv_id": "2601.22679",
+    "abstract": "Consistency models have been proposed for fast generative modeling, achieving results competitive with diffusion and flow models. However, these methods exhibit inherent instability and limited reproducibility when training from scratch, motivating subsequent work to explain and stabilize these issu"
+  },
+  {
+    "title": "Streaming Speech Recognition with Decoder-Only Large Language Models and Latency Optimization",
+    "arxiv_id": "2601.22779",
+    "abstract": "Recent advances have demonstrated the potential of decoderonly large language models (LLMs) for automatic speech recognition (ASR). However, enabling streaming recognition within this framework remains a challenge. In this work, we propose a novel streaming ASR approach that integrates a read/write "
+  },
+  {
+    "title": "Neural Backward Filtering Forward Guiding",
+    "arxiv_id": "2601.23030",
+    "abstract": "Inference in non-linear continuous stochastic processes on trees is challenging, particularly when observations are sparse (leaf-only) and the topology is complex. Exact smoothing via Doob's $h$-transform is intractable for general non-linear dynamics, while particle-based methods degrade in high di"
+  },
+  {
+    "title": "Unconditional flow-based time series generation with equivariance-regularised latent spaces",
+    "arxiv_id": "2601.22848",
+    "abstract": "Flow-based models have proven successful for time-series generation, particularly when defined in lower-dimensional latent spaces that enable efficient sampling. However, how to design latent representations with desirable equivariance properties for time-series generative modelling remains underexp"
+  },
+  {
+    "title": "Sequence Diffusion Model for Temporal Link Prediction in Continuous-Time Dynamic Graph",
+    "arxiv_id": "2601.23233",
+    "abstract": "Temporal link prediction in dynamic graphs is a fundamental problem in many real-world systems. Existing temporal graph neural networks mainly focus on learning representations of historical interactions. Despite their strong performance, these models are still purely discriminative, producing point"
+  },
+  {
+    "title": "Corrected Samplers for Discrete Flow Models",
+    "arxiv_id": "2601.22519",
+    "abstract": "Discrete flow models (DFMs) have been proposed to learn the data distribution on a finite state space, offering a flexible framework as an alternative to discrete diffusion models. A line of recent work has studied samplers for discrete diffusion models, such as tau-leaping and Euler solver. However"
+  },
+  {
+    "title": "Large Language Models: A Mathematical Formulation",
+    "arxiv_id": "2601.22170",
+    "abstract": "Large language models (LLMs) process and predict sequences containing text to answer questions, and address tasks including document summarization, providing recommendations, writing software and solving quantitative problems. We provide a mathematical framework for LLMs by describing the encoding o"
+  },
+  {
+    "title": "VMonarch: Efficient Video Diffusion Transformers with Structured Attention",
+    "arxiv_id": "2601.22275",
+    "abstract": "The quadratic complexity of the attention mechanism severely limits the context scalability of Video Diffusion Transformers (DiTs). We find that the highly sparse spatio-temporal attention patterns exhibited in Video DiTs can be naturally represented by the Monarch matrix. It is a class of structure"
+  },
+  {
+    "title": "Forward-KL Convergence of Time-Inhomogeneous Langevin Diffusions",
+    "arxiv_id": "2601.22349",
+    "abstract": "Many practical samplers rely on time-dependent drifts -- often induced by annealing or tempering schedules -- to improve exploration and stability. This motivates a unified non-asymptotic analysis of the corresponding Langevin diffusions and their discretizations. We provide a convergence analysis t"
+  },
+  {
+    "title": "Analyzing Diffusion and Autoregressive Vision Language Models in Multimodal Embedding Space",
+    "arxiv_id": "2602.06056",
+    "abstract": "Embedding models are a fundamental component of modern AI systems such as semantic search and retrieval-augmented generation. Recent advances in large foundation models have substantially accelerated the development of embedding models, including those based on Large Language Models (LLMs), Vision L"
+  },
+  {
+    "title": "PackInfer: Compute- and I/O-Efficient Attention for Batched LLM Inference",
+    "arxiv_id": "2602.06072",
+    "abstract": "Attention efficiency is critical to large language model (LLM) inference. While prior advances optimize attention execution for individual requests (e.g., FlashAttention), production LLM serving relies on batching requests with highly heterogeneous sequence lengths for high serving throughput. This "
+  },
+  {
+    "title": "Latent Forcing: Reordering the Diffusion Trajectory for Pixel-Space Image Generation",
+    "arxiv_id": "2602.11401",
+    "abstract": "Latent diffusion models excel at generating high-quality images but lose the benefits of end-to-end modeling. They discard information during image encoding, require a separately trained decoder, and model an auxiliary distribution to the raw data. In this paper, we propose Latent Forcing, a simple "
+  },
+  {
+    "title": "DICE: Diffusion Large Language Models Excel at Generating CUDA Kernels",
+    "arxiv_id": "2602.11715",
+    "abstract": "Diffusion large language models (dLLMs) have emerged as a compelling alternative to autoregressive (AR) LLMs, owing to their capacity for parallel token generation. This paradigm is particularly well-suited for code generation, where holistic structural planning and non-sequential refinement are cri"
+  },
+  {
+    "title": "Learn from Your Mistakes: Self-Correcting Masked Diffusion Models",
+    "arxiv_id": "2602.11590",
+    "abstract": "Masked diffusion models (MDMs) have emerged as a promising alternative to autoregressive models, enabling parallel token generation while achieving competitive performance. Despite these advantages, MDMs face a fundamental limitation: once tokens are unmasked, they remain fixed, leading to error acc"
+  },
+  {
+    "title": "General and Efficient Steering of Unconditional Diffusion",
+    "arxiv_id": "2602.11395",
+    "abstract": "Guiding unconditional diffusion models typically requires either retraining with conditional inputs or per-step gradient computations (e.g., classifier-based guidance), both of which incur substantial computational overhead. We present a general recipe for efficiently steering unconditional diffusio"
+  },
+  {
+    "title": "From Noise to Order: Learning to Rank via Denoising Diffusion",
+    "arxiv_id": "2602.11453",
+    "abstract": "In information retrieval (IR), learning-to-rank (LTR) methods have traditionally limited themselves to discriminative machine learning approaches that model the probability of the document being relevant to the query given some feature representation of the query-document pair. In this work, we prop"
+  },
+  {
+    "title": "Robot-DIFT: Distilling Diffusion Features for Geometrically Consistent Visuomotor Control",
+    "arxiv_id": "2602.11934",
+    "abstract": "We hypothesize that a key bottleneck in generalizable robot manipulation is not solely data scale or policy capacity, but a structural mismatch between current visual backbones and the physical requirements of closed-loop control. While state-of-the-art vision encoders (including those used in VLAs)"
+  },
+  {
+    "title": "Differentially Private and Communication Efficient Large Language Model Split Inference via Stochastic Quantization and Soft Prompt",
+    "arxiv_id": "2602.11513",
+    "abstract": "Large Language Models (LLMs) have achieved remarkable performance and received significant research interest. The enormous computational demands, however, hinder the local deployment on devices with limited resources. The current prevalent LLM inference paradigms require users to send queries to the"
+  },
+  {
+    "title": "The Energy of Falsehood: Detecting Hallucinations via Diffusion Model Likelihoods",
+    "arxiv_id": "2602.11364",
+    "abstract": "Large Language Models (LLMs) frequently hallucinate plausible but incorrect assertions, a vulnerability often missed by uncertainty metrics when models are confidently wrong. We propose DiffuTruth, an unsupervised framework that reconceptualizes fact verification via non equilibrium thermodynamics, "
+  },
+  {
+    "title": "MiniCPM-SALA: Hybridizing Sparse and Linear Attention for Efficient Long-Context Modeling",
+    "arxiv_id": "2602.11761",
+    "abstract": "The evolution of large language models (LLMs) towards applications with ultra-long contexts faces challenges posed by the high computational and memory costs of the Transformer architecture. While existing sparse and linear attention mechanisms attempt to mitigate these issues, they typically involv"
+  },
+  {
+    "title": "Retrieval Heads are Dynamic",
+    "arxiv_id": "2602.11162",
+    "abstract": "Recent studies have identified \"retrieval heads\" in Large Language Models (LLMs) responsible for extracting information from input contexts. However, prior works largely rely on static statistics aggregated across datasets, identifying heads that perform retrieval on average. This perspective overlo"
+  },
+  {
+    "title": "Deep Kernel Fusion for Transformers",
+    "arxiv_id": "2602.11808",
+    "abstract": "Agentic LLM inference with long contexts is increasingly limited by memory bandwidth rather than compute. In this setting, SwiGLU MLP blocks, whose large weights exceed cache capacity, become a major yet under-optimized bottleneck. We propose DeepFusionKernel, a deeply fused kernel that cuts HBM tra"
+  },
+  {
+    "title": "Mask What Matters: Mitigating Object Hallucinations in Multimodal Large Language Models with Object-Aligned Visual Contrastive Decoding",
+    "arxiv_id": "2602.11737",
+    "abstract": "We study object hallucination in Multimodal Large Language Models (MLLMs) and improve visual contrastive decoding (VCD) by constructing an object-aligned auxiliary view. We leverage object-centric attention in self-supervised Vision Transformers. In particular, we remove the most salient visual evid"
+  },
+  {
+    "title": "DiffPlace: Street View Generation via Place-Controllable Diffusion Model Enhancing Place Recognition",
+    "arxiv_id": "2602.11875",
+    "abstract": "Generative models have advanced significantly in realistic image synthesis, with diffusion models excelling in quality and stability. Recent multi-view diffusion models improve 3D-aware street view generation, but they struggle to produce place-aware and background-consistent urban scenes from text,"
+  },
+  {
+    "title": "Free Lunch for Stabilizing Rectified Flow Inversion",
+    "arxiv_id": "2602.11850",
+    "abstract": "Rectified-Flow (RF)-based generative models have recently emerged as strong alternatives to traditional diffusion models, demonstrating state-of-the-art performance across various tasks. By learning a continuous velocity field that transforms simple noise into complex data, RF-based models not only "
+  }
+]

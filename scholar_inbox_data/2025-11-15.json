@@ -1,0 +1,2223 @@
+{
+  "admin_proceedings_msg": "",
+  "conf_notification_text": "",
+  "current_digest_date": "2025-11-15",
+  "custom_digest_range": false,
+  "digest_df": [
+    {
+      "abbreviation": null,
+      "abstract": "Vision-Language Models (VLMs) are a new family of models that align image content with natural language. Existing approaches typically fuse either (a) early: by mixing tokens/features inside the encoders, or (b) late: by comparing pooled embeddings. Many methods also tie fusion to an autoregressive decoder. However, the hidden states of both modalities already carry rich, modality-specific structure (spatial layout in vision; syntax and semantics in text), so directly aligning these states is a natural way to match what the two modalities \"think\". We propose a lightweight fusion module: a few cross-only, bidirectional attention layers placed near the top of both encoders. Each layer projects the vision and text encoder hidden-state sequences into a shared space, attends across modalities, and sends gated residual updates back, with simple stabilizers to improve alignment. The encoders remain non-causal and strong for understanding, while generation stays cleanly decoupled via an optional decoder. Across standard retrieval, VQA, and visual reasoning benchmarks, BRIDGE outperforms comparable VLMs while preserving the bi-encoder efficiency of contrastive models. We make our code publicly available at <a href='https://github.com/jfeinashley/BRIDGE' target='_blank'>https://github.com/jfeinashley/BRIDGE</a>.",
+      "affiliations": [
+        "University of Southern California"
+      ],
+      "arxiv_id": "2511.11526",
+      "arxives_doi": null,
+      "authors": "Benjamin Fein-Ashley, Jacob Fein-Ashley",
+      "bookmarked": 0,
+      "cache_file_name": "Fein-Ashley2025ARXIV_Bridging_Hidden_States_in.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": "https://github.com/jfeinashley/BRIDGE",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11526",
+      "inferredHighlights": [
+        {
+          "endIndex": 679,
+          "highlightClass": "primary-highlight",
+          "startIndex": 554
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Vision-Language Pretraining,  Cross-Modal Alignment,  Contrastive Learning,  Bidirectional Attention,  Hidden-State Fusion,  BRIDGE",
+        "method_shortname": "BRIDGE",
+        "sub_subfield": "Vision-Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068438,
+      "paper_id": 4464363,
+      "paper_source_id": "2511.11526",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/jfeinashley/BRIDGE",
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.8628279903,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "3c683b7966a6a75ce4620ad5bb350f7cd7505103",
+      "shortened_authors": "Benjamin Fein-Ashley, Jacob Fein-Ashley",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **BRIDGE**, a lightweight fusion module using cross-only, bidirectional attention layers to align full hidden-state sequences in a shared latent space with gated residual updates.\n- **Preserves bi-encoder efficiency** while improving performance on standard retrieval, VQA, and visual reasoning benchmarks compared to comparable baselines.\n- **Cycle-consistent cross-attention loss** is proposed to explicitly encourage stable bidirectional alignment between image and text tokens.\n- **Hidden-state fusion** is shown to outperform pooled-only fusion, leading to better cross-modal representation and retrieval performance.",
+        "evaluation_question": "- On *MSCOCO (Karpathy 5K)*, BRIDGE achieves **81.6% TR@1** and **67.5% IR@1**, outperforming CLIP (**37.8% TR@1**, **58.4% IR@1**) and ALBEF (**77.6% TR@1**, **60.7% IR@1**).\n- On *VQAv2*, BRIDGE reaches **80.6% test-dev accuracy** and **80.7% test-std accuracy**, surpassing BLIP (**78.3%**) and SimVLM (**80.3%**).\n- On *NLVR2*, BRIDGE attains **83.04% dev accuracy** and **82.87% Test-P accuracy**, outperforming ALBEF (**82.55%**) and BLIP (**82.67%**).\n- Ablation studies show that the **full loss cocktail (InfoNCE + ITM + cycle)** yields the best retrieval and VQA accuracy, with **+1.8% TR@1 improvement** over InfoNCE alone.",
+        "method_explanation_question": "- Inputs are processed through frozen vision and text encoders to produce hidden states H (l)t and H (l)v at each layer l.\n- **Cross-only multi-head attention (MHA)** is applied on projected hidden states, allowing vision to attend to text and vice versa without self-attention.\n- Outputs are gated with learnable parameters and projected back into their respective embedding spaces, enhancing modality fusion with adaptive contributions from both modalities.\n- **Interaction blocks** are stacked near the top of both encoders, enabling deeper cross-modal alignment and improved stability.\n- Training involves a combination of **InfoNCE loss**, **ITM loss**, and **cycle-consistent cross-attention loss** to optimize alignment and performance across tasks.",
+        "problem_definition_question": "- Existing methods for Vision-Language Models (VLMs) either perform **early fusion** (mixing tokens/features inside shared modules) or **late fusion** (aligning pooled embeddings), which may blur unimodal specialization or limit fine-grained cross-modal reasoning.\n- **Late fusion approaches** preserve strong unimodal backbones but struggle with detailed cross-modal interactions, reducing effectiveness in complex scenarios.\n- **Current fusion strategies** often rely on LLM self-attention, limiting token-level grounding and detailed bidirectional reasoning between modalities.\n- **There is a need for scalable fusion architectures** that maintain efficient bi-encoder inference while enabling deeper and more effective multimodal interaction."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Visual demonstration of BRIDGE alignment space",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464363.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Architecture framework for BRIDGE . We propose an architecture where the hidden states of text and vision encoders are aligned directly rather than through pooled embeddings and contrastive loss. In a shared latent space, cross-only MHA is applied with residuals reverse-projected to respective embedding spaces.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464363.1.jpeg"
+        },
+        {
+          "caption": "Table 1. Image\u2013Text Retrieval on MSCOCO and Flickr30K. Comparison of recent VLMs on the MSCOCO Karpathy 5K split [13] and the Flickr30K 1K test set [25]. TR: text-to-image retrieval; IR: image-to-text retrieval. All values are Recall (%).",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464363.2.jpeg"
+        },
+        {
+          "caption": "Table 4. Effect of loss components on MSCOCO retrieval and VQAv2. Ablation over the loss functions used to train BRIDGE.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464363.3.jpeg"
+        },
+        {
+          "caption": "Table 2. VQA on VQAv2. Comparison of BRIDGE with prior vision\u2013language models on the VQAv2 benchmark [3]. All values are overall VQA accuracy (%).",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464363.4.jpeg"
+        },
+        {
+          "caption": "Table 3. Natural language visual reasoning on NLVR2. Accuracy (%) on the NLVR2 dev and public test set (Test-P) for models with ViT-B/16 and BERT-Base backbones.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464363.5.jpeg"
+        },
+        {
+          "caption": "Table 5. Effect of the bridge architecture on MSCOCO image\u2013text retrieval. Ablation over the presence and structure of the BRIDGE interaction layers. All variants use the same ViT-B/16 image encoder, BERT-Base text encoder, and pretraining data; we report Recall@K (%) on the Karpathy 5K split.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464363.6.jpeg"
+        },
+        {
+          "caption": "Figure 3. UMAP visualization of the joint vision\u2013text embedding space for the baseline encoders, CLIP, and our BRIDGE model. Points denote individual examples, with markers indicating modality (vision vs. text). The baseline ecnoders produce diffuse clusters with noticeable separation between modalities, and CLIP, while more compact, still exhibits a clear shift between vision and text regions. BRIDGE instead forms tight, overlapping clusters in which vision and text embeddings for the same examples are nearly co-located, indicating a much smaller modality gap and a more coherent shared representation space. This improved alignment explains the stronger cross-modal retrieval and transfer performance of BRIDGE observed in our experiments. The bottom row contains the same data as the top row, but keeps the axes the same scale.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464363.7.jpeg"
+        },
+        {
+          "caption": "Table 6. Effect of interaction-layer placement on MSCOCO image\u2013text retrieval. Ablation over which encoder layers are selected as cross-modal interaction layers. All variants use the same ViT-B/16 image encoder, BERT-Base text encoder, number of interaction layers Q , and pretraining data; we report Recall@K (%) on the Karpathy 5K split.",
+          "figureNumber": 8,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464363.8.jpeg"
+        }
+      ],
+      "title": "Bridging Hidden States in Vision-Language Models",
+      "total_likes": 3,
+      "total_read": 33,
+      "url": "https://arxiv.org/pdf/2511.11526",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11526.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Diffusion Transformers, particularly for video generation, achieve remarkable quality but suffer from quadratic attention complexity, leading to prohibitive latency. Existing acceleration methods face a fundamental trade-off: dynamically estimating sparse attention patterns at each denoising step incurs high computational overhead and estimation errors, while static sparsity patterns remain fixed and often suboptimal throughout denoising. We identify a key structural property of diffusion attention, namely, its sparsity patterns exhibit strong temporal coherence across denoising steps. Tiles deemed non-essential at step $t$ typically remain so at step $t+\u03b4$. Leveraging this observation, we introduce LiteAttention, a method that exploits temporal coherence to enable evolutionary computation skips across the denoising sequence. By marking non-essential tiles early and propagating skip decisions forward, LiteAttention eliminates redundant attention computations without repeated profiling overheads, combining the adaptivity of dynamic methods with the efficiency of static ones. We implement a highly optimized LiteAttention kernel on top of FlashAttention and demonstrate substantial speedups on production video diffusion models, with no degradation in quality. The code and implementation details will be publicly released.",
+      "affiliations": [
+        "MoonMath.ai"
+      ],
+      "arxiv_id": "2511.11062",
+      "arxives_doi": null,
+      "authors": "Dor Shmilovich, Tony Wu, Aviad Dahan, Yuval Domb",
+      "bookmarked": 0,
+      "cache_file_name": "Shmilovich2025ARXIV_LiteAttention_A_Temporal_Sparse.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": "https://github.com/moonmath-ai/LiteAttention",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11062",
+      "inferredHighlights": [
+        {
+          "endIndex": 665,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 593
+        },
+        {
+          "endIndex": 836,
+          "highlightClass": "primary-highlight",
+          "startIndex": 667
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Diffusion Transformers (DiT),  Sparse Attention,  Temporal Coherence,  FlashAttention,  QK-Skip",
+        "method_shortname": "LiteAttention",
+        "sub_subfield": "Diffusion Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068134,
+      "paper_id": 4464059,
+      "paper_source_id": "2511.11062",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.814477031,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "89009000d8a93d6286320ebb3f4890fc5a951947",
+      "shortened_authors": "Dor Shmilovich, Tony Wu, Aviad Dahan, Yuval Domb",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **LiteAttention**, a method that exploits *temporal coherence* of sparsity patterns to enable evolutionary computation skips across denoising steps.\n- **Evolutionary skip framework** eliminates full attention computations for marked tiles, combining adaptivity with efficiency.\n- **Amortized sparsity profiling** determines skippable tiles early and reuses these decisions for all subsequent timesteps.\n- **Efficient GPU implementation** with optimized CUDA kernels achieves substantial runtime improvements without sacrificing quality.",
+        "evaluation_question": "- Empirical results show **sub-quadratic complexity** of LiteAttention compared to FlashAttention, with increasing skip percentage as sequence length grows.\n- Experiments indicate that **LiteAttention** outperforms existing methods in terms of runtime while maintaining generative fidelity.\n- Analysis shows that **earlier timesteps** contribute more significantly to final attention error, motivating calibrated error bounds for different timesteps.",
+        "method_explanation_question": "- Maintains a **Skip-Mask** that is updated at each timestep to mark tiles for skipping based on the local maximum comparison.\n- Applies **QK-Skip** by checking if a tile is marked for skipping before proceeding with QK product computation.\n- Uses **FlashAttention's online softmax algorithm** with modifications to incorporate the Skip-Mask for partial computation skipping.\n- **Radial-centric ordering** of the j-loop within the attention kernel improves performance by reaching global maxima faster.",
+        "problem_definition_question": "- Diffusion Transformers suffer from **quadratic attention complexity**, leading to prohibitive latency in video generation.\n- **Dynamic methods** incur high computational overhead and estimation errors due to repeated sparse pattern determination.\n- **Static methods** may misalign with evolving attention patterns, failing to adapt to changing conditions during denoising."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: A graphical depiction of the Skip-Mask update step in Algorithm 2.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464059.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Toy run of FlashAttention vs. LiteAttention within a video diffusion model for a varying number of video frames. Left: provides the runtimes. Right: provides LiteAttention \u2019s sparsity.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464059.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Analysis of the final attention error \u03b7 49 for a fixed PV-threshold at different intermediate timesteps.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464059.2.jpeg"
+        }
+      ],
+      "title": "LiteAttention: A Temporal Sparse Attention for Diffusion Transformers",
+      "total_likes": 8,
+      "total_read": 34,
+      "url": "https://arxiv.org/pdf/2511.11062",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11062.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Despite the remarkable success of Vision-Language Models (VLMs), their performance on a range of complex visual tasks is often hindered by a \"visual processing bottleneck\": a propensity to lose grounding in visual evidence and exhibit a deficit in contextualized visual experience during prolonged generation. Drawing inspiration from human cognitive memory theory, which distinguishes short-term visually-dominant memory and long-term semantically-dominant memory, we propose VisMem, a cognitively-aligned framework that equips VLMs with dynamic latent vision memories, a short-term module for fine-grained perceptual retention and a long-term module for abstract semantic consolidation. These memories are seamlessly invoked during inference, allowing VLMs to maintain both perceptual fidelity and semantic consistency across thinking and generation. Extensive experiments across diverse visual benchmarks for understanding, reasoning, and generation reveal that VisMem delivers a significant average performance boost of 11.8% relative to the vanilla model and outperforms all counterparts, establishing a new paradigm for latent-space memory enhancement. The code will be available: <a href='https://github.com/YU-deep/VisMem.git' target='_blank'>https://github.com/YU-deep/VisMem.git</a>.",
+      "affiliations": [
+        "Tsinghua University",
+        "University of Science and Technology of China",
+        "National University of Singapore",
+        "Zhejiang University",
+        "Fudan University",
+        "vivo"
+      ],
+      "arxiv_id": "2511.11007",
+      "arxives_doi": null,
+      "authors": "Xinlei Yu, Chengming Xu, Guibin Zhang, Zhangquan Chen, Yudong Zhang, Yongbo He, Peng-Tao Jiang, Jiangning Zhang, Xiaobin Hu, Shuicheng Yan",
+      "bookmarked": 0,
+      "cache_file_name": "Yu2025ARXIV_VisMem_Latent_Vision_Memory.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": "https://github.com/YU-deep/VisMem.git",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11007",
+      "inferredHighlights": [
+        {
+          "endIndex": 687,
+          "highlightClass": "primary-highlight",
+          "startIndex": 310
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Vision-Language Models (VLMs),  Latent Memory,  Short-term Memory,  Long-term Memory,  Reinforcement Learning,  Cross-domain Generalization,  Catastrophic Forgetting",
+        "method_shortname": "VisMem",
+        "sub_subfield": "Vision-Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4067965,
+      "paper_id": 4463890,
+      "paper_source_id": "2511.11007",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/YU-deep/VisMem.git",
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.7811650601,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "bacbc4d0def124b8a323d09cc217a86c53f70d83",
+      "shortened_authors": "Xinlei Yu, Chengming Xu, Guibin Zhang, Zhangquan Chen, Yudong Zhang, Yongbo He, Peng-Tao Jiang, Jiangning Zhang, Xiaobin Hu, Shuicheng Yan",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes **VisMem**, a cognitively-aligned framework that equips VLMs with dynamic latent vision memories for fine-grained perceptual retention and abstract semantic consolidation.\n- **Short-term** and **long-term** memory modules are introduced, analogous to human cognitive memory systems, enabling seamless integration of detailed visual information and generalized semantic knowledge.\n- Demonstrates significant performance improvements across diverse benchmarks, achieving an average gain of **11.8%** over the vanilla model and outperforming all counterparts.\n- **Mitigates catastrophic forgetting** during continual learning, maintaining performance across multiple stages of training.\n- **Enhances cross-domain generalization** by leveraging stored latent visual memory for unseen tasks.",
+        "evaluation_question": "- On *MMVet*, achieves **68.9%** vs. Vanilla (**62.6%**), **+6.3%** improvement.\n- On *MuirBench*, achieves **69.8%** vs. Vanilla (**57.4%**), **+12.4%** improvement.\n- On *MV-Math*, achieves **63.9%** vs. Vanilla (**18.9%**), **+45.0%** improvement.\n- On *MultiTrust*, achieves **77.0%** vs. Vanilla (**64.8%**), **+12.2%** improvement.\n- Ablation studies show that **complete VisMem** yields the highest performance across all benchmarks compared to random invocation and individual memory types.",
+        "method_explanation_question": "- Extends the vocabulary of VLMs with special tokens (<m sI>, <m sE>, <m lI>, <m lE>) to trigger on-demand latent vision memory invocation during autoregressive generation.\n- Uses a **query builder** to generate contextual-aware queries from hidden states containing multi-modal cognition, which are then dispatched to either a **short-term memory former** or **long-term memory former**.\n- The **short-term memory former** generates latent tokens encoding fine-grained perceptual evidence, while the **long-term memory former** synthesizes tokens representing abstract semantic knowledge.\n- Generated latent memory tokens are seamlessly inserted into the generation stream, enriching the context for subsequent decoding steps.\n- Trains the model using a two-stage paradigm based on reinforcement learning: first optimizing memory content generation, then learning optimal patterns for invoking memory.",
+        "problem_definition_question": "- VLMs face a **'visual processing bottleneck'**, where they prioritize textual context over initial visual evidence, leading to deficits in fine-grained perception and long-sequence fidelity.\n- **Existing methods** either sacrifice generalization for task-specific performance or incur high computational costs through image-level modifications.\n- Current approaches lack mechanisms for **seamless integration** of detailed visual information and generalized semantic knowledge during inference.\n- **Catastrophic forgetting** remains a challenge when models are trained on additional data, degrading performance on previously learned tasks."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Four primary paradigms for enhancing visual capabilities: (a) the direct training paradigm, (b) the image-level paradigm, (c) the token-level paradigm, and (d) the latent space paradigm. Our VisMem belongs to the last one, featuring latent vision memory.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463890.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. The overview of our proposed VisMem.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463890.1.jpeg"
+        },
+        {
+          "caption": "Table 1. Results on 12 benchmarks to evaluate visual understanding, reasoning and generation abilities. The best and second best values are emphasized, and the average values are calculated for both specific capabilities and overall results.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463890.2.jpeg"
+        },
+        {
+          "caption": "Table 2. Results on nine base models with various sizes and sources, including Qwen2.5-VL-3B/7B/32B [4], LLaVA-OV-1.5-4B/8B [1], InternVL-3.5-4B/8B/14B/38B [62]. \u2191 indicates the performance enhancement compared with the base model.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463890.3.jpeg"
+        },
+        {
+          "caption": "Figure 4. Results of four-stage continual learning on MMVet [75]. Stage 0 only includes itself, while stage 1, 2, 3 sequentially train models on different additional training data combinations.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463890.4.jpeg"
+        },
+        {
+          "caption": "Figure 5. Results of memory invocation ratio and invocation relative position across four benchmarks.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463890.5.jpeg"
+        },
+        {
+          "caption": "Figure 6. Results of average inference time and performance across four benchmarks. The size is proportional to its y-value.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463890.6.jpeg"
+        },
+        {
+          "caption": "Table 3. Ablations of latent vision memory invocation and dual latent vision memory formation.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463890.7.jpeg"
+        }
+      ],
+      "title": "VisMem: Latent Vision Memory Unlocks Potential of Vision-Language Models",
+      "total_likes": 7,
+      "total_read": 40,
+      "url": "https://arxiv.org/pdf/2511.11007",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11007.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Text-to-image diffusion models generate realistic and coherent images but often fail to follow numerical instructions in text, revealing a gap between language and visual representation. Interestingly, we found that these models are not entirely blind to numbers-they are implicitly aware of their own counting accuracy, as their internal signals shift in consistent ways depending on whether the output meets the specified count. This observation suggests that the model already encodes a latent notion of numerical correctness, which can be harnessed to guide generation more precisely. Building on this intuition, we introduce CountSteer, a training-free method that improves generation of specified object counts by steering the model's cross-attention hidden states during inference. In our experiments, CountSteer improved object-count accuracy by about 4% without compromising visual quality, demonstrating a simple yet effective step toward more controllable and semantically reliable text-to-image generation.",
+      "affiliations": [
+        "Ewha Womans University"
+      ],
+      "arxiv_id": "2511.11253",
+      "arxives_doi": null,
+      "authors": "Hyemin Boo, Hyoryung Kim, Myungjin Lee, Seunghyeon Lee, Jiyoung Lee, Jang-Hwan Choi, Hyunsoo Cho",
+      "bookmarked": 0,
+      "cache_file_name": "Boo2025ARXIV_CountSteer_Steering_Attention_for.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (December 1)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11253",
+      "inferredHighlights": [
+        {
+          "endIndex": 429,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 187
+        },
+        {
+          "endIndex": 787,
+          "highlightClass": "primary-highlight",
+          "startIndex": 589
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Object Counting,  Diffusion Models,  Cross-Attention,  CountSteer",
+        "method_shortname": "CountSteer",
+        "sub_subfield": "Text-to-Image Generation",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068302,
+      "paper_id": 4464227,
+      "paper_source_id": "2511.11253",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-12-01",
+      "ranking_score": 0.760589472,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "7a1d7be8412e1e7d59e6bbe39543c1c043faeeb4",
+      "shortened_authors": "Hyemin Boo, Hyoryung Kim, Myungjin Lee, Seunghyeon Lee, Jiyoung Lee, Jang-Hwan Choi, Hyunsoo Cho",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **CountSteer**, a training-free method that improves object-count accuracy in diffusion models by steering cross-attention hidden states during inference.\n- **CountSteer** enhances numerical fidelity without compromising visual quality, achieving an average 4% improvement in object-count accuracy.\n- **CountSteer** leverages latent cues in the model\u2019s attention space to guide generation toward numerically consistent outcomes.\n- **CountSteer** provides prompt-specific calibration through adaptive scaling factors, enabling more precise control over object counts.",
+        "evaluation_question": "- On *object count* tasks, **CountSteer** achieves **54.0% ACC** vs. baseline (**50.0%**), **+4.0%** improvement.\n- **CountSteer** reduces *MAE* by **0.185**, significantly mitigating extreme cases of under- or over-generation.\n- Maintains comparable *CLIP-Score* with the baseline, confirming semantic alignment is preserved despite improvements in numerical fidelity.",
+        "method_explanation_question": "- Constructs a base steering vector **s t,b** as the difference between mean hidden states of correct and incorrect object counts at each denoising step t and UNet block b.\n- Applies an adaptive scaling factor **\u03b1 t,b** based on distance and directional alignment measurements to dynamically adjust the magnitude and direction of the steering vector.\n- **h\u2019 t,b** is updated by adding the scaled steering vector **\u03b1 t,b \u00b7 s t,b** to the current hidden state **h t,b** during inference.\n- Injects these adaptive steering vectors into the UNet blocks during the first 10 denoising steps to guide the model toward accurate object counts.",
+        "problem_definition_question": "- Diffusion models often fail to follow numerical instructions in text, revealing a gap between language and visual representation.\n- **Object count** provides a clear and quantifiable measure of fidelity, but diffusion models struggle to maintain numerical accuracy due to their stochastic and spatially complex generation process.\n- **Over- or under-generation** of objects reduces reliability in applications requiring semantic precision and quantitative accuracy."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: CountSteer improves numerical fidelity in text-to-image diffusion. While baseline Stable Diffusion v1.5 often fails to generate the correct number of objects, our cross-attention steering framework generates images with more accurate object counts that better align with user-specified prompts across diverse object categories.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464227.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: CountSteer: During each denoising step t , adaptive steering vectors are injected into UNet blocks to steer hidden states based on latent distributional differences between correct ( \u00b5 1 t,b ) and incorrect ( \u00b5 0 t,b ) samples.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464227.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: Visualization of hidden state distributions analyzed via KDE. The two classes (correct and incorrect counts) exhibit clearly separable regions, supporting the formulation of our steering direction vector.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464227.2.jpeg"
+        },
+        {
+          "caption": "Figure 4: We generate images from \u201d { count } { object } \u201d prompts, extract hidden states h t,b , and manually annotate them into balanced classes of 200 correct and incorrect counting to construct the base steering vector.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464227.3.jpeg"
+        },
+        {
+          "caption": "Figure 5: Overall distribution of correct and incorrect counts across different targets (one to ten).",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464227.4.jpeg"
+        },
+        {
+          "caption": "Figure 6: Visualization of denoising process. For each prompt, we visualized the denoising process for SD v1.5 and SD v1.5+CountSteer . The prompts used to generate the images are, in order, \u2019one potato\u2019, \u2019two baseball caps\u2019, \u2019three beavers\u2019, and \u2019four soda cans\u2019 .",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464227.5.jpeg"
+        },
+        {
+          "caption": "Figure 7: Additional examples showing the effect of CountSteer across various prompts.Compared to baseline Stable Diffusion v1.5, our method more consistently generates images with object counts that match the specified number across a wide range of object categories.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464227.6.jpeg"
+        }
+      ],
+      "title": "CountSteer: Steering Attention for Object Counting in Diffusion Models",
+      "total_likes": 2,
+      "total_read": 27,
+      "url": "https://arxiv.org/pdf/2511.11253",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11253.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Diffusion models produce high quality images but inference is costly due to many denoising steps and heavy matrix operations. We present DiffPro, a post-training, hardware-faithful framework that works with the exact integer kernels used in deployment and jointly tunes timesteps and per-layer precision in Diffusion Transformers (DiTs) to reduce latency and memory without any training. DiffPro combines three parts: a manifold-aware sensitivity metric to allocate weight bits, dynamic activation quantization to stabilize activations across timesteps, and a budgeted timestep selector guided by teacher-student drift. In experiments DiffPro achieves up to 6.25x model compression, fifty percent fewer timesteps, and 2.8x faster inference with Delta FID <= 10 on standard benchmarks, demonstrating practical efficiency gains. DiffPro unifies step reduction and precision planning into a single budgeted deployable plan for real-time energy-aware diffusion inference.",
+      "affiliations": [
+        "Department of Comuputer Science, Virginia Tech",
+        "Department of Electrical Engineering & Comuputer Science, Embry Riddle Aeronautical University"
+      ],
+      "arxiv_id": "2511.11446",
+      "arxives_doi": null,
+      "authors": "Farhana Amin, Sabiha Afroz, Kanchon Gharami, Mona Moghadampanah, Dimitrios S. Nikolopoulos",
+      "bookmarked": 0,
+      "cache_file_name": "Amin2025ARXIV_DiffPro_Joint_Timestep_and.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8710919828,
+        0.5325106532,
+        0.5270037262,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11446",
+      "inferredHighlights": [
+        {
+          "endIndex": 386,
+          "highlightClass": "primary-highlight",
+          "startIndex": 126
+        },
+        {
+          "endIndex": 618,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 392
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Diffusion Transformers (DiT),  Layer-wise Precision Optimization,  Dynamic Activation Quantization (DAQ),  Timestep Reduction,  Model Compression",
+        "method_shortname": "DiffPro",
+        "sub_subfield": "Diffusion Models",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068375,
+      "paper_id": 4464300,
+      "paper_source_id": "2511.11446",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.7208227731,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "53be2a283712b3543e287a5b03ab8dc5004507be",
+      "shortened_authors": "Farhana Amin, Sabiha Afroz, Kanchon Gharami, Mona Moghadampanah, Dimitrios S. Nikolopoulos",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **DiffPro** introduces a **hardware faithful optimization framework** that jointly tunes layer-wise bit precision and timestep budgets for efficient diffusion inference.\n- **Manifold aware sensitivity estimation** ranks layers via principal component analysis (PCA) and curvature energy to assign bits where they matter most.\n- **Dynamic Activation Quantization (DAQ)** dynamically rescales activations to mitigate temporal drift and enable stable low-bit inference across the denoising process.\n- **Budgeted timestep selection** guided by teacher\u2013student drift prunes redundant steps while maintaining late-stage fidelity.\n- **DiffPro** achieves up to **6.25 \u00d7 model compression**, **50% fewer timesteps**, and **2.8 \u00d7 faster inference** with \u2206FID \u2264 10 on standard benchmarks.",
+        "evaluation_question": "- On *CIFAR-10 & CIFAR-100*, *Imagenet*, and *CelebA-HQ* datasets, DiffPro achieves **6.25 \u00d7 model compression**, **50% fewer timesteps**, and **2.8 \u00d7 faster inference** with \u2206FID \u2264 10.\n- The method delivers hardware faithful efficiency without retraining, achieving significant improvements in both latency and memory usage compared to prior DiT quantization methods.",
+        "method_explanation_question": "- **DiffPro** combines three key mechanisms: (i) **manifold aware sensitivity estimation** using PCA and curvature energy to allocate weight bits, (ii) **Dynamic Activation Quantization (DAQ)** to adjust activation scales per sample and timestep, and (iii) **budgeted timestep selection** guided by teacher\u2013student drift to prune redundant steps.\n- **Manifold aware sensitivity estimation** ranks layers based on PCA and curvature energy to determine where bits should be allocated for optimal performance.\n- **Dynamic Activation Quantization (DAQ)** dynamically rescales activations for stable low-bit inference across the denoising process, adapting to changes in activation ranges over time.\n- **Budgeted timestep selection** removes redundant steps while maintaining late-stage fidelity, ensuring that the final output quality is preserved under a compute budget.\n- **DiffPro** applies **GPTQ** to pack weights and uses **INT8 \u00d7 INT8 \u2192 INT32 GEMMs** for efficient computation during inference.",
+        "problem_definition_question": "- **Diffusion Transformers (DiTs)** exhibit strong temporal drift in activation ranges across timesteps, making static calibration unreliable and leading to unstable performance when quantized.\n- **Quantizing DiTs** is particularly challenging due to channel imbalance and time-dependent variation, where certain channels or layers are more sensitive to low-bit operations.\n- **Existing approaches** often ignore variations in layer and timestep sensitivity, leading to gradual quality loss during the diffusion process.\n- **There is a need for a unified solution** that balances precision, image quality, and computational cost together for real-time energy-aware diffusion inference."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. DiffPro Overview:Joint precision optimization for efficient diffusion inference. The workflow analyzes layers, derives manifold and PCA signals, ranks sensitivity to seed a bit plan, applies DAQ, prunes a 1000 step schedule with a protected tail, then quantizes and evaluates FID, latency, energy, and model size.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. PCA for the top sensitive layers. Figure 3. Activation distribution over timesteps 50-100 for one chosen layer.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.1.jpeg"
+        },
+        {
+          "caption": "Figure 6. Activation envelope per 9 groups (min/max) in a block.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.2.jpeg"
+        },
+        {
+          "caption": "Figure 7. Top-10 layers by combined score. ing per layer weights and activations.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.3.jpeg"
+        },
+        {
+          "caption": "Figure 4. Scatter: log 10 (cid:0) mean (cid:80) x 2 (cid:1) vs. PCA",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.4.jpeg"
+        },
+        {
+          "caption": "Figure 8. Best Bit-Width by Block (Median, \u2206 = Changed Layers.)",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.5.jpeg"
+        },
+        {
+          "caption": "Figure 11. Layer-wise correlation heatmap of std( t ) for DiT-XL/2,256X256.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.6.jpeg"
+        },
+        {
+          "caption": "Figure 9. Bit-Width Changes per Layer, from seed to best plan (Slope Chart).",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.7.jpeg"
+        },
+        {
+          "caption": "Figure 15. Kept Timesteps According to drift:MSE Vs Timestep",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.8.jpeg"
+        },
+        {
+          "caption": "Figure 16. Kept timesteps according to drift:FID Vs Timestep with",
+          "figureNumber": 9,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.9.jpeg"
+        },
+        {
+          "caption": "Figure 12. Row normalized std heatmap for top-K layers by temporal variability.",
+          "figureNumber": 10,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.10.jpeg"
+        },
+        {
+          "caption": "Figure 17. Sorted drift elbow at kept 500 timesteps.",
+          "figureNumber": 11,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.11.jpeg"
+        },
+        {
+          "caption": "Figure 18. Evolution: score by generation.",
+          "figureNumber": 12,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464300.12.jpeg"
+        }
+      ],
+      "title": "DiffPro: Joint Timestep and Layer-Wise Precision Optimization for Efficient Diffusion Inference",
+      "total_likes": 5,
+      "total_read": 22,
+      "url": "https://arxiv.org/pdf/2511.11446",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11446.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "While generative models have seen significant adoption across a wide range of data modalities, including 3D data, a consensus on which model is best suited for which task has yet to be reached. Further, conditional information such as text and images to steer the generation process are frequently employed, whereas others, like partial 3D data, have not been thoroughly evaluated. In this work, we compare two of the most promising generative models--Denoising Diffusion Probabilistic Models and Autoregressive Causal Transformers--which we adapt for the tasks of generative shape modeling and completion. We conduct a thorough quantitative evaluation and comparison of both tasks, including a baseline discriminative model and an extensive ablation study. Our results show that (1) the diffusion model with continuous latents outperforms both the discriminative model and the autoregressive approach and delivers state-of-the-art performance on multi-modal shape completion from a single, noisy depth image under realistic conditions and (2) when compared on the same discrete latent space, the autoregressive model can match or exceed diffusion performance on these tasks.",
+      "affiliations": [
+        "German Aerospace Center (DLR)",
+        "Karlsruhe Institute of Technology (KIT)",
+        "Technical University Munich (TUM)"
+      ],
+      "arxiv_id": "2511.11074",
+      "arxives_doi": null,
+      "authors": "Matthias Humt, Ulrich Hillenbrand, Rudolph Triebel",
+      "bookmarked": 0,
+      "cache_file_name": "Humt2025ARXIV_Evaluating_Latent_Generative_Paradigms.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9696723937,
+        0.7434327471,
+        0.6720657861,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11074",
+      "inferredHighlights": [
+        {
+          "endIndex": 605,
+          "highlightClass": "primary-highlight",
+          "startIndex": 382
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Denoising Diffusion Probabilistic Models (DDPM),  Autoregressive Causal Transformers,  Variational Auto-Encoders (VAE),  VQ-VAE,  Occupancy Probability,  Cross-Attention,  Transformer Encoder,  Feature Extraction",
+        "method_shortname": "null",
+        "sub_subfield": "3D Shape Completion",
+        "subfield": "Computer Vision"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068078,
+      "paper_id": 4464003,
+      "paper_source_id": "2511.11074",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.634553499,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "b3002679453e7bb7c9a0691e8ef76517c1a5ffca",
+      "shortened_authors": "Matthias Humt, Ulrich Hillenbrand, Rudolph Triebel",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Denoising Diffusion Probabilistic Models (DDPM)** outperform autoregressive models in both generative shape modeling and completion.\n- **Autoregressive Causal Transformers** can match or exceed diffusion performance when trained on the same discrete latent space.\n- **State-of-the-art multi-modal shape completion** is achieved from a single, noisy depth image under realistic conditions.\n- **Comprehensive quantitative evaluation** compares generative and discriminative models for shape completion.\n- **Runtime-optimized reference implementation** includes a large number of commonly used metrics.",
+        "evaluation_question": "- On *Kinect depth images*, the **generative model** achieves **52.92% F1-score**, outperforming the discriminative model (**45.99%**) and the baseline (**43.37%**).\n- The **diffusion model with continuous latents** delivers **state-of-the-art performance** on multi-modal shape completion from a single, noisy depth image.\n- Ablation studies show that using **features from a model trained for auto-encoding** outperforms those from a classification-trained model.\n- Increasing the number of completions from 1 to 10 leads to **improvements in F1-score** (from **41.04% to 49.37%**) and **precision** (from **46.50% to 55.90%**).\n- Using **beginning-of-sequence conditioning** instead of cross-attention improves performance on autoregressive training.",
+        "method_explanation_question": "- The input point cloud is encoded using a **VAE** with positional encoding and farthest-point-sampled queries.\n- Latent codes are processed through multiple **Transformer encoder layers** with layer norm, self-attention, and feed-forward components.\n- Occupancy probabilities are predicted via **cross-attention** between query points and latent codes.\n- For unconditional generation, latent codes are sampled either **autoregressively** or via **denoising** from a standard normal distribution.\n- The model is trained using **adaptive layer normalization** for time-step conditioning and **Adam optimizer** with a linear warmup and cosine annealing learning rate schedule.",
+        "problem_definition_question": "- **Shape completion** remains a significant challenge due to the inherent ambiguity of partial, degraded observations.\n- **Discriminative models** often predict the average over all plausible completions, resulting in unrealistic, low-fidelity outcomes.\n- **Generative models** have not been thoroughly evaluated for shape completion tasks, despite showing impressive results in other modalities.\n- **Limited quantitative evaluation** has been provided for generative models in the context of shape completion, making it difficult to compare them with discriminative models."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 13. Ablation on Beginning-of-sequence (BOS) vs. cross-attention (Cross-Attn) conditioning during autoregressive training.",
+          "figureNumber": 14,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.14.jpeg"
+        },
+        {
+          "caption": "Table 11. Ablation on the number of diffusion steps T .",
+          "figureNumber": 15,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.15.jpeg"
+        },
+        {
+          "caption": "Figure 1. Predicting complete shapes from partial, noisy inputs (1) that closely resemble the ground truth (2) object remains challenging when the input is highly ambiguous. We explore models that fit generative priors to latent distributions, enabling multi-modal shape completion. The generative models produce multiple plausible predictions (3-5) covering the range of possibilities (in descending similarity to ground truth), with some completions surpassing the quality of the single prediction (6) from discriminative models.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464003.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Generative shape completion. (1) Given an input point cloud (1.2) sampled from the surface of an object (1.1), we apply a positional encoding (1.3) and aggregate the entire point cloud into a farthest-point-sampled (FPS) set (1.4) as in Zhang et al. [85], which we additionally passed through a feed-forward network to form a latent code. (2) We then model these latents either as a diagonal, multivariate Gaussian (2a) or quantize them into a fixed-sized codebook (2b) forming our (VQ-)VAE encoder and train a diffusion or autoregressive model on top, respectively. For shape completion, we condition the generative model on the encoding of a partial view (P) using a pre-trained feature extractor, which shares the overall architecture of the VAE. (3) We then predict occupancy probabilities through cross-attention between query points and latents sampled from the latent generative model, processed by N Transformer encoder layers, forming the VAE decoder. (4) Optionally, a mesh can be extracted using the Marching Cubes algorithm. During inference, we discard the VAE encoder and sample latent codes either autoregressively or via denoising of samples drawn from a standard normal distribution.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464003.1.jpeg"
+        },
+        {
+          "caption": "Table 1. Reconstruction quality; class average. Upper half shows performance on watertight meshes, lower half on original meshes",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.2.jpeg"
+        },
+        {
+          "caption": "Table 2. Comparison of class-conditional generative models.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.3.jpeg"
+        },
+        {
+          "caption": "Table 5. Generative vs. discriminative shape completion from a single depth image in object-centric coordinates.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.4.jpeg"
+        },
+        {
+          "caption": "Table 3. Comparison of diffusion and autoregressive unconditional generative shape modeling on continuous (VAE) and discrete (VQ-VAE) latents.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.5.jpeg"
+        },
+        {
+          "caption": "Table 4. Comparison of diffusion and autoregressive class-conditional generative shape modeling on the same latent space.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.6.jpeg"
+        },
+        {
+          "caption": "Table 6. Generative vs. discriminative shape completion from a single depth image in camera coordinates",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.7.jpeg"
+        },
+        {
+          "caption": "comple-Figure 3. Examples from the Automatica/YCB dataset. Left to right: input , ground truth , generative (best), discriminative .",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464003.8.jpeg"
+        },
+        {
+          "caption": "Table 7. Generative ( G ) vs. discriminative ( D ) shape completion from a single Kinect depth image. Instance-level metrics (CD, F1, Prec., Rec.) are \u2019best-of-10\u2019 for the generative model, which is already competitive with the discriminative model at N=1 (See Tab. 9).",
+          "figureNumber": 9,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.9.jpeg"
+        },
+        {
+          "caption": "Table 8. Generative vs. discriminative shape completion on the Automatica/YCB dataset.",
+          "figureNumber": 10,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.10.jpeg"
+        },
+        {
+          "caption": "Table 12. Ablation on conditioning type: classification (class.) vs. reconstruction (recon.) and middle vs. final layer as well as final",
+          "figureNumber": 11,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.11.jpeg"
+        },
+        {
+          "caption": "Table 9. Ablation on the number of generative completions N .",
+          "figureNumber": 12,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.12.jpeg"
+        },
+        {
+          "caption": "Table 10. Ablation on model size.",
+          "figureNumber": 13,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464003.13.jpeg"
+        }
+      ],
+      "title": "Evaluating Latent Generative Paradigms for High-Fidelity 3D Shape Completion from a Single Depth Image",
+      "total_likes": 4,
+      "total_read": 50,
+      "url": "https://arxiv.org/pdf/2511.11074",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11074.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Multi-token prediction (MTP) is a prominent strategy to significantly speed up generation in large language models (LLMs), including byte-level LLMs, which are tokeniser-free but prohibitively slow. However, existing MTP methods often sacrifice expressiveness by assuming independence between future tokens. In this work, we investigate the trade-off between expressiveness and latency in MTP within the framework of probabilistic circuits (PCs). Our framework, named MTPC, allows one to explore different ways to encode the joint distributions over future tokens by selecting different circuit architectures, generalising classical models such as (hierarchical) mixture models, hidden Markov models and tensor networks. We show the efficacy of MTPC by retrofitting existing byte-level LLMs, such as EvaByte. Our experiments show that, when combined with speculative decoding, MTPC significantly speeds up generation compared to MTP with independence assumptions, while guaranteeing to retain the performance of the original verifier LLM. We also rigorously study the optimal trade-off between expressiveness and latency when exploring the possible parameterisations of MTPC, such as PC architectures and partial layer sharing between the verifier and draft LLMs.",
+      "affiliations": [
+        "School of Informatics, University of Edinburgh",
+        "NatWest Group"
+      ],
+      "arxiv_id": "2511.11346",
+      "arxives_doi": null,
+      "authors": "Andreas Grivas, Lorenzo Loconte, Emile van Krieken, Piotr Nawrot, Yu Zhao, Euan Wielewski, Pasquale Minervini, Edoardo Ponti, Antonio Vergari",
+      "bookmarked": 0,
+      "cache_file_name": "Grivas2025ARXIV_Fast_and_Expressive_Multi.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9782836339,
+        0.7805130487,
+        0.7082325095,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11346",
+      "inferredHighlights": [
+        {
+          "endIndex": 445,
+          "highlightClass": "primary-highlight",
+          "startIndex": 308
+        },
+        {
+          "endIndex": 719,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 447
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Probabilistic Circuits (PC),  Multi-Token Prediction (MTP),  Hidden Markov Models (HMM),  Binary Tree Factorisation (BTree),  Byte-Level Language Models (LLMs)",
+        "method_shortname": "M T PC",
+        "sub_subfield": "Probabilistic Circuits",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068258,
+      "paper_id": 4464183,
+      "paper_source_id": "2511.11346",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.6142480195,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "180f30eeb413dedc1b552407441d346260be6ef4",
+      "shortened_authors": "Andreas Grivas, Lorenzo Loconte, Emile van Krieken, Piotr Nawrot, Yu Zhao, Euan Wielewski, Pasquale Minervini, Edoardo Ponti, Antonio Vergari",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **M T PC**, a novel framework for **multi-token prediction (MTP)** that generalises classical models such as (hierarchical) mixture models, hidden Markov models and tensor networks.\n- **M T PC** allows exploring different ways to encode the joint distributions over future tokens by selecting different circuit architectures.\n- **M T PC** significantly speeds up generation compared to MTP with independence assumptions while retaining the performance of the original verifier LLM.\n- **M T PC** enables rigorous study of the optimal trade-off between expressiveness and latency when exploring parameterisations like PC architectures and partial layer sharing.\n- **M T PC** demonstrates effectiveness by retrofitting existing byte-level LLMs such as EvaByte.",
+        "evaluation_question": "- For n = 8, **M T PC- CP** achieves **5.94** acceptance rate with **0.0320** latency, resulting in **188.6 tok/s**.\n- For n = 16, **M T PC- BTREE** achieves **6.71** acceptance rate with **0.0337** latency, resulting in **203.5 tok/s**.\n- **M T PC- BTREE** outperforms **M T PC- CP** for n = 16, achieving a speed-up of \u00d75.08 over EvaByte-STP.\n- **M T PC- CP** with r = 32 achieves **200.9 tok/s**, which is **5.02\u00d7** faster than the baseline EvaByte-MTP (FF).\n- **M T PC- HMM** achieves **182.4 tok/s** for n = 8, but has higher latency due to its autoregressive nature.",
+        "method_explanation_question": "- **M T PC** uses **probabilistic circuits (PCs)** to parameterise the joint distribution over future tokens into tractable computational graphs that can encode hierarchical mixture models.\n- **M T PC** allows exploration of various circuit architectures, including fully factorised models (FF), canonical polyadic (CP) factorisation, hidden Markov models (HMMs), and binary tree factorisations (BTrees).\n- **M T PC** leverages **LLM embeddings** to parameterise the circuits, mapping contextual features to the parameters of the circuit using a neural network head.\n- **M T PC** employs **speculative decoding** to speed up generation by generating multiple tokens at once and verifying them against an autoregressive LLM.\n- **M T PC** balances **expressiveness** and **latency** by adjusting the number of mixture components (r) and the architecture of the probabilistic circuits.",
+        "problem_definition_question": "- Existing **MTP methods** often sacrifice **expressiveness** by assuming independence between future tokens, leading to poor performance on complex tasks.\n- **Multi-token prediction (MTP)** faces challenges in balancing **expressiveness** and **efficiency**, making it difficult to achieve high throughput without compromising quality.\n- **Current MTP approaches** are limited by unrealistic assumptions that hinder their ability to capture complex dependencies in sequences.\n- **Byte-level LLMs** require more tokens than sub-word LLMs to generate text of the same length, increasing the need for efficient MTP methods.\n- **Independence assumptions** in MTP lead to issues such as generating implausible continuations like 'Cretoria' or 'Crptoria' with high probability."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: M T PC allows for exploring the trade-off between efficiency (latency) and expressiveness (token acceptance) with different MTP designs in terms of 1) choice of PC architecture (FF, CP, HMM, BTree); 2) choice of layers shared between draft and verifier models in self-speculative decoding. Dotted lines indicate iso-throughput (tokens generated per second) regions, highlighting configurations such as BTree for n = 16 tokens and 2 LoRA layers that achieve the best throughput.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464183.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: PCs allow for modelling a spectrum of dependency structures over sequences of tokens, as shown for the known FF and CP and the novel HMM and BTree MTP variants. Input units are grouped in coloured layers, one for each token, while sum and product layers encoding (hierarchies of) latent variable distributions are in grey. The output unit of each circuit (in blue) computes q \u03b8 ( x t +1 , . . . , x t + n | x \u2264 t ) . In the figure we omit the dependency on the context x \u2264 t for readability.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464183.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Increasing the mixture components ( r ) increases the throughput ( \u00b5 tok/s ) as seen for M T PC-CP ( n = 8 ) over our baseline, EvaByte-MTP (FF) (in gray) where we report the mean \u00b1 std over three sets of 250 prompts. M T PC-CP",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464183.2.jpeg"
+        },
+        {
+          "caption": "Table 2: More expressive architectures such as M T PC-BTREE outperform M T PC-CP in terms of throughput for n = 8 and n = 16 windows on an L40S GPU. For this experiment, we trained only model heads (no LoRAs layers). The shaded baselines are EvaByte-STP and the EvaByte-MTP (FF) models, trained for the same number of steps as our circuits for a fair comparison.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464183.3.jpeg"
+        }
+      ],
+      "title": "Fast and Expressive Multi-Token Prediction with Probabilistic Circuits",
+      "total_likes": 5,
+      "total_read": 13,
+      "url": "https://arxiv.org/pdf/2511.11346",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11346.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Vision-language models (VLMs) struggle with 3D-related tasks such as spatial cognition and physical understanding, which are crucial for real-world applications like robotics and embodied agents. We attribute this to a modality gap between the 3D tasks and the 2D training of VLM, which led to inefficient retrieval of 3D information from 2D input. To bridge this gap, we introduce SandboxVLM, a simple yet effective framework that leverages abstract bounding boxes to encode geometric structure and physical kinematics for VLM. Specifically, we design a 3D Sandbox reconstruction and perception pipeline comprising four stages: generating multi-view priors with abstract control, proxy elevation, multi-view voting and clustering, and 3D-aware reasoning. Evaluated in zero-shot settings across multiple benchmarks and VLM backbones, our approach consistently improves spatial intelligence, achieving an 8.3\\% gain on SAT Real compared with baseline methods for instance. These results demonstrate that equipping VLMs with a 3D abstraction substantially enhances their 3D reasoning ability without additional training, suggesting new possibilities for general-purpose embodied intelligence.",
+      "affiliations": [
+        "Tsinghua University",
+        "Massachusetts Institute of Technology",
+        "Harvard University"
+      ],
+      "arxiv_id": "2511.10946",
+      "arxives_doi": null,
+      "authors": "Yifan Liu, Fangneng Zhan, Kaichen Zhou, Yilun Du, Paul Pu Liang, Hanspeter Pfister",
+      "bookmarked": 0,
+      "cache_file_name": "Liu2025ARXIV_Abstract_3D_Perception_for.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9350901353,
+        0.9111839662,
+        0.8974511646,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.10946",
+      "inferredHighlights": [
+        {
+          "endIndex": 527,
+          "highlightClass": "primary-highlight",
+          "startIndex": 349
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Vision-Language Models (VLM),  3D Perception,  Spatial Intelligence,  Abstract Perception,  Multi-View Priors,  Proxy Elevation,  Multi-View Voting,  3D-Aware Reasoning",
+        "method_shortname": "SandboxVLM",
+        "sub_subfield": "Vision-Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4067882,
+      "paper_id": 4463807,
+      "paper_source_id": "2511.10946",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.5132446662,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "b36e603228827a04cac6e4135eec8d781740d850",
+      "shortened_authors": "Yifan Liu, Fangneng Zhan, Kaichen Zhou, Yilun Du, Paul Pu Liang, Hanspeter Pfister",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **SandboxVLM**, a framework that injects **abstract 3D structures** into vision-language models (VLMs) to enhance spatial reasoning without additional training.\n- **Abstract perception** is proposed, leveraging coarse structural cues rather than detailed geometric reconstruction for reasoning.\n- **Multi-View Voting and Clustering** is introduced to form abstract 3D bounding boxes from proxy points across views.\n- **Proxy Elevation** lifts 2D masks into 3D space using depth estimation and camera parameters.\n- **3D-Aware Reasoning** is enabled through informative renderings of abstract 3D boxes for VLMs.\n- Demonstrates significant improvements in spatial intelligence, achieving an **8.3% gain on SAT Real** compared to baseline methods.",
+        "evaluation_question": "- On *SAT Real*, achieves **84.1%** accuracy, outperforming the strongest baseline **MindJourney** by **3.4%**.\n- On *PhysBench*, reaches **58.3%** performance, surpassing **MindJourney** by **3.4%**.\n- Ablation studies show **Full SandboxVLM** achieves **84.1%** accuracy, significantly better than variants like **Rendered Point Clouds** (**73.7%**) and **Vanilla VLM** (**75.4%**).\n- Using **GPT-5-mini** as backbone, SandboxVLM achieves **84.1%** on *SAT Real* and **75.4%** on *SAT Synth*, outperforming **GPT-5** by **4.2%**.\n- Across all SAT subsets, **SandboxVLM** consistently improves performance when upgrading the backbone from **GPT-4o** to **GPT-5**.",
+        "method_explanation_question": "- Generates multi-view priors with **abstract control** to simulate imagined trajectories for 3D context expansion.\n- Uses an **off-the-shelf depth estimator** to predict per-frame depth and camera parameters, while the VLM identifies task-relevant objects.\n- **Proxy Elevation** lifts masked regions into coarse 3D proxies via farthest point sampling and erosion.\n- **Multi-View Voting and Clustering** aggregates proxies across views to form abstract 3D bounding boxes.\n- **3D-Aware Reasoning** renders these boxes from informative viewpoints (step-back and top-down) for the VLM to reason over.",
+        "problem_definition_question": "- Existing VLMs lack **3D awareness**, limiting their ability to perform tasks requiring genuine spatial understanding such as estimating relative positions or predicting object interactions.\n- **Training-based methods** depend heavily on dense 3D supervision, curated datasets, or domain-specific architectures, limiting scalability.\n- **Generalist VLMs** struggle with real-world spatial and physical reasoning due to insufficient 3D knowledge inherent in generative world models.\n- **Current approaches** either rely on complex 3D reconstructions or fail to provide interpretable spatial cues for reasoning."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Motivation of SandboxVLM. (a) Existing VLMs are trained without 3D awareness. Training or supervised fine-tuning (SFT) VLMs with 3D suffers from a lack of 3D data and forgetting. (b) Humans, however, reason effectively in 3D through coarse, relational understanding. (c) SandboxVLM follows this principle of abstract perception, providing a coarse but informative 3D context for zero-shot VLM reasoning.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463807.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Overview of the SandboxVLM pipeline. Given an input image and a textual query, the system builds a compact, 3D-aware, query-conditioned context for a vision-language model (VLM). A video diffusion prior first expands the input into a short multi-view sequence along imagined trajectories guided by abstract control provided by the VLM. Inside the 3D Sandbox module, an off-the-shelf depth estimator predicts per-frame depth and camera parameters, while the VLM identifies task-relevant objects that guide a 2D segmenter to produce instance masks. The masked regions are lifted into coarse 3D proxies and merged across views through a Multi-View Voting and Clustering step to form abstract 3D bounding boxes. Finally, informative renderings of these 3D abstractions are composed with the query and fed back into the VLM for spatial and physical reasoning.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463807.1.jpeg"
+        },
+        {
+          "caption": "Figure 3. Core modules of 3D Sandbox. (a) Proxy Elevation: The VLM identifies task-relevant objects and their approximate locations. A segmentation model produces object masks, followed by mask erosion and farthest point sampling to select interior proxy pixels. (b) Multi-View Voting: The proxies are unprojected into 3D space and aggregated across views through a cross-view consistency check (\u201cAgree to\u201d) to filter unreliable points. The remaining proxies will be clustered into boxes.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463807.2.jpeg"
+        },
+        {
+          "caption": "Table 1. Quantitative comparison with three categories of baselines across four benchmarks evaluating spatial reasoning and physical understanding. Our SandboxVLM achieves the highest overall performance, particularly on SAT-Real and PhysBench, demonstrating strong generalization in real-world spatial and physical tasks.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463807.3.jpeg"
+        },
+        {
+          "caption": "Table 2. Quantitative results on the SAT-Real and SAT-Synth benchmarks. Each block compares baseline, MindJourney, and our Sand-boxVLM under the same backbone (GPT-4o, GPT-5-mini, or GPT-5). Metrics are reported across five spatial reasoning dimensions: EgoMovement (EgoM), ObjectMovement (ObjectM), GoalAiming (GoalAim), ActionConsequence (ActCons), and PerspectiveTaking (Perspect). SandboxVLM consistently achieves the best or second-best results.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463807.4.jpeg"
+        },
+        {
+          "caption": "Table 3. Ablation study across multiple spatial reasoning benchmarks. We evaluate seven model variants described in Sec. 4.3, each isolating a key design choice. The full model achieves the highest overall accuracy, demonstrating that 3D Sandbox is one effective way of modeling spatial structure for VLMs.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463807.5.jpeg"
+        },
+        {
+          "caption": "Figure 4. Visualization of representations in ablation study. (a) Input image to the system; (b) Scene graph generated by expert model; (c) Reconstructed point cloud rendering. (d) Text description of 3D bounding boxes; (e) Rendered proxy points; (f) 3D Sandbox. 3D Sandbox strikes a balance between informativeness and interpretability, providing vivid spatial cues while filtering out irrelevant details.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463807.6.jpeg"
+        }
+      ],
+      "title": "Abstract 3D Perception for Spatial Intelligence in Vision-Language Models",
+      "total_likes": 20,
+      "total_read": 151,
+      "url": "https://arxiv.org/pdf/2511.10946",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.10946.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Fine-grained knowledge is crucial for vision-language models to obtain a better understanding of the real world. While there has been work trying to acquire this kind of knowledge in the space of vision and language, it has mostly focused on aligning the image patches with the tokens on the language side. However, image patches do not have any meaning to the human eye, and individual tokens do not necessarily carry groundable information in the image. It is groups of tokens which describe different aspects of the scene. In this work, we propose a model which groups the caption tokens as part of its architecture in order to capture a fine-grained representation of the language. We expect our representations to be at the level of objects present in the image, and therefore align our representations with the output of an image encoder trained to discover objects. We show that by learning to group the tokens, the vision-language model has a better fine-grained understanding of vision and language. In addition, the token groups that our model discovers are highly similar to groundable phrases in text, both qualitatively and quantitatively.",
+      "affiliations": [
+        "Idiap Research Institute"
+      ],
+      "arxiv_id": "2511.11262",
+      "arxives_doi": null,
+      "authors": "Melika Behjati, James Henderson",
+      "bookmarked": 0,
+      "cache_file_name": "Behjati2025ARXIV_Discovering_Meaningful_Units_with.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9228955068,
+        0.9173856276,
+        0.9142097584,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11262",
+      "inferredHighlights": [
+        {
+          "endIndex": 684,
+          "highlightClass": "primary-highlight",
+          "startIndex": 526
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Vision-Language Alignment,  Object Discovery,  Text Group Transformer,  Contrastive Loss,  Reconstruction Loss,  Gumble Softmax",
+        "method_shortname": "Text Group Transformer",
+        "sub_subfield": "Vision-Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068256,
+      "paper_id": 4464181,
+      "paper_source_id": "2511.11262",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.5037086334,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "b4415d04a1bcd9f55761487d3f1a32f4aab17a9e",
+      "shortened_authors": "Melika Behjati, James Henderson",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes a novel **Text Group Transformer** to discover meaningful units in language that align with objects in images.\n- **Groups of tokens** are discovered that correspond to groundable phrases in text, both qualitatively and quantitatively.\n- **Fine-grained vision-language understanding** is improved by grouping tokens rather than using single-vector representations.\n- **Ablation studies** show that optimizing for reconstruction loss alone leads to meaningful units but less alignment with groundable phrases.",
+        "evaluation_question": "- On *SVO probes*, achieves **80.3%** overall accuracy, outperforming the baseline (**75.3%**) and GroupViT (**81.0%**).\n- On *FOIL-COCO*, reaches **81.68%** zero-shot performance, surpassing the baseline (**80.91%**) and random (**50%**).\n- Quantitative evaluation shows **tIoU** scores indicate strong alignment between discovered segments and human-annotated groundable phrases.",
+        "method_explanation_question": "- Input text is represented at the level of subwords, which are then grouped into higher-level semantic units using **learnable group vectors**.\n- **Grouping blocks** use a top-down attention mechanism to bind groups to different parts of the input, allowing for discrete assignments via Gumble softmax.\n- **Contrastive loss** aligns the final groups from image and text encoders in a common space, while **reconstruction loss** ensures the model can decode original text from the learned groups.\n- The **text encoder** consists of multiple Transformer layers with grouping blocks, followed by a shallow **Transformer decoder** for reconstruction.",
+        "problem_definition_question": "- Current vision-language models lack **fine-grained understanding** of relationships and verbs in image captions, limiting their real-world applicability.\n- **Single-vector representations** fail to capture object-level semantics, leading to poor alignment between language and vision modalities.\n- **Lack of meaningful units** in language prevents accurate grounding of phrases to visual elements in images."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Overview of the model. We freeze the image encoder and only train the text encoder, decoder, and the linear projection heads. The image passes through Transformer layers followed by the grouping blocks. The output of the image encoder is a set of groups which are approximately representing the objects. The caption also passes through the same set of blocks and the output of the text encoder is a set of groups representing units in language. The two modalities interact via a contrastive loss. There is also a reconstruction loss where the decoder decodes the text groups into the original input.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464181.0.jpeg"
+        },
+        {
+          "caption": "Table 1: The zero-shot pairwise ranking accuracy of different models on the test-split of SVO probes.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464181.1.jpeg"
+        },
+        {
+          "caption": "Table 2: The zero-shot performance of different models on the test-split of FOIL-COCO benchmark.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464181.2.jpeg"
+        },
+        {
+          "caption": "Figure 2: Soft attention of the groups over the input tokens. It shows that contiguous segments have emerged which capture phrase-like units.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464181.3.jpeg"
+        }
+      ],
+      "title": "Discovering Meaningful Units with Visually Grounded Semantics from Image Captions",
+      "total_likes": 2,
+      "total_read": 22,
+      "url": "https://arxiv.org/pdf/2511.11262",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11262.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Mapping human brain activity to natural images offers a new window into vision and cognition, yet current diffusion-based decoders face a core difficulty: most condition directly on fMRI features without analyzing how visual information is organized across the cortex. This overlooks the brain's hierarchical processing and blurs the roles of early, middle, and late visual areas. We propose Hi-DREAM, a brain-inspired conditional diffusion framework that makes the cortical organization explicit. A region-of-interest (ROI) adapter groups fMRI into early/mid/late streams and converts them into a multi-scale cortical pyramid aligned with the U-Net depth (shallow scales preserve layout and edges; deeper scales emphasize objects and semantics). A lightweight, depth-matched ControlNet injects these scale-specific hints during denoising. The result is an efficient and interpretable decoder in which each signal plays a brain-like role, allowing the model not only to reconstruct images but also to illuminate functional contributions of different visual areas. Experiments on the Natural Scenes Dataset (NSD) show that Hi-DREAM attains state-of-the-art performance on high-level semantic metrics while maintaining competitive low-level fidelity. These findings suggest that structuring conditioning by cortical hierarchy is a powerful alternative to purely data-driven embeddings and provides a useful lens for studying the visual cortex.",
+      "affiliations": [
+        "Monash University Melbourne"
+      ],
+      "arxiv_id": "2511.11437",
+      "arxives_doi": null,
+      "authors": "Guowei Zhang, Yun Zhao, Moein Khajehnejad, Adeel Razi, Levin Kuhlmann",
+      "bookmarked": 0,
+      "cache_file_name": "Zhang2025ARXIV_Hi_DREAM_Brain_Inspired.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9228955068,
+        0.9173856276,
+        0.9142097584,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11437",
+      "inferredHighlights": [
+        {
+          "endIndex": 496,
+          "highlightClass": "primary-highlight",
+          "startIndex": 381
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "fMRI Reconstruction,  Cortical Hierarchy,  ROI Adapter,  Multi-Scale Pyramid,  Conditional Diffusion,  ControlNet",
+        "method_shortname": "H I -DREAM",
+        "sub_subfield": "Neuroimaging",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068378,
+      "paper_id": 4464303,
+      "paper_source_id": "2511.11437",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.5028111127,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "a4e800a315a726198c9b7de7200c7d14621c9d7b",
+      "shortened_authors": "Guowei Zhang, Yun Zhao, Moein Khajehnejad, Adeel Razi, Levin Kuhlmann",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes **H I -DREAM**, a brain-inspired conditional diffusion framework that structures fMRI conditioning by cortical hierarchy via a ROI adapter and a multi-scale cortical pyramid aligned to U-Net depth.\n- **H I -DREAM** offers a transparent mapping between model components and hypothesized roles of early, middle, and late visual cortex, enhancing interpretability.\n- Ablations confirm the complementary roles of early, middle, and late ROIs: early regions provide spatial scaffolding, middle regions bridge structure and parts, and late regions inject semantics.\n- **H I -DREAM** achieves state-of-the-art performance on high-level semantic metrics while maintaining competitive low-level fidelity.",
+        "evaluation_question": "- On *NSD*, **H I -DREAM** achieves **87.68%** AlexNet(5) accuracy, outperforming prior methods like MindBridge (**87.7%**) and Psychometry (**96.4%**).\n- **H I -DREAM** attains **97.45%** CLIP score, surpassing other methods such as MindEye2 (**94.5%**) and DREAM (**94.1%**).\n- Ablations show removing the Late group weakens semantic alignment, while removing the Early group degrades both low- and high-level measures.\n- Removing the Middle group limits fine-detail transfer, indicating its role as a bridge between early and late regions.",
+        "method_explanation_question": "- Transforms fMRI signals into hierarchical, group-specific, multi-scale cortical priors using an ROI adapter aligned with U-Net depth.\n- Injects these scale-specific hints into the U-Net at corresponding resolutions via a lightweight, depth-matched ControlNet for anatomy-aware guidance.\n- Uses a selective-depth hypothesis where early groups dominate shallow scales, late groups dominate deep scales, and mid-level groups bridge them.\n- Applies residual + FiLM fusion to inject hints into U-Net blocks, modulating denoising trajectory with anatomy-aware structure.\n- Trains with a standard diffusion loss and regularizers on \u03b1 (to discourage single-group collapse) and w (for stable gates), ensuring anatomical priors are preserved during optimization.",
+        "problem_definition_question": "- Most current diffusion-based decoders condition directly on fMRI features without analyzing how visual information is organized across the cortex, **overlooking the brain\u2019s hierarchical processing**.\n- **Existing methods lack the ability to attribute which regions drive which aspects of the reconstruction**, making it hard to understand functional contributions of different visual areas.\n- **Current approaches fail to respect cortical organization**, leading to reconstructions that do not preserve retinotopy and region specificity."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Brain-inspired decoding pipeline. H I -DREAMHi-DREAM mirrors the visual hierarchy: fMRI signals are grouped into early/mid/late ROIs (e",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464303.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Overview of H I -DREAM. fMRI signals are summarized into hierarchical ROI streams (early/mid/late), each with group-specific processing. A Multi-Head Latent Attention (MHLA) module performs gated cross-attention [36, 37] between ROI-derived latents and U-Net features at multiple depths to capture cooperative interactions among areas. In parallel, a lightweight ROI-conditioned ControlNet consumes compact condition maps to inject neuroanatomical spatial priors, providing structure-aware guidance without full-volume fMRI conditioning.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464303.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Quantitative Comparison on HiDREAM and other methods in both low-level and high-level Methods",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464303.2.jpeg"
+        },
+        {
+          "caption": "Table 2: Ablation on hierarchy modules. Removing the ROI adapter (only ControlNet) hurts both structure and semantics; adding the adapter helps, and adding MHLA on top further improves high-level alignment without degrading low-level similarity.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464303.3.jpeg"
+        },
+        {
+          "caption": "Table 3: Ablation of hierarchy modules. Using the ROI adapter improves both structure and semantics; adding MHLA further boosts high-level metrics (Incep/CLIP) while maintaining low-level fidelity (PixCorr/SSIM) and lowering feature distances (Eff/SwAV).",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464303.4.jpeg"
+        },
+        {
+          "caption": "Figure 4: Ablation on hierarchy modules (accuracy). Bars show, from left to right, w/o ROI Adapter , ROI Adapter (w/o MHLA) , and ROI Adapter (w/ MHLA) . The adapter markedly improves ANet(2/5) and Inception/CLIP, and adding MHLA further boosts high-level alignment.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464303.5.jpeg"
+        }
+      ],
+      "title": "Hi-DREAM: Brain Inspired Hierarchical Diffusion for fMRI Reconstruction via ROI Encoder and visuAl Mapping",
+      "total_likes": 0,
+      "total_read": 5,
+      "url": "https://arxiv.org/pdf/2511.11437",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11437.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "We find that current text embedding models produce outputs with a consistent bias, i.e., each embedding vector $e$ can be decomposed as $\\tilde{e} + \u03bc$, where $\u03bc$ is almost identical across all sentences. We propose a plug-and-play, training-free and lightweight solution called Renormalization. Through extensive experiments, we show that renormalization consistently and statistically significantly improves the performance of existing models on the Massive Multilingual Text Embedding Benchmark (MMTEB). In particular, across 38 models, renormalization improves performance by 9.7 $\u03c3$ on retrieval tasks, 3.1 $\u03c3$ on classification tasks, and 0.8 $\u03c3$ on other types of tasks. Renormalization has two variants: directly subtracting $\u03bc$ from $e$, or subtracting the projection of $e$ onto $\u03bc$. We theoretically predict that the latter performs better, and our experiments confirm this prediction.",
+      "affiliations": [
+        "Dept. of Physics, The Chinese University of Hong Kong",
+        "Dept. of Mathematical Sciences, Tsinghua University",
+        "Dept. of Computer Science and Technology, Tsinghua University"
+      ],
+      "arxiv_id": "2511.11041",
+      "arxives_doi": null,
+      "authors": "Xingyu Ren, Youran Sun, Haoyu Liang",
+      "bookmarked": 0,
+      "cache_file_name": "Ren2025ARXIV_Correcting_Mean_Bias_in.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8803605084,
+        0.9102149929,
+        0.9580045362,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11041",
+      "inferredHighlights": [
+        {
+          "endIndex": 294,
+          "highlightClass": "primary-highlight",
+          "startIndex": 205
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Mean Bias,  Renormalization,  Anisotropy,  MMTEB,  Sentence Embeddings,  Retrieval,  Classification",
+        "method_shortname": "Renormalization",
+        "sub_subfield": "Text Embeddings",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4067999,
+      "paper_id": 4463924,
+      "paper_source_id": "2511.11041",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": "https://arxiv.org/abs/2511.11041",
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.4876055854,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "dfb678c96ef5d4fdd99da502dab90f07635bd22e",
+      "shortened_authors": "Xingyu Ren, Youran Sun, Haoyu Liang",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes a **training-free renormalization** method to correct the consistent **mean bias** in text embeddings.\n- **R2 variant** removes the projection of embeddings onto the mean vector, theoretically and experimentally outperforming R1.\n- **Improves performance** on MMTEB across retrieval, classification, and other tasks by up to **9.7 sigma** in retrieval.",
+        "evaluation_question": "- On *retrieval tasks*, **R2 improves performance by 9.7 sigma** compared to baseline models.\n- For *classification tasks*, **R2 achieves 3.1 sigma improvement**, with **R1 achieving 2.9 sigma**.\n- On *other tasks* like clustering and reranking, **R2 shows 0.8 sigma improvement** over baselines.",
+        "method_explanation_question": "- The method involves **removing the shared mean vector** or its projection from embedding vectors.\n- **R1 subtracts the mean vector directly** and normalizes the result to unit length.\n- **R2 removes the component of the embedding along the mean vector** and then normalizes.",
+        "problem_definition_question": "- Current text embedding models exhibit a **consistent mean bias**, where all embeddings share an identical offset vector.\n- **This bias degrades downstream task performance** by reducing angular resolution and increasing noise in the embedding space.\n- **Existing methods lack a simple, training-free solution** to address this systematic issue efficiently."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Comparison of two renormalization methods across models, sorted by mean vector norm (labeled after the model name). The violin shows the distribution of task score difference \u2206 before and after the renormalization. The median (red bar), quaters and upper and lower adjacent values are marked in the violin. The y-axis is properly scaled by logarithm to better present the distribution. The models in the same company use the same color, while in different companies use different colors.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463924.0.jpeg"
+        },
+        {
+          "caption": "Table 1. Performance comparison between methods across representative models and task types. \u03c3 denotes the significance of the improvement.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463924.1.jpeg"
+        },
+        {
+          "caption": "Table 2. Comparison of R1 and R2 methods across task types. Sig. means significance.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463924.2.jpeg"
+        },
+        {
+          "caption": "Table 3. Proportion of tasks with significant improvements or degradations ( > 2 \u03c3 ) for each model in Method R2.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463924.3.jpeg"
+        },
+        {
+          "caption": "Table 4. Proportion of models showing significant improvements or degradations ( > 2 \u03c3 ) for each task in Method R2.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463924.4.jpeg"
+        }
+      ],
+      "title": "Correcting Mean Bias in Text Embeddings: A Refined Renormalization with Training-Free Improvements on MMTEB",
+      "total_likes": 0,
+      "total_read": 1,
+      "url": "https://arxiv.org/pdf/2511.11041",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11041.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large Vision-Language Models (LVLMs) have demonstrated strong multimodal reasoning capabilities on long and complex documents. However, their high memory footprint makes them impractical for deployment on resource-constrained edge devices. We present DocSLM, an efficient Small Vision-Language Model designed for long-document understanding under constrained memory resources. DocSLM incorporates a Hierarchical Multimodal Compressor that jointly encodes visual, textual, and layout information from each page into a fixed-length sequence, greatly reducing memory consumption while preserving both local and global semantics. To enable scalable processing over arbitrarily long inputs, we introduce a Streaming Abstention mechanism that operates on document segments sequentially and filters low-confidence responses using an entropy-based uncertainty calibrator. Across multiple long multimodal document benchmarks, DocSLM matches or surpasses state-of-the-art methods while using 82\\% fewer visual tokens, 75\\% fewer parameters, and 71\\% lower latency, delivering reliable multimodal document understanding on lightweight edge devices. Code and Model are available in <a href='https://github.com/Tanveer81/DocSLM.git' target='_blank'>https://github.com/Tanveer81/DocSLM.git</a>.",
+      "affiliations": [
+        "UNC Chapel Hill",
+        "MCML",
+        "Microsoft",
+        "LMU Munich",
+        "FAIR Meta"
+      ],
+      "arxiv_id": "2511.11313",
+      "arxives_doi": null,
+      "authors": "Tanveer Hannan, Dimitrios Mallios, Parth Pathak, Faegheh Sardari, Thomas Seidl, Gedas Bertasius, Mohsen Fayyaz, Sunando Sengupta",
+      "bookmarked": 0,
+      "cache_file_name": "Hannan2025ARXIV_DocSLM_A_Small_Vision.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8748353714,
+        0.9080501248,
+        0.961984556,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11313",
+      "inferredHighlights": [
+        {
+          "endIndex": 375,
+          "highlightClass": "primary-highlight",
+          "startIndex": 240
+        },
+        {
+          "endIndex": 624,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 377
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Vision-Language Models (VLM),  Hierarchical Multimodal Compression,  Streaming Abstention,  OCR,  Document Understanding,  Edge Devices",
+        "method_shortname": "DocSLM",
+        "sub_subfield": "Vision-Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068312,
+      "paper_id": 4464237,
+      "paper_source_id": "2511.11313",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/Tanveer81/DocSLM.git",
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.4861673632,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "fe757cfbacbbd730fa4248923a4e21f5c4852728",
+      "shortened_authors": "Tanveer Hannan, Dimitrios Mallios, Parth Pathak, Faegheh Sardari, Thomas Seidl, Gedas Bertasius, Mohsen Fayyaz, Sunando Sengupta",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **DocSLM**, a compact 2B-parameter Vision\u2013Language Model that uses **82% fewer visual tokens** and **75% fewer parameters** than existing large LVLMs.\n- **Hierarchical Multimodal Compression** reduces input tokens by **5.6\u00d7** while preserving fine-grained semantic and spatial information.\n- **Streaming Abstention mechanism** enables efficient processing of arbitrarily long documents with constant memory footprint.\n- **Achieves state-of-the-art performance** on long-document benchmarks, outperforming models like DocOwl2-8B and Docopilot-2B.\n- **Reduces latency by 3.5\u00d7** compared to InternVL2-RAG, achieving reliable multimodal understanding on lightweight edge devices.",
+        "evaluation_question": "- On *MP-DocVQA*, achieves **70.0 ANLS** vs. Baseline (**50.2 ANLS**) and **+19.8 ANLS** improvement.\n- On *DUDE*, achieves **47.6 ANLS** vs. Baseline (**22.7 ANLS**) and **+24.9 ANLS** improvement.\n- On *MMLDoc*, achieves **22.7%** vs. Baseline (**10.5%**) and **+12.2%** improvement.\n- Ablation shows **OCR Compression** improves accuracy by **+17.8 ANLS** under 2880-token budget.\n- Ablation shows **Streaming Abstention** improves accuracy by **+9.0 ANLS** under 576-token constraint.",
+        "method_explanation_question": "- Processes long multimodal documents using a **Hierarchical Multimodal Compression** module that jointly encodes visual, textual, and layout features into a fixed-length sequence.\n- Applies **Local OCR Compression** via cross-attention to align each visual patch with its paired OCR tokens, reducing token count while preserving semantics.\n- Uses **Global Visual Compression** to aggregate local representations into a final global feature vector, maintaining spatial alignment and document structure.\n- Implements a **Streaming Abstention mechanism** that processes documents in segments, filtering low-confidence responses through an entropy-based uncertainty calibrator.\n- Trains using a **next-token prediction loss** on instruction-tuned triplets, progressively transitioning from single-page pretraining to multi-document finetuning.",
+        "problem_definition_question": "- Large Vision\u2013Language Models (LVLMs) face **high memory footprints**, making deployment on **resource-constrained edge devices** impractical due to **excessive parameter counts** and **increased token requirements** for long documents.\n- **OCR-enhanced methods** improve accuracy but amplify **memory and compute demands**, complicating efficient scaling for multi-page documents.\n- **Existing models** struggle with **long-context reasoning** and **scalability**, requiring **significant memory** that exceeds the capacity of edge GPUs.\n- **RAG-based approaches** introduce retrieval latency and still require thousands of input tokens per page, restricting scalability for long documents.\n- **Current SVLMs** depend on dense visual encodings, leading to **token counts** that exceed the context length and memory capacity of mobile or edge devices."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Model accuracy versus token efficiency on MMLong-Doc [28]. DocSLM achieves a +9.3% gain over DocOwl2 [17] with a comparable Tokens/Image budget, while using 75% fewer parameters than large RAG-based models such as InternVL2-RAG [38], and outperforming the similarly sized Docopilot-2B [12] by +0.9% despite its significantly larger token budget.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464237.0.jpeg"
+        },
+        {
+          "caption": "car-Figure 2. Peak GPU memory usage vs. number of document pages. We evaluate all models using their official implementations under identical inference settings, progressively increasing the number of document pages. Peak GPU memory is measured using PyTorch profiling tools. DocSLM achieves the lowest memory footprint among all methods, maintaining a constant plateau of \u223c 14 GB beyond 10 pages due to its streaming mechanism, enabling scalable inference on resource-constrained devices.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464237.1.jpeg"
+        },
+        {
+          "caption": "in-Figure 3. Hierarchical Multimodal Compressor. The Vision En-coder produces global ( V g ) and local ( V i,j ) visual features, while the Grounded OCR module provides region-aligned text embed-dings ( T i,j ). ( Bottom ) As indicated by green boxes and dotted links, Local OCR Compression performs spatially localized cross-attention\u2014each visual patch V i,j attends only to its paired OCR tokens T i,j \u2014yielding compressed local features \u02c6 V i,j . ( Top ) The Global Visual Compression , shown with dotted red connections, aggregates these local representations by allowing the global visual feature V g to attend selectively to compressed local regions \u02c6 V i,j , producing the final global representation \u02c6 V ng .",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464237.2.jpeg"
+        },
+        {
+          "caption": "Figure 4. Streaming Abstention. To process long documents efficiently, DocSLM divides the input into shorter segments that can be handled sequentially or in parallel. Each segment produces an intermediate prediction that can either ( Left ) correctly answer the query with low uncertainty, ( Middle ) abstain when the answer is not present, or ( Right ) produce an incorrect answer with high uncertainty. A Uncertainty Calibrator aggregates all valid segment predictions and selects the final document-level answer corresponding to the lowest uncertainty. In memory-limited settings, segments are processed sequentially, with memory from previous segments released before processing the next one.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464237.3.jpeg"
+        },
+        {
+          "caption": "Table 1. Curriculum Training Stages. The model is progressively trained from single-page pretraining to multi-document finetuning, with increasingly complex objectives and negative-pair supervision. An MLP adapter is trained in all stages.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464237.4.jpeg"
+        },
+        {
+          "caption": "Table 2. Main results on long-document benchmarks across large-scale, retrieval-augmented, and compact vision-language models. \u201cVar.\u201d denotes variable-length inputs without a fixed tokenization limit. For RAG-based models, token counts refer to the generator module only (excluding retriever overhead). Best and second-best results per column are shown in bold and underline, respectively. Despite operating with only 576 tokens per image and 2B parameters, DocSLM matches or exceeds the performance of 7B\u20138B models and RAG-enhanced systems across most benchmarks, while achieving the lowest measured latency.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464237.5.jpeg"
+        },
+        {
+          "caption": "Table 3. Cumulative Ablation on Proposed Modules on the Mp-DocVQA dataset [35]. Each proposed module progressively enhances text-rich visual understanding under strict token constraints. The Streaming Abstention mechanism achieves the highest accuracy while requiring the lowest GPU memory usage. \u2217 Indicates the final DocSLM model.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464237.6.jpeg"
+        },
+        {
+          "caption": "Table 4. Cumulative Curriculum Training on the Mp-DocVQA dataset [35]. Each stage incrementally introduces new objectives and datasets, improving ANLS from 38.5 to 70.0. Data size gradually decreases as task complexity increases, reflecting a shift from large-scale pretraining to specialized fine-tuning.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464237.7.jpeg"
+        },
+        {
+          "caption": "Figure 5. Qualitative examples of long-document reasoning with DocSLM. For each user query (bottom), DocSLM first identifies the relevant document segment via its uncertainty-based ranking mechanism before generating the final answer. Queries 1\u20133 correspond sequentially to Segments 1\u20133. For Query 1 , the model reasons over text-heavy content (Page 2) to correctly identify the Berlin School of Experimental Psychology , demonstrating effective OCR fusion. For Query 2 , it interprets visual figures to infer the shapes Circle and Rectangle , highlighting strong visual understanding. For Query 3 , DocSLM jointly reasons over textual and visual cues in a complex map, comparing multiple numeric indicators to correctly predict Europe , illustrating its multimodal fine-grained understanding.",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464237.8.jpeg"
+        },
+        {
+          "caption": "Table 6. Ablations on compression design and OCR quality on the Mp-DocVQA dataset [35]. (a) Balanced compression depth (4 layers each) yields the best accuracy, while a 2-layer setup achieves comparable performance with 38.6M fewer parameters. (b) Gradual fine-tuning of the adapter and encoder improves ANLS. (c) High-quality OCR provides a clear accuracy boost.",
+          "figureNumber": 9,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464237.9.jpeg"
+        },
+        {
+          "caption": "Table 5. Ablation across document lengths. ANLS scores (%) for varying numbers of pages. Our model achieves the best overall robustness, particularly on longer documents.",
+          "figureNumber": 10,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464237.10.jpeg"
+        }
+      ],
+      "title": "DocSLM: A Small Vision-Language Model for Long Multimodal Document Understanding",
+      "total_likes": 2,
+      "total_read": 13,
+      "url": "https://arxiv.org/pdf/2511.11313",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11313.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Recent advances in multimodal large language models (MLLMs) have enabled impressive progress in vision-language understanding, yet their high computational cost limits deployment in resource-constrained scenarios such as robotic manipulation, personal assistants, and smart cameras. Most existing methods rely on Transformer-based cross-attention, whose quadratic complexity hinders efficiency. Moreover, small vision-language models often struggle to precisely capture fine-grained, task-relevant visual regions, leading to degraded performance on fine-grained reasoning tasks that limit their effectiveness in the real world. To address these issues, we introduce Viper-F1, a Hybrid State-Space Vision-Language Model that replaces attention with efficient Liquid State-Space Dynamics. To further enhance visual grounding, we propose a Token-Grid Correlation Module, which computes lightweight correlations between text tokens and image patches and modulates the state-space dynamics via FiLM conditioning. This enables the model to selectively emphasize visual regions relevant to the textual prompt while maintaining linear-time inference. Experimental results across multiple benchmarks demonstrate that Viper-F1 achieves accurate, fine-grained understanding with significantly improved efficiency.",
+      "affiliations": [
+        "Aalto University",
+        "University of South Dakota",
+        "Physical Robotics AS"
+      ],
+      "arxiv_id": "2511.11177",
+      "arxives_doi": null,
+      "authors": "Quoc-Huy Trinh",
+      "bookmarked": 0,
+      "cache_file_name": "Trinh2025ARXIV_Viper_F1_Fast_and.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8521663708,
+        0.8981397106,
+        0.9765226942,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 18)",
+      "first_page_image": null,
+      "github_url": "https://github.com/huyquoctrinh/Viper-LM",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11177",
+      "inferredHighlights": [
+        {
+          "endIndex": 785,
+          "highlightClass": "primary-highlight",
+          "startIndex": 628
+        },
+        {
+          "endIndex": 1006,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 787
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "State-Space Models,  FiLM,  Liquid Neural Networks,  Cross-Modal Fusion,  Multimodal Large Language Models (MLLMs)",
+        "method_shortname": "Viper-F1",
+        "sub_subfield": "Multimodal Learning",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068152,
+      "paper_id": 4464077,
+      "paper_source_id": "2511.11177",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-18",
+      "ranking_score": 0.47994016,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "222d04f3c4c2f59d883d9625051a8d7db4734d69",
+      "shortened_authors": "Quoc-Huy Trinh",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **Viper-F1**, a Hybrid State-Space Vision-Language Model that replaces attention with efficient **Liquid State-Space Dynamics**.\n- **Token-Grid Correlation Module** computes lightweight correlations between text tokens and image patches, modulating state-space dynamics via **FiLM conditioning** for selective emphasis on relevant visual regions.\n- **Structured State-Space Modeling** enables linear-time inference while maintaining strong multimodal reasoning performance.\n- Ablation studies confirm the effectiveness of **structured state-space models** (S4/S4D) over alternatives like Mamba.\n- **CoSSM** module outperforms existing fusion strategies like prepend and cross-attention in benchmarks such as MME, AI2D, and MMMU.",
+        "evaluation_question": "- On *MME*, achieves **1376.2** vs. Cross-attend (**1036.5**) and Prepend (**981.5**).\n- On *AI2D*, scores **46.2** with CoSSM vs. **45.1** with Cross-attend and **43.9** with k=1.\n- On *MMMU val*, reaches **26.4** with CoSSM vs. **25.8** with k=3 and **22.2** with k=1.\n- Viper-F1 achieves **46.67 tokens/sec** throughput, outperforming MobileVLM-V2 (**42.86**) and SmolVLM 2 (**37.80**).\n- Viper-F1 has **40.08 ms** latency, lower than MobileVLM-V2 (**46.04**) and SmolVLM 2 (**65.72**).",
+        "method_explanation_question": "- The **vision encoder** transforms input images into grid-level visual representations using a **Vision Transformer (ViT)** backbone.\n- **Cross-modal State-Space Modulator (CoSSM)** aligns and fuses text and visual embeddings by computing token-grid correlations and applying **Feature-wise Linear Modulation (FiLM)** to emphasize task-relevant visual cues.\n- **Structured State-Space Model (SSM)** processes the modulated sequence to capture long-range dependencies efficiently with linear-time complexity.\n- **FiLM modulation** dynamically scales and shifts visual features based on textual context, enabling precise alignment of modalities without explicit attention mechanisms.",
+        "problem_definition_question": "- Current **Vision-Language Models (VLMs)** suffer from **quadratic computational complexity** due to **Transformer-based cross-attention**, limiting their deployment in resource-constrained environments.\n- **Small VLMs** struggle to precisely capture **fine-grained, task-relevant visual regions**, leading to degraded performance on detailed reasoning tasks.\n- **Efficient architectures** face challenges in achieving both **computational efficiency** and **accurate visual grounding** simultaneously.\n- **Cross-attention mechanisms** are computationally expensive and impractical for real-time or low-resource applications."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Overview of the Viper-F1 architecture. The proposed Cross-modal State-Space Modulator (CoSSM) fuses textual instructions with the visual representation of the query image. Training proceeds in two stages: (1) CoSSM pre-training to initialize modulation parameters, and (2) end-to-end training of the full framework.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464077.0.jpeg"
+        },
+        {
+          "caption": "Table 1. Quantitative comparison of the proposed Viper-F1 model with existing MLLMs across seven benchmarks. The superscript p denotes the perception score on the MME benchmark, while T refers to the test set. The best results are shown in bold , and the second-best results are underlined. \u201c\u2013\u201d indicates results not reported in the original papers.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464077.1.jpeg"
+        },
+        {
+          "caption": "Figure 2. Qualitative comparison of responses from Viper-F1 with recent efficient vision\u2013language models, including MobileVLM-V2 [8] and SmolVLM-V2 [26], on detail-dependent question-answering tasks. Viper-F1 demonstrates stronger fine-grained grounding and more accurate, instruction-aligned responses.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4464077.2.jpeg"
+        },
+        {
+          "caption": "Table 2. Efficiency benchmark comparing Viper-F1 with state-of-the-art models in terms of latency and throughput.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464077.3.jpeg"
+        },
+        {
+          "caption": "Table 3. Performance comparison of Mamba, S4D, and S4 state-space models on POPE [20], AI2D [17], and MMMU val [39] benchmarks. Structured models (S4/S4D) outperform Mamba.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464077.4.jpeg"
+        },
+        {
+          "caption": "Table 5. Evaluation of the number of top-k grid selections on POPE [20], AI2D [17], and MMMU val [39] benchmark. Larger k values improve performance consistently.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464077.5.jpeg"
+        },
+        {
+          "caption": "Table 4. Performance of different connector methods on POPE [20], AI2D [17], and MMMU val [39]. The proposed CoSSM outperforms both Prepend and Cross-attention fusion across all benchmarks",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4464077.6.jpeg"
+        }
+      ],
+      "title": "Viper-F1: Fast and Fine-Grained Multimodal Understanding with Cross-Modal State-Space Modulation",
+      "total_likes": 0,
+      "total_read": 13,
+      "url": "https://arxiv.org/pdf/2511.11177",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11177.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "While recent Large Vision-Language Models (LVLMs) exhibit strong multimodal reasoning abilities, they often produce ungrounded or hallucinated responses because they rely too heavily on linguistic priors instead of visual evidence. This limitation highlights the absence of a quantitative measure of how much these models actually use visual information during reasoning. We propose Draft and Refine (DnR), an agent framework driven by a question-conditioned utilization metric. The metric quantifies the model's reliance on visual evidence by first constructing a query-conditioned relevance map to localize question-specific cues and then measuring dependence through relevance-guided probabilistic masking. Guided by this metric, the DnR agent refines its initial draft using targeted feedback from external visual experts. Each expert's output (such as boxes or masks) is rendered as visual cues on the image, and the model is re-queried to select the response that yields the largest improvement in utilization. This process strengthens visual grounding without retraining or architectural changes. Experiments across VQA and captioning benchmarks show consistent accuracy gains and reduced hallucination, demonstrating that measuring visual utilization provides a principled path toward more interpretable and evidence-driven multimodal agent systems. Code is available at <a href='https://github.com/EavnJeong/Draft-and-Refine-with-Visual-Experts' target='_blank'>https://github.com/EavnJeong/Draft-and-Refine-with-Visual-Experts</a>.",
+      "affiliations": [
+        "Northeastern University",
+        "University of California, Irvine",
+        "MOLOCO"
+      ],
+      "arxiv_id": "2511.11005",
+      "arxives_doi": null,
+      "authors": "Sungheon Jeong, Ryozo Masukawa, Jihong Park, Sanggeon Yun, Wenjun Huang, Hanning Chen, Mahdi Imani, Mohsen Imani",
+      "bookmarked": 0,
+      "cache_file_name": "Jeong2025ARXIV_Draft_and_Refine_with.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.5683299701,
+        0.6240539014,
+        0.890806446,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.11005",
+      "inferredHighlights": [
+        {
+          "endIndex": 477,
+          "highlightClass": "primary-highlight",
+          "startIndex": 372
+        },
+        {
+          "endIndex": 708,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 479
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Large Vision-Language Models (LVLMs),  Visual Utilization,  Query-Conditioned Relevance Maps,  Probabilistic Masking,  Expert Coordination,  Hallucination Mitigation",
+        "method_shortname": "Draft and Refine (DnR)",
+        "sub_subfield": "Multimodal Reasoning",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4068026,
+      "paper_id": 4463951,
+      "paper_source_id": "2511.11005",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/EavnJeong/Draft-and-Refine-with-Visual-Experts",
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.4087340024,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "5b96ad7c93b94084add179bcfb1d1a824d5edb2c",
+      "shortened_authors": "Sungheon Jeong, Ryozo Masukawa, Jihong Park, Sanggeon Yun, Wenjun Huang, Hanning Chen, Mahdi Imani, Mohsen Imani",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes **Draft and Refine (DnR)**, an agent framework guided by a novel **question-conditioned utilization metric** to quantify model reliance on visual evidence.\n- **Introduces query-conditioned relevance maps** to localize question-specific evidence and assess dependence through relevance-based probabilistic masking.\n- **Enables adaptive expert selection** based on utilization scores, improving visual grounding without retraining or architectural changes.\n- **Demonstrates consistent accuracy gains** and reduced hallucination across diverse VQA and captioning benchmarks.\n- **Provides a principled path** for designing interpretable and evidence-driven multimodal agent systems leveraging visual experts.",
+        "evaluation_question": "- On *VQA* benchmarks, achieves **+1.4\u20133.0%** improvements over models like IDEFICS and MiniGPT-v2.\n- **Reduces hallucination rates** by 8\u201329% across benchmarks such as HaloQuest and MMHal-Bench.\n- **Improves CIDEr scores** by +6.6\u201312.1% on image captioning tasks like COCO and Flickr.\n- **Increases grounded response accuracy** by 0.6\u20135.9 pp across datasets, with CogVLM showing +3.94 pp and Qwen2.5-VL showing +6.23 pp.\n- **Achieves near-perfect correction ratios** (99.7% for CogVLM) on spatial reasoning tasks like VSR.",
+        "method_explanation_question": "- Constructs a **query-conditioned relevance map** to identify image regions most relevant to the question using a CLIP-based visual grounding model.\n- **Applies relevance-based probabilistic masking** to evaluate how model predictions depend on critical visual regions via Top-k and Bottom-k perturbations.\n- **Calculates utilization scores** by comparing semantic deviations between original and masked predictions using a semantic encoder.\n- **Selects visual experts** based on the largest improvement in utilization scores, rendering their structured outputs onto the original image.\n- **Requeries the LVLM** with refined visual cues to refine responses, ensuring alignment with visually grounded evidence.",
+        "problem_definition_question": "- Existing LVLMs often produce **ungrounded, hallucinated responses** due to over-reliance on linguistic priors rather than visual evidence.\n- **Lack of a quantitative measure** to assess how much models actually rely on visual inputs during reasoning.\n- **Visual information is not effectively utilized** in existing methods, leading to unstable predictions and poor performance on fine-grained tasks.\n- **Current coordination frameworks require costly joint optimization** across multiple experts and tasks, limiting flexibility and adaptability.\n- **Models cannot autonomously determine when and which visual expert to invoke**, relying instead on linguistic biases or heuristic selections."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Overview of the Draft-and-Refine (DnR) framework. Given an image x and a question q , the LVLM first generates an initial draft answer \u02c6 y 1 \u20dd . The question is decomposed by f LLM into a query set Q = { q i } , and each query is grounded by f g to produce spatial relevance maps, aggregated into r ( x | q ) 2 \u20dd . Gumbel-k sampling masks Top-k and Bottom-k regions for perturbation, and a semantic encoder g ( \u00b7 ) measures similarity shifts between \u02c6 y and perturbed predictions \u02dc y \u03c4 to compute the utilization score U base q 3 \u20dd . Expert models (e.g., CLIP, SAM, OCR) render structured visual evidence onto the image, producing refined outputs with updated utilization U ( j ) q . The expert with the largest gain U ( j ) q \u2212 U base q is selected for refinement 4 \u20dd .",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463951.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Illustration of the query-conditioned relevance map. For the same image (top row), different questions lead to distinct relevance regions aligned with the extracted query terms. Conversely, for the same question (bottom row), the relevance map varies with the image content, localizing evidence that matches the queried concept.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463951.1.jpeg"
+        },
+        {
+          "caption": "Figure 3. Question-conditioned utilization computation. Given",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463951.2.jpeg"
+        },
+        {
+          "caption": "Figure 4. Comparison of rendering strategies across different experts. Each column corresponds to an experts, and each row represents a rendering style.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463951.3.jpeg"
+        },
+        {
+          "caption": "Table 1. Comprehensive evaluation of diverse LVLMs on 16 multimodal benchmarks. Each cell reports Draft / DnR performance. Additional rows show revision rates (percentage of refined), correction vs. degradation ( False \u2192 True / True \u2192 False ) transitions, and correlation coefficients (Pearson / Spearman) measuring alignment between confidence or utilization scores and accuracy changes. Cells in green denote improvements after refinement, and those in blue indicate strong correlations ( r > 0 . 2 ).",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463951.4.jpeg"
+        },
+        {
+          "caption": "Table 3. Performance and cost comparison between Exhaustive and Policy-Driven selection for PaliGemma. Both \u2206 values denote relative differences, with cost reduction reported in percentage.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463951.5.jpeg"
+        },
+        {
+          "caption": "Table 2. Hallucination-benchmark comparison. Each cell reports Draft/ DnR results across four hallucination-oriented datasets. Green cells indicate reduced hallucination ( H \u2193 ), while blue cells highlight improved grounding or correctness ( G or C \u2191 ). Values denote the percentage proportion of each category, where H allucination+ M isperception+ G rounded+ C orrect=100(%).",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463951.6.jpeg"
+        }
+      ],
+      "title": "Draft and Refine with Visual Experts",
+      "total_likes": 3,
+      "total_read": 9,
+      "url": "https://arxiv.org/pdf/2511.11005",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.11005.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Class-incremental learning (CIL) enables models to continuously learn new categories from sequential tasks without forgetting previously acquired knowledge. While recent advances in vision-language models such as CLIP have demonstrated strong generalization across domains, extending them to continual settings remains challenging. In particular, learning task-specific soft prompts for newly introduced classes often leads to severe classifier bias, as the text prototypes overfit to recent categories when prior data are unavailable. In this paper, we propose DMC, a simple yet effective two-stage framework for CLIP-based CIL that decouples the adaptation of the vision encoder and the optimization of textual soft prompts. Each stage is trained with the other frozen, allowing one modality to act as a stable semantic anchor for the other to preserve cross-modal alignment. Furthermore, current CLIP-based CIL approaches typically store class-wise Gaussian statistics for generative replay, yet they overlook the distributional drift that arises when the vision encoder is updated over time. To address this issue, we introduce DMC-OT, an enhanced version of DMC that incorporates an optimal-transport guided calibration strategy to align memory statistics across evolving encoders, along with a task-specific prompting design that enhances inter-task separability. Extensive experiments on CIFAR-100, Imagenet-R, CUB-200, and UCF-101 demonstrate that both DMC and DMC-OT achieve state-of-the-art performance, with DMC-OT further improving accuracy by an average of 1.80%.",
+      "affiliations": [
+        "Columbia University",
+        "Institute of Trustworthy Embodied AI, Fudan University",
+        "Shanghai Collaborative Innovation Center of Intelligent Visual Computing"
+      ],
+      "arxiv_id": "2511.10974",
+      "arxives_doi": null,
+      "authors": "Haoran Chen, Houze Xu, Micah Goldblum, Daoguo Dong, Zuxuan Wu",
+      "bookmarked": 0,
+      "cache_file_name": "Chen2025ARXIV_Preserving_Cross_Modal_Consistency.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.546111903,
+        0.5915135554,
+        0.8630033661,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763337600000,
+      "display_venue": "ArXiv 2025 (November 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.10974",
+      "inferredHighlights": [
+        {
+          "endIndex": 725,
+          "highlightClass": "primary-highlight",
+          "startIndex": 536
+        },
+        {
+          "endIndex": 876,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 727
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "CLIP,  Class-Incremental Learning,  Optimal Transport,  Gaussian Statistics,  Soft Prompts,  Dual Modality Anchored CIL",
+        "method_shortname": "DMC",
+        "sub_subfield": "Class-Incremental Learning",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4067989,
+      "paper_id": 4463914,
+      "paper_source_id": "2511.10974",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-14",
+      "ranking_score": 0.4029729509,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "54b1652a389f336ddd2e646fd0c27b904e674341",
+      "shortened_authors": "Haoran Chen, Houze Xu, Micah Goldblum, Daoguo Dong, Zuxuan Wu",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes **DMC**, a two-stage framework for CLIP-based CIL that decouples the adaptation of the vision encoder and the optimization of textual soft prompts.\n- **DMC-OT** introduces an optimal-transport guided calibration strategy to align memory statistics across evolving encoders, enhancing continual adaptation.\n- Introduces a **task-specific prompting design** that improves inter-task separability and enhances continual learning performance.\n- **Experiments show DMC-OT achieves state-of-the-art results**, improving accuracy by an average of **1.80%** over DMC on multiple benchmarks.",
+        "evaluation_question": "- On *CIFAR-100*, DMC-OT achieves **86.13%** average accuracy, outperforming RAPF (**84.07%**) and ENGINE (**82.58%**) by **1.61%** and **3.55%**, respectively.\n- On *Imagenet-R*, DMC-OT reaches **85.05%** average accuracy, surpassing RAPF (**83.27%**) and ENGINE (**81.88%**) by **1.78%** and **3.17%**, respectively.\n- On *CUB-200*, DMC-OT attains **83.13%** average accuracy, achieving the best performance among all methods.\n- On *UCF-101*, DMC-OT outperforms all existing approaches by a significant margin (> 3%), with DMC achieving the second-best overall result.\n- Ablation studies show removing the **optimal transport mapping** leads to an average performance drop of **1.67%** across all datasets.\n- Removing the **task-augmented prompt design** results in an average performance drop of **0.75%** across all datasets.",
+        "method_explanation_question": "- Adapts the vision encoder using handcrafted hard prompts while freezing the text encoder, preserving CLIP's pre-trained alignment.\n- Freezes the adapted vision encoder and uses it as a stable anchor to optimize textual soft prompts, maintaining cross-modal consistency.\n- Models each class\u2019s visual features as a Gaussian distribution, storing their means and covariances in memory for generative replay.\n- Applies an **optimal-transport guided calibration strategy** to align memory statistics across evolving encoders using an affine transformation.\n- Introduces a **task-specific prompting design** that enhances inter-task separability through orthogonality regularization.",
+        "problem_definition_question": "- Class-incremental learning (CIL) faces **catastrophic forgetting**, where models forget previously learned knowledge when learning new classes.\n- **Classifier bias** arises when learning task-specific soft prompts for newly introduced classes, leading to performance degradation on earlier tasks.\n- **Distributional drift** occurs when stored Gaussian statistics become misaligned with the updated feature space as the vision encoder evolves.\n- **Limited adaptability** of existing methods to evolving data distributions hinders effective continual learning."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Comparison between hard and soft prompts in CLIP-based class-incremental learning. Handcrafted hard prompts (top) offer stable but inflexible representations, leading to consistent yet limited adaptation. In contrast, soft prompts (bottom) are adaptive but biased toward newly introduced classes, causing severe performance degradation for earlier tasks.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463914.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Overview of the proposed DMC-OT training framework. (a) Image Encoder Adaptation: The image encoder is fine-tuned while freezing the text encoder with handcrafted hard prompts. This stage strengthens visual representations through the contrastive loss L CLIP . (b) Task-Augmented Soft Prompt Training: With the image encoder frozen, we train soft textual prompts via the cross-entropy loss L CE , combining class-specific and task-specific prompts through element-wise addition. The task-specific prompts are regularized by an orthogonality loss L Ortho to ensure inter-task separability and feature diversity. During this stage, old calibrated class prototypes are modeled as multivariate Gaussians, from which features are sampled to implicitly replay past knowledge.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463914.1.jpeg"
+        },
+        {
+          "caption": "Table 1. Performance comparisons with CLIP-based CIL methods on CIFAR-100, Imagenet-R, CUB-200, and UCF-101 under a 10-task continual learning setting. Best results are marked in bold . Second best results are underscored.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463914.2.jpeg"
+        },
+        {
+          "caption": "Table 2. Performance comparisons on CIFAR-100 and Imagenet-R under a 20-task continual learning setting.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463914.3.jpeg"
+        },
+        {
+          "caption": "Figure 3. Hyperparameter sensitivity analysis.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4463914.4.jpeg"
+        },
+        {
+          "caption": "Table 3. Ablation studies on two-stage training design.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463914.5.jpeg"
+        },
+        {
+          "caption": "Table 4. Ablation study on the use of Optimal Transport",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4463914.6.jpeg"
+        }
+      ],
+      "title": "Preserving Cross-Modal Consistency for CLIP-based Class-Incremental Learning",
+      "total_likes": 2,
+      "total_read": 10,
+      "url": "https://arxiv.org/pdf/2511.10974",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.10974.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    }
+  ],
+  "digest_papers": 15,
+  "display_next_date": true,
+  "empty_digest": false,
+  "first_paper_id_below_decision_boundary": 4463924,
+  "from_date": "Mon, 17 Nov 2025 00:00:00 GMT",
+  "has_more_papers_in_digest": false,
+  "next_date": "2025-11-18",
+  "no_weekdays_selected": false,
+  "pdf_viewer_url": null,
+  "prev_date": "2025-11-14",
+  "read_paper_ids": [],
+  "seen_welcome_tutorial": true,
+  "success": true,
+  "to_date": "Mon, 17 Nov 2025 00:00:00 GMT",
+  "total_papers": "1405",
+  "trending": [
+    {
+      "abstract": "Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/",
+      "author": "Li et al.",
+      "authors": "Chunyang Li, Yuanbo Yang, Jiahao Shao, Hongyu Zhou, Katja Schwarz, Yiyi Liao",
+      "cache_file_name": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174518,
+      "paper_id": 4579856,
+      "pdf_download_success": true,
+      "publication_date": 1770576550000,
+      "ranking_score": 0.1357062383,
+      "rating": null,
+      "read": false,
+      "short_title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "source": "arxiv",
+      "title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "total_dislikes": 8,
+      "total_likes": 47,
+      "total_read": 176,
+      "url": "https://arxiv.org/pdf/2602.08068"
+    },
+    {
+      "abstract": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders, rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation, RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+      "author": "Kumar et al.",
+      "authors": "Amandeep Kumar, Vishal M. Patel",
+      "cache_file_name": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176575,
+      "paper_id": 4581913,
+      "pdf_download_success": true,
+      "publication_date": 1770753484000,
+      "ranking_score": 0.8327815131,
+      "rating": null,
+      "read": false,
+      "short_title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "source": "arxiv",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "total_dislikes": 6,
+      "total_likes": 36,
+      "total_read": 134,
+      "url": "https://arxiv.org/pdf/2602.10099"
+    },
+    {
+      "abstract": "We introduce MotionCrafter, a video diffusion-based framework that jointly reconstructs 4D geometry and estimates dense motion from a monocular video. The core of our method is a novel joint representation of dense 3D point maps and 3D scene flows in a shared coordinate system, and a novel 4D VAE to effectively learn this representation. Unlike prior work that forces the 3D value and latents to align strictly with RGB VAE latents-despite their fundamentally different distributions-we show that such alignment is unnecessary and leads to suboptimal performance. Instead, we introduce a new data normalization and VAE training strategy that better transfers diffusion priors and greatly improves reconstruction quality. Extensive experiments across multiple datasets demonstrate that MotionCrafter achieves state-of-the-art performance in both geometry reconstruction and dense scene flow estimation, delivering 38.64% and 25.0% improvements in geometry and motion reconstruction, respectively, all without any post-optimization. Project page: https://ruijiezhu94.github.io/MotionCrafter_Page",
+      "author": "Zhu et al.",
+      "authors": "Ruijie Zhu, Jiahao Lu, Wenbo Hu, Xiaoguang Han, Jianfei Cai, Ying Shan, Chuanxia Zheng",
+      "cache_file_name": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4175456,
+      "paper_id": 4580794,
+      "pdf_download_success": true,
+      "publication_date": 1770663492000,
+      "ranking_score": 0.1515375946,
+      "rating": null,
+      "read": false,
+      "short_title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "source": "arxiv",
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "total_dislikes": 6,
+      "total_likes": 29,
+      "total_read": 102,
+      "url": "https://arxiv.org/pdf/2602.08961"
+    },
+    {
+      "abstract": "Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \\textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \\textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \\textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+      "author": "Xiang et al.",
+      "authors": "Chendong Xiang, Jiajun Liu, Jintao Zhang, Xiao Yang, Zhengwei Fang, Shizun Wang, Zijun Wang, Yingtian Zou, Hang Su, Jun Zhu",
+      "cache_file_name": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174295,
+      "paper_id": 4579633,
+      "pdf_download_success": true,
+      "publication_date": 1770541276000,
+      "ranking_score": 0.2729207035,
+      "rating": null,
+      "read": false,
+      "short_title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "source": "arxiv",
+      "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "total_dislikes": 2,
+      "total_likes": 18,
+      "total_read": 59,
+      "url": "https://arxiv.org/pdf/2602.07854"
+    },
+    {
+      "abstract": "Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$\u0394$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.",
+      "author": "Jiang et al.",
+      "authors": "Yuxin Jiang, Yuchao Gu, Ivor W. Tsang, Mike Zheng Shou",
+      "cache_file_name": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176574,
+      "paper_id": 4581912,
+      "pdf_download_success": true,
+      "publication_date": 1770753521000,
+      "ranking_score": 0.1189741714,
+      "rating": null,
+      "read": false,
+      "short_title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "source": "arxiv",
+      "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "total_dislikes": 3,
+      "total_likes": 15,
+      "total_read": 58,
+      "url": "https://arxiv.org/pdf/2602.10104"
+    },
+    {
+      "abstract": "Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility, visual realism, and physical stability. Through iterative reasoning and adaptive tool selection, it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training. Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI. Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage.",
+      "author": "Xia et al.",
+      "authors": "Hongchi Xia, Xuan Li, Zhaoshuo Li, Qianli Ma, Jiashu Xu, Ming-Yu Liu, Yin Cui, Tsung-Yi Lin, Wei-Chiu Ma, Shenlong Wang, Shuran Song, Fangyin Wei",
+      "cache_file_name": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176614,
+      "paper_id": 4581952,
+      "pdf_download_success": true,
+      "publication_date": 1770753595000,
+      "ranking_score": 0.0253882568,
+      "rating": null,
+      "read": false,
+      "short_title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "source": "arxiv",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "total_dislikes": 3,
+      "total_likes": 11,
+      "total_read": 51,
+      "url": "https://arxiv.org/pdf/2602.10116"
+    },
+    {
+      "abstract": "End-to-end (E2E) autonomous driving has recently attracted increasing interest in unifying Vision-Language-Action (VLA) with World Models to enhance decision-making and forward-looking imagination. However, existing methods fail to effectively unify future scene evolution and action planning within a single architecture due to inadequate sharing of latent states, limiting the impact of visual imagination on action decisions. To address this limitation, we propose DriveWorld-VLA, a novel framework that unifies world modeling and planning within a latent space by tightly integrating VLA and world models at the representation level, which enables the VLA planner to benefit directly from holistic scene-evolution modeling and reducing reliance on dense annotated supervision. Additionally, DriveWorld-VLA incorporates the latent states of the world model as core decision-making states for the VLA planner, facilitating the planner to assess how candidate actions impact future scene evolution. By conducting world modeling entirely in the latent space, DriveWorld-VLA supports controllable, action-conditioned imagination at the feature level, avoiding expensive pixel-level rollouts. Extensive open-loop and closed-loop evaluations demonstrate the effectiveness of DriveWorld-VLA, which achieves state-of-the-art performance with 91.3 PDMS on NAVSIMv1, 86.8 EPDMS on NAVSIMv2, and 0.16 3-second average collision rate on nuScenes. Code and models will be released in https://github.com/liulin815/DriveWorld-VLA.git.",
+      "author": "jia et al.",
+      "authors": "Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen",
+      "cache_file_name": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172917,
+      "paper_id": 4578255,
+      "pdf_download_success": true,
+      "publication_date": 1770373548000,
+      "ranking_score": 0.265241331,
+      "rating": null,
+      "read": false,
+      "short_title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Drivi",
+      "source": "arxiv",
+      "title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving",
+      "total_dislikes": 0,
+      "total_likes": 21,
+      "total_read": 46,
+      "url": "https://arxiv.org/pdf/2602.06521"
+    },
+    {
+      "abstract": "Diffusion and flow models have become the dominant paradigm for generative modeling on Riemannian manifolds, with successful applications in protein backbone generation and DNA sequence design. However, these methods require tens to hundreds of neural network evaluations at inference time, which can become a computational bottleneck in large-scale scientific sampling workflows. We introduce Riemannian MeanFlow~(RMF), a framework for learning flow maps directly on manifolds, enabling high-quality generations with as few as one forward pass. We derive three equivalent characterizations of the manifold average velocity (Eulerian, Lagrangian, and semigroup identities), and analyze parameterizations and stabilization techniques to improve training on high-dimensional manifolds. In promoter DNA design and protein backbone generation settings, RMF achieves comparable sample quality to prior methods while requiring up to 10$\\times$ fewer function evaluations. Finally, we show that few-step flow maps enable efficient reward-guided design through reward look-ahead, where terminal states can be predicted from intermediate steps at minimal additional cost.",
+      "author": "Woo et al.",
+      "authors": "Dongyeop Woo, Marta Skreta, Seonghyun Park, Sungsoo Ahn, Kirill Neklyudov",
+      "cache_file_name": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174186,
+      "paper_id": 4579524,
+      "pdf_download_success": true,
+      "publication_date": 1770514877000,
+      "ranking_score": 0.3225612556,
+      "rating": null,
+      "read": false,
+      "short_title": "Riemannian MeanFlow",
+      "source": "arxiv",
+      "title": "Riemannian MeanFlow",
+      "total_dislikes": 3,
+      "total_likes": 12,
+      "total_read": 45,
+      "url": "https://arxiv.org/pdf/2602.07744"
+    }
+  ],
+  "use_scholar_inbox_pdf_server": false,
+  "username": "Longxuan Yu"
+}

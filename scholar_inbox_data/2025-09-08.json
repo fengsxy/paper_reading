@@ -1,0 +1,1912 @@
+{
+  "admin_proceedings_msg": "",
+  "conf_notification_text": "",
+  "current_digest_date": "2025-09-08",
+  "custom_digest_range": false,
+  "digest_df": [
+    {
+      "abbreviation": null,
+      "abstract": "We present a masked diffusion language modeling framework for data-efficient training for the BabyLM 2025 Challenge. Our approach applies diffusion training objectives to language modeling under strict data constraints, incorporating frequency-informed masking that prioritizes learning from rare tokens while maintaining theoretical validity. We explore multiple noise scheduling strategies, including two-mode approaches, and investigate different noise weighting schemes within the NELBO objective. We evaluate our method on the BabyLM benchmark suite, measuring linguistic competence, world knowledge, and human-likeness. Results show performance competitive to hybrid autoregressive-masked baselines, demonstrating that diffusion-based training offers a viable alternative for data-restricted language learning.",
+      "affiliations": [
+        "University of Bern",
+        "National Technical University of Athens",
+        "Archimedes RU, Athena RC",
+        "Institute of Language and Signal Processing, Athena RC"
+      ],
+      "arxiv_id": "2509.05056",
+      "arxives_doi": null,
+      "authors": "Despoina Kosmopoulou, Efthymios Georgiou, Vaggelis Dorovatas, Georgios Paraskevopoulos, Alexandros Potamianos",
+      "bookmarked": 0,
+      "cache_file_name": "Kosmopoulou2025ARXIV_Masked_Diffusion_Language_Models.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (September 5)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.05056",
+      "inferredHighlights": [
+        {
+          "endIndex": 342,
+          "highlightClass": "primary-highlight",
+          "startIndex": 117
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Masked Diffusion Language Models,  Frequency-Informed Masking,  Noise Scheduling,  NELBO Objective,  BabyLM Benchmark",
+        "method_shortname": "MDLM",
+        "sub_subfield": "Language Modeling",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967470,
+      "paper_id": 4363333,
+      "paper_source_id": "2509.05056",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-05",
+      "ranking_score": 0.9539228827,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "1318f9305d9b95fb5902d56ed3b7722fea5f0e60",
+      "shortened_authors": "Despoina Kosmopoulou, Efthymios Georgiou, Vaggelis Dorovatas, Georgios Paraskevopoulos, Alexandros Potamianos",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce Masked Diffusion Language Models (MDLMs)**, combining bidirectional context modeling with generative training for data-efficient language learning.\n- **Develop frequency-informed masking** that prioritizes learning from rare tokens to enhance model performance in data-constrained settings.\n- **Provide comprehensive evaluation** on the BabyLM benchmark suite, demonstrating competitive performance against established baselines.\n- **Explore multiple noise scheduling strategies** including two-mode approaches and different NELBO weighting schemes.",
+        "evaluation_question": "- Achieve **76.9%** performance on BLiMP, outperforming the baseline GPT-BERT.\n- **Improve performance on BLiMP Supplement** by an absolute 1% point consistently.\n- **Enhance Adjective Nominalization Test** scores by an average of 7.5 percentage points with time conditioning.\n- **Outperform the top baseline** in Reading and Adjective Nominalization Test on human likeness measures.",
+        "insights_takeaways_question": "- **Frequency-informed masking** significantly improves performance on rare token prediction tasks.\n- **Cosine noise schedules** enable better zero-shot likelihood estimation compared to linear schedules.\n- **Time-conditioned evaluations** enhance model performance across various benchmarks.\n- **MDLMs offer a promising middle ground** between bidirectional understanding and generative efficiency.\n- **The method's effectiveness** highlights the potential of diffusion-based training in data-restricted settings.",
+        "method_explanation_question": "- Apply a **Transformer-based architecture** with attention-gating modifications for diffusion training.\n- **Implement frequency-informed masking** that assigns higher masking probabilities to rare tokens.\n- **Utilize a cosine noise schedule** to concentrate masking rates on lower values for better zero-shot performance.\n- **Optimize the Evidence Lower Bound (ELBO)** by scaling derivatives in the NELBO objective.\n- **Condition predictions on the current masking level** using timestep embeddings and Adaptive Layer Normalization (AdaLN).",
+        "problem_definition_question": "- Traditional autoregressive models struggle with bidirectional understanding and are inefficient in data-constrained settings.\n- **Masked Language Models (MLMs)** have limited learning efficiency due to fixed masking rates and lack of generative capabilities.\n- **Diffusion models** face challenges in data-sparse scenarios, risking overfitting during multi-step training.\n- **Existing methods** often require prior knowledge of the number of clusters or fail to adapt to varying data complexities.\n- **The need for efficient and adaptable language models** that can perform well under strict data constraints remains unmet."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 1: Performance comparison across different noise schedules,",
+          "figureNumber": 0,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363333.0.jpeg"
+        },
+        {
+          "caption": "Table 2: Qualitative performance comparison across different noise schedules. Reported accuracies are field averages. Likelihoods are estimated with the standard MLM Backend. ( p ) denotes the softening power p for the derivative factor. Results are preliminary, run over 1 random seed.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363333.1.jpeg"
+        },
+        {
+          "caption": "Table 3: Performance comparison across different to-ken frequency weighting configurations, over 5 random seeds. The Freq. W. configuration uses weights softened by raising the frequency distribution to power p \u201c 0 . 02 before normalization. Likelihoods are estimated with the standard MLM Backend. In the bottom, the results of the time conditioned evaluation are reported.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363333.2.jpeg"
+        },
+        {
+          "caption": "Table 6: Evaluation results for Human Likeness tasks; \u2020: results refer to cosine schedule",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363333.3.jpeg"
+        },
+        {
+          "caption": "Table 4: Evaluation results for Linguistics and World Understanding tasks; \u2020: results refer to cosine schedule",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363333.4.jpeg"
+        },
+        {
+          "caption": "Table 5: Evaluation results for Natural Language Understanding tasks; \u2020: results refer to cosine schedule",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363333.5.jpeg"
+        }
+      ],
+      "title": "Masked Diffusion Language Models with Frequency-Informed Training",
+      "total_likes": 7,
+      "total_read": 25,
+      "url": "https://arxiv.org/pdf/2509.05056",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.05056.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large language models (LLMs) rely on key-value (KV) caches for efficient autoregressive decoding; however, cache size grows linearly with context length and model depth, becoming a major bottleneck in long-context inference. Prior KV cache compression methods either enforce rigid heuristics, disrupt tensor layouts with per-attention-head variability, or require specialized compute kernels.   We propose a simple, yet effective, KV cache compression framework based on attention-guided, layer-adaptive composite tokens. Our method aggregates attention scores to estimate token importance, selects head-specific tokens independently, and aligns them into composite tokens that respect the uniform cache structure required by existing inference engines. A global allocation mechanism further adapts retention budgets across layers, assigning more capacity to layers with informative tokens. This approach achieves significant memory reduction while preserving accuracy, consistently outperforming prior structured and semi-structured methods. Crucially, our approach remains fully compatible with standard inference pipelines, offering a practical and scalable solution for efficient long-context LLM deployment.",
+      "affiliations": [
+        "Paris Research Center, Huawei Technologies"
+      ],
+      "arxiv_id": "2509.05165",
+      "arxives_doi": null,
+      "authors": "Dmitry Akulov, Mohamed Sana, Antonio De Domenico, Tareq Si Salem, Nicola Piovesan, Fadhel Ayed",
+      "bookmarked": 0,
+      "cache_file_name": "Akulov2025ARXIV_KVCompose_Efficient_Structured_KV.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (September 19)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.05165",
+      "inferredHighlights": [
+        {
+          "endIndex": 520,
+          "highlightClass": "primary-highlight",
+          "startIndex": 395
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "KV Cache Compression,  Attention Mechanism,  Composite Tokens,  Layer Adaptive Budgeting,  Ruler-4096 Benchmark",
+        "method_shortname": "KVCompose",
+        "sub_subfield": "Large Language Models",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967578,
+      "paper_id": 4363441,
+      "paper_source_id": "2509.05165",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-19",
+      "ranking_score": 0.7710826607,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "fa3e72b0ced7495342b190ea267e00e4acc3e065",
+      "shortened_authors": "Dmitry Akulov, Mohamed Sana, Antonio De Domenico, Tareq Si Salem, Nicola Piovesan, Fadhel Ayed",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce KVCompose**, a structured KV cache compression method based on attention-guided composite tokens.\n- **Propose composite tokens** that aggregate importance scores across heads to enable structured eviction while preserving tensor layout.\n- **Implement layer-adaptive budget allocation** to prioritize informative layers, improving robustness under compression.\n- Validate the method with ablation studies and demonstrate superior performance over existing structured and semi-structured methods.",
+        "evaluation_question": "- Achieves an **average performance of 79.8** under 20% tolerance, surpassing TOVA (61.1) by over 18 points.\n- **Maintains 70.1 average score** under 10% tolerance, significantly outperforming DuoAttention (54.0).\n- **Scores highest AUC** on five out of six evaluation settings, with an overall average of 82.3.\n- Outperforms structured baselines by +8.9 points over TOVA and +15.5 points over PyramidKV.",
+        "insights_takeaways_question": "- **Composite tokens** enable structured eviction while preserving tensor layout, enhancing compatibility with existing inference engines.\n- **Layer-adaptive budget allocation** ensures more informative layers retain higher capacity, improving robustness.\n- **Outperforms structured and semi-structured methods** in both accuracy and efficiency, demonstrating practical deployment potential.\n- **Preserves model quality** under aggressive compression, making long-context LLM inference more accessible.",
+        "method_explanation_question": "- **Aggregate attention scores** across tasks to estimate token importance, guiding structured cache compression.\n- **Construct composite tokens** by aligning head-specific important tokens into shared positions.\n- **Assign layer-adaptive budgets** based on composite token importance, prioritizing informative layers.\n- **Retain top-N tokens per head** while preserving tensor structure for compatibility with standard inference engines.",
+        "problem_definition_question": "- **KV cache size grows linearly** with context length and model depth, becoming a major bottleneck in long-context inference.\n- **Existing methods** either enforce rigid heuristics, disrupt tensor layouts, or require specialized compute kernels.\n- **Structured eviction methods** struggle with varying token importance and lack adaptability across tasks.\n- **The need for efficient, accurate, and deployable** KV cache compression remains unmet in practical deployment scenarios."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 1: Operational comparison of KV cache methods.",
+          "figureNumber": 0,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363441.0.jpeg"
+        },
+        {
+          "caption": "Figure 1: Composite token construction for layer-wise KV cache compression. Numbers represent importance scores.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363441.1.jpeg"
+        },
+        {
+          "caption": "Table 2: Performance comparison of structured KV cache compression strategies under a predefined tolerance \u03f5 0 .",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363441.2.jpeg"
+        }
+      ],
+      "title": "KVCompose: Efficient Structured KV Cache Compression with Composite Tokens",
+      "total_likes": 3,
+      "total_read": 19,
+      "url": "https://arxiv.org/pdf/2509.05165",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.05165.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Developing efficient Vision-Language-Action (VLA) policies is crucial for practical robotics deployment, yet current approaches face prohibitive computational costs and resource requirements. Existing diffusion-based VLA policies require multi-billion-parameter models and massive datasets to achieve strong performance. We tackle this efficiency challenge with two contributions: intermediate-modality fusion, which reallocates capacity to the diffusion head by pruning up to $50\\%$ of LLM layers, and action-specific Global-AdaLN conditioning, which cuts parameters by $20\\%$ through modular adaptation. We integrate these advances into a novel 950 M-parameter VLA called FLOWER. Pretrained in just 200 H100 GPU hours, FLOWER delivers competitive performance with bigger VLAs across $190$ tasks spanning ten simulation and real-world benchmarks and demonstrates robustness across diverse robotic embodiments. In addition, FLOWER achieves a new SoTA of 4.53 on the CALVIN ABC benchmark. Demos, code and pretrained weights are available at <a href='https://intuitive-robots.github.io/flower_vla/' target='_blank'>https://intuitive-robots.github.io/flower_vla/</a>.",
+      "affiliations": [
+        "Microsoft Research",
+        "Karlsruhe Institute of Technology"
+      ],
+      "arxiv_id": "2509.04996",
+      "arxives_doi": null,
+      "authors": "Moritz Reuss, Hongyi Zhou, Marcel R\u00fchle, \u00d6mer Erdin\u00e7 Ya\u011fmurlu, Fabian Otto, Rudolf Lioutikov",
+      "bookmarked": 0,
+      "cache_file_name": "Reuss2025ARXIV_FLOWER_Democratizing_Generalist_Robot.pdf",
+      "category": "Robotics and Control",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (September 5)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04996",
+      "inferredHighlights": [
+        {
+          "endIndex": 604,
+          "highlightClass": "primary-highlight",
+          "startIndex": 321
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Vision-Language-Action Models,  Intermediate Fusion,  Global-AdaLN,  CALVIN Benchmark,  LIBERO Benchmark",
+        "method_shortname": "FLOWER",
+        "sub_subfield": "Robotics",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967411,
+      "paper_id": 4363274,
+      "paper_source_id": "2509.04996",
+      "pdf_download_success": true,
+      "project_link": "https://intuitive-robots.github.io/flower_vla/",
+      "project_url": "https://intuitive-robots.github.io/flower_vla/",
+      "publication_date": "2025-09-05",
+      "ranking_score": 0.7484472069,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "1d8142ab42bfba12f42feee687f0c77555b5bab2",
+      "shortened_authors": "Moritz Reuss, Hongyi Zhou, Marcel R\u00fchle, \u00d6mer Erdin\u00e7 Ya\u011fmurlu, Fabian Otto, Rudolf Lioutikov",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce FLOWER**, an efficient Vision-Language-Action (VLA) policy with **intermediate-modality fusion** and **action-specific Global-AdaLN conditioning** as the main contribution.\n- Achieve **state-of-the-art performance** across 190 tasks in 10 benchmarks with fewer than 1 billion parameters.\n- Validate the effectiveness of **intermediate fusion** and **Global-AdaLN** through extensive ablation studies.\n- Provide **open-source code** and pretrained weights for reproducibility and community use.",
+        "evaluation_question": "- Achieves a new **SoTA of 4.53** on the CALVIN ABC benchmark.\n- Outperforms **OpenVLA** and **\u03c0 0** in multiple benchmarks with significantly lower computational costs.\n- Demonstrates **strong generalization** across diverse robotic embodiments and task settings.\n- Reduces pretraining costs by **99%** compared to large-scale VLA models.\n- Maintains **low memory footprint** while achieving competitive performance across various benchmarks.",
+        "insights_takeaways_question": "- **FLOWER** achieves strong performance with less than 1 billion parameters, demonstrating the viability of smaller models.\n- **Intermediate fusion** and **Global-AdaLN** enable significant efficiency gains without sacrificing performance.\n- **Real-world deployment** is feasible due to low memory usage and fast inference speeds.\n- **Open-source availability** promotes wider adoption and further research.\n- **Adaptive design** allows FLOWER to generalize across different robotic setups and task types.",
+        "method_explanation_question": "- Implement **intermediate-modality fusion** by pruning up to 50% of LLM layers and integrating features into a Flow Transformer.\n- Use **action-specific Global-AdaLN** to reduce transformer head parameters by 20% without compromising expressivity.\n- Apply **rectified flow** for action generation, enabling efficient inference with minimal latency.\n- Train on a compact mix of public datasets to ensure broad scene and embodiment diversity.\n- Employ **cross-attention mechanisms** to condition the Flow Transformer on both temporal signals and per-action-type embeddings.",
+        "problem_definition_question": "- Current VLA policies require **multi-billion-parameter models** and **massive datasets**, making them inaccessible for many researchers.\n- **Existing methods** suffer from high computational costs and memory requirements, limiting their scalability.\n- Most approaches rely on **full VLMs** for denoising, leading to slow convergence and high inference latency.\n- **Generalist policies** struggle to adapt to diverse robotic embodiments and task variations.\n- There is a critical need for **efficient VLA architectures** that maintain performance while reducing resource demands."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Intermediate fusion for efficient VLA policies. Our fusion strategy (top-right) strategically prunes VLM layers while enhancing Flow Transformer capacity in parameter-constrained settings. This approach informs FLOWER, a novel, 950 M VLA that achieves competitive performance across 10 benchmarks using only 1% of the pretraining compute of models like OpenVLA [1], while maintaining a small memory footprint across diverse embodiments and action spaces (bottom).",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: FLOWER architecture. A fine-tuned VLM processes multimodal inputs and integrates intermediate features into a Flow Transformer via cross-attention. The model predicts velocity fields using action-space Global AdaLN-Zero conditioning with embodiment and temporal metadata.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: Comparison of standard DiT blocks and our proposed Global AdaLN with layer-specific Lora adapters.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.2.jpeg"
+        },
+        {
+          "caption": "Figure 4: Simulation Environments used to test FLOWER. From left to right: CALVIN [34], LIBERO [35], SIMPLER [12] with the Bridge and Google Robot variants and Aloha Simulation Benchmark [36]. Real world multi-task kitchen setup and generalization experiments with cluttered scenes, different lightning and novel objects.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.3.jpeg"
+        },
+        {
+          "caption": "Table 2: Comparing Layer Pruning for CALVIN ABC and LIBERO Long.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.4.jpeg"
+        },
+        {
+          "caption": "Table 1: Evaluation of different VLA fusion strategies. Intermediate fusion yields the best performance across both VLM types.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.5.jpeg"
+        },
+        {
+          "caption": "Table 3: Average Sequence Lengths for FLOWER Abla-tions on CALVIN ABC.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363274.6.jpeg"
+        },
+        {
+          "caption": "Figure 5: Simulation Results for FLOWER We report average results for various benchmarks against relevant baselines. For brevity we reduce the shown baselines to most relevant ones but provide detailed results for each benchmark (see Appendix B. C refers to CALVIN and L refers to LIBERO. SGOL refers to average results for LIBERO Object, Goal, Spatial and Long.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.7.jpeg"
+        },
+        {
+          "caption": "Figure 6: Real World Results for Multi-Task and Generalization Experiments",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363274.8.jpeg"
+        },
+        {
+          "caption": "Table 4: Mean inference efficiency (1000 steps in Bf16). All policies except OpenVLA use chunk length 50 . LF refers to Late Fusion Ablation of FLOWER with the complete VLM.",
+          "figureNumber": 9,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363274.9.jpeg"
+        }
+      ],
+      "title": "FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies",
+      "total_likes": 16,
+      "total_read": 105,
+      "url": "https://arxiv.org/pdf/2509.04996",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04996.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Many of language models' impressive capabilities originate from their in-context learning: based on instructions or examples, they can infer and perform new tasks without weight updates. In this work, we investigate when representations for new tasks are formed in language models, and how these representations change over the course of context. We study two different task representations: those that are ''transferrable'' -- vector representations that can transfer task contexts to another model instance, even without the full prompt -- and simpler representations of high-level task categories. We show that transferrable task representations evolve in non-monotonic and sporadic ways, while task identity representations persist throughout the context. Specifically, transferrable task representations exhibit a two-fold locality. They successfully condense evidence when more examples are provided in the context. But this evidence accrual process exhibits strong temporal locality along the sequence dimension, coming online only at certain tokens -- despite task identity being reliably decodable throughout the context. In some cases, transferrable task representations also show semantic locality, capturing a small task ''scope'' such as an independent subtask. Language models thus represent new tasks on the fly through both an inert, sustained sensitivity to the task and an active, just-in-time representation to support inference.",
+      "affiliations": [
+        "Google DeepMind"
+      ],
+      "arxiv_id": "2509.04466",
+      "arxives_doi": null,
+      "authors": "Yuxuan Li, Declan Campbell, Stephanie C. Y. Chan, Andrew Kyle Lampinen",
+      "bookmarked": 0,
+      "cache_file_name": "Li2025ARXIV_Just_in_time_and.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.959098778,
+        0.7114513139,
+        0.6438877652,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (December 2)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04466",
+      "inferredHighlights": [
+        {
+          "endIndex": 359,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 187
+        },
+        {
+          "endIndex": 530,
+          "highlightClass": "primary-highlight",
+          "startIndex": 361
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "In-Context Learning,  Task Representations,  Zero-Shot Learning,  Transferrable Task Representations,  Temporal Locality,  Semantic Locality",
+        "method_shortname": "Task Representation Analysis",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3966881,
+      "paper_id": 4362744,
+      "paper_source_id": "2509.04466",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-12-02",
+      "ranking_score": 0.6488580083,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "31990323d1fd1a80b5b42419de48127351a2ea28",
+      "shortened_authors": "Yuxuan Li, Declan Campbell, Stephanie C. Y. Chan, Andrew Kyle Lampinen",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Investigate the formation and dynamics of transferrable task representations** in language models, revealing how these representations evolve during context processing.\n- **Demonstrate that transferrable task representations are sporadic and localized** in time and space, supporting just-in-time computational processes.\n- **Show that these representations capture minimal task scopes** and rely on distributed representations for complex tasks.\n- **Highlight the importance of temporal and semantic locality** in task representation formation and recontextualization.",
+        "evaluation_question": "- **Task representations condense evidence from multiple examples**, improving zero-shot accuracy on simple tasks like antonym detection.\n- **Transferrable representations are less effective for longer or mixed-generation tasks**, showing a decline in recontextualized accuracy with more output units.\n- **Models exhibit strong performance on tasks requiring state tracking**, despite not forming robust local representations for these tasks.\n- **The effectiveness of task representations varies across tasks and models**, with some tasks converging to stable representations faster than others.",
+        "insights_takeaways_question": "- **Language models form task representations that are temporally and semantically localized**\n- **These representations are critical for just-in-time computation but may not support long-term or complex task execution**\n- **The reliance on distributed representations highlights the limitations of current models in capturing comprehensive task contexts**\n- **Further research is needed to understand how models can better integrate and maintain task information across different contexts**\n- **The findings have implications for improving mechanistic interpretability and enhancing model adaptability**",
+        "method_explanation_question": "- Extract **task vectors** from few-shot prompts by analyzing residual activations at specific tokens.\n- **Patch task vectors** into zero-shot prompts to restore task contexts and evaluate recontextualized accuracy.\n- **Analyze the temporal and semantic locality** of task representations by examining their activation patterns across different tokens and layers.\n- **Compare performance across varying numbers of examples** to assess how evidence accrual affects task representation quality.\n- **Evaluate task identity decoding** to determine how well models retain task information throughout the context.",
+        "problem_definition_question": "- **Language models struggle with forming robust, transferable task representations** that persist across different contexts and tasks.\n- **Existing methods often require explicit task instructions or demonstrations**, limiting their adaptability to new, unseen tasks.\n- **Current approaches fail to effectively capture and maintain task-specific information** over extended sequences or complex task structures.\n- **There is a need for understanding how models dynamically adjust task representations** based on contextual evidence and task complexity.\n- **Models often rely on distributed representations for complex tasks**, suggesting limitations in their ability to form localized, transferrable task contexts."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Understanding how task representations develop over context. A . A schematic of extracting transferrable task representations and restoring task contexts in zero-shot settings. The highlighted tokens indicate the source and target for extracting and injecting task representations. B . Transferrable task representations restore task accuracy on zero-shot prompts. Results are aggregated over all models for simple tasks (see Appendix A). Error bars indicate the 95% CI over tasks. C . An overview of the development of transferrable task representations over context, i",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362744.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Sporadic & inconsistent evidence accrual in language models. A . Task vectors extracted from the last colon token in each example capture evidence accrual on most tasks (11 out of 14).",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362744.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: Analyses of extracted task representations. A . The extracted task vectors (at the last colon token) decrease in both variance and magnitude with more examples, exhibiting a general tendency to condense evidence and converge onto stable task representations. The solid line shows the average across tasks, the transparent lines show the individual tasks.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362744.2.jpeg"
+        },
+        {
+          "caption": "Figure 4: Reinstantiated task contexts in longer-and mixed-generation tasks often decay over longer generation, especially for tasks that can be decomposed into semantically-independent subtasks. This suggests a tendency for models to only activate transferrable representations for small task scopes. A . Left: recontextualized zero-shot accuracy compared to zero-shot and 8-shot accuracy on longer-generation tasks. Right: recontextualized accuracy for each output unit across models, conditioned on sequences where models generated full correct responses with eight examples in-context. An output unit usually corresponds to a single word and is occasionally a short phrase (e.g. the capital of a country). B . Visualization as in A, but for mixed-generation tasks.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362744.3.jpeg"
+        }
+      ],
+      "title": "Just-in-time and distributed task representations in language models",
+      "total_likes": 9,
+      "total_read": 27,
+      "url": "https://arxiv.org/pdf/2509.04466",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04466.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Speculative decoding is an emerging technique that accelerates large language model (LLM) inference by allowing a smaller draft model to predict multiple tokens in advance, which are then verified or corrected by a larger target model. In AI-native radio access networks (AI-RAN), this paradigm is well-suited for collaborative inference between resource-constrained end devices and more capable edge servers or base stations (BSs). However, existing distributed speculative decoding requires transmitting the full vocabulary probability distribution from the draft model on the device to the target model at the BS, which leads to prohibitive uplink communication overhead. To address this issue, we propose a ``Top-K Sparse Logits Transmission (TK-SLT)`` scheme, where the draft model transmits only the top-K token raw probabilities and the corresponding token indices instead of the entire distribution. This approach significantly reduces bandwidth consumption while maintaining inference performance. We further derive an analytical expression for the optimal draft length that maximizes inference throughput, and provide a theoretical analysis of the achievable speedup ratio under TK-SLT. Experimental results validate both the efficiency and effectiveness of the proposed method.",
+      "affiliations": [
+        "Department of Network Intelligence, Pengcheng Laboratory"
+      ],
+      "arxiv_id": "2509.04576",
+      "arxives_doi": null,
+      "authors": "Ce Zheng, Tingting Yang",
+      "bookmarked": 0,
+      "cache_file_name": "Zheng2025ARXIV_Communication_Efficient_Collaborative_LLM.pdf",
+      "category": "Audio and Speech",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.976986843,
+        0.8548175095,
+        0.7970694275,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (November 7)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04576",
+      "inferredHighlights": [
+        {
+          "endIndex": 906,
+          "highlightClass": "primary-highlight",
+          "startIndex": 675
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Distributed Speculative Decoding,  Communication Efficiency,  Top-K Sampling,  LLM Collaboration,  AI-RAN",
+        "method_shortname": "TK-SLT",
+        "sub_subfield": "Collaborative Inference",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3966991,
+      "paper_id": 4362854,
+      "paper_source_id": "2509.04576",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-07",
+      "ranking_score": 0.5682653913,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "8e051003b26bafb56867080c26374f8db8534247",
+      "shortened_authors": "Ce Zheng, Tingting Yang",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Propose TK-SLT**, a novel communication-efficient scheme for distributed speculative decoding in collaborative LLM inference.\n- **Introduce Top-K Sparse Logits Transmission (TK-SLT)** to reduce uplink communication overhead while maintaining probabilistic equivalence with standalone LLMs.\n- **Derive theoretical analysis** of the optimal draft length and speedup ratio under TK-SLT.\n- **Provide practical implementation** including Optimal Draft Length Determination (ODLD) and Adaptive Speculative Selection (AS\u00b2).",
+        "evaluation_question": "- Achieves **substantial reduction** in uplink payload size while preserving probabilistic equivalence with standalone LLMs.\n- **Speedup ratio** reaches up to 1.6x under certain configurations.\n- **Optimal draft length** is determined through theoretical analysis and practical implementation.\n- **Hardware-in-the-loop simulations** validate the effectiveness of TK-SLT under different K values.",
+        "insights_takeaways_question": "- **TK-SLT** significantly reduces communication overhead while maintaining inference accuracy.\n- **Optimal draft length determination** enables efficient and effective collaborative inference.\n- **Adaptive speculative selection** ensures performance gains over standalone LLM inference.\n- **Theoretical analysis** provides a rigorous foundation for understanding and optimizing the method.\n- **Practical implementation** confirms the effectiveness of TK-SLT under various scenarios.",
+        "method_explanation_question": "- **TK-SLT** applies top-K sampling at the small language model (SLM) to retain only the top-K logits instead of the full distribution.\n- **Only top-K logits** and their corresponding token indices are transmitted to the base station (BS) for verification.\n- **Communication overhead** is significantly reduced while maintaining inference accuracy.\n- **Adaptive speculative selection** ensures that DSD yields performance gains over standalone LLM inference.\n- **Optimal draft length** is determined through theoretical analysis and practical implementation using ODLD and AS\u00b2.",
+        "problem_definition_question": "- **Distributed speculative decoding** requires transmitting full vocabulary probability distributions from the device to the BS, leading to prohibitive uplink communication overhead.\n- **Existing methods** suffer from high communication costs due to the transmission of full probability distributions per token.\n- **Current approaches** either introduce extra uncertainty estimation overhead or degrade inference accuracy.\n- **The paper addresses** the challenge of reducing communication overhead without compromising inference quality.\n- **The need for communication-efficient solutions** that maintain probabilistic equivalence with standalone LLMs is critical for practical deployment."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Fig. 2: Effect of draft length on speedup ratio at different L Algorithm 1 Optimal Draft Length Determination (ODLD)",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362854.1.jpeg"
+        },
+        {
+          "caption": "TABLE I: Optimal \u03b3 \u2217 for different values of \u03b1 and L",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362854.2.jpeg"
+        },
+        {
+          "caption": "Fig. 3: Acceptance rate under different K",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362854.3.jpeg"
+        },
+        {
+          "caption": "Fig. 4: Speedup ratio S inf under different K",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362854.4.jpeg"
+        },
+        {
+          "caption": "TABLE II: L and Optimal \u03b3 \u2217 under different K",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362854.5.jpeg"
+        },
+        {
+          "caption": "Fig. 1: Distributed Speculative Decoding",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362854.0.jpeg"
+        }
+      ],
+      "title": "Communication-Efficient Collaborative LLM Inference via Distributed Speculative Decoding",
+      "total_likes": 3,
+      "total_read": 12,
+      "url": "https://arxiv.org/pdf/2509.04576",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04576.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large language models struggle with rare token prediction, yet the mechanisms driving their specialization remain unclear. Prior work identified specialized ``plateau'' neurons for rare tokens following distinctive three-regime influence patterns \\cite{liu2025emergent}, but their functional organization is unknown. We investigate this through neuron influence analyses, graph-based clustering, and attention head ablations in GPT-2 XL and Pythia models. Our findings show that: (1) rare token processing requires additional plateau neurons beyond the power-law regime sufficient for common tokens, forming dual computational regimes; (2) plateau neurons are spatially distributed rather than forming modular clusters; and (3) attention mechanisms exhibit no preferential routing to specialists. These results demonstrate that rare token specialization arises through distributed, training-driven differentiation rather than architectural modularity, preserving context-sensitive flexibility while achieving adaptive capacity allocation.",
+      "affiliations": [
+        "ENS, Universit\u00e9 PSL, EHESS, CNRS"
+      ],
+      "arxiv_id": "2509.04479",
+      "arxives_doi": null,
+      "authors": "Jing Liu",
+      "bookmarked": 0,
+      "cache_file_name": "Liu2025ARXIV_No_Clustering_No_Routing.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9705733678,
+        0.87212502,
+        0.8228564097,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (August 31)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04479",
+      "inferredHighlights": [
+        {
+          "endIndex": 454,
+          "highlightClass": "primary-highlight",
+          "startIndex": 317
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Transformer,  Neuron Specialization,  Computational Regimes,  Attention Mechanisms,  Modular vs. Distributed Hypotheses",
+        "method_shortname": "Dual Computational Regimes",
+        "sub_subfield": "Transformer Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3966894,
+      "paper_id": 4362757,
+      "paper_source_id": "2509.04479",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-08-31",
+      "ranking_score": 0.5546537864,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "98189a8f421d0f738c550c1c310a0578538fb295",
+      "shortened_authors": "Jing Liu",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Identify dual computational regimes** for rare and common tokens through neuron influence analyses.\n- **Show spatial distribution** of plateau neurons rather than modular clusters.\n- **Demonstrate distributed attention access** without selective routing to specialists.\n- **Support distributed hypothesis** over modular specialization in transformer architectures.",
+        "evaluation_question": "- Rare tokens exhibit a **plateau regime** with positive deviations from power-law fits, indicating distinct processing.\n- **Dual-regime structure** is consistent across GPT-2 XL and Pythia models.\n- **Plateau neurons** are spatially distributed with no significant clustering.\n- **Attention mechanisms** show no preferential routing to specialists.\n- **Ablation studies** confirm distributed access with minimal impact from single-head removals.",
+        "insights_takeaways_question": "- **Transformers achieve rare token specialization** through distributed, training-driven differentiation.\n- **Plateau neurons** provide additional capacity while remaining spatially distributed.\n- **No selective attention routing** confirms universal access patterns for all tokens.\n- **Challenges modular assumptions** by showing complex organization from simple dynamics.\n- **Insights guide future research** on interpretable and scalable transformer designs.",
+        "method_explanation_question": "- Conduct **neuron influence analyses** to quantify individual contributions using mean ablation experiments.\n- **Spatial organization analysis** constructs correlation networks and applies Louvain community detection.\n- **Attention routing analysis** evaluates Gini coefficients and head-specific impacts via ablation.\n- **Compare rare and common tokens** using frequency thresholds and token matching criteria.\n- **Statistical validation** ensures results reflect genuine specialization rather than noise.",
+        "problem_definition_question": "- Large language models struggle with **rare token prediction** due to unclear specialization mechanisms.\n- **Existing methods** often require prior knowledge of cluster numbers or exhibit poor generalization.\n- **Current approaches** lack adaptive capacity allocation and context-sensitive flexibility.\n- **Modular hypotheses** assume discrete neuron clusters, contradicting observed distributed patterns.\n- **Distributed hypothesis** posits specialization emerges from parameter-level differentiation within shared substrates."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Neuron influence distributions for rare vs. common tokens. Rare tokens exhibit a plateau of specialist neurons, a power-law region, and a rapid decay region. Common tokens follow a pure power-law distribution without a plateau regime.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362757.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Community detection results show no significant clustering of plateau neurons compared to random baselines across model scales.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362757.1.jpeg"
+        },
+        {
+          "caption": "Table 2: Attention head ablation shows distributed dependency patterns across model scales. Individual heads show minimal impact on plateau neuron activation.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362757.2.jpeg"
+        }
+      ],
+      "title": "No Clustering, No Routing: How Transformers Actually Process Rare Tokens",
+      "total_likes": 4,
+      "total_read": 32,
+      "url": "https://arxiv.org/pdf/2509.04479",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04479.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large language models (LLMs) learn non-trivial abstractions during pretraining, like detecting irregular plural noun subjects. However, it is not well understood when and how specific linguistic abilities emerge as traditional evaluation methods such as benchmarking fail to reveal how models acquire concepts and capabilities. To bridge this gap and better understand model training at the concept level, we use sparse crosscoders to discover and align features across model checkpoints. Using this approach, we track the evolution of linguistic features during pretraining. We train crosscoders between open-sourced checkpoint triplets with significant performance and representation shifts, and introduce a novel metric, Relative Indirect Effects (RelIE), to trace training stages at which individual features become causally important for task performance. We show that crosscoders can detect feature emergence, maintenance, and discontinuation during pretraining. Our approach is architecture-agnostic and scalable, offering a promising path toward more interpretable and fine-grained analysis of representation learning throughout pretraining.",
+      "affiliations": [
+        "EPFL",
+        "Boston University"
+      ],
+      "arxiv_id": "2509.05291",
+      "arxives_doi": null,
+      "authors": "Deniz Bayazit, Aaron Mueller, Antoine Bosselut",
+      "bookmarked": 0,
+      "cache_file_name": "Bayazit2025ARXIV_Crosscoding_Through_Time_Tracking.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9536088716,
+        0.8971408829,
+        0.8662326339,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (September 5)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.05291",
+      "inferredHighlights": [
+        {
+          "endIndex": 487,
+          "highlightClass": "primary-highlight",
+          "startIndex": 328
+        },
+        {
+          "endIndex": 574,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 489
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Representation Learning,  Crosscoders,  Relative Indirect Effect,  Pretraining Dynamics,  Linguistic Features",
+        "method_shortname": "Crosscoding Through Time",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967704,
+      "paper_id": 4363567,
+      "paper_source_id": "2509.05291",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-05",
+      "ranking_score": 0.5299878828,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "ea9994526369201543d82f15df6df21504ce4654",
+      "shortened_authors": "Deniz Bayazit, Aaron Mueller, Antoine Bosselut",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce crosscoders**, a novel method for tracking the evolution of linguistic representations during pretraining.\n- **Develop the Relative Indirect Effect (R EL IE)** metric to causally quantify feature importance across training checkpoints.\n- Validate the approach through ablation studies and interpretability analyses.\n- Showcase the method's scalability across multiple LLM architectures like Pythia, BLOOM, and OLMo.",
+        "evaluation_question": "- Detects **emergence, maintenance, and discontinuation** of features during pretraining.\n- Tracks how **linguistic concepts evolve** over time with high precision.\n- Validates the effectiveness of **crosscoders** in capturing syntactic patterns like subject-verb agreement.\n- Demonstrates **robustness** across different model sizes and training stages.",
+        "insights_takeaways_question": "- LLMs progressively build **higher-level abstractions** as they pretrain.\n- **Crosscoders** allow precise tracking of linguistic feature evolution.\n- **Relative Indirect Effect (R EL IE)** provides causal insights into feature importance.\n- Models continue to refine representations even after performance plateaus.",
+        "method_explanation_question": "- Train **sparse crosscoders** to learn a joint feature space across multiple model checkpoints.\n- Use **Relative Indirect Effect (R EL IE)** to measure feature importance at each checkpoint.\n- Analyze feature changes by comparing activations across layers and checkpoints.\n- Track how **linguistic representations evolve** using performance metrics and activation patterns.",
+        "problem_definition_question": "- Traditional methods fail to reveal **how models acquire linguistic concepts** during pretraining.\n- **Sparse autoencoders (SAEs)** are limited in tracking concept evolution across checkpoints.\n- Existing approaches lack **causal understanding** of feature emergence and relevance.\n- There is a need for **architecture-agnostic tools** that enable fine-grained analysis of representation learning."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Capturing the evolution of features. Given a task, our pipeline selects the relevant checkpoints during pretraining, learns a joint feature space with crosscoders, and then analyzes feature differences across checkpoints. This allows to analyze how models learn, maintain, or unlearn particular representations over time.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363567.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Checkpoint selection with task performance (top) and middle-layer activation cosine similarity (bottom). The Pythia-1B (left) and OLMo-1B (middle) performance and activations patterns are calculated over BLiMP whereas BLOOM-1B (right) uses MultiBLiMP. All columns have the same x -axis (number of training tokens). We highlight checkpoints identified as critical in purple vertical lines. While some activation shifts align with performance jumps, others reveal continued representational change even after accuracy plateaus.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363567.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: IE evolution of Top-5 & Bottom-5 IE Features for Pythia checkpoints 1B & 286B. IEs are calculated using BLiMP subject\u2013verb agreement tasks. Missing annotation means the feature was not inter-pretable. We observe that low-level or uninterpretable features fade over time, while high-level grammar detectors emerge and strengthen by 286B.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363567.2.jpeg"
+        },
+        {
+          "caption": "Table 1: Subset of 3-way Crosscoder Annotations for Pythia-1B | 1B \u2194 4B \u2194 286B tokens. R EL IE gives the one-versus-all attribution vector; Interpreted function describes any detected linguistic role. Rows are grouped by whether features are unique to one checkpoint, shared between two, or common to all. Top activating sequence shows an example yielding a high activation, where color density shows the activation intensity for individual tokens. Features evolve from token-specific detectors to group-level abstract concepts ( e.g. , deverbal noun detectors), even after accuracy plateaus.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363567.3.jpeg"
+        },
+        {
+          "caption": "Figure 4: R EL IE of Top-100 IE features on BLiMP for Pythia-1B checkpoints 1B, 4B, 286B. Distinct clusters at each corner show attribution of checkpoint-specific features. 4B\u2013286B share more abstract features, while 1B\u2013286B overlaps are sparse and lower-level features.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363567.4.jpeg"
+        },
+        {
+          "caption": "Table 2: Subset of 3-way Crosscoder CLAMS French/English Annotation for BLOOM-1B | 6B \u2194 55B \u2194 341B.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363567.5.jpeg"
+        },
+        {
+          "caption": "Figure 5: Top-10 MultiBLiMP Number Agreement Task Feature Overlap per Checkpoint for Languages with 3-way comparisons. Cross-lingual feature overlap increases by 341B, especially for Latin-script languages, reflecting shared syntactic patterns, while greater morphological complexity in Arabic and Hindi limits alignment.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363567.6.jpeg"
+        }
+      ],
+      "title": "Crosscoding Through Time: Tracking Emergence & Consolidation Of Linguistic Representations Throughout LLM Pretraining",
+      "total_likes": 3,
+      "total_read": 11,
+      "url": "https://arxiv.org/pdf/2509.05291",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.05291.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Mainstream Transformer-based large language models face major efficiency bottlenecks: training computation scales quadratically with sequence length, and inference memory grows linearly, limiting long-context processing. Building large models on non-NVIDIA platforms also poses challenges for stable and efficient training. To address this, we introduce SpikingBrain, a family of brain-inspired models designed for efficient long-context training and inference. SpikingBrain leverages the MetaX GPU cluster and focuses on three aspects: (1) Model Architecture: linear and hybrid-linear attention architectures with adaptive spiking neurons; (2) Algorithmic Optimizations: an efficient, conversion-based training pipeline and a dedicated spike coding framework; (3) System Engineering: customized training frameworks, operator libraries, and parallelism strategies tailored to MetaX hardware.   Using these techniques, we develop two models: SpikingBrain-7B, a linear LLM, and SpikingBrain-76B, a hybrid-linear MoE LLM. These models demonstrate the feasibility of large-scale LLM development on non-NVIDIA platforms, and training remains stable for weeks on hundreds of MetaX GPUs with Model FLOPs Utilization at expected levels. SpikingBrain achieves performance comparable to open-source Transformer baselines while using only about 150B tokens for continual pre-training. Our models also significantly improve long-context efficiency and deliver inference with (partially) constant memory and event-driven spiking behavior. For example, SpikingBrain-7B attains over 100x speedup in Time to First Token for 4M-token sequences. Furthermore, the proposed spiking scheme achieves 69.15 percent sparsity, enabling low-power operation. Overall, this work demonstrates the potential of brain-inspired mechanisms to drive the next generation of efficient and scalable large model design.",
+      "affiliations": [
+        "Beihang University",
+        "Institute of Automation, Chinese Academy of Sciences",
+        "The Hong Kong Polytechnic University",
+        "Beijing Academy of Artificial Intelligence",
+        "Beijing Key Laboratory of Brain-Inspired General Intelligence Large Model",
+        "Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology",
+        "Zhongguancun Academy",
+        "LuxiTech",
+        "MetaX Integrated Circuit Co., Ltd."
+      ],
+      "arxiv_id": "2509.05276",
+      "arxives_doi": null,
+      "authors": "Yuqi Pan, Yupeng Feng, Jinghao Zhuang, Siyu Ding, Han Xu, Zehao Liu, Bohan Sun, Yuhong Chou, Xuerui Qiu, Anlin Deng, Anjie Hu, Shurong Wang, Peng Zhou, Man Yao, Jibin Wu, Jian Yang, Guoliang Sun, Bo Xu, Guoqi Li",
+      "bookmarked": 0,
+      "cache_file_name": "Pan2025ARXIV_SpikingBrain_Spiking_Brain_inspired.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9350901353,
+        0.9111839662,
+        0.8974511646,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (December 1)",
+      "first_page_image": null,
+      "github_url": "https://github.com/BICLab/SpikingBrain-7B",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.05276",
+      "inferredHighlights": [
+        {
+          "endIndex": 460,
+          "highlightClass": "primary-highlight",
+          "startIndex": 324
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Spiking Neural Networks,  Attention Mechanisms,  MoE,  Event-driven Computing,  MetaX Hardware",
+        "method_shortname": "SpikingBrain",
+        "sub_subfield": "Neural Networks",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967689,
+      "paper_id": 4363552,
+      "paper_source_id": "2509.05276",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": "https://www.metax-tech.com/en",
+      "publication_date": "2025-12-01",
+      "ranking_score": 0.5130019797,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "737fe556dfa5575de0981fcdd04f192055b59935",
+      "shortened_authors": "Yuqi Pan, Yupeng Feng, Jinghao Zhuang, Siyu Ding, Han Xu, Zehao Liu, Bohan Sun, Yuhong Chou, Xuerui Qiu, ..., Guoqi Li",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce SpikingBrain**, a novel brain-inspired model family for efficient long-context training and inference.\n- **Hybrid Linear Architectures** combining linear, local, and standard attention modules for improved efficiency.\n- **Efficient Model Conversion** techniques to adapt existing LLMs with sparse attention mechanisms.\n- **Adaptive Threshold Spiking** for low-power inference with high performance.\n- **Large-scale Training on MetaX** demonstrating feasibility of brain-inspired models on non-NVIDIA platforms.",
+        "evaluation_question": "- Achieves **100\u00d7 speedup** in Time to First Token (TTFT) for 4M-token sequences.\n- **69.15% sparsity** in spiking scheme reduces power consumption.\n- **23.4% MFU** for the 7B model indicates efficient utilization.\n- **Outperforms** traditional models in long-sequence processing.\n- **15.39\u00d7 speedup** on a compressed 1B model for 256k-length sequences.",
+        "insights_takeaways_question": "- **SpikingBrain achieves** over 100\u00d7 TTFT speedup for long sequences.\n- **Adaptive spiking** enables low-power inference with high accuracy.\n- **Hybrid architectures** balance efficiency and performance effectively.\n- **MetaX platform** supports stable large-scale training on non-NVIDIA hardware.\n- **MoE and spiking** together offer a robust multi-scale efficiency strategy.",
+        "method_explanation_question": "- Develops **hybrid attention architectures** combining linear, sliding window, and full attention for efficiency.\n- **Adaptive threshold spiking** converts activations into sparse spike trains for event-driven computation.\n- **MoE components** provide modular specialization and sparse activation for enhanced capacity.\n- **Conversion-based training** adapts pre-trained models to new attention types with minimal data.\n- **System engineering** includes customized frameworks and parallel strategies for MetaX hardware.",
+        "problem_definition_question": "- **Traditional Transformer models** face inefficiency in long-context processing due to quadratic complexity.\n- **High energy consumption** and memory usage limit scalability of large models.\n- **Non-NVIDIA platforms** struggle with stable and efficient training and deployment.\n- **Existing methods** lack adaptive mechanisms for varying data structures and noise levels.\n- **Need for brain-inspired designs** to achieve both efficiency and performance in real-world applications."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Overview of SpikingBrain. Inspired by brain mechanisms, SpikingBrain integrates hybrid efficient attention, MoE modules, and spike encoding into its architecture, supported by a universal conversion pipeline compatible with the open-source model ecosystem. This enables continual pre-training with less than 2% of the data while achieving performance comparable to mainstream open-source models. We further adapt frameworks, operators, parallel strategies, and communication primitives for non-NVIDIA (MetaX) clusters, ensuring stable large-scale training and inference.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363552.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Integrated architectures of SpikingBrain models. FA: Full Softmax Attention; SWA: Sliding Window Attention; LA: Linear Attention. (Left) SpikingBrain-7B is a linear model with inter-layer hybridization. (Middle) Spike coding converts activations into integer counts for GPU execution or into spike trains for event-driven neuromorphic hardware. (Right) SpikingBrain-76B is a hybrid-linear MoE model with intra-layer hybridization, configured with 128 sink tokens, 16 routed experts, and 1 shared expert. Seven dense FFNs are located at layers [1 , 2 , 3 , 5 , 7 , 9 , 11] , with all other FFNs implemented as MoE layers. Attention modules are arranged as \"LA + FA\" at layers [7 , 14 , 21 , 28] , and \"LA + SWA\" at all other layers.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363552.1.jpeg"
+        }
+      ],
+      "title": "SpikingBrain: Spiking Brain-inspired Large Models",
+      "total_likes": 5,
+      "total_read": 28,
+      "url": "https://arxiv.org/pdf/2509.05276",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.05276.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Reinforcement learning (RL) has emerged as a popular method for post-training large language models (LLMs). While improving the model's performance on downstream tasks, it often reduces the model's output diversity, leading to narrow, canonical responses. Existing methods to enhance diversity are limited, either by operating at inference time or by focusing on surface-level differences. We propose a novel training method named DQO (Diversity Quality Optimization) based on determinantal point processes (DPPs) to jointly optimize LLMs for quality and semantic diversity. Our approach samples and embeds a group of responses for each prompt, then uses the determinant of a kernel-based similarity matrix to measure diversity as the volume spanned by the embeddings of these responses. DQO is flexible and can be applied on top of existing RL algorithms. Experiments across instruction-following, summarization, story generation, and reasoning tasks demonstrate that our method substantially improves semantic diversity without sacrificing model quality.",
+      "affiliations": [
+        "University of Maryland",
+        "University College London",
+        "Boston University",
+        "Broad Institute of MIT and Harvard"
+      ],
+      "arxiv_id": "2509.04784",
+      "arxives_doi": null,
+      "authors": "Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Yannis Paschalidis, Aldo Pacchiano",
+      "bookmarked": 0,
+      "cache_file_name": "Chen2025ARXIV_Post_training_Large_Language.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9253344325,
+        0.9161452953,
+        0.9108580397,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (October 4)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04784",
+      "inferredHighlights": [
+        {
+          "endIndex": 549,
+          "highlightClass": "primary-highlight",
+          "startIndex": 399
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Large Language Models,  Determinantal Point Processes,  Semantic Diversity,  Reward Optimization,  DQO",
+        "method_shortname": "DQO",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967199,
+      "paper_id": 4363062,
+      "paper_source_id": "2509.04784",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-10-04",
+      "ranking_score": 0.5057466693,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "0a66ab5760423129b19d7cd0dc3ad0446fd0500b",
+      "shortened_authors": "Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Yannis Paschalidis, Aldo Pacchiano",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce DQO**, a novel training method based on determinantal point processes (DPPs) to jointly optimize LLMs for quality and semantic diversity.\n- **Propose a diversity metric** using the determinant of a similarity matrix, capturing the volume spanned by response embeddings.\n- Validate the effectiveness of DQO through ablation studies across instruction-following, summarization, story generation, and reasoning tasks.\n- Demonstrate significant improvements in **semantic diversity** without compromising model quality.",
+        "evaluation_question": "- Achieves **substantial improvements** in semantic diversity across multiple tasks while maintaining high response quality.\n- **Pass@n** scores show enhanced performance with n > 1, indicating better diversity without sacrificing quality.\n- Outperforms baselines in **diversity metrics** such as distinct-n, self-bleu, self-rouge, and LLM-as-a-judge evaluations.\n- Maintains strong **quality metrics** like pass@1, showing that diversity enhancements do not negatively impact core performance.",
+        "insights_takeaways_question": "- **DQO effectively enhances semantic diversity** without compromising model quality.\n- **The determinant-based diversity metric** captures the volume of response embeddings, ensuring genuine diversity.\n- **The method outperforms existing approaches** in multiple benchmarks, demonstrating robustness across tasks.\n- **The balance between quality and diversity** is well-managed through hyperparameter tuning.\n- **The approach opens new directions** for training LLMs with a focus on both performance and diversity.",
+        "method_explanation_question": "- **Sample a group of responses** for each prompt during training.\n- **Embed these responses** using a pretrained encoder to map them into a high-dimensional semantic space.\n- **Compute a similarity matrix** via a kernel function to measure the relationships between embedded responses.\n- **Optimize the determinant** of this matrix to maximize the volume spanned by the embeddings, representing semantic diversity.\n- **Incorporate diversity into the training objective** alongside reward maximization to balance quality and diversity.",
+        "problem_definition_question": "- **Post-training methods** like SFT and RLHF often reduce output diversity, leading to narrow, canonical responses.\n- **Existing diversity techniques** are limited to inference-time interventions or lexical-level changes, failing to address semantic diversity.\n- **Current approaches** struggle to generate responses spanning distinct and meaningful modes of the answer space.\n- **This limits** the applicability of LLMs in scenarios requiring diverse outputs, such as reasoning, personalization, and test-time applications.\n- **There is a need** for principled training methods that directly optimize for both quality and semantic diversity."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: The performance of the trained model on pass @ n metrics. For DQO, we set hyperparameters \u03b1 = 1 . 0 and k = 4 .",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363062.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: The performance of the trained model on six diversity metrics. For DQO, we set hyperpa-rameters \u03b1 = 1 . 0 and k = 4 .",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363062.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: Pareto frontiers on quality and diversity of our model and the baseline. On the left, each point is a model trained with different training steps and the sampling temperature is set as 1.0. On the right, we take the final trained model but vary the sampling temperature.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363062.2.jpeg"
+        },
+        {
+          "caption": "Table 1: The quality and diversity scores of the model trained with different values of hyperparameters k and \u03b1 on the Dolly task. Diversity metrics are calculated across 10 generated responses per prompt.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363062.3.jpeg"
+        }
+      ],
+      "title": "Post-training Large Language Models for Diverse High-Quality Responses",
+      "total_likes": 2,
+      "total_read": 6,
+      "url": "https://arxiv.org/pdf/2509.04784",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04784.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Multimodal foundation models can process several modalities. However, since the space of possible modalities is large and evolving over time, training a model from scratch to encompass all modalities is unfeasible. Moreover, integrating a modality into a pre-existing foundation model currently requires a significant amount of paired data, which is often not available for low-resource modalities. In this paper, we introduce a method for sample-efficient modality integration (SEMI) into Large Language Models (LLMs). To this end, we devise a hypernetwork that can adapt a shared projector -- placed between modality-specific encoders and an LLM -- to any modality. The hypernetwork, trained on high-resource modalities (i.e., text, speech, audio, video), is conditioned on a few samples from any arbitrary modality at inference time to generate a suitable adapter. To increase the diversity of training modalities, we artificially multiply the number of encoders through isometric transformations. We find that SEMI achieves a significant boost in sample efficiency during few-shot integration of new modalities (i.e., satellite images, astronomical images, inertial measurements, and molecules) with encoders of arbitrary embedding dimensionality. For instance, to reach the same accuracy as 32-shot SEMI, training the projector from scratch needs 64$\\times$ more data. As a result, SEMI holds promise to extend the modality coverage of foundation models.",
+      "affiliations": [
+        "University of Edinburgh",
+        "Instituto de Telecomunica\u00e7\u00f5es",
+        "Instituto Superior T\u00e9cnico, Universidade de Lisboa",
+        "Unbabel"
+      ],
+      "arxiv_id": "2509.04606",
+      "arxives_doi": null,
+      "authors": "Osman Batur \u0130nce, Andr\u00e9 F. T. Martins, Oisin Mac Aodha, Edoardo M. Ponti",
+      "bookmarked": 0,
+      "cache_file_name": "Ince2025ARXIV_Sample_efficient_Integration_of.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8373817477,
+        0.8904784814,
+        0.983912601,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (September 4)",
+      "first_page_image": null,
+      "github_url": "https://github.com/ospanbatyr/sample-efficient-multimodality",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04606",
+      "inferredHighlights": [
+        {
+          "endIndex": 518,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 399
+        },
+        {
+          "endIndex": 666,
+          "highlightClass": "primary-highlight",
+          "startIndex": 520
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Sample-Efficient Modality Integration,  Hypernetworks,  Isometric Transformations,  Encoder Generalization,  LLMs",
+        "method_shortname": "SEMI",
+        "sub_subfield": "Multimodal Learning",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967021,
+      "paper_id": 4362884,
+      "paper_source_id": "2509.04606",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-04",
+      "ranking_score": 0.4764854941,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "3dfb7084f85dd2d9d63717c649b71154f7f08068",
+      "shortened_authors": "Osman Batur \u0130nce, Andr\u00e9 F. T. Martins, Oisin Mac Aodha, Edoardo M. Ponti",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce Sample-Efficient Modality Integration (SEMI)**, a novel method for integrating low-resource modalities into Large Language Models (LLMs) with minimal paired data.\n- **Enable integration of modalities** with small-scale paired modality-text data but large-scale modality-only data.\n- **Propose strategies to augment training modalities** through isometric transformations and generalize to arbitrary-dimensionality encoders.\n- **Curate benchmarks** for this challenge, including a new dataset for astronomical imaging.\n- **Demonstrate sample efficiency** by showing SEMI achieves effective projectors with as few as 32 samples while other baselines fail.",
+        "evaluation_question": "- **SEMI outperforms all baselines** across satellite, astronomical, IMU, and molecule modalities, achieving higher CIDEr and BLEU scores.\n- **For satellite images**, SEMI achieves higher CIDEr scores than FT Projector, Projector, and LoRA across all sample sizes.\n- **On astronomical images**, SEMI shows a significant gap over baselines, especially in low-size and mid-size encoders, reaching up to 200 CIDEr points difference.\n- **For IMU data**, SEMI performs better than all baselines, with FT Projector and LoRA being the second-best methods.\n- **For molecules**, SEMI demonstrates strong performance in low-resource settings, requiring significantly fewer samples to match baseline results.",
+        "insights_takeaways_question": "- **SEMI enables efficient integration** of low-resource modalities with minimal paired data, improving sample efficiency.\n- **The method generalizes well** to various modalities, including those with different embedding dimensions.\n- **SEMI outperforms existing baselines** in multiple domains, demonstrating its robustness and versatility.\n- **The use of isometric transformations** allows for emulating numerous encoders, enhancing adaptability.\n- **The paper highlights the importance of cross-modal transfer** in developing flexible and scalable multimodal models.",
+        "method_explanation_question": "- **Train a shared MLP projector** on high-resource modalities (image, audio, video) to map encoder outputs to LLM input space.\n- **Train a hypernetwork** to generate modality-specific adapters conditioned on samples from high-resource modalities.\n- **Fine-tune the generated adapter** on a few samples from low-resource modalities to adapt to new modalities.\n- **Use isometric transformations** to emulate numerous encoders and generalize to arbitrary-dimensionality encoders.\n- **Employ techniques like factorizing hypernetwork parameters** and grounding modality inputs with text to improve performance and simplify optimization.",
+        "problem_definition_question": "- **Current methods require extensive paired data** for integrating new modalities into LLMs, which is often unavailable for low-resource modalities.\n- **Existing approaches lack sample efficiency** and compatibility with generative text models, limiting their applicability.\n- **Most integration strategies assume pre-trained encoders** for low-resource modalities, which are not always available.\n- **There is a need for methods that can efficiently integrate new modalities** with minimal data and without retraining from scratch.\n- **The paper addresses the challenge of integrating diverse modalities** (e.g., satellite images, galaxies, IMU data, molecules) with limited paired data."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: High-level framework of SEMI. Left: A hypernetwork is trained to generate an appropriate projector adaptation for high-resource training modalities. Right: A projector is generated by the hypernetwork for any unseen low-resource modality given only a few samples and is then fine-tuned on the same data. This enables the integration of new modalities with minimal training and paired data. Note that some modalities (audio, molecules) appear as images for visualisation purposes only.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362884.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Training modalities, datasets, and encoders. We generally use captioning datasets during the pre-training of the projector and instruction datasets during the hypernetwork training. The size of each dataset is shown in parentheses next to its name.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362884.1.jpeg"
+        },
+        {
+          "caption": "Table 2: Evaluation modalities with their datasets and encoders. All datasets are captioning datasets.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362884.2.jpeg"
+        },
+        {
+          "caption": "Figure 2: SydneyCaptions satellite captioning results with three different encoders. The shaded areas around the lines indicate the standard error obtained from multiple seeds.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362884.3.jpeg"
+        },
+        {
+          "caption": "Figure 3: CAPDELS astronomical image captioning results with three different encoders. The shaded areas around the lines indicate the standard error obtained from multiple seeds.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362884.4.jpeg"
+        },
+        {
+          "caption": "Figure 4: Left : SensorCaps activity description dataset results. Right : ChEBI-20 molecule description dataset results.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362884.5.jpeg"
+        },
+        {
+          "caption": "Figure 5: SoundBible audio captioning results. Left: Llama 3.2 1B Instruct. Right: Llama 3.1 8B Instruct.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362884.6.jpeg"
+        }
+      ],
+      "title": "Sample-efficient Integration of New Modalities into Large Language Models",
+      "total_likes": 5,
+      "total_read": 19,
+      "url": "https://arxiv.org/pdf/2509.04606",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04606.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Test-time scaling has emerged as a powerful paradigm for enhancing the reasoning capabilities of large language models (LLMs) by allocating additional computational resources during inference. However, this paradigm is inherently inefficient due to the generation of redundant and repetitive reasoning traces, leading to significant computational overhead. Speculative decoding offers a promising avenue for mitigating this inefficiency, yet its efficacy in the structured, repetition-rich context of test-time scaling remains largely unexplored. To bridge this gap, we introduce the first comprehensive benchmark designed to evaluate speculative decoding methods for accelerating LLM test-time scaling. Our benchmark provides consistent experimental protocols across representative test-time scaling paradigms (e.g., Best-of-N sampling and multi-round thinking), enabling a fair comparison of three major categories of speculative decoding: model-based, training-based, and n-gram-based methods. Extensive experiments reveal that simple n-gram-based methods effectively capture repetitive patterns, demonstrating unique potential in accelerating test-time scaling. This phenomenon demonstrates the value of integrating n-gram-based methods with model-based or training-based approaches to balance acceleration for both repetitive and diverse reasoning in test-time scaling. We hope this benchmark spurs further research on speculative decoding for test-time scaling, enabling faster and more practical reasoning in LLMs through better handling of repetitive and diverse reasoning paths.",
+      "affiliations": [
+        "City University of Hong Kong",
+        "Huawei Noah\u2019s Ark Lab"
+      ],
+      "arxiv_id": "2509.04474",
+      "arxives_doi": null,
+      "authors": "Shengyin Sun, Yiming Li, Xing Li, Yingzhao Lian, Weizhe Lin, Hui-Ling Zhen, Zhiyuan Yang, Chen Chen, Xianzhi Yu, Mingxuan Yuan, Chen Ma",
+      "bookmarked": 0,
+      "cache_file_name": "Sun2025ARXIV_Scaling_Up_Speeding_Up.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7748219426,
+        0.8489910923,
+        0.9992316793,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (August 30)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04474",
+      "inferredHighlights": [
+        {
+          "endIndex": 702,
+          "highlightClass": "primary-highlight",
+          "startIndex": 547
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Speculative Decoding,  Test-Time Scaling,  N-Gram Patterns,  Model-Based Methods,  Training-Based Methods,  Hybrid Speculative Decoding,  LLMs",
+        "method_shortname": "Speculative Decoding for LLMs",
+        "sub_subfield": "Speculative Decoding",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3966889,
+      "paper_id": 4362752,
+      "paper_source_id": "2509.04474",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-08-30",
+      "ranking_score": 0.4607924342,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "648dc50901fab935138bdc16025ad326d0ce9254",
+      "shortened_authors": "Shengyin Sun, Yiming Li, Xing Li, Yingzhao Lian, Weizhe Lin, Hui-Ling Zhen, Zhiyuan Yang, Chen Chen, Xianzhi Yu, ..., Chen Ma",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce a comprehensive benchmark** for speculative decoding methods to accelerate LLM test-time scaling.\n- **Systematically compare** nine speculative decoding methods across three categories: model-based, training-based, and n-gram-based.\n- **Highlight the effectiveness** of n-gram-based methods in capturing repetitive patterns during test-time scaling.\n- **Identify limitations** of current hybrid strategies in effectively combining draft models with N-gram patterns.\n- **Provide insights** on balancing adaptability, efficiency, and robustness for complex reasoning tasks using speculative decoding.",
+        "evaluation_question": "- **N-gram-based methods** achieve progressive acceleration by reusing past computations, enabling efficiency that scales across turns.\n- **Hybrid speculative decoding** combines semantic alignment with N-gram patterns, unlocking distinct potential for reasoning under test-time scaling.\n- **Training-based methods** incur lower draft generation time overhead, allowing more computational resources to be allocated to decoding.\n- **Model-based methods** demonstrate promising acceleration potential but are inherently tied to the training process, limiting adaptability.\n- **Speculative decoding** significantly reduces wall-clock time while preserving the final output distribution of the target model.",
+        "insights_takeaways_question": "- **N-gram-based methods** offer significant speedup by leveraging repetitive patterns in reasoning paths.\n- **Hybrid speculative decoding** holds promise but requires more dynamic integration strategies.\n- **Model-based methods** provide strong acceleration potential but are constrained by training dependencies.\n- **Training-based methods** reduce draft generation overhead, improving overall efficiency.\n- **The paper highlights** the importance of balancing adaptability, efficiency, and robustness in speculative decoding for practical applications.",
+        "method_explanation_question": "- **Test-time scaling frameworks** such as Best-of-N and multi-round thinking are evaluated to identify redundancies in reasoning paths.\n- **Speculative decoding** is applied to generate candidate token sequences using faster draft models or N-gram patterns.\n- **Verification** is performed by the larger target model to ensure the output distribution matches the original model.\n- **Reusability** of past computations enables progressive acceleration, particularly in repetitive reasoning scenarios.\n- **Performance metrics** such as speedup ratio and accuracy are measured to evaluate the effectiveness of different speculative decoding approaches.",
+        "problem_definition_question": "- **Traditional test-time scaling** methods suffer from high computational overhead due to redundant reasoning traces.\n- **Current speculative decoding** techniques lack systematic evaluation across diverse reasoning paradigms.\n- **Existing benchmarks** typically focus on single-pass generation tasks, ignoring advanced reasoning frameworks.\n- **Limited exploration** of hybrid strategies that combine draft models with N-gram patterns for efficient reasoning.\n- **Need for a dedicated benchmark** to assess the trade-offs between flexibility, training cost, and real-time adaptability in speculative decoding."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Performance of various model speculative decoding methods on Qwen3-8B under the multi-turn thinking framework with temperature T = 0 .",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362752.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Illustration of intra-turn and inter-turn redundancy under the test-time scaling paradigm.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362752.1.jpeg"
+        },
+        {
+          "caption": "Figure 2: The framework of speculative decoding mehods for efficient LLM test-time scaling. (#1) An overview of test-time scaling frameworks (Best-of-N and multi-turn thinking) and their inherent redundancies. (#2) Illustrations of three categories of speculative decoding methods. Model-based method takes tokens as input and use a smaller, homologous model as the draft model to generate speculative token sequences. Training-based method utilizes both input tokens and hidden-layer features, employing an additionally trained lightweight draft model to predict future tokens. N-gram-based method leverages tools such as suffix automata to retrieve repeated patterns in history for efficient draft generation.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362752.2.jpeg"
+        },
+        {
+          "caption": "Table 2: Summary of different speculative decoding methods. The table outlines each method\u2019s key idea, category ( model-based , training-based , or N-gram-based ), speculation structure ( Linear or Tree ), ability to reuse repetitive content during generation, and its compatibility with Greedy decoding and speculative Sampling .",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362752.3.jpeg"
+        }
+      ],
+      "title": "Scaling Up, Speeding Up: A Benchmark of Speculative Decoding for Efficient LLM Test-Time Scaling",
+      "total_likes": 4,
+      "total_read": 18,
+      "url": "https://arxiv.org/pdf/2509.04474",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04474.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "The escalating adoption of diffusion models for applications such as image generation demands efficient parallel inference techniques to manage their substantial computational cost. However, existing diffusion parallelism inference schemes often underutilize resources in heterogeneous multi-GPU environments, where varying hardware capabilities or background tasks cause workload imbalance. This paper introduces Spatio-Temporal Adaptive Diffusion Inference (STADI), a novel framework to accelerate diffusion model inference in such settings. At its core is a hybrid scheduler that orchestrates fine-grained parallelism across both temporal and spatial dimensions. Temporally, STADI introduces a novel computation-aware step allocator applied after warmup phases, using a least-common-multiple-minimizing quantization technique to reduce denoising steps on slower GPUs and execution synchronization. To further minimize GPU idle periods, STADI executes an elastic patch parallelism mechanism that allocates variably sized image patches to GPUs according to their computational capability, ensuring balanced workload distribution through a complementary spatial mechanism. Extensive experiments on both load-imbalanced and heterogeneous multi-GPU clusters validate STADI's efficacy, demonstrating improved load balancing and mitigation of performance bottlenecks. Compared to patch parallelism, a state-of-the-art diffusion inference framework, our method significantly reduces end-to-end inference latency by up to 45% and significantly improves resource utilization on heterogeneous GPUs.",
+      "affiliations": [
+        "Sun Yat-sen University"
+      ],
+      "arxiv_id": "2509.04719",
+      "arxives_doi": null,
+      "authors": "Han Liang, Jiahui Zhou, Zicheng Zhou, Xiaoxi Zhang, Xu Chen",
+      "bookmarked": 0,
+      "cache_file_name": "Liang2025ARXIV_STADI_Fine_Grained_Step.pdf",
+      "category": "Computer Science",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7586660653,
+        0.8363978349,
+        0.9998660391,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (September 15)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04719",
+      "inferredHighlights": [
+        {
+          "endIndex": 542,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 392
+        },
+        {
+          "endIndex": 664,
+          "highlightClass": "primary-highlight",
+          "startIndex": 544
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Diffusion Model Inference,  Heterogeneous Multi-GPU Systems,  Spatio-Temporal Parallelism,  STADI",
+        "method_shortname": "STADI",
+        "sub_subfield": "Diffusion Models",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967134,
+      "paper_id": 4362997,
+      "paper_source_id": "2509.04719",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-15",
+      "ranking_score": 0.45638978,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "cebb4ac20ef05f2589aaa61c325851ed193d5f6a",
+      "shortened_authors": "Han Liang, Jiahui Zhou, Zicheng Zhou, Xiaoxi Zhang, Xu Chen",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce STADI**, a novel framework for diffusion model inference that leverages spatio-temporal adaptive parallelism to address heterogeneous GPU environments.\n- **Propose fine-grained step and patch parallelism strategies** to minimize GPU idle time and improve resource utilization.\n- **Provide theoretical guarantees** on the error bounds of the proposed method, ensuring its effectiveness in heterogeneous settings.\n- **Demonstrate significant performance improvements** over existing methods, achieving up to 45% reduction in end-to-end inference latency.\n- **Validate the effectiveness through extensive experiments** on heterogeneous multi-GPU clusters, confirming load balancing and performance enhancement.",
+        "evaluation_question": "- Achieves **up to 45% reduction** in end-to-end inference latency compared to patch parallelism.\n- **Improves resource utilization** on heterogeneous GPUs by dynamically adjusting steps and patch sizes.\n- **Outperforms existing methods** in terms of load balancing and mitigating performance bottlenecks.\n- **Maintains image generation quality** despite step reductions, as evidenced by minimal differences in FID scores.\n- **Demonstrates robustness** across varying GPU occupancies and workload distributions.",
+        "insights_takeaways_question": "- **STADI significantly reduces inference latency** by up to 45% through adaptive step and patch sizing.\n- **Dynamic resource allocation** ensures optimal utilization of heterogeneous GPU clusters.\n- **Maintains high-quality image generation** despite step reductions, indicating robustness of the method.\n- **Theoretical analysis** supports the effectiveness of the proposed approach in diverse computing environments.\n- **Practical implementation** confirms the benefits of combining spatial and temporal adaptations for improved performance.",
+        "method_explanation_question": "- **Spatio-temporal adaptive scheduling** is employed to adjust both the number of denoising steps and patch sizes across GPUs.\n- **Temporal adaptation** assigns different numbers of steps to each GPU based on their computational capabilities and workload.\n- **Spatial adaptation** dynamically allocates patch sizes to balance the computational load across GPUs.\n- **Warmup phase** ensures synchronization and consistent initialization before adaptive inference begins.\n- **Asynchronous communication** allows faster GPUs to proceed without waiting for slower ones, reducing overall latency.",
+        "problem_definition_question": "- **Heterogeneous GPU environments** lead to inefficiencies in diffusion model inference due to uneven computational capabilities and workload imbalances.\n- **Existing methods** such as patch parallelism fail to adapt to varying GPU speeds, resulting in prolonged latency and underutilized resources.\n- **Traditional approaches** do not account for temporal dynamics in diffusion inference, missing opportunities for optimization.\n- **The need for adaptive frameworks** that can dynamically adjust both spatial and temporal aspects of inference is critical for efficient large-scale deployment.\n- **This paper addresses** the challenge of optimizing diffusion model inference in heterogeneous systems by introducing a novel spatio-temporal adaptation strategy."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Fig. 1. DDPM inference illustration.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.0.jpeg"
+        },
+        {
+          "caption": "Fig. 2. The end-to-end inference latency of patch parallelism is constrained by the device with the lowest available computing power, (i",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.1.jpeg"
+        },
+        {
+          "caption": "Fig. 3. Illustration of a single step of patch parallelism [12]",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.2.jpeg"
+        },
+        {
+          "caption": "Fig. 4. Architectural comparison between Denoising Diffusion Probabilistic Models (DDPM) and Denoising Diffusion Implicit Models (DDIM).",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.3.jpeg"
+        },
+        {
+          "caption": "Fig. 5. Overview of STADI .",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.4.jpeg"
+        },
+        {
+          "caption": "Fig. 6. System architecture.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.5.jpeg"
+        },
+        {
+          "caption": "Fig. 7. Image quality visualization on various patch size for step reduction. The FID values are compared with ground truth images. Patch size in red (green) means the steps are (not) reduced.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.6.jpeg"
+        },
+        {
+          "caption": "TABLE I: Specifications of the GPU cluster.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362997.7.jpeg"
+        },
+        {
+          "caption": "Fig. 8. Latency comparison.",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.8.jpeg"
+        },
+        {
+          "caption": "Fig. 9. The inference latency under different workload occu-pancies and patch sizes. Different colors represent occupancies settings. Dashed lines in corresponding colors indicate pure patch parallelism\u2019s latency under each configuration, while triangles mark the actual patch ratio selected by STADI .",
+          "figureNumber": 9,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362997.9.jpeg"
+        },
+        {
+          "caption": "TABLE II: Quality metrics comparison. \u2191 / \u2193 : Higher/Lower is better. Patch size in red (green) means the steps are (not) reduced.",
+          "figureNumber": 10,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362997.10.jpeg"
+        },
+        {
+          "caption": "TABLE III: Ablation study. \u201c+SA\u201d means Spatial Adaption while \u201c+TA\u201d means Temporal Adaption.",
+          "figureNumber": 11,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362997.11.jpeg"
+        }
+      ],
+      "title": "STADI: Fine-Grained Step-Patch Diffusion Parallelism for Heterogeneous GPUs",
+      "total_likes": 0,
+      "total_read": 1,
+      "url": "https://arxiv.org/pdf/2509.04719",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04719.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "In this report, we introduce PLaMo 2, a series of Japanese-focused large language models featuring a hybrid Samba-based architecture that transitions to full attention via continual pre-training to support 32K token contexts. Training leverages extensive synthetic corpora to overcome data scarcity, while computational efficiency is achieved through weight reuse and structured pruning. This efficient pruning methodology produces an 8B model that achieves performance comparable to our previous 100B model. Post-training further refines the models using a pipeline of supervised fine-tuning (SFT) and direct preference optimization (DPO), enhanced by synthetic Japanese instruction data and model merging techniques. Optimized for inference using vLLM and quantization with minimal accuracy loss, the PLaMo 2 models achieve state-of-the-art results on Japanese benchmarks, outperforming similarly-sized open models in instruction-following, language fluency, and Japanese-specific knowledge.",
+      "affiliations": [
+        "Preferred Networks, Inc."
+      ],
+      "arxiv_id": "2509.04897",
+      "arxives_doi": null,
+      "authors": "Preferred Networks, :, Kaizaburo Chubachi, Yasuhiro Fujita, Shinichi Hemmi, Yuta Hirokawa, Kentaro Imajo, Toshiki Kataoka, Goro Kobayashi, Kenichi Maehashi, Calvin Metzger, Hiroaki Mikami, Shogo Murai, Daisuke Nishino, Kento Nozawa, Toru Ogawa, Shintarou Okada, Daisuke Okanohara, Shunta Saito, Shotaro Sano, Shuji Suzuki, Kuniyuki Takahashi, Daisuke Tanaka, Avinash Ummadisingu, Hanqin Wang, Sixue Wang, Tianqi Xu",
+      "bookmarked": 0,
+      "cache_file_name": "Networks2025ARXIV_PLaMo_2_Technical_Report.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.5971626684,
+        0.663827098,
+        0.9217523575,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2025 (September 25)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.04897",
+      "inferredHighlights": [
+        {
+          "endIndex": 224,
+          "highlightClass": "primary-highlight",
+          "startIndex": 0
+        },
+        {
+          "endIndex": 386,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 226
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Large Language Models (LLMs),  Hybrid Architecture,  Samba,  Mamba,  Sliding Window Attention,  Japanese Language Processing,  PLaMo 2",
+        "method_shortname": "PLaMo 2",
+        "sub_subfield": "Large Language Models",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3967312,
+      "paper_id": 4363175,
+      "paper_source_id": "2509.04897",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-25",
+      "ranking_score": 0.4168777614,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "942752924e5743d6557cc9a53c2a05fb11e3b50b",
+      "shortened_authors": "Preferred Networks, :, Kaizaburo Chubachi, Yasuhiro Fujita, Shinichi Hemmi, Yuta Hirokawa, Kentaro Imajo, Toshiki Kataoka, Goro Kobayashi, ..., Tianqi Xu",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce PLaMo 2**, a series of Japanese-focused large language models with a hybrid Samba-based architecture.\n- **Develop an efficient training paradigm** combining weight reuse and structured pruning to create high-performance, smaller models.\n- **Achieve state-of-the-art results** on Japanese benchmarks, outperforming similarly-sized open models in instruction-following, language fluency, and Japanese-specific knowledge.\n- **Implement a multifaceted approach** that includes innovations in model architecture, data generation, and training strategies.",
+        "evaluation_question": "- PLaMo 2.1-8B achieves performance comparable to or exceeding the previous 100B-parameter model.\n- **PLaMo 2.1 8B outperforms Qwen/Qwen3-8B-Base** in both JMMLU and MMLU benchmarks.\n- **PLaMo 2.1 8B matches nearly the same performance level as PLaMo-100B** on Japanese-specific tasks.\n- **PLaMo 2.1 8B demonstrates performance comparable to PLaMo-100B** on pfgen-bench, showcasing strong Japanese language generation capabilities.\n- **PLaMo 2.1 8B outperforms sarashina2-7b** and Llama-3.1-Swallow-8B-v0.2 in Japanese-specific knowledge assessments.",
+        "insights_takeaways_question": "- **PLaMo 2's hybrid architecture** enables efficient long-context processing without sacrificing performance.\n- **Synthetic data augmentation** significantly enhances model capabilities in low-resource scenarios.\n- **Efficient training paradigms** like weight reuse and pruning allow for scalable model development.\n- **Japanese-specific knowledge retention** is achieved despite using English-translated data for training.\n- **The paper highlights the importance of tailored training strategies** for non-English languages in achieving competitive performance.",
+        "method_explanation_question": "- Adopt a **hybrid architecture** based on Samba, combining Mamba with sliding window attention.\n- **Continual pre-training** evolves the model to full attention to support 32K token contexts.\n- **Weight reuse** initializes larger models using weights from smaller models.\n- **Structured pruning** generates high-performance, smaller models from larger parent models.\n- **Post-training refinement** uses supervised fine-tuning (SFT) and direct preference optimization (DPO) with synthetic Japanese instruction data.",
+        "problem_definition_question": "- **High computational costs** and inefficiencies in inference for long sequences remain significant challenges.\n- **Scarcity of high-quality, large-scale training data** for non-English languages like Japanese limits model development.\n- **Existing models struggle with long-context retrieval** and maintaining performance across diverse tasks.\n- **Current methods lack robustness** in handling Japanese-specific knowledge and language nuances.\n- **There is a need for efficient architectures** that balance performance, scalability, and resource usage effectively."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 3: pfgen-bench Results",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363175.5.jpeg"
+        },
+        {
+          "caption": "Figure 1: Samba architecture, combining Mamba with sliding window attention. Note that x is a sequence of token features, h and h \u2032 are mamba\u2019s hidden states, and kv stands for the key-value cache.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363175.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Training loss during weight reusing experiments. Blue represents training an 8B model from random initialization, while red shows results using weight reusing initialization.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363175.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: Overview of the pruning process. After pruning PLaMo 2 8B to retain only essential weights, we performed retraining using knowledge distillation as the teacher model.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4363175.2.jpeg"
+        },
+        {
+          "caption": "Table 1: JMMLU and MMLU Results",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363175.3.jpeg"
+        },
+        {
+          "caption": "Table 2: JHumanEval and HumanEval+ Results",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4363175.4.jpeg"
+        }
+      ],
+      "title": "PLaMo 2 Technical Report",
+      "total_likes": 0,
+      "total_read": 6,
+      "url": "https://arxiv.org/pdf/2509.04897",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.04897.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large Language Models (LLMs) demonstrate exceptional capabilities across various tasks, but their deployment is constrained by high computational and memory costs. Model pruning provides an effective means to alleviate these demands. However, existing methods often ignore the characteristics of prefill-decode (PD) disaggregation in practice. In this paper, we propose a novel pruning method for PD disaggregation inference, enabling more precise and efficient block and KV Cache pruning. Our approach constructs pruning and distillation sets to perform iterative block removal independently for the prefill and decode stages, obtaining better pruning solutions. Moreover, we introduce a cache pruning mechanism that selectively reuses entries corresponding to the first and last token sequences within designated layers, reducing communication costs while incurring only negligible computational overhead. Extensive experiments demonstrate that our approach consistently achieves strong performance in both PD disaggregation and PD unified settings without disaggregation. Under the same (default) settings, our method achieves improved performance and faster inference, along with a 4.95$\\times$ reduction in data transmission bandwidth consumption.",
+      "affiliations": [
+        "Beijing Academy of Artificial Intelligence"
+      ],
+      "arxiv_id": "2509.04467",
+      "arxives_doi": null,
+      "authors": "Hao Zhang, Lyu mengsi, ZhuoChen, Xingrun Xing, Yulong Ao, Yonghua Lin",
+      "bookmarked": 0,
+      "cache_file_name": "Zhang2025ARXIV_PDTrim_Targeted_Pruning_for.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": 0.0,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757289600000,
+      "display_venue": "ArXiv 2026 (January 1)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": null,
+      "inferredHighlights": [
+        {
+          "endIndex": 488,
+          "highlightClass": "primary-highlight",
+          "startIndex": 344
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Large Language Model Pruning,  Prefill-Decode Disaggregation,  KV Cache Optimization,  PD Disaggregation,  Inference Efficiency",
+        "method_shortname": "Enhancing LLM Efficiency",
+        "sub_subfield": "Large Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3966882,
+      "paper_id": 4362745,
+      "paper_source_id": null,
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-01",
+      "ranking_score": 0.4000820755,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "5c234f254fa626ca7059d162716bcd3761909357",
+      "shortened_authors": "Hao Zhang, Lyu mengsi, ZhuoChen, Xingrun Xing, Yulong Ao, Yonghua Lin",
+      "source": "conference_scraper",
+      "summaries": {
+        "contributions_question": "- **Introduce a novel pruning method** for LLMs that integrates with PD disaggregation, enabling more precise and efficient block and KV Cache pruning.\n- **Develop a stage-aware strategy** for iterative block removal, tailored to prefill and decode stages, achieving better pruning solutions than prior approaches.\n- **Propose a token-aware cache pruning mechanism** that selectively reuses KV Cache during decode, significantly reducing bandwidth consumption with minimal overhead.\n- **Demonstrate strong performance** across both PD disaggregation and unified settings without disaggregation, achieving a 20.56% inference speedup and 4.95\u00d7 reduction in data transmission bandwidth.",
+        "evaluation_question": "- Achieves **20.56%** inference speedup and **4.95\u00d7** reduction in data transmission bandwidth compared to baseline methods.\n- **Outperforms existing pruning techniques** on multiple benchmarks including MMLU, CMMLU, and ARC-Easy.\n- **Maintains high accuracy** even after aggressive pruning, with results comparable to dense models.\n- **Demonstrates robustness** across different model sizes and architectures, including LLaMA3.1-8B, Qwen2.5-7B, and Qwen2.5-14B.",
+        "insights_takeaways_question": "- **Targeted pruning significantly improves efficiency** without compromising model performance, achieving notable speedups and bandwidth reductions.\n- **Stage-specific pruning strategies** allow for more precise optimization, addressing the unique needs of prefill and decode stages.\n- **Selective KV Cache reuse during decode** minimizes data transfer while maintaining model accuracy.\n- **The integration of pruning with PD disaggregation** opens new avenues for optimizing large-scale language model inference.\n- **The method's adaptability across different model architectures and sizes** highlights its broad applicability in real-world deployment scenarios.",
+        "method_explanation_question": "- **Implement a stage-aware pruning strategy** that independently optimizes block removal for prefill and decode stages using dedicated pruning and distillation sets.\n- **Construct pruning and distillation sets** based on cosine similarity metrics to identify redundant blocks and merge consecutive blocks for distillation.\n- **Apply selective KV Cache pruning** by retaining all KV Cache during prefill and reusing only the first and last token sequences during decode for selected layers.\n- **Iteratively refine the pruning set** using a probabilistic approach to minimize performance impact while maximizing efficiency gains.\n- **Reduce communication costs** by minimizing unnecessary KV Cache transmission between prefill and decode nodes.",
+        "problem_definition_question": "- **LLMs face significant computational and memory challenges** during inference due to their large scale and complex architecture.\n- **Existing pruning methods often overlook the unique characteristics of PD disaggregation** systems, leading to suboptimal performance and inefficiencies.\n- **The prefill and decode stages exhibit distinct sensitivities to pruning**, making uniform pruning strategies ineffective.\n- **High bandwidth overhead is a major bottleneck** in PD disaggregation setups due to extensive data transfer requirements such as KV Cache.\n- **There is a need for a more targeted and efficient pruning approach** that aligns with the specific resource constraints of each inference stage."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Overview of our pruning method combined with PD disaggregation. Once executed on the prefill node, prompts can be distributed to multiple decode nodes for further processing. The prefill and decode nodes employ distinct block removal combinations, which include both pruning and distillation. In this illustration, the LLM consists of 8 blocks in total. On the prefill node, blocks 2 and 4 are removed, while on the decode node, block 5 is additionally removed, and blocks 6 and 7 are distilled into a single block ([6,7]). The yellow KV Cache needs to be transmitted from the prefill node to the decode nodes, while the white KV Cache does not require transmission. Our algorithm selects certain layers (like layer 8). During the decode stage, we only utilize the KV Cache for the first and last token sequences generated in the prefill stage for our selected layers. For layers that are not selected (like layer 1), the entire KV Cache needs to be transmitted. It should be noted that the deleted layers (blocks) do not need KV Cache transmission.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4362745.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Performance comparison of pruning methods in LLMs across a variety of benchmarks. To increase the diversity of evaluation, we apply pruning rates of 13.6%, 24.4%, 15.3%, and 18.6% for the four models, corresponding to commonly used pruning ratios.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4362745.1.jpeg"
+        }
+      ],
+      "title": "PDTrim: Targeted Pruning for Prefill-Decode Disaggregation in Inference",
+      "total_likes": 3,
+      "total_read": 9,
+      "url": "https://openreview.net/pdf/a92d9eac1131d56f485cce072fda18cc195265eb.pdf",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Fopenreview.net%2Fpdf%2Fa92d9eac1131d56f485cce072fda18cc195265eb.pdf.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    }
+  ],
+  "digest_papers": 14,
+  "display_next_date": true,
+  "empty_digest": false,
+  "first_paper_id_below_decision_boundary": 4362884,
+  "from_date": "Mon, 08 Sep 2025 00:00:00 GMT",
+  "has_more_papers_in_digest": false,
+  "next_date": "2025-09-09",
+  "no_weekdays_selected": false,
+  "pdf_viewer_url": null,
+  "prev_date": "2025-09-05",
+  "read_paper_ids": [],
+  "seen_welcome_tutorial": true,
+  "success": true,
+  "to_date": "Mon, 08 Sep 2025 00:00:00 GMT",
+  "total_papers": "1030",
+  "trending": [
+    {
+      "abstract": "Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/",
+      "author": "Li et al.",
+      "authors": "Chunyang Li, Yuanbo Yang, Jiahao Shao, Hongyu Zhou, Katja Schwarz, Yiyi Liao",
+      "cache_file_name": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174518,
+      "paper_id": 4579856,
+      "pdf_download_success": true,
+      "publication_date": 1770576550000,
+      "ranking_score": 0.1357062383,
+      "rating": null,
+      "read": false,
+      "short_title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "source": "arxiv",
+      "title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "total_dislikes": 8,
+      "total_likes": 47,
+      "total_read": 176,
+      "url": "https://arxiv.org/pdf/2602.08068"
+    },
+    {
+      "abstract": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders, rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation, RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+      "author": "Kumar et al.",
+      "authors": "Amandeep Kumar, Vishal M. Patel",
+      "cache_file_name": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176575,
+      "paper_id": 4581913,
+      "pdf_download_success": true,
+      "publication_date": 1770753484000,
+      "ranking_score": 0.8327815131,
+      "rating": null,
+      "read": false,
+      "short_title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "source": "arxiv",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "total_dislikes": 6,
+      "total_likes": 36,
+      "total_read": 134,
+      "url": "https://arxiv.org/pdf/2602.10099"
+    },
+    {
+      "abstract": "We introduce MotionCrafter, a video diffusion-based framework that jointly reconstructs 4D geometry and estimates dense motion from a monocular video. The core of our method is a novel joint representation of dense 3D point maps and 3D scene flows in a shared coordinate system, and a novel 4D VAE to effectively learn this representation. Unlike prior work that forces the 3D value and latents to align strictly with RGB VAE latents-despite their fundamentally different distributions-we show that such alignment is unnecessary and leads to suboptimal performance. Instead, we introduce a new data normalization and VAE training strategy that better transfers diffusion priors and greatly improves reconstruction quality. Extensive experiments across multiple datasets demonstrate that MotionCrafter achieves state-of-the-art performance in both geometry reconstruction and dense scene flow estimation, delivering 38.64% and 25.0% improvements in geometry and motion reconstruction, respectively, all without any post-optimization. Project page: https://ruijiezhu94.github.io/MotionCrafter_Page",
+      "author": "Zhu et al.",
+      "authors": "Ruijie Zhu, Jiahao Lu, Wenbo Hu, Xiaoguang Han, Jianfei Cai, Ying Shan, Chuanxia Zheng",
+      "cache_file_name": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4175456,
+      "paper_id": 4580794,
+      "pdf_download_success": true,
+      "publication_date": 1770663492000,
+      "ranking_score": 0.1515375946,
+      "rating": null,
+      "read": false,
+      "short_title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "source": "arxiv",
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "total_dislikes": 6,
+      "total_likes": 29,
+      "total_read": 102,
+      "url": "https://arxiv.org/pdf/2602.08961"
+    },
+    {
+      "abstract": "Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \\textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \\textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \\textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+      "author": "Xiang et al.",
+      "authors": "Chendong Xiang, Jiajun Liu, Jintao Zhang, Xiao Yang, Zhengwei Fang, Shizun Wang, Zijun Wang, Yingtian Zou, Hang Su, Jun Zhu",
+      "cache_file_name": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174295,
+      "paper_id": 4579633,
+      "pdf_download_success": true,
+      "publication_date": 1770541276000,
+      "ranking_score": 0.2729207035,
+      "rating": null,
+      "read": false,
+      "short_title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "source": "arxiv",
+      "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "total_dislikes": 2,
+      "total_likes": 18,
+      "total_read": 59,
+      "url": "https://arxiv.org/pdf/2602.07854"
+    },
+    {
+      "abstract": "Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$\u0394$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.",
+      "author": "Jiang et al.",
+      "authors": "Yuxin Jiang, Yuchao Gu, Ivor W. Tsang, Mike Zheng Shou",
+      "cache_file_name": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176574,
+      "paper_id": 4581912,
+      "pdf_download_success": true,
+      "publication_date": 1770753521000,
+      "ranking_score": 0.1189741714,
+      "rating": null,
+      "read": false,
+      "short_title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "source": "arxiv",
+      "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "total_dislikes": 3,
+      "total_likes": 15,
+      "total_read": 58,
+      "url": "https://arxiv.org/pdf/2602.10104"
+    },
+    {
+      "abstract": "Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility, visual realism, and physical stability. Through iterative reasoning and adaptive tool selection, it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training. Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI. Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage.",
+      "author": "Xia et al.",
+      "authors": "Hongchi Xia, Xuan Li, Zhaoshuo Li, Qianli Ma, Jiashu Xu, Ming-Yu Liu, Yin Cui, Tsung-Yi Lin, Wei-Chiu Ma, Shenlong Wang, Shuran Song, Fangyin Wei",
+      "cache_file_name": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176614,
+      "paper_id": 4581952,
+      "pdf_download_success": true,
+      "publication_date": 1770753595000,
+      "ranking_score": 0.0253882568,
+      "rating": null,
+      "read": false,
+      "short_title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "source": "arxiv",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "total_dislikes": 3,
+      "total_likes": 11,
+      "total_read": 51,
+      "url": "https://arxiv.org/pdf/2602.10116"
+    },
+    {
+      "abstract": "End-to-end (E2E) autonomous driving has recently attracted increasing interest in unifying Vision-Language-Action (VLA) with World Models to enhance decision-making and forward-looking imagination. However, existing methods fail to effectively unify future scene evolution and action planning within a single architecture due to inadequate sharing of latent states, limiting the impact of visual imagination on action decisions. To address this limitation, we propose DriveWorld-VLA, a novel framework that unifies world modeling and planning within a latent space by tightly integrating VLA and world models at the representation level, which enables the VLA planner to benefit directly from holistic scene-evolution modeling and reducing reliance on dense annotated supervision. Additionally, DriveWorld-VLA incorporates the latent states of the world model as core decision-making states for the VLA planner, facilitating the planner to assess how candidate actions impact future scene evolution. By conducting world modeling entirely in the latent space, DriveWorld-VLA supports controllable, action-conditioned imagination at the feature level, avoiding expensive pixel-level rollouts. Extensive open-loop and closed-loop evaluations demonstrate the effectiveness of DriveWorld-VLA, which achieves state-of-the-art performance with 91.3 PDMS on NAVSIMv1, 86.8 EPDMS on NAVSIMv2, and 0.16 3-second average collision rate on nuScenes. Code and models will be released in https://github.com/liulin815/DriveWorld-VLA.git.",
+      "author": "jia et al.",
+      "authors": "Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen",
+      "cache_file_name": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172917,
+      "paper_id": 4578255,
+      "pdf_download_success": true,
+      "publication_date": 1770373548000,
+      "ranking_score": 0.265241331,
+      "rating": null,
+      "read": false,
+      "short_title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Drivi",
+      "source": "arxiv",
+      "title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving",
+      "total_dislikes": 0,
+      "total_likes": 21,
+      "total_read": 46,
+      "url": "https://arxiv.org/pdf/2602.06521"
+    },
+    {
+      "abstract": "Diffusion and flow models have become the dominant paradigm for generative modeling on Riemannian manifolds, with successful applications in protein backbone generation and DNA sequence design. However, these methods require tens to hundreds of neural network evaluations at inference time, which can become a computational bottleneck in large-scale scientific sampling workflows. We introduce Riemannian MeanFlow~(RMF), a framework for learning flow maps directly on manifolds, enabling high-quality generations with as few as one forward pass. We derive three equivalent characterizations of the manifold average velocity (Eulerian, Lagrangian, and semigroup identities), and analyze parameterizations and stabilization techniques to improve training on high-dimensional manifolds. In promoter DNA design and protein backbone generation settings, RMF achieves comparable sample quality to prior methods while requiring up to 10$\\times$ fewer function evaluations. Finally, we show that few-step flow maps enable efficient reward-guided design through reward look-ahead, where terminal states can be predicted from intermediate steps at minimal additional cost.",
+      "author": "Woo et al.",
+      "authors": "Dongyeop Woo, Marta Skreta, Seonghyun Park, Sungsoo Ahn, Kirill Neklyudov",
+      "cache_file_name": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174186,
+      "paper_id": 4579524,
+      "pdf_download_success": true,
+      "publication_date": 1770514877000,
+      "ranking_score": 0.3225612556,
+      "rating": null,
+      "read": false,
+      "short_title": "Riemannian MeanFlow",
+      "source": "arxiv",
+      "title": "Riemannian MeanFlow",
+      "total_dislikes": 3,
+      "total_likes": 12,
+      "total_read": 45,
+      "url": "https://arxiv.org/pdf/2602.07744"
+    }
+  ],
+  "use_scholar_inbox_pdf_server": false,
+  "username": "Longxuan Yu"
+}

@@ -1,0 +1,1705 @@
+{
+  "admin_proceedings_msg": "",
+  "conf_notification_text": "",
+  "current_digest_date": "2025-11-22",
+  "custom_digest_range": false,
+  "digest_df": [
+    {
+      "abbreviation": null,
+      "abstract": "Motivation: We propose DRIFT, a framework that integrates spatial context into the input representations for foundation models by leveraging diffusion on spatial graphs derived from spatial transcriptomics (ST) data. ST captures gene expression profiles while preserving spatial context, enabling downstream analysis tasks such as cell-type annotation, clustering, and cross-sample alignment. However, due to its emerging nature, there are very few foundation models that can utilize ST data to generate embeddings generalizable across multiple tasks. Meanwhile, well-documented foundational models trained on large-scale single-cell gene expression (scRNA-seq) data have demonstrated generalizable performance across scRNA-seq assays, tissues, and tasks; however, they do not leverage the spatial information in ST data. We use heat kernel diffusion to propagate embeddings across spatial neighborhoods, incorporating the local neighborhood context of the ST data while preserving the transcriptomic representations learned by state-of-the-art single-cell foundation models. Results: We systematically benchmark five foundational models (both scRNA-seq and ST-based) across key ST tasks such as annotation, alignment, and clustering, ensuring a comprehensive evaluation of our proposed framework. Our results show that DRIFT significantly improves the performance of existing foundational models on ST data over specialized state-of-the-art methods. Overall, DRIFT is an effective, accessible, and generalizable framework that bridges the gap toward universal models for modeling spatial transcriptomics. Availability and Implementation: Code and data available at <a href='https://github.com/rsinghlab/DRIFT' target='_blank'>https://github.com/rsinghlab/DRIFT</a>.",
+      "affiliations": null,
+      "arxiv_id": null,
+      "arxives_doi": "10.1101/2025.11.20.689624",
+      "authors": "Jain, A.,  Pham, T. M.,  Laidlaw, D. H.,  Ma, Y.,  Singh, R.",
+      "bookmarked": 0,
+      "cache_file_name": "Jain2025BIORXIV_Diffusion_based_Representation_Integration.pdf",
+      "category": "Biology",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "bioRxiv 2026 (January 30)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://www.biorxiv.org/content/10.1101/2025.11.20.689624v1.full",
+      "inferredHighlights": [
+        {
+          "endIndex": 215,
+          "highlightClass": "primary-highlight",
+          "startIndex": 0
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4078054,
+      "paper_id": 4473988,
+      "paper_source_id": "10.1101/2025.11.20.689624",
+      "pdf_download_success": false,
+      "project_link": "https://github.com/rsinghlab/DRIFT",
+      "project_url": null,
+      "publication_date": "2026-01-30",
+      "ranking_score": 0.7967216219,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "a7eee83fd47b7a063cf27a7fd5155a406168d311",
+      "shortened_authors": "Jain, A.,  Pham, T. M.,  Laidlaw, D. H.,  Ma, Y.,  Singh, R.",
+      "source": "biorxiv",
+      "summaries": {},
+      "teaser_figures": null,
+      "title": "Diffusion-based Representation Integration for Foundation Models Improves Spatial Transcriptomics Analysis",
+      "total_likes": 2,
+      "total_read": 8,
+      "url": "https://www.biorxiv.org/content/10.1101/2025.11.20.689624v2.full.pdf",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F2025.11.20.689624v2.full.pdf.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "We present UniModel, a unified generative model that jointly supports visual understanding and visual generation within a single pixel-to-pixel diffusion framework. Our goal is to achieve unification along three axes: the model, the tasks, and the representations. At the representation level, we eliminate modality discrepancies by mapping both text and images into a shared visual space: textual prompts are rendered as painted text images on a clean canvas, and all inputs and outputs are treated purely as RGB pixels. This yields a fully vision-native formulation of multimodal learning. At the task level, a broad range of vision-language problems are cast as pixel-to-pixel transformations in this visual space. For understanding tasks, the model takes an RGB image and produces a painted text image that visually encodes the semantic prediction. For generation tasks, painted text images serve as visual conditions that guide realistic and semantically aligned image synthesis. Captioning and text-to-image generation thus become different directions of the same underlying visual translation process. At the model level, we instantiate a single Unified Diffusion Transformer trained with rectified flow in pixel space. A shared backbone jointly learns bidirectional mappings between natural images and painted text images, with lightweight task embeddings to specify the desired direction. Experiments on text-to-image synthesis and image-to-text understanding demonstrate strong cross-modal alignment and emergent controllability such as cycle-consistent image-caption-image loops. Our initial exploration suggests that unifying model, tasks, and representations in a single visual space is a promising paradigm for general-purpose multimodal intelligence.",
+      "affiliations": [
+        "Institute of Artificial Intelligence (TeleAI), China Telecom"
+      ],
+      "arxiv_id": "2511.16917",
+      "arxives_doi": null,
+      "authors": "Chi Zhang, Jiepeng Wang, Youming Wang, Yuanzhi Liang, Xiaoyan Yang, Zuoxin Li, Haibin Huang, Xuelong Li",
+      "bookmarked": 0,
+      "cache_file_name": "Zhang2025ARXIV_UniModel_A_Visual_Only.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.16917",
+      "inferredHighlights": [
+        {
+          "endIndex": 263,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 165
+        },
+        {
+          "endIndex": 1225,
+          "highlightClass": "primary-highlight",
+          "startIndex": 1109
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Visual Representation,  Diffusion Transformers,  Rectified Flow,  VAE,  Bidirectional Training",
+        "method_shortname": "UniModel",
+        "sub_subfield": "Multimodal Understanding and Generation",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077285,
+      "paper_id": 4473219,
+      "paper_source_id": "2511.16917",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.7884538719,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "cd3ed14c462318fb706a0403f5cdce14a5638825",
+      "shortened_authors": "Chi Zhang, Jiepeng Wang, Youming Wang, Yuanzhi Liang, Xiaoyan Yang, Zuoxin Li, Haibin Huang, Xuelong Li",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes a **representation-level unification** strategy that maps both text and images into a shared visual space via painted text images, enabling a fully vision-native formulation of multimodal learning.\n- **Introduces UniModel**, a single bidirectional diffusion transformer trained with rectified-flow objectives on VAE latents, which realizes model-level unification with shared parameters and lightweight task embeddings.\n- **Achieves task-level unification** by casting a broad range of vision\u2013language tasks as pixel-to-pixel translations between natural and painted images.\n- **Demonstrates strong cross-modal alignment** and emergent controllability such as cycle-consistent image\u2013caption\u2013image reconstruction.",
+        "evaluation_question": "",
+        "method_explanation_question": "- All inputs\u2014natural or text-rendered\u2014are encoded by a shared visual encoder into semantic hidden states, which condition the diffusion transformer.\n- A pretrained VAE maps images to a latent space where the rectified-flow diffusion process operates.\n- For understanding tasks, the model takes an RGB image and generates a painted text image; for generation tasks, the input is a painted text image and the output is RGB.\n- To train the model bidirectionally, input\u2013output pairs (RGB \u2192 text or text \u2192 RGB) are randomly swapped with equal probability, encouraging symmetric learning of rendering and reconstruction.",
+        "problem_definition_question": "- Existing unified models remain only partially unified, relying on heterogeneous representations and fragmented task formulations.\n- **Modality gaps** between discrete symbols and continuous pixels hinder coherent processing of text and images.\n- **Lack of bidirectional control** limits the ability to seamlessly integrate understanding and generation within a single framework."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Unified visual representation. (a) Given an RGB image, the model outputs its corresponding painted text image. (b) Using the painted text image as a condition, the model generates a realistic RGB image.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473219.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Unified bidirectional generation. (a) Image-to-text: the model encodes an input image into conditional states and generates its text-painted counterpart. (b) Text-to-Image: provided a painted text image, the model synthesizes a realistic RGB image using the same unified architecture.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473219.1.jpeg"
+        },
+        {
+          "caption": "Figure 3. Gallery of text-to-image generation results.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473219.2.jpeg"
+        },
+        {
+          "caption": "Figure 4. Gallery of image-to-textimage generation results.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473219.3.jpeg"
+        },
+        {
+          "caption": "Figure 5. Cycle inference results. Starting from an input image, the model generates a painted text description and then reconstructs an image from the painted text. The reconstructed image preserves the key semantics and visual attributes of the original, demonstrating strong bidirectional consistency in our unified visual representation.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473219.4.jpeg"
+        },
+        {
+          "caption": "Figure 6. Failure case. Although the description is semantically reasonable, the painted text includes incorrect characters and misspelled words, highlighting remaining challenges in accurate word-level generation.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473219.5.jpeg"
+        }
+      ],
+      "title": "UniModel: A Visual-Only Framework for Unified Multimodal Understanding and Generation",
+      "total_likes": 26,
+      "total_read": 198,
+      "url": "https://arxiv.org/pdf/2511.16917",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.16917.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Enforcing the alignment of internal representations in diffusion or flow-based models with those from pretrained self-supervised models during training has recently been shown to provide a powerful inductive bias, significantly improving both convergence speed and the quality of generated images. In this paper, we move beyond training and instead focus on inverse problems, where pretrained diffusion or flow-based models are used as {\\it priors}. We propose applying {\\it representational alignment} of diffusion/flow-based models with a {\\it pretrained self-supervised visual encoder}, such as \\textsc{Dinov2}, for guidance at inference time. Although the ground truth signal is unavailable in inverse problems, we show that representational alignment based on approximations of the ground truth can yield significant gains, steering the reverse process of diffusion/flow-based models toward higher-quality reconstructed images. We provide theoretical insights by uncovering a connection between representational alignment and perceptual metrics. Under mild assumptions, we further show that our approach can improve the perception\u2013distortion trade-off frontier, i.e., enhance perceptual quality with negligible degradation in distortion. Finally, we demonstrate its versatility by integrating it into multiple state-of-the-art solvers. Extensive experiments on super-resolution, box inpainting, Gaussian deblurring, and motion deblurring show that our proposed method consistently enhances reconstruction quality.",
+      "affiliations": [
+        "Department of Computer Science, University of Warwick",
+        "CSAIL Massachusetts Institute of Technology"
+      ],
+      "arxiv_id": "2511.16870",
+      "arxives_doi": null,
+      "authors": "Loukas Sfountouris, Giannis Daras, Paris Giampouras",
+      "bookmarked": 0,
+      "cache_file_name": "Sfountouris2025ARXIV_Align_Invert_Solving_Inverse.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.854867301,
+        0.5008729222,
+        0.5132962423,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": 0.0,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2026 (January 1)",
+      "first_page_image": null,
+      "github_url": "https://github.com/Sfountouris/Align_And_Invert",
+      "has_ranking": true,
+      "html_link": null,
+      "inferredHighlights": [
+        {
+          "endIndex": 372,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 260
+        },
+        {
+          "endIndex": 583,
+          "highlightClass": "primary-highlight",
+          "startIndex": 374
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Diffusion Models,  Flow-based Models,  Representation Alignment (R EPA),  DINOv2,  Maximum Mean Discrepancy (MMD),  Latent Diffusion Models,  Perceptual Similarity,  Inference-time Regularization",
+        "method_shortname": "R EPA",
+        "sub_subfield": "Inverse Problems",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077203,
+      "paper_id": 4473135,
+      "paper_source_id": null,
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-01",
+      "ranking_score": 0.7323030221,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "1e198fd9b27de542459202cbec16f6ab4f5739e3",
+      "shortened_authors": "Loukas Sfountouris, Giannis Daras, Paris Giampouras",
+      "source": "conference_scraper",
+      "summaries": {
+        "contributions_question": "- **Introduces R EPA**, a method that aligns diffusion or flow-based model representations with **DINOv2 embeddings** to improve perceptual fidelity and convergence in inverse problems.\n- **Theoretical insights** show the connection between R EPA and divergence measures in DINOv2 feature space, as well as its effect on internal diffusion representations.\n- **Demonstrates effectiveness** across multiple inverse problems (super-resolution, inpainting, deblurring) with consistent improvements in perceptual metrics like LPIPS and FID.\n- **Reduces discretization steps** significantly without compromising performance, offering efficiency gains for inverse problem solvers.",
+        "evaluation_question": "- On *super-resolution*, achieves comparable PSNR and SSIM while reducing LPIPS and FID with **~4\u00d7 fewer steps** compared to baselines.\n- For *Gaussian deblurring*, REPA improves perceptual quality with **~4\u00d7 fewer steps** than Latent DPS.\n- In *motion deblurring*, REPA matches baseline performance with **~2\u00d7 fewer steps**, showing significant efficiency gains.\n- Qualitative results show sharper reconstructions with fewer artifacts when using R EPA compared to unregularized methods.",
+        "method_explanation_question": "- Uses a **latent diffusion model** with a **projection head** mapping hidden states into the **DINOv2 embedding space** for representation alignment.\n- Applies an **R EPA regularizer** during inference by computing cosine similarities between proxy features and model outputs to guide reconstruction.\n- Augments the standard posterior sampling objective with a **representation-guidance term** involving DINOv2 features for alignment.\n- Implements the **R EPA update** via gradient ascent on the cosine similarity loss, adjusting latent variables to better match clean image representations.",
+        "problem_definition_question": "- Diffusion and flow-based models struggle with **highly detailed reconstructions** in cases of **severe degradation** and **complex scenes** like natural images with rich textures.\n- **Latent diffusion models** face additional challenges due to **nonlinearities** introduced by encoder-decoder architectures, limiting their ability to produce high-quality outputs.\n- Current approaches lack **efficient inference-time regularization** strategies to enhance perceptual fidelity and reduce computational demands in inverse problems.\n- There is a **need for scalable solutions** that maintain high-quality reconstructions while minimizing the number of required discretization steps."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Overview of our proposed framework. Left: Box inpainting (top row) and Gaussian deblurring (bottom row) results, where adding R EPA (third column) improves the perceptual quality of reconstructed images compared to the baseline without R EPA (second column). Right: Alignment mechanism between diffusion-model features and pretrained DINOv2 embeddings, combined with measurement matching. An approximate reconstructed image is provided as input to the DINOv2 encoder for computing the alignment signal.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473135.0.jpeg"
+        }
+      ],
+      "title": "Align & Invert: Solving Inverse Problems with Diffusion and Flow-based Models via Representational Alignment",
+      "total_likes": 5,
+      "total_read": 69,
+      "url": "https://www.semanticscholar.org/paper/1e198fd9b27de542459202cbec16f6ab4f5739e3",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Fwww.semanticscholar.org%2Fpaper%2F1e198fd9b27de542459202cbec16f6ab4f5739e3.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Position information is essential for language modeling. In softmax transformers, Rotary Position Embeddings (\\textit{RoPE}) encode positions through \\textit{fixed-angle} rotations, while in linear transformers, order is handled via input-dependent (selective) gating that decays past key-value associations. Selectivity has generally been shown to improve language-related tasks. Inspired by this, we introduce \\textit{Selective RoPE}, an \\textit{input-dependent} rotary embedding mechanism, that generalizes \\textit{RoPE}, and enables rotation in \\textit{arbitrary angles} for both linear and softmax transformers. We show that softmax attention already performs a hidden form of these rotations on query-key pairs, uncovering an implicit positional structure. We further show that in state-space models and gated linear transformers, the real part manages forgetting while the imaginary part encodes positions through rotations. We validate our method by equipping gated transformers with \\textit{Selective RoPE}, demonstrating that its input-dependent rotations improve performance in language modeling and on difficult sequence tasks like copying, state tracking, and retrieval.",
+      "affiliations": [
+        "University of Freiburg",
+        "Prior Labs",
+        "ELLIS Institute T\"ubingen",
+        "LIONS, EPFL",
+        "Max-Planck-Institute for Intelligent Systems"
+      ],
+      "arxiv_id": "2511.17388",
+      "arxives_doi": null,
+      "authors": "Sajad Movahedi, Timur Carstensen, Arshia Afzal, Frank Hutter, Antonio Orvieto, Volkan Cevher",
+      "bookmarked": 0,
+      "cache_file_name": "Movahedi2025ARXIV_Selective_Rotary_Position_Embedding.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9140295206,
+        0.612822313,
+        0.5712923788,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": 2025.0,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.17388",
+      "inferredHighlights": [
+        {
+          "endIndex": 615,
+          "highlightClass": "primary-highlight",
+          "startIndex": 381
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Selective RoPE,  Rotary Position Embedding (RoPE),  Gated Linear Attention (GLA),  Spectral Leakage,  Exponential Decay,  State Tracking,  Language Modeling",
+        "method_shortname": "Selective RoPE",
+        "sub_subfield": "Language Modeling",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077869,
+      "paper_id": 4473803,
+      "paper_source_id": "2511.17388",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.6926903505,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "13ea42a4879f39eb13cb0aae7c2d53e2c574826c",
+      "shortened_authors": "Sajad Movahedi, Timur Carstensen, Arshia Afzal, Frank Hutter, Antonio Orvieto, Volkan Cevher",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **Selective RoPE**, an input-dependent rotary embedding mechanism that generalizes RoPE and enables rotation in arbitrary angles for both linear and softmax transformers.\n- **Selective RoPE** improves performance in language modeling and on difficult sequence tasks like copying, state tracking, and retrieval.\n- Unifies the view that effective recall needs both **rotation** and **decay**, with **rotation** encoding relative position and **decay** selectively discarding past key-value associations.\n- Demonstrates that **softmax attention** already performs hidden selective rotations on query-key pairs, uncovering an implicit positional structure.\n- **Selective RoPE** combined with gating mechanisms enhances the expressivity and performance of models like Gated Linear Attention (GLA).",
+        "evaluation_question": "- On *MQAR* results, GLA with Selective RoPE achieves greater improvement over the base model with no positional embedding.\n- On *MAD* benchmark, Selective RoPE consistently improves performance over NoPE and RoPE on almost all considered tasks.\n- In *string copying* tasks, Selective RoPE learns to length extrapolate very robustly, outperforming alternatives.\n- For *state tracking* on S2 and A3, GLA with Selective RoPE demonstrates superior performance compared to other methods.\n- Selective RoPE improves average downstream accuracy over both RoPE and NoPE across GLA and Gated DeltaNet.",
+        "method_explanation_question": "- Implements **Selective RoPE** by applying input-dependent rotary position embeddings to queries and keys using a learned rotation matrix.\n- Uses a **learnable rotation matrix** parameterized by random Gaussian features conditioned on the input, enabling input-dependent rotations.\n- Integrates a **sigmoid gate** on rotation angles to allow the model to control whether to rotate or not.\n- Adds a **learnable bias term** independent of relative token positions to enhance flexibility.\n- Applies **weight normalization** on the input projection to stabilize training and improve performance.",
+        "problem_definition_question": "- Linear attention models suffer from **spectral leakage**, limiting their ability to encode higher frequencies and leading to poor approximation of input signals.\n- **Fixed-state size** in modern recurrent architectures hinders long-horizon retrieval by requiring selective retention or overwrite of information.\n- **Lack of decay mechanisms** in modern recurrent architectures limits their ability to manage state transitions effectively.\n- **Purely complex linear models** without decay components fail to generalize well on long sequences due to spectral leakage issues.\n- **Traditional softmax attention** lacks explicit decay mechanisms, which are essential for managing long-term dependencies and improving recall."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Our methods (right two columns) are highlighted with a light blue background. Left to right: GLA, RoPE, Selective RoPE (ours), Selective RoPE + Decay (ours). As we observe, the forget gate only encodes positional information through scale. On the other hand, both RoPE and Selective RoPE allow for positional information to be encoded through rotation, with the selective variant taking advantage of arbitrary angles. Combining the two methods yields the best results. Based on our recipe, we instantiate a complex version of Gated Linear Attention (GLA) (Yang et al., 2024a) and demonstrate its superior performance and expressivity. In practice, we show that, by using the RoPE trick (Su et al., 2021), we are able to efficiently compute a complex GLA by applying a learned, input-dependent rotary position embedding to the queries and keys. Selective RoPE is easily incorporated into the query and keys of any gated linear transformer.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473803.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: The distribution of the phase temperatures in RoPE vs.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473803.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: The effects of windowing on the spectrogram of a finite sample of a sequence",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473803.2.jpeg"
+        },
+        {
+          "caption": "Figure 5: Prefill throughput on NVIDIA B200 with batch size=1",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473803.3.jpeg"
+        },
+        {
+          "caption": "Figure 6: Copying accuracy of GLA with CIs. Dashed line is the training sequence length.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473803.4.jpeg"
+        },
+        {
+          "caption": "Table 1: MAD benchmark results. We ablate the effectiveness of each extra component introduced to Selective RoPE on GLA. The best results are marked in bold and the second best in underline.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473803.5.jpeg"
+        },
+        {
+          "caption": "Figure 7: MQAR results.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473803.6.jpeg"
+        },
+        {
+          "caption": "Figure 8: State tracking peformance of GLA, Transformer, and DeltaNet with different positional embeddings on S 2 and A 3 . The models on S 2 were trained with one layer whereas DeltaNet was trained with two layers on A 3 . Vertical dashed line indicates training sequence length.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473803.7.jpeg"
+        },
+        {
+          "caption": "Table 2: Evaluation results on tasks from lm-eval-harness (Gao et al., 2024) for GLA (370M), Gated DeltaNet (370M), and FoX (370M) trained on 35B tokens of FineWeb (Penedo et al., 2024).",
+          "figureNumber": 8,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473803.8.jpeg"
+        }
+      ],
+      "title": "Selective Rotary Position Embedding",
+      "total_likes": 2,
+      "total_read": 16,
+      "url": "https://arxiv.org/pdf/2511.17388",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.17388.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Multimodal large language models (MLLMs) have achieved significant progress in image and language tasks due to the strong reasoning capability of large language models (LLMs). Nevertheless, most MLLMs suffer from limited spatial reasoning ability to interpret and infer spatial arrangements in three-dimensional space. In this work, we propose a novel vision encoder based on hierarchical fusion of geometry and semantics features, generating spatial-aware visual embedding and boosting the spatial grounding capability of MLLMs. Specifically, we first unveil that the spatial ambiguity shortcoming stems from the lossy embedding of the vision encoder utilized in most existing MLLMs (e.g., CLIP), restricted to instance-level semantic features. This motivates us to complement CLIP with the geometry features from vision-only self-supervised learning via a hierarchical adapter, enhancing the spatial awareness in the proposed SpatialGeo. The network is efficiently trained using pretrained LLaVA model and optimized with random feature dropping to avoid trivial solutions relying solely on the CLIP encoder. Experimental results show that SpatialGeo improves the accuracy in spatial reasoning tasks, enhancing state-of-the-art models by at least 8.0% in SpatialRGPT-Bench with approximately 50% less memory cost during inference. The source code is available via <a href='https://ricky-plus.github.io/SpatialGeoPages/' target='_blank'>https://ricky-plus.github.io/SpatialGeoPages/</a>.",
+      "affiliations": [
+        "School of Computer Science and Technology, Tongji University, Shanghai, China"
+      ],
+      "arxiv_id": "2511.17308",
+      "arxives_doi": null,
+      "authors": "Jiajie Guo, Qingpeng Zhu, Jin Zeng, Xiaolong Wu, Changyong He, Weida Wang",
+      "bookmarked": 0,
+      "cache_file_name": "Guo2025ARXIV_SpatialGeo_Boosting_Spatial_Reasoning.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.959098778,
+        0.7114513139,
+        0.6438877652,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.17308",
+      "inferredHighlights": [
+        {
+          "endIndex": 528,
+          "highlightClass": "primary-highlight",
+          "startIndex": 319
+        },
+        {
+          "endIndex": 744,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 530
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Geometry-Semantics Fusion,  Vision Encoder,  MoGe,  LLaVA,  Spatial Reasoning,  VQA,  CLIP",
+        "method_shortname": "SpatialGeo",
+        "sub_subfield": "Multimodal Large Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077729,
+      "paper_id": 4473663,
+      "paper_source_id": "2511.17308",
+      "pdf_download_success": true,
+      "project_link": "https://ricky-plus.github.io/SpatialGeoPages/",
+      "project_url": "https://ricky-plus.github.io/SpatialGeoPages/",
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.6499402921,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "9f066732a0ad6ae6ad44d8ca6b22b469603dafbd",
+      "shortened_authors": "Jiajie Guo, Qingpeng Zhu, Jin Zeng, Xiaolong Wu, Changyong He, Weida Wang",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Geometry-semantic fusion** in the vision encoder boosts spatial grounding capability of MLLMs.\n- **Hierarchical adapter** effectively fuses geometry and semantic features without extra 3D modules.\n- **Random feature dropping** strategy enhances training efficiency and avoids reliance on CLIP alone.\n- **SpatialGeo** achieves **8.0% improvement** over SOTA models on SpatialRGPT-Bench with **~50% less memory cost** during inference.\n- **Generalization ability** is maintained on general VQA benchmarks without sacrificing performance.",
+        "evaluation_question": "- On *SpatialRGPT-Bench*, **SpatialGeo** outperforms LLaVA-1.5-7B by **+8.0%** average accuracy despite using only one-fifth of the full OSD dataset.\n- **SpatialGeo-HA (\u22c6)** achieves **58.65%** accuracy on height, **41.35%** on width, and **56.60%** on vertical distance, surpassing all competing models.\n- **Ablation study** shows that **4-layer hierarchical adapter** significantly outperforms 3-layer and 5-layer variants.\n- **Random feature dropping** improves performance by emphasizing MoGe features over CLIP embeddings.\n- **SpatialGeo** excels on *QSpatial-Plus* with a **51% improvement** over LLaVA-1.5-7B.",
+        "method_explanation_question": "- **Geometry-aware MoGe encoder** generates spatial-aware visual embeddings from monocular images.\n- **Hierarchical adapter** progressively fuses multiple layers of MoGe encoder with CLIP features to create a mixture of geometry and semantic features.\n- **Interleaved feature fusion** maintains spatial order while combining CLIP and MoGe features for input into the LLM.\n- **Random feature dropping** during training enforces reliance on MoGe features, reducing dependency on CLIP.\n- **Instruction fine-tuning** with spatial-related VQA datasets adjusts the model to better comprehend spatial relationships.",
+        "problem_definition_question": "- Existing MLLMs suffer from **limited spatial reasoning** due to **lossy spatial encoding** in vision encoders like CLIP.\n- **Spatial ambiguity** prevents accurate inference of object sizes and relative distances in complex scenes.\n- **Current methods** rely on extra 3D modules or prompt engineering, increasing computational overhead and limiting accuracy.\n- **Lack of efficient training strategies** hinders the integration of geometry-aware features into MLLMs.\n- **Real-world applications** such as robotic navigation and visual planning are constrained by these limitations."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Fig. 1. SpatialGeo demonstrates superior performance in complex spatial reasoning tasks compared to SOTA models, including open-source LLaVA-v1.5 [12], closed-source GPT-4.1 [9] and 3D-LLM SpatialRGPT [14].",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473663.0.jpeg"
+        },
+        {
+          "caption": "Fig. 2. Left: The gap between CLIP and MoGe embedding space, where CLIP fails to distinguish images with different spatial information. Right: Overall architecture of SpatialGeo composed of CLIP module, MoGe module with hierarchical adapter, and LLM module with mixture of geometry and semantic features. The hierarchical adapter is first optimized with freezed vision encoders; then in instruction tuning, all adapters and LLM are updated with a random feature dropping strategy.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473663.1.jpeg"
+        },
+        {
+          "caption": "Fig. 3. Sample VQA in SpatialRGPT-Bench [14]. Compared to LLaVA-v1.5-7B [12], GPT-4.1 [9] and SpatialRGPT [14], SpatialGeo exhibits superior performance in quantitative spatial VQA tasks, e.g. , inferring object sizes and relative distances.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473663.2.jpeg"
+        },
+        {
+          "caption": "TABLE I E VALUATION ON S PATIAL RGPT-B ENCH WHERE THE BEST RESULTS ARE MARKED IN BOLD , AND THE SECOND BEST RESULTS ARE UNDERLINED .",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473663.3.jpeg"
+        },
+        {
+          "caption": "TABLE II G ENERALIZATION E VALUATION ON S PATIAL S CORE .",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473663.4.jpeg"
+        },
+        {
+          "caption": "TABLE III E VALUATION ON G ENERAL VQA B ENCHMARKS .",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473663.5.jpeg"
+        }
+      ],
+      "title": "SpatialGeo:Boosting Spatial Reasoning in Multimodal LLMs via Geometry-Semantics Fusion",
+      "total_likes": 4,
+      "total_read": 17,
+      "url": "https://arxiv.org/pdf/2511.17308",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.17308.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Parametric Retrieval-Augmented Generation (PRAG) is a novel RAG paradigm that integrates external knowledge directly into a Large Language Model (LLM) by parameterizing documents using LoRA adapters, demonstrating reduced inference costs compared to traditional RAG approaches. However, current PRAG approaches adopt a \\textbf{one-to-one} document encoding scheme, using a dedicated LoRA adapter for each individual document. This scheme introduces two major limitations: First, it leads to data scarcity, as the training datasets for individual LoRA adapters are limited. Second, it incurs high overhead during inference, requiring the merging of LLM weights with a new LoRA adapter for every candidate passage, which is computationally inefficient. To overcome these challenges, we propose a novel paradigm for encoding passages in PRAG that utilizes a latent routing encoding process (Poly-PRAG). During offline encoding, we treat the encoding of a set of documents as a multi-task learning process, where each passage is assigned a unique task identifier. By employing a routing function, we use a small set of latent LoRA adapters to encode the entire passage space. During online inference, this routing function selectively activates a subset of latent experts based on the input query. We conduct comprehensive evaluations of Poly-PRAG across multiple knowledge-intensive NLP tasks. Our extensive experiments demonstrate the effectiveness of the proposed method, achieving state-of-the-art results on four distinct datasets.",
+      "affiliations": [
+        "Universit\u00e9 de Montr\u00e9al"
+      ],
+      "arxiv_id": "2511.17044",
+      "arxives_doi": null,
+      "authors": "Zhan Su, Fengran Mo, Jian-yun Nie",
+      "bookmarked": 0,
+      "cache_file_name": "Su2025ARXIV_Parametric_Retrieval_Augmented_Generation_1.pdf",
+      "category": "Computer Science",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9808632022,
+        0.8010851177,
+        0.7302917326,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.17044",
+      "inferredHighlights": [
+        {
+          "endIndex": 470,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 426
+        },
+        {
+          "endIndex": 898,
+          "highlightClass": "primary-highlight",
+          "startIndex": 751
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Parametric Knowledge,  Latent Routing,  LoRA Adapters,  Retrieval-Augmented Generation",
+        "method_shortname": "Poly-PRAG",
+        "sub_subfield": "Retrieval-Augmented Generation",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077443,
+      "paper_id": 4473377,
+      "paper_source_id": "2511.17044",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.6021469131,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "df7443ccad3b1ab6a064f82223f262d0f8993deb",
+      "shortened_authors": "Zhan Su, Fengran Mo, Jian-yun Nie",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Proposes **Poly-PRAG**, a novel PRAG framework that encodes entire documents into a compact set of LoRA adapters through **latent routing**.\n- **Poly-PRAG** achieves state-of-the-art (SOTA) performance on four benchmark datasets compared to strong PRAG baselines.\n- **Poly-PRAG** significantly reduces offline encoding time, storage requirements, and online inference cost compared to existing methods.",
+        "evaluation_question": "- On *2wikimultihopQA*, Poly-PRAG achieves **53.24%** F1 score, outperforming PRAG (**50.20%**) and DyPRAG (**51.25%**).\n- On *HotpotQA*, Poly-PRAG achieves **49.23%** F1 score, outperforming PRAG (**48.15%**) and DyPRAG (**47.20%**).\n- On *ComplexWebQuestions*, Poly-PRAG achieves **32.85%** F1 score, outperforming PRAG (**23.11%**) and DyPRAG (**17.54%**).\n- Ablation studies show that increasing the LoRA rank from 1 to 8 improves F1 scores for Poly-PRAG by **+2.84%**.\n- Using 20 latent LoRAs provides the best performance for HotPotQA, with a drop in F1 score of **~1.7%** when increasing to 30 latent LoRAs.",
+        "method_explanation_question": "- Encodes a set of documents using a small set of **LoRA adapters** during offline encoding, where each document is assigned a unique task identifier.\n- Uses a **routing function** to selectively activate a subset of **latent LoRA adapters** during online inference based on the input query.\n- Trains the routing function and latent LoRA adapters together using a multi-task learning approach, allowing efficient parameter sharing across documents.\n- During inference, the model loads only the **selected latent LoRA adapters** once, reducing overhead compared to traditional PRAG approaches.",
+        "problem_definition_question": "- Traditional PRAG methods suffer from **data scarcity** due to limited training data for individual LoRA adapters.\n- **High computational overhead** during inference arises from repeatedly loading and unloading LoRA adapters for each candidate passage.\n- **Storage inefficiency** becomes a major issue as the number of documents increases, leading to impractical memory usage for large document collections."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Inference Comparison among different methods. (1) Standard RAG inputs the plaintext documents and questions. (2) PRAG generates QA pairs per document to fine-tune LoRA adapters, and sums them to obtain document-aggregated representations for LLM injection. (3) DyPRAG trains a hypter-network to translate individual documents to its LoRA and averages them to achieve document aggregation for LLM injection. (4) For Poly-PRAG, a set of LoRA adapters are created for a document collection before the inference time, then selected through a routing function.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473377.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Poly-PRAG: For the offline encoding process, instead of encoding the document using a one-to-one paradigm. Poly-PRAG encodes the whole set of documents with a latent LoRA adapter. During inference time, give a query, once the document is retrieved, the routing function will select which latent LoRA adapters can be active in the generation.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473377.1.jpeg"
+        },
+        {
+          "caption": "Table 1: The experimental results (F1 scores %) of Poly-PRAG on four knowledge-intensive tasks. The best performance is bolded. The Avg is the average score for each subtask. \u2020 denotes significant improvement with t-test at \ud835\udc5d < 0 . 05 over the PRAG.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473377.2.jpeg"
+        },
+        {
+          "caption": "Table 2: This table presents a LoRA rank analysis comparing PRAG and Poly-PRAG performance metrics on the HotpotQA dataset. The analysis focuses on the trade-off between LoRA Rank, Offline Storage (size of the adapter), and the resulting F1 Score.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473377.3.jpeg"
+        },
+        {
+          "caption": "Figure 3: Analysis of the number of latent experts to the F1 scores. The analysis is based on the LLama3-2.1B.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473377.4.jpeg"
+        },
+        {
+          "caption": "Table 3: Comparison of Storage during Encoding for 4 tasks, \"ALL\" is the whole storage during the encoding process. For PRAG and DyPRAG, we use the same setting used in the paper [33]. For Poly-PRAG, we use the 8 LoRAs.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473377.5.jpeg"
+        },
+        {
+          "caption": "Figure 4: The figure presents the offline encoding time for three PRAG methods. The base language model is Llama3-1B.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473377.6.jpeg"
+        },
+        {
+          "caption": "Table 4: Comparison of the injection place of LoRA adapters for Poly-PRAG. The FFN indicates that we only inject LoRA in the feedforward layer (gate-proj, up-proj,down-proj). The Self-Attn indicate that we inject the LoRAs on Q,K,V,O layers. Cross here means we inject the LoRA to both Self-Attn and FFN.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473377.7.jpeg"
+        },
+        {
+          "caption": "Figure 5: Online inference time comparison between PRAG and Poly-PRAG. We select the 2wikimultihopQA tasks based on Qwen2.5-1.5B. We use an A100 Nvidia 80G card to run the experiments.",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473377.8.jpeg"
+        }
+      ],
+      "title": "Parametric Retrieval-Augmented Generation using Latent Routing of LoRA Adapters",
+      "total_likes": 1,
+      "total_read": 9,
+      "url": "https://arxiv.org/pdf/2511.17044",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.17044.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "We present Spanning Tree Autoregressive (STAR) modeling, which can incorporate prior knowledge of images, such as center bias and locality, to maintain sampling performance while also providing sufficiently flexible sequence orders to accommodate image editing at inference. Approaches that expose randomly permuted sequence orders to conventional autoregressive (AR) models in visual generation for bidirectional context either suffer from a decline in performance or compromise the flexibility in sequence order choice at inference. Instead, STAR utilizes traversal orders of uniform spanning trees sampled in a lattice defined by the positions of image patches. Traversal orders are obtained through breadth-first search, allowing us to efficiently construct a spanning tree whose traversal order ensures that the connected partial observation of the image appears as a prefix in the sequence through rejection sampling. Through the tailored yet structured randomized strategy compared to random permutation, STAR preserves the capability of postfix completion while maintaining sampling performance without any significant changes to the model architecture widely adopted in the language AR modeling.",
+      "affiliations": [
+        "Seoul National University",
+        "Yonsei University",
+        "University of Michigan, Ann Arbor",
+        "LG AI Research",
+        "KIST"
+      ],
+      "arxiv_id": "2511.17089",
+      "arxives_doi": null,
+      "authors": "Sangkyu Lee, Changho Lee, Janghoon Han, Hosung Song, Tackgeun You, Hwasup Lim, Stanley Jungkyu Choi, Honglak Lee, Youngjae Yu",
+      "bookmarked": 0,
+      "cache_file_name": "Lee2025ARXIV_Spanning_Tree_Autoregressive_Visual.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.974905619,
+        0.8627404542,
+        0.8081806221,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": "https://github.com/oddqueue/star",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.17089",
+      "inferredHighlights": [
+        {
+          "endIndex": 663,
+          "highlightClass": "primary-highlight",
+          "startIndex": 535
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Spanning Tree,  Autoregressive Models,  Image Editing,  Uniform Spanning Tree,  Breadth-First Search (BFS),  Token Position Embeddings,  Rejection Sampling,  Bidirectional Context,  Image Patch Representation,  Maximum Likelihood Estimation",
+        "method_shortname": "STAR",
+        "sub_subfield": "Visual Generation",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077574,
+      "paper_id": 4473508,
+      "paper_source_id": "2511.17089",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.5609010723,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "10b87065dc24d18bf10e915d120e58c1862a2106",
+      "shortened_authors": "Sangkyu Lee, Changho Lee, Janghoon Han, Hosung Song, Tackgeun You, Hwasup Lim, Stanley Jungkyu Choi, Honglak Lee, Youngjae Yu",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Spanning Tree Autoregressive (STAR)** modeling is introduced to incorporate prior knowledge of images such as center bias and locality while maintaining flexibility in sequence order choices for image editing.\n- **STAR** utilizes traversal orders of uniform spanning trees sampled in a lattice defined by the positions of image patches, allowing efficient construction of a spanning tree that ensures connected partial observations appear as a prefix in the sequence.\n- **STAR** preserves the capability of postfix completion while maintaining sampling performance without significant changes to the model architecture widely adopted in language AR modeling.\n- **STAR** demonstrates superior performance compared to conventional AR models trained with random permutations, achieving better sampling performance and flexibility in sequence order choice.",
+        "evaluation_question": "- On *ImageNet-1k*, **STAR-XXL** achieves a **Fr\u00e9chet Inception Distance (FID)** of **1.55**, significantly outperforming **RAR-XXL** which has an FID of **1.48**.\n- For *image inpainting* tasks, **STAR-XXL** shows improved performance compared to **RAR-XXL**, especially at higher masking ratios, indicating enhanced capabilities in handling partial observations.\n- Ablation studies show that using **uniform spanning trees** instead of random permutations leads to better performance metrics like **FID**, **Inception Score (IS)**, **Precision**, and **Recall**.\n- Using **BFS traversal** for spanning tree sampling results in fewer trials needed for successful postfix completion compared to **DFS traversal**, demonstrating efficiency gains.",
+        "method_explanation_question": "- The method uses a **uniform spanning tree** sampled from a lattice defined by the positions of image patches, ensuring connected partial observations appear as a prefix in the sequence.\n- A **breadth-first search (BFS)** traversal order is used to traverse the spanning tree, enabling efficient sampling and ensuring the connected partial observation appears as a prefix.\n- The model is trained using **maximum likelihood estimation** with additional positional embeddings to condition on the next token position, following a **BFS traversal order** of the uniform spanning tree.\n- At inference time, the model performs **rejection sampling** to sample a spanning tree that allows for **postfix completion** when partial observations are provided, using a **farthest root selection strategy** to increase acceptance ratio.",
+        "problem_definition_question": "- Conventional autoregressive (AR) visual generation models restrict the 2D nature of images to unidirectional contexts in a specific direction defined by the fixed sequence order, limiting their ability to handle flexible sequence orders and perform tasks like image editing.\n- Random permutation strategies used in AR models to expose bidirectional context often lead to degraded sampling performance despite offering flexibility in sequence order choice.\n- There is a need for a structured order randomization strategy that maintains the benefits of both fixed sequence orders (for continuity and prior knowledge incorporation) and random permutations (for flexibility and bidirectional context exposure)."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Comparison of sequence orders in AR visual generation. (a) Conventional AR models follow a fixed raster-scan order, which limits the capability to change the sequence order at inference. (b) AR models trained under random permutation have flexibility on inference sequence order, but random permutation does not reflect prior knowledge, such as center bias and locality. (c) The proposed method, STAR, adopts the traversal order of the uniform spanning tree so that it structurally maintains prior knowledge and flexibility.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473508.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Overview of the proposed STAR modeling. (a) We perform training and inference according to the sequence order obtained by traversing the uniform sampling tree from the corner using BFS, by additionally feeding the positional embedding for the next token position to the model. (b) We perform rejection sampling to sample a spanning tree with a maximum depth occurring at the boundary of the non-masked region, allowing postfix completion when partial observations of the image are provided for image editing.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473508.1.jpeg"
+        },
+        {
+          "caption": "Figure 3. Prediction entropy of tokens according to token position from the model trained with randomly permuted sequence orders. Higher token entropy in central regions indicates greater token diversity compared to corner areas. The evidence that such differences exist suggests a potential hierarchical structure across the position, affecting the differences in the difficulty of prediction.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473508.2.jpeg"
+        },
+        {
+          "caption": "Figure 4. Conditional prediction entropy according to the minimum Manhattan distance from the prefix token positions. Tokens located at closer distances tend to exhibit lower entropy, whereas those farther away show higher entropy. This suggests that the locality structure of images is partially preserved at the tokens, implying that adjacent tokens should be prioritized in prediction.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473508.3.jpeg"
+        },
+        {
+          "caption": "Table 1. Comparison of class-conditional image generation models on ImageNet-1k at 256 \u00d7 256 . We report Fr\u00b4echet Inception Distance (FID), Inception Score (IS), Precision (Prec.), and Recall (Rec.). \u2193 or \u2191 indicates that lower or higher values are better on the given metric.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473508.4.jpeg"
+        },
+        {
+          "caption": "Figure 6. Quantitative comparison of RAR [44] and STAR on the inpainting task with varying masking ratio from 0.1 to 0.9.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473508.5.jpeg"
+        },
+        {
+          "caption": "Figure 7. Qualitative comparison on the inpainting task, demonstrating insufficient results of RAR-XXL [44] compared to STAR-XXL.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473508.6.jpeg"
+        },
+        {
+          "caption": "Table 2. Ablation study on the order randomization strategy. \u201dStart\u201d and \u201dEnd\u201d denote the sequence order at the start or end, and perform order annealing at 0.5 to 0.75 of the total steps [44]. We report the average score of mask ratios from 0.1 to 0.9 on the inpainting task.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473508.7.jpeg"
+        },
+        {
+          "caption": "Table 3. Ablation study on the sample efficiency according to the traversal strategy of the spanning tree for postfix completion.",
+          "figureNumber": 8,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473508.8.jpeg"
+        }
+      ],
+      "title": "Spanning Tree Autoregressive Visual Generation",
+      "total_likes": 3,
+      "total_read": 14,
+      "url": "https://arxiv.org/pdf/2511.17089",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.17089.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Unlike human reasoning in abstract conceptual spaces, large language models (LLMs) typically reason by generating discrete tokens, which potentially limit their expressive power. The recent work Soft Thinking has shown that LLMs' latent reasoning via soft concepts is a promising direction, but LLMs are trained on discrete tokens. To reduce this gap between the soft concepts in reasoning and the discrete tokens in training, we propose Soft Concept Mixing (SCM), a soft concept aware training scheme that directly exposes the model to soft representations during training. Specifically, SCM constructs a soft concept vector by forming a probability-weighted average of embeddings. Then, this vector is mixed into the model's hidden states, which embody rich contextual information. Finally, the entire latent reasoning process is optimized with Reinforcement Learning (RL). Experiments on five reasoning benchmarks demonstrate that SCM improves the reasoning performance of LLMs, and simultaneously maintains a stable training dynamic.",
+      "affiliations": [
+        "School of Computer Science and Technology, Soochow University"
+      ],
+      "arxiv_id": "2511.16885",
+      "arxives_doi": null,
+      "authors": "Kang Wang, Xiangyu Duan, Tianyi Du",
+      "bookmarked": 0,
+      "cache_file_name": "Wang2025ARXIV_Improving_Latent_Reasoning_in.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9629958138,
+        0.8853499312,
+        0.844696909,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.16885",
+      "inferredHighlights": [
+        {
+          "endIndex": 573,
+          "highlightClass": "primary-highlight",
+          "startIndex": 332
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Soft Concept Mixing (SCM),  Reinforcement Learning (RL),  Group Relative Policy Optimization (GRPO),  Principal Component Analysis (PCA)",
+        "method_shortname": "Soft Concept Mixing",
+        "sub_subfield": "Latent Reasoning",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077318,
+      "paper_id": 4473252,
+      "paper_source_id": "2511.16885",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.5420299859,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "af3fd0ea240024b573c8381c25d357c1a9b4bc27",
+      "shortened_authors": "Kang Wang, Xiangyu Duan, Tianyi Du",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **Soft Concept Mixing (SCM)**, a training framework that bridges the gap between discrete token training and continuous semantic reasoning.\n- **SCM** integrates soft concept vectors into hidden states during reinforcement learning, enabling more effective and stable guidance signals.\n- Empirical results show **SCM outperforms baselines** like CoT, Soft Thinking, and GRPO across multiple benchmarks and model sizes.\n- **SCM maintains stable training dynamics** with minimal latent representation drift, confirmed via PCA analysis.",
+        "evaluation_question": "- On *MATH 500*, **SCM** achieves **94.40%** vs. **GRPO** (**93.20%**) and **CoT** (**91.80%**).\n- On *AIME 2024*, **SCM** reaches **56.67%** vs. **GRPO** (**56.67%**) and **CoT** (**50.00%**).\n- On *GSM8K*, **SCM** attains **92.03%** vs. **GRPO** (**90.52%**) and **CoT** (**90.37%**).\n- Ablation studies show removing hidden state fusion degrades performance, confirming its necessity.",
+        "method_explanation_question": "- At each decoding step, the model generates a **probability-weighted average** of embeddings to form a **soft concept vector**.\n- This **soft concept vector** is mixed into the model\u2019s **hidden states** using simple addition, preserving rich contextual information.\n- The model is trained using **Reinforcement Learning (RL)** with **Group Relative Policy Optimization (GRPO)** to optimize the latent policy space.\n- The **policy** samples the next token conditioned on the enhanced hidden state, combining both discrete tokens and continuous concepts.",
+        "problem_definition_question": "- LLMs are constrained by **discrete token generation**, limiting their ability to explore multiple reasoning paths simultaneously.\n- **Traditional CoT reasoning** restricts models to single trajectories, reducing flexibility in complex scenarios.\n- **Soft Thinking** introduces a gap between continuous reasoning and discrete training, causing instability.\n- **Existing methods lack frameworks** that effectively integrate continuous concepts into training for improved reasoning."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Training Framework for Soft Concept Mixing (SCM).",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473252.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Accuracy of SCM compared to other baselines on five reasoning benchmarks. The GRPO baseline enhances CoT with RL fine-tuning, while SCM w/o hidden states is an ablation that removes hidden state fusion. Best results are in bold .",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473252.1.jpeg"
+        },
+        {
+          "caption": "Figure 2: Training process of DeepSeek-R1-Distill-Qwen-1.5B on GRPO utilizing our proposed SCM method",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473252.2.jpeg"
+        },
+        {
+          "caption": "Table 2: Comparison with concurrent methods on DeepSeek-R1-Distill-Owen-7B",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473252.3.jpeg"
+        },
+        {
+          "caption": "Table 3: PCA shift distances of representation centers across models",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473252.4.jpeg"
+        },
+        {
+          "caption": "Figure 3: PCA shift of DeepSeek-R1-Distill-Llama-8B across five datasets multiple tasks while maintaining a stable latent representation",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473252.5.jpeg"
+        }
+      ],
+      "title": "Improving Latent Reasoning in LLMs via Soft Concept Mixing",
+      "total_likes": 1,
+      "total_read": 15,
+      "url": "https://arxiv.org/pdf/2511.16885",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.16885.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large vision-language models (VLMs) enable intuitive visual search using natural language queries. However, improving their performance often requires fine-tuning and scaling to larger model variants. In this work, we propose a mechanism inspired by traditional text-based search to improve retrieval performance at inference time: relevance feedback. While relevance feedback can serve as an alternative to fine-tuning, its model-agnostic design also enables use with fine-tuned VLMs. Specifically, we introduce and evaluate four feedback strategies for VLM-based retrieval. First, we revise classical pseudo-relevance feedback (PRF), which refines query embeddings based on top-ranked results. To address its limitations, we propose generative relevance feedback (GRF), which uses synthetic captions for query refinement. Furthermore, we introduce an attentive feedback summarizer (AFS), a custom transformer-based model that integrates multimodal fine-grained features from relevant items. Finally, we simulate explicit feedback using ground-truth captions as an upper-bound baseline. Experiments on Flickr30k and COCO with the VLM backbones show that GRF, AFS, and explicit feedback improve retrieval performance by 3-5% in MRR@5 for smaller VLMs, and 1-3% for larger ones, compared to retrieval with no feedback. Moreover, AFS, similarly to explicit feedback, mitigates query drift and is more robust than GRF in iterative, multi-turn retrieval settings. Our findings demonstrate that relevance feedback can consistently enhance retrieval across VLMs and open up opportunities for interactive and adaptive visual search.",
+      "affiliations": [
+        "Maastricht University"
+      ],
+      "arxiv_id": "2511.17255",
+      "arxives_doi": null,
+      "authors": "Bulat Khaertdinov, Mirela Popa, Nava Tintarev",
+      "bookmarked": 0,
+      "cache_file_name": "Khaertdinov2025ARXIV_A_Little_More_Like.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9536088716,
+        0.8971408829,
+        0.8662326339,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": "https://github.com/bulatkh/vlm_retrieval_relevance_feedback",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.17255",
+      "inferredHighlights": [
+        {
+          "endIndex": 350,
+          "highlightClass": "primary-highlight",
+          "startIndex": 201
+        },
+        {
+          "endIndex": 991,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 824
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Relevance Feedback,  Generative Relevance Feedback (GRF),  Attentive Feedback Summarizer (AFS),  Pseudo-Relevance Feedback (PRF),  Vision-Language Models (VLMs)",
+        "method_shortname": "AFS",
+        "sub_subfield": "Text-to-Image Retrieval",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077675,
+      "paper_id": 4473609,
+      "paper_source_id": "2511.17255",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.5308853542,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "fed39ebfe57f113f08279e86b188079b95afbfbc",
+      "shortened_authors": "Bulat Khaertdinov, Mirela Popa, Nava Tintarev",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **generative relevance feedback (GRF)** using synthetic captions for query refinement, enhancing retrieval performance.\n- **Attentive feedback summarizer (AFS)** aggregates fine-grained features from relevant items, achieving performance comparable to explicit feedback.\n- **Relevance feedback techniques** improve retrieval across VLMs, with AFS showing robustness in multi-turn settings.\n- **Model-agnostic design** allows application on both pre-trained and fine-tuned VLMs without requiring modifications to the retrieval model.",
+        "evaluation_question": "- On *Flickr30k*, **AFS** improves MRR@5 by **3\u20135%** over no feedback for smaller VLMs, and **1\u20133%** for larger ones.\n- **Explicit feedback** achieves higher Hits@5 scores than **GRF** on *COCO*.\n- **AFS** outperforms **PRF** in iterative retrieval settings, avoiding query drift.\n- **BLIP-2 + AFS** shows **98.2% Hits@5** on *Flickr30k*, surpassing other methods like **FLAME** and **FLAIR**.",
+        "method_explanation_question": "- Uses **Rocchio algorithm** to refine query vectors by aggregating representations of relevant and irrelevant items.\n- **Generative Relevance Feedback (GRF)** leverages synthetic captions generated by LLaVA-1.5 to enhance query embeddings.\n- **Attentive Feedback Summarizer (AFS)** employs a lightweight transformer model to aggregate fine-grained visual and textual signals from relevant items.\n- **Cross-attention modules** in AFS contextualize query tokens with local features from images and captions.\n- **Training objective** aligns feedback summaries with ground-truth image and caption embeddings using cosine similarity loss.",
+        "problem_definition_question": "- Traditional relevance feedback methods like **PRF** fail to effectively refine queries in vision-language retrieval due to limitations in handling multimodal data.\n- **Query drift** is a significant issue in iterative retrieval, where feedback signals lead to divergence from user intent.\n- **Lack of fine-grained feedback mechanisms** limits the ability to capture nuanced relevance signals in visual search.\n- **Large VLMs** require substantial computational resources, making interactive and adaptive retrieval challenging."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. Proposed VLM-based text-to-image retrieval with relevance feedback. Query representations are refined in feature space using relevance feedback vectors.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473609.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Attentive Feedback Summarizer. The user query, relevant images, and synthetic captions are processed using VLM encoders.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473609.1.jpeg"
+        },
+        {
+          "caption": "Table 1. AFS sizes and latency per backbone.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473609.2.jpeg"
+        },
+        {
+          "caption": "Table 3. Ablation on positive and negative feedback. Performance metrics for different weights for query, positive, and negative vectors.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473609.3.jpeg"
+        },
+        {
+          "caption": "Figure 3. Retrieval with Rocchio: original vs ours . Retrieval metrics with relevance feedback using original and extended versions of Rocchio.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473609.4.jpeg"
+        },
+        {
+          "caption": "Table 2. Ablation on AFS loss components. We evaluate AFS performance after training the model with different loss components. Image and caption loss components are denoted l img q and l cap q (Equations 3-5).",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473609.5.jpeg"
+        },
+        {
+          "caption": "Table 4. Two-turn retrieval. Retrieval performance with five relevance feedback benchmarks after one round of feedback aggregation. The two highest metric values per dataset and backbone model are highlighted in bold and underlined.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473609.6.jpeg"
+        },
+        {
+          "caption": "Table 5. Comparing AFS with recent approaches. Values are reported in percentage points. For test-time methods, we present the scores after applying them, along with the corresponding performance change \u2206 . * \u2013 BLIP-2 was fine-tuned on the COCO dataset before applying VISA [4].",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473609.7.jpeg"
+        },
+        {
+          "caption": "Figure 4. Multi-turn retrieval on Flickr30K. MRR@5 scores for multi-turn retrieval with relevance feedback. CLIP-B and CLIP-L refer to CLIP-ViT-B/32 and CLIP-ViT-L/14, respectively.",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473609.8.jpeg"
+        },
+        {
+          "caption": "Figure 5. Cross-attention visualization. The example is sampled from Flickr30K dataset and processed with CLIP-ViT-B/32 as a retrieval backbone. The ground truth image corresponding to the query is highlighted with a green frame.",
+          "figureNumber": 9,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473609.9.jpeg"
+        }
+      ],
+      "title": "A Little More Like This: Text-to-Image Retrieval with Vision-Language Models Using Relevance Feedback",
+      "total_likes": 2,
+      "total_read": 19,
+      "url": "https://arxiv.org/pdf/2511.17255",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.17255.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Recent studies show that text to image (T2I) diffusion models are vulnerable to backdoor attacks, where a trigger in the input prompt can steer generation toward harmful or unintended content. To address this, we introduce PEPPER (PErcePtion Guided PERturbation), a backdoor defense that rewrites the caption into a semantically distant yet visually similar caption while adding unobstructive elements. With this rewriting strategy, PEPPER disrupt the trigger embedded in the input prompt, dilute the influence of trigger tokens and thereby achieve enhanced robustness. Experiments show that PEPPER is particularly effective against text encoder based attacks, substantially reducing attack success while preserving generation quality. Beyond this, PEPPER can be paired with any existing defenses yielding consistently stronger and generalizable robustness than any standalone method. Our code will be released on Github.",
+      "affiliations": [
+        "University of Michigan",
+        "National Taiwan University",
+        "Texas A&M University"
+      ],
+      "arxiv_id": "2511.16830",
+      "arxives_doi": null,
+      "authors": "Oscar Chew, Po-Yi Lu, Jayden Lin, Kuan-Hao Huang, Hsuan-Tien Lin",
+      "bookmarked": 0,
+      "cache_file_name": "Chew2025ARXIV_PEPPER_Perception_Guided_Perturbation.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.939725924,
+        0.9085001416,
+        0.8906734446,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 29)",
+      "first_page_image": null,
+      "github_url": "https://github.com/oscarchew/t2i-backdoor-defense",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.16830",
+      "inferredHighlights": [
+        {
+          "endIndex": 401,
+          "highlightClass": "primary-highlight",
+          "startIndex": 193
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Backdoor Attacks,  Text-to-Image Diffusion Models,  Perception-Guided Perturbation,  PEPPER",
+        "method_shortname": "PEPPER",
+        "sub_subfield": "Backdoor Attacks",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077241,
+      "paper_id": 4473173,
+      "paper_source_id": "2511.16830",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-29",
+      "ranking_score": 0.5160186136,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "9bbd9b141dcae1325f014735e50ebaf80aaed975",
+      "shortened_authors": "Oscar Chew, Po-Yi Lu, Jayden Lin, Kuan-Hao Huang, Hsuan-Tien Lin",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **PEPPER**, a novel **perception-guided perturbation** method for defending T2I diffusion models against backdoor attacks.\n- **PEPPER** disrupts backdoor triggers by rewriting captions into semantically distant yet visually similar phrases, enhancing robustness.\n- **PEPPER** is effective against text-encoder\u2013based attacks and can be combined with existing defenses to achieve stronger and more generalizable robustness.\n- **PEPPER** maintains generation quality while significantly reducing attack success rates across various backdoor scenarios.",
+        "evaluation_question": "- On *long prompts*, **PEPPER** achieves **0 ASR** for most attacks compared to **T2IShield** and **UFID**, which show higher ASR values.\n- For *short prompts*, **U+PEPPER** achieves **all-zero ASR** across all datasets, outperforming individual defenses like **T2IShield** and **UFID**.\n- **PEPPER** reduces the Attack Success Rate (ASR) to near zero in both CLIP and GPT evaluations for most backdoor attacks, including TI and EE.\n- **PEPPER** preserves image quality with FID scores ranging from **32 to 40**, indicating minimal degradation in generation fidelity.",
+        "method_explanation_question": "- Rewrites input prompts using a **large language model** (e.g., GPT-4.1) to create semantically distant yet visually similar captions.\n- **PEPPER** adds small, relevant details to the rewritten captions to further weaken trigger influence and increase robustness.\n- The rewritten captions are designed to jump outside attacked regions in the embedding space while preserving the intended visual output.\n- By operating directly in the text space, **PEPPER** effectively mitigates backdoor attacks without altering the underlying model architecture.",
+        "problem_definition_question": "- Text-to-image (T2I) diffusion models are vulnerable to **backdoor attacks**, where malicious triggers in input prompts steer generations toward harmful or unintended content.\n- **Existing backdoor defenses** struggle to cover heterogeneous attack families simultaneously, limiting their effectiveness in real-world applications.\n- **Text-encoder\u2013based attacks** are particularly challenging due to their ability to hijack broad semantic neighborhoods around triggers, making them hard to detect and mitigate."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 2: The target zebra appears in the generation under short-prompt setting but not under-long prompt.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473173.0.jpeg"
+        },
+        {
+          "caption": "Figure 1: After synonym replacement, the generated image still contains the attack target, highlighting its limitation against more aggressive attacks.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473173.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: PEPPER moves outside the attacked region and recovers the intended image by rewriting the prompt to a semantically shifted yet visually similar phrase",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473173.2.jpeg"
+        },
+        {
+          "caption": "Table 1: CLIP and GPT ASR evaluation of backdoor attacks without applying any defense .",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473173.3.jpeg"
+        },
+        {
+          "caption": "Table 2: CLIP and GPT ASR evaluation of the existing defense methods. The effectiveness of PEPPER against existing backdoor attacks on long prompt .",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473173.4.jpeg"
+        },
+        {
+          "caption": "Table 3: CLIP and GPT ASR evaluation of the existing defense methods composed with PEPPER , including T+PEPPER (T2IShield + PEPPER) and U+PEPPER (UFID + PEPPER) on long prompt .",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473173.5.jpeg"
+        },
+        {
+          "caption": "Table 5: CLIP and GPT ASR evaluation of the existing defenses. The effectiveness of PEPPER against existing backdoor attacks on short prompt .",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473173.6.jpeg"
+        },
+        {
+          "caption": "Table 6: CLIP and GPT ASR evaluation of the existing defense methods composed with PEPPER , including T+PEPPER (T2IShield + PEPPER) and U+PEPPER (UFID + PEPPER) on short prompt .",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473173.7.jpeg"
+        }
+      ],
+      "title": "PEPPER: Perception-Guided Perturbation for Robust Backdoor Defense in Text-to-Image Diffusion Models",
+      "total_likes": 0,
+      "total_read": 20,
+      "url": "https://arxiv.org/pdf/2511.16830",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.16830.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Multilingual LLMs demonstrate strong performance across diverse languages, yet there has been limited systematic analysis of how language information is structured within their internal representation space and how it emerges across layers. We conduct a comprehensive probing study on six multilingual LLMs, covering all 268 transformer layers, using linear and nonlinear probes together with a new Token--Language Alignment analysis to quantify the layer-wise dynamics and geometric structure of language encoding. Our results show that language information becomes sharply separated in the first transformer block (+76.4$\\pm$8.2 percentage points from Layer 0 to 1) and remains almost fully linearly separable throughout model depth. We further find that the alignment between language directions and vocabulary embeddings is strongly tied to the language composition of the training data. Notably, Chinese-inclusive models achieve a ZH Match@Peak of 16.43\\%, whereas English-centric models achieve only 3.90\\%, revealing a 4.21$\\times$ structural imprinting effect. These findings indicate that multilingual LLMs distinguish languages not by surface script features but by latent representational structures shaped by the training corpus. Our analysis provides practical insights for data composition strategies and fairness in multilingual representation learning. All code and analysis scripts are publicly available at: <a href='https://github.com/thisiskorea/How-Language-Directions-Align-with-Token-Geometry-in-Multilingual-LLMs' target='_blank'>https://github.com/thisiskorea/How-Language-Directions-Align-with-Token-Geometry-in-Multilingual-LLMs</a>.",
+      "affiliations": [
+        "Semyung University Jecheon-si, Republic of Korea"
+      ],
+      "arxiv_id": "2511.16693",
+      "arxives_doi": null,
+      "authors": "JaeSeong Kim, Suan Lee",
+      "bookmarked": 0,
+      "cache_file_name": "Kim2025ARXIV_How_Language_Directions_Align.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7586660653,
+        0.8363978349,
+        0.9998660391,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 16)",
+      "first_page_image": null,
+      "github_url": "https://github.com/thisiskorea/How-Language-Directions-Align-with-Token-Geometry-in-Multilingual-LLMs",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.16693",
+      "inferredHighlights": [
+        {
+          "endIndex": 514,
+          "highlightClass": "primary-highlight",
+          "startIndex": 241
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Token\u2013Language Alignment,  Structural Imprinting,  Linear Probing,  Transformer Layers,  Multilingual LLMs",
+        "method_shortname": "Token\u2013Language Alignment",
+        "sub_subfield": "Multilingual Representation Learning",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077114,
+      "paper_id": 4473046,
+      "paper_source_id": "2511.16693",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/thisiskorea/How-Language-Directions-Align-with-Token-Geometry-in-Multilingual-LLMs",
+      "project_url": null,
+      "publication_date": "2025-11-16",
+      "ranking_score": 0.4566502335,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "5c6eb70270c13983f9ee503edcb9c9f940dd3b4f",
+      "shortened_authors": "JaeSeong Kim, Suan Lee",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Token\u2013Language Alignment** analysis reveals that language directions are strongly shaped by the pretraining data distribution.\n- **Structural imprinting** shows that Chinese-inclusive models exhibit a **4.21\u00d7** stronger alignment with Chinese compared to English-centric models.\n- **Universal linear separability** is observed across all transformer layers, indicating language information is encoded in globally accessible subspaces.\n- **Early structural reorganization** occurs in the first transformer block, sharply separating language information (+76.4\u00b18.2%p).\n- **Latent representational structures**, rather than surface script features, determine how languages are distinguished in multilingual LLMs.",
+        "evaluation_question": "- On *Chinese-inclusive models*, achieves **16.43% Match@Peak** for Chinese vs. **3.90%** for English-centric models, showing a **+12.53%p** improvement.\n- Across all models, **language information remains almost fully linearly separable** throughout model depth with minimal performance gaps (<1%p) between linear and MLP probes.\n- **Match@Peak** metrics reveal that Latin-script languages (ES/FR/DE) show significantly lower alignment (\u22641.8%) compared to Chinese (16.43%).\n- **English-centric models** demonstrate **69.05% alignment** for English but only **3.90%** for Chinese, highlighting a **14.92%p** disparity.",
+        "method_explanation_question": "- Trains **linear and nonlinear probes** on hidden vectors from each layer to assess language separability.\n- **Token\u2013Language Alignment** computes cosine similarity between learned language directions and vocabulary embeddings to quantify alignment.\n- **LayerNorm** is applied to normalize representations and remove inter-layer scale differences.\n- **Match@Peak** evaluates how well tokens assigned to a language at its peak layer correspond to actual linguistic identity using Unicode and diacritic rules.\n- **PeakDepth** identifies the normalized layer index where vocabulary share for a language is maximized.",
+        "problem_definition_question": "- Multilingual LLMs struggle to distinguish languages based on **surface script features**, leading to **inconsistent performance** across non-English languages.\n- **English-centric training data** limits the ability of models to generalize effectively to other languages, creating a **performance gap** of 10\u201330% in non-English settings.\n- **Structural imprinting** caused by unbalanced pretraining data prevents post-hoc adjustments from fundamentally altering the latent representation geometry.\n- **Limited alignment** between language directions and token identities for Latin-script languages (ES/FR/DE) highlights a lack of robust, distinct subspaces for these languages."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 1: Layer-wise Performance Statistics for 6 Multilingual Models Across 5 Languages (with per-model language average). Values show mean accuracy (%) with standard deviation where applicable. Gap significance: \u2217 p<0.05, \u2217\u2217 p<0.01, \u2217\u2217\u2217 p<0.001. Right block adds Token\u2013Language Alignment: PeakDepth (normalized depth of vocab-share peak), PeakVocab (%), Match@Peak (%).",
+          "figureNumber": 0,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473046.0.jpeg"
+        },
+        {
+          "caption": "Table 2: Match@Peak (%) by model group, grouped by pre-training language distribution.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473046.1.jpeg"
+        }
+      ],
+      "title": "How Language Directions Align with Token Geometry in Multilingual LLMs",
+      "total_likes": 5,
+      "total_read": 20,
+      "url": "https://arxiv.org/pdf/2511.16693",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.16693.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "From a Bayesian perspective, score-based diffusion solves inverse problems through joint inference, embedding the likelihood with the prior to guide the sampling process. However, this formulation fails to explain its practical behavior: the prior offers limited guidance, while reconstruction is largely driven by the measurement-consistency term, leading to an inference process that is effectively decoupled from the diffusion dynamics. To clarify this structure, we reinterpret the role of diffusion in inverse problem solving as an initialization stage within an expectation--maximization (EM)--style framework, where the diffusion stage and the data-driven refinement are fully decoupled. We introduce \\textbf{DAPS++}, which allows the likelihood term to guide inference more directly while maintaining numerical stability and providing insight into why unified diffusion trajectories remain effective in practice. By requiring fewer function evaluations (NFEs) and measurement-optimization steps, \\textbf{DAPS++} achieves high computational efficiency and robust reconstruction performance across diverse image restoration tasks.",
+      "affiliations": [
+        "Department of Aerospace and Mechanical Engineering, University of Notre Dame",
+        "Department of Electrical Engineering, University of Notre Dame"
+      ],
+      "arxiv_id": "2511.17038",
+      "arxives_doi": null,
+      "authors": "Hao Chen, Renzheng Zhang, Scott S. Howard",
+      "bookmarked": 0,
+      "cache_file_name": "Chen2025ARXIV_DAPS_Rethinking_Diffusion_Inverse.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.5570832137,
+        0.6078905898,
+        0.8773946651,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1763942400000,
+      "display_venue": "ArXiv 2025 (November 21)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2511.17038",
+      "inferredHighlights": [
+        {
+          "endIndex": 693,
+          "highlightClass": "primary-highlight",
+          "startIndex": 440
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Diffusion Models,  Inverse Problems,  Bayesian Inference,  Decoupled Annealing Posterior Sampling (DAPS),  Expectation-Maximization (EM)",
+        "method_shortname": "DAPS++",
+        "sub_subfield": "Diffusion Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4077409,
+      "paper_id": 4473343,
+      "paper_source_id": "2511.17038",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-11-21",
+      "ranking_score": 0.4055436349,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "42ce58ddf920171d23993e799ce8d688837b5e1b",
+      "shortened_authors": "Hao Chen, Renzheng Zhang, Scott S. Howard",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **DAPS++**, a fully decoupled framework that separates diffusion-based initialization from data-driven refinement, significantly improving sampling efficiency.\n- **DAPS++** achieves higher reconstruction fidelity with fewer neural function evaluations (NFEs) compared to existing methods like DAPS-1K and DPS.\n- Demonstrates that the prior gradient has minimal impact on optimization, validating the effectiveness of focusing on data-consistency for inference.\n- Proposes an **EM-style formulation** that clarifies the role of diffusion in inverse problems as an initialization stage rather than a joint inference process.",
+        "evaluation_question": "- On *FFHQ* and *ImageNet* datasets, **DAPS++-50** achieves **SSIM** scores of **0.781** and **0.653**, respectively, outperforming other methods like **DDNM**, **DPS**, and **DAPS-100**.\n- **DAPS++-50** reduces the number of NFEs by approximately **90%** compared to **DAPS-1K**, while maintaining or improving reconstruction quality.\n- Under increased noise levels (**\u03b3 = 0.4**), **DAPS++** maintains better structural fidelity and perceptual quality compared to **DAPS-1K**, demonstrating stronger robustness.",
+        "method_explanation_question": "- The method separates the diffusion-based initialization and data-driven refinement into two distinct stages: the E-step and M-step.\n- **E-step** generates an initial estimate using a diffusion model trained on pixel-space data, applying Tweedie\u2019s formula for denoising when noise level is above a threshold.\n- **M-step** performs likelihood-driven refinement via Markov Chain Monte Carlo (MCMC) updates, focusing on measurement consistency without relying on prior gradients.\n- A polynomial annealing schedule is used to control the decay of noise levels during the M-step, ensuring stable convergence and efficient computation.",
+        "problem_definition_question": "- Existing diffusion-based inverse problem solvers rely heavily on the prior, leading to suboptimal performance due to overfitting and instability in real-world scenarios.\n- **Prior guidance** is often ineffective, causing the inference process to be loosely coupled with the diffusion dynamics.\n- **Data-consistency** is crucial but not always prioritized in current frameworks, limiting their ability to handle complex and noisy measurements effectively."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1. (a) Evolution of the gradient ratio \u03ba t with respect to noise level and its relative error during a Gaussian-blur iteration, illustrating that the data-consistency gradient dominates throughout the optimization process. (b) Comparison between DAPS re-sults using the prior term and using only the data term across different numbers of annealing steps, showing that the prior contributes minimally and mainly shapes the time-marginal distribution.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473343.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Diagram of the DAPS++ framework. The E-step provides the initial state and constructs the constrained optimization space p ( x 0 ) for data-driven MCMC re\ufb01nement, while the M-step optimizes within this space under measurement guidance. The two steps are fully decoupled, and after each M-step, controlled noise is re-injected by the diffusion process to initiate the next E-step.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473343.1.jpeg"
+        },
+        {
+          "caption": "Figure 3. Qualitative results on representative inverse problems: (a) Gaussian blur reconstruction on the FFHQ-256 dataset compared with selected baselines. (b) Nonlinear blur reconstruction on ImageNet, comparing DAPS++-50 and DAPS++-100 alongside selected baselines. (c) High dynamic range (HDR) reconstruction on the FFHQ-256 dataset. (d) Motion blur reconstruction on the FFHQ-256 dataset. (e) Box inpainting results on ImageNet, where DAPS++ accurately restores structural details. (f) 8 \u00d7 super-resolution using a pre-trained ImageNet diffusion model, demonstrating strong visual \ufb01delity.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473343.2.jpeg"
+        },
+        {
+          "caption": "Figure 4. Example under \u03b3 =0 . 1 , \u03c3 min =0 . 1 . Comparison between (a) DAPS++ and (b) DAPS for Gaussian blur shows that DAPS over\ufb01ts noise, producing more artifacts in the \ufb01nal outputs.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473343.3.jpeg"
+        },
+        {
+          "caption": "Table 1. Quantitative comparison on 100 validation images of FFHQ across four linear and two nonlinear inverse problems. Metrics are reported as SSIM \u2191 / LPIPS \u2193 / FID \u2193 . Bold indicates the best result; underlined values denote the second best. All measurements include additive Gaussian noise with \u03b3 = 0 . 05 .",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473343.4.jpeg"
+        },
+        {
+          "caption": "Table 2. Quantitative comparison on 100 validation images of ImageNet with four linear and two nonlinear tasks. Metrics follow SSIM \u2191 / LPIPS \u2193 / FID \u2193 . Bold values denote the best performance; underlined entries indicate the second best. Each measurement includes additive Gaussian noise with \u03b3 = 0 . 05 .",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473343.5.jpeg"
+        },
+        {
+          "caption": "Table 3. Quantitative comparison of DAPS-1K and DAPS++-50 under varying noise levels on the FFHQ Gaussian blur task with different \u03c3 min is matched to \u03b3 .",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4473343.6.jpeg"
+        },
+        {
+          "caption": "Figure 5. Evaluation of sampling time versus reconstruction quality. The x-axis denotes the per-image sampling time on an NVIDIA A100 (80GB PCIe) GPU, and the y-axis shows the LPIPS metric. Results are averaged over 100 FFHQ images for both the Gaussian blur and nonlinear blur tasks.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4473343.7.jpeg"
+        }
+      ],
+      "title": "DAPS++: Rethinking Diffusion Inverse Problems with Decoupled Posterior Annealing",
+      "total_likes": 5,
+      "total_read": 19,
+      "url": "https://arxiv.org/pdf/2511.17038",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2511.17038.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    }
+  ],
+  "digest_papers": 12,
+  "display_next_date": true,
+  "empty_digest": false,
+  "first_paper_id_below_decision_boundary": 4473046,
+  "from_date": "Mon, 24 Nov 2025 00:00:00 GMT",
+  "has_more_papers_in_digest": false,
+  "next_date": "2025-11-25",
+  "no_weekdays_selected": false,
+  "pdf_viewer_url": null,
+  "prev_date": "2025-11-21",
+  "read_paper_ids": [],
+  "seen_welcome_tutorial": true,
+  "success": true,
+  "to_date": "Mon, 24 Nov 2025 00:00:00 GMT",
+  "total_papers": "1257",
+  "trending": [
+    {
+      "abstract": "Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/",
+      "author": "Li et al.",
+      "authors": "Chunyang Li, Yuanbo Yang, Jiahao Shao, Hongyu Zhou, Katja Schwarz, Yiyi Liao",
+      "cache_file_name": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174518,
+      "paper_id": 4579856,
+      "pdf_download_success": true,
+      "publication_date": 1770576550000,
+      "ranking_score": 0.1357062383,
+      "rating": null,
+      "read": false,
+      "short_title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "source": "arxiv",
+      "title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "total_dislikes": 8,
+      "total_likes": 47,
+      "total_read": 176,
+      "url": "https://arxiv.org/pdf/2602.08068"
+    },
+    {
+      "abstract": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders, rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation, RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+      "author": "Kumar et al.",
+      "authors": "Amandeep Kumar, Vishal M. Patel",
+      "cache_file_name": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176575,
+      "paper_id": 4581913,
+      "pdf_download_success": true,
+      "publication_date": 1770753484000,
+      "ranking_score": 0.8327815131,
+      "rating": null,
+      "read": false,
+      "short_title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "source": "arxiv",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "total_dislikes": 6,
+      "total_likes": 36,
+      "total_read": 134,
+      "url": "https://arxiv.org/pdf/2602.10099"
+    },
+    {
+      "abstract": "We introduce MotionCrafter, a video diffusion-based framework that jointly reconstructs 4D geometry and estimates dense motion from a monocular video. The core of our method is a novel joint representation of dense 3D point maps and 3D scene flows in a shared coordinate system, and a novel 4D VAE to effectively learn this representation. Unlike prior work that forces the 3D value and latents to align strictly with RGB VAE latents-despite their fundamentally different distributions-we show that such alignment is unnecessary and leads to suboptimal performance. Instead, we introduce a new data normalization and VAE training strategy that better transfers diffusion priors and greatly improves reconstruction quality. Extensive experiments across multiple datasets demonstrate that MotionCrafter achieves state-of-the-art performance in both geometry reconstruction and dense scene flow estimation, delivering 38.64% and 25.0% improvements in geometry and motion reconstruction, respectively, all without any post-optimization. Project page: https://ruijiezhu94.github.io/MotionCrafter_Page",
+      "author": "Zhu et al.",
+      "authors": "Ruijie Zhu, Jiahao Lu, Wenbo Hu, Xiaoguang Han, Jianfei Cai, Ying Shan, Chuanxia Zheng",
+      "cache_file_name": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4175456,
+      "paper_id": 4580794,
+      "pdf_download_success": true,
+      "publication_date": 1770663492000,
+      "ranking_score": 0.1515375946,
+      "rating": null,
+      "read": false,
+      "short_title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "source": "arxiv",
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "total_dislikes": 6,
+      "total_likes": 29,
+      "total_read": 102,
+      "url": "https://arxiv.org/pdf/2602.08961"
+    },
+    {
+      "abstract": "Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \\textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \\textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \\textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+      "author": "Xiang et al.",
+      "authors": "Chendong Xiang, Jiajun Liu, Jintao Zhang, Xiao Yang, Zhengwei Fang, Shizun Wang, Zijun Wang, Yingtian Zou, Hang Su, Jun Zhu",
+      "cache_file_name": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174295,
+      "paper_id": 4579633,
+      "pdf_download_success": true,
+      "publication_date": 1770541276000,
+      "ranking_score": 0.2729207035,
+      "rating": null,
+      "read": false,
+      "short_title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "source": "arxiv",
+      "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "total_dislikes": 2,
+      "total_likes": 18,
+      "total_read": 59,
+      "url": "https://arxiv.org/pdf/2602.07854"
+    },
+    {
+      "abstract": "Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$\u0394$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.",
+      "author": "Jiang et al.",
+      "authors": "Yuxin Jiang, Yuchao Gu, Ivor W. Tsang, Mike Zheng Shou",
+      "cache_file_name": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176574,
+      "paper_id": 4581912,
+      "pdf_download_success": true,
+      "publication_date": 1770753521000,
+      "ranking_score": 0.1189741714,
+      "rating": null,
+      "read": false,
+      "short_title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "source": "arxiv",
+      "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "total_dislikes": 3,
+      "total_likes": 15,
+      "total_read": 58,
+      "url": "https://arxiv.org/pdf/2602.10104"
+    },
+    {
+      "abstract": "Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility, visual realism, and physical stability. Through iterative reasoning and adaptive tool selection, it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training. Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI. Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage.",
+      "author": "Xia et al.",
+      "authors": "Hongchi Xia, Xuan Li, Zhaoshuo Li, Qianli Ma, Jiashu Xu, Ming-Yu Liu, Yin Cui, Tsung-Yi Lin, Wei-Chiu Ma, Shenlong Wang, Shuran Song, Fangyin Wei",
+      "cache_file_name": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176614,
+      "paper_id": 4581952,
+      "pdf_download_success": true,
+      "publication_date": 1770753595000,
+      "ranking_score": 0.0253882568,
+      "rating": null,
+      "read": false,
+      "short_title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "source": "arxiv",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "total_dislikes": 3,
+      "total_likes": 11,
+      "total_read": 51,
+      "url": "https://arxiv.org/pdf/2602.10116"
+    },
+    {
+      "abstract": "End-to-end (E2E) autonomous driving has recently attracted increasing interest in unifying Vision-Language-Action (VLA) with World Models to enhance decision-making and forward-looking imagination. However, existing methods fail to effectively unify future scene evolution and action planning within a single architecture due to inadequate sharing of latent states, limiting the impact of visual imagination on action decisions. To address this limitation, we propose DriveWorld-VLA, a novel framework that unifies world modeling and planning within a latent space by tightly integrating VLA and world models at the representation level, which enables the VLA planner to benefit directly from holistic scene-evolution modeling and reducing reliance on dense annotated supervision. Additionally, DriveWorld-VLA incorporates the latent states of the world model as core decision-making states for the VLA planner, facilitating the planner to assess how candidate actions impact future scene evolution. By conducting world modeling entirely in the latent space, DriveWorld-VLA supports controllable, action-conditioned imagination at the feature level, avoiding expensive pixel-level rollouts. Extensive open-loop and closed-loop evaluations demonstrate the effectiveness of DriveWorld-VLA, which achieves state-of-the-art performance with 91.3 PDMS on NAVSIMv1, 86.8 EPDMS on NAVSIMv2, and 0.16 3-second average collision rate on nuScenes. Code and models will be released in https://github.com/liulin815/DriveWorld-VLA.git.",
+      "author": "jia et al.",
+      "authors": "Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen",
+      "cache_file_name": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172917,
+      "paper_id": 4578255,
+      "pdf_download_success": true,
+      "publication_date": 1770373548000,
+      "ranking_score": 0.265241331,
+      "rating": null,
+      "read": false,
+      "short_title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Drivi",
+      "source": "arxiv",
+      "title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving",
+      "total_dislikes": 0,
+      "total_likes": 21,
+      "total_read": 46,
+      "url": "https://arxiv.org/pdf/2602.06521"
+    },
+    {
+      "abstract": "Diffusion and flow models have become the dominant paradigm for generative modeling on Riemannian manifolds, with successful applications in protein backbone generation and DNA sequence design. However, these methods require tens to hundreds of neural network evaluations at inference time, which can become a computational bottleneck in large-scale scientific sampling workflows. We introduce Riemannian MeanFlow~(RMF), a framework for learning flow maps directly on manifolds, enabling high-quality generations with as few as one forward pass. We derive three equivalent characterizations of the manifold average velocity (Eulerian, Lagrangian, and semigroup identities), and analyze parameterizations and stabilization techniques to improve training on high-dimensional manifolds. In promoter DNA design and protein backbone generation settings, RMF achieves comparable sample quality to prior methods while requiring up to 10$\\times$ fewer function evaluations. Finally, we show that few-step flow maps enable efficient reward-guided design through reward look-ahead, where terminal states can be predicted from intermediate steps at minimal additional cost.",
+      "author": "Woo et al.",
+      "authors": "Dongyeop Woo, Marta Skreta, Seonghyun Park, Sungsoo Ahn, Kirill Neklyudov",
+      "cache_file_name": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174186,
+      "paper_id": 4579524,
+      "pdf_download_success": true,
+      "publication_date": 1770514877000,
+      "ranking_score": 0.3225612556,
+      "rating": null,
+      "read": false,
+      "short_title": "Riemannian MeanFlow",
+      "source": "arxiv",
+      "title": "Riemannian MeanFlow",
+      "total_dislikes": 3,
+      "total_likes": 12,
+      "total_read": 45,
+      "url": "https://arxiv.org/pdf/2602.07744"
+    }
+  ],
+  "use_scholar_inbox_pdf_server": false,
+  "username": "Longxuan Yu"
+}

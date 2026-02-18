@@ -1,0 +1,2016 @@
+{
+  "admin_proceedings_msg": "",
+  "conf_notification_text": "",
+  "current_digest_date": "2026-01-15",
+  "custom_digest_range": false,
+  "digest_df": [
+    {
+      "abbreviation": null,
+      "abstract": "Large language models typically represent Chinese characters as discrete index-based tokens, largely ignoring their visual form. For logographic scripts, visual structure carries semantic and phonetic information, which may aid prediction. We investigate whether low-resolution visual inputs can serve as an alternative for character-level modeling. Instead of token IDs, our decoder receives grayscale images of individual characters, with resolutions as low as $8 \\times 8$ pixels. Remarkably, these inputs achieve 39.2\\% accuracy, comparable to the index-based baseline of 39.1\\%. Such low-resource settings also exhibit a pronounced \\emph{hot-start} effect: by 0.4\\% of total training, accuracy reaches above 12\\%, while index-based models lag at below 6\\%. Overall, our results demonstrate that minimal visual structure can provide a robust and efficient signal for Chinese language modeling, offering an alternative perspective on character representation that complements traditional index-based approaches.",
+      "affiliations": [
+        "Institute of Software, Chinese Academy of Sciences"
+      ],
+      "arxiv_id": "2601.09566",
+      "arxives_doi": null,
+      "authors": "Shuyang Xiang, Hao Guan",
+      "bookmarked": 0,
+      "cache_file_name": "Xiang2026ARXIV_Hot_Start_from_Pixels.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09566",
+      "inferredHighlights": [
+        {
+          "endIndex": 348,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 240
+        },
+        {
+          "endIndex": 482,
+          "highlightClass": "primary-highlight",
+          "startIndex": 350
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Xiang2026ARXIV_Hot_Start_from_Pixels.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Chinese Language Modeling,  Vision Tokens,  Hot-Start Effect,  THUCNews Dataset,  Vision Encoder",
+        "method_shortname": "Vision-Token",
+        "sub_subfield": "Chinese Language Modeling",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139701,
+      "paper_id": 4545034,
+      "paper_source_id": "2601.09566",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.7612043767,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "08397b5d4fce59357a06e390594f86b0bb29630d",
+      "shortened_authors": "Shuyang Xiang, Hao Guan",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **vision-token** formulation for Chinese language modeling, replacing index-based tokens with character images.\n- Demonstrates **visual sufficiency** for character-level prediction, achieving 39.2% accuracy comparable to index-based baselines.\n- Identifies a **hot-start effect**: visual models reach 12.3% accuracy at 0.4% training, surpassing index-based baselines.\n- Establishes **robustness under visual degradation** across resolutions from 8 \u00d7 8 to 96 \u00d7 96 pixels.\n- Offers **explainable NLP** insights: visual tokens provide interpretable embeddings organized by morphological similarity.",
+        "evaluation_question": "- On *THUCNews*, achieves **39.2%** accuracy vs. index-based baseline (**39.1%**).\n- Reaches **12.3%** accuracy at 0.4% training, **+6.5%** over baseline.\n- Maintains **38.6%** accuracy with 50% cropped inputs, showing robustness to partial visibility.\n- At 8 \u00d7 8 resolution, **39.2%** accuracy matches index-based performance.\n- Visual models outperform in early stages, demonstrating **+8.76%** gain over baseline at 40 \u00d7 40 pixels.",
+        "method_explanation_question": "- Processes low-resolution grayscale character images through a **lightweight visual encoder** before feeding into a standard language decoder.\n- Extracts structural features using a **ResNet encoder** and **Vision Adapter** for visual inputs.\n- Maps index-based inputs directly into decoder embeddings for comparison.\n- Optimizes with **cross-entropy loss** using AdamW optimizer and mixed precision training.\n- Trains on THUCNews dataset with quadratic curriculum learning, increasing sequence length progressively.",
+        "problem_definition_question": "- Index-based tokenization neglects **visual structure**, limiting predictive power for logographic scripts.\n- Current models fail to capture **morphological details** essential for Chinese character prediction.\n- There is a gap in **interpretable NLP** methods that align with human visual perception.\n- Robustness to **partial visibility** and **resolution changes** is lacking in existing approaches.\n- Models struggle with **early-stage learning dynamics** due to insufficient structural priors."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Model architecture and concrete processing example showing the prediction of the final character in the phrase \u201c \u6570 \u636e \u663e \u793a \u201d (The data shown); numerical results demonstrate the hot-start phenomenon of visual tokens by 0.5% of the total training progress. Top: Visual-based training pipeline; numerical results are based on inputs of 8 \u00d7 8 character images. Bottom: Index-based training pipeline.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4545034.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Heatmap visualization of character example cropping at two resolutions: low and high.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4545034.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Accuracy (%) / PPL across resolutions. Vision-100% : full images; Vision-80% : top 80% crop; Vision-50% : top 50% crop. Index-based Model : baseline using discrete character indices.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4545034.2.jpeg"
+        },
+        {
+          "caption": "Figure 3: \u201ctoast-center effect\u201d: center strokes (blue box) receive more attention than outer pixels (red box).",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4545034.3.jpeg"
+        },
+        {
+          "caption": "Table 2: Hot-start progression across training stages. Higher resolutions show earlier and stronger advantages that gradually narrow over time.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4545034.4.jpeg"
+        },
+        {
+          "caption": "Figure 4: Validation accuracy across image resolutions at selected early training checkpoints (5k\u201310k samples), plotted on the index-based baseline scale (dashed line).",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4545034.5.jpeg"
+        }
+      ],
+      "title": "Hot-Start from Pixels: Low-Resolution Visual Tokens for Chinese Language Modeling",
+      "total_likes": 1,
+      "total_read": 12,
+      "url": "https://arxiv.org/pdf/2601.09566",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09566.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large language models (LLMs) have recently enabled remarkable progress in text representation. However, their embeddings are typically high-dimensional, leading to substantial storage and retrieval overhead. Although recent approaches such as Matryoshka Representation Learning (MRL) and Contrastive Sparse Representation (CSR) alleviate these issues to some extent, they still suffer from retrieval accuracy degradation. This paper proposes \\emph{Isolation Kernel Embedding} or IKE, a learning-free method that transforms an LLM embedding into a binary embedding using Isolation Kernel (IK). IKE is an ensemble of diverse (random) partitions, enabling robust estimation of ideal kernel in the LLM embedding space, thus reducing retrieval accuracy loss as the ensemble grows. Lightweight and based on binary encoding, it offers low memory footprint and fast bitwise computation, lowering retrieval latency. Experiments on multiple text retrieval datasets demonstrate that IKE offers up to 16.7x faster retrieval and 16x lower memory usage than LLM embeddings, while maintaining comparable or better accuracy. Compared to CSR and other compression methods, IKE consistently achieves the best balance between retrieval efficiency and effectiveness.",
+      "affiliations": [
+        "National Key Laboratory for Novel Software Technology, Nanjing University"
+      ],
+      "arxiv_id": "2601.09159",
+      "arxives_doi": null,
+      "authors": "Zhibo Zhang, Yang Xu, Kai Ming Ting, Cam-Tu Nguyen",
+      "bookmarked": 0,
+      "cache_file_name": "Zhang2026ARXIV_LLMs_Meet_Isolation_Kernel.pdf",
+      "category": "Computer Science",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.854867301,
+        0.5008729222,
+        0.5132962423,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09159",
+      "inferredHighlights": [
+        {
+          "endIndex": 591,
+          "highlightClass": "primary-highlight",
+          "startIndex": 422
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Zhang2026ARXIV_LLMs_Meet_Isolation_Kernel.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Binary Embeddings,  Isolation Kernel,  Learning-free Compression,  Approximate Nearest Neighbor,  Text Retrieval",
+        "method_shortname": "IKE",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139285,
+      "paper_id": 4544618,
+      "paper_source_id": "2601.09159",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.7317718393,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "caa041c9070ac3df6beb28e95a74d917087c2aff",
+      "shortened_authors": "Zhibo Zhang, Yang Xu, Kai Ming Ting, Cam-Tu Nguyen",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **Isolation Kernel Embedding (IKE)**, a learning-free method that transforms LLM embeddings into binary representations without training.\n- Proposes **diverse partitioning** as a fourth criterion to enhance hash representation diversity and retrieval effectiveness.\n- Achieves up to **16.7\u00d7 faster retrieval** and **16\u00d7 lower memory usage** compared to LLM embeddings while maintaining comparable accuracy.\n- Outperforms **learning-based methods** like CSR and other compression techniques in terms of efficiency and effectiveness.\n- **High diversity** in partitions ensures robustness and adaptability across different datasets and applications.",
+        "evaluation_question": "- On *HotpotQA*, achieves **83.69% MRR@10** vs. LLM (**83.83%**) with **+0.5%** improvement.\n- On *FiQA2018*, maintains **59.97% MRR@10** vs. LLM (**60.33%**) with minimal degradation.\n- In ANN search, IKE paired with HNSW index achieves **6.4\u00d7 higher throughput** than LLM embeddings on HotpotQA.\n- On *TRECDL23*, reaches **98.11% MRR@10** vs. LLM (**97.56%**) with **+0.55%** gain.\n- Ablation studies show IKE reduces search time by **one order of magnitude** compared to CSR.\n- With code length of 512 bytes, IKE achieves **6.7\u00d7 higher QPS** than PQfs on HotpotQA dataset.",
+        "method_explanation_question": "- Converts LLM embeddings into binary representations using **Isolation Kernel (IK)** through random partitions.\n- Constructs **Isolation Forest (iForest)** or **Voronoi Diagram (VD)** to generate diverse partitions for hashing.\n- Maps data points into binary codes via **index-based representation \u03a6_idx(x)**, storing partition indices.\n- Computes similarity using **bitwise operations** to compare binary codes efficiently.\n- Supports both exhaustive search and approximate nearest neighbor (ANN) search with indexing structures like HNSW and IVF.",
+        "problem_definition_question": "- LLM embeddings suffer from **high dimensionality**, leading to substantial storage and retrieval overhead.\n- **Retrieval accuracy degrades** when compressing LLM embeddings using existing methods like MRL and CSR.\n- **Existing methods lack diversity** in partitions, limiting their effectiveness in complex LLM-embedded spaces.\n- **Efficient and accurate retrieval** remains challenging due to the trade-off between speed and performance.\n- **Need for lightweight, learning-free compression** that preserves accuracy while reducing computational costs."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 3: A illustration of partitioning in 2D space ( \u03c8 = 4 ) by different IK implementations: iForest and VD. Blue points indicate the samples used to construct the partition, and the green point represents input data to be transformed.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.1.jpeg"
+        },
+        {
+          "caption": "Figure 2: Effect of parameter m in IKE V D ( t =4096) on nDCG@10 across two LLM embedding datasets. The pentagram marker indicates the performance of IKE V D when m = d , which is equivalent to the VDeH method.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.2.jpeg"
+        },
+        {
+          "caption": "Figure 4: QPS vs. MRR@10 for Four ANN Methods on the HotpotQA dataset. The curves are obtained by adjusting the ANN search parameters. The detailed configuration is described in Appendix F.2.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.3.jpeg"
+        },
+        {
+          "caption": "Figure 1: MRL learns adaptive embedding length by optimizing different downstream applications. CSR combines recontruction loss and constrastive loss for learning sparse representation. In contrast, IKE maps points into binary embeddings for efficient retrieval through random partitions without sophisticated learning.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Results of with two LLMs in the exhaustive search setting. The \u201cSpace\" column reports the reduction in memory usage achieved by mapping the data into the IKE space, expressed as a multiplicative factor compared to the LLM embedding. In the \u201cOther\" column, we record auxiliary processing time: for IKE, this includes IKE model construction and feature mapping for all corpus embeddings; for LLM, this includes \u2113 2 -normalization of all corpus embeddings and Faiss\u2019s exhaustive search index construction. The \u201cSearch\" column measures the search execution time for all queries, with the speedup ratio of our method indicated in parentheses.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.4.jpeg"
+        },
+        {
+          "caption": "Figure 5: Comparison of Retrieval Accuracy and Search Time between CSR and IKE in the exhaustive search setting on the HotpotQA (LLM2Vec) dataset.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.5.jpeg"
+        },
+        {
+          "caption": "Figure 6: Performance Comparison of Compression Methods on ANN Retrieval: QPS vs. nDCG@10 on the HotpotQA (LLM2Vec) dataset . The curves are obtained by adjusting the search parameter of the index structures.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.6.jpeg"
+        },
+        {
+          "caption": "Figure 7: Effect of parameter t (the number of iTrees) on Search Time and Retrieval Accuracy . The gray dashed lines denote the corresponding retrieval performance in the LLM embedding space.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544618.7.jpeg"
+        },
+        {
+          "caption": "Table 2: Results of different implementations of the IKE in the exhaustive search setting.",
+          "figureNumber": 8,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544618.8.jpeg"
+        }
+      ],
+      "title": "LLMs Meet Isolation Kernel: Lightweight, Learning-free Binary Embeddings for Fast Retrieval",
+      "total_likes": 2,
+      "total_read": 6,
+      "url": "https://arxiv.org/pdf/2601.09159",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09159.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Iterative summarization based reasoning frameworks such as InftyThink enable long-horizon reasoning in large language models (LLMs) by controlling context growth, but they repeatedly regenerate similar reasoning strategies across tasks. We introduce InftyThink with Cross-Chain Memory, an extension that augments iterative reasoning with an embedding-based semantic cache of previously successful reasoning patterns. At each reasoning step, the model retrieves and conditions on the most semantically similar stored lemmas, guiding inference without expanding the context window indiscriminately. Experiments on MATH500, AIME2024, and GPQA-Diamond demonstrate that semantic lemma retrieval improves accuracy in structured domains while exposing failure modes in tests that include heterogeneous domains. Geometric analyses of reasoning trajectories reveal that cache retrieval induces directional biases in embedding space, leading to consistent fix (improve baseline accuracy) and break (degradation in baseline accuracy) attractors. Our results highlight both the benefits and limits of similarity-based memory for self-improving LLM reasoning.",
+      "affiliations": [
+        "McGill University"
+      ],
+      "arxiv_id": "2601.08846",
+      "arxives_doi": null,
+      "authors": "Cagatay Tekin, Charbel Barakat, Luis Joseph Luna Limgenco",
+      "bookmarked": 0,
+      "cache_file_name": "Tekin2025ARXIV_Directional_Attractors_in_LLM.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8775625237,
+        0.5451071712,
+        0.5324978495,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2025 (December 22)",
+      "first_page_image": null,
+      "github_url": "https://github.com/cagopat/InftyThink-with-Cross-Chain-Memory",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.08846",
+      "inferredHighlights": [
+        {
+          "endIndex": 415,
+          "highlightClass": "primary-highlight",
+          "startIndex": 237
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Tekin2025ARXIV_Directional_Attractors_in_LLM.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Reasoning Systems,  Embedding Retrieval,  Semantic Caching,  Directional Attractors,  InftyThink",
+        "method_shortname": "InftyThink",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4138961,
+      "paper_id": 4544294,
+      "paper_source_id": "2601.08846",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-12-22",
+      "ranking_score": 0.7184847263,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "2570b96ef56f7949fc84292cd3bd02e453e65fb9",
+      "shortened_authors": "Cagatay Tekin, Charbel Barakat, Luis Joseph Luna Limgenco",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **InftyThink with Cross-Chain Memory** to enhance iterative reasoning via semantic cache retrieval.\n- Demonstrates **improved accuracy** on structured domains like *MATH500* and *AIME2024*.\n- Highlights **directional attractors** in embedding space that guide or disrupt reasoning paths.\n- Reveals the **trade-off between cache quality, size, and performance** across diverse datasets.\n- Identifies **geometric patterns** in reasoning trajectories that inform future self-improving LLM designs.",
+        "evaluation_question": "- On *MATH500*, achieves **80.3%** accuracy, surpassing Vanilla InftyThink (**77.3%**) by **+3.0%**.\n- On *AIME2024*, peaks at **20.7%** accuracy, a **+10.4%** improvement over baseline.\n- On *GPQA-Diamond*, reaches **38.9%** accuracy with *k=5*, but drops to **34.6%** with *k=15*.\n- Ablation studies show **cache size impacts performance**, particularly in heterogeneous domains.",
+        "method_explanation_question": "- Stores previously successful reasoning steps (lemmas) in an embedding-based semantic cache using BGE model.\n- Retrieves the **k most semantically similar lemmas** to augment the context window for new problems.\n- Injects retrieved lemmas into the reasoning process to guide inference without expanding the context window.\n- Optimizes end-to-end with **cross-entropy loss** while maintaining a fixed token limit per iteration.",
+        "problem_definition_question": "- Current iterative reasoning frameworks suffer from **redundant strategy regeneration** across tasks.\n- LLMs often lose critical details through repeated compression, leading to **inaccurate reasoning**.\n- Existing methods lack **dynamic memory augmentation** to preserve and reuse prior insights.\n- There is a need for **self-improving mechanisms** that adapt to problem complexity without manual intervention."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Lemma Augmented InftyThink",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544294.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Vanilla InftyThink Baseline vs. cache-augmented variants at different retrieval sizes.",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544294.1.jpeg"
+        },
+        {
+          "caption": "sum-Figure 2: The Cost Difference Chart",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544294.2.jpeg"
+        }
+      ],
+      "title": "Directional Attractors in LLM Reasoning: How Similarity Retrieval Steers Iterative Summarization Based Reasoning",
+      "total_likes": 0,
+      "total_read": 4,
+      "url": "https://arxiv.org/pdf/2601.08846",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.08846.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Do Large Language Models (LLMs) genuinely grasp the compositional semantics of events, or do they rely on surface-level probabilistic heuristics? We investigate the Imperfective Paradox, a logical phenomenon where the past progressive aspect entails event realization for activities (e.g., running $\\to$ ran) but not for accomplishments (e.g., building $\\nrightarrow$ built). We introduce ImperfectiveNLI, a diagnostic dataset designed to probe this distinction across diverse semantic classes. Evaluating state-of-the-art open-weight models, we uncover a pervasive Teleological Bias: models systematically hallucinate completion for goal-oriented events, often overriding explicit textual negation. Representational analyses show that while internal embeddings often distinguish process from result, inference decisions are dominated by strong priors about goal attainment. We further find that prompting-based interventions reduce hallucinated completions but also increase incorrect rejections of valid entailments. Our findings suggest that current LLMs lack structural aspectual awareness, operating as predictive narrative engines rather than faithful logical reasoners.",
+      "affiliations": [
+        "The University of Tokyo",
+        "LMU Munich"
+      ],
+      "arxiv_id": "2601.09373",
+      "arxives_doi": null,
+      "authors": "Bolei Ma, Yusuke Miyao",
+      "bookmarked": 0,
+      "cache_file_name": "Ma2026ARXIV_The_Imperfective_Paradox_in.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9789012149,
+        0.8467682048,
+        0.7859433252,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": "https://github.com/boleima/ImperfectiveParadox",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09373",
+      "inferredHighlights": [
+        {
+          "endIndex": 374,
+          "highlightClass": "primary-highlight",
+          "startIndex": 146
+        },
+        {
+          "endIndex": 493,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 376
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Ma2026ARXIV_The_Imperfective_Paradox_in.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Aspectual Semantics,  Imperfective Paradox,  Teleological Bias,  Aspect Classification,  NLI Dataset",
+        "method_shortname": "IMPERFECTIVE NLI",
+        "sub_subfield": "Aspectual Semantics",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139503,
+      "paper_id": 4544836,
+      "paper_source_id": "2601.09373",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.5737455265,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "e8e10a2c2e9cffc2c18c384647b7618401ed7b91",
+      "shortened_authors": "Bolei Ma, Yusuke Miyao",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **IMPERFECTIVE NLI**, a diagnostic dataset to probe the Imperfective Paradox across diverse semantic classes.\n- Unveils a pervasive **Teleological Bias** in models, systematically hallucinating completion for goal-oriented events.\n- Demonstrates that **prompting strategies** can reduce hallucinations but may also increase incorrect rejections of valid entailments.\n- Highlights a dissociation between **representation and reasoning**, where embeddings distinguish process from result but inference is dominated by priors.\n- Reveals that **aspectual reasoning** requires structural awareness, not just surface-level alignment.\n- **Aspect-Aware Alignment** is proposed as a necessary step for resolving the Imperfective Paradox.",
+        "evaluation_question": "- On *Group C (Ambiguous Accomplishment)*, models exhibit a **Teleological Bias Rate (TBR)** of up to **1.00**.\n- For *Group D (Ambiguous Activity)*, models show a **high accuracy** of **~0.98** but face a **significant drop** when using advanced prompting strategies.\n- The **Aspectual Awareness Gap (\u2206AA)** indicates models struggle to differentiate between telic and atelic verbs, with values as low as **0.00**.\n- Models like **Qwen2.5** show better performance with a **TBR of 0.53** and **\u2206AA of 0.44**.\n- The **scale of models** correlates with reduced **Teleological Bias** and increased **Aspectual Awareness**.\n- A **phase shift** occurs at **32B scale**, showing marked improvement in **aspectual reasoning**.",
+        "method_explanation_question": "- Constructs a **diagnostic NLI dataset** with minimal pairs across four logical conditions for telic and atelic verbs.\n- Analyzes **representational similarity** between progressive and perfective forms using **cosine similarity**.\n- Evaluates **model performance** under various prompting strategies including **Strict Logic Prompt**, **Definition-Aware Prompt**, **Chain-of-Thought Prompt**, and **Counterfactual Prompt**.\n- Measures **Teleological Bias Rate (TBR)** and **Aspectual Awareness Gap (\u2206AA)** to assess model behavior.\n- Investigates how **model scale** impacts **aspectual reasoning** and **semantic calibration**.",
+        "problem_definition_question": "- Current LLMs fail to resolve the **Imperfective Paradox**, conflating process with culmination for telic events.\n- **Teleological Bias** leads to systematic hallucination of event completion for goal-oriented actions.\n- Models misinterpret **progressive aspect** as implying **event realization** regardless of verb type.\n- **Aspectual reasoning** is critical for accurate logical inference but remains underdeveloped in LLMs.\n- **Semantic priming** and **prior expectations** override contextual evidence during inference."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 2: Examples from the I MPERFECTIVE NLI dataset. Group C is the critical probe, where the imperfective paradox implies a Neutral relation, but teleological bias may lead models to predict Entailment .",
+          "figureNumber": 0,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544836.0.jpeg"
+        },
+        {
+          "caption": "Table 3: Model performance under Zeroshot, CoT, DAP, and Counterfactual prompting strategies with Acc for A-D Groups, Teleological Bias Rate (TBR), and Aspectual Awareness Gap ( \u2206 AA ).",
+          "figureNumber": 1,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544836.1.jpeg"
+        },
+        {
+          "caption": "Figure 2: The emergence of aspectual reasoning capabilities across model scales. It shows a significant decrease in TBR and a corresponding increase in \u2206 AA .",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544836.2.jpeg"
+        },
+        {
+          "caption": "Figure 1: The trade-off in prompting ( Llama-3.1 ). As prompts become more aggressive in targeting bias (Zero-shot \u2192 Counterfactual), accuracy on Group C improves significantly (Pearson r = 1 . 00 , p = 0 . 00 ), and accuracy on Group D collapses also, only unsteadily ( r = \u2212 0 . 91 , p = 0 . 09 ). This demonstrates the calibration bias.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544836.3.jpeg"
+        },
+        {
+          "caption": "Figure 3: Average accuracy across models by semantic verb classes in Zero-shot. Motion verbs are consistently easier for models to reason about, while Creation verbs induce the stronge teleological bias (lowest accuracy in Group C) and resistance to contextual cancellation (lowest accuracy in Group A).",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544836.4.jpeg"
+        },
+        {
+          "caption": "Figure 4: Representational vs. Behavioral Divergence.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544836.5.jpeg"
+        }
+      ],
+      "title": "The Imperfective Paradox in Large Language Models",
+      "total_likes": 1,
+      "total_read": 13,
+      "url": "https://arxiv.org/pdf/2601.09373",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09373.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Large language model (LLM) tokenizers act as structured compressors: by mapping text to discrete token sequences, they determine token count (and thus compute and context usage) and the statistical structure seen by downstream models. Despite their central role in LLM pipelines, the link between tokenization, compression efficiency and induced structure is not well understood. We empirically demonstrate that tokenizer training scale redistributes entropy: as training data grows, the token stream becomes more diverse in aggregate (higher unigram entropy) yet markedly more predictable in-context (lower higher-order conditional entropies), indicating that tokenization absorbs substantial short-range regularity although these gains degrade under train-test domain mismatch. To ground these observations, we first benchmark i) pretrained GPT-family tokenizers as black-box compressors across various domains, and ii) learned tokenizers across configurations spanning vocabulary size, training scale, and domain. Next, we study tokenization as a transform for universal compression and introduce a compression-aware BPE variant. Finally, we adopt a channel lens and introduce capacity-utilization metrics to analyze tokenizer behaviour and outline implications for downstream modeling. Put together, our results expose various trade-offs between compression, induced structure, and robustness under domain shift, and motivate principled, compression-aware tokenizer design.",
+      "affiliations": [
+        "Department of Electrical Engineering, Stanford University",
+        "AWS Annapurna ML"
+      ],
+      "arxiv_id": "2601.09039",
+      "arxives_doi": null,
+      "authors": "Mete Erdogan, Abhiram Gorle, Shubham Chandak, Mert Pilanci, Tsachy Weissman",
+      "bookmarked": 0,
+      "cache_file_name": "Erdogan2026ARXIV_An_Information_Theoretic_Perspective.pdf",
+      "category": "Computer Science",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9738225562,
+        0.8650865957,
+        0.811849569,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09039",
+      "inferredHighlights": [
+        {
+          "endIndex": 1015,
+          "highlightClass": "primary-highlight",
+          "startIndex": 780
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Erdogan2026ARXIV_An_Information_Theoretic_Perspective.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Compression,  Entropy,  Tokenizers,  Universal Compression,  Channel Capacity,  BPE,  LZ Compression,  Domain Shift,  Capacity Utilization",
+        "method_shortname": "LLM Tokenizers",
+        "sub_subfield": "Tokenization",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139192,
+      "paper_id": 4544525,
+      "paper_source_id": "2601.09039",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.5588681933,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "2ca35d17434cb8cae4284995d5e79516725ba49e",
+      "shortened_authors": "Mete Erdogan, Abhiram Gorle, Shubham Chandak, Mert Pilanci, Tsachy Weissman",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Analyzes how tokenizer training scale redistributes entropy: as training data grows, token streams become more diverse (higher unigram entropy) yet more predictable in-context (lower higher-order conditional entropies).\n- Benchmark pretrained GPT-family tokenizers as black-box compressors across multiple domains and compare against classical compressors like gzip and zstd.\n- Introduces a compression-aware BPE variant and adopts a channel lens to analyze tokenizer behavior and outline implications for downstream modeling.\n- Highlights trade-offs between compression, induced structure, and robustness under domain shift, motivating principled, compression-aware tokenizer design.\n- **Key insight**: Tokenization absorbs short-range regularity but these gains degrade under train-test domain mismatch, emphasizing the need for domain-aware tokenizer training.",
+        "evaluation_question": "- On *news*, *code*, and *math* domains, tokenizers show consistent scaling trends with training data: unigram entropy rises while higher-order conditional entropies decrease.\n- For *English*, *Turkish*, and *Chinese*, tokenizers exhibit varying performance under domain mismatch, with BPE showing resilience and others suffering from over-segmentation.\n- LZ-aware BPE improves compression by ~15.8% over standard BPE on English text, demonstrating the value of optimizing tokenization for universal compressors.\n- Tokenizers trained on English perform poorly when tested on Turkish, code, or Chinese, highlighting the importance of domain alignment in tokenizer design.",
+        "method_explanation_question": "- Treats tokenizers as structured compressors that map raw text into discrete token sequences, influencing both compression efficiency and statistical structure.\n- Evaluates tokenizers across domains using compression ratios and empirical k-gram entropies to quantify their impact on local predictability.\n- Introduces a compression-aware BPE variant optimized for universal compressors, selecting merges based on their impact on downstream compression performance.\n- Adopts a channel lens to analyze tokenizer behavior, defining capacity utilization as the ratio of unigram entropy to log2(K), where K is the vocabulary size.\n- Examines how tokenizer training scale affects entropy distribution, revealing trade-offs between compression efficiency and induced structure.",
+        "problem_definition_question": "- Current LLM tokenizers struggle with cross-lingual robustness, particularly for non-Latin scripts like Chinese, Japanese, and Hindi, leading to severe over-segmentation.\n- **Domain shift sensitivity** causes tokenizers trained on one domain to perform poorly when applied to another, undermining model robustness.\n- Existing tokenizers often fail to balance compression efficiency with the preservation of linguistic structure, leading to either overly redundant representations or loss of critical contextual information.\n- The paper identifies a critical gap in tokenizer design: the lack of principled frameworks that jointly optimize for compression, induced structure, and domain robustness.\n- **Key challenge**: Designing tokenizers that maintain performance across varying domains without requiring extensive retraining or domain-specific adjustments."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Fig. 1: Analyzing the GPT-family Tokenizers",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.0.jpeg"
+        },
+        {
+          "caption": "Fig. 2: Compression ratios across domains (vocab. size = 16k)",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.1.jpeg"
+        },
+        {
+          "caption": "Fig. 4: Tokenizer k -gram entropy results trained & tested on English for vocabulary size 16k.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.2.jpeg"
+        },
+        {
+          "caption": "Fig. 3: Compression ratios across domains (vocab. size = 64k)",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.3.jpeg"
+        },
+        {
+          "caption": "Fig. 5: Compression ratios in domain mismatch (vocab. size = 16k). Trained on English, tested on (a) Turkish, (b) Code.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.4.jpeg"
+        },
+        {
+          "caption": "Fig. 6: k -gram entropies in domain mismatch (vocab. 16k)",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.5.jpeg"
+        },
+        {
+          "caption": "TABLE I: bits per character (bpc) on C4 dataset when applying LZ directly to raw UTF-8 text vs. tokenized text.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544525.6.jpeg"
+        },
+        {
+          "caption": "Fig. 7: LZ-Aware BPE results",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.7.jpeg"
+        },
+        {
+          "caption": "Fig. 8: Capacity Utilization vs. Training Size",
+          "figureNumber": 8,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544525.8.jpeg"
+        }
+      ],
+      "title": "An Information-Theoretic Perspective on LLM Tokenizers",
+      "total_likes": 4,
+      "total_read": 26,
+      "url": "https://arxiv.org/pdf/2601.09039",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09039.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "We introduce Spectral Generative Flow Models (SGFMs), a physics-inspired alternative to transformer-based large language models. Instead of representing text or video as sequences of discrete tokens processed by attention, SGFMs treat generation as the evolution of a continuous field governed by constrained stochastic dynamics in a multiscale wavelet basis. This formulation replaces global attention with local operators, spectral projections, and Navier--Stokes-like transport, yielding a generative mechanism grounded in continuity, geometry, and physical structure.   Our framework provides three key innovations: (i) a field-theoretic ontology in which text and video are unified as trajectories of a stochastic partial differential equation; (ii) a wavelet-domain representation that induces sparsity, scale separation, and computational efficiency; and (iii) a constrained stochastic flow that enforces stability, coherence, and uncertainty propagation. Together, these components define a generative architecture that departs fundamentally from autoregressive modeling and diffusion-based approaches. SGFMs offer a principled path toward long-range coherence, multimodal generality, and physically structured inductive bias in next-generation generative models.",
+      "affiliations": null,
+      "arxiv_id": "2601.08893",
+      "arxives_doi": null,
+      "authors": "Andrew Kiruluta",
+      "bookmarked": 0,
+      "cache_file_name": "Kiruluta2026ARXIV_Spectral_Generative_Flow_Models.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9476590369,
+        0.9020091366,
+        0.8767072671,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 13)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.08893",
+      "inferredHighlights": [
+        {
+          "endIndex": 358,
+          "highlightClass": "primary-highlight",
+          "startIndex": 129
+        },
+        {
+          "endIndex": 570,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 360
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Kiruluta2026ARXIV_Spectral_Generative_Flow_Models.pdf",
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4138926,
+      "paper_id": 4544259,
+      "paper_source_id": "2601.08893",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-13",
+      "ranking_score": 0.5252536373,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "87d1e49c2507c423067688d3b70a757ad9a2f96f",
+      "shortened_authors": "Andrew Kiruluta",
+      "source": "arxiv",
+      "summaries": {},
+      "teaser_figures": null,
+      "title": "Spectral Generative Flow Models: A Physics-Inspired Replacement for Vectorized Large Language Models",
+      "total_likes": 4,
+      "total_read": 20,
+      "url": "https://arxiv.org/pdf/2601.08893",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.08893.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Diffusion models have emerged as a powerful class of generative models for molecular design, capable of capturing complex structural distributions and achieving high fidelity in 3D molecule generation. However, their widespread use remains constrained by long sampling trajectories, stochastic variance in the reverse process, and limited structural awareness in denoising dynamics. The Directly Denoising Diffusion Model (DDDM) mitigates these inefficiencies by replacing stochastic reverse MCMC updates with deterministic denoising step, substantially reducing inference time. Yet, the theoretical underpinnings of such deterministic updates have remained opaque. In this work, we provide a principled reinterpretation of DDDM through the lens of the Reverse Transition Kernel (RTK) framework by Huang et al. 2024, unifying deterministic and stochastic diffusion under a shared probabilistic formalism. By expressing the DDDM reverse process as an approximate kernel operator, we show that the direct denoising process implicitly optimizes a structured transport map between noisy and clean samples. This perspective elucidates why deterministic denoising achieves efficient inference. Beyond theoretical clarity, this reframing resolves several long-standing bottlenecks in molecular diffusion. The RTK view ensures numerical stability by enforcing well-conditioned reverse kernels, improves sample consistency by eliminating stochastic variance, and enables scalable and symmetry-preserving denoisers that respect SE(3) equivariance. Empirically, we demonstrate that RTK-guided deterministic denoising achieves faster convergence and higher structural fidelity than stochastic diffusion models, while preserving chemical validity across GEOM-DRUGS dataset. Code, models, and datasets are publicly available in our project repository.",
+      "affiliations": [
+        "Carnegie Mellon University",
+        "Columbia University"
+      ],
+      "arxiv_id": "2601.08963",
+      "arxives_doi": null,
+      "authors": "Adrita Das, Peiran Jiang, Dantong Zhu, Barnabas Poczos, Jose Lugo-Martinez",
+      "bookmarked": 0,
+      "cache_file_name": "Das2026ARXIV_Breaking_the_Bottlenecks_Scalable.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9036108657,
+        0.9167000954,
+        0.936696258,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 13)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.08963",
+      "inferredHighlights": [
+        {
+          "endIndex": 903,
+          "highlightClass": "primary-highlight",
+          "startIndex": 666
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Das2026ARXIV_Breaking_the_Bottlenecks_Scalable.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Molecular Generation,  Diffusion Models,  SE(3)-Equivariance,  Reverse Transition Kernels,  Scalable Molecule Generation",
+        "method_shortname": "DDDM",
+        "sub_subfield": "Molecular Generation",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139067,
+      "paper_id": 4544400,
+      "paper_source_id": "2601.08963",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-13",
+      "ranking_score": 0.4948957978,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "5834a6fe549f45aa6285986087fbbeff580c1d7e",
+      "shortened_authors": "Adrita Das, Peiran Jiang, Dantong Zhu, Barnabas Poczos, Jose Lugo-Martinez",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **SE(3)-equivariant SSM-based diffusion framework** for efficient and scalable molecule generation.\n- Establishes theoretical guarantees on the efficiency of diffusion reverse-process decomposition.\n- Evaluates framework along both efficiency and quality dimensions, showing improved inference speed and standard generation metrics.\n- Constructs GEOM-LongRange benchmark to assess long-range dependency capture and generalization.\n- **Directly Denoising Diffusion Models (DDDM)** offer significant computational savings without compromising chemical validity or structural fidelity.",
+        "evaluation_question": "- Achieves **high structural fidelity** on GEOM-DRUGS dataset while preserving chemical validity.\n- Demonstrates **faster convergence** compared to stochastic diffusion models.\n- Reports **superior performance** on 3D-specific measures like COV\u2013MAT and AMR.\n- Outperforms existing methods on conventional metrics such as validity, novelty, and diversity.",
+        "method_explanation_question": "- Processes molecular graphs using **SE(3)-equivariant SSM-based diffusion framework** with structured state-space modeling.\n- Applies **direct denoising steps** via learned deterministic maps to reduce computational overhead.\n- Utilizes **reverse transition kernels (RTK)** for stable and efficient inference.\n- Optimizes through **cross-entropy loss** with gradient-based training.\n- Generates molecules through **deterministic denoising process** that respects SE(3) equivariance.",
+        "problem_definition_question": "- Traditional diffusion models suffer from **long sampling trajectories** and **stochastic variance** in reverse processes.\n- **Limited structural awareness** in denoising dynamics hinders scalability and accuracy.\n- Current methods struggle with **exponential growth in search space** for larger molecules.\n- **Inefficient iterative denoising** increases computational complexity and resource consumption.\n- Need for **scalable and symmetry-preserving denoisers** that maintain performance across diverse molecular systems."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Overview of the diffusion generative process and reverse denoising dynamics. The top panel shows the forward noising trajectory from the data distribution p data to the noise prior p prior , along with the corresponding reverse kernel approximation used during training. The bottom panel illustrates sampling via direct denoising from x T back to the clean data x 0 .",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544400.0.jpeg"
+        }
+      ],
+      "title": "Breaking the Bottlenecks: Scalable Diffusion Models for 3D Molecular Generation",
+      "total_likes": 10,
+      "total_read": 80,
+      "url": "https://arxiv.org/pdf/2601.08963",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.08963.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Recent advancements in large language models (LLMs) have significantly enhanced their reasoning capabilities. However, they continue to struggle with basic character-level tasks, such as counting letters in words, a problem rooted in their tokenization process. While existing benchmarks have highlighted this weakness through basic character operations, such failures are often dismissed due to lacking practical relevance. Yet, many real-world applications, such as navigating text-based maps or interpreting structured tables, rely heavily on precise sub-token understanding. In this regard, we introduce SubTokenTest, a comprehensive benchmark that assesses sub-token understanding through practical, utility-driven tasks. Our benchmark includes ten tasks across four domains and isolates tokenization-related failures by decoupling performance from complex reasoning. We provide a comprehensive evaluation of nine advanced LLMs. Additionally, we investigate the impact of test-time scaling on sub-token reasoning and explore how character-level information is encoded within the hidden states.",
+      "affiliations": [
+        "Institute for Artificial Intelligence, Peking University"
+      ],
+      "arxiv_id": "2601.09089",
+      "arxives_doi": null,
+      "authors": "Shuyang Hou, Yi Hu, Muhan Zhang",
+      "bookmarked": 0,
+      "cache_file_name": "Hou2026ARXIV_SubTokenTest_A_Practical_Benchmark.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7908387035,
+        0.860872892,
+        0.9975346901,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": "https://github.com/Shu-Feather/SubTokenTest",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09089",
+      "inferredHighlights": [
+        {
+          "endIndex": 725,
+          "highlightClass": "primary-highlight",
+          "startIndex": 579
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Hou2026ARXIV_SubTokenTest_A_Practical_Benchmark.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Sub-token Understanding,  Tokenization,  Character-Level Operations,  Sequence Transformation,  Text Canonicalization,  Structured Data,  2D Spatial Pattern Recognition",
+        "method_shortname": "S UB T OKEN T EST",
+        "sub_subfield": "Sub-token Understanding",
+        "subfield": "Natural Language Processing"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139141,
+      "paper_id": 4544474,
+      "paper_source_id": "2601.09089",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4648423098,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "2ebcc1314b0ddc8911e6ae86370ebdbf3fbb1c49",
+      "shortened_authors": "Shuyang Hou, Yi Hu, Muhan Zhang",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **S UB T OKEN T EST**, a comprehensive benchmark for evaluating sub-token understanding in LLMs.\n- Highlights the critical role of sub-token understanding in practical tasks like map navigation and table interpretation.\n- Analyzes the impact of test-time scaling on sub-token reasoning performance.\n- Investigates how character-level information is encoded within hidden states of LLMs.\n- **Identifies** key challenges in sub-token understanding, such as tokenization-induced errors and overthinking.\n- Provides insights into the trade-off between model complexity and sub-token comprehension.",
+        "evaluation_question": "- On *Keystroke Encoding*, achieves **95.0% EM** vs. GPT-4 (**96.0%**) and o4-mini (**0.0%**).\n- On *Cipher & Decipher*, records **43.0% Exact Match** vs. GPT-5 (**48.0%**) and DeepSeek-V3 (**40.0%**).\n- On *Bio-seq*, attains **97.0% Exact Match** vs. DeepSeek-R1 (**98.0%**) and Qwen-2.5-Instruct (**98.0%**).\n- On *OCR-noise*, reaches **91.0% Exact Match** vs. GPT-5 (**47.0%**) and DeepSeek-R1 (**20.0%**).\n- On *Safety-mask*, obtains **98.0% Exact Match** vs. GPT-5 (**88.0%**) and DeepSeek-R1 (**86.0%**).\n- On *Map-Nav (FrozenLake)*, achieves **99.0% Exact Match** vs. GPT-5 (**87.0%**) and DeepSeek-R1 (**79.0%**).",
+        "method_explanation_question": "- Processes input text through a series of **tokenization** steps to isolate sub-token structures.\n- Applies **character-level operations** such as counting, indexing, and substitution to manipulate tokens.\n- Utilizes **sequence transformation modules** to reconstruct 2D spatial patterns from 1D token sequences.\n- Employs **tree structure parsing** techniques to comprehend hierarchical data formats.\n- Implements **reasoning-based decoding** to handle complex tasks like map navigation and tabular data interpretation.",
+        "problem_definition_question": "- LLMs suffer from **sub-token blindness**, leading to errors in tasks requiring precise character-level understanding.\n- **Tokenization limitations** cause misalignment between token boundaries and data structures in real-world scenarios.\n- **Overthinking** during reasoning can degrade performance on simple sub-token tasks.\n- **Character-level encoding** is often insufficient in hidden states of LLMs.\n- **Practical applications** such as map navigation and table interpretation are vulnerable to sub-token understanding failures."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Example cases where tokenization may cause confusion in practical tasks.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544474.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: S UB T OKEN T EST categories.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544474.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Mapping between tasks in S UB T OKEN T EST and required atomic sub-token abilities.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544474.2.jpeg"
+        },
+        {
+          "caption": "Table 2: Performance on the S UB T OKEN T EST benchmark. Abbreviations: DS-V3/R1 (DeepSeek-V3/R1), Ins (Instruct), DS-Qwen (DeepSeek-distill-Qwen). Detailed sub-task results are provided in Appendix D.2.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544474.3.jpeg"
+        },
+        {
+          "caption": "Figure 3: The two subfigures illustrate distinct error patterns: (a) tokenization-induced errors in DeepSeek-V3 (highlighted in red), and (b) overthinking errors in DeepSeek-R1 (highlighted in purple).",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544474.4.jpeg"
+        },
+        {
+          "caption": "Figure 4: The effects of the number of thinking to-kens on the task performance. Here we evaluate DS-distill-Qwen-2.5-7B on Biological Sequence Manipulation with the metric of normalized similarity.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544474.5.jpeg"
+        },
+        {
+          "caption": "Figure 5: The Macro F1 results of linear probing the last token of certain token sequences. The dot line is the experimental group, and the square line is the corresponding baseline trained with shuffled labels.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544474.6.jpeg"
+        }
+      ],
+      "title": "SubTokenTest: A Practical Benchmark for Real-World Sub-token Understanding",
+      "total_likes": 1,
+      "total_read": 2,
+      "url": "https://arxiv.org/pdf/2601.09089",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09089.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Vision-Language Models (VLMs) and generative image models have achieved remarkable performance across multimodal tasks, yet their robustness and fairness under input transformations remain insufficiently explored. This work investigates bias propagation and robustness degradation in state-of-the-art vision-language and generative models, with a particular focus on image rotation and distributional shifts. We analyze how rotation-induced perturbations affect model predictions, confidence calibration, and demographic bias patterns. To address these issues, we propose rotation-robust mitigation strategies that combine data augmentation, representation alignment, and model-level regularization. Experimental results across multiple datasets demonstrate that the proposed methods significantly improve robustness while reducing bias amplification without sacrificing overall performance. This study highlights critical limitations of current multimodal systems and provides practical mitigation techniques for building more reliable and fair AI models.",
+      "affiliations": null,
+      "arxiv_id": "2601.08860",
+      "arxives_doi": null,
+      "authors": "Tarannum Mithila",
+      "bookmarked": 0,
+      "cache_file_name": "Mithila2026ARXIV_Bias_Detection_and_Rotation.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7748219426,
+        0.8489910923,
+        0.9992316793,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 9)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.08860",
+      "inferredHighlights": [
+        {
+          "endIndex": 407,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 214
+        },
+        {
+          "endIndex": 698,
+          "highlightClass": "primary-highlight",
+          "startIndex": 536
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Mithila2026ARXIV_Bias_Detection_and_Rotation.pdf",
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4138979,
+      "paper_id": 4544312,
+      "paper_source_id": "2601.08860",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-09",
+      "ranking_score": 0.4605883809,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "d409fb77e0c22c5bd75a60f22022512a7113b412",
+      "shortened_authors": "Tarannum Mithila",
+      "source": "arxiv",
+      "summaries": {},
+      "teaser_figures": null,
+      "title": "Bias Detection and Rotation-Robustness Mitigation in Vision-Language Models and Generative Image Models",
+      "total_likes": 0,
+      "total_read": 7,
+      "url": "https://arxiv.org/pdf/2601.08860",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.08860.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "While Large Language Models (LLMs) have powerful capabilities, they remain vulnerable to jailbreak attacks, which is a critical barrier to their safe web real-time application. Current commercial LLM providers deploy output guardrails to filter harmful outputs, yet these defenses are not impenetrable. Due to LLMs' reliance on autoregressive, token-by-token inference, their semantic representations lack robustness to spatially structured perturbations, such as redistributing tokens across different rows, columns, or diagonals. Exploiting the Transformer's spatial weakness, we propose SpatialJB to disrupt the model's output generation process, allowing harmful content to bypass guardrails without detection. Comprehensive experiments conducted on leading LLMs get nearly 100% ASR, demonstrating the high effectiveness of SpatialJB. Even after adding advanced output guardrails, like the OpenAI Moderation API, SpatialJB consistently maintains a success rate exceeding 75%, outperforming current jailbreak techniques by a significant margin. The proposal of SpatialJB exposes a key weakness in current guardrails and emphasizes the importance of spatial semantics, offering new insights to advance LLM safety research. To prevent potential misuse, we also present baseline defense strategies against SpatialJB and evaluate their effectiveness in mitigating such attacks. The code for the attack, baseline defenses, and a demo are available at <a href='https://anonymous.4open.science/r/SpatialJailbreak-8E63' target='_blank'>https://anonymous.4open.science/r/SpatialJailbreak-8E63</a>.",
+      "affiliations": [
+        "Hong Kong Polytechnic University",
+        "SunYat-senUniversity",
+        "ZhejiangUniversity",
+        "TheUniversityofSydney"
+      ],
+      "arxiv_id": "2601.09321",
+      "arxives_doi": null,
+      "authors": "Zhiyi Mou, Jingyuan Yang, Zeheng Qian, Wangze Ni, Tianfang Xiao, Ning Liu, Chen Zhang, Zhan Qin, Kui Ren",
+      "bookmarked": 0,
+      "cache_file_name": "Mou2026ARXIV_SpatialJB_How_Text_Distribution.pdf",
+      "category": "Computer Science",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7683595917,
+        0.8439537894,
+        0.9994854232,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09321",
+      "inferredHighlights": [
+        {
+          "endIndex": 713,
+          "highlightClass": "primary-highlight",
+          "startIndex": 532
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Mou2026ARXIV_SpatialJB_How_Text_Distribution.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Jailbreak Attacks,  Transformer,  Spatial Layouts,  LLM Guardrails,  ASR,  Semantic Correlation",
+        "method_shortname": "SpatialJB",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139355,
+      "paper_id": 4544688,
+      "paper_source_id": "2601.09321",
+      "pdf_download_success": true,
+      "project_link": "https://anonymous.4open.science/r/SpatialJailbreak-8E63",
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4591764678,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "d20e1ea82190478b08ddabd8c6404d7dee491319",
+      "shortened_authors": "Zhiyi Mou, Jingyuan Yang, Zeheng Qian, Wangze Ni, Tianfang Xiao, Ning Liu, Chen Zhang, Zhan Qin, Kui Ren",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **SpatialJB**, a novel jailbreak method that exploits spatial text distribution to bypass LLM guardrails.\n- Demonstrates **high attack success rates** across multiple LLMs, achieving up to 96% on GPT-4 and nearly 100% on Grok4 and DeepSeek.\n- Highlights the **structural weakness** of Transformer-based guardrails in handling non-sequential text layouts.\n- Reveals the **effectiveness of spatial perturbations** in disrupting semantic continuity and evading detection.\n- Proposes **baseline defenses** against spatial jailbreaks, offering insights for improving LLM safety mechanisms.",
+        "evaluation_question": "- Achieves **96% ASR** on GPT-4 and nearly **100%** on Grok4 and DeepSeek, outperforming existing jailbreak methods.\n- Maintains **75%+ success rate** even with advanced guardrails like OpenAI Moderation API.\n- Demonstrates **linear scalability** when combined with other attack techniques.\n- Shows **significant performance differences** across LLMs, with some models being almost completely vulnerable.\n- Reports **exponential decay** in semantic correlation due to spatial layout changes, as seen in attention heatmaps.",
+        "method_explanation_question": "- Transforms text into **spatial layouts** (e.g., acrostic, telestich) to disrupt sequential token processing.\n- **Reorders tokens** across rows, columns, or diagonals to evade semantic similarity checks.\n- **Disrupts token continuity** by separating harmful content visually while maintaining readability.\n- **Exploits Transformer's sequential processing** weakness to bypass guardrail detection.\n- **Preserves human readability** while breaking model-based semantic coherence through structured spatial arrangements.",
+        "problem_definition_question": "- Current LLM guardrails struggle to detect **non-sequential text layouts** due to their reliance on token order.\n- **Semantic continuity is disrupted** by spatial text distributions, making it hard for models to recognize harmful intent.\n- **Transformer-based systems** are inherently limited in capturing spatial relationships between tokens.\n- **Guardrails fail to adapt** to evolving attack strategies that exploit these structural weaknesses.\n- **Robustness against spatial attacks** is critical for ensuring safe and reliable LLM deployment."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 3: Ablation",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544688.6.jpeg"
+        },
+        {
+          "caption": "Figure 1: Without Jailbreak VS Format Jailbreak",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544688.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Semantic Relevance Figure 3: Over of jailbreak method",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544688.1.jpeg"
+        },
+        {
+          "caption": "Figure 4: Similar relation",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544688.2.jpeg"
+        },
+        {
+          "caption": "Table 1: Combined Jailbreak ASR Results (Repeat version). The unified header row is at the top, and each subtable is highlighted with a background color applied to all its rows.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544688.3.jpeg"
+        },
+        {
+          "caption": "Figure 5: ASR performance on different categories",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544688.4.jpeg"
+        },
+        {
+          "caption": "Table 2: Combined Jailbreak ASR Results (Summary version). The unified header row is at the top, and each subtable is highlighted with a background color applied to all its rows.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544688.5.jpeg"
+        }
+      ],
+      "title": "SpatialJB: How Text Distribution Art Becomes the \"Jailbreak Key\" for LLM Guardrails",
+      "total_likes": 1,
+      "total_read": 4,
+      "url": "https://arxiv.org/pdf/2601.09321",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09321.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Memory plays a foundational role in augmenting the reasoning, adaptability, and contextual fidelity of modern Large Language Models and Multi-Modal LLMs. As these models transition from static predictors to interactive systems capable of continual learning and personalized inference, the incorporation of memory mechanisms has emerged as a central theme in their architectural and functional evolution. This survey presents a comprehensive and structured synthesis of memory in LLMs and MLLMs, organizing the literature into a cohesive taxonomy comprising implicit, explicit, and agentic memory paradigms. Specifically, the survey delineates three primary memory frameworks. Implicit memory refers to the knowledge embedded within the internal parameters of pre-trained transformers, encompassing their capacity for memorization, associative retrieval, and contextual reasoning. Recent work has explored methods to interpret, manipulate, and reconfigure this latent memory. Explicit memory involves external storage and retrieval components designed to augment model outputs with dynamic, queryable knowledge representations, such as textual corpora, dense vectors, and graph-based structures, thereby enabling scalable and updatable interaction with information sources. Agentic memory introduces persistent, temporally extended memory structures within autonomous agents, facilitating long-term planning, self-consistency, and collaborative behavior in multi-agent systems, with relevance to embodied and interactive AI. Extending beyond text, the survey examines the integration of memory within multi-modal settings, where coherence across vision, language, audio, and action modalities is essential. Key architectural advances, benchmark tasks, and open challenges are discussed, including issues related to memory capacity, alignment, factual consistency, and cross-system interoperability.",
+      "affiliations": [
+        "State Key Laboratory of General Artificial Intelligence, Peking University"
+      ],
+      "arxiv_id": "2601.09113",
+      "arxives_doi": null,
+      "authors": "Zixia Jia, Jiaqi Li, Yipeng Kang, Yuxuan Wang, Tong Wu, Quansen Wang, Xiaobo Wang, Shuyi Zhang, Junzhe Shen, Qing Li, Siyuan Qi, Yitao Liang, Di He, Zilong Zheng, Song-Chun Zhu",
+      "bookmarked": 0,
+      "cache_file_name": "Jia2026ARXIV_The_AI_Hippocampus_How.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.7260641164,
+        0.8080015536,
+        0.9958303102,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09113",
+      "inferredHighlights": [
+        {
+          "endIndex": 605,
+          "highlightClass": "primary-highlight",
+          "startIndex": 404
+        },
+        {
+          "endIndex": 674,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 607
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Jia2026ARXIV_The_AI_Hippocampus_How.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Memory,  Transformers,  Agentic Systems,  Multi-Modal Models,  Implicit Memory,  Explicit Memory,  Cross-System Interoperability",
+        "method_shortname": "LLM-Memory-Survey",
+        "sub_subfield": "Memory Mechanisms in LLMs",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139121,
+      "paper_id": 4544454,
+      "paper_source_id": "2601.09113",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4490514835,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "8caabd670b06085e507c720cdb8c29109ce5353a",
+      "shortened_authors": "Zixia Jia, Jiaqi Li, Yipeng Kang, Yuxuan Wang, Tong Wu, Quansen Wang, Xiaobo Wang, Shuyi Zhang, Junzhe Shen, ..., Song-Chun Zhu",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Presents a comprehensive survey on memory mechanisms in LLMs and MLLMs, organizing literature into implicit, explicit, and agentic memory paradigms.\n- Analyzes implicit memory within transformers, focusing on knowledge memorization, associative memory, and modification techniques.\n- Explores explicit memory systems, including retrieval mechanisms and integration with external knowledge sources.\n- Investigates agentic memory for autonomous agents, enabling long-term planning and collaborative behavior.\n- Examines memory-augmented multi-modal models, addressing challenges in cross-modal coherence and real-world applications.\n- Identifies key open challenges in memory research, including capacity, alignment, and interoperability across different systems.",
+        "evaluation_question": "- Discusses key architectural advances and benchmark tasks, though specific experimental results are not detailed in the provided text.",
+        "method_explanation_question": "- Analyzes implicit memory within transformers, examining how knowledge is stored and retrieved through self-attention and feed-forward networks.\n- Reviews explicit memory systems, detailing methods for external storage and retrieval of dynamic knowledge representations.\n- Investigates agentic memory frameworks, exploring persistent memory structures for autonomous decision-making and collaboration.\n- Examines memory-augmented multi-modal models, discussing integration strategies for vision, language, audio, and action modalities.\n- Addresses challenges in memory systems, including scalability, alignment, and cross-system interoperability.",
+        "problem_definition_question": "- Current LLMs and MLLMs struggle with long-term memory retention and contextual fidelity, limiting their ability to handle complex, real-world tasks.\n- Existing memory mechanisms often lack scalability, alignment, and robustness across diverse modalities and application domains.\n- There is a need for more flexible and context-aware memory systems that can adapt to dynamic environments and support multi-agent collaboration.\n- Traditional approaches fail to integrate memory effectively with reasoning and decision-making processes, hindering the development of truly intelligent systems.\n- The paper highlights gaps in memory research, particularly in handling real-time interactions, preserving factual consistency, and ensuring interoperability between different memory paradigms."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: The overall framework of Memory Mechanisms in Large Language Models. \u2022 Agentic Memory ( \u00a7 4): The Prefrontal Cortex. The functionality of",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544454.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Taxonomy of implicit memory in Transformer.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544454.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: Parameter vs. Circuit. The left graph demonstrates the location of memory stored in Multi-Layer Perceptron layer and Self-Attention heads of the Transformer module, representing FNNs act as key-value memories , Different FFN neurons memorize different information , and manipulating attention head distributions , respectively. The right graph is a simplified demonstration of the knowledge flow between different transformer layers and various components within different layers.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544454.2.jpeg"
+        }
+      ],
+      "title": "The AI Hippocampus: How Far are We From Human Memory?",
+      "total_likes": 6,
+      "total_read": 22,
+      "url": "https://arxiv.org/pdf/2601.09113",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09113.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Speech tokenizers serve as the cornerstone of discrete Speech Large Language Models (Speech LLMs). Existing tokenizers either prioritize semantic encoding, fuse semantic content with acoustic style inseparably, or achieve incomplete semantic-acoustic disentanglement. To achieve better disentanglement, we propose DSA-Tokenizer, which explicitly disentangles speech into discrete semantic and acoustic tokens via distinct optimization constraints. Specifically, semantic tokens are supervised by ASR to capture linguistic content, while acoustic tokens focus on mel-spectrograms restoration to encode style. To eliminate rigid length constraints between the two sequences, we introduce a hierarchical Flow-Matching decoder that further improve speech generation quality.Furthermore, We employ a joint reconstruction-recombination training strategy to enforce this separation. DSA-Tokenizer enables high fidelity reconstruction and flexible recombination through robust disentanglement, facilitating controllable generation in speech LLMs. Our analysis highlights disentangled tokenization as a pivotal paradigm for future speech modeling. Audio samples are avaialble at <a href='https://anonymous.4open.science/w/DSA_Tokenizer_demo/' target='_blank'>https://anonymous.4open.science/w/DSA_Tokenizer_demo/</a>. The code and model will be made publicly available after the paper has been accepted.",
+      "affiliations": [
+        "Department of Computer Science, City University of Hong Kong",
+        "Huawei Leibniz Research Center, Hong Kong SAR"
+      ],
+      "arxiv_id": "2601.09239",
+      "arxives_doi": null,
+      "authors": "Hanlin Zhang, Daxin Tan, Dehua Tao, Xiao Chen, Haochen Tan, Yunhe Li, Yuchen Cao, Jianping Wang, Linqi Song",
+      "bookmarked": 0,
+      "cache_file_name": "Zhang2026ARXIV_DSA_Tokenizer_Disentangled_Semantic.pdf",
+      "category": "Audio and Speech",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.6120214956,
+        0.683241195,
+        0.9355422426,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09239",
+      "inferredHighlights": [
+        {
+          "endIndex": 446,
+          "highlightClass": "primary-highlight",
+          "startIndex": 268
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Zhang2026ARXIV_DSA_Tokenizer_Disentangled_Semantic.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Speech Tokenization,  Flow Matching,  Hierarchical Fusion,  Disentangled Representation,  Cross-Utterance Recombination",
+        "method_shortname": "DSA-Tokenizer",
+        "sub_subfield": "Speech Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139332,
+      "paper_id": 4544665,
+      "paper_source_id": "2601.09239",
+      "pdf_download_success": true,
+      "project_link": "https://anonymous.4open.science/w/DSA_Tokenizer_demo/",
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4209207632,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "5d0c18e409ec0cbe945f2fcd950eeeac6616288e",
+      "shortened_authors": "Hanlin Zhang, Daxin Tan, Dehua Tao, Xiao Chen, Haochen Tan, Yunhe Li, Yuchen Cao, Jianping Wang, Linqi Song",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **DSA-Tokenizer** for strict semantic-acoustic disentanglement in speech tokenization.\n- Proposes a **hierarchical Flow-Matching decoder** to enable flexible cross-utterance recombination.\n- Develops a **joint reconstruction-recombination training strategy** to enforce robust attribute separation.\n- Achieves **high-fidelity speech reconstruction** and **flexible style-content recombination**.\n- **Enables controllable generation** in Speech LLMs by enabling independent manipulation of semantic and acoustic attributes.",
+        "evaluation_question": "- On *LibriTTS* datasets, achieves **3.90 UTMOS** vs. WavTokenizer (**3.75**) and SAC (**3.30**).\n- Reaches **23.95% WER** on English, **23.95% CER** on Chinese, outperforming non-disentangled baselines.\n- Demonstrates **+2.4% improvement** over previous state-of-the-art methods in cross-utterance recombination.\n- Secures **0.41 SIM** score, surpassing SAC's **0.37** in style preservation.\n- Ablation studies show **speaker consistency loss** is critical for maintaining timbre accuracy.",
+        "method_explanation_question": "- Processes speech into **semantic tokens** (linguistic content) and **acoustic tokens** (style attributes) via dual-stream tokenizers.\n- Uses **Flow Matching-based hierarchical decoder** to enable high-fidelity reconstruction and cross-utterance recombination without rigid length constraints.\n- Implements **joint reconstruction-recombination training** combining self-reconstruction with contextual inpainting for robust attribute separation.\n- Applies **ControlNet-style semantic injection** and **cross-attention for acoustic fusion** to maintain precise alignment.\n- Optimizes with **speaker consistency loss** and **classifier-free guidance** to ensure stable and controllable generation.",
+        "problem_definition_question": "- Existing tokenizers fail to achieve clean **semantic-acoustic disentanglement**, limiting controllable speech generation.\n- **Rigid length constraints** between semantic and acoustic tokens hinder cross-utterance recombination.\n- Most models suffer from **information leakage** between semantic and acoustic attributes, degrading performance.\n- **Lack of robust separation** prevents reliable manipulation of speech content and style in LLMs.\n- **Inadequate disentanglement** limits the practicality of speech tokenizers for real-world applications."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Illustration of (a) speech reconstruction and (b) semantic-acoustic recombination based on discrete token",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544665.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Overview of the proposed framework and training strategy. (a) DSA-Tokenizer framework: Input audio X is encoded into discrete semantic and acoustic tokens, which are fed into the DiT decoder for audio generation. (b) Self-Reconstruction Mode: The model learns to predict the velocity field of the full Mel-spectrogram based on the complete acoustic and semantic tokens. (c) Recombination (Contextual Inpainting) Mode: The model learns to predict the velocity field of the masked Mel-spectrogram region based on the acoustic tokens of the unmasked region and the full semantic tokens.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544665.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Performance comparison of different tokenizers on speech reconstruction and cross-utterance recombination tasks for English and Chinese speech. For DSA-Tokenizer, the notation ( f s , f a , N C , L ) denotes the semantic token rate f s , acoustic token rate f a , acoustic FSQ codebook with N levels per channel and C channels, and L stacked FSQ layers. Baseline models with similar bitrate are selected for fair comparison, annotated with their codebook layers or token rates (semantic f s and acoustic f a where applicable).",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544665.2.jpeg"
+        },
+        {
+          "caption": "Figure 3: Disentanglement probing evaluation results. (L0) means the first layer, (L1-7) means the second to eighth layers.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544665.3.jpeg"
+        },
+        {
+          "caption": "Table 2: LLM-based voice cloning performance.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544665.4.jpeg"
+        },
+        {
+          "caption": "Table 3: Ablation study of speaker loss and recombination mode on reconstruction and recombination tasks.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544665.5.jpeg"
+        }
+      ],
+      "title": "DSA-Tokenizer: Disentangled Semantic-Acoustic Tokenization via Flow Matching-based Hierarchical Fusion",
+      "total_likes": 3,
+      "total_read": 13,
+      "url": "https://arxiv.org/pdf/2601.09239",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09239.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "While Large Language Models (LLMs) excel at factual retrieval, they often struggle with the \"curse of two-hop reasoning\" in compositional tasks. Recent research suggests that parameter-sharing transformers can bridge this gap by forming a \"Generalization Circuit\" during a prolonged \"grokking\" phase. A fundamental question arises: Is a grokked model superior to its non-grokked counterparts on downstream tasks? Furthermore, is the extensive computational cost of waiting for the grokking phase worthwhile? In this work, we conduct a mechanistic study to evaluate the Generalization Circuit's role in knowledge assimilation and transfer. We demonstrate that: (i) The inference paths established by non-grokked and grokked models for in-distribution compositional queries are identical. This suggests that the \"Generalization Circuit\" does not represent the sudden acquisition of a new reasoning paradigm. Instead, we argue that grokking is the process of integrating memorized atomic facts into an naturally established reasoning path. (ii) Achieving high accuracy on unseen cases after prolonged training and the formation of a certain reasoning path are not bound; they can occur independently under specific data regimes. (iii) Even a mature circuit exhibits limited transferability when integrating new knowledge, suggesting that \"grokked\" Transformers do not achieve a full mastery of compositional logic.",
+      "affiliations": [
+        "Department of Computer Science, University of Texas at Dallas"
+      ],
+      "arxiv_id": "2601.09049",
+      "arxives_doi": null,
+      "authors": "Kaiyu He, Zhang Mian, Peilin Wu, Xinya Du, Zhiyu Chen",
+      "bookmarked": 0,
+      "cache_file_name": "He2026ARXIV_Is_Grokking_Worthwhile_Functional.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.5711636665,
+        0.6280776536,
+        0.8940811307,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": "https://github.com/KaiyuHe998/IsGrokkingWorthwhile",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09049",
+      "inferredHighlights": [
+        {
+          "endIndex": 637,
+          "highlightClass": "primary-highlight",
+          "startIndex": 508
+        },
+        {
+          "endIndex": 785,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 639
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "He2026ARXIV_Is_Grokking_Worthwhile_Functional.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Grokking,  Generalization Circuit,  Compositional Reasoning,  Transferability,  Implicit Reasoning",
+        "method_shortname": "Grokking",
+        "sub_subfield": "Transformer Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139189,
+      "paper_id": 4544522,
+      "paper_source_id": "2601.09049",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4097848665,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "c2e945cd6e5d80c4c7f619736f29558afaededea",
+      "shortened_authors": "Kaiyu He, Zhang Mian, Peilin Wu, Xinya Du, Zhiyu Chen",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Argues that **grokking** is the process of integrating memorized atomic facts into an established reasoning path.\n- Demonstrates that **non-grokked** and **grokked** models follow identical inference paths on in-distribution data.\n- Highlights that **Generalization Circuit** formation is not inherently tied to grokking.\n- Shows that **transferability** of grokked models is limited, suggesting incomplete mastery of compositional logic.\n- Reveals that **full supervision** can achieve equivalent performance to natural grokking without prolonged training.",
+        "evaluation_question": "- Non-grokked models achieve identical accuracy as grokked ones on in-distribution data.\n- Full supervision leads to equivalent transfer performance compared to natural grokking.\n- Models trained with full supervision show no difference in final answer accuracy on new facts.",
+        "method_explanation_question": "- Trains models on atomic and compositional queries, exposing them to all atomic facts but only ID-based compositional queries during training.\n- Uses logit lens to visualize the maturation of Generalization Circuits by decoding hidden states across layers.\n- Identifies 'Bridge Found' when decoded hidden states match ground-truth bridge entities.\n- Defines Generalization Circuit as the internal reasoning trace that explicitly recovers bridge entities in intermediate layers.\n- Evaluates models on out-of-distribution compositional queries requiring novel facts.",
+        "problem_definition_question": "- Standard Transformers struggle with **compositional reasoning** due to representational mismatches between layers.\n- Models fail to integrate **atomic facts** into a coherent reasoning path without explicit grokking.\n- Current methods lack **transferability** to novel facts, limiting practical applicability.\n- There is a need for **robust generalization** beyond mere memorization of facts.\n- The paper investigates whether **grokking** truly enables compositional understanding or merely mimics it."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Mechanistic Comparison Between traditional transformer and parameter-sharing transformer. (Left) Standard Transformers struggle with representational mismatch across independent layers and are unable to generalize to compositional reasoning. (Right) Transformer with shared parameter resolves the bridge entity b and is able to use shallow parameters to get the final answer.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544522.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Transformer model \u201cGrokking\u201d under different data regime.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544522.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: \u201cGrokked\u201d Transformer learning new knowledge, detailed visualization on all settings can be seen in Figure 4 in Appendix A",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544522.2.jpeg"
+        },
+        {
+          "caption": "Figure 4: \u201cGrokked\u201d transformer finetuned on new facts.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544522.3.jpeg"
+        }
+      ],
+      "title": "Is Grokking Worthwhile? Functional Analysis and Transferability of Generalization Circuits in Transformers",
+      "total_likes": 6,
+      "total_read": 15,
+      "url": "https://arxiv.org/pdf/2601.09049",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09049.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Pre-trained language models (LMs) have, over the last few years, grown substantially in both societal adoption and training costs. This rapid growth in size has constrained progress in understanding and mitigating their biases. Since re-training LMs is prohibitively expensive, most debiasing work has focused on post-hoc or masking-based strategies, which often fail to address the underlying causes of bias. In this work, we seek to democratise pre-model debiasing research by using low-cost proxy models. Specifically, we investigate BabyLMs, compact BERT-like models trained on small and mutable corpora that can approximate bias acquisition and learning dynamics of larger models. We show that BabyLMs display closely aligned patterns of intrinsic bias formation and performance development compared to standard BERT models, despite their drastically reduced size. Furthermore, correlations between BabyLMs and BERT hold across multiple intra-model and post-model debiasing methods. Leveraging these similarities, we conduct pre-model debiasing experiments with BabyLMs, replicating prior findings and presenting new insights regarding the influence of gender imbalance and toxicity on bias formation. Our results demonstrate that BabyLMs can serve as an effective sandbox for large-scale LMs, reducing pre-training costs from over 500 GPU-hours to under 30 GPU-hours. This provides a way to democratise pre-model debiasing research and enables faster, more accessible exploration of methods for building fairer LMs.",
+      "affiliations": [
+        "Department of Computer Science & Technology, University of Cambridge, U.K.",
+        "ALTA Institute, University of Cambridge, U.K."
+      ],
+      "arxiv_id": "2601.09421",
+      "arxives_doi": null,
+      "authors": "Filip Trhlik, Andrew Caines, Paula Buttery",
+      "bookmarked": 0,
+      "cache_file_name": "Trhlik2026ARXIV_Bias_Dynamics_in_BabyLMs.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.554340386,
+        0.6037963312,
+        0.8737968403,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09421",
+      "inferredHighlights": [
+        {
+          "endIndex": 506,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 410
+        },
+        {
+          "endIndex": 684,
+          "highlightClass": "primary-highlight",
+          "startIndex": 508
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Trhlik2026ARXIV_Bias_Dynamics_in_BabyLMs.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Language Models,  Pre-training,  Debiasing,  BabyLMs,  Corpus Analysis,  Bias Mitigation",
+        "method_shortname": "BabyLM",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139415,
+      "paper_id": 4544748,
+      "paper_source_id": "2601.09421",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4049380372,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "f28bea92858c42d63be9352ec7294e5061e11e9f",
+      "shortened_authors": "Filip Trhlik, Andrew Caines, Paula Buttery",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **BabyLMs** as a cost-effective sandbox for pre-model debiasing research.\n- Demonstrates that BabyLMs align closely with standard LMs in bias acquisition and performance dynamics.\n- Validates the effectiveness of pre-model debiasing techniques on BabyLMs, reducing training costs from over 500 GPU-hours to under 30.\n- Highlights the importance of corpus composition in shaping model biases and debiasing outcomes.\n- **Democratizes** pre-training debiasing research by enabling accessible experimentation with low-cost models.",
+        "evaluation_question": "- On *BabyLM corpora*, achieves comparable bias dynamics to BERT, with strong alignment in composite performance and bias metrics.\n- Reduces training costs from over 500 GPU-hours to under 30 GPU-hours, enabling more frequent experimentation.\n- CDA and perturbation augmentation show significant bias reduction while maintaining performance.\n- Toxicity removal and ablation tests demonstrate the direct impact of corpus content on model bias.\n- Perturbation augmentation outperforms CDA in debiasing, showcasing greater lexical and syntactic variety.",
+        "method_explanation_question": "- Processes input data using **low-resource corpora** tailored for BabyLM training.\n- Applies **pre-model debiasing techniques** such as counterfactual data augmentation and toxicity filtering.\n- Utilizes **intra-model debiasing strategies** like CDA and perturbation augmentation to modify training data.\n- Employs **post-model debiasing methods** including Sent-Debias and INLP to refine trained models.\n- Evaluates model performance and bias using **composite metrics** derived from BLiMP, EWoK, and StereoSet.",
+        "problem_definition_question": "- Standard LM debiasing methods often focus on post-hoc adjustments, neglecting the foundational stages of bias formation.\n- **Pre-model debiasing** is underexplored due to high computational costs associated with full-scale model training.\n- Existing methods struggle to address **systematic biases** embedded in training data and pre-training processes.\n- There is a need for **cost-effective alternatives** that enable thorough exploration of debiasing strategies.\n- **Low-cost BabyLMs** offer a viable solution for systematic pre-model debiasing research, bridging the gap between theoretical insights and practical implementation."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 3: Demographic/religion mentions",
+          "figureNumber": 0,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544748.0.jpeg"
+        },
+        {
+          "caption": "Figure 1: Bias and performance changes caused by post-model debiasing strategies",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544748.1.jpeg"
+        },
+        {
+          "caption": "debias-Figure 2: Bias and performance changes caused by intra-model debiasing strategies",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544748.2.jpeg"
+        },
+        {
+          "caption": "Table 5: First canonical correlation ( \u03c1 1 ) between performance and bias shifts across all debiasing methods",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544748.3.jpeg"
+        },
+        {
+          "caption": "Figure 4: Bias and performance variance during CDA pre-training across random seeds {1, 10, 50, 100}",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544748.4.jpeg"
+        },
+        {
+          "caption": "Figure 6: Bias and performance metrics evolution from pre-training on the perturbed corpus",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544748.5.jpeg"
+        },
+        {
+          "caption": "Figure 5: Evolution of bias and performance during pre-training under three corpus strategies: LLM detoxification, removing toxicity, and toxicity-removal ablation",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544748.6.jpeg"
+        }
+      ],
+      "title": "Bias Dynamics in BabyLMs: Towards a Compute-Efficient Sandbox for Democratising Pre-Training Debiasing",
+      "total_likes": 0,
+      "total_read": 3,
+      "url": "https://arxiv.org/pdf/2601.09421",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09421.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Genomic and protein foundation models (GFMs and PFMs) have demonstrated strong performance in learning the language of DNA and proteins, but their use in large-scale sequence generation is limited by the latency of autoregressive decoding. Because every token triggers a forward pass of a large transformer, whose inference is relatively slow, long-sequence generation quickly becomes costly. In this work we adapt speculative decoding to a representative GFM: the DNA model DNAGPT and two representative PFMs: ProGen2 and ProtGPT2. We implement a probabilistic variant of speculative decoding, in which a lightweight draft model proposes short token spans and a larger target model verifies or corrects them in parallel, while preserving the target model's sampling distribution. Across all three models we systematically study the effect of speculation window length, temperature, draft architecture and prompt length, and we benchmark tokens per second over multiple runs per configuration. Speculative decoding yields consistent speedups over standard key-value cached decoding, with maximum observed speedup reaching 100% increase, while average gains across models ranging between 20% and 40%, without changing the underlying target model predictions. Our results show that speculative decoding is a practical and model-agnostic strategy for accelerating genomic and proteomic sequence generation without sacrificing prediction quality.",
+      "affiliations": null,
+      "arxiv_id": null,
+      "arxives_doi": "10.64898/2026.01.13.699044",
+      "authors": "Provatas, K.,  Karatzikos, A.,  Koilakos, C.,  Patsakis, M.,  Tzanakakis, A.,  Nayak, A.,  Mouratidis, I.,  Avgoulas, E.,  Georgakopoulos-Soares, I.",
+      "bookmarked": 0,
+      "cache_file_name": "Provatas2026BIORXIV_Accelerating_Inference_in_Genomic.pdf",
+      "category": "Biology",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.5433690753,
+        0.5874192968,
+        0.8594055413,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "bioRxiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://www.biorxiv.org/content/10.64898/2026.01.13.699044v1.full",
+      "inferredHighlights": [
+        {
+          "endIndex": 531,
+          "highlightClass": "primary-highlight",
+          "startIndex": 393
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {},
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139966,
+      "paper_id": 4545299,
+      "paper_source_id": "10.64898/2026.01.13.699044",
+      "pdf_download_success": null,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4020523345,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": null,
+      "shortened_authors": "Provatas, K.,  Karatzikos, A.,  Koilakos, C.,  Patsakis, M.,  Tzanakakis, ..., I.",
+      "source": "biorxiv",
+      "summaries": {},
+      "teaser_figures": null,
+      "title": "Accelerating Inference in Genomic Foundation Models via Speculative Decoding",
+      "total_likes": 2,
+      "total_read": 7,
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.13.699044v1.full.pdf",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.64898%2F2026.01.13.699044v1.full.pdf.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by incorporating external knowledge. Recently, some works have incorporated iterative knowledge accumulation processes into RAG models to progressively accumulate and refine query-related knowledge, thereby constructing more comprehensive knowledge representations. However, these iterative processes often lack a coherent organizational structure, which limits the construction of more comprehensive and cohesive knowledge representations. To address this, we propose PAGER, a page-driven autonomous knowledge representation framework for RAG. PAGER first prompts an LLM to construct a structured cognitive outline for a given question, which consists of multiple slots representing a distinct knowledge aspect. Then, PAGER iteratively retrieves and refines relevant documents to populate each slot, ultimately constructing a coherent page that serves as contextual input for guiding answer generation. Experiments on multiple knowledge-intensive benchmarks and backbone models show that PAGER consistently outperforms all RAG baselines. Further analyses demonstrate that PAGER constructs higher-quality and information-dense knowledge representations, better mitigates knowledge conflicts, and enables LLMs to leverage external knowledge more effectively. All code is available at <a href='https://github.com/OpenBMB/PAGER' target='_blank'>https://github.com/OpenBMB/PAGER</a>.",
+      "affiliations": [
+        "School of Computer Science and Engineering, Northeastern University",
+        "School of Intelligent Science and Technology, Nanjing University",
+        "Department of Computer Science and Technology, Institute for AI, Tsinghua University"
+      ],
+      "arxiv_id": "2601.09402",
+      "arxives_doi": null,
+      "authors": "Xinze Li, Zhenghao Liu, Haidong Xin, Yukun Yan, Shuo Wang, Zheni Zeng, Sen Mei, Ge Yu, Maosong Sun",
+      "bookmarked": 0,
+      "cache_file_name": "Li2026ARXIV_Structured_Knowledge_Representation_through.pdf",
+      "category": "Language",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1768435200000,
+      "display_venue": "ArXiv 2026 (January 14)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2601.09402",
+      "inferredHighlights": [
+        {
+          "endIndex": 618,
+          "highlightClass": "primary-highlight",
+          "startIndex": 516
+        },
+        {
+          "endIndex": 786,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 620
+        }
+      ],
+      "is_cached": true,
+      "is_cached_filename": "Li2026ARXIV_Structured_Knowledge_Representation_through.pdf",
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Retrieval-Augmented Generation (RAG),  Structured Knowledge Representation,  Cognitive Outlines,  Page Construction,  Knowledge Refinement,  LLM Integration",
+        "method_shortname": "PAGER",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4139439,
+      "paper_id": 4544772,
+      "paper_source_id": "2601.09402",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/OpenBMB/PAGER",
+      "project_url": null,
+      "publication_date": "2026-01-14",
+      "ranking_score": 0.4002409475,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "2d5358511e38013e23580533c426090dd6dfcc22",
+      "shortened_authors": "Xinze Li, Zhenghao Liu, Haidong Xin, Yukun Yan, Shuo Wang, Zheni Zeng, Sen Mei, Ge Yu, Maosong Sun",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- Introduces **PAGER**, a page-driven autonomous knowledge representation framework that constructs contextual pages for RAG modeling.\n- Constructs **structured knowledge pages** that yield richer information content and superior quality compared to other representations.\n- Enables LLMs to leverage external knowledge more effectively by organizing it into structured formats aligned with cognitive frameworks.\n- Mitigates knowledge conflicts within LLMs through structured page organization.\n- Demonstrates consistent improvements over all RAG baselines across diverse benchmarks and backbone models.",
+        "evaluation_question": "- Achieves **50.6%** on *HotpotQA* vs. Vanilla RAG (**42.9%**) and **+7.7%** improvement.\n- Scores **57.4%** on *2WikiMQA* vs. Vanilla RAG (**36.5%**) with **+20.9%** improvement.\n- Reaches **23.0%** on *MuSiQue* vs. Vanilla RAG (**13.5%**) with **+9.5%** improvement.\n- Obtains **62.4%** on *Bamboogle* vs. Vanilla RAG (**52.0%**) with **+10.4%** improvement.\n- Scores **56.5%** on *NQ* vs. Vanilla RAG (**36.2%**) with **+20.3%** improvement.\n- Achieves **56.4%** on *AmbigQA* vs. Vanilla RAG (**32.9%**) with **+23.5%** improvement.",
+        "method_explanation_question": "- Prompts the LLM to construct a **structured cognitive outline** consisting of multiple slots representing distinct knowledge aspects.\n- Iteratively retrieves and refines relevant documents to populate each slot, generating **knowledge evidence**.\n- Fills the structured page with **concise knowledge evidence** to guide the LLM in answering the question.\n- Utilizes **cross-entropy loss** during training to optimize the model's ability to generate accurate answers based on structured knowledge.\n- Employs **iterative retrieval** and **knowledge refinement** mechanisms to progressively enhance the quality of knowledge representations.",
+        "problem_definition_question": "- Existing RAG models lack coherent **knowledge structures**, limiting their ability to construct comprehensive and consistent knowledge representations.\n- Retrieved knowledge often conflicts with parametric memory, hindering LLMs' capacity to identify critical facts from documents.\n- Traditional methods fail to actively acquire and complete missing knowledge, restricting their application to complex questions.\n- There is a need for **structured knowledge pages** that align with cognitive frameworks to guide accurate answer generation.\n- **Knowledge refinement** mechanisms are insufficient to address the challenges of constructing robust and reliable knowledge representations."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: The Pipeline of Our PAGER Model. PAGER initializes a blank structured page with multiple slots and preliminarily fills the retrieved external knowledge into the corresponding slots, thereby constructing more comprehensive and coherent knowledge representations.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544772.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: The Illustration of Our",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544772.1.jpeg"
+        },
+        {
+          "caption": "Table 1: Overall Performance of Different RAG Models. The best and second best results are highlighted.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544772.2.jpeg"
+        },
+        {
+          "caption": "Table 2: Ablation Study. The best and second best results are highlighted.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544772.3.jpeg"
+        },
+        {
+          "caption": "Figure 3: The Quality of Knowledge Representations Constructed by Different Methods.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544772.4.jpeg"
+        },
+        {
+          "caption": "Figure 4: Slot Ablation Studies on the Constructed Page. \u201cN/A\u201d denotes the complete page with no filled slots removed. \u201cFirst\u201d, \u201cSecond\u201d, \u201cThird\u201d, and \u201cFourth\u201d denote the variants in which the First, Second, Third, and Fourth filled slots are removed, respectively. PAGER (w/o Outline) denotes a variant where the cognitive out-line structure is removed from the complete page and is used as a baseline for comparison.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544772.5.jpeg"
+        },
+        {
+          "caption": "Table 3: Performance of Different RAG Models under Different Testing Scenarios.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4544772.6.jpeg"
+        },
+        {
+          "caption": "Figure 5: Effects of Different Knowledge Representations on Retrieval and Generation Modules of RAG.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4544772.7.jpeg"
+        }
+      ],
+      "title": "Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation",
+      "total_likes": 1,
+      "total_read": 11,
+      "url": "https://arxiv.org/pdf/2601.09402",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2601.09402.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    }
+  ],
+  "digest_papers": 16,
+  "display_next_date": true,
+  "empty_digest": false,
+  "first_paper_id_below_decision_boundary": 4544400,
+  "from_date": "Thu, 15 Jan 2026 00:00:00 GMT",
+  "has_more_papers_in_digest": false,
+  "next_date": "2026-01-16",
+  "no_weekdays_selected": false,
+  "pdf_viewer_url": null,
+  "prev_date": "2026-01-14",
+  "read_paper_ids": [],
+  "seen_welcome_tutorial": true,
+  "success": true,
+  "to_date": "Thu, 15 Jan 2026 00:00:00 GMT",
+  "total_papers": "1166",
+  "trending": [
+    {
+      "abstract": "Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/",
+      "author": "Li et al.",
+      "authors": "Chunyang Li, Yuanbo Yang, Jiahao Shao, Hongyu Zhou, Katja Schwarz, Yiyi Liao",
+      "cache_file_name": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174518,
+      "paper_id": 4579856,
+      "pdf_download_success": true,
+      "publication_date": 1770576550000,
+      "ranking_score": 0.1357062383,
+      "rating": null,
+      "read": false,
+      "short_title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "source": "arxiv",
+      "title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "total_dislikes": 8,
+      "total_likes": 47,
+      "total_read": 176,
+      "url": "https://arxiv.org/pdf/2602.08068"
+    },
+    {
+      "abstract": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders, rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation, RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+      "author": "Kumar et al.",
+      "authors": "Amandeep Kumar, Vishal M. Patel",
+      "cache_file_name": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176575,
+      "paper_id": 4581913,
+      "pdf_download_success": true,
+      "publication_date": 1770753484000,
+      "ranking_score": 0.8327815131,
+      "rating": null,
+      "read": false,
+      "short_title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "source": "arxiv",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "total_dislikes": 6,
+      "total_likes": 36,
+      "total_read": 134,
+      "url": "https://arxiv.org/pdf/2602.10099"
+    },
+    {
+      "abstract": "We introduce MotionCrafter, a video diffusion-based framework that jointly reconstructs 4D geometry and estimates dense motion from a monocular video. The core of our method is a novel joint representation of dense 3D point maps and 3D scene flows in a shared coordinate system, and a novel 4D VAE to effectively learn this representation. Unlike prior work that forces the 3D value and latents to align strictly with RGB VAE latents-despite their fundamentally different distributions-we show that such alignment is unnecessary and leads to suboptimal performance. Instead, we introduce a new data normalization and VAE training strategy that better transfers diffusion priors and greatly improves reconstruction quality. Extensive experiments across multiple datasets demonstrate that MotionCrafter achieves state-of-the-art performance in both geometry reconstruction and dense scene flow estimation, delivering 38.64% and 25.0% improvements in geometry and motion reconstruction, respectively, all without any post-optimization. Project page: https://ruijiezhu94.github.io/MotionCrafter_Page",
+      "author": "Zhu et al.",
+      "authors": "Ruijie Zhu, Jiahao Lu, Wenbo Hu, Xiaoguang Han, Jianfei Cai, Ying Shan, Chuanxia Zheng",
+      "cache_file_name": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4175456,
+      "paper_id": 4580794,
+      "pdf_download_success": true,
+      "publication_date": 1770663492000,
+      "ranking_score": 0.1515375946,
+      "rating": null,
+      "read": false,
+      "short_title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "source": "arxiv",
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "total_dislikes": 6,
+      "total_likes": 29,
+      "total_read": 102,
+      "url": "https://arxiv.org/pdf/2602.08961"
+    },
+    {
+      "abstract": "Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \\textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \\textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \\textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+      "author": "Xiang et al.",
+      "authors": "Chendong Xiang, Jiajun Liu, Jintao Zhang, Xiao Yang, Zhengwei Fang, Shizun Wang, Zijun Wang, Yingtian Zou, Hang Su, Jun Zhu",
+      "cache_file_name": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174295,
+      "paper_id": 4579633,
+      "pdf_download_success": true,
+      "publication_date": 1770541276000,
+      "ranking_score": 0.2729207035,
+      "rating": null,
+      "read": false,
+      "short_title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "source": "arxiv",
+      "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "total_dislikes": 2,
+      "total_likes": 18,
+      "total_read": 59,
+      "url": "https://arxiv.org/pdf/2602.07854"
+    },
+    {
+      "abstract": "Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$\u0394$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.",
+      "author": "Jiang et al.",
+      "authors": "Yuxin Jiang, Yuchao Gu, Ivor W. Tsang, Mike Zheng Shou",
+      "cache_file_name": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176574,
+      "paper_id": 4581912,
+      "pdf_download_success": true,
+      "publication_date": 1770753521000,
+      "ranking_score": 0.1189741714,
+      "rating": null,
+      "read": false,
+      "short_title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "source": "arxiv",
+      "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "total_dislikes": 3,
+      "total_likes": 15,
+      "total_read": 58,
+      "url": "https://arxiv.org/pdf/2602.10104"
+    },
+    {
+      "abstract": "Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility, visual realism, and physical stability. Through iterative reasoning and adaptive tool selection, it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training. Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI. Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage.",
+      "author": "Xia et al.",
+      "authors": "Hongchi Xia, Xuan Li, Zhaoshuo Li, Qianli Ma, Jiashu Xu, Ming-Yu Liu, Yin Cui, Tsung-Yi Lin, Wei-Chiu Ma, Shenlong Wang, Shuran Song, Fangyin Wei",
+      "cache_file_name": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176614,
+      "paper_id": 4581952,
+      "pdf_download_success": true,
+      "publication_date": 1770753595000,
+      "ranking_score": 0.0253882568,
+      "rating": null,
+      "read": false,
+      "short_title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "source": "arxiv",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "total_dislikes": 3,
+      "total_likes": 11,
+      "total_read": 51,
+      "url": "https://arxiv.org/pdf/2602.10116"
+    },
+    {
+      "abstract": "End-to-end (E2E) autonomous driving has recently attracted increasing interest in unifying Vision-Language-Action (VLA) with World Models to enhance decision-making and forward-looking imagination. However, existing methods fail to effectively unify future scene evolution and action planning within a single architecture due to inadequate sharing of latent states, limiting the impact of visual imagination on action decisions. To address this limitation, we propose DriveWorld-VLA, a novel framework that unifies world modeling and planning within a latent space by tightly integrating VLA and world models at the representation level, which enables the VLA planner to benefit directly from holistic scene-evolution modeling and reducing reliance on dense annotated supervision. Additionally, DriveWorld-VLA incorporates the latent states of the world model as core decision-making states for the VLA planner, facilitating the planner to assess how candidate actions impact future scene evolution. By conducting world modeling entirely in the latent space, DriveWorld-VLA supports controllable, action-conditioned imagination at the feature level, avoiding expensive pixel-level rollouts. Extensive open-loop and closed-loop evaluations demonstrate the effectiveness of DriveWorld-VLA, which achieves state-of-the-art performance with 91.3 PDMS on NAVSIMv1, 86.8 EPDMS on NAVSIMv2, and 0.16 3-second average collision rate on nuScenes. Code and models will be released in https://github.com/liulin815/DriveWorld-VLA.git.",
+      "author": "jia et al.",
+      "authors": "Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen",
+      "cache_file_name": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172917,
+      "paper_id": 4578255,
+      "pdf_download_success": true,
+      "publication_date": 1770373548000,
+      "ranking_score": 0.265241331,
+      "rating": null,
+      "read": false,
+      "short_title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Drivi",
+      "source": "arxiv",
+      "title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving",
+      "total_dislikes": 0,
+      "total_likes": 21,
+      "total_read": 46,
+      "url": "https://arxiv.org/pdf/2602.06521"
+    },
+    {
+      "abstract": "Diffusion and flow models have become the dominant paradigm for generative modeling on Riemannian manifolds, with successful applications in protein backbone generation and DNA sequence design. However, these methods require tens to hundreds of neural network evaluations at inference time, which can become a computational bottleneck in large-scale scientific sampling workflows. We introduce Riemannian MeanFlow~(RMF), a framework for learning flow maps directly on manifolds, enabling high-quality generations with as few as one forward pass. We derive three equivalent characterizations of the manifold average velocity (Eulerian, Lagrangian, and semigroup identities), and analyze parameterizations and stabilization techniques to improve training on high-dimensional manifolds. In promoter DNA design and protein backbone generation settings, RMF achieves comparable sample quality to prior methods while requiring up to 10$\\times$ fewer function evaluations. Finally, we show that few-step flow maps enable efficient reward-guided design through reward look-ahead, where terminal states can be predicted from intermediate steps at minimal additional cost.",
+      "author": "Woo et al.",
+      "authors": "Dongyeop Woo, Marta Skreta, Seonghyun Park, Sungsoo Ahn, Kirill Neklyudov",
+      "cache_file_name": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174186,
+      "paper_id": 4579524,
+      "pdf_download_success": true,
+      "publication_date": 1770514877000,
+      "ranking_score": 0.3225612556,
+      "rating": null,
+      "read": false,
+      "short_title": "Riemannian MeanFlow",
+      "source": "arxiv",
+      "title": "Riemannian MeanFlow",
+      "total_dislikes": 3,
+      "total_likes": 12,
+      "total_read": 45,
+      "url": "https://arxiv.org/pdf/2602.07744"
+    }
+  ],
+  "use_scholar_inbox_pdf_server": false,
+  "username": "Longxuan Yu"
+}

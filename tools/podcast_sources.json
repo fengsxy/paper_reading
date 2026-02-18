@@ -1,0 +1,22 @@
+{
+  "张小珺商业访谈录": {
+    "platform": "youtube",
+    "playlist": "PLwAchVoh-4zNSI5UlKEkKCL5r_jJyrFeO",
+    "priority_episodes": [
+      {"id": "gQgKkUsx5q0", "title": "姚顺雨 OpenAI Agent", "duration": "2:31:33"},
+      {"id": "9zSMTUUEfmU", "title": "智谱张鹏", "duration": "2:26:40"},
+      {"id": "MW-ezf2RhVg", "title": "Manus 出售前访谈", "duration": "3:31:18"},
+      {"id": "ouG6jrkECrc", "title": "杨植麟 Kimi", "duration": "1:41:14"},
+      {"id": "RxXVq7-sJzM", "title": "李想第二次访谈", "duration": "2:46:23"},
+      {"id": "dm0Zsm9BiD8", "title": "印奇 阶跃星辰", "duration": "1:58:15"},
+      {"id": "858HR43pegk", "title": "Kimi Linear/Minimax M2", "duration": "1:43:26"},
+      {"id": "khrOsS7YQn4", "title": "吴明辉 19年史", "duration": "3:47:46"},
+      {"id": "n4_c_HsodPg", "title": "星海图高继扬", "duration": "3:04:53"},
+      {"id": "2o281Zy5aZE", "title": "DeepMind谭捷 机器人", "duration": "2:06:16"}
+    ]
+  },
+  "不开玩笑": {
+    "platform": "xiaoyuzhou",
+    "podcast_id": "61791d921989541784257779"
+  }
+}

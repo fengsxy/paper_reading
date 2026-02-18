@@ -1,0 +1,1172 @@
+{
+  "admin_proceedings_msg": "",
+  "conf_notification_text": "This digest contains papers from the new proceedings of <a href=\"https://www.scholar-inbox.com/conference-papers?conference_id=5554.0&year=2025.0\">Findings of the Association for Computational Linguistics (Findings of EMNLP)</a>, <a href=\"https://www.scholar-inbox.com/conference-papers?conference_id=1335.0&year=2025.0\">IEEE International Conference on Computer Vision (ICCV)</a>.",
+  "current_digest_date": "2025-09-15",
+  "custom_digest_range": false,
+  "digest_df": [
+    {
+      "abbreviation": null,
+      "abstract": "Masked diffusion large language models (dLLMs) are emerging as promising alternatives to autoregressive LLMs, offering competitive performance while supporting unique generation capabilities such as inpainting. We explore how inpainting can inform RL algorithm design for dLLMs. Aligning LLMs with reinforcement learning faces an exploration challenge: sparse reward signals and sample waste when models fail to discover correct solutions. While this inefficiency affects LLMs broadly, dLLMs offer a distinctive opportunity--their inpainting ability can guide exploration. We introduce IGPO (Inpainting Guided Policy Optimization), an RL framework that strategically inserts partial ground-truth reasoning traces during online sampling. Unlike providing full solutions, inpainting steers exploration toward promising trajectory spaces while preserving self-generated reasoning, bridging supervised fine-tuning and reinforcement learning. We apply IGPO to group-based optimization methods such as GRPO, where exploration failures cause zero advantages and gradients. IGPO restores meaningful gradients while improving sample efficiency. We also propose supervised fine-tuning on synthetically rewritten concise traces that better align with dLLM generation patterns. With additional techniques including entropy-based filtering, our training recipe yields substantial gains across three mathematical benchmarks--GSM8K, Math500, and AMC--achieving new state-of-the-art results for full-attention masked dLLMs.",
+      "affiliations": [
+        "Tsinghua University",
+        "MIT",
+        "UCLA",
+        "Meta Superintelligence Labs"
+      ],
+      "arxiv_id": "2509.10396",
+      "arxives_doi": null,
+      "authors": "Siyan Zhao, Mengchen Liu, Jing Huang, Miao Liu, Chenyu Wang, Bo Liu, Yuandong Tian, Guan Pang, Sean Bell, Aditya Grover, Feiyu Chen",
+      "bookmarked": 0,
+      "cache_file_name": "Zhao2025ARXIV_Inpainting_Guided_Policy_Optimization.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757894400000,
+      "display_venue": "ArXiv 2025 (September 12)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.10396",
+      "inferredHighlights": [
+        {
+          "endIndex": 735,
+          "highlightClass": "primary-highlight",
+          "startIndex": 573
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Reinforcement Learning,  Inpainting,  Policy Optimization,  Diffusion Models,  Masked Diffusion LLMs,  Group Relative Policy Optimization,  IGPO",
+        "method_shortname": "IGPO",
+        "sub_subfield": "Reinforcement Learning",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3974868,
+      "paper_id": 4370730,
+      "paper_source_id": "2509.10396",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-12",
+      "ranking_score": 0.9427250208,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "d85ff3bfb4a74eee9a0c96a84795dd7f1f6a27e4",
+      "shortened_authors": "Siyan Zhao, Mengchen Liu, Jing Huang, Miao Liu, Chenyu Wang, Bo Liu, Yuandong Tian, Guan Pang, Sean Bell, ..., Feiyu Chen",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Propose IGPO**, a novel RL framework that leverages the unique inpainting capabilities of diffusion LLMs to guide exploration.\n- **Introduce Length-Aligned supervised fine-tuning** using concise reasoning traces aligned with RL sampling and evaluation lengths.\n- **Achieve state-of-the-art performance** on mathematical benchmarks such as GSM8K, Math500, and AMC.\n- **Develop an entropy-based gradient filtering mechanism** to stabilize training dynamics during inpainting-guided policy optimization.",
+        "evaluation_question": "- **Achieve +4.9% improvement** on GSM8K, **+8.4% on Math500**, and **+9.9% on AMC** relative to LLaDA-Instruct.\n- **Outperform prior masked dLLM baselines** such as Dream-7B and d1-LLaDA by significant margins.\n- **Reduce all-wrong groups by ~60%** through inpainting-guided exploration, enhancing policy learning efficiency.\n- **Show superior stability and convergence** compared to standard GRPO and DiffuGRPO methods.",
+        "insights_takeaways_question": "- **IGPO significantly reduces all-wrong groups** by introducing inpainting-guided exploration.\n- **Length-Aligned SFT improves initialization** for RL, leading to better convergence and performance.\n- **Entropy-based filtering stabilizes training** by focusing updates on uncertain regions.\n- **The method bridges supervised and reinforcement learning paradigms** through guided exploration.",
+        "method_explanation_question": "- **Inject partial reasoning traces** during online sampling to guide exploration toward promising trajectory spaces.\n- **Leverage inpainting** to complete remaining reasoning sequences while preserving self-generated reasoning.\n- **Use entropy-based filtering** to focus gradient updates on high-uncertainty positions during training.\n- **Combine with reinforcement learning techniques** to restore meaningful gradients and improve sample efficiency.",
+        "problem_definition_question": "- **Traditional RL methods struggle** with sparse reward signals and zero-advantage scenarios in complex reasoning tasks.\n- **Existing policy optimization approaches** suffer from poor sample efficiency and non-positive learning signals.\n- **Diffusion LLMs face challenges** in aligning with reinforcement learning due to their bidirectional generation structure.\n- **Current methods lack mechanisms** to effectively utilize inpainting for guided exploration and policy refinement."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 2 Overview of IGPO: When all sampled responses yield identical incorrect rewards (zero-advantage scenario), we perform hint-guided inpainting by generating additional responses using ground truth reasoning chunks as injected hints. Ground truth traces y \u2217 are segmented into variable-length chunks, and selected chunks are injected as fixed hints during generation while the model generates the remaining tokens. We then replace a fraction of the original incorrect responses with correct responses generated through inpainting, creating reward variance that enables non-zero advantages for effective policy gradient updates.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370730.0.jpeg"
+        },
+        {
+          "caption": "Figure 3 RL training curves of IGPO versus normal GRPO sampling. (a) Starting from LLaDA-8B-Instruct. (b) Starting from the length-aligned SFT checkpoint. IGPO exhibits superior and more stable training performance under both initialization checkpoints. Results are averaged over 3 random seeds across three mathematical reasoning benchmarks (GSM8K, MATH500, and AMC), with standard errors shown as shaded regions",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370730.1.jpeg"
+        },
+        {
+          "caption": "Table 1 Performance across multiple mathematics tasks. GSM8K and MATH500 are evaluated with pass@1 at temperature of 0.0, and AMC with avg@16 at temperature 0.1. Underlined scores indicate the best within each initialization group . Parenthesized deltas typeset via (+) denote absolute percentage-point improvements relative to the LLaDA-8B-Instruct baseline.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370730.2.jpeg"
+        }
+      ],
+      "title": "Inpainting-Guided Policy Optimization for Diffusion Large Language Models",
+      "total_likes": 5,
+      "total_read": 34,
+      "url": "https://arxiv.org/pdf/2509.10396",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.10396.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Accurate color alignment in text-to-image (T2I) generation is critical for applications such as fashion, product visualization, and interior design, yet current diffusion models struggle with nuanced and compound color terms (e.g., Tiffany blue, lime green, hot pink), often producing images that are misaligned with human intent. Existing approaches rely on cross-attention manipulation, reference images, or fine-tuning but fail to systematically resolve ambiguous color descriptions. To precisely render colors under prompt ambiguity, we propose a training-free framework that enhances color fidelity by leveraging a large language model (LLM) to disambiguate color-related prompts and guiding color blending operations directly in the text embedding space. Our method first employs a large language model (LLM) to resolve ambiguous color terms in the text prompt, and then refines the text embeddings based on the spatial relationships of the resulting color terms in the CIELAB color space. Unlike prior methods, our approach improves color accuracy without requiring additional training or external reference images. Experimental results demonstrate that our framework improves color alignment without compromising image quality, bridging the gap between text semantics and visual generation.",
+      "affiliations": [
+        "National Yang Ming Chiao Tung University, Hsinchu, Taiwan"
+      ],
+      "arxiv_id": "2509.10058",
+      "arxives_doi": null,
+      "authors": "Sung-Lin Tsai, Bo-Lun Huang, Yu Ting Shen, Cheng Yu Yeo, Chiang Tseng, Bo-Kai Ruan, Wen-Sheng Lien, Hong-Han Shuai",
+      "bookmarked": 0,
+      "cache_file_name": "Tsai2025ARXIV_Color_Me_Correctly_Bridging.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757894400000,
+      "display_venue": "ArXiv 2025 (September 12)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.10058",
+      "inferredHighlights": [
+        {
+          "endIndex": 759,
+          "highlightClass": "primary-highlight",
+          "startIndex": 487
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Color Disambiguation,  Semantic Color Understanding,  TintBench,  CIELab Space,  Diffusion Models,  Large Language Models",
+        "method_shortname": "ColorMeCorrectly",
+        "sub_subfield": "Text-to-Image Generation",
+        "subfield": "Computer Vision"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3974531,
+      "paper_id": 4370393,
+      "paper_source_id": "2509.10058",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": "https://Sung-Lin.github.io/TintBench/",
+      "publication_date": "2025-09-12",
+      "ranking_score": 0.8409408297,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "a76b907ae5ff54d17b2eff031a5040b25aa5c764",
+      "shortened_authors": "Sung-Lin Tsai, Bo-Lun Huang, Yu Ting Shen, Cheng Yu Yeo, Chiang Tseng, Bo-Kai Ruan, Wen-Sheng Lien, Hong-Han Shuai",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce a novel method** for semantic color disambiguation using LLMs and retrieval-based embedding refinement to improve color fidelity in text-to-image generation.\n- **Develop TintBench**, a comprehensive benchmark dataset that includes diverse compound color expressions to evaluate color understanding in diffusion models.\n- **Propose a training-free framework** that enhances color accuracy without requiring reference images or manual attention alignment.",
+        "evaluation_question": "- Achieves **superior performance** on TintBench, with an average win rate of **88.10%** across multiple metrics compared to existing methods.\n- Demonstrates **significant improvements** in color fidelity, achieving **88.10%** win rate in multi-color prompts versus **79.16%** for SynGen.\n- Outperforms previous approaches in both single-color and multi-color settings, showing **strong robustness** to ambiguous or compound color descriptions.",
+        "insights_takeaways_question": "- **Semantic color disambiguation** significantly improves color fidelity in text-to-image generation by resolving ambiguous color terms.\n- **TintBench** provides a realistic benchmark for evaluating how well models interpret complex color descriptions.\n- **Training-free frameworks** offer a lightweight alternative to traditional methods while maintaining high-quality color rendering.\n- **Perceptual grounding** ensures that generated colors align with human expectations, enhancing the overall realism of the output.",
+        "method_explanation_question": "- **Semantic Color Disambiguation with LLMs**: Uses large language models to resolve ambiguous color terms in the text prompt by translating them into explicit, unambiguous descriptions.\n- **Retrieval-Based Embedding Refinement**: Interpolates between nearby basic color embeddings in the CIELab space to generate more precise target color representations.\n- **Color-Binding Step**: Integrates the refined embeddings into the diffusion model during denoising to ensure semantically aligned color generation.",
+        "problem_definition_question": "- **Accurate color alignment** is critical for applications like fashion, product visualization, and interior design, yet current diffusion models struggle with nuanced and compound color terms.\n- **Existing methods** rely on cross-attention manipulation, reference images, or fine-tuning but fail to systematically resolve ambiguous color descriptions.\n- **The challenge** lies in interpreting complex color expressions within natural language prompts, which often lack precise semantic grounding and may be misinterpreted by models.\n- **Current approaches** do not effectively address the ambiguity in compound color names, leading to inaccurate or visually inconsistent outputs."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Examples of prompt-induced ambiguity. Top: baseline T2I diffusion (SynGen) outputs misinterpret color terms. Bottom: our disambiguation-guided method resolves these issues, yielding more accurate, semantically aligned results.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370393.0.jpeg"
+        },
+        {
+          "caption": "Figure 4: Our pipeline begins by using a large language model (GPT-4o) to resolve color ambiguity, producing a structured color analysis list. In the Embedding Refinement stage, the target color is interpolated with nearby basic colors within its Color Group to generate a precise embedding, which guides generation via cross-attention binding during denoising. we compute a color-space offset that captures their perceptual difference. This offset guides embedding refinement via interpolation in the text embedding space (Sec. 4.2), analogous to semantic vector arithmetic ( e.g. , king \u2212 man + woman \u2248 queen ). The refined embeddings are then passed to the diffusion model, enabling more accurate and semantically faithful color generation.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370393.4.jpeg"
+        },
+        {
+          "caption": "Table 2: User study results on TintBench. We report the average win rate for each evaluation metric. Bold values indicate a win rate exceeding 50%.",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370393.5.jpeg"
+        },
+        {
+          "caption": "Figure 7: Qualitative comparison between our method and previous work using different prompts in SDXL. The first two rows show results for single-color prompts, while the last two rows demonstrate the multi-color prompt setting.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370393.7.jpeg"
+        },
+        {
+          "caption": "Table 1: Summary of the TintBench dataset. We report the number of prompts per category and provide representative examples after compound color substitution.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370393.2.jpeg"
+        },
+        {
+          "caption": "Figure 2: Failure cases of T2I diffusion models when processing prompts containing ambiguous color terms. Top: the term rose red is misinterpreted, causing the model to generate multiple rose flowers instead of the intended color. Bottom: when additional descriptive details are added to the prompt ( e.g.middle-aged, walking ), the model incorrectly renders a green shirt as yellow.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370393.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: Comparison of pairwise distance matrices and Spearman correlations between text embeddings and color spaces. Overall correlation ( \ud835\udf0c ) is computed across eleven basic color terms, with group-wise coefficients ( \ud835\udf0c \ud835\udc64 , \ud835\udf0c \ud835\udc5b , \ud835\udf0c \ud835\udc50 ) for warm (orange), neutral (gray), and cool (purple) colors. CIELab achieves the highest alignment overall and within all groups.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370393.3.jpeg"
+        },
+        {
+          "caption": "Figure 6: Qualitative comparison between our method and previous work using different prompts in SD v1.4. The first two rows show results for single-color prompts, while the last two rows demonstrate the multi-color prompt setting.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370393.6.jpeg"
+        }
+      ],
+      "title": "Color Me Correctly: Bridging Perceptual Color Spaces and Text Embeddings for Improved Diffusion Generation",
+      "total_likes": 4,
+      "total_read": 49,
+      "url": "https://arxiv.org/pdf/2509.10058",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.10058.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Diffusion transformers have gained significant attention in recent years for their ability to generate high-quality images and videos, yet still suffer from a huge computational cost due to their iterative denoising process. Recently, feature caching has been introduced to accelerate diffusion transformers by caching the feature computation in previous timesteps and reusing it in the following timesteps, which leverage the temporal similarity of diffusion models while ignoring the similarity in the spatial dimension. In this paper, we introduce Cluster-Driven Feature Caching (ClusCa) as an orthogonal and complementary perspective for previous feature caching. Specifically, ClusCa performs spatial clustering on tokens in each timestep, computes only one token in each cluster and propagates their information to all the other tokens, which is able to reduce the number of tokens by over 90%. Extensive experiments on DiT, FLUX and HunyuanVideo demonstrate its effectiveness in both text-to-image and text-to-video generation. Besides, it can be directly applied to any diffusion transformer without requirements for training. For instance, ClusCa achieves 4.96x acceleration on FLUX with an ImageReward of 99.49%, surpassing the original model by 0.51%. The code is available at <a href='https://github.com/Shenyi-Z/Cache4Diffusion' target='_blank'>https://github.com/Shenyi-Z/Cache4Diffusion</a>.",
+      "affiliations": [
+        "Shanghai Jiao Tong University",
+        "University of Electronic Science and Technology of China"
+      ],
+      "arxiv_id": "2509.10312",
+      "arxives_doi": null,
+      "authors": "Zhixin Zheng, Xinyu Wang, Chang Zou, Shaobo Wang, Linfeng Zhang",
+      "bookmarked": 0,
+      "cache_file_name": "Zheng2025ARXIV_Compute_Only_16_Tokens.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757894400000,
+      "display_venue": "ArXiv 2025 (September 12)",
+      "first_page_image": null,
+      "github_url": "https://github.com/Shenyi-Z/Cache4Diffusion",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.10312",
+      "inferredHighlights": [
+        {
+          "endIndex": 666,
+          "highlightClass": "primary-highlight",
+          "startIndex": 523
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Diffusion Transformers,  Cluster-Driven Feature Caching,  Text-to-Image Generation,  Text-to-Video Generation,  Spatial Similarity,  Temporal Similarity",
+        "method_shortname": "ClusCa",
+        "sub_subfield": "Diffusion Models",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3974784,
+      "paper_id": 4370646,
+      "paper_source_id": "2509.10312",
+      "pdf_download_success": true,
+      "project_link": "https://github.com/Shenyi-Z/Cache4Diffusion",
+      "project_url": null,
+      "publication_date": "2025-09-12",
+      "ranking_score": 0.8303259999,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "3f886d2b463c5d490981cb28dfcf62a2ccaf18e3",
+      "shortened_authors": "Zhixin Zheng, Xinyu Wang, Chang Zou, Shaobo Wang, Linfeng Zhang",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce Cluster-Driven Feature Caching (ClusCa)**, a novel approach that leverages both spatial and temporal token similarities to accelerate diffusion transformers.\n- **Achieve significant acceleration** with minimal quality degradation, achieving up to 6.21\u00d7 speedup on HunyuanVideo while maintaining high generation quality.\n- **Systematically analyze spatial similarity** in diffusion transformers, revealing stable cluster formations across timesteps.\n- **Propose a dual feature reuse strategy** combining spatial and temporal reuse to mitigate error accumulation during caching.\n- **Demonstrate superior efficiency-quality trade-offs** compared to existing methods like TaylorSeer, ToCa, and DuCa.",
+        "evaluation_question": "- ClusCa achieves **4.96 \u00d7 acceleration** on FLUX with an ImageReward of 99.49%, surpassing the original model by 0.51%.\n- **Maintains high generation quality** even at extreme acceleration ratios, achieving an ImageReward of 0.9949 at 4.96\u00d7 speedup.\n- **Outperforms state-of-the-art methods** such as ToCa and DuCa in terms of both speed and image quality on text-to-image tasks.\n- **Reduces computational cost** by up to 5.52\u00d7 on text-to-video generation while maintaining a VBench score of 79.96%.\n- **Preserves temporal consistency** and reduces computational demands significantly compared to previous methods.",
+        "insights_takeaways_question": "- **Spatial similarity** between tokens within the same timestep offers a new dimension for optimization in diffusion models.\n- **Combining spatial and temporal reuse** allows for more efficient feature propagation without compromising generation quality.\n- **ClusCa demonstrates superior performance** compared to existing methods, achieving higher speedup ratios with minimal quality loss.\n- **The method's robustness** is evident in its ability to maintain stable performance even under extreme acceleration conditions.\n- **This work provides insights** into leveraging both spatial and temporal similarities for efficient diffusion model inference.",
+        "method_explanation_question": "- **Cluster tokens** in each timestep using K-Means based on feature similarity to identify spatially coherent groups.\n- **Compute only one token per cluster** during full-calculation steps and propagate its features to other tokens in the same cluster.\n- **Combine spatial and temporal reuse** strategies: spatial reuse updates features based on cluster members, while temporal reuse leverages cached features from previous timesteps.\n- **Use a propagation ratio (\ud835\udefe)** to balance the influence of spatial and temporal reuse on non-computed tokens.\n- **Cache and reuse features** across timesteps to reduce redundant computations while maintaining high-quality output.",
+        "problem_definition_question": "- **Diffusion transformers** suffer from high computational costs due to their iterative denoising process, limiting deployment in latency-sensitive applications.\n- **Existing feature caching methods** primarily focus on temporal similarity, neglecting spatial similarity between tokens within the same timestep.\n- **Current approaches** often lead to significant quality degradation under high acceleration ratios due to error accumulation.\n- **There is a critical need** for methods that can effectively leverage both spatial and temporal similarities to achieve efficient and high-quality generation.\n- **The paper addresses** the challenge of balancing computational efficiency with generation quality in diffusion models."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Visualization of similarity in two dimensions",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.1.jpeg"
+        },
+        {
+          "caption": "Figure 4: The Overview of ClusCa: (a) In full-calculation step, ClusCa caches tokens and reuses them across timesteps by leveraging temporal similarity, enabling partial calculation for improved efficiency. In the partial-calculation step, ClusCa further exploits spatial similarity in the feature space by clustering tokens based on feature distance and reusing shared information within local regions.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.3.jpeg"
+        },
+        {
+          "caption": "Table 3: Quantitative comparison in class-to-image generation on ImageNet with DiT-XL/2.",
+          "figureNumber": 8,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370646.8.jpeg"
+        },
+        {
+          "caption": "Figure 8: Comparison between ClusCa and other methods on Vbench.",
+          "figureNumber": 11,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.11.jpeg"
+        },
+        {
+          "caption": "Figure 9: PCA visualization on the trajectories of features in different timesteps.",
+          "figureNumber": 12,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.12.jpeg"
+        },
+        {
+          "caption": "Figure 3: Comparison between existing feature caching meth-ods and ClusCa on DiT with FID and sFID (lower is better).",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: (a) The distributions of distance between tokens in the same cluster (1/2/3) and all the tokens in the current timestep, showing that tokens in the same cluster have significantly lower distance. (b) PCA visualization on the evolution of tokens in different clusters. Points in the same line denote the same token in different timesteps. Tokens with the same color denote tokens in the same cluster.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.2.jpeg"
+        },
+        {
+          "caption": "Figure 5: (a) Visualization of clustering results in adjacent steps. (b) Adjusted rand index (ARI) of clusters in adjacent steps,",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.4.jpeg"
+        },
+        {
+          "caption": "Figure 6: Qualitative comparison on FLUX. ClusCa excels in generating complex scenes and produces images with significantly richer content.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.5.jpeg"
+        },
+        {
+          "caption": "Table 1: Quantitative comparison in text-to-image generation for FLUX on Image Reward.",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370646.6.jpeg"
+        },
+        {
+          "caption": "Table 2: Quantitative comparison in text-to-video generation on VBench.",
+          "figureNumber": 7,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370646.7.jpeg"
+        },
+        {
+          "caption": "Figure 7: Visualization of different generation methods on various prompts. ClusCa produces high-quality, accurate images, while other methods suffer from issues such as object damage, missing details, and image ghosting.",
+          "figureNumber": 9,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.9.jpeg"
+        },
+        {
+          "caption": "Figure 10: ClusCa with different propagation ratios.",
+          "figureNumber": 10,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370646.10.jpeg"
+        }
+      ],
+      "title": "Compute Only 16 Tokens in One Timestep: Accelerating Diffusion Transformers with Cluster-Driven Feature Caching",
+      "total_likes": 6,
+      "total_read": 55,
+      "url": "https://arxiv.org/pdf/2509.10312",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.10312.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": "Findings of EMNLP",
+      "abstract": "KV Cache is commonly used to accelerate LLM inference with long contexts, yet its high memory demand drives the need for cache compression. Existing compression methods, however, are largely heuristic and lack dynamic budget allocation. To address this limitation, we introduce a unified framework for cache compression by minimizing information loss in Transformer residual streams. Building on it, we analyze the layer attention output loss and derive a new metric to compare cache entries across heads, enabling layer-wise compression with dynamic head budgets. Additionally, by contrasting cross-layer information, we also achieve dynamic layer budgets. LAVa is the first unified strategy for cache eviction and dynamic budget allocation that, unlike prior methods, does not rely on training or the combination of multiple strategies. Experiments with four benchmarks (LongBench, Needle-In-A-Haystack, Ruler, and InfiniteBench) demonstrate its superiority over strong baselines. Moreover, our experiments reveal a new insight: dynamic layer budgets are crucial for generation tasks (e.g., code completion), while dynamic head budgets play a key role in extraction tasks (e.g., extractive QA). As a fully dynamic compression method, LAVa consistently maintains top performance across task types.",
+      "affiliations": [
+        "State Key Laboratory for Novel Software Technology, Nanjing University",
+        "School of Artificial Intelligence, Nanjing University"
+      ],
+      "arxiv_id": "2509.09754",
+      "arxives_doi": null,
+      "authors": "Yiqun Shen, Song Yuan, Zhengze Zhang, Xiaoliang Wang, Daxin Jiang, Nguyen Cam-Tu",
+      "bookmarked": 0,
+      "cache_file_name": "Shen2025ARXIV_LAVa_Layer_wise_KV.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9782836339,
+        0.7805130487,
+        0.7082325095,
+        0.3
+      ],
+      "conf_id": 5554.0,
+      "conference": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+      "conference_submission_type": null,
+      "conference_url": "https://aclanthology.org",
+      "conference_year": 2025.0,
+      "digest_date": 1757894400000,
+      "display_venue": "Findings of EMNLP 2025",
+      "first_page_image": null,
+      "github_url": "https://github.com/MGDDestiny/Lava",
+      "has_ranking": true,
+      "html_link": null,
+      "inferredHighlights": [
+        {
+          "endIndex": 382,
+          "highlightClass": "primary-highlight",
+          "startIndex": 237
+        },
+        {
+          "endIndex": 563,
+          "highlightClass": "secondary-highlight",
+          "startIndex": 384
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Transformer,  Dynamic Budget Allocation,  KV Cache Compression,  Information Loss,  Layer-wise Eviction,  Head-wise Eviction,  LAVa",
+        "method_shortname": "LAVa",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3974227,
+      "paper_id": 4370089,
+      "paper_source_id": null,
+      "pdf_download_success": true,
+      "project_link": "https://github.com/MGDDestiny/Lava",
+      "project_url": null,
+      "publication_date": "2025-11-03",
+      "ranking_score": 0.6134557123,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "3364cf854d45ac6c40105bfad17b765451b74b11",
+      "shortened_authors": "Yiqun Shen, Song Yuan, Zhengze Zhang, Xiaoliang Wang, Daxin Jiang, Nguyen Cam-Tu",
+      "source": "conference_scraper",
+      "summaries": {
+        "contributions_question": "- **Introduce LAVa**, a novel KV Cache eviction method with dynamic budget allocation at both head and layer levels.\n- **Propose a principled framework** based on information loss in Transformer residual streams for cache compression.\n- **Achieve superior performance** across various benchmarks like LongBench, Needle-In-A-Haystack, Ruler, and InfiniteBench.\n- **Reveal insights** into the importance of dynamic budgets for different tasks: generation vs. extraction.\n- **Provide a fully dynamic compression method** that maintains top performance across task types and model architectures.",
+        "evaluation_question": "- **Outperforms all baselines** across different budgets, especially at smaller budgets.\n- **Excels in code-related tasks** (e.g., RepoBench-P) with significant margin over Ada-SnapKV.\n- **Demonstrates better performance on generation tasks** compared to methods with fixed-layer budgets.\n- **Maintains strong performance on extraction tasks** despite CAKE's superiority in some cases.\n- **Reduces memory consumption by 9\u00d7** compared to full cache while maintaining high decoding speed.\n- **Consistently achieves top performance** across both task types and language models.",
+        "insights_takeaways_question": "- **Dynamic layer budgets** are essential for generation tasks like code completion.\n- **Dynamic head budgets** play a critical role in text extraction tasks such as QA.\n- **LAVa outperforms existing methods** across multiple benchmarks and task types.\n- **The method maintains high performance** even with significant memory reduction.\n- **The approach provides theoretical justification** for incorporating value norms in scoring functions.",
+        "method_explanation_question": "- **Analyze information flow** through Transformer residual streams to guide cache compression.\n- **Define a scoring function** based on Layer Attention Output Loss to assess token importance.\n- **Implement dynamic budget allocation** at both head and layer levels using the scoring function.\n- **Evict less important tokens** iteratively based on the scoring function and budget constraints.\n- **Ensure retention of recent tokens** within a specified window to maintain model performance.",
+        "problem_definition_question": "- **High memory demand** of KV Cache limits the scalability of large language models (LLMs) with long contexts.\n- **Existing compression methods** are largely heuristic and lack dynamic budget allocation strategies.\n- **Current approaches** often rely on static or simplistic criteria for cache eviction, leading to suboptimal performance.\n- **There is a need for a unified framework** that minimizes information loss during cache compression.\n- **Dynamic budget allocation** is crucial for adapting to varying task requirements and model structures."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 4: Ablation study on LongBench.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370089.5.jpeg"
+        },
+        {
+          "caption": "Figure 2: Results of generation and extraction tasks.",
+          "figureNumber": 2,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370089.2.jpeg"
+        },
+        {
+          "caption": "Figure 3: Peak memory usage and decoding latency in A800 80GB based on Mistral-7B-Instruct-v0.2.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370089.3.jpeg"
+        },
+        {
+          "caption": "Figure 5: LaVa score vs AdaKV score on LongBench.",
+          "figureNumber": 6,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370089.6.jpeg"
+        },
+        {
+          "caption": "Figure 1: Information flow in decoder-only LLMs. The decoding process can be seen as operating on the current residual stream . Each residual stream (red lines) corresponds to one token, and is considered as a communication channel . Attention heads copy information from past residual streams to the current one (green lines) .",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370089.0.jpeg"
+        },
+        {
+          "caption": "Table 1: Summary of representative methods for KV Cache compression. LAVa is the only method to support dynamic head ( B l,h ) and layer ( B l ) budgets. For the full table and more comparison, please refer to Appendix B. .",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370089.1.jpeg"
+        },
+        {
+          "caption": "Table 2: Final comparison based on Mistral-7B-Instruct-v0.2 among 21 datasets of LongBench. (Note: The best result is highlighted in bold , and the second is in underline. Due to the negligible numerical values obtained from the passage count dataset, its results were excluded from the computation of the average scores.)",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370089.4.jpeg"
+        }
+      ],
+      "title": "LAVa: Layer-wise KV Cache Eviction with Dynamic Budget Allocation",
+      "total_likes": 5,
+      "total_read": 13,
+      "url": "https://aclanthology.org/2025.findings-emnlp.737.pdf",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Faclanthology.org%2F2025.findings-emnlp.737.pdf.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "Inference-time scaling has emerged as a powerful way to improve large language model (LLM) performance by generating multiple candidate responses and selecting among them. However, existing work on dynamic allocation for test-time compute typically considers only parallel generation methods such as best-of-N, overlooking incremental decoding methods like beam search, and has largely ignored latency, focusing only on token usage. We formulate inference-time scaling as a problem of dynamic compute allocation and method selection, where the system must decide which strategy to apply and how much compute to allocate on a per-query basis. Our framework explicitly incorporates both token cost and wall-clock latency, the latter being critical for user experience and particularly for agentic workflows where models must issue multiple queries efficiently. Experiments on reasoning benchmarks show that our approach consistently outperforms static strategies, achieving favorable accuracy-cost trade-offs while remaining practical for deployment.",
+      "affiliations": [
+        "IBM Research",
+        "MIT-IBM Watson AI Lab",
+        "Department of Electrical Engineering and Computer Science, MIT"
+      ],
+      "arxiv_id": "2509.09864",
+      "arxives_doi": null,
+      "authors": "Jenny Y. Huang, Mehul Damani, Yousef El-Kurdi, Ramon Astudillo, Wei Sun",
+      "bookmarked": 0,
+      "cache_file_name": "Huang2025ARXIV_Latency_and_Token_Aware.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9808632022,
+        0.8010851177,
+        0.7302917326,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757894400000,
+      "display_venue": "ArXiv 2025 (September 11)",
+      "first_page_image": null,
+      "github_url": "https://github.com/",
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.09864",
+      "inferredHighlights": [
+        {
+          "endIndex": 640,
+          "highlightClass": "primary-highlight",
+          "startIndex": 433
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Inference-Time Scaling,  Latency,  Token Cost,  Adaptive Routing,  Reasoning Benchmarks",
+        "method_shortname": "Latency-Aware Inference",
+        "sub_subfield": "Natural Language Processing",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3974337,
+      "paper_id": 4370199,
+      "paper_source_id": "2509.09864",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-11",
+      "ranking_score": 0.6016172127,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "8085e5bb896f32f96ca6b69174c9df26a541c973",
+      "shortened_authors": "Jenny Y. Huang, Mehul Damani, Yousef El-Kurdi, Ramon Astudillo, Wei Sun",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Propose a latency- and token-aware framework** for inference-time scaling that jointly determines which strategy to apply and how much compute to allocate per query.\n- **Introduce an adaptive strategy** that dynamically selects between different inference methods based on query difficulty and resource constraints.\n- **Develop an accuracy probe** to estimate the effectiveness of various decoding strategies.\n- **Demonstrate superior accuracy-cost trade-offs** compared to static strategies on reasoning benchmarks.\n- **Highlight the importance of balancing** both token cost and latency for optimal performance in agentic workflows.",
+        "evaluation_question": "- Achieves **superior accuracy-cost trade-offs** compared to static strategies on reasoning benchmarks.\n- **Adaptive strategy** outperforms static methods by selecting compute-heavy methods when needed, achieving nearly 0.50 accuracy at the expense of longer runtimes (~40s).\n- **Reduces latency significantly** by shifting towards lighter methods as token penalties increase.\n- **Maintains competitive accuracy** while substantially lowering latency through adaptive routing.\n- **Demonstrates robustness** across varying penalty parameters, showing consistent improvement over fixed strategies.",
+        "insights_takeaways_question": "- **Adaptive strategy selection** leads to significant improvements in accuracy-efficiency trade-offs compared to static methods.\n- **Balancing token cost and latency** is crucial for optimizing performance in real-world applications.\n- **Dynamic routing based on query difficulty** allows models to allocate resources more effectively, reducing unnecessary computation.\n- **The proposed framework** demonstrates strong generalization across different reasoning benchmarks and decoding strategies.\n- **Future work** could explore extending this approach to other domains like coding and dialogue, further enhancing its applicability.",
+        "method_explanation_question": "- Defines a **latency- and token-aware framework** for inference-time scaling that dynamically selects decoding strategies and allocates compute resources per query.\n- **Utilizes an accuracy probe** to estimate the effectiveness of different decoding strategies based on query characteristics.\n- **Models utility** as a combination of accuracy, token cost, and latency, with penalty weights reflecting user preferences.\n- **Selects the optimal strategy** by maximizing the utility function, which balances accuracy against computational cost.\n- **Employs cost predictors** to approximate token usage and latency during inference, enabling real-time decision-making.",
+        "problem_definition_question": "- Existing inference-time scaling methods typically overlook **latency**, focusing only on token usage, leading to suboptimal resource allocation.\n- **Static strategies** risk overspending on simple queries while under-provisioning complex ones, especially in reasoning tasks where each trace may span thousands of tokens.\n- **Current approaches** fail to adapt to query difficulty, resulting in inefficient use of computational resources.\n- **Agentic workflows** require efficient multi-query processing, where models must issue multiple queries quickly without excessive delays.\n- **There is a critical need** for dynamic compute allocation that considers both token cost and latency to improve overall efficiency and user experience."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 1: Accuracy-cost trade-offs comparing the adaptive strategy to static inference-scaling methods. Accuracy is measured by soft-label correctness and cost measured as average (a) tokens generated per query, or (b) latency.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370199.0.jpeg"
+        },
+        {
+          "caption": "Figure 2: Selections made by the query-adaptive strategy. The top row shows the proportion of queries routed to each inference-time scaling method as the cost penalty on latency (left) and token count (right) increases. The bottom row shows the proportion of queries routed to each value of number of generations ( N ).",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370199.1.jpeg"
+        },
+        {
+          "caption": "Figure 3: The accuracy model achieves strong calibration with ground-truth correctness rates.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370199.2.jpeg"
+        },
+        {
+          "caption": "Figure 4: Different decoding procedures lead to differences in compute costs (both token-count and wall-clock latency). For instance, we find that while beam-search is the highest accuracy method, it uses drastically more compute than the other methods, which calls for the need to route depending on query difficulty.",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370199.3.jpeg"
+        },
+        {
+          "caption": "Figure 5: Accuracy\u2013token trade-off for multiple inference-time scaling strategies when using BERT embeddings for training the difficulty probe.",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370199.4.jpeg"
+        },
+        {
+          "caption": "Figure 6: Accuracy\u2013latency trade-off for multiple inference-time scaling strategies when using BERT embeddings for training the difficulty probe.",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370199.5.jpeg"
+        }
+      ],
+      "title": "Latency and Token-Aware Test-Time Compute",
+      "total_likes": 4,
+      "total_read": 17,
+      "url": "https://arxiv.org/pdf/2509.09864",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.09864.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": null,
+      "abstract": "The proliferation of large language models (LLMs) with varying computational costs and performance profiles presents a critical challenge for scalable, cost-effective deployment in real-world applications. We introduce a unified routing framework that leverages a single-head cross-attention mechanism to jointly model query and model embeddings, enabling dynamic selection of the optimal LLM for each input query. Our approach is evaluated on RouterBench, a large-scale, publicly available benchmark encompassing diverse LLM pools and domains. By explicitly capturing fine-grained query-model interactions, our router predicts both response quality and generation cost, achieving up to 6.6% improvement in Average Improvement in Quality (AIQ) and 2.9% in maximum performance over existing routers. To robustly balance performance and cost, we propose an exponential reward function that enhances stability across user preferences. The resulting architecture is lightweight, generalizes effectively across domains, and demonstrates improved efficiency compared to prior methods, establishing a new standard for cost-aware LLM routing.",
+      "affiliations": [
+        "Microsoft",
+        "University of Massachusetts, Amherst"
+      ],
+      "arxiv_id": "2509.09782",
+      "arxives_doi": null,
+      "authors": "Roshini Pulishetty, Mani Kishan Ghantasala, Keerthy Kaushik Dasoju, Niti Mangwani, Vishal Garimella, Aditya Mate, Somya Chatterjee, Yue Kang, Ehi Nosakhare, Sadid Hasan, Soundar Srinivasan",
+      "bookmarked": 0,
+      "cache_file_name": "Pulishetty2025ARXIV_One_Head_Many_Models.pdf",
+      "category": "Machine Learning",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.9417092022,
+        0.9068773904,
+        0.8871819002,
+        0.3
+      ],
+      "conf_id": null,
+      "conference": null,
+      "conference_submission_type": null,
+      "conference_url": null,
+      "conference_year": null,
+      "digest_date": 1757894400000,
+      "display_venue": "ArXiv 2025 (September 11)",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": "https://arxiv.org/html/2509.09782",
+      "inferredHighlights": [
+        {
+          "endIndex": 413,
+          "highlightClass": "primary-highlight",
+          "startIndex": 206
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "LLM Routing,  Cross-Attention,  Exponential Reward Function,  RouterBench,  Cost-Aware Routing",
+        "method_shortname": "Cross-Attention Routing",
+        "sub_subfield": "Large Language Models",
+        "subfield": "Artificial Intelligence"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3974255,
+      "paper_id": 4370117,
+      "paper_source_id": "2509.09782",
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-09-11",
+      "ranking_score": 0.5176702364,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "ff8d03b6a5ec234d6134a5668440365a824ca965",
+      "shortened_authors": "Roshini Pulishetty, Mani Kishan Ghantasala, Keerthy Kaushik Dasoju, Niti Mangwani, Vishal Garimella, Aditya Mate, Somya Chatterjee, Yue Kang, Ehi Nosakhare, ..., Soundar Srinivasan",
+      "source": "arxiv",
+      "summaries": {
+        "contributions_question": "- **Introduce a unified routing framework** using **cross-attention** to dynamically select the optimal LLM for each query.\n- **Develop an exponential reward function** to balance performance and cost effectively.\n- **Achieve up to 6.6% improvement** in Average Improvement in Quality (AIQ) and 2.9% in maximum performance over existing routers.\n- **Propose a dual-predictor framework** that separately estimates model performance and generation cost.\n- **Demonstrate robust generalization** across diverse domains and LLM pools.",
+        "evaluation_question": "- Achieves **up to 6.6% higher AIQ** compared to existing routers, demonstrating superior cost-efficiency.\n- **Outperforms KNN, MLP, and SVM routers** by 23.85%, 3.34%, and 27.33% respectively on RouterBench.\n- **Ablation studies confirm** that attention-based predictors outperform regression and MLP variants by up to 10.9% in AIQ and 9.7% in maximum performance.\n- **Maintains stability under varying user preferences** with lower \u03bb-sensitivity than linear reward functions.\n- **Shows strong performance across multiple benchmarks** including MMLU, GSM8K, and MT-Bench.",
+        "insights_takeaways_question": "- **Attention-based routing provides a robust and generalizable improvement** over traditional methods in both performance and cost-efficiency.\n- **The exponential reward function demonstrates superior stability** under varying user preferences compared to linear trade-offs.\n- **The method enables efficient pre-generation model selection**, reducing inference costs while maintaining high-quality responses.\n- **The approach successfully handles complex tasks** such as ARC Challenge, showcasing its adaptability across different domains.\n- **The router's ability to generalize across diverse LLM pools** highlights its practical applicability in real-world deployment scenarios.",
+        "method_explanation_question": "- **Utilizes cross-attention** to model interactions between queries and LLM embeddings, enabling dynamic selection of the optimal model.\n- **Employs a dual-predictor framework** where one predictor estimates model performance and another estimates generation cost.\n- **Incorporates user willingness to pay** into the reward function to balance performance and cost.\n- **Leverages attention mechanisms** to capture fine-grained query-model interactions without requiring explicit model training.\n- **Supports scalable routing** by enabling efficient pre-generation model selection based on predicted performance and cost.",
+        "problem_definition_question": "- **Selecting the right LLM for each query** is critical for balancing response quality and computational cost in real-world applications.\n- **Existing methods often treat queries and models independently** or rely on static assumptions, limiting adaptability to new domains or model pools.\n- **Traditional approaches struggle with cold-start scenarios** and require extensive training or interaction data to converge.\n- **There is a need for a flexible, domain-agnostic routing system** that can dynamically adjust to changing user preferences and model availability.\n- **Current solutions lack robustness to variations in user parameters** and fail to generalize effectively across diverse LLM pools."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Figure 2: Single-head cross-attention block",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370117.1.jpeg"
+        },
+        {
+          "caption": "Figure 1: LLM Router selects an appropriate model for each query to route to",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370117.0.jpeg"
+        },
+        {
+          "caption": "Table 2: Comparison of router\u2019s performance and cost-efficiency with traditional routers",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370117.2.jpeg"
+        },
+        {
+          "caption": "Figure 3: Comparison of Attention Router with RouterBench Baseline Routers",
+          "figureNumber": 3,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370117.3.jpeg"
+        },
+        {
+          "caption": "Figure 4: Dataset-wise results of the predictor-based routers using R 2 exponential rewards",
+          "figureNumber": 4,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370117.4.jpeg"
+        },
+        {
+          "caption": "Figure 5: Domain-wise results of the predictor-based routers using R 2 exponential rewards",
+          "figureNumber": 5,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370117.5.jpeg"
+        }
+      ],
+      "title": "One Head, Many Models: Cross-Attention Routing for Cost-Aware LLM Selection",
+      "total_likes": 1,
+      "total_read": 12,
+      "url": "https://arxiv.org/pdf/2509.09782",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Farxiv.org%2Fabs%2F2509.09782.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    },
+    {
+      "abbreviation": "ICCV",
+      "abstract": "Arbitrary resolution image generation provides a consistent visual experience across devices, having extensive applications for producers and consumers. Current diffusion models increase computational demand quadratically with resolution, causing 4K image generation delays over 100 seconds. To solve this, we explore the second generation upon the latent diffusion models, where the fixed latent generated by diffusion models is regarded as the content representation and we propose to decode arbitrary resolution images with a compact generated latent using a one-step generator. Thus, we present the InfGen, replacing the VAE decoder with the new generator, for generating images at any resolution from a fixed-size latent without retraining the diffusion models, which simplifies the process, reducing computational complexity and can be applied to any model using the same latent space. Experiments show InfGen is capable of improving many models into the arbitrary high-resolution era while cutting 4K image generation time to under 10 seconds.",
+      "affiliations": [
+        "Hong Kong University of Science and Technology",
+        "Shanghai Artificial Intelligence Laboratory",
+        "The University of Sydney"
+      ],
+      "arxiv_id": "2509.10441",
+      "arxives_doi": null,
+      "authors": "Tao Han ,  Wanghan Xu ,  Junchao Gong ,  Xiaoyu Yue ,  Song Guo ,  Luping Zhou ,  Lei Bai",
+      "bookmarked": 0,
+      "cache_file_name": "Han2025ARXIV_InfGen_A_Resolution_Agnostic.pdf",
+      "category": "Computer Vision and Graphics",
+      "chemrxiv_id": null,
+      "citations": null,
+      "color": [
+        0.8313911758,
+        0.8871957362,
+        0.9865936968,
+        0.3
+      ],
+      "conf_id": 1335.0,
+      "conference": "IEEE International Conference on Computer Vision (ICCV)",
+      "conference_submission_type": null,
+      "conference_url": "https://openaccess.thecvf.com/menu",
+      "conference_year": 2025.0,
+      "digest_date": 1757894400000,
+      "display_venue": "ICCV 2025",
+      "first_page_image": null,
+      "github_url": null,
+      "has_ranking": true,
+      "html_link": null,
+      "inferredHighlights": [
+        {
+          "endIndex": 580,
+          "highlightClass": "primary-highlight",
+          "startIndex": 292
+        }
+      ],
+      "is_cached": false,
+      "is_cached_filename": null,
+      "keywords_metadata": {
+        "color": "#fe7878",
+        "field": "Computer Science",
+        "keywords": "Image Generation,  Diffusion Models,  Latent Space,  Cross-Attention,  Resolution Extrapolation",
+        "method_shortname": "InfGen",
+        "sub_subfield": "Image Synthesis",
+        "subfield": "Machine Learning"
+      },
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 3974913,
+      "paper_id": 4370775,
+      "paper_source_id": null,
+      "pdf_download_success": true,
+      "project_link": null,
+      "project_url": null,
+      "publication_date": "2025-10-15",
+      "ranking_score": 0.4746472934,
+      "rating": null,
+      "read": false,
+      "recommended": true,
+      "semantic_scholar_id": "cc04fb930d7a5c90fcd6d4001c3b2c928bd45468",
+      "shortened_authors": "Tao Han ,  Wanghan Xu ,  Junchao Gong ,  Xiaoyu Yue ,  Song Guo ,  Luping Zhou ,  Lei Bai",
+      "source": "conference_scraper",
+      "summaries": {
+        "contributions_question": "- **Introduce InfGen**, a resolution-agnostic paradigm for scalable image synthesis.\n- **Plug-and-play capability** to upgrade existing diffusion models without retraining.\n- **High-quality and fast generation** with significant improvements in speed and performance.\n- **Resolution extrapolation** without requiring additional training.\n- **Efficient decoding** using a compact latent space and cross-attention mechanism.",
+        "evaluation_question": "- Achieves **41% improvement** on DiT [23] and **44% improvement** on SD1.5 [29] at 3072 \u00d7 3072 resolution.\n- **Significant reduction** in inference latency, generating 4K images in **7.4 seconds**.\n- **Outperforms** existing methods like UltraPixel [27] and ScaleCrafter [8] in both quality and speed.\n- **Improves FID scores** across multiple resolutions, demonstrating robustness and versatility.\n- **Maintains high PSNR and SSIM** values even at ultra-high resolutions.",
+        "insights_takeaways_question": "- **InfGen significantly reduces** inference time for high-resolution image generation.\n- **Plug-and-play design** allows seamless integration with various diffusion models.\n- **Maintains high-quality output** even when scaling to ultra-high resolutions.\n- **Enhances flexibility** by enabling arbitrary resolution generation without altering model structure.\n- **Offers a practical solution** for real-world applications requiring fast and high-resolution image synthesis.",
+        "method_explanation_question": "- Generates images from a fixed-size latent representation using a one-step generator.\n- **Cross-attention operation** transfers generated latent into any resolution.\n- **Implicit Neural Positional Embedding (INPE)** aligns latent and mask tokens for accurate decoding.\n- **Training-free resolution extrapolation** enables scaling to arbitrary resolutions.\n- **Decoder-based generator** replaces traditional VAE decoders for efficient high-resolution synthesis.",
+        "problem_definition_question": "- Current diffusion models require **quadratic computational resources** with increasing resolution.\n- **Multi-step denoising processes** lead to prohibitive delays for high-resolution image generation.\n- **Existing methods** lack efficient mechanisms for decoding arbitrary resolutions without retraining.\n- **Super-resolution techniques** often rely on complex architectures that are not universally applicable.\n- **Need for scalable and efficient** image synthesis frameworks that maintain quality across resolutions."
+      },
+      "teaser_figures": [
+        {
+          "caption": "Table 1. Recommended extrapolation resolution.",
+          "figureNumber": 3,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370775.3.jpeg"
+        },
+        {
+          "caption": "Table 3. Improved performance at arbitrary resolution for diffusion models. Our InfGen can improve the performance of existing latent-based diffusion models on all metrics across different resolutions, especially significant improvement in high-resolutions",
+          "figureNumber": 5,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370775.5.jpeg"
+        },
+        {
+          "caption": "Table 4. Quantitative comparison with other methods. Our InfGen+SDXL-B-1 yields the best performance on different resolutions while achieving an extremely low latency. All latencies are tested on an A100 GPU device. Underline means the second-best. resolutions, the average",
+          "figureNumber": 6,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370775.6.jpeg"
+        },
+        {
+          "caption": "Figure 1. The proposed InfGen creates highly photo-realistic and detail-rich images at various resolutions when it is applied on SDXL [24]. Best viewed zoomed in. For more image generation, please visit our demo website to experience it.",
+          "figureNumber": 0,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370775.0.jpeg"
+        },
+        {
+          "caption": "Figure 2. Inference time (seconds per image) for high-resolution image generation methods. The vertical axis is a logarithmic scale.",
+          "figureNumber": 1,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370775.1.jpeg"
+        },
+        {
+          "caption": "Figure 3. Illustration of the training and inference processes . The generator is trained in the latent space to reconstruct images at any resolution and aspect ratio. During inference, it can be applied to improve various diffusion models, enabling them to generate images of arbitrary resolution across various tasks.",
+          "figureNumber": 2,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370775.2.jpeg"
+        },
+        {
+          "caption": "Table 2. Comparisons with other image tokenizers. The evaluations are conducted on 256 \u00d7 256 ImageNet 50k validation set and LAION-5B 50k set. All models are trained on part of the LAION-5B dataset except \u201d*\u201d is trained on ImageNet.",
+          "figureNumber": 4,
+          "figureType": "Table",
+          "imageUrl": "/teaser_figures/4370775.4.jpeg"
+        },
+        {
+          "caption": "Figure 4. Visualizations of arbitrary image generation. The proposed InfGen improves the generation ability for LDMs [29] across various resolutions. More visual examples are provided in the appendix.",
+          "figureNumber": 7,
+          "figureType": "Figure",
+          "imageUrl": "/teaser_figures/4370775.7.jpeg"
+        }
+      ],
+      "title": "InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis",
+      "total_likes": 19,
+      "total_read": 132,
+      "url": "https://openaccess.thecvf.com//content/ICCV2025/papers/Han_InfGen_A_Resolution-Agnostic_Paradigm_for_Scalable_Image_Synthesis_ICCV_2025_paper.pdf",
+      "url_for_twitter": "https://twitter.com/intent/tweet?text=Check+out+this+paper%3A+https%3A%2F%2Fopenaccess.thecvf.com%2F%2Fcontent%2FICCV2025%2Fpapers%2FHan_InfGen_A_Resolution-Agnostic_Paradigm_for_Scalable_Image_Synthesis_ICCV_2025_paper.pdf.%0AShared+by%3A&url=https%3A%2F%2Fwww.scholar-inbox.com",
+      "user_paper_collections": null
+    }
+  ],
+  "digest_papers": 7,
+  "display_next_date": true,
+  "empty_digest": false,
+  "first_paper_id_below_decision_boundary": 4370775,
+  "from_date": "Mon, 15 Sep 2025 00:00:00 GMT",
+  "has_more_papers_in_digest": false,
+  "next_date": "2025-09-16",
+  "no_weekdays_selected": false,
+  "pdf_viewer_url": null,
+  "prev_date": "2025-09-12",
+  "read_paper_ids": [],
+  "seen_welcome_tutorial": true,
+  "success": true,
+  "to_date": "Mon, 15 Sep 2025 00:00:00 GMT",
+  "total_papers": "1185",
+  "trending": [
+    {
+      "abstract": "Video generation with controllable camera viewpoints is essential for applications such as interactive content creation, gaming, and simulation. Existing methods typically adapt pre-trained video models using camera poses relative to a fixed reference, e.g., the first frame. However, these encodings lack shift-invariance, often leading to poor generalization and accumulated drift. While relative camera pose embeddings defined between arbitrary view pairs offer a more robust alternative, integrating them into pre-trained video diffusion models without prohibitive training costs or architectural changes remains challenging. We introduce ReRoPE, a plug-and-play framework that incorporates relative camera information into pre-trained video diffusion models without compromising their generation capability. Our approach is based on the insight that Rotary Positional Embeddings (RoPE) in existing models underutilize their full spectral bandwidth, particularly in the low-frequency components. By seamlessly injecting relative camera pose information into these underutilized bands, ReRoPE achieves precise control while preserving strong pre-trained generative priors. We evaluate our method on both image-to-video (I2V) and video-to-video (V2V) tasks in terms of camera control accuracy and visual fidelity. Our results demonstrate that ReRoPE offers a training-efficient path toward controllable, high-fidelity video generation. See project page for more results: https://sisyphe-lee.github.io/ReRoPE/",
+      "author": "Li et al.",
+      "authors": "Chunyang Li, Yuanbo Yang, Jiahao Shao, Hongyu Zhou, Katja Schwarz, Yiyi Liao",
+      "cache_file_name": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Li2026ARXIV_ReRoPE_Repurposing_RoPE_for.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174518,
+      "paper_id": 4579856,
+      "pdf_download_success": true,
+      "publication_date": 1770576550000,
+      "ranking_score": 0.1357062383,
+      "rating": null,
+      "read": false,
+      "short_title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "source": "arxiv",
+      "title": "ReRoPE: Repurposing RoPE for Relative Camera Control",
+      "total_dislikes": 8,
+      "total_likes": 47,
+      "total_read": 176,
+      "url": "https://arxiv.org/pdf/2602.08068"
+    },
+    {
+      "abstract": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders, rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation, RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+      "author": "Kumar et al.",
+      "authors": "Amandeep Kumar, Vishal M. Patel",
+      "cache_file_name": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "color": [
+        0.8234038948,
+        0.409333696,
+        0.4901396872,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Kumar2026ARXIV_Learning_on_the_Manifold.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176575,
+      "paper_id": 4581913,
+      "pdf_download_success": true,
+      "publication_date": 1770753484000,
+      "ranking_score": 0.8327815131,
+      "rating": null,
+      "read": false,
+      "short_title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "source": "arxiv",
+      "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+      "total_dislikes": 6,
+      "total_likes": 36,
+      "total_read": 134,
+      "url": "https://arxiv.org/pdf/2602.10099"
+    },
+    {
+      "abstract": "We introduce MotionCrafter, a video diffusion-based framework that jointly reconstructs 4D geometry and estimates dense motion from a monocular video. The core of our method is a novel joint representation of dense 3D point maps and 3D scene flows in a shared coordinate system, and a novel 4D VAE to effectively learn this representation. Unlike prior work that forces the 3D value and latents to align strictly with RGB VAE latents-despite their fundamentally different distributions-we show that such alignment is unnecessary and leads to suboptimal performance. Instead, we introduce a new data normalization and VAE training strategy that better transfers diffusion priors and greatly improves reconstruction quality. Extensive experiments across multiple datasets demonstrate that MotionCrafter achieves state-of-the-art performance in both geometry reconstruction and dense scene flow estimation, delivering 38.64% and 25.0% improvements in geometry and motion reconstruction, respectively, all without any post-optimization. Project page: https://ruijiezhu94.github.io/MotionCrafter_Page",
+      "author": "Zhu et al.",
+      "authors": "Ruijie Zhu, Jiahao Lu, Wenbo Hu, Xiaoguang Han, Jianfei Cai, Ying Shan, Chuanxia Zheng",
+      "cache_file_name": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Zhu2026ARXIV_MotionCrafter_Dense_Geometry_and.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4175456,
+      "paper_id": 4580794,
+      "pdf_download_success": true,
+      "publication_date": 1770663492000,
+      "ranking_score": 0.1515375946,
+      "rating": null,
+      "read": false,
+      "short_title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "source": "arxiv",
+      "title": "MotionCrafter: Dense Geometry and Motion Reconstruction with a 4D VAE",
+      "total_dislikes": 6,
+      "total_likes": 29,
+      "total_read": 102,
+      "url": "https://arxiv.org/pdf/2602.08961"
+    },
+    {
+      "abstract": "Predictive world models that simulate future observations under explicit camera control are fundamental to interactive AI. Despite rapid advances, current systems lack spatial persistence: they fail to maintain stable scene structures over long trajectories, frequently hallucinating details when cameras revisit previously observed locations. We identify that this geometric drift stems from reliance on screen-space positional embeddings, which conflict with the projective geometry required for 3D consistency. We introduce \\textbf{ViewRope}, a geometry-aware encoding that injects camera-ray directions directly into video transformer self-attention layers. By parameterizing attention with relative ray geometry rather than pixel locality, ViewRope provides a model-native inductive bias for retrieving 3D-consistent content across temporal gaps. We further propose \\textbf{Geometry-Aware Frame-Sparse Attention}, which exploits these geometric cues to selectively attend to relevant historical frames, improving efficiency without sacrificing memory consistency. We also present \\textbf{ViewBench}, a diagnostic suite measuring loop-closure fidelity and geometric drift. Our results demonstrate that ViewRope substantially improves long-term consistency while reducing computational costs.",
+      "author": "Xiang et al.",
+      "authors": "Chendong Xiang, Jiajun Liu, Jintao Zhang, Xiao Yang, Zhengwei Fang, Shizun Wang, Zijun Wang, Yingtian Zou, Hang Su, Jun Zhu",
+      "cache_file_name": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xiang2026ARXIV_Geometry_Aware_Rotary_Position.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174295,
+      "paper_id": 4579633,
+      "pdf_download_success": true,
+      "publication_date": 1770541276000,
+      "ranking_score": 0.2729207035,
+      "rating": null,
+      "read": false,
+      "short_title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "source": "arxiv",
+      "title": "Geometry-Aware Rotary Position Embedding for Consistent Video World Model",
+      "total_dislikes": 2,
+      "total_likes": 18,
+      "total_read": 59,
+      "url": "https://arxiv.org/pdf/2602.07854"
+    },
+    {
+      "abstract": "Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$\u0394$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.",
+      "author": "Jiang et al.",
+      "authors": "Yuxin Jiang, Yuchao Gu, Ivor W. Tsang, Mike Zheng Shou",
+      "cache_file_name": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Jiang2026ARXIV_Olaf_World_Orienting_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176574,
+      "paper_id": 4581912,
+      "pdf_download_success": true,
+      "publication_date": 1770753521000,
+      "ranking_score": 0.1189741714,
+      "rating": null,
+      "read": false,
+      "short_title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "source": "arxiv",
+      "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+      "total_dislikes": 3,
+      "total_likes": 15,
+      "total_read": 58,
+      "url": "https://arxiv.org/pdf/2602.10104"
+    },
+    {
+      "abstract": "Real-world data collection for embodied agents remains costly and unsafe, calling for scalable, realistic, and simulator-ready 3D environments. However, existing scene-generation systems often rely on rule-based or task-specific pipelines, yielding artifacts and physically invalid scenes. We present SAGE, an agentic framework that, given a user-specified embodied task (e.g., \"pick up a bowl and place it on the table\"), understands the intent and automatically generates simulation-ready environments at scale. The agent couples multiple generators for layout and object composition with critics that evaluate semantic plausibility, visual realism, and physical stability. Through iterative reasoning and adaptive tool selection, it self-refines the scenes until meeting user intent and physical validity. The resulting environments are realistic, diverse, and directly deployable in modern simulators for policy training. Policies trained purely on this data exhibit clear scaling trends and generalize to unseen objects and layouts, demonstrating the promise of simulation-driven scaling for embodied AI. Code, demos, and the SAGE-10k dataset can be found on the project page here: https://nvlabs.github.io/sage.",
+      "author": "Xia et al.",
+      "authors": "Hongchi Xia, Xuan Li, Zhaoshuo Li, Qianli Ma, Jiashu Xu, Ming-Yu Liu, Yin Cui, Tsung-Yi Lin, Wei-Chiu Ma, Shenlong Wang, Shuran Song, Fangyin Wei",
+      "cache_file_name": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 4,
+      "digest_date": 1770768000000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Xia2026ARXIV_SAGE_Scalable_Agentic_3D.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4176614,
+      "paper_id": 4581952,
+      "pdf_download_success": true,
+      "publication_date": 1770753595000,
+      "ranking_score": 0.0253882568,
+      "rating": null,
+      "read": false,
+      "short_title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "source": "arxiv",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "total_dislikes": 3,
+      "total_likes": 11,
+      "total_read": 51,
+      "url": "https://arxiv.org/pdf/2602.10116"
+    },
+    {
+      "abstract": "End-to-end (E2E) autonomous driving has recently attracted increasing interest in unifying Vision-Language-Action (VLA) with World Models to enhance decision-making and forward-looking imagination. However, existing methods fail to effectively unify future scene evolution and action planning within a single architecture due to inadequate sharing of latent states, limiting the impact of visual imagination on action decisions. To address this limitation, we propose DriveWorld-VLA, a novel framework that unifies world modeling and planning within a latent space by tightly integrating VLA and world models at the representation level, which enables the VLA planner to benefit directly from holistic scene-evolution modeling and reducing reliance on dense annotated supervision. Additionally, DriveWorld-VLA incorporates the latent states of the world model as core decision-making states for the VLA planner, facilitating the planner to assess how candidate actions impact future scene evolution. By conducting world modeling entirely in the latent space, DriveWorld-VLA supports controllable, action-conditioned imagination at the feature level, avoiding expensive pixel-level rollouts. Extensive open-loop and closed-loop evaluations demonstrate the effectiveness of DriveWorld-VLA, which achieves state-of-the-art performance with 91.3 PDMS on NAVSIMv1, 86.8 EPDMS on NAVSIMv2, and 0.16 3-second average collision rate on nuScenes. Code and models will be released in https://github.com/liulin815/DriveWorld-VLA.git.",
+      "author": "jia et al.",
+      "authors": "Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia, Hangjun Ye, Xiaoshuai Hao, Long Chen",
+      "cache_file_name": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "jia2026ARXIV_DriveWorld_VLA_Unified_Latent.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4172917,
+      "paper_id": 4578255,
+      "pdf_download_success": true,
+      "publication_date": 1770373548000,
+      "ranking_score": 0.265241331,
+      "rating": null,
+      "read": false,
+      "short_title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Drivi",
+      "source": "arxiv",
+      "title": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving",
+      "total_dislikes": 0,
+      "total_likes": 21,
+      "total_read": 46,
+      "url": "https://arxiv.org/pdf/2602.06521"
+    },
+    {
+      "abstract": "Diffusion and flow models have become the dominant paradigm for generative modeling on Riemannian manifolds, with successful applications in protein backbone generation and DNA sequence design. However, these methods require tens to hundreds of neural network evaluations at inference time, which can become a computational bottleneck in large-scale scientific sampling workflows. We introduce Riemannian MeanFlow~(RMF), a framework for learning flow maps directly on manifolds, enabling high-quality generations with as few as one forward pass. We derive three equivalent characterizations of the manifold average velocity (Eulerian, Lagrangian, and semigroup identities), and analyze parameterizations and stabilization techniques to improve training on high-dimensional manifolds. In promoter DNA design and protein backbone generation settings, RMF achieves comparable sample quality to prior methods while requiring up to 10$\\times$ fewer function evaluations. Finally, we show that few-step flow maps enable efficient reward-guided design through reward look-ahead, where terminal states can be predicted from intermediate steps at minimal additional cost.",
+      "author": "Woo et al.",
+      "authors": "Dongyeop Woo, Marta Skreta, Seonghyun Park, Sungsoo Ahn, Kirill Neklyudov",
+      "cache_file_name": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "color": [
+        0.53788342,
+        0.5792307796,
+        0.8522098918,
+        0.3
+      ],
+      "days_trending": 5,
+      "digest_date": 1770681600000,
+      "has_ranking": true,
+      "is_cached": true,
+      "is_cached_filename": "Woo2026ARXIV_Riemannian_MeanFlow.pdf",
+      "n_negative_ratings": 0,
+      "n_positive_ratings": 0,
+      "ngt_id": 4174186,
+      "paper_id": 4579524,
+      "pdf_download_success": true,
+      "publication_date": 1770514877000,
+      "ranking_score": 0.3225612556,
+      "rating": null,
+      "read": false,
+      "short_title": "Riemannian MeanFlow",
+      "source": "arxiv",
+      "title": "Riemannian MeanFlow",
+      "total_dislikes": 3,
+      "total_likes": 12,
+      "total_read": 45,
+      "url": "https://arxiv.org/pdf/2602.07744"
+    }
+  ],
+  "use_scholar_inbox_pdf_server": false,
+  "username": "Longxuan Yu"
+}
