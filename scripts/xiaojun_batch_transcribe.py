@@ -132,7 +132,26 @@ def to_mp3(src: Path, dst: Path) -> None:
 def segment_mp3(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
     out_tmpl = str(out_dir / "part_%03d.mp3")
-    run(["ffmpeg", "-y", "-i", str(src), "-f", "segment", "-segment_time", str(segment_seconds), "-c", "copy", out_tmpl, "-loglevel", "error"])
+    # Re-encode segments to avoid non-monotonic DTS issues that can happen with stream copy.
+    run([
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(src),
+        "-f",
+        "segment",
+        "-segment_time",
+        str(segment_seconds),
+        "-reset_timestamps",
+        "1",
+        "-acodec",
+        "libmp3lame",
+        "-q:a",
+        "5",
+        out_tmpl,
+        "-loglevel",
+        "error",
+    ])
     return sorted(out_dir.glob("part_*.mp3"))
 
 
