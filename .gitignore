@@ -7,3 +7,28 @@ __pycache__/
 /tmp/
 *.mp3
 *.webm
+
+# Workspace config (not for repo)
+.openclaw/
+.xiaohongshu/
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+memory/
+config/
+tools/
+cookies.json
+youtube_cookies.txt
+email_draft_greg.md
+idea7_tc_deep_dive.md
+
+# Scripts
+xhs_*.py
+xhs_*.png
+xiaohongshu-*
+xiaohongshu_post_draft.md
+*.bin
