@@ -8,7 +8,7 @@ guest: 谭杰
 org: Google DeepMind
 title: "EP121 谭杰（DeepMind）- 分析"
 source_url: https://www.youtube.com/watch?v=2o281Zy5aZE
-permalink: /transcripts/xiaojun/121_deepmind_tanjie.analysis.html
+permalink: /transcripts/xiaojun/121_deepmind_tanjie.analysis/
 ---
 
 # 访谈分析笔记

@@ -15,7 +15,7 @@ permalink: /transcripts/xiaojun/
 {% assign analyses = site.pages | where: "series", "xiaojun" | where: "type", "analysis" | where: "episode", p.episode %}
 {% assign a = analyses | first %}
 - **EP{{ p.episode }}** ({{ p.date }}) {{ p.guest }} — {{ p.title }}  
-  [Transcript]({{ p.url }}){% if a %} · [Analysis]({{ a.url }}){% endif %}
+  [Transcript]({{ site.baseurl }}{{ p.url }}){% if a %} · [Analysis]({{ site.baseurl }}{{ a.url }}){% endif %}
 {% endfor %}
 
 ---
