@@ -13,7 +13,7 @@ Daily curated papers pulled from Scholar Inbox.
 {% assign digest_pages = site.pages
   | where_exp: "p", "p.url contains '/scholar_inbox/'"
   | where_exp: "p", "p.url contains 'diffusion'"
-  | where_exp: "p", "p.url endswith '.html'"
+  | where_exp: "p", "p.url contains '/202'"
   | sort: "url" %}
 
 {% assign digest_pages = digest_pages | reverse %}
