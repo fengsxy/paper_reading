@@ -208,6 +208,11 @@ def transcribe_chunk(path: Path, language: str | None) -> dict:
 
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
+        # Fallback to local secrets file (not in git)
+        secrets_key = Path.home() / ".openclaw" / "secrets" / "openai_api_key"
+        if secrets_key.exists():
+            api_key = secrets_key.read_text(encoding="utf-8").strip()
+    if not api_key:
         raise SystemExit("missing env: OPENAI_API_KEY")
 
     client = OpenAI(api_key=api_key)
