@@ -1,12 +1,14 @@
 ---
+layout: default
 type: transcript
 series: xiaojun
 episode: 121
 date: 2026-02-17
 guest: 谭杰
 org: Google DeepMind
-title: 机器人与 Gemini Robotics
+title: "EP121 谭杰（DeepMind）- 机器人与 Gemini Robotics"
 source_url: https://www.youtube.com/watch?v=2o281Zy5aZE
+permalink: /transcripts/xiaojun/121_deepmind_tanjie.html
 ---
 
 # Transcript
