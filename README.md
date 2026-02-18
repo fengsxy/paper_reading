@@ -11,6 +11,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 日期 | 更新内容 |
 |------|----------|
 | 2026-02-17 | [Karpathy RSS](karpathy_rss/2026-02-17-karpathy-rss-digest.md): Showboat 生态, 零工经济骗局, Claude Code 做研究 |
+| 2026-02-18 | [Scholar Inbox](scholar_inbox/2026-02-18-diffusion-dllm.md): 当日 diffusion/dLLM 精选已更新 |
 | 2026-02-17 | [Scholar Inbox](scholar_inbox/2026-02-16-diffusion-dllm.md): Diffinity, dVoting, Discrete Copula Diffusion 等 10 篇 |
 | 2026-02-17 | [Hacker News](hackernews/2026-02-17.md): NanoClaw Docker, AI PR Review, Epstein 文件分析 |
 | 2026-02-16 | [Karpathy RSS](karpathy_rss/2026-02-16-karpathy-rss-digest.md): AI Vampire, Deep Blue 焦虑, 社区三难困境 |
