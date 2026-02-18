@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:21:17Z",
+  "generated_at": "2026-02-18T17:22:30Z",
   "results": [
     {
       "series": "xiaojun",
@@ -17,9 +17,10 @@
     },
     {
       "series": "crossroad",
-      "status": "skipped",
-      "reason": "missing url",
-      "count": 0
+      "status": "ok",
+      "count": 23,
+      "md": "podcast_index/crossroad/index.md",
+      "json": "podcast_index/crossroad/index.json"
     }
   ]
 }

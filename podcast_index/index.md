@@ -8,4 +8,4 @@ permalink: /podcast_index/
 
 - [xiaojun](/podcast_index/xiaojun/) (151 videos)
 - [dwarkesh](/podcast_index/dwarkesh/) (185 videos)
-- crossroad: skipped (missing url)
+- [crossroad](/podcast_index/crossroad/) (23 videos)
