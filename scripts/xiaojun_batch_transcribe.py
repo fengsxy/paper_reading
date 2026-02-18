@@ -312,7 +312,7 @@ def main() -> None:
     ap.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     ap.add_argument("--cookies", type=Path, default=DEFAULT_COOKIES)
     ap.add_argument("--language", default="zh")
-    ap.add_argument("--segment-seconds", type=int, default=1800)
+    ap.add_argument("--segment-seconds", type=int, default=1800, help="chunk size in seconds; set to 0 to disable chunking")
     ap.add_argument("--max-workers", type=int, default=4, help="max concurrent Whisper requests per episode")
     ap.add_argument("--download-missing", action="store_true", help="if audio missing, download via yt-dlp")
     args = ap.parse_args()
@@ -350,26 +350,38 @@ def main() -> None:
             m4a = td_path / f"{item.slug}.m4a"
             to_m4a(audio_file, m4a)
 
-            seg_dir = td_path / "chunks"
-            chunks = chunk_audio(m4a, seg_dir, args.segment_seconds)
-
             merged = {"segments": []}
 
-            def _work(i: int, start_s: float, ch_path: Path) -> tuple[int, float, dict]:
-                print(f"[transcribe] {item.slug} chunk {i+1}/{len(chunks)}")
-                data = transcribe_chunk(ch_path, args.language)
-                return (i, start_s, data)
+            # If segment_seconds is 0, do a single request for the whole file.
+            # This can be faster but may be more failure-prone for long episodes.
+            if int(args.segment_seconds) <= 0:
+                print(f"[transcribe] {item.slug} single-shot")
+                data = transcribe_chunk(m4a, args.language)
+                for s in data.get("segments", []):
+                    merged["segments"].append({
+                        "start": float(s["start"]),
+                        "end": float(s["end"]),
+                        "text": s["text"],
+                    })
+            else:
+                seg_dir = td_path / "chunks"
+                chunks = chunk_audio(m4a, seg_dir, args.segment_seconds)
 
-            with ThreadPoolExecutor(max_workers=max(1, int(args.max_workers))) as ex:
-                futs = [ex.submit(_work, i, start_s, ch_path) for i, (start_s, ch_path) in enumerate(chunks)]
-                for fut in as_completed(futs):
-                    i, start_s, data = fut.result()
-                    for s in data.get("segments", []):
-                        merged["segments"].append({
-                            "start": float(s["start"]) + float(start_s),
-                            "end": float(s["end"]) + float(start_s),
-                            "text": s["text"],
-                        })
+                def _work(i: int, start_s: float, ch_path: Path) -> tuple[int, float, dict]:
+                    print(f"[transcribe] {item.slug} chunk {i+1}/{len(chunks)}")
+                    data = transcribe_chunk(ch_path, args.language)
+                    return (i, start_s, data)
+
+                with ThreadPoolExecutor(max_workers=max(1, int(args.max_workers))) as ex:
+                    futs = [ex.submit(_work, i, start_s, ch_path) for i, (start_s, ch_path) in enumerate(chunks)]
+                    for fut in as_completed(futs):
+                        i, start_s, data = fut.result()
+                        for s in data.get("segments", []):
+                            merged["segments"].append({
+                                "start": float(s["start"]) + float(start_s),
+                                "end": float(s["end"]) + float(start_s),
+                                "text": s["text"],
+                            })
 
         merged["segments"].sort(key=lambda x: x["start"])
         write_transcript(item, merged, transcript_path)
