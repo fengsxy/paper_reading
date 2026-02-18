@@ -23,6 +23,7 @@ import subprocess
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -147,15 +148,18 @@ def to_m4a(src: Path, dst: Path) -> None:
     ])
 
 
-def chunk_audio(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
+def chunk_audio(src: Path, out_dir: Path, segment_seconds: int) -> list[tuple[float, Path]]:
     """Chunk by re-encoding each segment with -ss/-t.
 
-    This avoids ffmpeg segment muxer timestamp pitfalls.
+    Returns a list of (start_seconds, chunk_path).
+
+    This avoids ffmpeg segment muxer timestamp pitfalls and makes it safe
+    to transcribe chunks concurrently while preserving global timestamps.
     """
     out_dir.mkdir(parents=True, exist_ok=True)
 
     total = audio_duration_seconds(src)
-    chunks: list[Path] = []
+    chunks: list[tuple[float, Path]] = []
     start = 0
     idx = 0
     while start < int(total) + 1:
@@ -183,7 +187,7 @@ def chunk_audio(src: Path, out_dir: Path, segment_seconds: int) -> list[Path]:
             "error",
         ])
         if out.exists() and out.stat().st_size > 0:
-            chunks.append(out)
+            chunks.append((float(start), out))
         start += segment_seconds
         idx += 1
 
@@ -308,7 +312,8 @@ def main() -> None:
     ap.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     ap.add_argument("--cookies", type=Path, default=DEFAULT_COOKIES)
     ap.add_argument("--language", default="zh")
-    ap.add_argument("--segment-seconds", type=int, default=900)
+    ap.add_argument("--segment-seconds", type=int, default=1800)
+    ap.add_argument("--max-workers", type=int, default=4, help="max concurrent Whisper requests per episode")
     ap.add_argument("--download-missing", action="store_true", help="if audio missing, download via yt-dlp")
     args = ap.parse_args()
 
@@ -349,17 +354,22 @@ def main() -> None:
             chunks = chunk_audio(m4a, seg_dir, args.segment_seconds)
 
             merged = {"segments": []}
-            offset = 0.0
-            for idx, ch in enumerate(chunks):
-                print(f"[transcribe] {item.slug} chunk {idx+1}/{len(chunks)}")
-                data = transcribe_chunk(ch, args.language)
-                for s in data.get("segments", []):
-                    merged["segments"].append({
-                        "start": float(s["start"]) + offset,
-                        "end": float(s["end"]) + offset,
-                        "text": s["text"],
-                    })
-                offset += float(data.get("duration", 0.0))
+
+            def _work(i: int, start_s: float, ch_path: Path) -> tuple[int, float, dict]:
+                print(f"[transcribe] {item.slug} chunk {i+1}/{len(chunks)}")
+                data = transcribe_chunk(ch_path, args.language)
+                return (i, start_s, data)
+
+            with ThreadPoolExecutor(max_workers=max(1, int(args.max_workers))) as ex:
+                futs = [ex.submit(_work, i, start_s, ch_path) for i, (start_s, ch_path) in enumerate(chunks)]
+                for fut in as_completed(futs):
+                    i, start_s, data = fut.result()
+                    for s in data.get("segments", []):
+                        merged["segments"].append({
+                            "start": float(s["start"]) + float(start_s),
+                            "end": float(s["end"]) + float(start_s),
+                            "text": s["text"],
+                        })
 
         merged["segments"].sort(key=lambda x: x["start"])
         write_transcript(item, merged, transcript_path)
