@@ -1,3 +1,7 @@
+---
+title: "2026-02-15-diffusion-dllm-papers"
+---
+
 # Scholar Inbox Digest: Diffusion & dLLM Papers (2026-02-15)
 
 ## 已验证论文

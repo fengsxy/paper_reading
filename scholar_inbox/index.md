@@ -8,14 +8,24 @@ permalink: /scholar_inbox/
 
 Daily curated papers pulled from Scholar Inbox.
 
-## Daily Digests
+## Daily Digests (Auto Index)
 
-- [2026-02-17 - Diffusion/dLLM](2026-02-17-diffusion-dllm.md)
-- [2026-02-16 - Diffusion/dLLM](2026-02-16-diffusion-dllm.md)
-- [2026-02-15 - Diffusion/dLLM](2026-02-15-diffusion-dllm-papers.md)
+{% assign digest_pages = site.pages
+  | where_exp: "p", "p.url contains '/scholar_inbox/'"
+  | where_exp: "p", "p.url contains 'diffusion'"
+  | where_exp: "p", "p.url endswith '.html'"
+  | sort: "url" %}
+
+{% assign digest_pages = digest_pages | reverse %}
+
+{% for p in digest_pages %}
+{% if p.url != '/scholar_inbox/' %}
+- [{{ p.title | default: p.url }}]({{ p.url | relative_url }})
+{% endif %}
+{% endfor %}
 
 ---
 
-## dLLM / Diffusion Notes Index
+## Notes
 
-If you want the full paper index (topics + links), see the repo README section below or use the per-paper notes in this folder.
+Per-paper notes live in `scholar_inbox/`. This page only indexes daily digest pages.

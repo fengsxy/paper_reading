@@ -1,3 +1,7 @@
+---
+title: "2026-02-16-diffusion-dllm"
+---
+
 # Scholar Inbox 精选 - 2026-02-16
 
 ## Diffusion / dLLM 相关论文（已验证）

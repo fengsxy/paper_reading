@@ -1,3 +1,7 @@
+---
+title: "2026-02-18-diffusion-dllm"
+---
+
 # Scholar Inbox 精选 - 2026-02-18
 
 ## Diffusion / dLLM / 表征相关论文（ranking_score >= 0.85）
