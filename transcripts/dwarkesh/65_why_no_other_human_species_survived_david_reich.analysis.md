@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 65
 guest: ""
 title: "Why no other human species survived – David Reich - Analysis"
 source_url: "https://www.youtube.com/watch?v=rW_Lgwqqe3I"

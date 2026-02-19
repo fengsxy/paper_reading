@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 46
 guest: ""
 title: "Sarah Paine — The war for India (lecture & interview) - Analysis"
 source_url: "https://www.youtube.com/watch?v=LbkO84MsmyM"

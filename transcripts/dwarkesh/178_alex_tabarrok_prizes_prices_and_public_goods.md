@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 178
 guest: ""
 title: "Alex Tabarrok - Prizes, Prices, and Public Goods"
 source_url: "https://www.youtube.com/watch?v=i75KvXVrtLw"

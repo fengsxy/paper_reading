@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 55
 guest: ""
 title: "Gwern — Anonymous writer who predicted AI trajectory on $12K/year salary"
 source_url: "https://www.youtube.com/watch?v=a42key59cZQ"

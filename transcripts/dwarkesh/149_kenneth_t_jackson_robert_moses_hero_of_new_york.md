@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 149
 guest: ""
 title: "Kenneth T. Jackson - Robert Moses, Hero of New York?"
 source_url: "https://www.youtube.com/watch?v=Gumo8zmgLqM"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 45
 guest: ""
 title: "Unlimited War: Putin vs Bismarck – Sarah Paine"
 source_url: "https://www.youtube.com/watch?v=ZACAzNyfyxs"

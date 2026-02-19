@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 63
 guest: ""
 title: "Our biggest difference with Neanderthals – David Reich"
 source_url: "https://www.youtube.com/watch?v=KwC7rcnThX4"

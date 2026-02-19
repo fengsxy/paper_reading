@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 113
 guest: ""
 title: "Patrick Collison’s Advice to 20-30 Year Olds: Don't Move to SF - Analysis"
 source_url: "https://www.youtube.com/watch?v=XrFIKOle0n8"

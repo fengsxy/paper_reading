@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 143
 guest: ""
 title: "Lars Doucet — Progress, poverty, Georgism, & why rent is too damn high"
 source_url: "https://www.youtube.com/watch?v=sL-qkv7Pzxo"

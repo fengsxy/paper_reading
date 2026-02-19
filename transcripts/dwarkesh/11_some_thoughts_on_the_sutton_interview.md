@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 11
 guest: ""
 title: "Some thoughts on the Sutton interview"
 source_url: "https://www.youtube.com/watch?v=u3HBJVjpXuw"

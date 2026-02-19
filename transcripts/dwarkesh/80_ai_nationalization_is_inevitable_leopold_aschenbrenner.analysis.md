@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 80
 guest: ""
 title: "AI Nationalization is Inevitable – Leopold Aschenbrenner - Analysis"
 source_url: "https://www.youtube.com/watch?v=K0Pa5oudUp4"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 153
 guest: ""
 title: "Charles C. Mann - Americas Before Columbus & Scientific Wizardry"
 source_url: "https://www.youtube.com/watch?v=1Z35PqPQU2M"

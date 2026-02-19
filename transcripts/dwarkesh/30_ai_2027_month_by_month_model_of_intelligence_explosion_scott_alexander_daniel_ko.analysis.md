@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 30
 guest: ""
 title: "AI 2027: month-by-month model of intelligence explosion — Scott Alexander & Daniel Kokotajlo - Analysis"
 source_url: "https://www.youtube.com/watch?v=htOvH12T7mU"

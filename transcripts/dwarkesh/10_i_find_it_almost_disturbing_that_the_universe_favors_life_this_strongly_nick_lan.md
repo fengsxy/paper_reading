@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 10
 guest: ""
 title: "“I find it almost disturbing that the universe favors life this strongly” – Nick Lane"
 source_url: "https://www.youtube.com/watch?v=0GMWxuYuxJI"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 116
 guest: ""
 title: "AGI by 2028 - Shane Legg (DeepMind Founder) - Analysis"
 source_url: "https://www.youtube.com/watch?v=N84ZntqkO4I"

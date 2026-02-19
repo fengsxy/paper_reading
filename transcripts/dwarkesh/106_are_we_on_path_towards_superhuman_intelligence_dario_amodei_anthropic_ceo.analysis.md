@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 106
 guest: ""
 title: "Are We On Path Towards Superhuman Intelligence? – Dario Amodei (Anthropic CEO) - Analysis"
 source_url: "https://www.youtube.com/watch?v=wo4o09lKAQQ"

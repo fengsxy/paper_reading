@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 67
 guest: ""
 title: "The bacteria that shaped history: Yersinia pestis – David Reich - Analysis"
 source_url: "https://www.youtube.com/watch?v=oX76K-mNdaM"

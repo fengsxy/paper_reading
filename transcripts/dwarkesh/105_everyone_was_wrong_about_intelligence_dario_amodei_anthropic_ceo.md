@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 105
 guest: ""
 title: "Everyone Was Wrong About Intelligence – Dario Amodei (Anthropic CEO)"
 source_url: "https://www.youtube.com/watch?v=4hiXbxUnWd8"

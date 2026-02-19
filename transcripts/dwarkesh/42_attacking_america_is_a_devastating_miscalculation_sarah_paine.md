@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 42
 guest: ""
 title: "Attacking America Is a Devastating Miscalculation – Sarah Paine"
 source_url: "https://www.youtube.com/watch?v=eebSpobsPmM"

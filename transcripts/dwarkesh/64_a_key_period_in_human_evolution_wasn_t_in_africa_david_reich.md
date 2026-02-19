@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 64
 guest: ""
 title: "A key period in human evolution wasn't in Africa – David Reich"
 source_url: "https://www.youtube.com/watch?v=1SbyMBvJzkE"

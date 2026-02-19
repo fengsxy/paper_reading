@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 53
 guest: ""
 title: "The Grand Theory of Intelligence – Gwern - Analysis"
 source_url: "https://www.youtube.com/watch?v=IMkqAUsVAfc"

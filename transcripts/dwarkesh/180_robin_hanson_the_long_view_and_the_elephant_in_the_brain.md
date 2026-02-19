@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 180
 guest: ""
 title: "Robin Hanson - The Long View and The Elephant in the Brain"
 source_url: "https://www.youtube.com/watch?v=aagyRGKv66g"

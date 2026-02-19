@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 57
 guest: ""
 title: "Taiwan Invasion: Timeline to Global Collapse – @Asianometry & Dylan Patel - Analysis"
 source_url: "https://www.youtube.com/watch?v=DTOU3vchBE0"

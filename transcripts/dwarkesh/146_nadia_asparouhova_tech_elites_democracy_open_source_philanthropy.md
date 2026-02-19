@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 146
 guest: ""
 title: "Nadia Asparouhova — Tech elites, democracy, open source, & philanthropy"
 source_url: "https://www.youtube.com/watch?v=nvL3vqMzznY"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 122
 guest: ""
 title: "Andrew Roberts — Why Hitler lost WWII, Churchill as applied historian, & Napoleon as startup founder - Analysis"
 source_url: "https://www.youtube.com/watch?v=tM9ZMYUYhTk"

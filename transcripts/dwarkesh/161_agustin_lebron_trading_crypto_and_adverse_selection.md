@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 161
 guest: ""
 title: "Agustin Lebron - Trading, Crypto, and Adverse Selection"
 source_url: "https://www.youtube.com/watch?v=3BBNG0TlVwM"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 97
 guest: ""
 title: "Hitler put Russians on Death Ground - Sarah Paine"
 source_url: "https://www.youtube.com/watch?v=X3tuS9bgBfo"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 11
 guest: ""
 title: "Some thoughts on the Sutton interview - Analysis"
 source_url: "https://www.youtube.com/watch?v=u3HBJVjpXuw"

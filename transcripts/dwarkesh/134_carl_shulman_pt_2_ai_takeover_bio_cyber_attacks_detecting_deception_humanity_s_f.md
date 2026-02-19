@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 134
 guest: ""
 title: "Carl Shulman (Pt 2) — AI Takeover, bio & cyber attacks, detecting deception, & humanity's far future"
 source_url: "https://www.youtube.com/watch?v=KUieFuV1fuo"

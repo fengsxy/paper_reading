@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 147
 guest: ""
 title: "Byrne Hobart - FTX, Drugs, Twitter, Taiwan, & Monasticism - Analysis"
 source_url: "https://www.youtube.com/watch?v=9P2rk0Gtd0I"

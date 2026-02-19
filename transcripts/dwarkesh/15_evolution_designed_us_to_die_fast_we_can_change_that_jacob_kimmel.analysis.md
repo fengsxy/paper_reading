@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 15
 guest: ""
 title: "Evolution designed us to die fast; we can change that — Jacob Kimmel - Analysis"
 source_url: "https://www.youtube.com/watch?v=XCLODgdCmKA"

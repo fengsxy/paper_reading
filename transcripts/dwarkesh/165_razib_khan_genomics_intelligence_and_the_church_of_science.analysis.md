@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 165
 guest: ""
 title: "Razib Khan - Genomics, Intelligence, and The Church of Science - Analysis"
 source_url: "https://www.youtube.com/watch?v=sh04dEtBAoE"

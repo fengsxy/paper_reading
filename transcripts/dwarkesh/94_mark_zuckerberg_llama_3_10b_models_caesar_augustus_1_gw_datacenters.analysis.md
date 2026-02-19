@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 94
 guest: ""
 title: "Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters - Analysis"
 source_url: "https://www.youtube.com/watch?v=bc6uFV9CJGg"

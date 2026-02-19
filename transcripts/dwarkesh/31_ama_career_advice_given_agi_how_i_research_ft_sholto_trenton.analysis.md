@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 31
 guest: ""
 title: "AMA: career advice given AGI, how I research ft. Sholto & Trenton - Analysis"
 source_url: "https://www.youtube.com/watch?v=XLaRfZ4AHn8"

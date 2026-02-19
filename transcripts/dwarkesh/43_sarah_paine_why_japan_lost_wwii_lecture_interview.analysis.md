@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 43
 guest: ""
 title: "Sarah Paine — Why Japan lost WWII (lecture & interview) - Analysis"
 source_url: "https://www.youtube.com/watch?v=Znk5QINe01A"

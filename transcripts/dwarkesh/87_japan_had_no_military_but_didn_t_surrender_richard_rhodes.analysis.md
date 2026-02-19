@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 87
 guest: ""
 title: "Japan had no military. But didn’t surrender – Richard Rhodes - Analysis"
 source_url: "https://www.youtube.com/watch?v=xDMYMOjcKa4"

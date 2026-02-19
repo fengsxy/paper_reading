@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 70
 guest: ""
 title: "Patrick McKenzie — Money laundering, big tech censorship, SBF & Japan - Analysis"
 source_url: "https://www.youtube.com/watch?v=18zpjpPNWRw"

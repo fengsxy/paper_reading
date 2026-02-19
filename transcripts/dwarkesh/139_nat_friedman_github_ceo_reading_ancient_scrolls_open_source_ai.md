@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 139
 guest: ""
 title: "Nat Friedman (Github CEO) — Reading ancient scrolls, open source, & AI"
 source_url: "https://www.youtube.com/watch?v=qcvMjoJdck4"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 32
 guest: ""
 title: "Joseph Henrich — Humans defeated smarter species with cultural evolution - Analysis"
 source_url: "https://www.youtube.com/watch?v=TcfhrThp1OU"

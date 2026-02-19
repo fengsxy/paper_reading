@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 174
 guest: ""
 title: "Uncle Bob - The Long Reach of Code, Automating Programming, and Developing Coding Talent"
 source_url: "https://www.youtube.com/watch?v=ldTPVd3vO9Q"

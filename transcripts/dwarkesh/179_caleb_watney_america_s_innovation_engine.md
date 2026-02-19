@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 179
 guest: ""
 title: "Caleb Watney - America's Innovation Engine"
 source_url: "https://www.youtube.com/watch?v=Ayewh_O0LPQ"

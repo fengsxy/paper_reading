@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 184
 guest: ""
 title: "Bryan Caplan - Nurturing Orphaned Ideas, Education, and UBI - Analysis"
 source_url: "https://www.youtube.com/watch?v=r4AkTmqvWzM"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 72
 guest: ""
 title: "Lee Kuan Yew’s 3 key decisions that made Singapore rich – Tony Blair - Analysis"
 source_url: "https://www.youtube.com/watch?v=Ko9uQvR93kw"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 138
 guest: ""
 title: "Ilya Sutskever (OpenAI Chief Scientist) — Why next-token prediction could surpass human intelligence"
 source_url: "https://www.youtube.com/watch?v=Yf1o0TQzry8"

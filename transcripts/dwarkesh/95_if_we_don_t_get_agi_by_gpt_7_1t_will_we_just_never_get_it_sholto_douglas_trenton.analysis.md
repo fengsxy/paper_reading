@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 95
 guest: ""
 title: "If we don’t get AGI by GPT-7 (~$1T), will we just never get it? – Sholto Douglas & Trenton Bricken - Analysis"
 source_url: "https://www.youtube.com/watch?v=WpGqsKR26Cw"

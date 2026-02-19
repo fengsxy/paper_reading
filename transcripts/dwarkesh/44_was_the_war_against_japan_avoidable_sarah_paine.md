@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 44
 guest: ""
 title: "Was The War Against Japan Avoidable? - Sarah Paine"
 source_url: "https://www.youtube.com/watch?v=dPDndeV_mTU"

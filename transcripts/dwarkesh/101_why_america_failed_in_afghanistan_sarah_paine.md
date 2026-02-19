@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 101
 guest: ""
 title: "Why America Failed In Afghanistan | Sarah Paine"
 source_url: "https://www.youtube.com/watch?v=xkxy5zo2kJ8"

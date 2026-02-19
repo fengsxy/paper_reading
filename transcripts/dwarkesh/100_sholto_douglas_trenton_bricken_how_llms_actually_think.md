@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 100
 guest: ""
 title: "Sholto Douglas & Trenton Bricken — How LLMs actually think"
 source_url: "https://www.youtube.com/watch?v=UTuuTTnjxMQ"

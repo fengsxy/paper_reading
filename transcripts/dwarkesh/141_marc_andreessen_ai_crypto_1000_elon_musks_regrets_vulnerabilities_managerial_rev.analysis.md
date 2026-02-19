@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 141
 guest: ""
 title: "Marc Andreessen — AI, crypto, 1000 Elon Musks, regrets, vulnerabilities, & managerial revolution - Analysis"
 source_url: "https://www.youtube.com/watch?v=kNsi5XVDTTM"

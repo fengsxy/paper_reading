@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 169
 guest: ""
 title: "David Deutsch - AI, America, Fun, & Bayes - Analysis"
 source_url: "https://www.youtube.com/watch?v=EVwjofV5TgU"

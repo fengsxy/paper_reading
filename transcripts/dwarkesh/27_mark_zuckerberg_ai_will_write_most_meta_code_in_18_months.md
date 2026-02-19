@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 27
 guest: ""
 title: "Mark Zuckerberg — AI will write most Meta code in 18 months"
 source_url: "https://www.youtube.com/watch?v=rYXeQbTuVl0"

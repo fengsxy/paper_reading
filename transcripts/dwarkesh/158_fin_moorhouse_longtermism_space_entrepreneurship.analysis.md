@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 158
 guest: ""
 title: "Fin Moorhouse - Longtermism, Space, & Entrepreneurship - Analysis"
 source_url: "https://www.youtube.com/watch?v=snMWoyvmkhg"

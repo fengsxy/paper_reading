@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 148
 guest: ""
 title: "Edward Glaeser - Cities, Terrorism, Housing, & Remote Work - Analysis"
 source_url: "https://www.youtube.com/watch?v=MpttoDJ3pH8"

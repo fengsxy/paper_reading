@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 112
 guest: ""
 title: "Scaling LLMs further is an artform - Demis Hassabis (Google DeepMind CEO) - Analysis"
 source_url: "https://www.youtube.com/watch?v=666XgM38jJE"

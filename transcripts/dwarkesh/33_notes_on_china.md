@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 33
 guest: ""
 title: "Notes on China"
 source_url: "https://www.youtube.com/watch?v=UU9jbImVsNY"

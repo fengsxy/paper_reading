@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 48
 guest: ""
 title: "Why Space Elevators Can't Mine Black Holes – Adam Brown - Analysis"
 source_url: "https://www.youtube.com/watch?v=zfOYEMnpqdM"

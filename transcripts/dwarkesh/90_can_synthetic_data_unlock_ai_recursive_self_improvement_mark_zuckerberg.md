@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 90
 guest: ""
 title: "Can synthetic data unlock AI recursive self-improvement? — Mark Zuckerberg"
 source_url: "https://www.youtube.com/watch?v=9TU0XjJqpOg"

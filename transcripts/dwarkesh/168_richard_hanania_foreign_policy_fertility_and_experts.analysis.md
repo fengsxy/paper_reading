@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 168
 guest: ""
 title: "Richard Hanania - Foreign Policy, Fertility, and Experts - Analysis"
 source_url: "https://www.youtube.com/watch?v=QyWs-XomCk0"

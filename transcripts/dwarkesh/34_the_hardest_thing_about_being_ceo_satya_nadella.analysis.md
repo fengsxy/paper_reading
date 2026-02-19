@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 34
 guest: ""
 title: "The Hardest thing About Being CEO – Satya Nadella - Analysis"
 source_url: "https://www.youtube.com/watch?v=cn-k7KUpydE"

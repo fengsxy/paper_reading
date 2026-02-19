@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 140
 guest: ""
 title: "Brett Harrison — FTX US former president speaks out - Analysis"
 source_url: "https://www.youtube.com/watch?v=yXgDlIlB93A"

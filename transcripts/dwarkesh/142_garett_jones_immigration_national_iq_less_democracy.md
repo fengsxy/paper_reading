@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 142
 guest: ""
 title: "Garett Jones — Immigration, national IQ, & less democracy"
 source_url: "https://www.youtube.com/watch?v=ZruyslAe26g"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 81
 guest: ""
 title: "Leopold Aschenbrenner — 2027 AGI, China/US super-intelligence race, & the return of history - Analysis"
 source_url: "https://www.youtube.com/watch?v=zdbVtZIn9IM"

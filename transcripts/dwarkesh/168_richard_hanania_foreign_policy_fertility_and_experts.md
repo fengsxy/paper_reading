@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 168
 guest: ""
 title: "Richard Hanania - Foreign Policy, Fertility, and Experts"
 source_url: "https://www.youtube.com/watch?v=QyWs-XomCk0"

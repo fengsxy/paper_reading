@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 22
 guest: ""
 title: "Why China's manufacturing economy is dominating — Arthur Kroeber - Analysis"
 source_url: "https://www.youtube.com/watch?v=qb644F-iE_s"

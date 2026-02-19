@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 52
 guest: ""
 title: "Adam Brown — Bubble universes, space elevators, & AdS/CFT - Analysis"
 source_url: "https://www.youtube.com/watch?v=XhB3qH_TFds"

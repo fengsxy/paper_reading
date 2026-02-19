@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 132
 guest: ""
 title: "Dario Amodei (Anthropic CEO) — The hidden pattern behind every AI breakthrough"
 source_url: "https://www.youtube.com/watch?v=Nlkk3glap_U"

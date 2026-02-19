@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 107
 guest: ""
 title: "How Did Dario & Ilya Know LLMs Could Lead to AGI?"
 source_url: "https://www.youtube.com/watch?v=Iq4YStiGADs"

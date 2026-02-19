@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 91
 guest: ""
 title: "Energy, not compute, will be the #1 bottleneck to AI progress – Mark Zuckerberg - Analysis"
 source_url: "https://www.youtube.com/watch?v=i-o5YbNfmh0"

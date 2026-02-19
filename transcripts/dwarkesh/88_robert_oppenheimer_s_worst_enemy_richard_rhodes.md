@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 88
 guest: ""
 title: "Robert Oppenheimer's Worst Enemy – Richard Rhodes"
 source_url: "https://www.youtube.com/watch?v=UG22Ytgj4uc"

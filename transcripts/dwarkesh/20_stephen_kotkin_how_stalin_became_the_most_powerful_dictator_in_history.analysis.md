@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 20
 guest: ""
 title: "Stephen Kotkin — How Stalin became the most powerful dictator in history - Analysis"
 source_url: "https://www.youtube.com/watch?v=YMfd3EoHfPI"

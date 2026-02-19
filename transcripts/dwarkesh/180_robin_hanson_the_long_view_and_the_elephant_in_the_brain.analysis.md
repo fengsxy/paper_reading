@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 180
 guest: ""
 title: "Robin Hanson - The Long View and The Elephant in the Brain - Analysis"
 source_url: "https://www.youtube.com/watch?v=aagyRGKv66g"

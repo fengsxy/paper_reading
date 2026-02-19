@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 157
 guest: ""
 title: "Joseph Carlsmith - Utopia, AI, & Infinite Ethics - Analysis"
 source_url: "https://www.youtube.com/watch?v=M3TUe4zUCKk"

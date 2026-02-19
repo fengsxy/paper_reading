@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 175
 guest: ""
 title: "Scott Aaronson - Quantum Computing, Complexity, and Creativity"
 source_url: "https://www.youtube.com/watch?v=Uy5fvwdw8x4"

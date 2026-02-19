@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 154
 guest: ""
 title: "Austin Vernon - Energy Superabundance, Starship Missiles, & Finding Alpha"
 source_url: "https://www.youtube.com/watch?v=YSgfu7XprIM"

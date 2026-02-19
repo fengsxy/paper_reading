@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 51
 guest: ""
 title: "How Black Holes Reveal a Holographic Reality - Analysis"
 source_url: "https://www.youtube.com/watch?v=ZT07mR7DnFI"

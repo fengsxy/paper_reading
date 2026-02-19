@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 82
 guest: ""
 title: "The inside story of how ChatGPT was built – OpenAI cofounder John Schulman"
 source_url: "https://www.youtube.com/watch?v=ERpNuLzKmJY"

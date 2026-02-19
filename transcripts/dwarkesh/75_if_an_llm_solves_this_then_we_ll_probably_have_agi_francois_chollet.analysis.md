@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 75
 guest: ""
 title: "If an LLM solves this then we'll probably have AGI – Francois Chollet - Analysis"
 source_url: "https://www.youtube.com/watch?v=wZ0ToxtXz5g"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 129
 guest: ""
 title: "Sarah C. M. Paine — Why dictators keep making the same fatal mistake"
 source_url: "https://www.youtube.com/watch?v=YcVSgYz5SJ8"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 28
 guest: ""
 title: "Why Rome actually fell: plagues, slavery, & ice age — Kyle Harper"
 source_url: "https://www.youtube.com/watch?v=QFzgSmN8Ng8"

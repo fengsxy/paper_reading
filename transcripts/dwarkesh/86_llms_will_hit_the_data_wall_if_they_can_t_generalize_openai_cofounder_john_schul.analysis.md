@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 86
 guest: ""
 title: "LLMs will hit the data wall if they can’t generalize – OpenAI cofounder John Schulman - Analysis"
 source_url: "https://www.youtube.com/watch?v=V6X_tLCxsZk"

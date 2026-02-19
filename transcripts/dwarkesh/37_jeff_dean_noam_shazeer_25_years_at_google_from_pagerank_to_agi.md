@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 37
 guest: ""
 title: "Jeff Dean & Noam Shazeer — 25 years at Google: from PageRank to AGI"
 source_url: "https://www.youtube.com/watch?v=v0gjI__RyCY"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 39
 guest: ""
 title: "The Limits of American Power – Sarah Paine - Analysis"
 source_url: "https://www.youtube.com/watch?v=tlNHLGVRKlc"

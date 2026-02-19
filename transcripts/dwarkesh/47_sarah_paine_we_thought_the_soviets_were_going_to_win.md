@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 47
 guest: ""
 title: "Sarah Paine: We Thought The Soviets Were Going to Win"
 source_url: "https://www.youtube.com/watch?v=fx6fakjQBdo"

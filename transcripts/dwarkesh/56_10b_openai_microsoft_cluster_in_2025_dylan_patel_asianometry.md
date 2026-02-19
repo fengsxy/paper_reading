@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 56
 guest: ""
 title: "$10B OpenAI & Microsoft Cluster in 2025 – Dylan Patel & @Asianometry"
 source_url: "https://www.youtube.com/watch?v=J7yvSkIOZLw"

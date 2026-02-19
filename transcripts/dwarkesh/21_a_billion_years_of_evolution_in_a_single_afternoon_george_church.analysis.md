@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 21
 guest: ""
 title: "A billion years of evolution in a single afternoon — George Church - Analysis"
 source_url: "https://www.youtube.com/watch?v=olmHHxFQwxo"

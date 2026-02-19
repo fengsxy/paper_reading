@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 111
 guest: ""
 title: "The Fastest Way to AGI: LLMs + Tree Search – Demis Hassabis (Google DeepMind CEO)"
 source_url: "https://www.youtube.com/watch?v=eqXfhejDeqA"

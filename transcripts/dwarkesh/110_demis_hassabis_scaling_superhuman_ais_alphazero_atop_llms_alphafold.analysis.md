@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 110
 guest: ""
 title: "Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLMs, AlphaFold - Analysis"
 source_url: "https://www.youtube.com/watch?v=qTogNUV3CAI"

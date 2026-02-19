@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 131
 guest: ""
 title: "Why Microsoft paid $7.5 billion for GitHub (Nat Friedman)"
 source_url: "https://www.youtube.com/watch?v=vwbXiITmxTU"

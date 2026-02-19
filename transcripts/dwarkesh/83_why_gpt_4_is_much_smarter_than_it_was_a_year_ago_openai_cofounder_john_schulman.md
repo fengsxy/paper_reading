@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 83
 guest: ""
 title: "Why GPT-4 is much smarter than it was a year ago – OpenAI cofounder John Schulman"
 source_url: "https://www.youtube.com/watch?v=JclnqKZBTUU"

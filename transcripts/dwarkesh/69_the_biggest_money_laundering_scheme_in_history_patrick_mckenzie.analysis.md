@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 69
 guest: ""
 title: "The Biggest Money Laundering Scheme In History – Patrick McKenzie - Analysis"
 source_url: "https://www.youtube.com/watch?v=ciZMI5ZrFLo"

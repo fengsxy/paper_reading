@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 18
 guest: ""
 title: "Why I don’t think AGI is right around the corner"
 source_url: "https://www.youtube.com/watch?v=nyvmYnz6EAg"

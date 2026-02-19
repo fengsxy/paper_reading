@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 79
 guest: ""
 title: "How the US-China AI Race Will Play Out – Leopold Aschenbrenner - Analysis"
 source_url: "https://www.youtube.com/watch?v=ghluOfM-Xik"

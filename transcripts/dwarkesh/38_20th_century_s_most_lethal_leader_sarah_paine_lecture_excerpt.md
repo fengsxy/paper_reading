@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 38
 guest: ""
 title: "20th Century's Most Lethal Leader – Sarah Paine (Lecture Excerpt)"
 source_url: "https://www.youtube.com/watch?v=AFsf-00tsrw"

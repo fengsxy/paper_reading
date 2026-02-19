@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 172
 guest: ""
 title: "Sarah Fitz-Claridge - Taking Children Seriously | The Lunar Society #15"
 source_url: "https://www.youtube.com/watch?v=BV6Qice6Lrc"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 137
 guest: ""
 title: "Eliezer Yudkowsky — Why AI will kill us, aligning LLMs, nature of intelligence, SciFi, & rationality - Analysis"
 source_url: "https://www.youtube.com/watch?v=41SUp-TRVlg"

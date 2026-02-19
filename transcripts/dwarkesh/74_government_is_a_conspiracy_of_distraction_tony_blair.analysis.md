@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 74
 guest: ""
 title: "Government is a conspiracy of distraction – Tony Blair - Analysis"
 source_url: "https://www.youtube.com/watch?v=RWBZyQ4Na4o"

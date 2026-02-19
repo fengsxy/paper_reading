@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 82
 guest: ""
 title: "The inside story of how ChatGPT was built – OpenAI cofounder John Schulman - Analysis"
 source_url: "https://www.youtube.com/watch?v=ERpNuLzKmJY"

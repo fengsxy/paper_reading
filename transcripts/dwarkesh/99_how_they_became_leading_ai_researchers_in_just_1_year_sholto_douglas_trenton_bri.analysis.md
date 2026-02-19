@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 99
 guest: ""
 title: "How They Became Leading AI Researchers in Just 1 Year – Sholto Douglas & Trenton Bricken - Analysis"
 source_url: "https://www.youtube.com/watch?v=cPu3SecmgUU"

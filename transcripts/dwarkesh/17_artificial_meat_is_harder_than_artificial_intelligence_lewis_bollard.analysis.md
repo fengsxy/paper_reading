@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 17
 guest: ""
 title: "Artificial meat is harder than artificial intelligence — Lewis Bollard - Analysis"
 source_url: "https://www.youtube.com/watch?v=kWcPg8t1kJ4"

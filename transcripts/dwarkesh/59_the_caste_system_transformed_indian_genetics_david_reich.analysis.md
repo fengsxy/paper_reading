@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 59
 guest: ""
 title: "The caste system transformed Indian genetics – David Reich - Analysis"
 source_url: "https://www.youtube.com/watch?v=7OfV16_xngQ"

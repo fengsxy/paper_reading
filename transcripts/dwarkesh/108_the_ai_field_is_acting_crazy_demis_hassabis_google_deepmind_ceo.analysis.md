@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 108
 guest: ""
 title: "The AI Field is Acting Crazy – Demis Hassabis (Google DeepMind CEO) - Analysis"
 source_url: "https://www.youtube.com/watch?v=wJzwbY2CwZQ"

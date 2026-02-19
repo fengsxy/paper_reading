@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 36
 guest: ""
 title: "Satya Nadella — Microsoft’s AGI plan & quantum breakthrough - Analysis"
 source_url: "https://www.youtube.com/watch?v=4GLSzuYXh6w"

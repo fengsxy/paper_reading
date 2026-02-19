@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 130
 guest: ""
 title: "What if the Third Reich survived WW2?"
 source_url: "https://www.youtube.com/watch?v=uxRf4JLbQGc"

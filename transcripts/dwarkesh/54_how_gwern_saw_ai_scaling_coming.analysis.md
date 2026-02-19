@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 54
 guest: ""
 title: "How Gwern saw AI scaling coming - Analysis"
 source_url: "https://www.youtube.com/watch?v=5fkqmNzFni8"

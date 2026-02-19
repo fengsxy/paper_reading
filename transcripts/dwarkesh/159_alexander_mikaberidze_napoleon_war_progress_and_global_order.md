@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 159
 guest: ""
 title: "Alexander Mikaberidze - Napoleon, War, Progress, and Global Order"
 source_url: "https://www.youtube.com/watch?v=E65CHSV6Ads"

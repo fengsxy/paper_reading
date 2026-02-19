@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 16
 guest: ""
 title: "China is killing the US on energy. Does that mean they’ll win AGI? — Casey Handmer - Analysis"
 source_url: "https://www.youtube.com/watch?v=3cDHx2_QbPE"

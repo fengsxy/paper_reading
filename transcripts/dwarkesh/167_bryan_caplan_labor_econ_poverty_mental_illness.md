@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 167
 guest: ""
 title: "Bryan Caplan - Labor Econ, Poverty, & Mental Illness"
 source_url: "https://www.youtube.com/watch?v=i70j-ZCPhXg"

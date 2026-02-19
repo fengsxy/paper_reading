@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 144
 guest: ""
 title: "Holden Karnofsky — History's most important century - Analysis"
 source_url: "https://www.youtube.com/watch?v=UckqpcOu5SY"

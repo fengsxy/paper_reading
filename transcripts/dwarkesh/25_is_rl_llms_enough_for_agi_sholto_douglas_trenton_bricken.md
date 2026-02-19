@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 25
 guest: ""
 title: "Is RL + LLMs enough for AGI? — Sholto Douglas & Trenton Bricken"
 source_url: "https://www.youtube.com/watch?v=64lXQP6cs5M"

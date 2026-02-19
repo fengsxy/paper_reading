@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 150
 guest: ""
 title: "Brian Potter - Future of Construction, Ugly Modernism, & Environmental Review"
 source_url: "https://www.youtube.com/watch?v=m9ErXK5h-oU"

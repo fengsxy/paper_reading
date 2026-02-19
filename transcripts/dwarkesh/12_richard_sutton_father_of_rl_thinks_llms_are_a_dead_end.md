@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 12
 guest: ""
 title: "Richard Sutton – Father of RL thinks LLMs are a dead end"
 source_url: "https://www.youtube.com/watch?v=21EYKqUsPfg"

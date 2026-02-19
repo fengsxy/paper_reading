@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 155
 guest: ""
 title: "Steve Hsu - Intelligence, Embryo Selection, & The Future of Humanity - Analysis"
 source_url: "https://www.youtube.com/watch?v=80BhjRh-Q-s"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 71
 guest: ""
 title: "Does Tony Blair regret bringing China into world order?"
 source_url: "https://www.youtube.com/watch?v=4hk9np05A64"

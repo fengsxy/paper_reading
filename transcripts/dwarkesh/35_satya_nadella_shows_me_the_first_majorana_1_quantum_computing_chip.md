@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 35
 guest: ""
 title: "Satya Nadella shows me the first Majorana 1 Quantum Computing chip"
 source_url: "https://www.youtube.com/watch?v=itkvrQUSJC0"

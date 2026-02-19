@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 170
 guest: ""
 title: "Byrne Hobart - Optionality, Stagnation, and Secret Societies"
 source_url: "https://www.youtube.com/watch?v=ZI_tDsOhd5I"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 40
 guest: ""
 title: ""The Brilliance of Communism" – Sarah Paine - Analysis"
 source_url: "https://www.youtube.com/watch?v=OoSh7qJcZWA"

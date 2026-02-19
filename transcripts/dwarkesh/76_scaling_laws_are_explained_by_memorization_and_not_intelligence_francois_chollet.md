@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 76
 guest: ""
 title: "Scaling laws are explained by memorization and not intelligence – Francois Chollet"
 source_url: "https://www.youtube.com/watch?v=rl7B-LHiaNo"

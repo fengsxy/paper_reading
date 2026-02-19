@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 135
 guest: ""
 title: "Carl Shulman (Pt 1) — Intelligence explosion, primate evolution, robot doublings, & alignment"
 source_url: "https://www.youtube.com/watch?v=_kRg-ZP1vQc"

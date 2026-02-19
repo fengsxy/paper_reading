@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 123
 guest: ""
 title: "Dominic Cummings — Inside the collapse of western government"
 source_url: "https://www.youtube.com/watch?v=3i7ym_Qh7BA"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 77
 guest: ""
 title: "Francois Chollet — Why the biggest AI models can't solve simple puzzles - Analysis"
 source_url: "https://www.youtube.com/watch?v=UakqL6Pj9xo"

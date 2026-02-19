@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 109
 guest: ""
 title: "Multimodality: The Next Big Step (Demis Hassabis - Google DeepMind CEO)"
 source_url: "https://www.youtube.com/watch?v=bFwWkyZ7yMo"

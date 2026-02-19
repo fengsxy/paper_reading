@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 93
 guest: ""
 title: "Will AI Gatekeepers Tell You What You Can Build? – Mark Zuckerberg - Analysis"
 source_url: "https://www.youtube.com/watch?v=QmPopAPmPcM"

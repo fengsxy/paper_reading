@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 13
 guest: ""
 title: "Fully autonomous robots are much closer than you think – Sergey Levine"
 source_url: "https://www.youtube.com/watch?v=48pxVdmkMIE"

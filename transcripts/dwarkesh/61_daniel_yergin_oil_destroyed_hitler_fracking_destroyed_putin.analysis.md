@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 61
 guest: ""
 title: "Daniel Yergin — Oil destroyed Hitler, fracking destroyed Putin - Analysis"
 source_url: "https://www.youtube.com/watch?v=sveBcfz0fHk"

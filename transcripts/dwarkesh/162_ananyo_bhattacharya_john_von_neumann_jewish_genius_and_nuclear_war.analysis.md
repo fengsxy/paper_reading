@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 162
 guest: ""
 title: "Ananyo Bhattacharya - John von Neumann, Jewish Genius, and Nuclear War - Analysis"
 source_url: "https://www.youtube.com/watch?v=faZI6OBOopE"

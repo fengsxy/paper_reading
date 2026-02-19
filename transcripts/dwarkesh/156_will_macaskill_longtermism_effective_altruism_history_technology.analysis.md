@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 156
 guest: ""
 title: "Will MacAskill - Longtermism, Effective Altruism, History, & Technology - Analysis"
 source_url: "https://www.youtube.com/watch?v=SMEfl5maB8k"

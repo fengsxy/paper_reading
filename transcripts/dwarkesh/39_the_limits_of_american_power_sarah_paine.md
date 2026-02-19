@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 39
 guest: ""
 title: "The Limits of American Power – Sarah Paine"
 source_url: "https://www.youtube.com/watch?v=tlNHLGVRKlc"

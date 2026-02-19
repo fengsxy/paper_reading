@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 73
 guest: ""
 title: "Tony Blair — Why political leaders keep failing at major change"
 source_url: "https://www.youtube.com/watch?v=zSLWR3AbF3c"

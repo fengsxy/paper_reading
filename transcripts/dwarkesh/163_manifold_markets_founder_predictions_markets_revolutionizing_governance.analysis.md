@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 163
 guest: ""
 title: "Manifold Markets Founder - Predictions Markets & Revolutionizing Governance - Analysis"
 source_url: "https://www.youtube.com/watch?v=XoRXrnHg084"

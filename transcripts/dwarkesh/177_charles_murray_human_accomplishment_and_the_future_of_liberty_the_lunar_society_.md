@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 177
 guest: ""
 title: "Charles Murray - Human Accomplishment and the Future of Liberty | The Lunar Society #10"
 source_url: "https://www.youtube.com/watch?v=yYtyKmPZBto"

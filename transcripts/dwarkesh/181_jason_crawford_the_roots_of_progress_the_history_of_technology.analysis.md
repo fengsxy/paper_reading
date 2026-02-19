@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 181
 guest: ""
 title: "Jason Crawford - The Roots of Progress & the History of Technology - Analysis"
 source_url: "https://www.youtube.com/watch?v=otyrj5SnS4I"

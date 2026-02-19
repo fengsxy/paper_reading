@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 126
 guest: ""
 title: "Grant Sanderson (@3blue1brown) — Past, present, & future of mathematics - Analysis"
 source_url: "https://www.youtube.com/watch?v=oDyviiN4NVo"

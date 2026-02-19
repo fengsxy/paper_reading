@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 19
 guest: ""
 title: "Sarah Paine — How Imperial Japan defeated Tsarist Russia & Qing China"
 source_url: "https://www.youtube.com/watch?v=KxIeJjEGLdo"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 114
 guest: ""
 title: "Patrick Collison — Why Silicon Valley's most talented should leave"
 source_url: "https://www.youtube.com/watch?v=WU-lBOAS1VQ"

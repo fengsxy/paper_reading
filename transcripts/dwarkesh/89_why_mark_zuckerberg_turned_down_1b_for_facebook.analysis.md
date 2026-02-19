@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 89
 guest: ""
 title: "Why Mark Zuckerberg turned down $1B for Facebook - Analysis"
 source_url: "https://www.youtube.com/watch?v=EwJFSZE2kws"

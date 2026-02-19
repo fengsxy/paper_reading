@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 49
 guest: ""
 title: "Tyler Cowen — The #1 bottleneck to AI progress is humans"
 source_url: "https://www.youtube.com/watch?v=GT_sXIUJPUo"

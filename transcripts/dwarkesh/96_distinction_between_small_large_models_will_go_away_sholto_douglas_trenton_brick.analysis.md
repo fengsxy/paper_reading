@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 96
 guest: ""
 title: "Distinction between small & large models will go away – Sholto Douglas & Trenton Bricken - Analysis"
 source_url: "https://www.youtube.com/watch?v=AOt0GwY8IvU"

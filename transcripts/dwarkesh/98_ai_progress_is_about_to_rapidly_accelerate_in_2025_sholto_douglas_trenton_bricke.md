@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 98
 guest: ""
 title: "AI progress is about to rapidly accelerate in 2025 – Sholto Douglas & Trenton Bricken"
 source_url: "https://www.youtube.com/watch?v=UeI29-AdhQI"

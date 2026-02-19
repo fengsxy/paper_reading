@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 183
 guest: ""
 title: "Tyler Cowen - The Great Reset - Analysis"
 source_url: "https://www.youtube.com/watch?v=ayUZreGysTo"

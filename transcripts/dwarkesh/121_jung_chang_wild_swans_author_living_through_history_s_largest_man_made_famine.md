@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 121
 guest: ""
 title: "Jung Chang (Wild Swans author) — Living through history's largest man-made famine"
 source_url: "https://www.youtube.com/watch?v=-VeZp2d7mDs"

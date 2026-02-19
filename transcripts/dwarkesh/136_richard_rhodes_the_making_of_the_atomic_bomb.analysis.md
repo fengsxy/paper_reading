@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 136
 guest: ""
 title: "Richard Rhodes — The making of the atomic bomb - Analysis"
 source_url: "https://www.youtube.com/watch?v=tMdMiYsfHKo"

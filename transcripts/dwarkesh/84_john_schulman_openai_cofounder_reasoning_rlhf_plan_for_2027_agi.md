@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 84
 guest: ""
 title: "John Schulman (OpenAI Cofounder) — Reasoning, RLHF, & plan for 2027 AGI"
 source_url: "https://www.youtube.com/watch?v=Wo95ob_s_NI"

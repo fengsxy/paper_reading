@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 115
 guest: ""
 title: "Tyler Cowen — Hayek, Keynes, & Smith on AI, animal spirits, anarchy, & growth - Analysis"
 source_url: "https://www.youtube.com/watch?v=EY2nbAVZB-k"

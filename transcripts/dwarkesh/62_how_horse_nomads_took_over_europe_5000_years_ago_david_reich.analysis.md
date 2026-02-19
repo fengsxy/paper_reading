@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 62
 guest: ""
 title: "How horse nomads took over Europe 5000 years ago – David Reich - Analysis"
 source_url: "https://www.youtube.com/watch?v=sqDE7znrHsw"

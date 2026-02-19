@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 103
 guest: ""
 title: "Sarah Paine – Maritime vs Continental Powers"
 source_url: "https://www.youtube.com/watch?v=oEahPLq1qBU"

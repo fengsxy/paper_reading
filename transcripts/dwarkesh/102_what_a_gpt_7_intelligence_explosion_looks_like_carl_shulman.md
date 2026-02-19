@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 102
 guest: ""
 title: "What a GPT-7 Intelligence Explosion Looks Like | Carl Shulman"
 source_url: "https://www.youtube.com/watch?v=D_WsPbdJKUg"

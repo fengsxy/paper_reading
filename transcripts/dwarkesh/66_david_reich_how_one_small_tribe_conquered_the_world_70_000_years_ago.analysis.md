@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 66
 guest: ""
 title: "David Reich — How one small tribe conquered the world 70,000 years ago - Analysis"
 source_url: "https://www.youtube.com/watch?v=Uj6skZIxPuI"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 104
 guest: ""
 title: "How Much Will China Risk for Taiwan? – Sarah Paine (Naval War College)"
 source_url: "https://www.youtube.com/watch?v=qSTuahfAZf0"

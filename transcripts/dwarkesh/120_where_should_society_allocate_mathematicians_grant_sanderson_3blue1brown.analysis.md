@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 120
 guest: ""
 title: "Where should society allocate mathematicians? (Grant Sanderson @3Blue1Brown) - Analysis"
 source_url: "https://www.youtube.com/watch?v=BHjtXKBzbF0"

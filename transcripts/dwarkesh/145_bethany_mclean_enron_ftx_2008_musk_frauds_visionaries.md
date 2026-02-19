@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 145
 guest: ""
 title: "Bethany McLean — Enron, FTX, 2008, Musk, frauds, & visionaries"
 source_url: "https://www.youtube.com/watch?v=m3oM69YHLeo"

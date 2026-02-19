@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 176
 guest: ""
 title: "Scott Young - Ultralearning, The MIT Challenge - Analysis"
 source_url: "https://www.youtube.com/watch?v=R5sBycV80c8"

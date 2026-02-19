@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 166
 guest: ""
 title: "Jimmy Soni - Peter Thiel, Elon Musk, and the Paypal Mafia"
 source_url: "https://www.youtube.com/watch?v=OEcOUgXvz7g"

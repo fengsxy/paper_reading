@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 152
 guest: ""
 title: "Tyler Cowen - Why Society Will Collapse & Why Sex is Pessimistic - Analysis"
 source_url: "https://www.youtube.com/watch?v=AHkmEnl55jo"

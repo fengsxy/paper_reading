@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 41
 guest: ""
 title: "Sarah Paine — How Mao conquered China (lecture & interview)"
 source_url: "https://www.youtube.com/watch?v=4l3Sa8ImGFQ"

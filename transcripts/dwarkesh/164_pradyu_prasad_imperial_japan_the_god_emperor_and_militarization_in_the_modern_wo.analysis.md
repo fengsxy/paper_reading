@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 164
 guest: ""
 title: "Pradyu Prasad - Imperial Japan, the God Emperor, and Militarization in the Modern World - Analysis"
 source_url: "https://www.youtube.com/watch?v=rsJxlybPByM"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 26
 guest: ""
 title: "What will automated firms look like? - Analysis"
 source_url: "https://www.youtube.com/watch?v=bJD1NpdMY5s"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 171
 guest: ""
 title: "David Friedman - Dating Markets, Legal Systems, Bitcoin, and Automation - Analysis"
 source_url: "https://www.youtube.com/watch?v=3svashDgB50"

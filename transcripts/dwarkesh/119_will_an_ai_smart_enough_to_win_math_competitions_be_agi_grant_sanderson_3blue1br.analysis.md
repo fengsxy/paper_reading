@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 119
 guest: ""
 title: "Will an AI smart enough to win math competitions be AGI? (Grant Sanderson @3blue1brown) - Analysis"
 source_url: "https://www.youtube.com/watch?v=GnMPfCFp6TA"

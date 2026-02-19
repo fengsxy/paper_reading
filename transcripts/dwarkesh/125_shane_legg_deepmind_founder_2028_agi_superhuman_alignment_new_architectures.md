@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 125
 guest: ""
 title: "Shane Legg (DeepMind Founder) — 2028 AGI, superhuman alignment, new architectures"
 source_url: "https://www.youtube.com/watch?v=Kc1atfJkiJU"

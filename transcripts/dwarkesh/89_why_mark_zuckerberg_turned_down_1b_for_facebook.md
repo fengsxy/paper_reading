@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 89
 guest: ""
 title: "Why Mark Zuckerberg turned down $1B for Facebook"
 source_url: "https://www.youtube.com/watch?v=EwJFSZE2kws"

@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 68
 guest: ""
 title: "Joe Carlsmith — Preventing an AI takeover - Analysis"
 source_url: "https://www.youtube.com/watch?v=5XsL_7TnfLU"

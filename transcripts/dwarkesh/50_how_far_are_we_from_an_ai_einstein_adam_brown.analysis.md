@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 50
 guest: ""
 title: "How Far Are We From An AI Einstein? - Adam Brown - Analysis"
 source_url: "https://www.youtube.com/watch?v=LjY0i2B-Avc"

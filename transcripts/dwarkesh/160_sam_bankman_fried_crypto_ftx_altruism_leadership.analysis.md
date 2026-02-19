@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 160
 guest: ""
 title: "Sam Bankman-Fried - Crypto, FTX, Altruism, & Leadership - Analysis"
 source_url: "https://www.youtube.com/watch?v=5Af0d2DbK5w"

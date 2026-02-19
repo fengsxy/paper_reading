@@ -2,7 +2,7 @@
 layout: default
 type: analysis
 series: dwarkesh
-episode: 0
+episode: 24
 guest: ""
 title: "Xi Jinping’s paranoid approach to AGI, debt crisis, & Politburo politics — Victor Shih - Analysis"
 source_url: "https://www.youtube.com/watch?v=b1TeeIG6Uaw"

@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 124
 guest: ""
 title: "Paul Christiano — Preventing an AI takeover"
 source_url: "https://www.youtube.com/watch?v=9AAhTLa0dT0"

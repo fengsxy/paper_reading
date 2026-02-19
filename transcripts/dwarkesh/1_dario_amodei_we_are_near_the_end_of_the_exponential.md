@@ -1,7 +1,7 @@
 ---
 type: transcript
 series: dwarkesh
-episode: 0
+episode: 1
 title: Dario Amodei — “We are near the end of the exponential”
 source_url: https://www.youtube.com/watch?v=n1E9IZfvGMA
 ---
