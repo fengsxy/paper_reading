@@ -11,6 +11,8 @@ Updated: 2026-02-18
 | I-003 | Podcast index auto-refresh cron (xiaojun/dwarkesh/crossroad) | 21 | planned | add daily cron + commit only on diff |
 | I-004 | Transcript formatter: per-paragraph timestamp + `.raw.md` backup pipeline | 23 | planned | implement formatter script and test on 129-132 |
 | I-005 | Pages link verifier for new posts (200 check + broken-link report) | 20 | planned | build `scripts/pages_verify.py` and run in cron |
+| I-006 | Xiaoyuzhou RSS pipeline (LinkStart 104 eps) | 24 | in_progress | generate `podcast_index/xiaoyuzhou_linkstart` + queue for transcript planning |
+| I-007 | Bilibili ingestion pipeline with whisper-subtitles reference | 23 | planned | study `github.com/JimLiu/whisper-subtitles`, then create minimal adapter script |
 
 ## Done
 - Dynamic queue-driven Xiaojun watchdog
