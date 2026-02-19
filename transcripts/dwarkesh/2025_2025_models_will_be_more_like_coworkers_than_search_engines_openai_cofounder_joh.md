@@ -2,7 +2,7 @@
 layout: default
 type: transcript
 series: dwarkesh
-episode: 2025
+episode: 85
 guest: ""
 title: "2025 models will be more like coworkers than search engines – OpenAI cofounder John Schulman"
 source_url: "https://www.youtube.com/watch?v=1fmcdz2EO_c"
