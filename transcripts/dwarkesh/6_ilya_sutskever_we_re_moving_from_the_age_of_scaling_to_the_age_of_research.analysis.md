@@ -5,51 +5,57 @@ series: dwarkesh
 episode: 6
 guest: "Ilya Sutskever"
 title: "Ilya Sutskever — We're moving from the age of scaling to the age of research - Analysis"
-source_url: "https://www.youtube.com/watch?v=1yvBqasHLZs"
+source_url: "https://www.youtube.com/watch?v=aR20FWCCjAs"
 transcript_url: /transcripts/dwarkesh/6_ilya_sutskever_we_re_moving_from_the_age_of_scaling_to_the_age_of_research/
 permalink: /transcripts/dwarkesh/6_ilya_sutskever_we_re_moving_from_the_age_of_scaling_to_the_age_of_research.analysis/
 ---
 
-# Analysis: Ilya Sutskever — "We're moving from the age of scaling to the age of research"
+# Analysis: Ilya Sutskever — We're moving from the age of scaling to the age of research
 
 ## 0. 3-5 句摘要
 
-Ilya Sutskever 在这次对话中传递了一个核心信号：纯粹的 scaling 时代正在结束，接下来的突破将来自真正的研究创新而非简单地堆算力。他对当前模型的"eval 表现 vs 经济影响"之间的巨大鸿沟感到困惑——模型在基准测试上表现惊人，但实际经济影响远远落后。最深刻的讨论围绕"value function"和"情感"展开：他认为人类的情感本质上是一种进化硬编码的 value function，而当前 RL 训练缺少这种中间信号，导致模型在长链推理中效率极低。他还暗示自己在 SSI 的研究方向涉及某种"不能公开讨论的 ML 想法"，这本身就是一个强信号。
+这是 Ilya Sutskever 离开 OpenAI 创立 SSI（Safe Superintelligence Inc.）后的一次深度对话，核心论点是 AI 正在从"scaling 时代"回归"研究时代"——不是因为 scaling 失败了，而是因为当前的 scaling recipe（pre-training + RL）在泛化能力上存在根本性缺陷。Ilya 用一个精妙的类比说明了问题：一个练了 10000 小时竞赛编程的学生 vs 一个只练了 100 小时但有"it factor"的学生，后者在职业生涯中表现更好——当前模型更像前者，RL 训练让它们在 eval 上表现惊人但在真实世界中脆弱。他提出了几个关键的研究方向：value function（让模型在长推理链中获得中间反馈而非只在终点获得奖励）、情感作为 value function 的类比（引用了一个失去情感处理能力后无法做决策的脑损伤案例）、以及模型泛化能力远不如人类这一"超级明显"但未被解决的根本问题。整个对话的底层张力是：Ilya 显然知道很多他不能说的东西，但他通过精心选择的类比和暗示传达了对当前 AI 发展路径的深层担忧。
 
 ## 1. 反共识/非显然观点
 
-- **"Takeoff 感觉很正常"是最令人不安的观察** [00:14]：Ilya 指出我们正在投入 GDP 的 1% 到 AI 上，但这件事"感觉没什么大不了的"。他认为这种正常感本身就是不正常的——人类对指数变化的适应速度远超预期，这意味着即使进入奇点，大多数人可能也不会"感觉到"。
+- **"Scaling 时代已经结束，我们回到了研究时代"** [19:06]：这是整期对话的标题论点。Ilya 认为 2012-2020 是研究时代，2020-2025 是 scaling 时代，现在又回到了研究时代——但这次有大计算机。关键不是"scaling 不 work"，而是当前的 scaling recipe 已经不是最高效的资源使用方式。这与"只要继续 scale 就行"的主流叙事直接矛盾。
 
-- **Eval 表现和经济影响的脱节是一个谜** [01:44]：模型在越来越难的 eval 上得高分，但经济影响"戏剧性地落后"。Ilya 没有给出解释，但他承认这个矛盾让他困惑。这暗示当前的 eval 体系可能在衡量错误的东西。
+- **"RL 训练可能让模型变得过于单一和狭隘"** [03:02]：Ilya 提出了一个"whimsical"但深刻的假说——RL 训练在让模型变强的同时，也让它们变得"unaware"。这解释了为什么模型能在 coding competition 上超人但会在 vibe coding 中交替引入两个 bug。这不是能力不足，而是某种认知结构的扭曲。
 
-- **情感是进化硬编码的 value function** [13:00]：这不是比喻——Ilya 认为人类的情感系统在功能上就是一个 value function，它让人类能在不等到最终结果的情况下评估中间状态。当前 RL 缺少这种机制，导致训练效率极低（必须跑完整个 trajectory 才能获得信号）。
+- **"真正的 reward hacking 是人类研究者太关注 eval"** [05:03]：Dwarkesh 的总结精准地捕捉了 Ilya 的第二个假说——eval 性能和真实世界性能的脱节不是因为模型在 hack reward，而是因为人类研究者在设计 RL 环境时不自觉地从 eval 中取灵感，导致模型过拟合到 eval 的分布上。
 
-- **人类在数学/编程上的能力证明学习算法是通用的** [28:15]：数学和编程是进化史上不存在的技能，但人类能快速学会。这说明人类的学习能力不是特定领域的进化适应，而是某种更基础的通用机制。这对"AI 需要领域特定训练"的观点是一个挑战。
+- **"情感是进化给人类的 value function，而且因为简单所以鲁棒"** [12:33]：Ilya 引用了一个失去情感处理能力的脑损伤患者——他在测试中表现正常但无法做任何日常决策。Ilya 的推论是：情感的"简单性"恰恰是它的优势，因为简单的 value function 在分布外情况下更鲁棒。这对 AI 的 reward design 有直接启示。
 
-- **"不是所有 ML 想法都能公开讨论"** [31:37]：Ilya 在被追问"如何重新概念化模型训练"时，明确说他有很多想法但不能分享。这暗示 SSI 的研究方向可能涉及训练范式的根本性变革。
+- **"Pre-training 没有人类类比"** [09:33]：Ilya 明确否定了两个常见类比——"pre-training 像人类前 18 年的学习"和"pre-training 像进化"。他认为两者都有部分相似性，但人类用极少数据学到的东西"somehow much more deeply"。这暗示当前的 pre-training paradigm 可能在根本层面上缺少某些东西。
 
 ## 2. 可学习的点（可迁移的方法论）
 
-- **用"value function"框架理解人类决策** [14:43]：Ilya 把 RL 中的 value function 概念映射到人类认知上，解释了为什么人类能在不完成整个任务的情况下判断"我走错了"。这个框架可以应用到任何需要中间反馈的学习场景。
+- **"两个学生"框架用于评估能力 vs 泛化** [06:07]：Ilya 的竞赛编程类比是一个可以广泛应用的思维工具——当你看到一个系统在 benchmark 上表现惊人时，问自己：它是"10000 小时学生"还是"100 小时学生"？前者的能力来自过拟合，后者来自泛化。这个区分对评估任何 AI 系统的真实能力都有价值。
 
-- **"短路等待"作为效率原则** [15:12]：在 RL 中，value function 让你不需要等到游戏结束就知道丢了一个棋子是坏事。在现实决策中，能越早获得中间信号，学习效率越高。
+- **Value function 作为"短路"长推理链的工具** [14:43]：Ilya 用下棋丢子的例子解释了 value function 的核心价值——你不需要下完整盘棋才知道丢子是坏的。在 AI 的长推理链中，value function 可以在中间步骤就提供反馈，而不是等到最终答案。这把 RL 的计算效率从 O(trajectory length) 降到了 O(1) per step。
 
-- **区分"进化先验"和"通用学习"** [28:52]：当评估某个能力时，先问"这个能力在进化史上有多长的选择压力？"如果很短（如编程），那么人类在这方面的能力更可能来自通用学习机制而非特定适应。
+- **"语言影响思维"在 ML 研究中的应用** [19:45]：Ilya 指出"scaling"这个词本身就是一个强大的思维工具——它告诉人们该做什么。这个观察可以推广：在研究中，找到正确的"一个词"来描述你的方向，可能比具体的技术细节更重要，因为它会引导整个社区的注意力。
+
+- **复杂性-鲁棒性 trade-off** [17:41]：Ilya 提出了一个优雅的框架——复杂的东西在特定情况下很有用，但简单的东西在广泛情况下都有用。这解释了为什么进化选择了"简单"的情感系统而非复杂的推理系统作为人类的 value function。这个 trade-off 对 AI 系统设计有直接指导意义。
 
 ## 3. 提问技巧（采访方法）
 
-- **用"连接到你之前说的"制造深度** [12:33]：Dwarkesh 反复把新话题连接回 Ilya 之前的观点（"to connect to your question about pre-training"），让对话形成递归深入而非平行跳跃。
+- **用"两种解读"结构化模糊回答** [05:09]：当 Ilya 给出一个可以多种解读的回答时，Dwarkesh 主动提出"有两种理解方式"——一种是"扩大 RL 环境的多样性"，另一种是"为什么泛化本身不 work"。这种技巧帮助嘉宾澄清自己的真实意思，也帮助听众理解讨论的层次。
 
-- **在对方说"我不能说"时不放弃** [31:27]：当 Ilya 暗示有不能公开的想法时，Dwarkesh 继续追问"how do we need to reconceptualize"，虽然没得到直接答案，但迫使 Ilya 给出了更多间接线索。
+- **用嘉宾的类比反问嘉宾** [07:42]：Dwarkesh 在 Ilya 给出"两个学生"类比后追问"那第二个学生在做 100 小时 fine-tuning 之前在做什么？"——这迫使 Ilya 给出了"it factor"这个回答，暴露了他的框架中最模糊但也最重要的部分。
 
-- **用具体论文挑战抽象观点** [15:52]：Dwarkesh 引用 DeepSeek R1 论文中"trajectory 空间太大导致 value function 难学"的观点来挑战 Ilya 对 value function 的乐观态度。Ilya 的回应（"这是对深度学习缺乏信心"）本身就很有信息量。
+- **区分"sample efficiency"和"teachability"** [25:20]：Dwarkesh 把"为什么模型需要这么多数据"和"为什么模型这么难教"区分为两个独立问题。这种分解让讨论更精确，也让 Ilya 能分别回应每个问题。
+
+- **"这是不是就是 X？"的确认式提问** [05:03]：Dwarkesh 说"我喜欢这个想法——真正的 reward hacking 是人类研究者太关注 eval"。这种用一句话总结嘉宾观点的技巧既确认了理解，也给了嘉宾修正的机会。
 
 ## 4. 可进一步验证/挖坑
 
-- **"Scaling 时代结束"的可验证性**：如果 Ilya 是对的，未来 1-2 年内应该看到：(1) 纯 scaling 的边际收益递减加速；(2) 方法论创新（而非规模）驱动的突破增多。
+- **"It factor"的可操作化**：Ilya 说第二个学生有"it factor"但没有进一步定义。这是整个讨论中最关键的未解问题——如果我们能理解"it factor"是什么，就能设计出更好的训练方法。可能的方向：meta-learning、curiosity-driven exploration、或某种形式的"认知多样性"训练。
 
-- **Eval vs 经济影响的鸿沟是否会收窄**：追踪 AI 在标准 eval 上的分数 vs 实际 GDP 贡献的比值变化。如果持续扩大，说明 eval 体系有根本性问题。
+- **Eval 过拟合的量化**：Ilya 的假说——RL 环境设计受 eval 启发导致过拟合——是可以经验检验的。方法：比较模型在"受 eval 启发的 RL 环境"和"完全独立设计的 RL 环境"上训练后的泛化差异。
 
-- **SSI 的研究方向**：Ilya 不能公开讨论的 ML 想法是什么？从他在对话中反复强调的 value function、情感、通用学习算法来推断，SSI 可能在研究某种结合了进化启发式 value function 的新训练范式。
+- **Value function 在长推理链中的实际效果**：Ilya 预测 value function 会被广泛使用。截至 2026 年初，o1/o3/R1 系列是否已经在使用 value function？如果是，泛化问题是否有改善？
 
-- **人类 value function 的鲁棒性 vs AI 的脆弱性**：Ilya 指出人类 value function "除了成瘾之外非常鲁棒"。这暗示 AI 的 reward hacking 问题可能需要从生物学中寻找解决方案。
+- **"情感 = 简单 value function"假说的 interpretability 验证**：如果 Ilya 是对的，那么在 RLHF 训练后的模型中，应该能找到类似"情感"的简单 value function features。Anthropic 的 dictionary learning 工作是否能检测到这种结构？
+
+- **Pre-training 泛化 vs RL 泛化的根本差异**：Ilya 暗示 pre-training 的泛化和 RL 的泛化可能有本质不同。如果 pre-training 的主要优势只是"数据量大"而非"泛化好"，那么 synthetic data 的 pre-training 可能不会带来预期的改善。
