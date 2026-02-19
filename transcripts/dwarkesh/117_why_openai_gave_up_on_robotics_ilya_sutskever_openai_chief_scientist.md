@@ -1,11 +1,14 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 117
-title: Why OpenAI gave up on robotics - Ilya Sutskever (OpenAI Chief Scientist)
-source_url: https://www.youtube.com/watch?v=7tL1Jy_b_3Y
+guest: Dwarkesh Patel
+title: "Why OpenAI gave up on robotics - Ilya Sutskever (OpenAI Chief Scientist)"
+source_url: "https://www.youtube.com/watch?v=7tL1Jy_b_3Y"
+analysis_url: /transcripts/dwarkesh/117_why_openai_gave_up_on_robotics_ilya_sutskever_openai_chief_scientist.analysis/
+permalink: /transcripts/dwarkesh/117_why_openai_gave_up_on_robotics_ilya_sutskever_openai_chief_scientist/
 ---
-
 # Transcript: EP117 - Why OpenAI gave up on robotics - Ilya Sutskever (OpenAI Chief Scientist)
 
 Source: https://www.youtube.com/watch?v=7tL1Jy_b_3Y

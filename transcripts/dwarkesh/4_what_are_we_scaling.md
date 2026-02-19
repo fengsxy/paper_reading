@@ -1,11 +1,14 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 4
-title: What are we scaling?
-source_url: https://www.youtube.com/watch?v=_zgnSbu5GqE
+guest: Dwarkesh Patel
+title: "What are we scaling?"
+source_url: "https://www.youtube.com/watch?v=_zgnSbu5GqE"
+analysis_url: /transcripts/dwarkesh/4_what_are_we_scaling.analysis/
+permalink: /transcripts/dwarkesh/4_what_are_we_scaling/
 ---
-
 # Transcript: EP4 - What are we scaling?
 
 Source: https://www.youtube.com/watch?v=_zgnSbu5GqE

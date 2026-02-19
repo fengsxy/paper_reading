@@ -1,11 +1,14 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 118
-title: Why next-token prediction is enough for AGI - Ilya Sutskever (OpenAI Chief Scientist)
-source_url: https://www.youtube.com/watch?v=YEUclZdj_Sc
+guest: Dwarkesh Patel
+title: "Why next-token prediction is enough for AGI - Ilya Sutskever (OpenAI Chief Scientist)"
+source_url: "https://www.youtube.com/watch?v=YEUclZdj_Sc"
+analysis_url: /transcripts/dwarkesh/118_why_next_token_prediction_is_enough_for_agi_ilya_sutskever_openai_chief_scientis.analysis/
+permalink: /transcripts/dwarkesh/118_why_next_token_prediction_is_enough_for_agi_ilya_sutskever_openai_chief_scientis/
 ---
-
 # Transcript: EP118 - Why next-token prediction is enough for AGI - Ilya Sutskever (OpenAI Chief Scientist)
 
 Source: https://www.youtube.com/watch?v=YEUclZdj_Sc

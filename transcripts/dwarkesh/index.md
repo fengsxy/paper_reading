@@ -16,6 +16,6 @@ This page lists transcripts + analysis for the Dwarkesh Patel podcast.
 _No episodes yet._
 {% else %}
 {% for p in items %}
-- EP{{ p.episode }}: [Transcript]({{ p.permalink }}) · [Analysis]({{ p.permalink }}analysis/)
+- EP{{ p.episode }}: [Transcript]({{ p.permalink | relative_url }}) · {% if p.analysis_url %}[Analysis]({{ p.analysis_url | relative_url }}){% else %}-{% endif %}
 {% endfor %}
 {% endif %}
