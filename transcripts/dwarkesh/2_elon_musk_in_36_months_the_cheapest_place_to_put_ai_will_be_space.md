@@ -4,13 +4,13 @@ type: transcript
 series: dwarkesh
 episode: 2
 guest: ""
-title: "Elon Musk – "In 36 months, the cheapest place to put AI will be space”"
+title: "Elon Musk – 'In 36 months, the cheapest place to put AI will be space'"
 source_url: "https://www.youtube.com/watch?v=BYXbuik3dgA"
 analysis_url: /transcripts/dwarkesh/2_elon_musk_in_36_months_the_cheapest_place_to_put_ai_will_be_space.analysis/
 permalink: /transcripts/dwarkesh/2_elon_musk_in_36_months_the_cheapest_place_to_put_ai_will_be_space/
 ---
 
-# Transcript: EP2 - Elon Musk – "In 36 months, the cheapest place to put AI will be space”
+# Transcript: EP2 - Elon Musk - "In 36 months, the cheapest place to put AI will be space"
 
 Source: https://www.youtube.com/watch?v=BYXbuik3dgA
 

@@ -4,7 +4,7 @@ type: transcript
 series: dwarkesh
 episode: 40
 guest: ""
-title: ""The Brilliance of Communism" – Sarah Paine"
+title: "'The Brilliance of Communism' – Sarah Paine"
 source_url: "https://www.youtube.com/watch?v=OoSh7qJcZWA"
 analysis_url: /transcripts/dwarkesh/40_the_brilliance_of_communism_sarah_paine.analysis/
 permalink: /transcripts/dwarkesh/40_the_brilliance_of_communism_sarah_paine/

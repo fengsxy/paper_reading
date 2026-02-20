@@ -4,13 +4,13 @@ type: analysis
 series: dwarkesh
 episode: 23
 guest: ""
-title: ""China is digging out of a crisis. And America’s luck is wearing thin." — Ken Rogoff - Analysis"
+title: "'China is digging out of a crisis. And America''s luck is wearing thin.' — Ken Rogoff - Analysis"
 source_url: "https://www.youtube.com/watch?v=P2b4TjQa4gk"
 transcript_url: /transcripts/dwarkesh/23_china_is_digging_out_of_a_crisis_and_america_s_luck_is_wearing_thin_ken_rogoff/
 permalink: /transcripts/dwarkesh/23_china_is_digging_out_of_a_crisis_and_america_s_luck_is_wearing_thin_ken_rogoff.analysis/
 ---
 
-# Analysis: "China is digging out of a crisis. And America’s luck is wearing thin." — Ken Rogoff
+# Analysis: "China is digging out of a crisis. And America's luck is wearing thin." - Ken Rogoff
 
 ## 0. 3-5 句摘要
 

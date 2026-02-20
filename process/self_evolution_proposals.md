@@ -24,3 +24,13 @@
 
 ---
 
+## Proposal #3 — 2026-02-20 17:20 UTC
+**为 openclaw.json 添加 context pruning 配置，降低 token 消耗**
+来源：Skywork "Clawdbot Developer Lessons" 生产模式指南 + Hostinger OpenClaw 最佳实践
+问题：当前配置只有 `compaction: { mode: "safeguard" }`，缺少 `pruning` 设置。大量 cron job 和 subagent 的 tool 输出（web_fetch、exec 等）会在活跃上下文中累积，浪费 token。
+方案：在 `agents.defaults` 中添加 pruning 配置：`"pruning": { "mode": "cache-ttl", "ttl": "1h", "keepLastAssistants": 3 }`。这会自动丢弃超过 1 小时的大体积 tool 结果，只保留最近 3 轮 assistant 回复。
+收益：显著减少长 session 的 token 消耗，compaction 触发频率降低，session 响应更快。
+风险：低——pruning 只影响上下文窗口中的旧 tool 结果，不删除 transcript 持久化数据。可随时调整 ttl 值。
+
+---
+
