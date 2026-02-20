@@ -1,9 +1,13 @@
 ---
+layout: default
 type: analysis
 series: dwarkesh
 episode: 60
-title: Oil Decided World War II – Daniel Yergin
-source_url: https://www.youtube.com/watch?v=M7fyL79PvNQ
+guest: ""
+title: "Oil Decided World War II – Daniel Yergin"
+source_url: "https://www.youtube.com/watch?v=M7fyL79PvNQ"
+transcript_url: /transcripts/dwarkesh/60_oil_decided_world_war_ii_daniel_yergin/
+permalink: /transcripts/dwarkesh/60_oil_decided_world_war_ii_daniel_yergin.analysis/
 ---
 
 # Analysis: EP60

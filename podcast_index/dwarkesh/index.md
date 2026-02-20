@@ -1,199 +1,240 @@
 ---
 layout: default
-title: "Dwarkesh Podcast Index"
+title: "Dwarkesh Podcast - Complete Index"
 permalink: /podcast_index/dwarkesh/
 ---
 
-# Dwarkesh Podcast - Full Index
+# 🎙️ Dwarkesh Podcast - Complete Index
 
-Generated at: `2026-02-18T18:25:11Z`
+All episodes from the [Dwarkesh Patel Podcast](https://www.youtube.com/@DwarkeshPatel) with full transcripts and AI-generated analyses.
 
-Total videos: **185**
+---
 
-| # | Date | Title | Link |
-|---:|:----:|---|---|
-| 1 | NA | Dario Amodei — “We are near the end of the exponential” | [YouTube](https://www.youtube.com/watch?v=n1E9IZfvGMA) |
-| 2 | NA | Elon Musk – "In 36 months, the cheapest place to put AI will be space” | [YouTube](https://www.youtube.com/watch?v=BYXbuik3dgA) |
-| 3 | NA | Adam Marblestone – AI is missing something fundamental about the brain | [YouTube](https://www.youtube.com/watch?v=_9V_Hbe-N1A) |
-| 4 | NA | What are we scaling? | [YouTube](https://www.youtube.com/watch?v=_zgnSbu5GqE) |
-| 5 | NA | Sarah Paine – Why Russia Lost the Cold War | [YouTube](https://www.youtube.com/watch?v=FdkpWrlR5zg) |
-| 6 | NA | Ilya Sutskever – We're moving from the age of scaling to the age of research | [YouTube](https://www.youtube.com/watch?v=aR20FWCCjAs) |
-| 7 | NA | Satya Nadella – How Microsoft thinks about AGI | [YouTube](https://www.youtube.com/watch?v=8-boBsWcr5A) |
-| 8 | NA | Sarah Paine — How Russia sabotaged China's rise | [YouTube](https://www.youtube.com/watch?v=RH_ycZYH8-s) |
-| 9 | NA | Andrej Karpathy — “We’re summoning ghosts, not building animals” | [YouTube](https://www.youtube.com/watch?v=lXUZvyajciY) |
-| 10 | NA | “I find it almost disturbing that the universe favors life this strongly” – Nick Lane | [YouTube](https://www.youtube.com/watch?v=0GMWxuYuxJI) |
-| 11 | NA | Some thoughts on the Sutton interview | [YouTube](https://www.youtube.com/watch?v=u3HBJVjpXuw) |
-| 12 | NA | Richard Sutton – Father of RL thinks LLMs are a dead end | [YouTube](https://www.youtube.com/watch?v=21EYKqUsPfg) |
-| 13 | NA | Fully autonomous robots are much closer than you think – Sergey Levine | [YouTube](https://www.youtube.com/watch?v=48pxVdmkMIE) |
-| 14 | NA | Sarah Paine – How Hitler almost starved Britain | [YouTube](https://www.youtube.com/watch?v=SdMgOXfSBQw) |
-| 15 | NA | Evolution designed us to die fast; we can change that — Jacob Kimmel | [YouTube](https://www.youtube.com/watch?v=XCLODgdCmKA) |
-| 16 | NA | China is killing the US on energy. Does that mean they’ll win AGI? — Casey Handmer | [YouTube](https://www.youtube.com/watch?v=3cDHx2_QbPE) |
-| 17 | NA | Artificial meat is harder than artificial intelligence — Lewis Bollard | [YouTube](https://www.youtube.com/watch?v=kWcPg8t1kJ4) |
-| 18 | NA | Why I don’t think AGI is right around the corner | [YouTube](https://www.youtube.com/watch?v=nyvmYnz6EAg) |
-| 19 | NA | Sarah Paine — How Imperial Japan defeated Tsarist Russia & Qing China | [YouTube](https://www.youtube.com/watch?v=KxIeJjEGLdo) |
-| 20 | NA | Stephen Kotkin — How Stalin became the most powerful dictator in history | [YouTube](https://www.youtube.com/watch?v=YMfd3EoHfPI) |
-| 21 | NA | A billion years of evolution in a single afternoon — George Church | [YouTube](https://www.youtube.com/watch?v=olmHHxFQwxo) |
-| 22 | NA | Why China's manufacturing economy is dominating — Arthur Kroeber | [YouTube](https://www.youtube.com/watch?v=qb644F-iE_s) |
-| 23 | NA | "China is digging out of a crisis. And America’s luck is wearing thin." — Ken Rogoff | [YouTube](https://www.youtube.com/watch?v=P2b4TjQa4gk) |
-| 24 | NA | Xi Jinping’s paranoid approach to AGI, debt crisis, & Politburo politics — Victor Shih | [YouTube](https://www.youtube.com/watch?v=b1TeeIG6Uaw) |
-| 25 | NA | Is RL + LLMs enough for AGI? — Sholto Douglas & Trenton Bricken | [YouTube](https://www.youtube.com/watch?v=64lXQP6cs5M) |
-| 26 | NA | What will automated firms look like? | [YouTube](https://www.youtube.com/watch?v=bJD1NpdMY5s) |
-| 27 | NA | Mark Zuckerberg — AI will write most Meta code in 18 months | [YouTube](https://www.youtube.com/watch?v=rYXeQbTuVl0) |
-| 28 | NA | Why Rome actually fell: plagues, slavery, & ice age — Kyle Harper | [YouTube](https://www.youtube.com/watch?v=QFzgSmN8Ng8) |
-| 29 | NA | AGI is still 30 years away — Ege Erdil & Tamay Besiroglu | [YouTube](https://www.youtube.com/watch?v=WLBsUarvWTw) |
-| 30 | NA | AI 2027: month-by-month model of intelligence explosion — Scott Alexander & Daniel Kokotajlo | [YouTube](https://www.youtube.com/watch?v=htOvH12T7mU) |
-| 31 | NA | AMA: career advice given AGI, how I research ft. Sholto & Trenton | [YouTube](https://www.youtube.com/watch?v=XLaRfZ4AHn8) |
-| 32 | NA | Joseph Henrich — Humans defeated smarter species with cultural evolution | [YouTube](https://www.youtube.com/watch?v=TcfhrThp1OU) |
-| 33 | NA | Notes on China | [YouTube](https://www.youtube.com/watch?v=UU9jbImVsNY) |
-| 34 | NA | The Hardest thing About Being CEO – Satya Nadella | [YouTube](https://www.youtube.com/watch?v=cn-k7KUpydE) |
-| 35 | NA | Satya Nadella shows me the first Majorana 1 Quantum Computing chip | [YouTube](https://www.youtube.com/watch?v=itkvrQUSJC0) |
-| 36 | NA | Satya Nadella — Microsoft’s AGI plan & quantum breakthrough | [YouTube](https://www.youtube.com/watch?v=4GLSzuYXh6w) |
-| 37 | NA | Jeff Dean & Noam Shazeer — 25 years at Google: from PageRank to AGI | [YouTube](https://www.youtube.com/watch?v=v0gjI__RyCY) |
-| 38 | NA | 20th Century's Most Lethal Leader – Sarah Paine (Lecture Excerpt) | [YouTube](https://www.youtube.com/watch?v=AFsf-00tsrw) |
-| 39 | NA | The Limits of American Power – Sarah Paine | [YouTube](https://www.youtube.com/watch?v=tlNHLGVRKlc) |
-| 40 | NA | "The Brilliance of Communism" – Sarah Paine | [YouTube](https://www.youtube.com/watch?v=OoSh7qJcZWA) |
-| 41 | NA | Sarah Paine — How Mao conquered China (lecture & interview) | [YouTube](https://www.youtube.com/watch?v=4l3Sa8ImGFQ) |
-| 42 | NA | Attacking America Is a Devastating Miscalculation – Sarah Paine | [YouTube](https://www.youtube.com/watch?v=eebSpobsPmM) |
-| 43 | NA | Sarah Paine — Why Japan lost WWII (lecture & interview) | [YouTube](https://www.youtube.com/watch?v=Znk5QINe01A) |
-| 44 | NA | Was The War Against Japan Avoidable? - Sarah Paine | [YouTube](https://www.youtube.com/watch?v=dPDndeV_mTU) |
-| 45 | NA | Unlimited War: Putin vs Bismarck – Sarah Paine | [YouTube](https://www.youtube.com/watch?v=ZACAzNyfyxs) |
-| 46 | NA | Sarah Paine — The war for India (lecture & interview) | [YouTube](https://www.youtube.com/watch?v=LbkO84MsmyM) |
-| 47 | NA | Sarah Paine: We Thought The Soviets Were Going to Win | [YouTube](https://www.youtube.com/watch?v=fx6fakjQBdo) |
-| 48 | NA | Why Space Elevators Can't Mine Black Holes – Adam Brown | [YouTube](https://www.youtube.com/watch?v=zfOYEMnpqdM) |
-| 49 | NA | Tyler Cowen — The #1 bottleneck to AI progress is humans | [YouTube](https://www.youtube.com/watch?v=GT_sXIUJPUo) |
-| 50 | NA | How Far Are We From An AI Einstein? - Adam Brown | [YouTube](https://www.youtube.com/watch?v=LjY0i2B-Avc) |
-| 51 | NA | How Black Holes Reveal a Holographic Reality | [YouTube](https://www.youtube.com/watch?v=ZT07mR7DnFI) |
-| 52 | NA | Adam Brown — Bubble universes, space elevators, & AdS/CFT | [YouTube](https://www.youtube.com/watch?v=XhB3qH_TFds) |
-| 53 | NA | The Grand Theory of Intelligence – Gwern | [YouTube](https://www.youtube.com/watch?v=IMkqAUsVAfc) |
-| 54 | NA | How Gwern saw AI scaling coming | [YouTube](https://www.youtube.com/watch?v=5fkqmNzFni8) |
-| 55 | NA | Gwern — Anonymous writer who predicted AI trajectory on $12K/year salary | [YouTube](https://www.youtube.com/watch?v=a42key59cZQ) |
-| 56 | NA | $10B OpenAI & Microsoft Cluster in 2025 – Dylan Patel & @Asianometry | [YouTube](https://www.youtube.com/watch?v=J7yvSkIOZLw) |
-| 57 | NA | Taiwan Invasion: Timeline to Global Collapse – @Asianometry & Dylan Patel | [YouTube](https://www.youtube.com/watch?v=DTOU3vchBE0) |
-| 58 | NA | @Asianometry & Dylan Patel — How the semiconductor industry actually works | [YouTube](https://www.youtube.com/watch?v=pE3KKUKXcTM) |
-| 59 | NA | The caste system transformed Indian genetics – David Reich | [YouTube](https://www.youtube.com/watch?v=7OfV16_xngQ) |
-| 60 | NA | Oil Decided World War II – Daniel Yergin | [YouTube](https://www.youtube.com/watch?v=M7fyL79PvNQ) |
-| 61 | NA | Daniel Yergin — Oil destroyed Hitler, fracking destroyed Putin | [YouTube](https://www.youtube.com/watch?v=sveBcfz0fHk) |
-| 62 | NA | How horse nomads took over Europe 5000 years ago – David Reich | [YouTube](https://www.youtube.com/watch?v=sqDE7znrHsw) |
-| 63 | NA | Our biggest difference with Neanderthals – David Reich | [YouTube](https://www.youtube.com/watch?v=KwC7rcnThX4) |
-| 64 | NA | A key period in human evolution wasn't in Africa – David Reich | [YouTube](https://www.youtube.com/watch?v=1SbyMBvJzkE) |
-| 65 | NA | Why no other human species survived – David Reich | [YouTube](https://www.youtube.com/watch?v=rW_Lgwqqe3I) |
-| 66 | NA | David Reich — How one small tribe conquered the world 70,000 years ago | [YouTube](https://www.youtube.com/watch?v=Uj6skZIxPuI) |
-| 67 | NA | The bacteria that shaped history: Yersinia pestis – David Reich | [YouTube](https://www.youtube.com/watch?v=oX76K-mNdaM) |
-| 68 | NA | Joe Carlsmith — Preventing an AI takeover | [YouTube](https://www.youtube.com/watch?v=5XsL_7TnfLU) |
-| 69 | NA | The Biggest Money Laundering Scheme In History – Patrick McKenzie | [YouTube](https://www.youtube.com/watch?v=ciZMI5ZrFLo) |
-| 70 | NA | Patrick McKenzie — Money laundering, big tech censorship, SBF & Japan | [YouTube](https://www.youtube.com/watch?v=18zpjpPNWRw) |
-| 71 | NA | Does Tony Blair regret bringing China into world order? | [YouTube](https://www.youtube.com/watch?v=4hk9np05A64) |
-| 72 | NA | Lee Kuan Yew’s 3 key decisions that made Singapore rich – Tony Blair | [YouTube](https://www.youtube.com/watch?v=Ko9uQvR93kw) |
-| 73 | NA | Tony Blair — Why political leaders keep failing at major change | [YouTube](https://www.youtube.com/watch?v=zSLWR3AbF3c) |
-| 74 | NA | Government is a conspiracy of distraction – Tony Blair | [YouTube](https://www.youtube.com/watch?v=RWBZyQ4Na4o) |
-| 75 | NA | If an LLM solves this then we'll probably have AGI – Francois Chollet | [YouTube](https://www.youtube.com/watch?v=wZ0ToxtXz5g) |
-| 76 | NA | Scaling laws are explained by memorization and not intelligence – Francois Chollet | [YouTube](https://www.youtube.com/watch?v=rl7B-LHiaNo) |
-| 77 | NA | Francois Chollet — Why the biggest AI models can't solve simple puzzles | [YouTube](https://www.youtube.com/watch?v=UakqL6Pj9xo) |
-| 78 | NA | AI Labs are extremely vulnerable to espionage – Leopold Aschenbrenner | [YouTube](https://www.youtube.com/watch?v=667IffkMDmU) |
-| 79 | NA | How the US-China AI Race Will Play Out – Leopold Aschenbrenner | [YouTube](https://www.youtube.com/watch?v=ghluOfM-Xik) |
-| 80 | NA | AI Nationalization is Inevitable – Leopold Aschenbrenner | [YouTube](https://www.youtube.com/watch?v=K0Pa5oudUp4) |
-| 81 | NA | Leopold Aschenbrenner — 2027 AGI, China/US super-intelligence race, & the return of history | [YouTube](https://www.youtube.com/watch?v=zdbVtZIn9IM) |
-| 82 | NA | The inside story of how ChatGPT was built – OpenAI cofounder John Schulman | [YouTube](https://www.youtube.com/watch?v=ERpNuLzKmJY) |
-| 83 | NA | Why GPT-4 is much smarter than it was a year ago – OpenAI cofounder John Schulman | [YouTube](https://www.youtube.com/watch?v=JclnqKZBTUU) |
-| 84 | NA | John Schulman (OpenAI Cofounder) — Reasoning, RLHF, & plan for 2027 AGI | [YouTube](https://www.youtube.com/watch?v=Wo95ob_s_NI) |
-| 86 | NA | LLMs will hit the data wall if they can’t generalize – OpenAI cofounder John Schulman | [YouTube](https://www.youtube.com/watch?v=V6X_tLCxsZk) |
-| 87 | NA | Japan had no military. But didn’t surrender – Richard Rhodes | [YouTube](https://www.youtube.com/watch?v=xDMYMOjcKa4) |
-| 88 | NA | Robert Oppenheimer's Worst Enemy – Richard Rhodes | [YouTube](https://www.youtube.com/watch?v=UG22Ytgj4uc) |
-| 89 | NA | Why Mark Zuckerberg turned down $1B for Facebook | [YouTube](https://www.youtube.com/watch?v=EwJFSZE2kws) |
-| 90 | NA | Can synthetic data unlock AI recursive self-improvement? — Mark Zuckerberg | [YouTube](https://www.youtube.com/watch?v=9TU0XjJqpOg) |
-| 91 | NA | Energy, not compute, will be the #1 bottleneck to AI progress – Mark Zuckerberg | [YouTube](https://www.youtube.com/watch?v=i-o5YbNfmh0) |
-| 92 | NA | What Mark Zuckerberg learned from Caesar Augustus | [YouTube](https://www.youtube.com/watch?v=_VjyPShDsjo) |
-| 93 | NA | Will AI Gatekeepers Tell You What You Can Build? – Mark Zuckerberg | [YouTube](https://www.youtube.com/watch?v=QmPopAPmPcM) |
-| 94 | NA | Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters | [YouTube](https://www.youtube.com/watch?v=bc6uFV9CJGg) |
-| 95 | NA | If we don’t get AGI by GPT-7 (~$1T), will we just never get it? – Sholto Douglas & Trenton Bricken | [YouTube](https://www.youtube.com/watch?v=WpGqsKR26Cw) |
-| 96 | NA | Distinction between small & large models will go away – Sholto Douglas & Trenton Bricken | [YouTube](https://www.youtube.com/watch?v=AOt0GwY8IvU) |
-| 97 | NA | Hitler put Russians on Death Ground - Sarah Paine | [YouTube](https://www.youtube.com/watch?v=X3tuS9bgBfo) |
-| 98 | NA | AI progress is about to rapidly accelerate in 2025 – Sholto Douglas & Trenton Bricken | [YouTube](https://www.youtube.com/watch?v=UeI29-AdhQI) |
-| 99 | NA | How They Became Leading AI Researchers in Just 1 Year – Sholto Douglas & Trenton Bricken | [YouTube](https://www.youtube.com/watch?v=cPu3SecmgUU) |
-| 100 | NA | Sholto Douglas & Trenton Bricken — How LLMs actually think | [YouTube](https://www.youtube.com/watch?v=UTuuTTnjxMQ) |
-| 101 | NA | Why America Failed In Afghanistan / Sarah Paine | [YouTube](https://www.youtube.com/watch?v=xkxy5zo2kJ8) |
-| 102 | NA | What a GPT-7 Intelligence Explosion Looks Like / Carl Shulman | [YouTube](https://www.youtube.com/watch?v=D_WsPbdJKUg) |
-| 103 | NA | Sarah Paine – Maritime vs Continental Powers | [YouTube](https://www.youtube.com/watch?v=oEahPLq1qBU) |
-| 104 | NA | How Much Will China Risk for Taiwan? – Sarah Paine (Naval War College) | [YouTube](https://www.youtube.com/watch?v=qSTuahfAZf0) |
-| 105 | NA | Everyone Was Wrong About Intelligence – Dario Amodei (Anthropic CEO) | [YouTube](https://www.youtube.com/watch?v=4hiXbxUnWd8) |
-| 106 | NA | Are We On Path Towards Superhuman Intelligence? – Dario Amodei (Anthropic CEO) | [YouTube](https://www.youtube.com/watch?v=wo4o09lKAQQ) |
-| 107 | NA | How Did Dario & Ilya Know LLMs Could Lead to AGI? | [YouTube](https://www.youtube.com/watch?v=Iq4YStiGADs) |
-| 108 | NA | The AI Field is Acting Crazy – Demis Hassabis (Google DeepMind CEO) | [YouTube](https://www.youtube.com/watch?v=wJzwbY2CwZQ) |
-| 109 | NA | Multimodality: The Next Big Step (Demis Hassabis - Google DeepMind CEO) | [YouTube](https://www.youtube.com/watch?v=bFwWkyZ7yMo) |
-| 110 | NA | Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLMs, AlphaFold | [YouTube](https://www.youtube.com/watch?v=qTogNUV3CAI) |
-| 111 | NA | The Fastest Way to AGI: LLMs + Tree Search – Demis Hassabis (Google DeepMind CEO) | [YouTube](https://www.youtube.com/watch?v=eqXfhejDeqA) |
-| 112 | NA | Scaling LLMs further is an artform - Demis Hassabis (Google DeepMind CEO) | [YouTube](https://www.youtube.com/watch?v=666XgM38jJE) |
-| 113 | NA | Patrick Collison’s Advice to 20-30 Year Olds: Don't Move to SF | [YouTube](https://www.youtube.com/watch?v=XrFIKOle0n8) |
-| 114 | NA | Patrick Collison — Why Silicon Valley's most talented should leave | [YouTube](https://www.youtube.com/watch?v=WU-lBOAS1VQ) |
-| 115 | NA | Tyler Cowen — Hayek, Keynes, & Smith on AI, animal spirits, anarchy, & growth | [YouTube](https://www.youtube.com/watch?v=EY2nbAVZB-k) |
-| 116 | NA | AGI by 2028 - Shane Legg (DeepMind Founder) | [YouTube](https://www.youtube.com/watch?v=N84ZntqkO4I) |
-| 117 | NA | Why OpenAI gave up on robotics - Ilya Sutskever (OpenAI Chief Scientist) | [YouTube](https://www.youtube.com/watch?v=7tL1Jy_b_3Y) |
-| 118 | NA | Why next-token prediction is enough for AGI - Ilya Sutskever (OpenAI Chief Scientist) | [YouTube](https://www.youtube.com/watch?v=YEUclZdj_Sc) |
-| 119 | NA | Will an AI smart enough to win math competitions be AGI? (Grant Sanderson @3blue1brown) | [YouTube](https://www.youtube.com/watch?v=GnMPfCFp6TA) |
-| 120 | NA | Where should society allocate mathematicians? (Grant Sanderson @3Blue1Brown) | [YouTube](https://www.youtube.com/watch?v=BHjtXKBzbF0) |
-| 121 | NA | Jung Chang (Wild Swans author) — Living through history's largest man-made famine | [YouTube](https://www.youtube.com/watch?v=-VeZp2d7mDs) |
-| 122 | NA | Andrew Roberts — Why Hitler lost WWII, Churchill as applied historian, & Napoleon as startup founder | [YouTube](https://www.youtube.com/watch?v=tM9ZMYUYhTk) |
-| 123 | NA | Dominic Cummings — Inside the collapse of western government | [YouTube](https://www.youtube.com/watch?v=3i7ym_Qh7BA) |
-| 124 | NA | Paul Christiano — Preventing an AI takeover | [YouTube](https://www.youtube.com/watch?v=9AAhTLa0dT0) |
-| 125 | NA | Shane Legg (DeepMind Founder) — 2028 AGI, superhuman alignment, new architectures | [YouTube](https://www.youtube.com/watch?v=Kc1atfJkiJU) |
-| 126 | NA | Grant Sanderson (@3blue1brown) — Past, present, & future of mathematics | [YouTube](https://www.youtube.com/watch?v=oDyviiN4NVo) |
-| 127 | NA | Are we risking nuclear war by supporting Ukraine? | [YouTube](https://www.youtube.com/watch?v=UUNYqAFrlFA) |
-| 128 | NA | How Xi & Putin think - maritime vs continental powers | [YouTube](https://www.youtube.com/watch?v=Yf8mCThmsGc) |
-| 129 | NA | Sarah C. M. Paine — Why dictators keep making the same fatal mistake | [YouTube](https://www.youtube.com/watch?v=YcVSgYz5SJ8) |
-| 130 | NA | What if the Third Reich survived WW2? | [YouTube](https://www.youtube.com/watch?v=uxRf4JLbQGc) |
-| 131 | NA | Why Microsoft paid $7.5 billion for GitHub (Nat Friedman) | [YouTube](https://www.youtube.com/watch?v=vwbXiITmxTU) |
-| 132 | NA | Dario Amodei (Anthropic CEO) — The hidden pattern behind every AI breakthrough | [YouTube](https://www.youtube.com/watch?v=Nlkk3glap_U) |
-| 133 | NA | Andy Matuschak — The reason most learning tools fail | [YouTube](https://www.youtube.com/watch?v=dmeRQN9z504) |
-| 134 | NA | Carl Shulman (Pt 2) — AI Takeover, bio & cyber attacks, detecting deception, & humanity's far future | [YouTube](https://www.youtube.com/watch?v=KUieFuV1fuo) |
-| 135 | NA | Carl Shulman (Pt 1) — Intelligence explosion, primate evolution, robot doublings, & alignment | [YouTube](https://www.youtube.com/watch?v=_kRg-ZP1vQc) |
-| 136 | NA | Richard Rhodes — The making of the atomic bomb | [YouTube](https://www.youtube.com/watch?v=tMdMiYsfHKo) |
-| 137 | NA | Eliezer Yudkowsky — Why AI will kill us, aligning LLMs, nature of intelligence, SciFi, & rationality | [YouTube](https://www.youtube.com/watch?v=41SUp-TRVlg) |
-| 138 | NA | Ilya Sutskever (OpenAI Chief Scientist) — Why next-token prediction could surpass human intelligence | [YouTube](https://www.youtube.com/watch?v=Yf1o0TQzry8) |
-| 139 | NA | Nat Friedman (Github CEO) — Reading ancient scrolls, open source, & AI | [YouTube](https://www.youtube.com/watch?v=qcvMjoJdck4) |
-| 140 | NA | Brett Harrison — FTX US former president speaks out | [YouTube](https://www.youtube.com/watch?v=yXgDlIlB93A) |
-| 141 | NA | Marc Andreessen — AI, crypto, 1000 Elon Musks, regrets, vulnerabilities, & managerial revolution | [YouTube](https://www.youtube.com/watch?v=kNsi5XVDTTM) |
-| 142 | NA | Garett Jones — Immigration, national IQ, & less democracy | [YouTube](https://www.youtube.com/watch?v=ZruyslAe26g) |
-| 143 | NA | Lars Doucet — Progress, poverty, Georgism, & why rent is too damn high | [YouTube](https://www.youtube.com/watch?v=sL-qkv7Pzxo) |
-| 144 | NA | Holden Karnofsky — History's most important century | [YouTube](https://www.youtube.com/watch?v=UckqpcOu5SY) |
-| 145 | NA | Bethany McLean — Enron, FTX, 2008, Musk, frauds, & visionaries | [YouTube](https://www.youtube.com/watch?v=m3oM69YHLeo) |
-| 146 | NA | Nadia Asparouhova — Tech elites, democracy, open source, & philanthropy | [YouTube](https://www.youtube.com/watch?v=nvL3vqMzznY) |
-| 147 | NA | Byrne Hobart - FTX, Drugs, Twitter, Taiwan, & Monasticism | [YouTube](https://www.youtube.com/watch?v=9P2rk0Gtd0I) |
-| 148 | NA | Edward Glaeser - Cities, Terrorism, Housing, & Remote Work | [YouTube](https://www.youtube.com/watch?v=MpttoDJ3pH8) |
-| 149 | NA | Kenneth T. Jackson - Robert Moses, Hero of New York? | [YouTube](https://www.youtube.com/watch?v=Gumo8zmgLqM) |
-| 150 | NA | Brian Potter - Future of Construction, Ugly Modernism, & Environmental Review | [YouTube](https://www.youtube.com/watch?v=m9ErXK5h-oU) |
-| 151 | NA | Bryan Caplan - Feminists, Billionaires, and Demagogues | [YouTube](https://www.youtube.com/watch?v=jmWmrx6ki9Q) |
-| 152 | NA | Tyler Cowen - Why Society Will Collapse & Why Sex is Pessimistic | [YouTube](https://www.youtube.com/watch?v=AHkmEnl55jo) |
-| 153 | NA | Charles C. Mann - Americas Before Columbus & Scientific Wizardry | [YouTube](https://www.youtube.com/watch?v=1Z35PqPQU2M) |
-| 154 | NA | Austin Vernon - Energy Superabundance, Starship Missiles, & Finding Alpha | [YouTube](https://www.youtube.com/watch?v=YSgfu7XprIM) |
-| 155 | NA | Steve Hsu - Intelligence, Embryo Selection, & The Future of Humanity | [YouTube](https://www.youtube.com/watch?v=80BhjRh-Q-s) |
-| 156 | NA | Will MacAskill - Longtermism, Effective Altruism, History, & Technology | [YouTube](https://www.youtube.com/watch?v=SMEfl5maB8k) |
-| 157 | NA | Joseph Carlsmith - Utopia, AI, & Infinite Ethics | [YouTube](https://www.youtube.com/watch?v=M3TUe4zUCKk) |
-| 158 | NA | Fin Moorhouse - Longtermism, Space, & Entrepreneurship | [YouTube](https://www.youtube.com/watch?v=snMWoyvmkhg) |
-| 159 | NA | Alexander Mikaberidze - Napoleon, War, Progress, and Global Order | [YouTube](https://www.youtube.com/watch?v=E65CHSV6Ads) |
-| 160 | NA | Sam Bankman-Fried - Crypto, FTX, Altruism, & Leadership | [YouTube](https://www.youtube.com/watch?v=5Af0d2DbK5w) |
-| 161 | NA | Agustin Lebron - Trading, Crypto, and Adverse Selection | [YouTube](https://www.youtube.com/watch?v=3BBNG0TlVwM) |
-| 162 | NA | Ananyo Bhattacharya - John von Neumann, Jewish Genius, and Nuclear War | [YouTube](https://www.youtube.com/watch?v=faZI6OBOopE) |
-| 163 | NA | Manifold Markets Founder - Predictions Markets & Revolutionizing Governance | [YouTube](https://www.youtube.com/watch?v=XoRXrnHg084) |
-| 164 | NA | Pradyu Prasad - Imperial Japan, the God Emperor, and Militarization in the Modern World | [YouTube](https://www.youtube.com/watch?v=rsJxlybPByM) |
-| 165 | NA | Razib Khan - Genomics, Intelligence, and The Church of Science | [YouTube](https://www.youtube.com/watch?v=sh04dEtBAoE) |
-| 166 | NA | Jimmy Soni - Peter Thiel, Elon Musk, and the Paypal Mafia | [YouTube](https://www.youtube.com/watch?v=OEcOUgXvz7g) |
-| 167 | NA | Bryan Caplan - Labor Econ, Poverty, & Mental Illness | [YouTube](https://www.youtube.com/watch?v=i70j-ZCPhXg) |
-| 168 | NA | Richard Hanania - Foreign Policy, Fertility, and Experts | [YouTube](https://www.youtube.com/watch?v=QyWs-XomCk0) |
-| 169 | NA | David Deutsch - AI, America, Fun, & Bayes | [YouTube](https://www.youtube.com/watch?v=EVwjofV5TgU) |
-| 170 | NA | Byrne Hobart - Optionality, Stagnation, and Secret Societies | [YouTube](https://www.youtube.com/watch?v=ZI_tDsOhd5I) |
-| 171 | NA | David Friedman - Dating Markets, Legal Systems, Bitcoin, and Automation | [YouTube](https://www.youtube.com/watch?v=3svashDgB50) |
-| 172 | NA | Sarah Fitz-Claridge - Taking Children Seriously / The Lunar Society #15 | [YouTube](https://www.youtube.com/watch?v=BV6Qice6Lrc) |
-| 173 | NA | Michael Huemer - Anarchy, Capitalism, and Progress | [YouTube](https://www.youtube.com/watch?v=--xKsIgv7tE) |
-| 174 | NA | Uncle Bob - The Long Reach of Code, Automating Programming, and Developing Coding Talent | [YouTube](https://www.youtube.com/watch?v=ldTPVd3vO9Q) |
-| 175 | NA | Scott Aaronson - Quantum Computing, Complexity, and Creativity | [YouTube](https://www.youtube.com/watch?v=Uy5fvwdw8x4) |
-| 176 | NA | Scott Young - Ultralearning, The MIT Challenge | [YouTube](https://www.youtube.com/watch?v=R5sBycV80c8) |
-| 177 | NA | Charles Murray - Human Accomplishment and the Future of Liberty / The Lunar Society #10 | [YouTube](https://www.youtube.com/watch?v=yYtyKmPZBto) |
-| 178 | NA | Alex Tabarrok - Prizes, Prices, and Public Goods | [YouTube](https://www.youtube.com/watch?v=i75KvXVrtLw) |
-| 179 | NA | Caleb Watney - America's Innovation Engine | [YouTube](https://www.youtube.com/watch?v=Ayewh_O0LPQ) |
-| 180 | NA | Robin Hanson - The Long View and The Elephant in the Brain | [YouTube](https://www.youtube.com/watch?v=aagyRGKv66g) |
-| 181 | NA | Jason Crawford - The Roots of Progress & the History of Technology | [YouTube](https://www.youtube.com/watch?v=otyrj5SnS4I) |
-| 182 | NA | Matjaž Leonardis - Science, Identity and Probability | [YouTube](https://www.youtube.com/watch?v=fTfDZO-p5Fo) |
-| 183 | NA | Tyler Cowen - The Great Reset | [YouTube](https://www.youtube.com/watch?v=ayUZreGysTo) |
-| 184 | NA | Bryan Caplan - Nurturing Orphaned Ideas, Education, and UBI | [YouTube](https://www.youtube.com/watch?v=r4AkTmqvWzM) |
-| 185 | NA | Rubik's Cube Encryption Demo | [YouTube](https://www.youtube.com/watch?v=fAaxahG39Dk) |
-| 2025 | NA | 2025 models will be more like coworkers than search engines – OpenAI cofounder John Schulman | [YouTube](https://www.youtube.com/watch?v=1fmcdz2EO_c) |
+## 📊 Stats
+
+- **Total Episodes:** 179
+- **Transcripts:** 179
+- **Analyses:** 179
+- **Unique Guests:** ~87
+
+### Topics
+
+| Category | Count |
+|----------|------:|
+| AI & Machine Learning | 101 |
+| History & Geopolitics | 25 |
+| Economics & Policy | 14 |
+| Science & Biology | 9 |
+| Philosophy & Culture | 6 |
+| Technology & Engineering | 4 |
+| Other | 20 |
+
+### Most Featured Guests
+
+| Guest | Episodes |
+|-------|:--------:|
+| Sarah Paine | 10 |
+| Mark Zuckerberg | 6 |
+| Demis Hassabis | 5 |
+| David Reich | 5 |
+| Dario Amodei | 4 |
+| Tyler Cowen | 4 |
+| Leopold Aschenbrenner | 4 |
+| John Schulman | 4 |
+| Gwern | 3 |
+| Sholto Douglas & Trenton Bricken | 3 |
+| Carl Shulman | 3 |
+| Bryan Caplan | 3 |
+| Adam Brown | 3 |
+| Grant Sanderson | 3 |
+| Richard Rhodes | 2 |
+
+---
+
+## 📋 All Episodes
+
+| # | Title | Transcript | Analysis | YouTube |
+|--:|-------|:----------:|:--------:|:-------:|
+| 1 | Dario Amodei — “We are near the end of the exponential” | [📄](/transcripts/dwarkesh/1_dario_amodei_we_are_near_the_end_of_the_exponential/) | [🔍](/transcripts/dwarkesh/1_dario_amodei_we_are_near_the_end_of_the_exponential.analysis/) | [▶](https://www.youtube.com/watch?v=n1E9IZfvGMA) |
+| 2 | Elon Musk – "In 36 months, the cheapest place to put AI will be space” | [📄](/transcripts/dwarkesh/2_elon_musk_in_36_months_the_cheapest_place_to_put_ai_will_be_space/) | [🔍](/transcripts/dwarkesh/2_elon_musk_in_36_months_the_cheapest_place_to_put_ai_will_be_space.analysis/) | [▶](https://www.youtube.com/watch?v=kWcPg8t1kJ4) |
+| 3 | Adam Marblestone – AI is missing something fundamental about the brain | [📄](/transcripts/dwarkesh/3_adam_marblestone_ai_is_missing_something_fundamental_about_the_brain/) | [🔍](/transcripts/dwarkesh/3_adam_marblestone_ai_is_missing_something_fundamental_about_the_brain.analysis/) | [▶](https://www.youtube.com/watch?v=_9V_Hbe-N1A) |
+| 4 | What are we scaling? | [📄](/transcripts/dwarkesh/4_what_are_we_scaling/) | [🔍](/transcripts/dwarkesh/4_what_are_we_scaling.analysis/) | [▶](https://www.youtube.com/watch?v=_zgnSbu5GqE) |
+| 5 | Sarah Paine – Why Russia Lost the Cold War | [📄](/transcripts/dwarkesh/5_sarah_paine_why_russia_lost_the_cold_war/) | [🔍](/transcripts/dwarkesh/5_sarah_paine_why_russia_lost_the_cold_war.analysis/) | [▶](https://www.youtube.com/watch?v=FdkpWrlR5zg) |
+| 6 | Ilya Sutskever – We're moving from the age of scaling to the age of research | [📄](/transcripts/dwarkesh/6_ilya_sutskever_we_re_moving_from_the_age_of_scaling_to_the_age_of_research/) | [🔍](/transcripts/dwarkesh/6_ilya_sutskever_we_re_moving_from_the_age_of_scaling_to_the_age_of_research.analysis/) | [▶](https://www.youtube.com/watch?v=aR20FWCCjAs) |
+| 7 | Satya Nadella – How Microsoft thinks about AGI | [📄](/transcripts/dwarkesh/7_satya_nadella_how_microsoft_thinks_about_agi/) | [🔍](/transcripts/dwarkesh/7_satya_nadella_how_microsoft_thinks_about_agi.analysis/) | [▶](https://www.youtube.com/watch?v=8-boBsWcr5A) |
+| 8 | Sarah Paine — How Russia sabotaged China's rise | [📄](/transcripts/dwarkesh/8_sarah_paine_how_russia_sabotaged_china_s_rise/) | [🔍](/transcripts/dwarkesh/8_sarah_paine_how_russia_sabotaged_china_s_rise.analysis/) | [▶](https://www.youtube.com/watch?v=RH_ycZYH8-s) |
+| 9 | Andrej Karpathy — “We’re summoning ghosts, not building animals” | [📄](/transcripts/dwarkesh/9_andrej_karpathy_we_re_summoning_ghosts_not_building_animals/) | [🔍](/transcripts/dwarkesh/9_andrej_karpathy_we_re_summoning_ghosts_not_building_animals.analysis/) | [▶](https://www.youtube.com/watch?v=48pxVdmkMIE) |
+| 10 | “I find it almost disturbing that the universe favors life this strongly” – N... | [📄](/transcripts/dwarkesh/10_i_find_it_almost_disturbing_that_the_universe_favors_life_this_strongly_nick_lan/) | [🔍](/transcripts/dwarkesh/10_i_find_it_almost_disturbing_that_the_universe_favors_life_this_strongly_nick_lan.analysis/) | [▶](https://www.youtube.com/watch?v=0GMWxuYuxJI) |
+| 11 | Some thoughts on the Sutton interview | [📄](/transcripts/dwarkesh/11_some_thoughts_on_the_sutton_interview/) | [🔍](/transcripts/dwarkesh/11_some_thoughts_on_the_sutton_interview.analysis/) | [▶](https://www.youtube.com/watch?v=u3HBJVjpXuw) |
+| 12 | Richard Sutton – Father of RL thinks LLMs are a dead end | [📄](/transcripts/dwarkesh/12_richard_sutton_father_of_rl_thinks_llms_are_a_dead_end/) | [🔍](/transcripts/dwarkesh/12_richard_sutton_father_of_rl_thinks_llms_are_a_dead_end.analysis/) | [▶](https://www.youtube.com/watch?v=21EYKqUsPfg) |
+| 13 | Fully autonomous robots are much closer than you think – Sergey Levine | [📄](/transcripts/dwarkesh/13_fully_autonomous_robots_are_much_closer_than_you_think_sergey_levine/) | [🔍](/transcripts/dwarkesh/13_fully_autonomous_robots_are_much_closer_than_you_think_sergey_levine.analysis/) | [▶](https://www.youtube.com/watch?v=48pxVdmkMIE) |
+| 14 | Sarah Paine – How Hitler almost starved Britain | [📄](/transcripts/dwarkesh/14_sarah_paine_how_hitler_almost_starved_britain/) | [🔍](/transcripts/dwarkesh/14_sarah_paine_how_hitler_almost_starved_britain.analysis/) | [▶](https://www.youtube.com/watch?v=SdMgOXfSBQw) |
+| 15 | Evolution designed us to die fast; we can change that — Jacob Kimmel | [📄](/transcripts/dwarkesh/15_evolution_designed_us_to_die_fast_we_can_change_that_jacob_kimmel/) | [🔍](/transcripts/dwarkesh/15_evolution_designed_us_to_die_fast_we_can_change_that_jacob_kimmel.analysis/) | [▶](https://www.youtube.com/watch?v=XCLODgdCmKA) |
+| 16 | China is killing the US on energy. Does that mean they’ll win AGI? — Casey Ha... | [📄](/transcripts/dwarkesh/16_china_is_killing_the_us_on_energy_does_that_mean_they_ll_win_agi_casey_handmer/) | [🔍](/transcripts/dwarkesh/16_china_is_killing_the_us_on_energy_does_that_mean_they_ll_win_agi_casey_handmer.analysis/) | [▶](https://www.youtube.com/watch?v=3cDHx2_QbPE) |
+| 17 | Artificial meat is harder than artificial intelligence — Lewis Bollard | [📄](/transcripts/dwarkesh/17_artificial_meat_is_harder_than_artificial_intelligence_lewis_bollard/) | [🔍](/transcripts/dwarkesh/17_artificial_meat_is_harder_than_artificial_intelligence_lewis_bollard.analysis/) | [▶](https://www.youtube.com/watch?v=kWcPg8t1kJ4) |
+| 18 | Why I don’t think AGI is right around the corner | [📄](/transcripts/dwarkesh/18_why_i_don_t_think_agi_is_right_around_the_corner/) | [🔍](/transcripts/dwarkesh/18_why_i_don_t_think_agi_is_right_around_the_corner.analysis/) | [▶](https://www.youtube.com/watch?v=nyvmYnz6EAg) |
+| 19 | Sarah Paine — How Imperial Japan defeated Tsarist Russia & Qing China | [📄](/transcripts/dwarkesh/19_sarah_paine_how_imperial_japan_defeated_tsarist_russia_qing_china/) | [🔍](/transcripts/dwarkesh/19_sarah_paine_how_imperial_japan_defeated_tsarist_russia_qing_china.analysis/) | [▶](https://www.youtube.com/watch?v=KxIeJjEGLdo) |
+| 20 | Stephen Kotkin — How Stalin became the most powerful dictator in history | [📄](/transcripts/dwarkesh/20_stephen_kotkin_how_stalin_became_the_most_powerful_dictator_in_history/) | [🔍](/transcripts/dwarkesh/20_stephen_kotkin_how_stalin_became_the_most_powerful_dictator_in_history.analysis/) | [▶](https://www.youtube.com/watch?v=YMfd3EoHfPI) |
+| 21 | A billion years of evolution in a single afternoon — George Church | [📄](/transcripts/dwarkesh/21_a_billion_years_of_evolution_in_a_single_afternoon_george_church/) | [🔍](/transcripts/dwarkesh/21_a_billion_years_of_evolution_in_a_single_afternoon_george_church.analysis/) | [▶](https://www.youtube.com/watch?v=olmHHxFQwxo) |
+| 22 | Why China's manufacturing economy is dominating — Arthur Kroeber | [📄](/transcripts/dwarkesh/22_why_china_s_manufacturing_economy_is_dominating_arthur_kroeber/) | [🔍](/transcripts/dwarkesh/22_why_china_s_manufacturing_economy_is_dominating_arthur_kroeber.analysis/) | [▶](https://www.youtube.com/watch?v=qb644F-iE_s) |
+| 23 | China is digging out of a crisis. And America’s luck is wearing thin." — Ken ... | [📄](/transcripts/dwarkesh/23_china_is_digging_out_of_a_crisis_and_america_s_luck_is_wearing_thin_ken_rogoff/) | [🔍](/transcripts/dwarkesh/23_china_is_digging_out_of_a_crisis_and_america_s_luck_is_wearing_thin_ken_rogoff.analysis/) | [▶](https://www.youtube.com/watch?v=P2b4TjQa4gk) |
+| 24 | Xi Jinping’s paranoid approach to AGI, debt crisis, & Politburo politics — Vi... | [📄](/transcripts/dwarkesh/24_xi_jinping_s_paranoid_approach_to_agi_debt_crisis_politburo_politics_victor_shih/) | [🔍](/transcripts/dwarkesh/24_xi_jinping_s_paranoid_approach_to_agi_debt_crisis_politburo_politics_victor_shih.analysis/) | [▶](https://www.youtube.com/watch?v=b1TeeIG6Uaw) |
+| 25 | Is RL + LLMs enough for AGI? — Sholto Douglas & Trenton Bricken | [📄](/transcripts/dwarkesh/25_is_rl_llms_enough_for_agi_sholto_douglas_trenton_bricken/) | [🔍](/transcripts/dwarkesh/25_is_rl_llms_enough_for_agi_sholto_douglas_trenton_bricken.analysis/) | [▶](https://www.youtube.com/watch?v=64lXQP6cs5M) |
+| 26 | What will automated firms look like? | [📄](/transcripts/dwarkesh/26_what_will_automated_firms_look_like/) | [🔍](/transcripts/dwarkesh/26_what_will_automated_firms_look_like.analysis/) | [▶](https://www.youtube.com/watch?v=bJD1NpdMY5s) |
+| 27 | Mark Zuckerberg — AI will write most Meta code in 18 months | [📄](/transcripts/dwarkesh/27_mark_zuckerberg_ai_will_write_most_meta_code_in_18_months/) | [🔍](/transcripts/dwarkesh/27_mark_zuckerberg_ai_will_write_most_meta_code_in_18_months.analysis/) | [▶](https://www.youtube.com/watch?v=rYXeQbTuVl0) |
+| 28 | Why Rome actually fell: plagues, slavery, & ice age — Kyle Harper | [📄](/transcripts/dwarkesh/28_why_rome_actually_fell_plagues_slavery_ice_age_kyle_harper/) | [🔍](/transcripts/dwarkesh/28_why_rome_actually_fell_plagues_slavery_ice_age_kyle_harper.analysis/) | [▶](https://www.youtube.com/watch?v=QFzgSmN8Ng8) |
+| 30 | AI 2027: month-by-month model of intelligence explosion — Scott Alexander & D... | [📄](/transcripts/dwarkesh/30_ai_2027_month_by_month_model_of_intelligence_explosion_scott_alexander_daniel_ko/) | [🔍](/transcripts/dwarkesh/30_ai_2027_month_by_month_model_of_intelligence_explosion_scott_alexander_daniel_ko.analysis/) | [▶](https://www.youtube.com/watch?v=htOvH12T7mU) |
+| 31 | AMA: career advice given AGI, how I research ft. Sholto & Trenton | [📄](/transcripts/dwarkesh/31_ama_career_advice_given_agi_how_i_research_ft_sholto_trenton/) | [🔍](/transcripts/dwarkesh/31_ama_career_advice_given_agi_how_i_research_ft_sholto_trenton.analysis/) | [▶](https://www.youtube.com/watch?v=XLaRfZ4AHn8) |
+| 32 | Joseph Henrich — Humans defeated smarter species with cultural evolution | [📄](/transcripts/dwarkesh/32_joseph_henrich_humans_defeated_smarter_species_with_cultural_evolution/) | [🔍](/transcripts/dwarkesh/32_joseph_henrich_humans_defeated_smarter_species_with_cultural_evolution.analysis/) | [▶](https://www.youtube.com/watch?v=TcfhrThp1OU) |
+| 33 | Notes on China | [📄](/transcripts/dwarkesh/33_notes_on_china/) | [🔍](/transcripts/dwarkesh/33_notes_on_china.analysis/) | [▶](https://www.youtube.com/watch?v=UU9jbImVsNY) |
+| 34 | The Hardest thing About Being CEO – Satya Nadella | [📄](/transcripts/dwarkesh/34_the_hardest_thing_about_being_ceo_satya_nadella/) | [🔍](/transcripts/dwarkesh/34_the_hardest_thing_about_being_ceo_satya_nadella.analysis/) | [▶](https://www.youtube.com/watch?v=cn-k7KUpydE) |
+| 35 | Satya Nadella shows me the first Majorana 1 Quantum Computing chip | [📄](/transcripts/dwarkesh/35_satya_nadella_shows_me_the_first_majorana_1_quantum_computing_chip/) | [🔍](/transcripts/dwarkesh/35_satya_nadella_shows_me_the_first_majorana_1_quantum_computing_chip.analysis/) | [▶](https://www.youtube.com/watch?v=itkvrQUSJC0) |
+| 36 | Satya Nadella — Microsoft’s AGI plan & quantum breakthrough | [📄](/transcripts/dwarkesh/36_satya_nadella_microsoft_s_agi_plan_quantum_breakthrough/) | [🔍](/transcripts/dwarkesh/36_satya_nadella_microsoft_s_agi_plan_quantum_breakthrough.analysis/) | [▶](https://www.youtube.com/watch?v=4GLSzuYXh6w) |
+| 37 | Jeff Dean & Noam Shazeer — 25 years at Google: from PageRank to AGI | [📄](/transcripts/dwarkesh/37_jeff_dean_noam_shazeer_25_years_at_google_from_pagerank_to_agi/) | [🔍](/transcripts/dwarkesh/37_jeff_dean_noam_shazeer_25_years_at_google_from_pagerank_to_agi.analysis/) | [▶](https://www.youtube.com/watch?v=v0gjI__RyCY) |
+| 38 | 20th Century's Most Lethal Leader – Sarah Paine (Lecture Excerpt) | [📄](/transcripts/dwarkesh/38_20th_century_s_most_lethal_leader_sarah_paine_lecture_excerpt/) | [🔍](/transcripts/dwarkesh/38_20th_century_s_most_lethal_leader_sarah_paine_lecture_excerpt.analysis/) | [▶](https://www.youtube.com/watch?v=AFsf-00tsrw) |
+| 39 | The Limits of American Power – Sarah Paine | [📄](/transcripts/dwarkesh/39_the_limits_of_american_power_sarah_paine/) | [🔍](/transcripts/dwarkesh/39_the_limits_of_american_power_sarah_paine.analysis/) | [▶](https://www.youtube.com/watch?v=tlNHLGVRKlc) |
+| 40 | The Brilliance of Communism" – Sarah Paine | [📄](/transcripts/dwarkesh/40_the_brilliance_of_communism_sarah_paine/) | [🔍](/transcripts/dwarkesh/40_the_brilliance_of_communism_sarah_paine.analysis/) | [▶](https://www.youtube.com/watch?v=OoSh7qJcZWA) |
+| 41 | Sarah Paine — How Mao conquered China (lecture & interview) | [📄](/transcripts/dwarkesh/41_sarah_paine_how_mao_conquered_china_lecture_interview/) | [🔍](/transcripts/dwarkesh/41_sarah_paine_how_mao_conquered_china_lecture_interview.analysis/) | [▶](https://www.youtube.com/watch?v=4l3Sa8ImGFQ) |
+| 42 | Attacking America Is a Devastating Miscalculation – Sarah Paine | [📄](/transcripts/dwarkesh/42_attacking_america_is_a_devastating_miscalculation_sarah_paine/) | [🔍](/transcripts/dwarkesh/42_attacking_america_is_a_devastating_miscalculation_sarah_paine.analysis/) | [▶](https://www.youtube.com/watch?v=eebSpobsPmM) |
+| 43 | Sarah Paine — Why Japan lost WWII (lecture & interview) | [📄](/transcripts/dwarkesh/43_sarah_paine_why_japan_lost_wwii_lecture_interview/) | [🔍](/transcripts/dwarkesh/43_sarah_paine_why_japan_lost_wwii_lecture_interview.analysis/) | [▶](https://www.youtube.com/watch?v=Znk5QINe01A) |
+| 44 | Was The War Against Japan Avoidable? - Sarah Paine | [📄](/transcripts/dwarkesh/44_was_the_war_against_japan_avoidable_sarah_paine/) | [🔍](/transcripts/dwarkesh/44_was_the_war_against_japan_avoidable_sarah_paine.analysis/) | [▶](https://www.youtube.com/watch?v=dPDndeV_mTU) |
+| 45 | Unlimited War: Putin vs Bismarck – Sarah Paine | [📄](/transcripts/dwarkesh/45_unlimited_war_putin_vs_bismarck_sarah_paine/) | [🔍](/transcripts/dwarkesh/45_unlimited_war_putin_vs_bismarck_sarah_paine.analysis/) | [▶](https://www.youtube.com/watch?v=ZACAzNyfyxs) |
+| 46 | Sarah Paine — The war for India (lecture & interview) | [📄](/transcripts/dwarkesh/46_sarah_paine_the_war_for_india_lecture_interview/) | [🔍](/transcripts/dwarkesh/46_sarah_paine_the_war_for_india_lecture_interview.analysis/) | [▶](https://www.youtube.com/watch?v=LbkO84MsmyM) |
+| 47 | Sarah Paine: We Thought The Soviets Were Going to Win | [📄](/transcripts/dwarkesh/47_sarah_paine_we_thought_the_soviets_were_going_to_win/) | [🔍](/transcripts/dwarkesh/47_sarah_paine_we_thought_the_soviets_were_going_to_win.analysis/) | [▶](https://www.youtube.com/watch?v=fx6fakjQBdo) |
+| 48 | Why Space Elevators Can't Mine Black Holes – Adam Brown | [📄](/transcripts/dwarkesh/48_why_space_elevators_can_t_mine_black_holes_adam_brown/) | [🔍](/transcripts/dwarkesh/48_why_space_elevators_can_t_mine_black_holes_adam_brown.analysis/) | [▶](https://www.youtube.com/watch?v=zfOYEMnpqdM) |
+| 49 | Tyler Cowen — The #1 bottleneck to AI progress is humans | [📄](/transcripts/dwarkesh/49_tyler_cowen_the_1_bottleneck_to_ai_progress_is_humans/) | [🔍](/transcripts/dwarkesh/49_tyler_cowen_the_1_bottleneck_to_ai_progress_is_humans.analysis/) | [▶](https://www.youtube.com/watch?v=GT_sXIUJPUo) |
+| 50 | How Far Are We From An AI Einstein? - Adam Brown | [📄](/transcripts/dwarkesh/50_how_far_are_we_from_an_ai_einstein_adam_brown/) | [🔍](/transcripts/dwarkesh/50_how_far_are_we_from_an_ai_einstein_adam_brown.analysis/) | [▶](https://www.youtube.com/watch?v=LjY0i2B-Avc) |
+| 51 | How Black Holes Reveal a Holographic Reality | [📄](/transcripts/dwarkesh/51_how_black_holes_reveal_a_holographic_reality/) | [🔍](/transcripts/dwarkesh/51_how_black_holes_reveal_a_holographic_reality.analysis/) | [▶](https://www.youtube.com/watch?v=ZT07mR7DnFI) |
+| 52 | Adam Brown — Bubble universes, space elevators, & AdS/CFT | [📄](/transcripts/dwarkesh/52_adam_brown_bubble_universes_space_elevators_ads_cft/) | [🔍](/transcripts/dwarkesh/52_adam_brown_bubble_universes_space_elevators_ads_cft.analysis/) | [▶](https://www.youtube.com/watch?v=XhB3qH_TFds) |
+| 53 | The Grand Theory of Intelligence – Gwern | [📄](/transcripts/dwarkesh/53_the_grand_theory_of_intelligence_gwern/) | [🔍](/transcripts/dwarkesh/53_the_grand_theory_of_intelligence_gwern.analysis/) | [▶](https://www.youtube.com/watch?v=IMkqAUsVAfc) |
+| 54 | How Gwern saw AI scaling coming | [📄](/transcripts/dwarkesh/54_how_gwern_saw_ai_scaling_coming/) | [🔍](/transcripts/dwarkesh/54_how_gwern_saw_ai_scaling_coming.analysis/) | [▶](https://www.youtube.com/watch?v=5fkqmNzFni8) |
+| 55 | Gwern — Anonymous writer who predicted AI trajectory on $12K/year salary | [📄](/transcripts/dwarkesh/55_gwern_anonymous_writer_who_predicted_ai_trajectory_on_12k_year_salary/) | [🔍](/transcripts/dwarkesh/55_gwern_anonymous_writer_who_predicted_ai_trajectory_on_12k_year_salary.analysis/) | [▶](https://www.youtube.com/watch?v=a42key59cZQ) |
+| 56 | $10B OpenAI & Microsoft Cluster in 2025 – Dylan Patel & @Asianometry | [📄](/transcripts/dwarkesh/56_10b_openai_microsoft_cluster_in_2025_dylan_patel_asianometry/) | [🔍](/transcripts/dwarkesh/56_10b_openai_microsoft_cluster_in_2025_dylan_patel_asianometry.analysis/) | [▶](https://www.youtube.com/watch?v=J7yvSkIOZLw) |
+| 57 | Taiwan Invasion: Timeline to Global Collapse – @Asianometry & Dylan Patel | [📄](/transcripts/dwarkesh/57_taiwan_invasion_timeline_to_global_collapse_asianometry_dylan_patel/) | [🔍](/transcripts/dwarkesh/57_taiwan_invasion_timeline_to_global_collapse_asianometry_dylan_patel.analysis/) | [▶](https://www.youtube.com/watch?v=DTOU3vchBE0) |
+| 59 | The caste system transformed Indian genetics – David Reich | [📄](/transcripts/dwarkesh/59_the_caste_system_transformed_indian_genetics_david_reich/) | [🔍](/transcripts/dwarkesh/59_the_caste_system_transformed_indian_genetics_david_reich.analysis/) | [▶](https://www.youtube.com/watch?v=7OfV16_xngQ) |
+| 60 | Oil Decided World War II – Daniel Yergin | [📄](/transcripts/dwarkesh/60_oil_decided_world_war_ii_daniel_yergin/) | [🔍](/transcripts/dwarkesh/60_oil_decided_world_war_ii_daniel_yergin.analysis/) | [▶](https://www.youtube.com/watch?v=M7fyL79PvNQ) |
+| 61 | Daniel Yergin — Oil destroyed Hitler, fracking destroyed Putin | [📄](/transcripts/dwarkesh/61_daniel_yergin_oil_destroyed_hitler_fracking_destroyed_putin/) | [🔍](/transcripts/dwarkesh/61_daniel_yergin_oil_destroyed_hitler_fracking_destroyed_putin.analysis/) | [▶](https://www.youtube.com/watch?v=sveBcfz0fHk) |
+| 62 | How horse nomads took over Europe 5000 years ago – David Reich | [📄](/transcripts/dwarkesh/62_how_horse_nomads_took_over_europe_5000_years_ago_david_reich/) | [🔍](/transcripts/dwarkesh/62_how_horse_nomads_took_over_europe_5000_years_ago_david_reich.analysis/) | [▶](https://www.youtube.com/watch?v=sqDE7znrHsw) |
+| 63 | Our biggest difference with Neanderthals – David Reich | [📄](/transcripts/dwarkesh/63_our_biggest_difference_with_neanderthals_david_reich/) | [🔍](/transcripts/dwarkesh/63_our_biggest_difference_with_neanderthals_david_reich.analysis/) | [▶](https://www.youtube.com/watch?v=KwC7rcnThX4) |
+| 64 | A key period in human evolution wasn't in Africa – David Reich | [📄](/transcripts/dwarkesh/64_a_key_period_in_human_evolution_wasn_t_in_africa_david_reich/) | [🔍](/transcripts/dwarkesh/64_a_key_period_in_human_evolution_wasn_t_in_africa_david_reich.analysis/) | [▶](https://www.youtube.com/watch?v=1SbyMBvJzkE) |
+| 65 | Why no other human species survived – David Reich | [📄](/transcripts/dwarkesh/65_why_no_other_human_species_survived_david_reich/) | [🔍](/transcripts/dwarkesh/65_why_no_other_human_species_survived_david_reich.analysis/) | [▶](https://www.youtube.com/watch?v=rW_Lgwqqe3I) |
+| 66 | David Reich — How one small tribe conquered the world 70,000 years ago | [📄](/transcripts/dwarkesh/66_david_reich_how_one_small_tribe_conquered_the_world_70_000_years_ago/) | [🔍](/transcripts/dwarkesh/66_david_reich_how_one_small_tribe_conquered_the_world_70_000_years_ago.analysis/) | [▶](https://www.youtube.com/watch?v=Uj6skZIxPuI) |
+| 67 | The bacteria that shaped history: Yersinia pestis – David Reich | [📄](/transcripts/dwarkesh/67_the_bacteria_that_shaped_history_yersinia_pestis_david_reich/) | [🔍](/transcripts/dwarkesh/67_the_bacteria_that_shaped_history_yersinia_pestis_david_reich.analysis/) | [▶](https://www.youtube.com/watch?v=oX76K-mNdaM) |
+| 68 | Joe Carlsmith — Preventing an AI takeover | [📄](/transcripts/dwarkesh/68_joe_carlsmith_preventing_an_ai_takeover/) | [🔍](/transcripts/dwarkesh/68_joe_carlsmith_preventing_an_ai_takeover.analysis/) | [▶](https://www.youtube.com/watch?v=5XsL_7TnfLU) |
+| 69 | The Biggest Money Laundering Scheme In History – Patrick McKenzie | [📄](/transcripts/dwarkesh/69_the_biggest_money_laundering_scheme_in_history_patrick_mckenzie/) | [🔍](/transcripts/dwarkesh/69_the_biggest_money_laundering_scheme_in_history_patrick_mckenzie.analysis/) | [▶](https://www.youtube.com/watch?v=ciZMI5ZrFLo) |
+| 70 | Patrick McKenzie — Money laundering, big tech censorship, SBF & Japan | [📄](/transcripts/dwarkesh/70_patrick_mckenzie_money_laundering_big_tech_censorship_sbf_japan/) | [🔍](/transcripts/dwarkesh/70_patrick_mckenzie_money_laundering_big_tech_censorship_sbf_japan.analysis/) | [▶](https://www.youtube.com/watch?v=18zpjpPNWRw) |
+| 71 | Does Tony Blair regret bringing China into world order? | [📄](/transcripts/dwarkesh/71_does_tony_blair_regret_bringing_china_into_world_order/) | [🔍](/transcripts/dwarkesh/71_does_tony_blair_regret_bringing_china_into_world_order.analysis/) | [▶](https://www.youtube.com/watch?v=4hk9np05A64) |
+| 72 | Lee Kuan Yew’s 3 key decisions that made Singapore rich – Tony Blair | [📄](/transcripts/dwarkesh/72_lee_kuan_yew_s_3_key_decisions_that_made_singapore_rich_tony_blair/) | [🔍](/transcripts/dwarkesh/72_lee_kuan_yew_s_3_key_decisions_that_made_singapore_rich_tony_blair.analysis/) | [▶](https://www.youtube.com/watch?v=Ko9uQvR93kw) |
+| 73 | Tony Blair — Why political leaders keep failing at major change | [📄](/transcripts/dwarkesh/73_tony_blair_why_political_leaders_keep_failing_at_major_change/) | [🔍](/transcripts/dwarkesh/73_tony_blair_why_political_leaders_keep_failing_at_major_change.analysis/) | [▶](https://www.youtube.com/watch?v=zSLWR3AbF3c) |
+| 74 | Government is a conspiracy of distraction – Tony Blair | [📄](/transcripts/dwarkesh/74_government_is_a_conspiracy_of_distraction_tony_blair/) | [🔍](/transcripts/dwarkesh/74_government_is_a_conspiracy_of_distraction_tony_blair.analysis/) | [▶](https://www.youtube.com/watch?v=RWBZyQ4Na4o) |
+| 75 | If an LLM solves this then we'll probably have AGI – Francois Chollet | [📄](/transcripts/dwarkesh/75_if_an_llm_solves_this_then_we_ll_probably_have_agi_francois_chollet/) | [🔍](/transcripts/dwarkesh/75_if_an_llm_solves_this_then_we_ll_probably_have_agi_francois_chollet.analysis/) | [▶](https://www.youtube.com/watch?v=wZ0ToxtXz5g) |
+| 76 | Scaling laws are explained by memorization and not intelligence – Francois Ch... | [📄](/transcripts/dwarkesh/76_scaling_laws_are_explained_by_memorization_and_not_intelligence_francois_chollet/) | [🔍](/transcripts/dwarkesh/76_scaling_laws_are_explained_by_memorization_and_not_intelligence_francois_chollet.analysis/) | [▶](https://www.youtube.com/watch?v=rl7B-LHiaNo) |
+| 77 | Francois Chollet — Why the biggest AI models can't solve simple puzzles | [📄](/transcripts/dwarkesh/77_francois_chollet_why_the_biggest_ai_models_can_t_solve_simple_puzzles/) | [🔍](/transcripts/dwarkesh/77_francois_chollet_why_the_biggest_ai_models_can_t_solve_simple_puzzles.analysis/) | [▶](https://www.youtube.com/watch?v=UakqL6Pj9xo) |
+| 78 | AI Labs are extremely vulnerable to espionage – Leopold Aschenbrenner | [📄](/transcripts/dwarkesh/78_ai_labs_are_extremely_vulnerable_to_espionage_leopold_aschenbrenner/) | [🔍](/transcripts/dwarkesh/78_ai_labs_are_extremely_vulnerable_to_espionage_leopold_aschenbrenner.analysis/) | [▶](https://www.youtube.com/watch?v=667IffkMDmU) |
+| 79 | How the US-China AI Race Will Play Out – Leopold Aschenbrenner | [📄](/transcripts/dwarkesh/79_how_the_us_china_ai_race_will_play_out_leopold_aschenbrenner/) | [🔍](/transcripts/dwarkesh/79_how_the_us_china_ai_race_will_play_out_leopold_aschenbrenner.analysis/) | [▶](https://www.youtube.com/watch?v=ghluOfM-Xik) |
+| 80 | AI Nationalization is Inevitable – Leopold Aschenbrenner | [📄](/transcripts/dwarkesh/80_ai_nationalization_is_inevitable_leopold_aschenbrenner/) | [🔍](/transcripts/dwarkesh/80_ai_nationalization_is_inevitable_leopold_aschenbrenner.analysis/) | [▶](https://www.youtube.com/watch?v=K0Pa5oudUp4) |
+| 81 | Leopold Aschenbrenner — 2027 AGI, China/US super-intelligence race, & the ret... | [📄](/transcripts/dwarkesh/81_leopold_aschenbrenner_2027_agi_china_us_super_intelligence_race_the_return_of_hi/) | [🔍](/transcripts/dwarkesh/81_leopold_aschenbrenner_2027_agi_china_us_super_intelligence_race_the_return_of_hi.analysis/) | [▶](https://www.youtube.com/watch?v=zdbVtZIn9IM) |
+| 82 | The inside story of how ChatGPT was built – OpenAI cofounder John Schulman | [📄](/transcripts/dwarkesh/82_the_inside_story_of_how_chatgpt_was_built_openai_cofounder_john_schulman/) | [🔍](/transcripts/dwarkesh/82_the_inside_story_of_how_chatgpt_was_built_openai_cofounder_john_schulman.analysis/) | [▶](https://www.youtube.com/watch?v=ERpNuLzKmJY) |
+| 83 | Why GPT-4 is much smarter than it was a year ago – OpenAI cofounder John Schu... | [📄](/transcripts/dwarkesh/83_why_gpt_4_is_much_smarter_than_it_was_a_year_ago_openai_cofounder_john_schulman/) | [🔍](/transcripts/dwarkesh/83_why_gpt_4_is_much_smarter_than_it_was_a_year_ago_openai_cofounder_john_schulman.analysis/) | [▶](https://www.youtube.com/watch?v=JclnqKZBTUU) |
+| 84 | John Schulman (OpenAI Cofounder) — Reasoning, RLHF, & plan for 2027 AGI | [📄](/transcripts/dwarkesh/84_john_schulman_openai_cofounder_reasoning_rlhf_plan_for_2027_agi/) | [🔍](/transcripts/dwarkesh/84_john_schulman_openai_cofounder_reasoning_rlhf_plan_for_2027_agi.analysis/) | [▶](https://www.youtube.com/watch?v=Wo95ob_s_NI) |
+| 86 | LLMs will hit the data wall if they can’t generalize – OpenAI cofounder John ... | [📄](/transcripts/dwarkesh/86_llms_will_hit_the_data_wall_if_they_can_t_generalize_openai_cofounder_john_schul/) | [🔍](/transcripts/dwarkesh/86_llms_will_hit_the_data_wall_if_they_can_t_generalize_openai_cofounder_john_schul.analysis/) | [▶](https://www.youtube.com/watch?v=V6X_tLCxsZk) |
+| 87 | Japan had no military. But didn’t surrender – Richard Rhodes | [📄](/transcripts/dwarkesh/87_japan_had_no_military_but_didn_t_surrender_richard_rhodes/) | [🔍](/transcripts/dwarkesh/87_japan_had_no_military_but_didn_t_surrender_richard_rhodes.analysis/) | [▶](https://www.youtube.com/watch?v=xDMYMOjcKa4) |
+| 88 | Robert Oppenheimer's Worst Enemy – Richard Rhodes | [📄](/transcripts/dwarkesh/88_robert_oppenheimer_s_worst_enemy_richard_rhodes/) | [🔍](/transcripts/dwarkesh/88_robert_oppenheimer_s_worst_enemy_richard_rhodes.analysis/) | [▶](https://www.youtube.com/watch?v=UG22Ytgj4uc) |
+| 89 | Why Mark Zuckerberg turned down $1B for Facebook | [📄](/transcripts/dwarkesh/89_why_mark_zuckerberg_turned_down_1b_for_facebook/) | [🔍](/transcripts/dwarkesh/89_why_mark_zuckerberg_turned_down_1b_for_facebook.analysis/) | [▶](https://www.youtube.com/watch?v=EwJFSZE2kws) |
+| 90 | Can synthetic data unlock AI recursive self-improvement? — Mark Zuckerberg | [📄](/transcripts/dwarkesh/90_can_synthetic_data_unlock_ai_recursive_self_improvement_mark_zuckerberg/) | [🔍](/transcripts/dwarkesh/90_can_synthetic_data_unlock_ai_recursive_self_improvement_mark_zuckerberg.analysis/) | [▶](https://www.youtube.com/watch?v=9TU0XjJqpOg) |
+| 91 | Energy, not compute, will be the #1 bottleneck to AI progress – Mark Zuckerberg | [📄](/transcripts/dwarkesh/91_energy_not_compute_will_be_the_1_bottleneck_to_ai_progress_mark_zuckerberg/) | [🔍](/transcripts/dwarkesh/91_energy_not_compute_will_be_the_1_bottleneck_to_ai_progress_mark_zuckerberg.analysis/) | [▶](https://www.youtube.com/watch?v=i-o5YbNfmh0) |
+| 92 | What Mark Zuckerberg learned from Caesar Augustus | [📄](/transcripts/dwarkesh/92_what_mark_zuckerberg_learned_from_caesar_augustus/) | [🔍](/transcripts/dwarkesh/92_what_mark_zuckerberg_learned_from_caesar_augustus.analysis/) | [▶](https://www.youtube.com/watch?v=_VjyPShDsjo) |
+| 93 | Will AI Gatekeepers Tell You What You Can Build? – Mark Zuckerberg | [📄](/transcripts/dwarkesh/93_will_ai_gatekeepers_tell_you_what_you_can_build_mark_zuckerberg/) | [🔍](/transcripts/dwarkesh/93_will_ai_gatekeepers_tell_you_what_you_can_build_mark_zuckerberg.analysis/) | [▶](https://www.youtube.com/watch?v=QmPopAPmPcM) |
+| 94 | Mark Zuckerberg — Llama 3, $10B models, Caesar Augustus, & 1 GW datacenters | [📄](/transcripts/dwarkesh/94_mark_zuckerberg_llama_3_10b_models_caesar_augustus_1_gw_datacenters/) | [🔍](/transcripts/dwarkesh/94_mark_zuckerberg_llama_3_10b_models_caesar_augustus_1_gw_datacenters.analysis/) | [▶](https://www.youtube.com/watch?v=bc6uFV9CJGg) |
+| 95 | If we don’t get AGI by GPT-7 (~$1T), will we just never get it? – Sholto Doug... | [📄](/transcripts/dwarkesh/95_if_we_don_t_get_agi_by_gpt_7_1t_will_we_just_never_get_it_sholto_douglas_trenton/) | [🔍](/transcripts/dwarkesh/95_if_we_don_t_get_agi_by_gpt_7_1t_will_we_just_never_get_it_sholto_douglas_trenton.analysis/) | [▶](https://www.youtube.com/watch?v=WpGqsKR26Cw) |
+| 96 | Distinction between small & large models will go away – Sholto Douglas & Tren... | [📄](/transcripts/dwarkesh/96_distinction_between_small_large_models_will_go_away_sholto_douglas_trenton_brick/) | [🔍](/transcripts/dwarkesh/96_distinction_between_small_large_models_will_go_away_sholto_douglas_trenton_brick.analysis/) | [▶](https://www.youtube.com/watch?v=AOt0GwY8IvU) |
+| 97 | Hitler put Russians on Death Ground - Sarah Paine | [📄](/transcripts/dwarkesh/97_hitler_put_russians_on_death_ground_sarah_paine/) | [🔍](/transcripts/dwarkesh/97_hitler_put_russians_on_death_ground_sarah_paine.analysis/) | [▶](https://www.youtube.com/watch?v=X3tuS9bgBfo) |
+| 98 | AI progress is about to rapidly accelerate in 2025 – Sholto Douglas & Trenton... | [📄](/transcripts/dwarkesh/98_ai_progress_is_about_to_rapidly_accelerate_in_2025_sholto_douglas_trenton_bricke/) | [🔍](/transcripts/dwarkesh/98_ai_progress_is_about_to_rapidly_accelerate_in_2025_sholto_douglas_trenton_bricke.analysis/) | [▶](https://www.youtube.com/watch?v=UeI29-AdhQI) |
+| 99 | How They Became Leading AI Researchers in Just 1 Year – Sholto Douglas & Tren... | [📄](/transcripts/dwarkesh/99_how_they_became_leading_ai_researchers_in_just_1_year_sholto_douglas_trenton_bri/) | [🔍](/transcripts/dwarkesh/99_how_they_became_leading_ai_researchers_in_just_1_year_sholto_douglas_trenton_bri.analysis/) | [▶](https://www.youtube.com/watch?v=cPu3SecmgUU) |
+| 100 | Sholto Douglas & Trenton Bricken — How LLMs actually think | [📄](/transcripts/dwarkesh/100_sholto_douglas_trenton_bricken_how_llms_actually_think/) | [🔍](/transcripts/dwarkesh/100_sholto_douglas_trenton_bricken_how_llms_actually_think.analysis/) | [▶](https://www.youtube.com/watch?v=UTuuTTnjxMQ) |
+| 101 | Why America Failed In Afghanistan \| Sarah Paine | [📄](/transcripts/dwarkesh/101_why_america_failed_in_afghanistan_sarah_paine/) | [🔍](/transcripts/dwarkesh/101_why_america_failed_in_afghanistan_sarah_paine.analysis/) | [▶](https://www.youtube.com/watch?v=xkxy5zo2kJ8) |
+| 102 | What a GPT-7 Intelligence Explosion Looks Like \| Carl Shulman | [📄](/transcripts/dwarkesh/102_what_a_gpt_7_intelligence_explosion_looks_like_carl_shulman/) | [🔍](/transcripts/dwarkesh/102_what_a_gpt_7_intelligence_explosion_looks_like_carl_shulman.analysis/) | [▶](https://www.youtube.com/watch?v=D_WsPbdJKUg) |
+| 103 | Sarah Paine – Maritime vs Continental Powers | [📄](/transcripts/dwarkesh/103_sarah_paine_maritime_vs_continental_powers/) | [🔍](/transcripts/dwarkesh/103_sarah_paine_maritime_vs_continental_powers.analysis/) | [▶](https://www.youtube.com/watch?v=oEahPLq1qBU) |
+| 104 | How Much Will China Risk for Taiwan? – Sarah Paine (Naval War College) | [📄](/transcripts/dwarkesh/104_how_much_will_china_risk_for_taiwan_sarah_paine_naval_war_college/) | [🔍](/transcripts/dwarkesh/104_how_much_will_china_risk_for_taiwan_sarah_paine_naval_war_college.analysis/) | [▶](https://www.youtube.com/watch?v=qSTuahfAZf0) |
+| 105 | Everyone Was Wrong About Intelligence – Dario Amodei (Anthropic CEO) | [📄](/transcripts/dwarkesh/105_everyone_was_wrong_about_intelligence_dario_amodei_anthropic_ceo/) | [🔍](/transcripts/dwarkesh/105_everyone_was_wrong_about_intelligence_dario_amodei_anthropic_ceo.analysis/) | [▶](https://www.youtube.com/watch?v=4hiXbxUnWd8) |
+| 106 | Are We On Path Towards Superhuman Intelligence? – Dario Amodei (Anthropic CEO) | [📄](/transcripts/dwarkesh/106_are_we_on_path_towards_superhuman_intelligence_dario_amodei_anthropic_ceo/) | [🔍](/transcripts/dwarkesh/106_are_we_on_path_towards_superhuman_intelligence_dario_amodei_anthropic_ceo.analysis/) | [▶](https://www.youtube.com/watch?v=wo4o09lKAQQ) |
+| 107 | How Did Dario & Ilya Know LLMs Could Lead to AGI? | [📄](/transcripts/dwarkesh/107_how_did_dario_ilya_know_llms_could_lead_to_agi/) | [🔍](/transcripts/dwarkesh/107_how_did_dario_ilya_know_llms_could_lead_to_agi.analysis/) | [▶](https://www.youtube.com/watch?v=Iq4YStiGADs) |
+| 108 | The AI Field is Acting Crazy – Demis Hassabis (Google DeepMind CEO) | [📄](/transcripts/dwarkesh/108_the_ai_field_is_acting_crazy_demis_hassabis_google_deepmind_ceo/) | [🔍](/transcripts/dwarkesh/108_the_ai_field_is_acting_crazy_demis_hassabis_google_deepmind_ceo.analysis/) | [▶](https://www.youtube.com/watch?v=wJzwbY2CwZQ) |
+| 109 | Multimodality: The Next Big Step (Demis Hassabis - Google DeepMind CEO) | [📄](/transcripts/dwarkesh/109_multimodality_the_next_big_step_demis_hassabis_google_deepmind_ceo/) | [🔍](/transcripts/dwarkesh/109_multimodality_the_next_big_step_demis_hassabis_google_deepmind_ceo.analysis/) | [▶](https://www.youtube.com/watch?v=bFwWkyZ7yMo) |
+| 110 | Demis Hassabis — Scaling, superhuman AIs, AlphaZero atop LLMs, AlphaFold | [📄](/transcripts/dwarkesh/110_demis_hassabis_scaling_superhuman_ais_alphazero_atop_llms_alphafold/) | [🔍](/transcripts/dwarkesh/110_demis_hassabis_scaling_superhuman_ais_alphazero_atop_llms_alphafold.analysis/) | [▶](https://www.youtube.com/watch?v=qTogNUV3CAI) |
+| 111 | The Fastest Way to AGI: LLMs + Tree Search – Demis Hassabis (Google DeepMind ... | [📄](/transcripts/dwarkesh/111_the_fastest_way_to_agi_llms_tree_search_demis_hassabis_google_deepmind_ceo/) | [🔍](/transcripts/dwarkesh/111_the_fastest_way_to_agi_llms_tree_search_demis_hassabis_google_deepmind_ceo.analysis/) | [▶](https://www.youtube.com/watch?v=eqXfhejDeqA) |
+| 112 | Scaling LLMs further is an artform - Demis Hassabis (Google DeepMind CEO) | [📄](/transcripts/dwarkesh/112_scaling_llms_further_is_an_artform_demis_hassabis_google_deepmind_ceo/) | [🔍](/transcripts/dwarkesh/112_scaling_llms_further_is_an_artform_demis_hassabis_google_deepmind_ceo.analysis/) | [▶](https://www.youtube.com/watch?v=666XgM38jJE) |
+| 113 | Patrick Collison’s Advice to 20-30 Year Olds: Don't Move to SF | [📄](/transcripts/dwarkesh/113_patrick_collison_s_advice_to_20_30_year_olds_don_t_move_to_sf/) | [🔍](/transcripts/dwarkesh/113_patrick_collison_s_advice_to_20_30_year_olds_don_t_move_to_sf.analysis/) | [▶](https://www.youtube.com/watch?v=XrFIKOle0n8) |
+| 114 | Patrick Collison — Why Silicon Valley's most talented should leave | [📄](/transcripts/dwarkesh/114_patrick_collison_why_silicon_valley_s_most_talented_should_leave/) | [🔍](/transcripts/dwarkesh/114_patrick_collison_why_silicon_valley_s_most_talented_should_leave.analysis/) | [▶](https://www.youtube.com/watch?v=WU-lBOAS1VQ) |
+| 115 | Tyler Cowen — Hayek, Keynes, & Smith on AI, animal spirits, anarchy, & growth | [📄](/transcripts/dwarkesh/115_tyler_cowen_hayek_keynes_smith_on_ai_animal_spirits_anarchy_growth/) | [🔍](/transcripts/dwarkesh/115_tyler_cowen_hayek_keynes_smith_on_ai_animal_spirits_anarchy_growth.analysis/) | [▶](https://www.youtube.com/watch?v=EY2nbAVZB-k) |
+| 116 | AGI by 2028 - Shane Legg (DeepMind Founder) | [📄](/transcripts/dwarkesh/116_agi_by_2028_shane_legg_deepmind_founder/) | [🔍](/transcripts/dwarkesh/116_agi_by_2028_shane_legg_deepmind_founder.analysis/) | [▶](https://www.youtube.com/watch?v=N84ZntqkO4I) |
+| 117 | Why OpenAI gave up on robotics - Ilya Sutskever (OpenAI Chief Scientist) | [📄](/transcripts/dwarkesh/117_why_openai_gave_up_on_robotics_ilya_sutskever_openai_chief_scientist/) | [🔍](/transcripts/dwarkesh/117_why_openai_gave_up_on_robotics_ilya_sutskever_openai_chief_scientist.analysis/) | [▶](https://www.youtube.com/watch?v=7tL1Jy_b_3Y) |
+| 118 | Why next-token prediction is enough for AGI - Ilya Sutskever (OpenAI Chief Sc... | [📄](/transcripts/dwarkesh/118_why_next_token_prediction_is_enough_for_agi_ilya_sutskever_openai_chief_scientis/) | [🔍](/transcripts/dwarkesh/118_why_next_token_prediction_is_enough_for_agi_ilya_sutskever_openai_chief_scientis.analysis/) | [▶](https://www.youtube.com/watch?v=YEUclZdj_Sc) |
+| 119 | Will an AI smart enough to win math competitions be AGI? (Grant Sanderson @3b... | [📄](/transcripts/dwarkesh/119_will_an_ai_smart_enough_to_win_math_competitions_be_agi_grant_sanderson_3blue1br/) | [🔍](/transcripts/dwarkesh/119_will_an_ai_smart_enough_to_win_math_competitions_be_agi_grant_sanderson_3blue1br.analysis/) | [▶](https://www.youtube.com/watch?v=GnMPfCFp6TA) |
+| 120 | Where should society allocate mathematicians? (Grant Sanderson @3Blue1Brown) | [📄](/transcripts/dwarkesh/120_where_should_society_allocate_mathematicians_grant_sanderson_3blue1brown/) | [🔍](/transcripts/dwarkesh/120_where_should_society_allocate_mathematicians_grant_sanderson_3blue1brown.analysis/) | [▶](https://www.youtube.com/watch?v=BHjtXKBzbF0) |
+| 121 | Jung Chang (Wild Swans author) — Living through history's largest man-made fa... | [📄](/transcripts/dwarkesh/121_jung_chang_wild_swans_author_living_through_history_s_largest_man_made_famine/) | [🔍](/transcripts/dwarkesh/121_jung_chang_wild_swans_author_living_through_history_s_largest_man_made_famine.analysis/) | [▶](https://www.youtube.com/watch?v=-VeZp2d7mDs) |
+| 122 | Andrew Roberts — Why Hitler lost WWII, Churchill as applied historian, & Napo... | [📄](/transcripts/dwarkesh/122_andrew_roberts_why_hitler_lost_wwii_churchill_as_applied_historian_napoleon_as_s/) | [🔍](/transcripts/dwarkesh/122_andrew_roberts_why_hitler_lost_wwii_churchill_as_applied_historian_napoleon_as_s.analysis/) | [▶](https://www.youtube.com/watch?v=tM9ZMYUYhTk) |
+| 123 | Dominic Cummings — Inside the collapse of western government | [📄](/transcripts/dwarkesh/123_dominic_cummings_inside_the_collapse_of_western_government/) | [🔍](/transcripts/dwarkesh/123_dominic_cummings_inside_the_collapse_of_western_government.analysis/) | [▶](https://www.youtube.com/watch?v=3i7ym_Qh7BA) |
+| 124 | Paul Christiano — Preventing an AI takeover | [📄](/transcripts/dwarkesh/124_paul_christiano_preventing_an_ai_takeover/) | [🔍](/transcripts/dwarkesh/124_paul_christiano_preventing_an_ai_takeover.analysis/) | [▶](https://www.youtube.com/watch?v=9AAhTLa0dT0) |
+| 125 | Shane Legg (DeepMind Founder) — 2028 AGI, superhuman alignment, new architect... | [📄](/transcripts/dwarkesh/125_shane_legg_deepmind_founder_2028_agi_superhuman_alignment_new_architectures/) | [🔍](/transcripts/dwarkesh/125_shane_legg_deepmind_founder_2028_agi_superhuman_alignment_new_architectures.analysis/) | [▶](https://www.youtube.com/watch?v=Kc1atfJkiJU) |
+| 126 | Grant Sanderson (@3blue1brown) — Past, present, & future of mathematics | [📄](/transcripts/dwarkesh/126_grant_sanderson_3blue1brown_past_present_future_of_mathematics/) | [🔍](/transcripts/dwarkesh/126_grant_sanderson_3blue1brown_past_present_future_of_mathematics.analysis/) | [▶](https://www.youtube.com/watch?v=oDyviiN4NVo) |
+| 129 | Sarah C. M. Paine — Why dictators keep making the same fatal mistake | [📄](/transcripts/dwarkesh/129_sarah_c_m_paine_why_dictators_keep_making_the_same_fatal_mistake/) | [🔍](/transcripts/dwarkesh/129_sarah_c_m_paine_why_dictators_keep_making_the_same_fatal_mistake.analysis/) | [▶](https://www.youtube.com/watch?v=YcVSgYz5SJ8) |
+| 130 | What if the Third Reich survived WW2? | [📄](/transcripts/dwarkesh/130_what_if_the_third_reich_survived_ww2/) | [🔍](/transcripts/dwarkesh/130_what_if_the_third_reich_survived_ww2.analysis/) | [▶](https://www.youtube.com/watch?v=uxRf4JLbQGc) |
+| 131 | Why Microsoft paid $7.5 billion for GitHub (Nat Friedman) | [📄](/transcripts/dwarkesh/131_why_microsoft_paid_7_5_billion_for_github_nat_friedman/) | [🔍](/transcripts/dwarkesh/131_why_microsoft_paid_7_5_billion_for_github_nat_friedman.analysis/) | [▶](https://www.youtube.com/watch?v=vwbXiITmxTU) |
+| 132 | Dario Amodei (Anthropic CEO) — The hidden pattern behind every AI breakthrough | [📄](/transcripts/dwarkesh/132_dario_amodei_anthropic_ceo_the_hidden_pattern_behind_every_ai_breakthrough/) | [🔍](/transcripts/dwarkesh/132_dario_amodei_anthropic_ceo_the_hidden_pattern_behind_every_ai_breakthrough.analysis/) | [▶](https://www.youtube.com/watch?v=Nlkk3glap_U) |
+| 133 | Andy Matuschak — The reason most learning tools fail | [📄](/transcripts/dwarkesh/133_andy_matuschak_the_reason_most_learning_tools_fail/) | [🔍](/transcripts/dwarkesh/133_andy_matuschak_the_reason_most_learning_tools_fail.analysis/) | [▶](https://www.youtube.com/watch?v=dmeRQN9z504) |
+| 134 | Carl Shulman (Pt 2) — AI Takeover, bio & cyber attacks, detecting deception, ... | [📄](/transcripts/dwarkesh/134_carl_shulman_pt_2_ai_takeover_bio_cyber_attacks_detecting_deception_humanity_s_f/) | [🔍](/transcripts/dwarkesh/134_carl_shulman_pt_2_ai_takeover_bio_cyber_attacks_detecting_deception_humanity_s_f.analysis/) | [▶](https://www.youtube.com/watch?v=KUieFuV1fuo) |
+| 135 | Carl Shulman (Pt 1) — Intelligence explosion, primate evolution, robot doubli... | [📄](/transcripts/dwarkesh/135_carl_shulman_pt_1_intelligence_explosion_primate_evolution_robot_doublings_align/) | [🔍](/transcripts/dwarkesh/135_carl_shulman_pt_1_intelligence_explosion_primate_evolution_robot_doublings_align.analysis/) | [▶](https://www.youtube.com/watch?v=_kRg-ZP1vQc) |
+| 136 | Richard Rhodes — The making of the atomic bomb | [📄](/transcripts/dwarkesh/136_richard_rhodes_the_making_of_the_atomic_bomb/) | [🔍](/transcripts/dwarkesh/136_richard_rhodes_the_making_of_the_atomic_bomb.analysis/) | [▶](https://www.youtube.com/watch?v=tMdMiYsfHKo) |
+| 137 | Eliezer Yudkowsky — Why AI will kill us, aligning LLMs, nature of intelligenc... | [📄](/transcripts/dwarkesh/137_eliezer_yudkowsky_why_ai_will_kill_us_aligning_llms_nature_of_intelligence_scifi/) | [🔍](/transcripts/dwarkesh/137_eliezer_yudkowsky_why_ai_will_kill_us_aligning_llms_nature_of_intelligence_scifi.analysis/) | [▶](https://www.youtube.com/watch?v=41SUp-TRVlg) |
+| 138 | Ilya Sutskever (OpenAI Chief Scientist) — Why next-token prediction could sur... | [📄](/transcripts/dwarkesh/138_ilya_sutskever_openai_chief_scientist_why_next_token_prediction_could_surpass_hu/) | [🔍](/transcripts/dwarkesh/138_ilya_sutskever_openai_chief_scientist_why_next_token_prediction_could_surpass_hu.analysis/) | [▶](https://www.youtube.com/watch?v=Yf1o0TQzry8) |
+| 139 | Nat Friedman (Github CEO) — Reading ancient scrolls, open source, & AI | [📄](/transcripts/dwarkesh/139_nat_friedman_github_ceo_reading_ancient_scrolls_open_source_ai/) | [🔍](/transcripts/dwarkesh/139_nat_friedman_github_ceo_reading_ancient_scrolls_open_source_ai.analysis/) | [▶](https://www.youtube.com/watch?v=qcvMjoJdck4) |
+| 140 | Brett Harrison — FTX US former president speaks out | [📄](/transcripts/dwarkesh/140_brett_harrison_ftx_us_former_president_speaks_out/) | [🔍](/transcripts/dwarkesh/140_brett_harrison_ftx_us_former_president_speaks_out.analysis/) | [▶](https://www.youtube.com/watch?v=yXgDlIlB93A) |
+| 141 | Marc Andreessen — AI, crypto, 1000 Elon Musks, regrets, vulnerabilities, & ma... | [📄](/transcripts/dwarkesh/141_marc_andreessen_ai_crypto_1000_elon_musks_regrets_vulnerabilities_managerial_rev/) | [🔍](/transcripts/dwarkesh/141_marc_andreessen_ai_crypto_1000_elon_musks_regrets_vulnerabilities_managerial_rev.analysis/) | [▶](https://www.youtube.com/watch?v=Ky716GmFnWg) |
+| 142 | Garett Jones — Immigration, national IQ, & less democracy | [📄](/transcripts/dwarkesh/142_garett_jones_immigration_national_iq_less_democracy/) | [🔍](/transcripts/dwarkesh/142_garett_jones_immigration_national_iq_less_democracy.analysis/) | [▶](https://www.youtube.com/watch?v=PoMjYIbKbJE) |
+| 143 | Lars Doucet — Progress, poverty, Georgism, & why rent is too damn high | [📄](/transcripts/dwarkesh/143_lars_doucet_progress_poverty_georgism_why_rent_is_too_damn_high/) | [🔍](/transcripts/dwarkesh/143_lars_doucet_progress_poverty_georgism_why_rent_is_too_damn_high.analysis/) | [▶](https://www.youtube.com/watch?v=sL-qkv7Pzxo) |
+| 144 | Holden Karnofsky — History's most important century | [📄](/transcripts/dwarkesh/144_holden_karnofsky_history_s_most_important_century/) | [🔍](/transcripts/dwarkesh/144_holden_karnofsky_history_s_most_important_century.analysis/) | [▶](https://www.youtube.com/watch?v=UckqpcOu5SY) |
+| 145 | Bethany McLean — Enron, FTX, 2008, Musk, frauds, & visionaries | [📄](/transcripts/dwarkesh/145_bethany_mclean_enron_ftx_2008_musk_frauds_visionaries/) | [🔍](/transcripts/dwarkesh/145_bethany_mclean_enron_ftx_2008_musk_frauds_visionaries.analysis/) | [▶](https://www.youtube.com/watch?v=m3oM69YHLeo) |
+| 146 | Nadia Asparouhova — Tech elites, democracy, open source, & philanthropy | [📄](/transcripts/dwarkesh/146_nadia_asparouhova_tech_elites_democracy_open_source_philanthropy/) | [🔍](/transcripts/dwarkesh/146_nadia_asparouhova_tech_elites_democracy_open_source_philanthropy.analysis/) | [▶](https://www.youtube.com/watch?v=nvL3vqMzznY) |
+| 147 | Byrne Hobart - FTX, Drugs, Twitter, Taiwan, & Monasticism | [📄](/transcripts/dwarkesh/147_byrne_hobart_ftx_drugs_twitter_taiwan_monasticism/) | [🔍](/transcripts/dwarkesh/147_byrne_hobart_ftx_drugs_twitter_taiwan_monasticism.analysis/) | [▶](https://www.youtube.com/watch?v=9P2rk0Gtd0I) |
+| 148 | Edward Glaeser - Cities, Terrorism, Housing, & Remote Work | [📄](/transcripts/dwarkesh/148_edward_glaeser_cities_terrorism_housing_remote_work/) | [🔍](/transcripts/dwarkesh/148_edward_glaeser_cities_terrorism_housing_remote_work.analysis/) | [▶](https://www.youtube.com/watch?v=MpttoDJ3pH8) |
+| 149 | Kenneth T. Jackson - Robert Moses, Hero of New York? | [📄](/transcripts/dwarkesh/149_kenneth_t_jackson_robert_moses_hero_of_new_york/) | [🔍](/transcripts/dwarkesh/149_kenneth_t_jackson_robert_moses_hero_of_new_york.analysis/) | [▶](https://www.youtube.com/watch?v=Gumo8zmgLqM) |
+| 150 | Brian Potter - Future of Construction, Ugly Modernism, & Environmental Review | [📄](/transcripts/dwarkesh/150_brian_potter_future_of_construction_ugly_modernism_environmental_review/) | [🔍](/transcripts/dwarkesh/150_brian_potter_future_of_construction_ugly_modernism_environmental_review.analysis/) | [▶](https://www.youtube.com/watch?v=m9ErXK5h-oU) |
+| 151 | Bryan Caplan - Feminists, Billionaires, and Demagogues | [📄](/transcripts/dwarkesh/151_bryan_caplan_feminists_billionaires_and_demagogues/) | [🔍](/transcripts/dwarkesh/151_bryan_caplan_feminists_billionaires_and_demagogues.analysis/) | [▶](https://www.youtube.com/watch?v=jmWmrx6ki9Q) |
+| 152 | Tyler Cowen - Why Society Will Collapse & Why Sex is Pessimistic | [📄](/transcripts/dwarkesh/152_tyler_cowen_why_society_will_collapse_why_sex_is_pessimistic/) | [🔍](/transcripts/dwarkesh/152_tyler_cowen_why_society_will_collapse_why_sex_is_pessimistic.analysis/) | [▶](https://www.youtube.com/watch?v=AHkmEnl55jo) |
+| 153 | Charles C. Mann - Americas Before Columbus & Scientific Wizardry | [📄](/transcripts/dwarkesh/153_charles_c_mann_americas_before_columbus_scientific_wizardry/) | [🔍](/transcripts/dwarkesh/153_charles_c_mann_americas_before_columbus_scientific_wizardry.analysis/) | [▶](https://www.youtube.com/watch?v=1Z35PqPQU2M) |
+| 154 | Austin Vernon - Energy Superabundance, Starship Missiles, & Finding Alpha | [📄](/transcripts/dwarkesh/154_austin_vernon_energy_superabundance_starship_missiles_finding_alpha/) | [🔍](/transcripts/dwarkesh/154_austin_vernon_energy_superabundance_starship_missiles_finding_alpha.analysis/) | [▶](https://www.youtube.com/watch?v=YSgfu7XprIM) |
+| 155 | Steve Hsu - Intelligence, Embryo Selection, & The Future of Humanity | [📄](/transcripts/dwarkesh/155_steve_hsu_intelligence_embryo_selection_the_future_of_humanity/) | [🔍](/transcripts/dwarkesh/155_steve_hsu_intelligence_embryo_selection_the_future_of_humanity.analysis/) | [▶](https://www.youtube.com/watch?v=80BhjRh-Q-s) |
+| 156 | Will MacAskill - Longtermism, Effective Altruism, History, & Technology | [📄](/transcripts/dwarkesh/156_will_macaskill_longtermism_effective_altruism_history_technology/) | [🔍](/transcripts/dwarkesh/156_will_macaskill_longtermism_effective_altruism_history_technology.analysis/) | [▶](https://www.youtube.com/watch?v=SMEfl5maB8k) |
+| 157 | Joseph Carlsmith - Utopia, AI, & Infinite Ethics | [📄](/transcripts/dwarkesh/157_joseph_carlsmith_utopia_ai_infinite_ethics/) | [🔍](/transcripts/dwarkesh/157_joseph_carlsmith_utopia_ai_infinite_ethics.analysis/) | [▶](https://www.youtube.com/watch?v=M3TUe4zUCKk) |
+| 158 | Fin Moorhouse - Longtermism, Space, & Entrepreneurship | [📄](/transcripts/dwarkesh/158_fin_moorhouse_longtermism_space_entrepreneurship/) | [🔍](/transcripts/dwarkesh/158_fin_moorhouse_longtermism_space_entrepreneurship.analysis/) | [▶](https://www.youtube.com/watch?v=snMWoyvmkhg) |
+| 159 | Alexander Mikaberidze - Napoleon, War, Progress, and Global Order | [📄](/transcripts/dwarkesh/159_alexander_mikaberidze_napoleon_war_progress_and_global_order/) | [🔍](/transcripts/dwarkesh/159_alexander_mikaberidze_napoleon_war_progress_and_global_order.analysis/) | [▶](https://www.youtube.com/watch?v=E65CHSV6Ads) |
+| 160 | Sam Bankman-Fried - Crypto, FTX, Altruism, & Leadership | [📄](/transcripts/dwarkesh/160_sam_bankman_fried_crypto_ftx_altruism_leadership/) | [🔍](/transcripts/dwarkesh/160_sam_bankman_fried_crypto_ftx_altruism_leadership.analysis/) | [▶](https://www.youtube.com/watch?v=5Af0d2DbK5w) |
+| 161 | Agustin Lebron - Trading, Crypto, and Adverse Selection | [📄](/transcripts/dwarkesh/161_agustin_lebron_trading_crypto_and_adverse_selection/) | [🔍](/transcripts/dwarkesh/161_agustin_lebron_trading_crypto_and_adverse_selection.analysis/) | [▶](https://www.youtube.com/watch?v=3BBNG0TlVwM) |
+| 162 | Ananyo Bhattacharya - John von Neumann, Jewish Genius, and Nuclear War | [📄](/transcripts/dwarkesh/162_ananyo_bhattacharya_john_von_neumann_jewish_genius_and_nuclear_war/) | [🔍](/transcripts/dwarkesh/162_ananyo_bhattacharya_john_von_neumann_jewish_genius_and_nuclear_war.analysis/) | [▶](https://www.youtube.com/watch?v=faZI6OBOopE) |
+| 163 | Manifold Markets Founder - Predictions Markets & Revolutionizing Governance | [📄](/transcripts/dwarkesh/163_manifold_markets_founder_predictions_markets_revolutionizing_governance/) | [🔍](/transcripts/dwarkesh/163_manifold_markets_founder_predictions_markets_revolutionizing_governance.analysis/) | [▶](https://www.youtube.com/watch?v=XoRXrnHg084) |
+| 164 | Pradyu Prasad - Imperial Japan, the God Emperor, and Militarization in the Mo... | [📄](/transcripts/dwarkesh/164_pradyu_prasad_imperial_japan_the_god_emperor_and_militarization_in_the_modern_wo/) | [🔍](/transcripts/dwarkesh/164_pradyu_prasad_imperial_japan_the_god_emperor_and_militarization_in_the_modern_wo.analysis/) | [▶](https://www.youtube.com/watch?v=rsJxlybPByM) |
+| 165 | Razib Khan - Genomics, Intelligence, and The Church of Science | [📄](/transcripts/dwarkesh/165_razib_khan_genomics_intelligence_and_the_church_of_science/) | [🔍](/transcripts/dwarkesh/165_razib_khan_genomics_intelligence_and_the_church_of_science.analysis/) | [▶](https://www.youtube.com/watch?v=sh04dEtBAoE) |
+| 166 | Jimmy Soni - Peter Thiel, Elon Musk, and the Paypal Mafia | [📄](/transcripts/dwarkesh/166_jimmy_soni_peter_thiel_elon_musk_and_the_paypal_mafia/) | [🔍](/transcripts/dwarkesh/166_jimmy_soni_peter_thiel_elon_musk_and_the_paypal_mafia.analysis/) | [▶](https://www.youtube.com/watch?v=OEcOUgXvz7g) |
+| 167 | Bryan Caplan - Labor Econ, Poverty, & Mental Illness | [📄](/transcripts/dwarkesh/167_bryan_caplan_labor_econ_poverty_mental_illness/) | [🔍](/transcripts/dwarkesh/167_bryan_caplan_labor_econ_poverty_mental_illness.analysis/) | [▶](https://www.youtube.com/watch?v=i70j-ZCPhXg) |
+| 168 | Richard Hanania - Foreign Policy, Fertility, and Experts | [📄](/transcripts/dwarkesh/168_richard_hanania_foreign_policy_fertility_and_experts/) | [🔍](/transcripts/dwarkesh/168_richard_hanania_foreign_policy_fertility_and_experts.analysis/) | [▶](https://www.youtube.com/watch?v=QyWs-XomCk0) |
+| 169 | David Deutsch - AI, America, Fun, & Bayes | [📄](/transcripts/dwarkesh/169_david_deutsch_ai_america_fun_bayes/) | [🔍](/transcripts/dwarkesh/169_david_deutsch_ai_america_fun_bayes.analysis/) | [▶](https://www.youtube.com/watch?v=EVwjofV5TgU) |
+| 170 | Byrne Hobart - Optionality, Stagnation, and Secret Societies | [📄](/transcripts/dwarkesh/170_byrne_hobart_optionality_stagnation_and_secret_societies/) | [🔍](/transcripts/dwarkesh/170_byrne_hobart_optionality_stagnation_and_secret_societies.analysis/) | [▶](https://www.youtube.com/watch?v=ZI_tDsOhd5I) |
+| 171 | David Friedman - Dating Markets, Legal Systems, Bitcoin, and Automation | [📄](/transcripts/dwarkesh/171_david_friedman_dating_markets_legal_systems_bitcoin_and_automation/) | [🔍](/transcripts/dwarkesh/171_david_friedman_dating_markets_legal_systems_bitcoin_and_automation.analysis/) | [▶](https://www.youtube.com/watch?v=3svashDgB50) |
+| 172 | Sarah Fitz-Claridge - Taking Children Seriously \| The Lunar Society #15 | [📄](/transcripts/dwarkesh/172_sarah_fitz_claridge_taking_children_seriously_the_lunar_society_15/) | [🔍](/transcripts/dwarkesh/172_sarah_fitz_claridge_taking_children_seriously_the_lunar_society_15.analysis/) | [▶](https://www.youtube.com/watch?v=BV6Qice6Lrc) |
+| 174 | Uncle Bob - The Long Reach of Code, Automating Programming, and Developing Co... | [📄](/transcripts/dwarkesh/174_uncle_bob_the_long_reach_of_code_automating_programming_and_developing_coding_ta/) | [🔍](/transcripts/dwarkesh/174_uncle_bob_the_long_reach_of_code_automating_programming_and_developing_coding_ta.analysis/) | [▶](https://www.youtube.com/watch?v=ldTPVd3vO9Q) |
+| 175 | Scott Aaronson - Quantum Computing, Complexity, and Creativity | [📄](/transcripts/dwarkesh/175_scott_aaronson_quantum_computing_complexity_and_creativity/) | [🔍](/transcripts/dwarkesh/175_scott_aaronson_quantum_computing_complexity_and_creativity.analysis/) | [▶](https://www.youtube.com/watch?v=Uy5fvwdw8x4) |
+| 176 | Scott Young - Ultralearning, The MIT Challenge | [📄](/transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge/) | [🔍](/transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge.analysis/) | [▶](https://www.youtube.com/watch?v=R5sBycV80c8) |
+| 177 | Charles Murray - Human Accomplishment and the Future of Liberty \| The Lunar ... | [📄](/transcripts/dwarkesh/177_charles_murray_human_accomplishment_and_the_future_of_liberty_the_lunar_society_/) | [🔍](/transcripts/dwarkesh/177_charles_murray_human_accomplishment_and_the_future_of_liberty_the_lunar_society_.analysis/) | [▶](https://www.youtube.com/watch?v=yYtyKmPZBto) |
+| 178 | Alex Tabarrok - Prizes, Prices, and Public Goods | [📄](/transcripts/dwarkesh/178_alex_tabarrok_prizes_prices_and_public_goods/) | [🔍](/transcripts/dwarkesh/178_alex_tabarrok_prizes_prices_and_public_goods.analysis/) | [▶](https://www.youtube.com/watch?v=i75KvXVrtLw) |
+| 179 | Caleb Watney - America's Innovation Engine | [📄](/transcripts/dwarkesh/179_caleb_watney_america_s_innovation_engine/) | [🔍](/transcripts/dwarkesh/179_caleb_watney_america_s_innovation_engine.analysis/) | [▶](https://www.youtube.com/watch?v=Ayewh_O0LPQ) |
+| 180 | Robin Hanson - The Long View and The Elephant in the Brain | [📄](/transcripts/dwarkesh/180_robin_hanson_the_long_view_and_the_elephant_in_the_brain/) | [🔍](/transcripts/dwarkesh/180_robin_hanson_the_long_view_and_the_elephant_in_the_brain.analysis/) | [▶](https://www.youtube.com/watch?v=aagyRGKv66g) |
+| 181 | Jason Crawford - The Roots of Progress & the History of Technology | [📄](/transcripts/dwarkesh/181_jason_crawford_the_roots_of_progress_the_history_of_technology/) | [🔍](/transcripts/dwarkesh/181_jason_crawford_the_roots_of_progress_the_history_of_technology.analysis/) | [▶](https://www.youtube.com/watch?v=otyrj5SnS4I) |
+| 183 | Tyler Cowen - The Great Reset | [📄](/transcripts/dwarkesh/183_tyler_cowen_the_great_reset/) | [🔍](/transcripts/dwarkesh/183_tyler_cowen_the_great_reset.analysis/) | [▶](https://www.youtube.com/watch?v=ayUZreGysTo) |
+| 184 | Bryan Caplan - Nurturing Orphaned Ideas, Education, and UBI | [📄](/transcripts/dwarkesh/184_bryan_caplan_nurturing_orphaned_ideas_education_and_ubi/) | [🔍](/transcripts/dwarkesh/184_bryan_caplan_nurturing_orphaned_ideas_education_and_ubi.analysis/) | [▶](https://www.youtube.com/watch?v=r4AkTmqvWzM) |
+| 185 | Rubik's Cube Encryption Demo | [📄](/transcripts/dwarkesh/185_rubik_s_cube_encryption_demo/) | [🔍](/transcripts/dwarkesh/185_rubik_s_cube_encryption_demo.analysis/) | [▶](https://www.youtube.com/watch?v=fAaxahG39Dk) |
+| 2025 | 2025 models will be more like coworkers than search engines – OpenAI cofounde... | [📄](/transcripts/dwarkesh/2025_2025_models_will_be_more_like_coworkers_than_search_engines_openai_cofounder_joh/) | [🔍](/transcripts/dwarkesh/2025_2025_models_will_be_more_like_coworkers_than_search_engines_openai_cofounder_joh.analysis/) | [▶](https://www.youtube.com/watch?v=1fmcdz2EO_c) |
+
+---
+
+*Generated: 2026-02-20 · [Back to Home](/paper_reading/)*

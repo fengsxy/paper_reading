@@ -1,9 +1,13 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 6
-title: Ilya Sutskever – We're moving from the age of scaling to the age of research
-source_url: https://www.youtube.com/watch?v=aR20FWCCjAs
+guest: ""
+title: "Ilya Sutskever – We're moving from the age of scaling to the age of research"
+source_url: "https://www.youtube.com/watch?v=aR20FWCCjAs"
+analysis_url: /transcripts/dwarkesh/6_ilya_sutskever_we_re_moving_from_the_age_of_scaling_to_the_age_of_research.analysis/
+permalink: /transcripts/dwarkesh/6_ilya_sutskever_we_re_moving_from_the_age_of_scaling_to_the_age_of_research/
 ---
 
 # Transcript: EP6 - Ilya Sutskever – We're moving from the age of scaling to the age of research

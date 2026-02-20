@@ -1,9 +1,13 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 9
-title: Andrej Karpathy — “We’re summoning ghosts, not building animals”
-source_url: https://www.youtube.com/watch?v=lXUZvyajciY
+guest: ""
+title: "Andrej Karpathy — “We’re summoning ghosts, not building animals”"
+source_url: "https://www.youtube.com/watch?v=lXUZvyajciY"
+analysis_url: /transcripts/dwarkesh/9_andrej_karpathy_we_re_summoning_ghosts_not_building_animals.analysis/
+permalink: /transcripts/dwarkesh/9_andrej_karpathy_we_re_summoning_ghosts_not_building_animals/
 ---
 
 # Transcript: EP9 - Andrej Karpathy — “We’re summoning ghosts, not building animals”

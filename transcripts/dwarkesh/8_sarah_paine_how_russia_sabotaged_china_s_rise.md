@@ -1,9 +1,13 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 8
-title: Sarah Paine — How Russia sabotaged China's rise
-source_url: https://www.youtube.com/watch?v=RH_ycZYH8-s
+guest: ""
+title: "Sarah Paine — How Russia sabotaged China's rise"
+source_url: "https://www.youtube.com/watch?v=RH_ycZYH8-s"
+analysis_url: /transcripts/dwarkesh/8_sarah_paine_how_russia_sabotaged_china_s_rise.analysis/
+permalink: /transcripts/dwarkesh/8_sarah_paine_how_russia_sabotaged_china_s_rise/
 ---
 
 # Transcript: EP8 - Sarah Paine — How Russia sabotaged China's rise

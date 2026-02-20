@@ -1,9 +1,13 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 5
-title: Sarah Paine – Why Russia Lost the Cold War
-source_url: https://www.youtube.com/watch?v=FdkpWrlR5zg
+guest: ""
+title: "Sarah Paine – Why Russia Lost the Cold War"
+source_url: "https://www.youtube.com/watch?v=FdkpWrlR5zg"
+analysis_url: /transcripts/dwarkesh/5_sarah_paine_why_russia_lost_the_cold_war.analysis/
+permalink: /transcripts/dwarkesh/5_sarah_paine_why_russia_lost_the_cold_war/
 ---
 
 # Transcript: EP5 - Sarah Paine – Why Russia Lost the Cold War

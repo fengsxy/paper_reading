@@ -1,9 +1,13 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 1
-title: Dario Amodei — “We are near the end of the exponential”
-source_url: https://www.youtube.com/watch?v=n1E9IZfvGMA
+guest: ""
+title: "Dario Amodei — “We are near the end of the exponential”"
+source_url: "https://www.youtube.com/watch?v=n1E9IZfvGMA"
+analysis_url: /transcripts/dwarkesh/1_dario_amodei_we_are_near_the_end_of_the_exponential.analysis/
+permalink: /transcripts/dwarkesh/1_dario_amodei_we_are_near_the_end_of_the_exponential/
 ---
 
 # Transcript: EP0 - Dario Amodei — “We are near the end of the exponential”

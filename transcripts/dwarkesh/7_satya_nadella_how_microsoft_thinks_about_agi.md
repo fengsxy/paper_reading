@@ -1,9 +1,13 @@
 ---
+layout: default
 type: transcript
 series: dwarkesh
 episode: 7
-title: Satya Nadella – How Microsoft thinks about AGI
-source_url: https://www.youtube.com/watch?v=8-boBsWcr5A
+guest: ""
+title: "Satya Nadella – How Microsoft thinks about AGI"
+source_url: "https://www.youtube.com/watch?v=8-boBsWcr5A"
+analysis_url: /transcripts/dwarkesh/7_satya_nadella_how_microsoft_thinks_about_agi.analysis/
+permalink: /transcripts/dwarkesh/7_satya_nadella_how_microsoft_thinks_about_agi/
 ---
 
 # Transcript: EP7 - Satya Nadella – How Microsoft thinks about AGI

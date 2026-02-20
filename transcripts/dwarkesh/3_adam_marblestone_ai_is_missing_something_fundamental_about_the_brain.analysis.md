@@ -1,9 +1,13 @@
 ---
+layout: default
 type: analysis
 series: dwarkesh
 episode: 3
-title: Adam Marblestone – AI is missing something fundamental about the brain
-source_url: https://www.youtube.com/watch?v=_9V_Hbe-N1A
+guest: ""
+title: "Adam Marblestone – AI is missing something fundamental about the brain"
+source_url: "https://www.youtube.com/watch?v=_9V_Hbe-N1A"
+transcript_url: /transcripts/dwarkesh/3_adam_marblestone_ai_is_missing_something_fundamental_about_the_brain/
+permalink: /transcripts/dwarkesh/3_adam_marblestone_ai_is_missing_something_fundamental_about_the_brain.analysis/
 ---
 
 # Analysis: EP3
