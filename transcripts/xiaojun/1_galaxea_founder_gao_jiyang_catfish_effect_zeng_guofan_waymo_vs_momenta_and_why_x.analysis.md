@@ -2,7 +2,7 @@
 type: analysis
 series: xiaojun
 episode: 1
-date: NA
+date: 2024-01-01
 guest: 高纪阳 (Gao Jiyang, GALAXEA/星海图创始人)
 title: "GALAXEA Founder Gao Jiyang: Catfish Effect, Zeng Guofan, Waymo vs. Momenta, and Why Xu Huazhe Left"
 source_url: https://www.youtube.com/watch?v=c-ZVu-Cr1FQ

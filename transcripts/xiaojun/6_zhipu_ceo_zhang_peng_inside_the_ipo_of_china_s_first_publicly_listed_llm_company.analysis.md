@@ -2,7 +2,7 @@
 type: analysis
 series: xiaojun
 episode: 6
-date: NA
+date: 2024-01-01
 guest: 张鹏 (Zhang Peng, 智谱AI CEO)
 title: "Zhipu CEO Zhang Peng: Inside the IPO of China's First Publicly Listed LLM Company"
 source_url: https://www.youtube.com/watch?v=toy8RLeFZ08

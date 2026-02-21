@@ -2,7 +2,7 @@
 type: analysis
 series: xiaojun
 episode: 27
-date: NA
+date: 2024-01-01
 guest: 
 title: "Kimi Founder Yang Zhilin: K2, Agentic LLMs, Brains in Vats, and the Beginning of Infinity"
 source_url: https://www.youtube.com/watch?v=91fmhAnECVc

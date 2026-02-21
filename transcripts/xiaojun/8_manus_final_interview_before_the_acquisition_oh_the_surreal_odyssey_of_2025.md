@@ -2,7 +2,7 @@
 type: transcript
 series: xiaojun
 episode: 8
-date: NA
+date: 2024-01-01
 guest: 
 title: "Manus' Final Interview Before the Acquisition: Oh, the Surreal Odyssey of 2025…"
 source_url: "https://www.youtube.com/watch?v=UqMtkgQe-kI"

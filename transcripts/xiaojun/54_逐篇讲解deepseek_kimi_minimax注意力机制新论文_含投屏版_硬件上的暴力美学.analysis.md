@@ -2,7 +2,7 @@
 type: analysis
 series: xiaojun
 episode: 54
-date: NA
+date: 2024-01-01
 guest: 
 title: 逐篇讲解DeepSeek、Kimi、MiniMax注意力机制新论文（含投屏版）——“硬件上的暴力美学”
 source_url: https://www.youtube.com/watch?v=VaDDCfggaJE

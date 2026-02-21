@@ -2,7 +2,7 @@
 type: transcript
 series: xiaojun
 episode: 3
-date: NA
+date: 2024-01-01
 guest: 
 title: "Yin Qi: On Chairing StepFun, the Seduction of Intelligence, and a Brutal Long-Horizon Game"
 source_url: "https://www.youtube.com/watch?v=gWmyu3x5rXY"

@@ -2,7 +2,7 @@
 type: transcript
 series: xiaojun
 episode: 22
-date: NA
+date: 2024-01-01
 guest: 
 title: Let’s Dive into Papers Together | 干货！开源一段论文探索之旅
 source_url: "https://www.youtube.com/watch?v=RUfeYhsundg"

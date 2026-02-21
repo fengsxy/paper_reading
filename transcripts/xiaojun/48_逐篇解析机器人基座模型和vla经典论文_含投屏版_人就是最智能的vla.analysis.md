@@ -2,7 +2,7 @@
 type: analysis
 series: xiaojun
 episode: 48
-date: NA
+date: 2024-01-01
 guest: 
 title: 逐篇解析机器人基座模型和VLA经典论文（含投屏版）——“人就是最智能的VLA”
 source_url: https://www.youtube.com/watch?v=eiQFomOuCJs

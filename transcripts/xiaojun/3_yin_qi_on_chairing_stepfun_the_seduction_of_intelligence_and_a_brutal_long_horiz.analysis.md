@@ -2,7 +2,7 @@
 type: analysis
 series: xiaojun
 episode: 3
-date: NA
+date: 2024-01-01
 guest: 印奇 (Yin Qi, 旷视科技董事长/阶跃星辰董事长)
 title: "Yin Qi: On Chairing StepFun, the Seduction of Intelligence, and a Brutal Long-Horizon Game"
 source_url: https://www.youtube.com/watch?v=gWmyu3x5rXY

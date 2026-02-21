@@ -2,7 +2,7 @@
 type: analysis
 series: xiaojun
 episode: 57
-date: NA
+date: 2024-01-01
 guest: 
 title: 逐篇讲解DeepSeek关键9篇论文及创新点（含投屏）——“勇敢者的游戏”
 source_url: https://www.youtube.com/watch?v=Hbmr1dJutnk

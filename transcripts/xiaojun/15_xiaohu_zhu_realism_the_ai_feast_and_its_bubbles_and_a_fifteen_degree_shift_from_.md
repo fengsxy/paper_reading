@@ -2,7 +2,7 @@
 type: transcript
 series: xiaojun
 episode: 15
-date: NA
+date: 2024-01-01
 guest: 
 title: "Xiaohu Zhu: Realism, the AI Feast and Its Bubbles, and a Fifteen-Degree Shift from Consensus"
 source_url: "https://www.youtube.com/watch?v=-sowOoOeQz4"
