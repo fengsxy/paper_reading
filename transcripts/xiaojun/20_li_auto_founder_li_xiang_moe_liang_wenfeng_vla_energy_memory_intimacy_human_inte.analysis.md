@@ -4,7 +4,7 @@ series: xiaojun
 episode: 20
 date: NA
 guest: 
-title: Li Auto Founder Li Xiang: MoE, Liang Wenfeng, VLA, Energy, Memory, Intimacy & Human Intelligence
+title: "Li Auto Founder Li Xiang: MoE, Liang Wenfeng, VLA, Energy, Memory, Intimacy & Human Intelligence"
 source_url: https://www.youtube.com/watch?v=HvMANU1yc0U
 ---
 

@@ -4,7 +4,7 @@ type: analysis
 series: dwarkesh
 episode: 10
 guest: ""
-title: ""I find it almost disturbing that the universe favors life this strongly" – Nick Lane - Analysis"
+title: 'I find it almost disturbing that the universe favors life this strongly - Nick Lane - Analysis'
 source_url: "https://www.youtube.com/watch?v=0GMWxuYuxJI"
 transcript_url: /transcripts/dwarkesh/10_i_find_it_almost_disturbing_that_the_universe_favors_life_this_strongly_nick_lan/
 permalink: /transcripts/dwarkesh/10_i_find_it_almost_disturbing_that_the_universe_favors_life_this_strongly_nick_lan.analysis/
