@@ -46,3 +46,6 @@ scripts/
 *.wav
 audio/
 data/audio/
+
+# Duplicate xiaojun files with NUMBER_NUMBER_ pattern
+transcripts/xiaojun/*_*_*.md
