@@ -36,3 +36,13 @@ data/audio/
 
 # Blog repo should not track pipeline code
 scripts/
+
+# Audio/video files (too large for git)
+*.mp3
+*.mp4
+*.webm
+*.webm.part
+*.ogg
+*.wav
+audio/
+data/audio/
