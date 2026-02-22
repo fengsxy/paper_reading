@@ -12,7 +12,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/151_bryan_caplan_feminists_billionaires_and_demagogues.analysis.md): Bryan Caplan: Feminists, Billionaires, and Demagogues — 分析 (+22 more) |
+| 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/174_uncle_bob_the_long_reach_of_code_automating_programming_and_developing_coding_ta.analysis.md): 分析：Uncle Bob - The Long Reach of Code, Automating Program... (+25 more) |
 | 2026-02-22 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+54 more) |
 | 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
 | 2026-02-22 | [Hacker News](hackernews/2026-02-22.md): Hacker News Digest - 2026-02-22 |
