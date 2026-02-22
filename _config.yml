@@ -8,3 +8,24 @@ plugins:
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+
+# Exclude non-site files from Jekyll processing
+exclude:
+  - AGENTS.md
+  - IDENTITY.md
+  - SOUL.md
+  - USER.md
+  - TOOLS.md
+  - HEARTBEAT.md
+  - BOOTSTRAP.md
+  - MEMORY.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - process/
+  - memory/
+  - email_draft_greg.md
+  - audio/
+  - data/
+  - podcast_index/
+  - "*.json"
