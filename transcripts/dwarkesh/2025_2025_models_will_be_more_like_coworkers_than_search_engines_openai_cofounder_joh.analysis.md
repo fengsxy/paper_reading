@@ -1,35 +1,35 @@
----
-date: 2024-01-01
-layout: default
-type: analysis
-series: dwarkesh
-episode: 85
-guest: ""
-title: "2025 models will be more like coworkers than search engines – OpenAI cofounder John Schulman - Analysis"
-source_url: "https://www.youtube.com/watch?v=1fmcdz2EO_c"
-transcript_url: /transcripts/dwarkesh/2025_2025_models_will_be_more_like_coworkers_than_search_engines_openai_cofounder_joh/
-permalink: /transcripts/dwarkesh/2025_2025_models_will_be_more_like_coworkers_than_search_engines_openai_cofounder_joh.analysis/
----
+# 分析：2025 Models Will Be More Like Coworkers Than Search Engines – OpenAI Cofounder John Schulman
 
-# Analysis: 2025 models will be more like coworkers than search engines – OpenAI cofounder John Schulman
+## 摘要
 
-## 0. 3-5 句摘要
+OpenAI 联合创始人 John Schulman 与 Dwarkesh 讨论了 AI 模型在 1-2 年内的演进方向。Schulman 的核心预测是：模型将从"更聪明的搜索引擎"（单次查询-回答）转变为"协作同事"（执行完整项目、多文件编码、后台自主工作）。他认为关键瓶颈不是单 token 智能（当前模型在 per-token 基础上可能已接近最聪明的人类），而是长时间连贯性——模型无法在 5 分钟后仍保持与项目整体目标的一致性。解锁这一能力的关键是长周期 RL 训练（在完整项目而非单步上做强化学习），且这个领域有大量低垂果实。但 Schulman 谨慎地表示，长期连贯性的提升不会自动解锁 AGI——模型还有"深度思考"和"注意力"方面的其他缺陷，他坦承自己无法准确描述剩余的瓶颈是什么。
 
-TBD
+## 反共识观点
 
-## 1. 反共识/非显然观点
+1. **当前模型在 per-token 基础上可能已达到最聪明人类的水平**：Schulman 认为模型的问题不是"不够聪明"，而是"无法持续聪明"。这与公众认知中"AI 还不够智能"的叙事截然不同——问题不在智力的峰值，而在智力的持续时间。这意味着 AGI 的瓶颈可能不是更大的模型或更多的数据，而是训练范式的转变。
 
-TBD
+2. **长周期 RL 训练是低垂果实，不是登月工程**：Schulman 暗示在完整项目上做 RL 训练是一个"pretty new"的领域，有"a lot of low-hanging fruit"。这意味着从"搜索引擎"到"同事"的跨越可能比外界预期的更快、更容易——不需要根本性的理论突破，只需要在已知方向上做工程投入。
 
-## 2. 可学习的点（可迁移的方法论）
+3. **模型的泛化能力可以替代大量领域特定数据**：弱模型需要海量特定领域数据才能学会从错误中恢复；强模型只需要预训练中"碰巧见过"的少量恢复案例就能泛化到新场景。这意味着数据收集的边际价值在下降，而模型基础能力的提升有越来越大的"溢出效应"。
 
-TBD
+## 可迁移方法论
 
-## 3. 提问技巧（采访方法）
+1. **"峰值能力 vs 持续能力"诊断框架**：评估任何智能系统（AI、团队、个人）时，区分"最佳表现时有多好"和"能保持最佳表现多久"。很多系统的瓶颈不是峰值能力不足，而是无法在长时间跨度上保持连贯性。这个框架可用于诊断项目管理、组织效能、甚至个人生产力问题。
 
-TBD
+2. **"训练粒度上移"策略**：当前模型在单步（写一个函数）上训练，Schulman 主张在完整项目（写多个文件、测试、迭代）上训练。这个"将训练/评估的粒度从组件提升到系统"的思路可迁移到任何领域——如从单元测试到集成测试、从单次决策评估到策略组合评估。
 
-## 4. 可进一步验证/挖坑
+3. **"坦承不知道瓶颈在哪"的认知诚实**：Schulman 在被追问"长期连贯性解锁后还差什么才能达到 AGI"时，直接说"I wouldn't be able to articulate exactly what the main weakness is"。这种认知诚实比编造一个听起来合理的答案更有信息量——它告诉我们前沿研究者自己也在探索未知。
 
-TBD
+## 提问技巧
 
+1. **将嘉宾的乐观预测推到逻辑极限**：Dwarkesh 问"如果长周期 RL 训练能解锁长期连贯性，那是不是意味着明年就能有人类水平的 AI 同事？"——这种"如果你说的都对，那结论岂不是 X？"的追问迫使 Schulman 明确自己预测的边界条件。
+
+2. **追问机制而非结论**：当 Schulman 说"模型会更好地从错误中恢复"时，Dwarkesh 追问"泛化能力具体如何帮助恢复？"——不满足于"会变好"的结论，而是要求解释变好的具体机制。
+
+3. **用"如果不是这个，那是什么"逼出未知**：Dwarkesh 问"如果长期连贯性不是通往 AGI 的最后一块拼图，那剩下的是什么？"——这种排除法提问能暴露嘉宾知识的真实边界，比开放式的"AGI 还需要什么"更有针对性。
+
+## 验证挖坑
+
+1. Schulman 预测 1-2 年内模型将能执行完整编码项目——到 2025-2026 年，Cursor、Devin、Claude Code 等工具的实际表现是否验证了这一预测？"完整项目"的定义是否需要大幅缩小才能匹配现实？
+
+2. "per-token 智能已接近最聪明人类"这一判断如何验证？是否存在系统性的基准测试支持这一说法，还是这更多是一种基于直觉的内部评估？如果 per-token 智能真的已经足够，为什么模型在需要深度推理的单步任务（如竞赛数学）上仍然落后于顶尖人类？

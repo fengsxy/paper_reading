@@ -12,6 +12,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/151_bryan_caplan_feminists_billionaires_and_demagogues.analysis.md): Bryan Caplan: Feminists, Billionaires, and Demagogues — 分析 (+22 more) |
 | 2026-02-22 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+54 more) |
 | 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
 | 2026-02-22 | [Hacker News](hackernews/2026-02-22.md): Hacker News Digest - 2026-02-22 |
@@ -23,7 +24,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-21 | [Hacker News](hackernews/2026-02-21.md): Hacker News Digest - 2026-02-21 |
 | 2026-02-21 | [Scholar Inbox](scholar_inbox/2026-02-20-diffusion-dllm.md): 2026-02-20-diffusion-dllm |
 | 2026-02-20 | [张小珺访谈](transcripts/xiaojun/102_multimodal_research_gpt4_moments.analysis.md): EP102 和张祥雨聊，多模态研究的挣扎史和未来两年的2个GPT-4时刻 (+89 more) |
-| 2026-02-20 | [Dwarkesh](transcripts/dwarkesh/23_china_is_digging_out_of_a_crisis_and_america_s_luck_is_wearing_thin_ken_rogoff.analysis.md): China is digging out of a crisis and America's luck is we... (+27 more) |
 
 ---
 
