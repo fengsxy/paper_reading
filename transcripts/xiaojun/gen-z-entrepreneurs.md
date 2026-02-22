@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP50
+episode: 50
 title: "50. 95后00后创业者怎么样了？他们的生猛、高马斯克值与现实"
 source_url: "https://www.youtube.com/watch?v=igiYhM2Xr9Y"
 analysis_url: /transcripts/xiaojun/gen-z-entrepreneurs.analysis/

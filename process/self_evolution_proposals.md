@@ -94,3 +94,13 @@
 
 ---
 
+## Proposal #10 — 2026-02-22 16:20 UTC
+**启用 boot-md hook 并创建 BOOT.md 网关启动自检脚本**
+来源：`openclaw hooks list` 显示 `boot-md` hook 已 ready 但未启用；ClawHub 社区 startup-validation 最佳实践
+问题：gateway 重启后（手动或崩溃恢复），没有任何自动验证机制。cron job 是否正常注册、API provider 是否可达、磁盘空间是否充足、关键文件（cookies、SSH key）是否存在——全靠人工检查。当前 9 个 cron job + 3 个 provider，任何一个静默失败都可能数小时后才发现。
+方案：1) 在 `hooks.internal.entries` 中添加 `"boot-md": { "enabled": true }`；2) 创建 `BOOT.md`，内容为：检查 cron 数量是否符合预期、ping 各 provider endpoint、检查磁盘使用率、验证 cookies/key 文件存在、将结果发送到 Telegram。
+收益：gateway 每次启动自动执行健康检查，问题在秒级发现而非小时级；与 Proposal #9（运行时日志）互补——这是启动时的一次性验证。
+风险：极低——boot-md 仅在 gateway 启动时运行一次，不影响正常运行；BOOT.md 内容可随时调整。
+
+---
+

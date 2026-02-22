@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP101
+episode: 101
 title: "101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍"
 source_url: "https://www.youtube.com/watch?v=a04POJEknCY"
 transcript_url: /transcripts/xiaojun/101_youware_mingchaoping_agent/

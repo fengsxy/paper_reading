@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP59
+episode: 59
 title: "59. 和杨植麟聊大模型创业这一年：人类理想的增量、有概率的非共识和Sora"
 source_url: "https://www.youtube.com/watch?v=DLsQUq8U2z8"
 analysis_url: /transcripts/xiaojun/yang-zhilin-llm-startup-sora.analysis/

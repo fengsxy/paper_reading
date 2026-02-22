@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP47
+episode: 47
 title: "【独家对话奔驰全球CEO康林松】转型之中的139岁奔驰"
 source_url: "https://www.youtube.com/watch?v=2Qs4MfEzCO0"
 analysis_url: /transcripts/xiaojun/ep47-interview-mercedes-ceo.analysis/

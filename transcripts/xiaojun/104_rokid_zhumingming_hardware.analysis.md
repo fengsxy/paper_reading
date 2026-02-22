@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP104
+episode: 104
 title: "104. 和Rokid祝铭明聊，吴妈、阿里、硬件创业黑森林的第11年"
 source_url: "https://www.youtube.com/watch?v=qW-kgogQwJc"
 transcript_url: /transcripts/xiaojun/104_rokid_zhumingming_hardware/

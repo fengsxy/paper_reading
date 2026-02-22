@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP56
+episode: 56
 title: "56. 拼多多、名创优品崛起，是消费降级胜利吗？漫谈名创全球化之路"
 source_url: "https://www.youtube.com/watch?v=i6lxbMvq6Hk"
 transcript_url: /transcripts/xiaojun/pinduoduo-miniso-consumption/

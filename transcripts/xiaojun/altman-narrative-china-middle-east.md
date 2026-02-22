@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP53
+episode: 53
 title: "53. 从萨特曼的宏大叙事，聊到赴中东掘金的中国人肖像"
 source_url: "https://www.youtube.com/watch?v=khvuJVCon4Y"
 analysis_url: /transcripts/xiaojun/altman-narrative-china-middle-east.analysis/

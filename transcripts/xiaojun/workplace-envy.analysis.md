@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP52
+episode: 52
 title: "52.【职场人性】论嫉妒：人类最禁忌的情感，在职场里暗涌"
 source_url: "https://www.youtube.com/watch?v=KGvTT7IXdAU"
 transcript_url: /transcripts/xiaojun/workplace-envy/

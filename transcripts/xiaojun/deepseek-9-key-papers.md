@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP57
+episode: 57
 title: "逐篇讲解DeepSeek关键9篇论文及创新点——勇敢者的游戏"
 source_url: "https://www.youtube.com/watch?v=Hbmr1dJutnk"
 analysis_url: /transcripts/xiaojun/deepseek-9-key-papers.analysis/

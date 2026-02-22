@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP103
+episode: 103
 title: "103. Lovart创始人陈冕复盘应用创业这两年：这一刻就是好爽啊！！哈哈哈哈哈"
 source_url: "https://www.youtube.com/watch?v=Xo7TxXkNsoA"
 transcript_url: /transcripts/xiaojun/103_lovart_chenmian_startup/

@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP48
+episode: 48
 title: "逐篇解析机器人基座模型和VLA经典论文：人就是最智能的VLA"
 source_url: "https://www.youtube.com/watch?v=eiQFomOuCJs"
 transcript_url: /transcripts/xiaojun/robot-foundation-models-vla-papers/

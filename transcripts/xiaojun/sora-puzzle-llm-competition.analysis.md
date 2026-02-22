@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP60
+episode: 60
 title: "60. 与戴雨森和季逸超聊，一幅Sora的信息拼图和大模型淘汰赛"
 source_url: "https://www.youtube.com/watch?v=I5asIq_vpHs"
 transcript_url: /transcripts/xiaojun/sora-puzzle-llm-competition/

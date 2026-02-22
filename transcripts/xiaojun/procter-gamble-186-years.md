@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP45
+episode: 45
 title: "45. 漫谈宝洁：隐藏在186年消费品王国里的规则和秘密"
 source_url: "https://www.youtube.com/watch?v=COraIk6ulvc"
 analysis_url: /transcripts/xiaojun/procter-gamble-186-years.analysis/

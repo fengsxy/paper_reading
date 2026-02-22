@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP61
+episode: 61
 title: "和王小川聊百川智能、中国AGI第三种可能性"
 source_url: "https://www.youtube.com/watch?v=M1ywnxxH5sw"
 transcript_url: /transcripts/xiaojun/61_wang_xiaochuan_baichuan_agi/

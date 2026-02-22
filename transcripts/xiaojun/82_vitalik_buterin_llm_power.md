@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP82
+episode: 82
 title: "82. 和以太坊Vitalik Buterin聊：LLM的权力、技术哲学观与猫"
 source_url: "https://www.youtube.com/watch?v=ec4PJQXDOHw"
 analysis_url: /transcripts/xiaojun/82_vitalik_buterin_llm_power.analysis/

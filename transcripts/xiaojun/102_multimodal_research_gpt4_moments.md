@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP102
+episode: 102
 title: "和张祥雨聊，多模态研究的挣扎史和未来两年的2个GPT-4时刻"
 source_url: "https://www.youtube.com/watch?v=vWrYHvSRz0s"
 analysis_url: /transcripts/xiaojun/102_multimodal_research_gpt4_moments.analysis/

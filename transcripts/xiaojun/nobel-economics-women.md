@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP44
+episode: 44
 title: "44. 谈诺贝尔经济奖与消失在黄金阶梯上的女人"
 source_url: "https://www.youtube.com/watch?v=JRSAyJ7HKhg"
 analysis_url: /transcripts/xiaojun/nobel-economics-women.analysis/

@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP55
+episode: 55
 title: "55. 与小Lin的线下活动：不可控周期中，提高微小个体的生命质量"
 source_url: "https://www.youtube.com/watch?v=8R4K-XYBPo8"
 analysis_url: /transcripts/xiaojun/offline-event-with-xiaolin.analysis/

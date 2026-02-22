@@ -49,3 +49,6 @@ data/audio/
 
 # Duplicate xiaojun files with NUMBER_NUMBER_ pattern
 transcripts/xiaojun/*_*_*.md
+_site/
+.jekyll-cache/
+.jekyll-metadata

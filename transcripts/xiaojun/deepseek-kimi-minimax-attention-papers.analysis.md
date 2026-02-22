@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP54
+episode: 54
 title: "逐篇讲解DeepSeek、Kimi、MiniMax注意力机制新论文——硬件上的暴力美学"
 source_url: "https://www.youtube.com/watch?v=VaDDCfggaJE"
 transcript_url: /transcripts/xiaojun/deepseek-kimi-minimax-attention-papers/

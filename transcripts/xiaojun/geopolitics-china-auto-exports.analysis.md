@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP51
+episode: 51
 title: "51. 地缘政治与大国汽车：中国跃居第一出口国？别浪费大危机"
 source_url: "https://www.youtube.com/watch?v=jYcIksen3YQ"
 transcript_url: /transcripts/xiaojun/geopolitics-china-auto-exports/

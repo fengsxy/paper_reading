@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP81
+episode: 81
 title: "81. 和李开复聊聊：如果美国形成AGI霸权，我们应该怎么办？"
 source_url: "https://www.youtube.com/watch?v=fZB74w6jg7U"
 transcript_url: /transcripts/xiaojun/81_li_kaifu_agi_hegemony/

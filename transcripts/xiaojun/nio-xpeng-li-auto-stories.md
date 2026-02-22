@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: transcript
 series: xiaojun
-episode: EP49
+episode: 49
 title: "49. 闲话蔚小理往事：大佬、出牌、生死时局"
 source_url: "https://www.youtube.com/watch?v=gaoUWY2Lk0g"
 analysis_url: /transcripts/xiaojun/nio-xpeng-li-auto-stories.analysis/

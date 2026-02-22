@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP46
+episode: 46
 title: "46. 失去逍遥子的第一个双十一：诡计、大混战与小阳谋"
 source_url: "https://www.youtube.com/watch?v=wJ6fVGXXqTw"
 transcript_url: /transcripts/xiaojun/first-singles-day-without-daniel-zhang/

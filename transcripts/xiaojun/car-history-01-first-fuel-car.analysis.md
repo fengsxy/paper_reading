@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP41
+episode: 41
 title: "41.【汽车史话01】世界上第一辆燃油车、女车手和慈禧太后"
 source_url: "https://www.youtube.com/watch?v=YAt23Bkdc7U"
 transcript_url: /transcripts/xiaojun/car-history-01-first-fuel-car/

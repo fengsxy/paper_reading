@@ -3,7 +3,7 @@ date: 2024-01-01
 layout: default
 type: analysis
 series: xiaojun
-episode: EP42
+episode: 42
 title: "42.【汽车史话02】集权者福特与全球第二畅销T型车的衰落"
 source_url: "https://www.youtube.com/watch?v=HE7v5aOcNMY"
 transcript_url: /transcripts/xiaojun/car-history-02-ford-model-t/
