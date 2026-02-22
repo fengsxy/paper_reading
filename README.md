@@ -12,14 +12,18 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-19 | [Dwarkesh Analysis](transcripts/dwarkesh/): 37 篇播客深度分析已完成 (Leopold, Ilya, Dario, Eliezer, Paul Christiano 等) |
-| 2026-02-19 | [Karpathy RSS](karpathy_rss/2026-02-19-karpathy-rss-digest.md): Gemini 3.1 Pro 发布、Pluralistic 六周年 |
-| 2026-02-19 | [Hacker News](hackernews/2026-02-19.md): Anthropic 禁止订阅账号第三方使用、"AI makes you boring"、Step 3.5 Flash |
-| 2026-02-18 | [Karpathy RSS](karpathy_rss/2026-02-18-karpathy-rss-digest.md): 模型迁移细节、开源社区治理与工具链变化 |
-| 2026-02-18 | [Scholar Inbox](scholar_inbox/2026-02-18-diffusion-dllm.md): 当日 diffusion/dLLM 精选已更新 |
-| 2026-02-18 | [Hacker News](hackernews/2026-02-18.md): Claude Sonnet 4.6 与 AI 生产力悖论等讨论 |
-| 2026-02-17 | [Karpathy RSS](karpathy_rss/2026-02-17-karpathy-rss-digest.md): Showboat 生态, 零工经济骗局, Claude Code 做研究 |
-| 2026-02-17 | [Hacker News](hackernews/2026-02-17.md): NanoClaw Docker, AI PR Review, Epstein 文件分析 |
+| 2026-02-22 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+54 more) |
+| 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
+| 2026-02-22 | [Hacker News](hackernews/2026-02-22.md): Hacker News Digest - 2026-02-22 |
+| 2026-02-22 | [Scholar Inbox](scholar_inbox/2026-02-21-diffusion-dllm.md): 2026-02-21-diffusion-dllm |
+| 2026-02-21 | [Dwarkesh](transcripts/dwarkesh/100_sholto_douglas_trenton_bricken_how_llms_actually_think.analysis.md): Sholto Douglas & Trenton Bricken — How LLMs actually thin... (+472 more) |
+| 2026-02-21 | [WhynotTV](transcripts/whynot/004_whynottv_wengjiayi_openai_rl_infra.md): EP4 翁家翌（OpenAI）- 强化学习、Infra、后训练 (+2 more) |
+| 2026-02-21 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+175 more) |
+| 2026-02-21 | [Karpathy RSS](karpathy_rss/2026-02-21-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-21 |
+| 2026-02-21 | [Hacker News](hackernews/2026-02-21.md): Hacker News Digest - 2026-02-21 |
+| 2026-02-21 | [Scholar Inbox](scholar_inbox/2026-02-20-diffusion-dllm.md): 2026-02-20-diffusion-dllm |
+| 2026-02-20 | [张小珺访谈](transcripts/xiaojun/102_multimodal_research_gpt4_moments.analysis.md): EP102 和张祥雨聊，多模态研究的挣扎史和未来两年的2个GPT-4时刻 (+89 more) |
+| 2026-02-20 | [Dwarkesh](transcripts/dwarkesh/23_china_is_digging_out_of_a_crisis_and_america_s_luck_is_wearing_thin_ken_rogoff.analysis.md): China is digging out of a crisis and America's luck is we... (+27 more) |
 
 ---
 
