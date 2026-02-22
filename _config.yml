@@ -19,7 +19,6 @@ exclude:
   - HEARTBEAT.md
   - BOOTSTRAP.md
   - MEMORY.md
-  - README.md
   - Gemfile
   - Gemfile.lock
   - process/
