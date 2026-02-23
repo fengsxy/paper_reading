@@ -12,7 +12,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/174_uncle_bob_the_long_reach_of_code_automating_programming_and_developing_coding_ta.analysis.md): 分析：Uncle Bob - The Long Reach of Code, Automating Program... (+25 more) |
+| 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge.analysis.md): 分析：Scott Young - Ultralearning, The MIT Challenge (+26 more) |
 | 2026-02-22 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+54 more) |
 | 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
 | 2026-02-22 | [Hacker News](hackernews/2026-02-22.md): Hacker News Digest - 2026-02-22 |
