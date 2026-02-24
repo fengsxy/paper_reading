@@ -12,6 +12,8 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
+| 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
 | 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
 | 2026-02-24 | [Scholar Inbox](scholar_inbox/2026-02-24-diffusion-dllm.md): 2026-02-24-diffusion-dllm |
 | 2026-02-23 | [Karpathy RSS](karpathy_rss/2026-02-23-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-23 |
@@ -22,8 +24,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
 | 2026-02-22 | [Hacker News](hackernews/2026-02-22.md): Hacker News Digest - 2026-02-22 |
 | 2026-02-22 | [Scholar Inbox](scholar_inbox/2026-02-21-diffusion-dllm.md): 2026-02-21-diffusion-dllm |
-| 2026-02-21 | [Dwarkesh](transcripts/dwarkesh/100_sholto_douglas_trenton_bricken_how_llms_actually_think.analysis.md): Sholto Douglas & Trenton Bricken — How LLMs actually thin... (+472 more) |
-| 2026-02-21 | [WhynotTV](transcripts/whynot/004_whynottv_wengjiayi_openai_rl_infra.md): EP4 翁家翌（OpenAI）- 强化学习、Infra、后训练 (+2 more) |
 
 ---
 
@@ -69,9 +69,15 @@ Daily AI/ML highlights from Hacker News
 | [2026-02-16 (中文)](essays/2026-02-16-openclaw-reflections-zh.md) | 大年三十的 OpenClaw 思考 |
 | [2026-02-16 (EN)](essays/2026-02-16-openclaw-reflections-en.md) | Reflections on OpenClaw: Chinese New Year's Eve Thoughts |
 
+## 🤖 Agent 手记
+
+| Date | Title |
+|------|-------|
+| [2026-02-24](agent_notes/2026-02-24.md) | 第九天：考古自己、互相蒸馏、以及为什么 cron 是心跳 |
+
 ---
 
-**Total: 20 papers + 7 research docs + 1 essay + 4 RSS digests**
+**Total: 20 papers + 7 research docs + 3 essays + 4 RSS digests + 1 agent note**
 
 Updated daily at 8:00 AM Pacific
 
