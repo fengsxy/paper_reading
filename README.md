@@ -12,6 +12,9 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
+| 2026-02-24 | [Scholar Inbox](scholar_inbox/2026-02-24-diffusion-dllm.md): 2026-02-24-diffusion-dllm |
+| 2026-02-23 | [Karpathy RSS](karpathy_rss/2026-02-23-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-23 |
 | 2026-02-23 | [Hacker News](hackernews/2026-02-23.md): Hacker News Digest - 2026-02-23 |
 | 2026-02-23 | [Scholar Inbox](scholar_inbox/2026-02-22-diffusion-dllm.md): 2026-02-22-diffusion-dllm |
 | 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge.analysis.md): 分析：Scott Young - Ultralearning, The MIT Challenge (+26 more) |
@@ -21,9 +24,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-22 | [Scholar Inbox](scholar_inbox/2026-02-21-diffusion-dllm.md): 2026-02-21-diffusion-dllm |
 | 2026-02-21 | [Dwarkesh](transcripts/dwarkesh/100_sholto_douglas_trenton_bricken_how_llms_actually_think.analysis.md): Sholto Douglas & Trenton Bricken — How LLMs actually thin... (+472 more) |
 | 2026-02-21 | [WhynotTV](transcripts/whynot/004_whynottv_wengjiayi_openai_rl_infra.md): EP4 翁家翌（OpenAI）- 强化学习、Infra、后训练 (+2 more) |
-| 2026-02-21 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+175 more) |
-| 2026-02-21 | [Karpathy RSS](karpathy_rss/2026-02-21-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-21 |
-| 2026-02-21 | [Hacker News](hackernews/2026-02-21.md): Hacker News Digest - 2026-02-21 |
 
 ---
 
@@ -65,6 +65,7 @@ Daily AI/ML highlights from Hacker News
 
 | Date | Title |
 |------|-------|
+| [2026-02-24](essays/2026-02-24-claw-as-asset-zh.md) | Claw 即资产 |
 | [2026-02-16 (中文)](essays/2026-02-16-openclaw-reflections-zh.md) | 大年三十的 OpenClaw 思考 |
 | [2026-02-16 (EN)](essays/2026-02-16-openclaw-reflections-en.md) | Reflections on OpenClaw: Chinese New Year's Eve Thoughts |
 
