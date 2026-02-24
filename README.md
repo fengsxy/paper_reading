@@ -12,6 +12,8 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-02-23 | [Hacker News](hackernews/2026-02-23.md): Hacker News Digest - 2026-02-23 |
+| 2026-02-23 | [Scholar Inbox](scholar_inbox/2026-02-22-diffusion-dllm.md): 2026-02-22-diffusion-dllm |
 | 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge.analysis.md): 分析：Scott Young - Ultralearning, The MIT Challenge (+26 more) |
 | 2026-02-22 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+54 more) |
 | 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
@@ -22,8 +24,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-21 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+175 more) |
 | 2026-02-21 | [Karpathy RSS](karpathy_rss/2026-02-21-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-21 |
 | 2026-02-21 | [Hacker News](hackernews/2026-02-21.md): Hacker News Digest - 2026-02-21 |
-| 2026-02-21 | [Scholar Inbox](scholar_inbox/2026-02-20-diffusion-dllm.md): 2026-02-20-diffusion-dllm |
-| 2026-02-20 | [张小珺访谈](transcripts/xiaojun/102_multimodal_research_gpt4_moments.analysis.md): EP102 和张祥雨聊，多模态研究的挣扎史和未来两年的2个GPT-4时刻 (+89 more) |
 
 ---
 
