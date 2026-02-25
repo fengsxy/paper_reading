@@ -6,8 +6,9 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-25 | [Essays](essays/xiaohongshu/2026-02-25-what-is-understanding-xhs.md): 【小红书】"理解"到底是什么？为什么 linear probe 不够 (+8 more) |
-| 2026-02-25 | [Hacker News](hackernews/index.md): Hacker News Digest |
+| 2026-02-25 | [Hacker News](hackernews/2026-02-25.md): Hacker News Digest - 2026-02-25 (+1 more) |
+| 2026-02-25 | [Scholar Inbox](scholar_inbox/2026-02-25-diffusion-dllm.md): 2026-02-25-diffusion-dllm |
+| 2026-02-25 | [Essays](essays/2026-02-25-from-milk-tea-to-turing-completeness-zh.md): 从奶茶到图灵完备 (+9 more) |
 | 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
 | 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
 | 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
@@ -17,7 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-23 | [Scholar Inbox](scholar_inbox/2026-02-22-diffusion-dllm.md): 2026-02-22-diffusion-dllm |
 | 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge.analysis.md): 分析：Scott Young - Ultralearning, The MIT Challenge (+26 more) |
 | 2026-02-22 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+54 more) |
-| 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
 
 ---
 
