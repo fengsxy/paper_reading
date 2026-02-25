@@ -12,7 +12,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-25 | [Essays](essays/2026-02-25-vae-diffusion-cotraining-zh.md): VAE和Diffusion的联合训练：三篇论文在解同一个问题，但没人碰核心矛盾 (+3 more) |
+| 2026-02-25 | [Essays](essays/2026-02-25-what-is-understanding-zh.md): 理解到底是什么？从 linear probe 到搜索剪枝 (+4 more) |
 | 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
 | 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
 | 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
