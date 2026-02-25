@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【小红书】"理解"到底是什么？为什么 linear probe 不够"
+title: '【小红书】"理解"到底是什么？为什么 linear probe 不够'
 date: 2026-02-25
 author: Longxuan Yu
 categories: xiaohongshu

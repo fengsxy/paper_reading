@@ -6,7 +6,8 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-25 | [Essays](essays/xiaohongshu/2026-02-25-vae-diffusion-xhs.md): 【小红书】为什么VAE和Diffusion很难端到端训练 (+6 more) |
+| 2026-02-25 | [Essays](essays/index.md): Essays (+7 more) |
+| 2026-02-25 | [Hacker News](hackernews/index.md): Hacker News Digest |
 | 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
 | 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
 | 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
@@ -17,7 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge.analysis.md): 分析：Scott Young - Ultralearning, The MIT Challenge (+26 more) |
 | 2026-02-22 | [张小珺访谈](transcripts/xiaojun/101_youware_mingchaoping_agent.analysis.md): 101. 对YouWare创始人明超平3小时访谈：今天Agent像大猩猩刚拿起一根烧火棍 (+54 more) |
 | 2026-02-22 | [Karpathy RSS](karpathy_rss/2026-02-22-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-22 |
-| 2026-02-22 | [Hacker News](hackernews/2026-02-22.md): Hacker News Digest - 2026-02-22 |
 
 ---
 
