@@ -12,6 +12,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-02-25 | [Essays](essays/2026-02-25-delayed-commitment-zh.md): 延迟承诺：从 Coconut 到 DSL，连续空间推理的三次尝试 |
 | 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
 | 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
 | 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
