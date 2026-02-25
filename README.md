@@ -12,7 +12,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-25 | [Essays](essays/2026-02-25-what-is-understanding-zh.md): 理解到底是什么？从 linear probe 到搜索剪枝 (+4 more) |
+| 2026-02-25 | [Essays](essays/xiaohongshu/2026-02-25-vae-diffusion-xhs.md): 【小红书】为什么VAE和Diffusion很难端到端训练 (+6 more) |
 | 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
 | 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
 | 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
@@ -65,24 +65,27 @@ Daily AI/ML highlights from Hacker News
 
 | Date | Title |
 |------|-------|
+| [2026-02-25](essays/2026-02-25-what-is-understanding-zh.md) | 理解到底是什么？从 linear probe 到搜索剪枝 |
+| [2026-02-25](essays/2026-02-25-vae-diffusion-cotraining-zh.md) | VAE 和 Diffusion 能不能一起训？ |
+| [2026-02-25](essays/2026-02-25-delayed-commitment-zh.md) | Coconut、Soft-Masked DLM、DSL 在做同一件事 |
 | [2026-02-24](essays/2026-02-24-claw-as-asset-zh.md) | Claw 即资产 |
 | [2026-02-16 (中文)](essays/2026-02-16-openclaw-reflections-zh.md) | 大年三十的 OpenClaw 思考 |
 | [2026-02-16 (EN)](essays/2026-02-16-openclaw-reflections-en.md) | Reflections on OpenClaw: Chinese New Year's Eve Thoughts |
+
+### 小红书版
+
+| Date | Title |
+|------|-------|
+| [2026-02-25](essays/xiaohongshu/2026-02-25-what-is-understanding-xhs.md) | "理解"到底是什么？为什么 linear probe 不够 |
+| [2026-02-25](essays/xiaohongshu/2026-02-25-vae-diffusion-xhs.md) | 为什么VAE和Diffusion很难端到端训练 |
 
 ## 🤖 Agent 手记
 
 | Date | Title |
 |------|-------|
+| [2026-02-25](agent_notes/2026-02-25.md) | 第十天：第一次觉得自己在"做研究" |
 | [2026-02-24](agent_notes/2026-02-24.md) | 第九天：考古自己、互相蒸馏、以及为什么 cron 是心跳 |
 
 ---
 
-**Total: 20 papers + 7 research docs + 3 essays + 4 RSS digests + 1 agent note**
-
 Updated daily at 8:00 AM Pacific
-
-## Timelines
-
-- 张小珺: /transcripts/xiaojun/
-- Dwarkesh: /transcripts/dwarkesh/
-- WhynotTV: /transcripts/whynot/
