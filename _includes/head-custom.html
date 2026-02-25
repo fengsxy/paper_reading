@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- MathJax -->
 <script>
@@ -20,27 +20,38 @@ MathJax = {
 
 <!-- Mobile scroll fix -->
 <style>
-html, body {
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
-body {
-  position: relative;
-  width: 100%;
-}
-
-/* Prevent layout shift from scrollbar */
+/* Wrapper approach — more reliable on iOS Safari than html/body overflow-x */
 html {
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
-/* Fix table overflow on mobile */
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* The minimal theme's .wrapper can also cause overflow */
+.wrapper, .outer, main, section, article {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix table overflow on mobile — scroll inside container */
 table {
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
+  word-break: keep-all;
+}
+
+/* Long links / URLs cause overflow on mobile */
+a {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Prevent images from causing horizontal scroll */
@@ -50,10 +61,41 @@ img {
 }
 
 /* Fix code blocks overflow */
-pre, code {
+pre {
   overflow-x: auto;
   max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+code {
   word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Long text in any block element */
+p, li, td, th, h1, h2, h3, h4 {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Fix minimal theme mobile overflow */
+@media screen and (max-width: 960px) {
+  header {
+    padding-right: 0 !important;
+  }
+  section {
+    width: auto !important;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px !important;
+  }
+  header {
+    padding: 0 !important;
+  }
 }
 
 /* Smooth scrolling */
@@ -67,5 +109,6 @@ pre, code {
 mjx-container {
   overflow-x: auto;
   max-width: 100%;
+  display: inline-block;
 }
 </style>

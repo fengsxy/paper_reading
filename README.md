@@ -6,7 +6,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-02-25 | [Essays](essays/index.md): Essays (+7 more) |
+| 2026-02-25 | [Essays](essays/xiaohongshu/2026-02-25-what-is-understanding-xhs.md): 【小红书】"理解"到底是什么？为什么 linear probe 不够 (+8 more) |
 | 2026-02-25 | [Hacker News](hackernews/index.md): Hacker News Digest |
 | 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
 | 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
