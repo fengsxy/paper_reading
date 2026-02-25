@@ -53,13 +53,15 @@ UL的做法是只管生成，不管理解。REPA-E的做法是从外部注入理
 
 但没有一篇真正回答：**能不能设计一个latent space，让生成和理解的信息自然解耦？**
 
-我的直觉是需要一个解耦的表征结构。比如latent的前N个维度编码语义（用于理解），后M个维度编码细节（用于生成），两者在训练中被显式分开。REPA的思路其实已经在往这个方向走了——它用alignment loss把diffusion的中间层往语义方向拉，相当于在网络内部做了一种隐式的解耦。但这种解耦是soft的，没有理论保证。
+已经有人在做显式解耦了。SVG（Latent Diffusion Model without VAE）直接把VAE扔掉，用DINO encoder提语义 + 一个residual encoder补高频细节，两路信息显式分开。语义通道给理解，细节通道给生成，不在同一个bottleneck里挤。
+
+但目前所有方案都绕不开一个问题：语义信息来自冻住的DINO，不是模型自己学出来的。SVG的DINO + residual是显式解耦，但DINO必须固定。REPA-E和Latent Forcing也一样。真正的统一应该是模型在训练过程中自己涌现出语义和细节的分离，而不是靠外部teacher灌进去。这个问题目前没人解。
 
 更根本的问题可能是：生成和理解需要的信息量差了几个数量级。理解可能只需要几百bit的语义信息，但生成需要几万bit的像素信息。在同一个bottleneck里同时传输这两种信息，信息论上就是有矛盾的。UL的bitrate bound框架其实提供了一个很好的工具来分析这个问题——你可以问：在给定bitrate下，生成和理解各自的最优latent是什么？它们的gap有多大？
 
 ### 一句话
 
-UL和REPA-E都在解VAE-diffusion联合训练的问题，但都没碰生成-理解统一。Latent Forcing方向最对，但还没到。下一步应该是：用信息论搞清楚生成和理解在latent space里到底需要什么，然后设计显式的解耦机制。
+三篇都在解VAE-diffusion联合训练，SVG做了显式解耦，但所有方案的语义能力都依赖冻住的DINO。下一步不是换一个更好的teacher，而是让模型自己学会把语义和细节分开。
 
 ---
 
@@ -67,3 +69,4 @@ UL和REPA-E都在解VAE-diffusion联合训练的问题，但都没碰生成-理�
 - *Unified Latents (UL): How to train your latents (arXiv:2602.17270)*
 - *REPA-E: Unlocking VAE for End-to-End Tuning with Latent Diffusion Transformers (arXiv:2504.10483)*
 - *Latent Forcing: Reordering the Diffusion Trajectory for Pixel-Space Image Generation (arXiv:2602.11401)*
+- *Latent Diffusion Model without Variational Autoencoder (SVG, arXiv:2510.15301)*
