@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking Out of Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#paper">Paper</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="main-container">
+                <div class="title-container">
+                    <div class="title-text">
+                        <h1>Thinking Out of Order</h1>
+                        <p style="font-size:1.3rem; margin-top:0.5rem; opacity:0.9;">When Output Order Stops Reflecting Reasoning Order in Diffusion Language Models</p>
+                    </div>
+                </div>
+            </div>
+            <div class="authors-container">
+                <p class="authors">
+                    <a href="https://fengsxy.github.io" class="author-link">Longxuan Yu</a>*,
+                    Yu Fu*,
+                    Shaorong Zhang,
+                    Hui Liu,
+                    Mukund Varma T,
+                    <a href="https://www.cs.ucr.edu/~gverstee/" class="author-link">Greg Ver Steeg</a><sup>†</sup>,
+                    Yue Dong<sup>†</sup>
+                </p>
+                <p class="affiliation">University of California, Riverside &nbsp;|&nbsp; Independent Researcher &nbsp;|&nbsp; UC San Diego</p>
+                <p class="affiliation" style="font-size:1rem; margin-top:0.5rem;">* Equal contribution &nbsp;&nbsp; † Equal advising</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="abstract">
+            <h2>Abstract</h2>
+            <p>Autoregressive (AR) language models enforce a fixed left-to-right generation order, creating a fundamental limitation when the required output structure conflicts with natural reasoning. In such cases, AR models must commit to answers before generating intermediate reasoning, and this rigid constraint forces premature commitment. Masked diffusion language models (MDLMs), which iteratively refine all tokens in parallel, offer a way to decouple computation order from output structure.</p>
+            <p>We validate this capability on GSM8K, Math500, and <strong>ReasonOrderQA</strong>, a benchmark we introduce with controlled difficulty and order-level evaluation. When prompts request answers before reasoning, AR models exhibit large accuracy gaps compared to standard chain-of-thought ordering (<strong>up to 67% relative drop</strong>), while MDLMs remain stable (<strong>≤14% relative drop</strong>), a property we term <em>order robustness</em>.</p>
+            <figure>
+                <img src="static/figure_1.png" alt="Masked Diffusion models reason before answering" class="custom-width">
+                <figcaption>Figure 1. Masked Diffusion models reason before answering—even when asked to answer first.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="method">
+            <h2>ReasonOrderQA Benchmark</h2>
+            <p>We introduce <strong>ReasonOrderQA</strong>, a benchmark with controlled difficulty and order-level evaluation. Each problem contains (1) a noisy context with planted facts, (2) a multi-hop reasoning chain, and (3) a final answer. Difficulty is controlled by the number of reasoning hops and context noise level.</p>
+            <figure>
+                <img src="static/figure_2.png" alt="ReasonOrderQA benchmark design" class="custom-width">
+                <figcaption>Figure 2. ReasonOrderQA benchmark design with controlled difficulty and order-level evaluation.</figcaption>
+            </figure>
+            <h2>Key Insight: Delayed Commitment</h2>
+            <p>MDLMs achieve order robustness by <strong>stabilizing simpler tokens (e.g., reasoning steps) earlier in the diffusion process</strong> than complex ones (e.g., final answers), enabling reasoning tokens to stabilize before answer commitment.</p>
+            <figure>
+                <img src="static/figure_6.png" alt="Confidence dynamics" class="custom-width">
+                <figcaption>Figure 6. Confidence dynamics: D1 vs D4. Heatmaps show token confidence over diffusion steps—reasoning tokens stabilize before answer tokens.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="results">
+            <h2>Results</h2>
+            <h3>Order Robustness</h3>
+            <p>When prompts request answers before reasoning, AR models exhibit large accuracy gaps while MDLMs remain remarkably stable across all tested benchmarks.</p>
+            <figure>
+                <img src="static/figure_3.png" alt="Order robustness comparison" class="custom-width">
+                <figcaption>Figure 3. Order robustness across diffusion and autoregressive models.</figcaption>
+            </figure>
+            <h3>Convergence Analysis</h3>
+            <figure>
+                <img src="static/figure_4.png" alt="Convergence trajectories on GSM8K" class="custom-width">
+                <figcaption>Figure 4. Convergence trajectories on GSM8K under different ordering constraints.</figcaption>
+            </figure>
+            <h3>Difficulty Scaling</h3>
+            <figure>
+                <img src="static/figure_5.png" alt="Answer token confidence vs difficulty" class="custom-width">
+                <figcaption>Figure 5. Answer token confidence decreases with problem difficulty.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_8.png" alt="Mean accuracy under answer-first" class="custom-width">
+                <figcaption>Figure 8. Mean accuracy under Answer-First across difficulty levels.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="paper">
+            <h2>Paper</h2>
+            <blockquote>
+                <p><a href="https://arxiv.org/abs/2601.22035" class="paper-title">Thinking Out of Order: When Output Order Stops Reflecting Reasoning Order in Diffusion Language Models</a></p>
+                <p class="paper-authors">Longxuan Yu*, Yu Fu*, Shaorong Zhang, Hui Liu, Mukund Varma T, Greg Ver Steeg, Yue Dong</p>
+                <p class="paper-conference">arXiv preprint, January 2026</p>
+            </blockquote>
+            <p style="margin-top:1rem;">
+                <a href="https://arxiv.org/abs/2601.22035" class="btn">arXiv</a>
+                <a href="https://arxiv.org/pdf/2601.22035" class="btn">PDF</a>
+            </p>
+        </div>
+        <div class="container" id="citation">
+            <h2>Citation</h2>
+            <pre style="background:#f5f5f5; padding:1rem; border-radius:5px; overflow-x:auto; font-size:0.9rem;">@article{yu2026thinking,
+  title={Thinking Out of Order: When Output Order Stops Reflecting Reasoning Order in Diffusion Language Models},
+  author={Yu, Longxuan and Fu, Yu and Zhang, Shaorong and Liu, Hui and Varma T, Mukund and Ver Steeg, Greg and Dong, Yue},
+  journal={arXiv preprint arXiv:2601.22035},
+  year={2026}
+}</pre>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Longxuan Yu. Built with <a href="https://github.com/ZhihaoAIRobotic/ClawPhD">ClawPhD</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
