@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation Order in MDMs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#insights">Key Insights</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#paper">Paper</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="main-container">
+                <div class="title-container">
+                    <div class="title-text">
+                        <h1>Generation Order and Parallel Decoding in Masked Diffusion Models</h1>
+                        <p style="font-size:1.3rem; margin-top:0.5rem; opacity:0.9;">An Information-Theoretic Perspective</p>
+                    </div>
+                </div>
+            </div>
+            <div class="authors-container">
+                <p class="authors">
+                    Shaorong Zhang,
+                    <a href="https://fengsxy.github.io" class="author-link">Longxuan Yu</a>,
+                    Rob Brekelmans, Luhan Tang,
+                    Salman Asif<sup>†</sup>,
+                    <a href="https://www.cs.ucr.edu/~gverstee/" class="author-link">Greg Ver Steeg</a><sup>†</sup>
+                </p>
+                <p class="affiliation">University of California, Riverside</p>
+                <p class="affiliation" style="font-size:1rem; margin-top:0.5rem;">† Equal advising</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="abstract">
+            <h2>Abstract</h2>
+            <p>Masked Diffusion Models (MDMs) significantly accelerate inference by trading off sequential determinism. However, the theoretical mechanisms governing generation order and the risks inherent in parallelization remain under-explored.</p>
+            <p>We provide a unified <strong>information-theoretic framework</strong> to decouple and analyze two fundamental sources of failure: <strong>order sensitivity</strong> and <strong>parallelization bias</strong>.</p>
+            <figure>
+                <img src="static/figure_1.png" alt="Order sensitivity and parallelization bias" class="custom-width">
+                <figcaption>Figure 1. Order sensitivity and parallelization bias under increasing model error.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="insights">
+            <h2>Key Insights</h2>
+            <p>Our analysis yields three key insights:</p>
+            <ul>
+                <li><strong>Easy-First decoding</strong> — prioritizing low-entropy tokens — has benefits magnified as model error increases</li>
+                <li>Factorized parallel decoding introduces intrinsic sampling errors that can lead to <strong>arbitrarily large Reverse KL divergence</strong>, capturing "incoherence" failures that standard Forward KL metrics overlook</li>
+                <li>While verification can eliminate sampling error, it incurs an <strong>exponential cost</strong> governed by the total correlation within a block. Heuristics like remasking, though efficient, cannot guarantee distributional correctness</li>
+            </ul>
+            <figure>
+                <img src="static/figure_2.png" alt="Forward vs Reverse KL" class="custom-width">
+                <figcaption>Figure 2. Forward vs. reverse KL under parallel factorization — reverse KL captures incoherence failures missed by forward KL.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="results">
+            <h2>Results</h2>
+            <figure>
+                <img src="static/figure_3.png" alt="KL and incoherence" class="custom-width">
+                <figcaption>Figure 3. Forward KL, reverse KL, and incoherence under parallel decoding with varying block sizes.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_4.png" alt="L2R vs R2L decoding" class="custom-width">
+                <figcaption>Figure 4. Comparison of L2R and R2L decoding strategies under different model conditions.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_5.png" alt="Teacher entropy vs KL error" class="custom-width">
+                <figcaption>Figure 5. Teacher entropy vs. KL error — higher entropy tokens contribute more to parallel decoding error.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="paper">
+            <h2>Paper</h2>
+            <blockquote>
+                <p><a href="https://arxiv.org/abs/2602.00286" class="paper-title">Generation Order and Parallel Decoding in Masked Diffusion Models: An Information-Theoretic Perspective</a></p>
+                <p class="paper-authors">Shaorong Zhang, Longxuan Yu, Rob Brekelmans, Luhan Tang, Salman Asif, Greg Ver Steeg</p>
+                <p class="paper-conference">arXiv preprint, February 2026</p>
+            </blockquote>
+            <p style="margin-top:1rem;">
+                <a href="https://arxiv.org/abs/2602.00286" class="btn">arXiv</a>
+                <a href="https://arxiv.org/pdf/2602.00286" class="btn">PDF</a>
+            </p>
+        </div>
+        <div class="container" id="citation">
+            <h2>Citation</h2>
+            <pre style="background:#f5f5f5; padding:1rem; border-radius:5px; overflow-x:auto; font-size:0.9rem;">@article{zhang2026generation,
+  title={Generation Order and Parallel Decoding in Masked Diffusion Models: An Information-Theoretic Perspective},
+  author={Zhang, Shaorong and Yu, Longxuan and Brekelmans, Rob and Tang, Luhan and Asif, Salman and Ver Steeg, Greg},
+  journal={arXiv preprint arXiv:2602.00286},
+  year={2026}
+}</pre>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Longxuan Yu. Built with <a href="https://github.com/ZhihaoAIRobotic/ClawPhD">ClawPhD</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

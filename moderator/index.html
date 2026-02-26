@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#method">Method</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#paper">Paper</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="main-container">
+                <div class="title-container">
+                    <div class="title-text">
+                        <h1>Moderator</h1>
+                        <p style="font-size:1.3rem; margin-top:0.5rem; opacity:0.9;">Moderating Text-to-Image Diffusion Models through Fine-grained Context-based Policies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="authors-container">
+                <p class="authors">
+                    Peiran Wang*,
+                    Qiyu Li*,
+                    <a href="https://fengsxy.github.io" class="author-link">Longxuan Yu</a>,
+                    Ziyao Wang, Ang Li,
+                    <a href="https://hao-jian.com/" class="author-link">Haojian Jin</a>
+                </p>
+                <p class="affiliation">Tsinghua University | UC San Diego | U of Maryland</p>
+                <p class="affiliation" style="font-size:1rem; margin-top:0.5rem;">* Equal contribution &nbsp;&nbsp; 🏆 ACM CCS 2024 Distinguished Paper Award</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="abstract">
+            <h2>Abstract</h2>
+            <p>We present <strong>Moderator</strong>, a policy-based model management system that allows administrators to specify fine-grained content moderation policies and modify the weights of a text-to-image (TTI) model to make it significantly more challenging for users to produce images that violate the policies.</p>
+            <p>In contrast to existing general-purpose model editing techniques which unlearn concepts without considering the associated contexts, Moderator allows admins to specify <strong>what</strong> content should be moderated, under <strong>which context</strong>, <strong>how</strong> it should be moderated, and <strong>why</strong> moderation is necessary.</p>
+            <figure>
+                <img src="static/figure_1.png" alt="Moderator overview" class="custom-width">
+                <figcaption>Figure 1. Given a policy that moderates specific content, Moderator modifies model weights to prevent generation of violating images.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="method">
+            <h2>Method</h2>
+            <p>Moderator uses an LLM to expand policy coverage, then applies <strong>self-reverse fine-tuning</strong>: (1) generate images that need moderation, (2) reverse fine-tune the model to compute task vectors, and (3) negate the original model with task vectors to decrease its ability to generate moderated content.</p>
+            <figure>
+                <img src="static/figure_2.png" alt="Self-reverse fine-tuning" class="custom-width">
+                <figcaption>Figure 2. Self-reverse fine-tuning: generate violating images, reverse fine-tune, then negate to moderate.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_3.png" alt="Moderator pipeline" class="custom-width">
+                <figcaption>Figure 3. Moderator uses an LLM to expand policy coverage and applies reverse fine-tuning for moderation.</figcaption>
+            </figure>
+            <h3>Policy Interface</h3>
+            <figure>
+                <img src="static/figure_4.png" alt="Policy configuration" class="custom-width">
+                <figcaption>Figure 4. Moderator allows admins to configure replacement, suppression, and warning moderation strategies.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="results">
+            <h2>Results</h2>
+            <figure>
+                <img src="static/figure_9.png" alt="Moderation effectiveness" class="custom-width">
+                <figcaption>Figure 9. Moderation effectiveness of different methods across various policy types.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_12.png" alt="CLIP scores" class="custom-width">
+                <figcaption>Figure 12. Moderator achieved low CLIP scores on moderated content, indicating effective suppression.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_13.png" alt="Multi-policy scaling" class="custom-width">
+                <figcaption>Figure 13. As the number of policies increases, Moderator remains effective at content moderation.</figcaption>
+            </figure>
+            <h3>User Study</h3>
+            <p>We evaluated Moderator with 14 participants as admins and 32 stable diffusion users. Admins could quickly author policies in approximately <strong>2.29 iterations</strong>. Moderator prevented <strong>65% of users</strong> from generating moderated content under 15 attempts.</p>
+            <figure>
+                <img src="static/figure_15.png" alt="Usability ratings" class="custom-width">
+                <figcaption>Figure 15. Participants found Moderator easy to use, with high usability ratings.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="paper">
+            <h2>Paper</h2>
+            <blockquote>
+                <p><a href="https://arxiv.org/abs/2408.07728" class="paper-title">Moderator: Moderating Text-to-Image Diffusion Models through Fine-grained Context-based Policies</a></p>
+                <p class="paper-authors">Peiran Wang*, Qiyu Li*, Longxuan Yu, Ziyao Wang, Ang Li, Haojian Jin</p>
+                <p class="paper-conference">ACM CCS 2024 &nbsp; 🏆 Distinguished Paper Award</p>
+            </blockquote>
+            <p style="margin-top:1rem;">
+                <a href="https://arxiv.org/abs/2408.07728" class="btn">arXiv</a>
+                <a href="https://arxiv.org/pdf/2408.07728" class="btn">PDF</a>
+            </p>
+        </div>
+        <div class="container" id="citation">
+            <h2>Citation</h2>
+            <pre style="background:#f5f5f5; padding:1rem; border-radius:5px; overflow-x:auto; font-size:0.9rem;">@inproceedings{wang2024moderator,
+  title={Moderator: Moderating Text-to-Image Diffusion Models through Fine-grained Context-based Policies},
+  author={Wang, Peiran and Li, Qiyu and Yu, Longxuan and Wang, Ziyao and Li, Ang and Jin, Haojian},
+  booktitle={ACM CCS},
+  year={2024}
+}</pre>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Longxuan Yu. Built with <a href="https://github.com/ZhihaoAIRobotic/ClawPhD">ClawPhD</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

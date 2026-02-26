@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CausalEval</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#paper">Paper</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="main-container">
+                <div class="title-container">
+                    <div class="title-text">
+                        <h1>CausalEval</h1>
+                        <p style="font-size:1.3rem; margin-top:0.5rem; opacity:0.9;">Towards Better Causal Reasoning in Language Models</p>
+                    </div>
+                </div>
+            </div>
+            <div class="authors-container">
+                <p class="authors">
+                    <a href="https://fengsxy.github.io" class="author-link">Longxuan Yu</a>*,
+                    Delin Chen*, Siheng Xiong*, Qingyang Wu, Qingzhen Liu, Dawei Li, Zhikai Chen, Xiaoze Liu, Liangming Pan
+                </p>
+                <p class="affiliation">UC San Diego | UMass Amherst | Georgia Tech | UCLA | U of Arizona</p>
+                <p class="affiliation" style="font-size:1rem; margin-top:0.5rem;">* Equal contribution</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="abstract">
+            <h2>Abstract</h2>
+            <p>Causal reasoning is a crucial aspect of intelligence, essential for problem-solving, decision-making, and understanding the world. We introduce <strong>CausalEval</strong>, a comprehensive review of research aimed at enhancing LMs for causal reasoning, coupled with an empirical evaluation of current models and methods. We categorize existing methods based on the role of LMs: either as <strong>reasoning engines</strong> or as <strong>helpers</strong> providing knowledge or data to traditional CR methods.</p>
+            <figure>
+                <img src="static/figure_1.png" alt="LLMs for causal reasoning" class="custom-width">
+                <figcaption>Figure 1. Large language models for causal reasoning: serving as reasoning engines or as helpers.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="overview">
+            <h2>Framework Overview</h2>
+            <figure>
+                <img src="static/figure_2.png" alt="Structure overview" class="custom-width">
+                <figcaption>Figure 2. We categorize the role of LLMs in causal reasoning into reasoning engines and enhancement helpers.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_3.png" alt="LLMs as reasoning engines" class="custom-width">
+                <figcaption>Figure 3. Overview of methods for LLMs as causal reasoning engines.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="results">
+            <h2>Results</h2>
+            <figure>
+                <img src="static/figure_5.png" alt="Zero-shot vs few-shot" class="custom-width">
+                <figcaption>Figure 5. Performance gap of zero-shot and few-shot prompting across causal reasoning tasks.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_6.png" alt="Scaling effect" class="custom-width">
+                <figcaption>Figure 6. Scaling effect of model size on overall causal reasoning performance.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_7.png" alt="Error analysis" class="custom-width">
+                <figcaption>Figure 7. Error analysis across different types of causal reasoning tasks.</figcaption>
+            </figure>
+            <figure>
+                <img src="static/figure_8.png" alt="Human vs LLM" class="custom-width">
+                <figcaption>Figure 8. Human and LLM performance on causal reasoning benchmarks.</figcaption>
+            </figure>
+        </div>
+        <div class="container" id="paper">
+            <h2>Paper</h2>
+            <blockquote>
+                <p><a href="https://arxiv.org/abs/2410.16676" class="paper-title">CausalEval: Towards Better Causal Reasoning in Language Models</a></p>
+                <p class="paper-authors">Longxuan Yu*, Delin Chen*, Siheng Xiong*, Qingyang Wu, Qingzhen Liu, Dawei Li, Zhikai Chen, Xiaoze Liu, Liangming Pan</p>
+                <p class="paper-conference">NAACL 2025</p>
+            </blockquote>
+            <p style="margin-top:1rem;">
+                <a href="https://arxiv.org/abs/2410.16676" class="btn">arXiv</a>
+                <a href="https://arxiv.org/pdf/2410.16676" class="btn">PDF</a>
+                <a href="https://github.com/chendl02/Awesome-LLM-causal-reasoning" class="btn">Code</a>
+            </p>
+        </div>
+        <div class="container" id="citation">
+            <h2>Citation</h2>
+            <pre style="background:#f5f5f5; padding:1rem; border-radius:5px; overflow-x:auto; font-size:0.9rem;">@inproceedings{yu2025causaleval,
+  title={CausalEval: Towards Better Causal Reasoning in Language Models},
+  author={Yu, Longxuan and Chen, Delin and Xiong, Siheng and Wu, Qingyang and Liu, Qingzhen and Li, Dawei and Chen, Zhikai and Liu, Xiaoze and Pan, Liangming},
+  booktitle={NAACL},
+  year={2025}
+}</pre>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Longxuan Yu. Built with <a href="https://github.com/ZhihaoAIRobotic/ClawPhD">ClawPhD</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
