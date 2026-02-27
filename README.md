@@ -6,6 +6,10 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-02-26 | [Hacker News](hackernews/2026-02-26.md): Hacker News Digest - 2026-02-26 |
+| 2026-02-26 | [Scholar Inbox](scholar_inbox/2026-02-26-daily-papers.md): 每日论文 2026-02-26 |
+| 2026-02-26 | [Karpathy RSS](karpathy_rss/2026-02-26-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-26 |
+| 2026-02-26 | [Essays](essays/xiaohongshu/2026-02-26-what-is-understanding-xhs-v2.md): AI 真的"理解"了吗？一个被整个领域回避的问题 |
 | 2026-02-25 | [Scholar Inbox](scholar_inbox/2026-02-25-daily-papers.md): 每日论文 2026-02-25 (+1 more) |
 | 2026-02-25 | [Karpathy RSS](karpathy_rss/2026-02-25-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-25 |
 | 2026-02-25 | [Hacker News](hackernews/2026-02-25.md): Hacker News Digest - 2026-02-25 (+1 more) |
@@ -14,10 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
 | 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
 | 2026-02-24 | [Scholar Inbox](scholar_inbox/2026-02-24-diffusion-dllm.md): 2026-02-24-diffusion-dllm |
-| 2026-02-23 | [Karpathy RSS](karpathy_rss/2026-02-23-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-23 |
-| 2026-02-23 | [Hacker News](hackernews/2026-02-23.md): Hacker News Digest - 2026-02-23 |
-| 2026-02-23 | [Scholar Inbox](scholar_inbox/2026-02-22-diffusion-dllm.md): 2026-02-22-diffusion-dllm |
-| 2026-02-22 | [Dwarkesh](transcripts/dwarkesh/176_scott_young_ultralearning_the_mit_challenge.analysis.md): 分析：Scott Young - Ultralearning, The MIT Challenge (+26 more) |
 
 ---
 
