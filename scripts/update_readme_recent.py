@@ -23,6 +23,8 @@ TRACKED = {
     "transcripts/xiaojun": ("张小珺访谈", "transcripts/xiaojun"),
     "transcripts/whynot": ("WhynotTV", "transcripts/whynot"),
     "essays": ("Essays", "essays"),
+    "sicp": ("SICP 解读", "sicp"),
+    "cs202": ("CS 202 论文解读", "cs202"),
 }
 
 MAX_ROWS = 12  # max entries in the table

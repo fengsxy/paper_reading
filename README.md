@@ -6,6 +6,11 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-02-28 | [Hacker News](hackernews/2026-02-28.md): Hacker News Digest - 2026-02-28 |
+| 2026-02-28 | [Scholar Inbox](scholar_inbox/2026-02-28-daily-papers.md): 每日论文精选 - 2026-02-28 |
+| 2026-02-28 | [Karpathy RSS](karpathy_rss/2026-02-28-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-28 |
+| 2026-02-28 | [CS 202 论文解读](cs202/01_THE.md): THE Multiprogramming System (+20 more) |
+| 2026-02-28 | [SICP 解读](sicp/01_procedures.md): SICP 第一章：用过程构建抽象 (+5 more) |
 | 2026-02-26 | [Hacker News](hackernews/2026-02-26.md): Hacker News Digest - 2026-02-26 |
 | 2026-02-26 | [Scholar Inbox](scholar_inbox/2026-02-26-daily-papers.md): 每日论文 2026-02-26 |
 | 2026-02-26 | [Karpathy RSS](karpathy_rss/2026-02-26-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-26 |
@@ -13,11 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-25 | [Scholar Inbox](scholar_inbox/2026-02-25-daily-papers.md): 每日论文 2026-02-25 (+1 more) |
 | 2026-02-25 | [Karpathy RSS](karpathy_rss/2026-02-25-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-25 |
 | 2026-02-25 | [Hacker News](hackernews/2026-02-25.md): Hacker News Digest - 2026-02-25 (+1 more) |
-| 2026-02-25 | [Essays](essays/2026-02-25-from-milk-tea-to-turing-completeness-zh.md): 从奶茶到图灵完备 (+9 more) |
-| 2026-02-24 | [Essays](essays/2026-02-24-claw-as-asset-zh.md): Claw 即资产 |
-| 2026-02-24 | [Karpathy RSS](karpathy_rss/2026-02-24-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-24 |
-| 2026-02-24 | [Hacker News](hackernews/2026-02-24.md): Hacker News Digest - 2026-02-24 |
-| 2026-02-24 | [Scholar Inbox](scholar_inbox/2026-02-24-diffusion-dllm.md): 2026-02-24-diffusion-dllm |
 
 ---
 
