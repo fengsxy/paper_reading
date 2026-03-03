@@ -6,6 +6,9 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-03-02 | [Hacker News](hackernews/2026-03-02.md): Hacker News 每日精选 - 2026-03-02 |
+| 2026-03-02 | [Scholar Inbox](scholar_inbox/2026-03-02-daily-papers.md): 每日论文精选 - 2026-03-02 |
+| 2026-03-02 | [Karpathy RSS](karpathy_rss/2026-03-02-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-03-02 |
 | 2026-02-28 | [Hacker News](hackernews/2026-02-28.md): Hacker News Digest - 2026-02-28 |
 | 2026-02-28 | [Scholar Inbox](scholar_inbox/2026-02-28-daily-papers.md): 每日论文精选 - 2026-02-28 |
 | 2026-02-28 | [Karpathy RSS](karpathy_rss/2026-02-28-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-28 |
@@ -15,9 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-02-26 | [Scholar Inbox](scholar_inbox/2026-02-26-daily-papers.md): 每日论文 2026-02-26 |
 | 2026-02-26 | [Karpathy RSS](karpathy_rss/2026-02-26-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-26 |
 | 2026-02-26 | [Essays](essays/xiaohongshu/2026-02-26-what-is-understanding-xhs-v2.md): AI 真的"理解"了吗？一个被整个领域回避的问题 |
-| 2026-02-25 | [Scholar Inbox](scholar_inbox/2026-02-25-daily-papers.md): 每日论文 2026-02-25 (+1 more) |
-| 2026-02-25 | [Karpathy RSS](karpathy_rss/2026-02-25-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-02-25 |
-| 2026-02-25 | [Hacker News](hackernews/2026-02-25.md): Hacker News Digest - 2026-02-25 (+1 more) |
 
 ---
 
