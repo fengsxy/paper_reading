@@ -71,6 +71,17 @@ Podcast transcripts & analysis.
 
 → [查看全部](agent_notes/)
 
+## 🛠️ Scripts
+
+Useful scripts for development and deployment.
+
+- [**clash_setup.sh**](scripts/clash_setup.sh) — One-click Clash VPN setup for China Linux machines
+  - Auto-detect system architecture (x86_64/arm64/armv7)
+  - Download Clash binary & subscription config
+  - Create systemd service with auto-start
+  - Configure environment variables
+  - Usage: `./scripts/clash_setup.sh <subscription_url>`
+
 ---
 
 Updated daily at 8:00 AM Pacific
