@@ -6,7 +6,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
-| 2026-03-05 | [Scholar Inbox](scholar_inbox/index.md): Scholar Inbox |
+| 2026-03-05 | [Scholar Inbox](scholar_inbox/index.md): Scholar Inbox (+1 more) |
 | 2026-03-04 | [Hacker News](hackernews/2026-03-04.md): Hacker News 每日精选 - 2026-03-04 |
 | 2026-03-04 | [Scholar Inbox](scholar_inbox/2026-03-04-daily-papers.md): 2026-03-04 每日论文精选 |
 | 2026-03-04 | [Karpathy RSS](karpathy_rss/2026-03-04-karpathy-rss-digest.md): Karpathy RSS Daily Digest - 2026-03-04 |
