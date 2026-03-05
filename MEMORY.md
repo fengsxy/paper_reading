@@ -12,23 +12,6 @@ Last updated: 2026-03-04
 
 ## Active Projects
 
-### Academic Applications (2026-03-03)
-1. **National Social Science Fund** (国家社科基金)
-   - Topic: 虚拟财产的刑事执行程序研究
-   - Category: 青年项目
-   - Status: ⏸️ Paused (waiting for Yu's personal info + Ban Yiyuan's publications)
-   - Reference material: 6 典型案例 with authoritative media links
-
-2. **Ningbo Municipal Project**
-   - Topic 31: 总体国家安全观实践路径研究
-   - Status: ✅ Completed, Word doc delivered via Telegram
-   - Approach: "激进" (critical perspective on national security vs civil liberties)
-
-3. **Ministry of Culture & Tourism** (部级)
-   - Topic 21: AI应用及风险防范 ✅ Completed
-   - Topic 28: 数据资源知识产权 ✅ Completed
-   - Skill created: `skills/funding-proposal/SKILL.md`
-
 ### Buffett Analysis Project (2026-03-03 - 2026-03-04)
 - **Status**: 100% COMPLETE ✅
 - **Deliverables**:
