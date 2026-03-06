@@ -6,6 +6,7 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-03-06 | [Karpathy RSS](karpathy_rss/2026-03-06-karpathy-rss-digest.md): Karpathy RSS Digest - 2026-03-06 |
 | 2026-03-05 | [Hacker News](hackernews/2026-03-05.md): Hacker News 2026-03-05 精选 |
 | 2026-03-05 | [Scholar Inbox](scholar_inbox/2026-03-05-daily-papers.md): 2026-03-05 每日论文精选 (+2 more) |
 | 2026-03-05 | [Karpathy RSS](karpathy_rss/2026-03-05-karpathy-rss-digest.md): Karpathy RSS Digest - 2026-03-05 |
@@ -17,7 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-03-03 | [Karpathy RSS](karpathy_rss/2026-03-03-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-03-03 |
 | 2026-03-02 | [Hacker News](hackernews/2026-03-02.md): Hacker News 每日精选 - 2026-03-02 |
 | 2026-03-02 | [Scholar Inbox](scholar_inbox/2026-03-02-daily-papers.md): 每日论文精选 - 2026-03-02 |
-| 2026-03-02 | [Karpathy RSS](karpathy_rss/2026-03-02-karpathy-rss-digest.md): Karpathy RSS Digest — 2026-03-02 |
 
 ---
 
