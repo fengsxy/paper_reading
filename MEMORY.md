@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-03-04
+Last updated: 2026-03-07
 
 ## Yu's Preferences & Work Style
 
@@ -12,7 +12,7 @@ Last updated: 2026-03-04
 
 ## Active Projects
 
-### Buffett Analysis Project (2026-03-03 - 2026-03-04)
+### Buffett Analysis Project (2026-03-03 - 2026-03-05)
 - **Status**: 100% COMPLETE ✅
 - **Deliverables**:
   - 49 annual analyses (1977-2025): ~200,000 words, all detailed versions
@@ -64,6 +64,7 @@ Last updated: 2026-03-04
 - **Yunyi**: Daily quota model (20,000/day), expires 2026-03-23
 - **YDC Search**: Key in `~/.openclaw/secrets/ydc_api_key`
 - **Groq**: GROQ_API_KEY for Whisper transcription
+- **Grok**: xai-grok provider (grok-4-latest), configured as fallback (added 2026-03-04)
 
 ### GitHub
 - **Main repo**: git@github.com:fengsxy/paper_reading.git
@@ -148,7 +149,6 @@ Last updated: 2026-03-04
 
 ## Skills Installed
 - x-reader: Universal content reader
-- memory-optimizer: This skill (memory distillation)
 - funding-proposal: Academic funding application framework
 - clawhub: Skill management
 - coding-agent: Delegate to Codex/Claude Code
