@@ -1,23 +1,15 @@
 # Karpathy RSS Digest - 2026-03-12
 
 ## Summary
-过去 24 小时无新文章。
 
-## All Articles (Latest 5)
-1. **microgpt** (2026-02-12)
-   - http://karpathy.github.io/2026/02/12/microgpt/
+今日无新内容。Karpathy 博客过去 24 小时内无更新。
 
-2. **Deep Neural Nets: 33 years ago and 33 years from now** (2022-03-14)
-   - http://karpathy.github.io/2022/03/14/lecun1989/
+## Feed Status
 
-3. **A from-scratch tour of Bitcoin in Python** (2021-06-21)
-   - http://karpathy.github.io/2021/06/21/blockchain/
+- **检查时间**: 2026-03-12 15:31 UTC
+- **最新文章**: "microgpt" (2026-02-13)
+- **过去 24h 新文章数**: 0
 
-4. **Short Story on AI: Forward Pass** (2021-03-27)
-   - http://karpathy.github.io/2021/03/27/forward-pass/
+## Notes
 
-5. **Biohacking Lite** (2020-06-11)
-   - http://karpathy.github.io/2020/06/11/biohacking-lite/
-
----
-Generated: 2026-03-12 15:21 UTC
+Karpathy 的博客更新频率较低（最近一篇是一个月前），这是正常现象。继续监控即可。
