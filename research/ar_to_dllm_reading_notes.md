@@ -579,3 +579,96 @@
 ### 与 dLLM 的关系：
 - dLLM 天然支持 self-distillation：多步 denoise 的 teacher → 少步的 student
 - 不需要外部模型
+
+## Paper 20: SDTT — Self-Distillation Through Time (EPFL, ICLR 2025)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心方法：迭代自蒸馏**
+   - Teacher = 同一个模型用 N 步采样
+   - Student = 同一个模型用 N/2 步采样
+   - 蒸馏目标：student 的一步输出 → 匹配 teacher 两步的联合输出
+   - 迭代 7 轮：1024 → 512 → 256 → ... → 16 步
+
+2. **Target 构建（Algorithm 1，核心创新）**：
+   - 对每个 masked token，记录它在 teacher trajectory 中**被揭示时刻**的 log-probability
+   - 对 teacher 最终仍 masked 的 token，用最后一步的 log-probability
+   - 这样每个 token 的 target 来自 teacher trajectory 中最相关的那一步（不是统一的某一步）
+
+3. **蒸馏 Loss 选择**：
+   - 对比了 L2、TV（Total Variation）、KLD
+   - **KLD 最好**——student 甚至在 LAMBADA 上超越了 teacher！说明蒸馏过程有正则化效果
+   - L2 在 discrete space 效果差（logit 空间的 L2 不等于概率空间的相似性）
+
+4. **结果**：
+   - 860M 参数模型（当时最大开源 discrete DLM）
+   - 16 步采样 → 比 AR+KV cache 快 8×
+   - Perplexity 和 accuracy 几乎无损
+   - 不需要 caching（还有进一步加速空间）
+
+5. **关键洞察**：
+   - "Self-Distillation" = teacher 和 student 是同一个模型（不需要额外大模型）
+   - 蒸馏本质上是把 multi-step 的 "implicit knowledge" 压缩到 single-step prediction 中
+   - KLD > L2 说明：概率空间的对齐比 logit 空间的对齐更重要
+
+---
+
+## Paper 21: Di4C — Distillation of Discrete Diffusion through Dimensional Correlations (Sony, ICML 2025)
+**Abstract + 方法阅读**
+
+### 关键技术细节：
+
+1. **核心问题：维度间相关性**
+   - 标准 discrete diffusion 假设 token 间独立（element-wise independence）
+   - 这在多步采样时 OK（多步迭代隐式建模了相关性）
+   - 但少步采样时不 OK——需要显式建模 token 间相关性
+
+2. **解决方案：Mixture Models**
+   - 用 mixture distribution 替代 element-wise independent distribution
+   - Mixture 可以捕捉维度间相关性，同时保持可扩展性
+   - 本质上是在 student 中增加表达能力来补偿步数减少
+
+3. **蒸馏 Loss**：
+   - 专门为 discrete diffusion 设计的 distillation loss
+   - 理论证明：many-step independent model 可以被蒸馏到 few-step mixture model
+
+4. **结果**：在 image 和 language 领域都有效
+
+5. **关键洞察**：
+   - 步数减少的本质代价 = 失去了隐式建模维度相关性的能力
+   - 补偿方式：让 student 的每步预测更 expressive（mixture instead of independent）
+   - 这跟你的 linear state 思路异曲同工——linear state 也是在增加每步的信息容量
+
+---
+
+## Paper 22: DyLLM — Dynamic LLM Inference via Saliency-based Token Selection (SNU, arXiv 2026.03)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心观察：大多数 token 在相邻步骤间表示几乎不变**
+   - 测量 cosine similarity：adjacent steps 的 hidden states 相似度极高
+   - 只有少量 "salient tokens" 发生有意义的变化
+   - 这些 salient tokens 才是每步计算真正需要更新的
+
+2. **DyLLM 方法**：
+   - **Layer-Adaptive Saliency Mechanism**：每层独立判断哪些 token 是 salient
+   - **Saliency-Aware Approximate Attention**：只对 salient tokens 重算 attention+FFN，non-salient tokens 复用 cache
+   - Training-free，Architecture-agnostic
+
+3. **结果**：
+   - LLaDA 8B: 7.6× throughput improvement
+   - Dream 7B: 9.6× throughput improvement
+   - 精度几乎无损
+
+4. **与其他 cache 方案的对比**：
+   - dKV-Cache: 周期性刷新（不够精准）
+   - Fast-dLLM: block-wise caching（空间粗粒度）
+   - Elastic-Cache: attention-aware drift test（类似但 DyLLM 更精细）
+   - DyLLM: layer-adaptive + token-level 精细选择（最精准）
+
+5. **关键洞察**：
+   - dLLM 的计算瓶颈是 "repeated prefill"——每步都要处理整个序列
+   - 但实际上大多数 token 不需要更新 → 巨大浪费
+   - 这跟 MetaState/linear state 的思路互补：DyLLM 减少不必要计算，linear state 增加有效信息
