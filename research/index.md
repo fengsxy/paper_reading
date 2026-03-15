@@ -4,6 +4,7 @@ title: Research Notes
 
 # Research Notes
 
+- [从 Softmax 到 Linear Attention：Qwen3.5 的 Gated DeltaNet 详解](linear_attention_qwen35) (2026-03-15)
 - [dLLM 两大核心问题调研：错误累积与信息损失](dllm_survey) (2026-03-15)
 - [AR→dLLM 转换方法调研（精读版）](ar_to_dllm_survey) (2026-03-15)
 - [如何做好 dLLM：蒸馏、加速与 Post-Training](dllm_distillation_survey) (2026-03-15)
