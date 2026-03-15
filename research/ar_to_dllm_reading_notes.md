@@ -281,3 +281,132 @@
 ### 与你的工作的关系：
 - Mercury 证明了 dLLM 的商业可行性（速度是杀手级优势）
 - 如果 linear state memory 能进一步加速推理（减少 denoising 步数），商业价值巨大
+
+## Paper 9: CDLM — Consistency Diffusion Language Models (MLSys under review, 2025.11)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心思路：把 continuous diffusion 的 consistency model 搬到 discrete diffusion**：
+   - Consistency model 原理：任意中间状态都能直接映射到最终结果，不需要走完所有步
+   - 在 dLLM 中：training a block-causal student to jump multiple denoising steps
+
+2. **三个训练目标联合优化**：
+   - **Distillation Loss**：从 bidirectional teacher 的 hidden states 蒸馏到 block-causal student
+     - 关键：存储 teacher 的 last hidden states（不是 logits），推理时用 lm_head 重建 teacher 分布
+     - Forward KL divergence on newly unmasked positions
+   - **Consistency Loss**：enforcing student 在 state y 和 block-completion state y* 之间的预测一致性
+     - Stop-gradient target（detached from backpropagation）
+     - 只在 still-masked positions 上计算
+   - **DLM Loss**：标准 masked denoising objective，保持 mask prediction 能力
+
+3. **Trajectory Collection（离线）**：
+   - 用 teacher（bidirectional DLM）生成 decoding trajectories
+   - 每个 prompt 多个 temperature 采样 → 多条 trajectory
+   - 存储每步的 hidden states 用于 white-box distillation
+   - 这是离线的——不需要 on-policy 采样
+
+4. **结果**：
+   - Dream 7B: 8h training → 3.4-7.9× fewer steps, 3.6-14.5× lower latency
+   - LLaDA 8B: 16h training → similar speedup
+   - 超越同规模 AR 模型的 tokens/second
+   - Accuracy 几乎无损
+
+5. **关键洞察**：
+   - Block-causal student 比 bidirectional teacher 推理更快（支持 KV cache）
+   - Consistency objective 让 student 能 "跳步"——不需要走完所有 denoising steps
+   - 这本质上是 **self-distillation**：同架构同规模，只改 attention pattern
+
+---
+
+## Paper 10: SPG — Sandwiched Policy Gradient (Meta, arXiv 2025.10)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心问题：dLLM 的 log-likelihood 不可计算 → 标准 policy gradient 无法直接用**
+   - 现有方法用 ELBO 近似 log π_θ(x|c)
+   - 问题：ELBO 是 lower bound，对 positive reward OK（maximize lower bound），但对 negative reward 错误（minimize lower bound ≠ minimize true likelihood）
+
+2. **SPG 的解决方案：三明治**
+   - Positive advantage（好的 response）：maximize ELBO（lower bound）✓
+   - Negative advantage（坏的 response）：minimize EUBO（upper bound）✓
+   - "Sandwich" = ELBO ≤ log π ≤ EUBO → 两个方向都是 valid bound
+
+3. **EUBO 推导（Theorem 1）**：
+   - 基于 Rényi variational bound
+   - 关键区别：log 在 expectation 外面（ELBO 是 log 在里面）
+   - β ≥ 1 控制 tightness（β → 1 更紧但方差更大）
+
+4. **Block-wise Masking Strategy**：
+   - 不用 random masking，用 block-wise masking 做 Monte Carlo estimation
+   - 原因：推理时用 block-wise decoding，random masking 的分布不匹配
+   - 跟 Efficient-DLM 的 position-dependent masking 思路一致
+
+5. **结果**：
+   - GSM8K +3.6%, MATH500 +2.6%, Countdown +18.4%, Sudoku +27.0%
+   - 远超 ELBO-based RL 和 one-step estimation
+
+---
+
+## Paper 11: Seed Diffusion Preview (ByteDance, arXiv 2025.08)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **Two-Stage Curriculum (TSC)**：
+   - Stage 1（前 80% steps）：标准 mask-based diffusion training
+   - Stage 2（后 20% steps）：加入 edit-based corruption process
+     - 用 Levenshtein distance 控制 corruption level
+     - 操作集：deletion, insertion, substitution
+     - 目的：improve calibration，消除 repetition 等 sampling artifacts
+
+2. **Generation Order Control**：
+   - 核心洞察：mask-based diffusion ≡ any-order autoregressive modeling
+   - 自然语言是顺序的 → 纯 random order 效率低
+   - Seed Diffusion 用 "generation order control" 引导模型偏向 left-to-right
+   - 这跟 position-dependent masking（Efficient-DLM）和 CART（Dream）是同一方向
+
+3. **速度**：
+   - 2,146 tokens/sec on H20 GPU（比 Mercury 的 1,109 on H100 还快！）
+   - 关键：H20 是更便宜的 GPU → 性价比更高
+
+4. **跟 Mercury 的对比**：
+   - Mercury: H100, 1,109 tok/s
+   - Seed Diffusion: H20, 2,146 tok/s
+   - Gemini Diffusion: unknown hardware
+   - Seed Diffusion 在 speed-quality Pareto frontier 上当前最优
+
+---
+
+## Paper 12: TiDAR — Think in Diffusion, Talk in Autoregression (NVIDIA, arXiv 2025.11)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心架构：单模型内的 AR + Diffusion 混合**
+   - 不是两个模型，是一个模型用 structured attention mask 实现两种模式
+   - 序列分三部分：prefix（已确定）、proposed（上步的候选，AR 验证）、pre-drafted（本步 diffusion 提出）
+   - 一次 forward pass 同时做 AR 验证 + diffusion 起草
+
+2. **与 Speculative Decoding 的关系**：
+   - TiDAR 本质上是 self-speculative decoding：drafter = diffusion mode，verifier = AR mode
+   - 但 drafter 和 verifier 是**同一个模型的不同 attention pattern**
+   - 利用 "free token slots"（memory-bound 区间内，多放几个 token 不增加延迟）
+
+3. **训练**：
+   - 用 structured causal-bidirectional hybrid attention mask
+   - Diffusion section 全部设为 [MASK]（简化训练，增强 train-test consistency）
+   - AR loss + diffusion loss 联合训练
+
+4. **结果**：
+   - TiDAR 1.5B: lossless quality vs AR, 4.71× throughput speedup
+   - TiDAR 8B: 5.91× throughput speedup, minimal quality loss
+   - 超越 speculative decoding 的 throughput
+   - 超越 Dream/LLaDA 的 quality + speed
+
+5. **关键洞察**：
+   - "diffusion 做初稿，AR 做终稿" — 结合两者优势
+   - AR 的 chain factorization 天然适合语言 → 最终 token 用 AR 采样保证质量
+   - Diffusion 的并行性 → 多个候选 token 同时计算
+   - 这种 hybrid 不需要额外 drafter 模型
