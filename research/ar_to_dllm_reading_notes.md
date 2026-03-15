@@ -410,3 +410,172 @@
    - AR 的 chain factorization 天然适合语言 → 最终 token 用 AR 采样保证质量
    - Diffusion 的并行性 → 多个候选 token 同时计算
    - 这种 hybrid 不需要额外 drafter 模型
+
+## Paper 13: MiniLLM — Knowledge Distillation of Large Language Models (ICLR 2024)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心问题：Forward KL vs Reverse KL**
+   - Forward KL (标准KD)：student 在 teacher 数据上训练 → mode-covering（试图覆盖所有 mode）→ 在 low-probability 区域过度分配概率
+   - Reverse KL (MiniLLM)：student 在自己的数据上训练 → mode-seeking（集中在 teacher 的高概率区域）→ 更精确但可能丢失 mode
+
+2. **On-Policy 训练**：
+   - Student 自己生成 trajectory
+   - 在自己的 trajectory 上计算 reverse KL
+   - 用 policy gradient 优化（类似 RL）
+   - 三个稳定技巧：
+     - **Single-Step Decomposition**：把序列级目标分解为单步目标，减少方差
+     - **Teacher-Mixed Sampling**：α 概率用 teacher 采样，(1-α) 概率用 student 采样
+     - **Length Normalization**：防止 student 学会生成短/重复文本（reward hacking）
+
+3. **关键结果**：
+   - 120M → 13B 全面超越 SeqKD 和标准 KD
+   - Student 在某些任务上**超越 teacher**（exposure bias 更低）
+   - Calibration 更好（ECE 更低）
+   - Long-text generation 优势最明显
+
+4. **与 RL 的联系（Appendix A.1）**：
+   - MiniLLM 等价于 Inverse RL：teacher 的 log probability 作为 reward
+   - 这个联系后来被 Reopold 更深入地挖掘
+
+---
+
+## Paper 14: GKD — Generalized Knowledge Distillation (Google DeepMind, ICLR 2024)
+**Abstract + Paper 阅读**
+
+### 关键创新：
+1. **On-Policy Student-Generated Data**：
+   - 训练时用 student 自己的 output 而非 teacher 的 output
+   - 解决 distribution mismatch（off-policy 的核心问题）
+
+2. **Generalized Divergence**：
+   - 不限于 KL，支持 JSD、TVD 等多种 divergence
+   - 不同 divergence 适合不同场景
+
+3. **与 RLHF 兼容**：
+   - GKD 可以无缝嵌入 RLHF pipeline
+   - 先 GKD 蒸馏，再 RLHF 对齐
+
+4. **结果**：在 summarization 和 translation 上显著优于标准 KD
+
+---
+
+## Paper 15: EOPD — Entropy-Aware On-Policy Distillation (IBM + KAIST, arXiv 2026.03)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心发现：Reverse KL 在高 entropy token 上失败**
+   - Standard on-policy distillation 用 reverse KL → mode-seeking
+   - 问题：teacher 对某些 token 不确定（高 entropy，多种合理选择）
+   - Reverse KL 强迫 student 只选一个 mode → 丢失了 teacher 的 uncertainty
+   - 量化：蒸馏后 student 只保留 6.8% 的高 entropy tokens（teacher 是 18.5%）
+
+2. **EOPD 的解决方案：entropy-aware 混合目标**
+   - L_EOPD = L_OPD(reverse KL) + I[H_t > τ] * L_FKL(forward KL)
+   - 低 entropy token：只用 reverse KL（精确匹配 teacher 的确定预测）
+   - 高 entropy token：加上 forward KL（保留 teacher 的多样性/不确定性）
+   - τ 是 entropy threshold（超参数）
+
+3. **结果**：
+   - Qwen3-0.6B: Pass@8 +1.37
+   - Qwen3-1.7B: Pass@8 +2.39
+   - Qwen3-4B: Pass@8 +5.05
+   - 模型越大提升越大
+   - 关键：提升主要来自**多样性保持** → Pass@K（需要多样性）提升远大于 Greedy（不需要多样性）
+
+4. **与 dLLM 的关系**：
+   - dLLM 的 masked token prediction 本质上就是"高 entropy"场景
+   - 多个 masked token 同时预测 → teacher 的 uncertainty 更高
+   - EOPD 的 entropy-aware 思路直接适用于 dLLM 蒸馏
+
+---
+
+## Paper 16: Reopold — Relaxed On-Policy Distillation (arXiv 2026.03)
+**全文精读完成**
+
+### 关键技术细节：
+
+1. **核心洞察：On-Policy Distillation ≡ Policy Gradient RL**
+   - Stop-gradient 后，distillation objective 精确等价于 policy gradient
+   - Teacher-student log-likelihood ratio = token-level reward
+   - 这意味着 distillation 继承了 RL 的所有优化挑战
+
+2. **三大挑战（RL 视角诊断）**：
+   - **Heavy-tailed negative rewards**：student 生成 teacher 不喜欢的 token → 极大负 reward → 梯度爆炸
+   - **Near-zero rewards**：大多数 token student 和 teacher 一致 → 接近零的 reward → 浪费计算
+   - **Entropy collapse**：student 快速丧失多样性 → 过早收敛
+
+3. **Reopold 三个解决方案**：
+   - **Mixture-based reward clipping**：截断极端负 reward → 稳定训练
+   - **Entropy-based token-level dynamic sampling**：只在高信息量 token 上学习 → 提升效率
+   - **Exploration-to-refinement 两阶段训练**：
+     - Stage 1 (exploration)：基于 reward 选择性学习（过滤 near-zero reward tokens）
+     - Stage 2 (refinement)：基于 entropy 选择性学习（focus on 高 entropy tokens）
+
+4. **结果**：
+   - 比标准 on-policy distillation **6.7-12× 更高 sample efficiency**
+   - 7B student 可以匹配 32B teacher（在 visual reasoning 上）
+   - 3.32× inference speedup
+   - 在 math、visual、tool-use reasoning 上全面超越
+
+5. **关键 insight**：
+   - Stop-gradient 是一个 free 的改进——减少梯度方差，不影响期望梯度
+   - "temperate and selective" 使用 teacher signal 比"全部使用"更好
+   - On-policy distillation 可以比 RL（GRPO 等）更高效（10× less compute）
+
+---
+
+## Paper 17: Progressive Distillation (Salimans & Ho, ICLR 2022)
+**经典论文，Abstract + 方法阅读**
+
+### 核心方法：
+1. Teacher 用 N 步生成 → 训练 student 用 N/2 步匹配
+2. 迭代：student 成为新 teacher → 再训 N/4 步的 student
+3. 最终得到 1-4 步的生成模型
+
+### 与 dLLM 的关系：
+- 直接类比：dLLM teacher 用 T 步 denoise → 训练 student 用 T/2 步
+- CDLM（Paper 9）就是这个思路在 discrete diffusion 上的实现
+- 但 discrete diffusion 的 progressive distillation 比 continuous 更难（离散采样不可微）
+
+---
+
+## Paper 18: Consistency Models (Song et al., ICML 2023)
+**经典论文，Abstract + 方法阅读**
+
+### 核心方法：
+1. 定义 consistency function f(x_t, t) → x_0：任意中间状态直接映射到最终结果
+2. Self-consistency property：同一 trajectory 上的所有点映射到同一 x_0
+3. 两种训练方式：
+   - Consistency Distillation (CD)：从预训练 diffusion model 蒸馏
+   - Consistency Training (CT)：直接训练，不需要 teacher
+
+### 与 dLLM 的关系：
+- CDLM（Paper 9）直接搬了 CD 到 discrete diffusion
+- Consistency 的核心属性（self-consistency）在 discrete space 需要重新定义
+- CT 方向在 dLLM 中还未被探索——潜在研究机会
+
+---
+
+## Paper 19: Self-Distilled Reasoner — OPSD (CMU, arXiv 2026.01)
+**Abstract + Blog 阅读**
+
+### 核心创新：
+1. **Self-Distillation**：不需要外部 teacher
+   - Model 自己做 verification（给定 answer，判断 solution 是否正确）
+   - 正确 solution 的 log-prob 作为 dense reward signal
+   - Student = teacher（同一个模型的不同 mode）
+
+2. **On-Policy Self-Improvement Loop**：
+   - Step 1: Student 生成 solution
+   - Step 2: 用 privileged info（ground truth answer）筛选正确 solution
+   - Step 3: 在正确 solution 上自蒸馏
+   - 迭代
+
+3. **结果**：4-5× inference speedup on parallel-structured reasoning tasks
+
+### 与 dLLM 的关系：
+- dLLM 天然支持 self-distillation：多步 denoise 的 teacher → 少步的 student
+- 不需要外部模型
