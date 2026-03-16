@@ -58,6 +58,8 @@ Podcast transcripts & analysis.
 
 ## ✍️ Essays
 
+- [世界模型：AI 的下一个战场](research/world_models_blog.md) (2026-03-16)
+- [DSL：用连续噪声解锁离散扩散语言模型的纠错能力](research/dsl_dllm_blog.md) (2026-03-16)
 - [理解到底是什么？从 linear probe 到搜索剪枝](essays/2026-02-25-what-is-understanding-zh.md) (2026-02-25)
 - [VAE 和 Diffusion 能不能一起训？](essays/2026-02-25-vae-diffusion-cotraining-zh.md) (2026-02-25)
 - [Coconut、Soft-Masked DLM、DSL 在做同一件事](essays/2026-02-25-delayed-commitment-zh.md) (2026-02-25)
