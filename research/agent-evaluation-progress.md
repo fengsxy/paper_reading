@@ -52,6 +52,32 @@
 - **PinchBench**: Real-world coding agent benchmark for OpenClaw. Uses automated checks + LLM judge. Top scores in mid-80% range (Mar 2026). Shows that even strong models struggle with agentic tasks. Directly relevant: tests tool selection, multi-step planning, file management, error recovery.
 - **WildClawBench**: Tests agents inside real OpenClaw instances with actual bash, filesystem, browser, email, calendar. Avoids mock APIs. Emphasizes "personal AI assistant" workflows. Includes Personal OpenClaw Leaderboard for long-term interaction studies.
 
+## Today's Insights (2026-03-31)
+
+**Additional benchmark ecosystem**:
+- **PASB** (Personalized Agent Security Bench, arXiv 2602.08412): End-to-end security eval framework. Demonstrates attack propagation across stages; highlights that risks go beyond text generation to system-level harms. Aligns with my **Safety** dimension; provides concrete adversarial scenarios.
+- **AgentBench skill**: 40 YAML-defined real-world tasks. Good for targeted capability profiling.
+- **ClawExam**: Community platform with embedded prompt injection/leakage tasks. Tests adversarial robustness.
+
+**Capability layer validation**:
+Mapped these OpenClaw-native benchmarks to my 5-layer taxonomy (Pure LLM → Tool selection → Orchestration → Memory → Multi-agent). Validation results:
+- PinchBench: heavy Tool selection + Orchestration
+- WildClawBench: full spectrum; highest failure rates in Memory-dependent and Multi-agent tasks
+- PASB: focuses on Orchestration + Memory (information flow attack surface)
+
+This cross-benchmark alignment strengthens the theoretical foundation of the five-dimension radar.
+
+**Production pattern synthesis**:
+Industry tools (Google, Anthropic, LangSmith, Arize, TELUS) converge on:
+1. Trajectory-first evaluation (log everything)
+2. Hybrid judges (deterministic + LLM + human)
+3. Traceability (results attached to trace spans)
+4. Automated quality gates in CI
+
+This validates my Experiment 6 (Process Quality Audit) design and suggests OpenClaw tracing integration for visualization.
+
+**Next immediate step**: Implement 2-3 prototypes as runnable sub-agent experiments. Priority: Experiment 1 (capability boundaries) and Experiment 6 (process audit), leveraging v2026.3.28's async requireApproval for human-in-the-loop scenarios.
+
 **Model performance context (Jan-Mar 2026):**
 - Premium models: ~92.5% success rate
 - Mid-tier: ~78.2%

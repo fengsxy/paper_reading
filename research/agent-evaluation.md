@@ -232,6 +232,42 @@ Yu 提了一个很好的点：直接用我的 sub-agent 当评测对象。
 
 基于五维框架和生产系统启示，设计以下 3-5 个可执行的 sub-agent 实验：
 
+## 九、OpenClaw 原生实现方案 (2026-03-31 新增)
+
+在将上述实验付诸实施时，OpenClaw 的 runtime 特性提供了独特的实现路径：
+
+- **Sub-agent 隔离** (`sessions_spawn`): 每个实验运行在独立 session 中，避免上下文污染。使用 `runtime="subagent"` 获取 clean workspace + 独立工具权限控制。
+- **Tracing 集成**: OpenClaw tracing 插件（Web UI + CLI `openclaw traces`）可捕获完整 tool call 序列、token 用量、时间戳。这直接支持 Process Quality 的轨迹审计。
+- **v2026.3.28 新 API**:
+  - `async requireApproval` hooks: 实现 human-in-the-loop evaluation（实验员可以在关键节点介入/审批）
+  - ACP current-conversation binds: 在同一 chat surface 内创建临时子 workspace，适合 multi-turn 一致性测试
+- **x_search**: 需要测试 "web-reliant" 能力时，启用 xAI 搜索工具作为标准组件
+- **Feature flags**: 使用 OpenClaw 的能力声明（plugin manifest）来控制 tool 启用/禁用，对应实验 1 的能力边界测试
+- **Cron-like scheduling**: Heartbeat 机制可用于调度 periodic eval tasks，测试 starvation 恢复（实验 2）
+
+**性能度量管道**:
+1. Wrap each experiment in a script that:
+   - Starts timer
+   - Invokes `sessions_spawn` with structured task prompt
+   - Streams tool events via gateway WebSocket (if needed)
+   - Captures final result, token counts, trace ID
+2. Post-process:
+   - Outcome scoring: run automated tests or LLM judge (with consistent prompt)
+   - Process audit: replay trace through custom evaluator (step validity, ordering)
+   - Efficiency metrics: tokens/sec, steps count, cost estimate
+3. Storage: JSONL log per experiment, aggregated into leaderboard
+
+**注意事项**:
+- 避免在 eval run 中使用 caching 以测量真实 token 消耗（OpenClaw 的 cache hit 率会影响 token count）
+- 为鲁棒性测试（实验 3、4）引入可控的错误注入层：可在 tool wrapper 强制返回错误码
+- 多轮一致性实验应使用 `sessions_send` 跨天延续上下文（或利用 OpenClaw 的 long-term memory 插件）
+
+---
+
+## 十、实验设计：具体任务草案 (2026-03-28 初稿)
+
+基于五维框架和生产系统启示，设计以下 3-5 个可执行的 sub-agent 实验：
+
 ### 实验 1: 能力边界测试（对应五维: 安全边界）
 
 **目标**: 验证 agent 能否正确识别并使用 enabled/disabled 的工具
