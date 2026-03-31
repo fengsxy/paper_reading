@@ -94,6 +94,17 @@
 - 将 prompt injection 和 leakage 尝试嵌入任务内部，测试对抗鲁棒性
 - 社区驱动题库持续增长
 
+**TRACE** (arXiv 2602.21230, ACM WWW 2026)
+- **Trajectory-Aware Comprehensive Evaluation** for Deep Research Agents
+- Introduces **Hierarchical Trajectory Utility Function**: U(ℋ)=𝕀(correct)×(ℰ)^ωE×(𝒞)^ωC
+  - **Process Efficiency ℰ**: penalizes redundant exploration using Marginal Information Gain (MIG) + Redundant Exploration Penalty (REP) based on observation embedding similarity
+  - **Cognitive Quality 𝒞**: weighted sum of Evidence Grounding (𝒢E) via NLI entailment + Reasoning Robustness (ℛR) via trap recovery latency
+- **Scaffolded Capability Assessment**: Minimum Hint Rate (λ_min) measures latent ability by finding minimal oracle guidance needed for 90% success
+- **Policy Diagnostics**: Entropy Adaptability (ℰA), Trajectory Reproducibility Score (TRS)
+- **DeepResearch-Bench**: 650 tasks with controllable complexity, embedded traps, and oracle trajectories
+- **Key finding**: High Pass@1 can mask poor efficiency/trustworthiness (e.g., DeepSeek-V3.1-671B: Pass@1 65.8% vs Utility 0.65; AgentFounder-30B passes@1 60.1% but Utility 0.81)
+- **Relevance to OpenClaw**: Provides mathematically rigorous blueprint for implementing my "Process Quality" and "Robustness" dimensions; particularly applicable to research-oriented agent tasks
+
 **能力分层模型的验证**：
 对比上述 OpenClaw 原生 benchmarks 的任务分布，我的 5 层能力模型（Pure LLM → Tool selection → Orchestration → Memory → Multi-agent）与任务难度梯度吻合：
 - PinchBench 偏重 Tool selection + Orchestration
@@ -190,6 +201,32 @@ Yu 提了一个很好的点：直接用我的 sub-agent 当评测对象。
 - **过程质量评测**是真正的蓝海：现有 benchmark 几乎只看 outcome，不看 trajectory
 - 可能的切入点：用信息论度量 trajectory 的"效率"——每一步减少了多少不确定性？
 - 这和 Yu 的研究方向（information-theoretic methods）天然契合
+
+## 七、工业界实践与工具链 (2026-03-31 补充)
+
+近期搜索发现，主流平台已提供 trajectory-level evaluation 工具，验证了 process quality 的实操价值：
+
+- **Google Cloud**: "methodical approach to agent evaluation" 强调 trajectory 诊断（exact steps, tool calls, reasoning），推荐自动化质量门 + LLM-as-judge 结合。关键建议：align LLM judge to human labels, operationalize into CI.
+- **Anthropic**: "Demystifying evals" 区分 transcript vs outcome; 提出三元评分器：code-based (deterministic tests), model-based (rubric), human (spot-check). 例子：coding agent 用 static analysis (ruff/mypy/bandit) + state check + tool-call pattern tracking.
+- **LangChain (LangSmith)**: 提供 trajectory evaluators 支持参考轨迹子集匹配、效率评估。工具链化，支持 async。
+- **Arize (Phoenix Evals)**: 将轨迹发送给 LLM judge 分类正确/错误并生成解释，结果附着到 tracing span 便于 UI 筛选。
+- **TELUS Digital**: "golden path" trajectories + 专家人工标注每个决策点的偏差和根因；用于生成高质量微调数据。
+
+**共同主题**:
+1. **Trajectory first**: 过程日志是必需输入，不是副产品。
+2. **混合裁判**: deterministic (state/code) + LLM judge (qualitative) + human (calibration)。
+3. **可追溯性**: 评估结果附着回 trace 的特定 span，支持 pivot 分析。
+4. **自动化质量门**: 集成到工程流水线，每次变更自动跑 suite。
+
+**与 TRACE 的共鸣**:
+- TRACE 提供了**数学公式**（Utility 函数），将上述实践 rigorized
+- TRACE 的 Evidence Grounding 对应 Anthropic 的 state check + NLI
+- Scaffolded Capability Assessment 相当于 "golden path" 的最小提示率量化
+
+**对我的框架的直接启发**:
+- 实验 6 (过程质量审计) 应该实现为混合裁判 pipeline: 自动状态比对 + 轻量 LLM rubric + 人工 spot-check (作为 benchmark 建立阶段)
+- 报告时不仅给出整体 Process Quality 分数，还要**分解为子维度**: step validity, ordering, parsimony, tool-call appropriateness —— 这些是 Anthropic/TELUS 都提到的手工审计维度
+- 将实验结果通过 OpenClaw tracing 可视化（如果 tracing 插件稳定），便于用户理解 agent 行为模式
 
 ## 十、实验设计：具体任务草案 (2026-03-28 初稿)
 
