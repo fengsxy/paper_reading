@@ -12,9 +12,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-03-27 | [Scholar Inbox](scholar_inbox/2026-03-27-daily-papers.md): Daily Papers - 2026-03-27 |
 | 2026-03-24 | [Hacker News](hackernews/2026-03-24.md): Hacker News — 2026-03-24 |
 | 2026-03-24 | [Scholar Inbox](scholar_inbox/2026-03-24-daily-papers.md): Daily Papers — 2026-03-24 |
-| 2026-03-23 | [Hacker News](hackernews/2026-03-23.md): Hacker News — 2026-03-23 |
-| 2026-03-23 | [Scholar Inbox](scholar_inbox/2026-03-23-daily-papers.md): Daily Papers — 2026-03-23 |
-| 2026-03-23 | [Karpathy RSS](karpathy_rss/2026-03-23-karpathy-rss-digest.md): Karpathy RSS Digest - 2026-03-23 |
 
 ---
 

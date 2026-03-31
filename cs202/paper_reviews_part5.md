@@ -1,0 +1,41 @@
+## Paper 8: The Design and Implementation of a Log-Structured File System (LFS, 1991)
+
+### Q1: Summary (300 words max)
+
+This paper proposes the log-structured file system (LFS), which fundamentally rethinks how file systems write data to disk. Traditional file systems (like FFS) scatter writes across the disk—updating an inode here, a data block there, a directory entry elsewhere—resulting in many small random writes that are slow on disk. The authors observe that with growing memory sizes, read requests are increasingly served from the buffer cache, making write performance the dominant bottleneck.
+
+LFS treats the entire disk as a circular log. All writes—data blocks, inodes, inode maps, directory entries—are buffered in memory and written sequentially in large, contiguous segments. This converts many small random writes into a single large sequential write, dramatically improving write throughput (by up to 10× over FFS in their benchmarks). To read a file, LFS maintains an inode map that records the current disk location of each inode (since inodes move with each update). The major challenge is reclaiming space from old, overwritten data. LFS uses a segment cleaner that identifies segments with mostly dead data, copies the live data to new segments, and frees the old segments. The authors implement LFS in the Sprite operating system and demonstrate superior write performance while maintaining competitive read performance.
+
+### Q2: Scientific/Engineering Contributions
+
+In 1991, disk seek times were the dominant storage bottleneck. LFS's contributions were: (1) The fundamental insight that sequential writes are orders of magnitude faster than random writes on disk, and that a file system should be organized around this fact. (2) The segment cleaning mechanism, while complex, demonstrated that garbage collection could work for file systems—an idea that proved prophetic for flash storage. (3) The concept of treating the disk as an append-only log influenced write-ahead logging in databases, LSM-trees (used in LevelDB, RocksDB, Cassandra), and log-structured merge approaches throughout systems. (4) The paper established a cost-benefit framework for segment cleaning that balanced cleaning overhead against space reclamation.
+
+### Q3: Limitations / What Could Be Wrong
+
+(1) Segment cleaning is LFS's Achilles heel: under heavy write loads with long-lived data, cleaning overhead can severely degrade performance. The paper's cleaning cost-benefit policy works well for specific workloads but struggles with adversarial patterns (e.g., many small updates to random files). (2) Read performance can suffer because related data that was logically grouped (e.g., all blocks of a directory) gets scattered across the log over time, increasing read seek distances. (3) The inode map adds an extra level of indirection for every file access, increasing latency compared to FFS's fixed inode locations. (4) Recovery from the log after a crash requires scanning recent segments to rebuild the inode map, which can be slow for large file systems (later addressed with checkpointing). (5) Modern SSDs have no seek time, which removes the original motivation—though ironically, SSDs internally use log-structured writes to manage flash translation layers, validating the approach at a different level.
+
+### Q4: Additional Comments
+
+LFS is one of the most influential file systems papers ever written, even though pure log-structured file systems never became mainstream for general-purpose use. Its real legacy is the ideas it spawned: LSM-trees power almost every modern key-value store and NoSQL database; copy-on-write file systems like ZFS and Btrfs borrow the "never overwrite in place" principle; and every SSD's flash translation layer is essentially a log-structured system. The paper also contains a deep irony: it was motivated by slow disk seeks, but its ideas became most important for flash storage, which has no seeks. The lesson is that good abstractions outlive their original motivation. The segment cleaning problem also foreshadowed garbage collection challenges in managed runtimes and SSDs—"write amplification" in SSDs is literally the same problem LFS's cleaner faces.
+
+---
+
+## Paper 9: The Google File System (GFS, SOSP 2003)
+
+### Q1: Summary (300 words max)
+
+GFS is a distributed file system designed for Google's data-intensive workloads. The authors observed that Google's usage patterns differ fundamentally from traditional file system assumptions: files are enormous (multi-GB), workloads are dominated by large sequential reads and append-only writes, and hardware failures are the norm rather than the exception (with thousands of commodity machines, components fail constantly).
+
+GFS makes several unconventional design choices driven by these observations: (1) a single master server manages all metadata (file namespace, chunk-to-server mappings), simplifying design; (2) files are divided into large 64MB chunks stored on chunkservers, with each chunk replicated (typically 3×) for fault tolerance; (3) the system optimizes for append operations via an atomic "record append" operation that lets multiple clients append concurrently without synchronization; (4) the master uses a relaxed consistency model—after record appends, a chunk region is "defined" only if all replicas are identical, otherwise it is "consistent but undefined" (all replicas have the same data but may contain duplicate or padded records). The system accepts occasional duplicates and padding, pushing de-duplication to the application layer. The paper reports GFS clusters with thousands of machines storing petabytes of data, handling aggregate throughput of hundreds of GB/s.
+
+### Q2: Scientific/Engineering Contributions
+
+In 2003, most distributed file systems targeted general-purpose POSIX semantics. GFS's contributions were: (1) It demonstrated that co-designing a file system with its workload—abandoning generality in favor of specific optimizations—yields massive practical benefits. (2) The single-master architecture was controversial but pragmatic: it avoided the complexity of distributed metadata while being sufficient for Google's scale (millions of files, not billions). (3) The relaxed consistency model showed that applications could tolerate weaker guarantees in exchange for higher throughput—a radical idea that influenced eventual consistency in cloud systems. (4) It established the blueprint for big data storage that directly inspired HDFS (Hadoop Distributed File System), which powered the big data revolution.
+
+### Q3: Limitations / What Could Be Wrong
+
+(1) The single master is a single point of failure and a scalability bottleneck. Google later acknowledged this, replacing GFS with Colossus, which uses a distributed metadata layer. (2) The relaxed consistency model pushes significant complexity onto application developers—they must handle duplicates, padding, and inconsistent reads. (3) The 64MB chunk size wastes space for small files and creates hotspots when many clients access the same small file (each small file lives in one chunk on one set of servers). (4) Record append's "at least once" semantics can produce duplicates, which is surprising for a file system operation and led to bugs in applications that assumed exactly-once semantics. (5) The system was designed for batch processing; it performed poorly for latency-sensitive workloads, which Google later addressed with Bigtable and Spanner.
+
+### Q4: Additional Comments
+
+GFS is less a technical paper and more a philosophy paper disguised as systems engineering. Its real contribution is the lesson that "good enough" beats "correct" when you're operating at scale. The relaxed consistency model, the single master, the tolerance for duplicates—these are all engineering tradeoffs that sacrifice elegance for practicality. HDFS literally cloned GFS's architecture and powered the Hadoop ecosystem that dominated big data for a decade. The irony is that Google themselves moved past GFS relatively quickly (to Colossus), but the open-source clone outlived the original. The paper also established a template for "industrial systems papers" at SOSP/OSDI—describing real deployed systems rather than research prototypes—that continues to this day.
