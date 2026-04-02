@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-03-31
+Last updated: 2026-04-02
 
 ## Yu's Preferences & Work Style
 
@@ -132,12 +132,12 @@ Last updated: 2026-03-31
   - **Release issues**: memory-lancedb failures, bearer token errors, sharp breakage — inform robustness dimension
   - **Capability layer taxonomy validation**: 5-layer model (Pure LLM → Tool selection → Orchestration → Memory → Multi-agent) aligns with PinchBench/WildClawBench task distributions. Highest failure rates in Memory-dependent and Multi-agent tasks.
 - **Key insight**: Evaluation target is the *agent system* (model + tools + memory + planning) in *real runtime*, not just the LLM. WildClawBench's "live instance" approach is the gold standard for ecological validity.
-- **Next**: Implement 2-3 prototypes as runnable benchmarks using sub-agent delegation; leverage v2026.3.28 async requireApproval for human-in-the-loop studies; test PASB-style security scenarios within framework.
+- **Prototype status (2026-03-31)**: Experiment 1 (Tool Boundary Compliance) implemented and validated across 3 variants (baseline + 2 disabled). Pipeline confirmed: sessions_spawn → transcript capture → evaluator analysis. All runs passed (3/3), agent demonstrated adaptiveness (fallback to `exec`). Next steps: integrate system-level tool enforcement (feature flags), add statistical runs (n=3), and/or proceed to Experiment 6 (process quality audit).
 
 ## Technical Setup
 
 ### OpenClaw
-- **Version**: 2026.3.11 (updated 2026-03-12). Newer releases: v2026.3.13 (noticed 3/21), v2026.3.28 (29 Mar 2026). Latest includes xAI/x_search, MiniMax image gen, async requireApproval hooks, ACP current-conversation binds, but has open issues: memory-lancedb failures, bearer token scope rejections, image viewer (sharp) breakage. Monitor before updating.
+- **Version**: 2026.3.11 (updated 2026-03-12). Newer releases: v2026.3.13 (noticed 3/21), v2026.3.28 (29 Mar 2026, had open issues), **v2026.4.1 (1 Apr 2026)** fixes memory-lancedb failures, bearer token errors, sharp breakage, and many other improvements. Recommend update after validation.
 - **Host**: AWS EC2 Ubuntu 24.04 (34.229.201.123)
 - **Update script**: `~/.openclaw/scripts/openclaw_update_safe.sh` (with rollback: `openclaw_rollback.sh`)
 - **Backup**: `~/.openclaw/backups/openclaw-20260312-003427`
@@ -252,10 +252,10 @@ Last updated: 2026-03-31
 ## TODOs
 
 ### Immediate
-- [x] ✅ Remove yunyi provider (deleted from models.json & openclaw.json, 2026-03-26)
-- [ ] Update OpenClaw to latest stable (v2026.3.28 available, but monitor open issues first)
+- [x] ✅ Remove yunyi provider (deleted from openclaw.json, agents/main/agent/models.json, sessions.json; 2026-04-02)
+- [ ] Update OpenClaw to v2026.4.1 (released 2026-04-01; fixes known issues from v2026.3.28)
 - [ ] Complete National Social Science Fund application (waiting for Yu's info)
-- [x] ✅ Amazon NYC housing: decided on 362 Hoboken Ave, Jersey City (2026-03-24); lease review in progress (2026-03-26)
+- [x] ✅ Amazon NYC housing: decided on 362 Hoboken Ave, Jersey City (2026-03-24); lease review completed (2026-04-02) — ready to sign
 
 ### Ongoing
 - [ ] 主动思考: daily proactive research + self-improvement (Yu's directive 3/21)
