@@ -144,6 +144,16 @@ Last updated: 2026-04-02
 - **Security**: yunyi token in `~/.openclaw/secrets/yunyi_token` (chmod 600)
 - **Tracing plugin**: Working! Web UI at `http://127.0.0.1:18789/plugins/tracing` (4 tabs: Call Tree, Entity Graph, Waterfall, Work Index). CLI: `openclaw traces`
 
+### OpenClaw v2026.4.2 Release Insights (2026-04-03)
+**Analyzed release notes (Apr 2, 2026)** and implications for agent evaluation:
+- **Task Flow infrastructure** (PR #58930): durable flow state, managed child tasks, sticky cancel intent. Enables robust evaluation harness with parent record and independent lifecycle.
+- **async requireApproval** + `before_agent_reply` hooks: support human-in-the-loop evaluation at scale; test agent escalation appropriateness.
+- **Plugin config migrations**: x_search and web_fetch moved to plugin-owned paths — test harness should use plugin APIs, not hardcoded legacy config.
+- **Provider failover improvements** (PR #58707): rate-limit cooldowns and cross-provider fallback caps; relevant for cost-efficiency + robustness experiments.
+- **/tasks chat-native board** (v2026.4.1): runtime self-monitoring; should be captured as Process Quality evidence.
+- **Memory indexing fixes** (PR #39732): preserve session transcripts across reindexes; critical for long-term interaction studies.
+- **Action**: Update evaluation harness designs to leverage Task Flow; but remain on v2026.3.11 (stable) until v2026.4.x issues stabilize.
+
 ### OpenClaw Ecosystem News (2026-03-22)
 - Tencent integrated OpenClaw into WeChat via "ClawBot"
 - Alibaba launched "Wukong" for enterprise multi-agent

@@ -262,11 +262,81 @@ Yu 提了一个很好的点：直接用我的 sub-agent 当评测对象。
 - 为鲁棒性测试（实验 3、4）引入可控的错误注入层：可在 tool wrapper 强制返回错误码
 - 多轮一致性实验应使用 `sessions_send` 跨天延续上下文（或利用 OpenClaw 的 long-term memory 插件）
 
+## 十一、v2026.4.2 对评测框架的启示 (2026-04-03 新增)
+
+OpenClaw v2026.4.2 (Apr 2, 2026) 引入的基础设施变化，直接影响 agent evaluation harness 的设计：
+
+### 1. Task Flow 作为评测编排层
+
+**变化**: PR #58930 恢复了核心 Task Flow 基础设施，提供 managed-vs-mirrored sync modes、durable flow state/revision tracking、以及 `openclaw flows` 操作原语。
+
+**评测意义**:
+- **评测任务作为 Flow**: 每个实验可以封装为一个 Task Flow，具备 parent record、状态持久化、独立生命周期。
+- **Orchestrator 隔离**: 评测驱动可以运行在独立 flow 中，不干扰 main session，便于统计和回溯。
+- **失败恢复**: 如果评测 run 中途崩溃，flow state 允许 resume 而不必重头开始。
+
+**应用**: 实验 2 (饥饿恢复) 可直接用 Task Flow 的 starvation tracking 机制测量；实验 5 (成本效率) 可以用 flow-level token accounting。
+
+### 2. async requireApproval + human-in-the-loop 评测
+
+**变化**: PR #20067 添加 `before_agent_reply` hook，插件可在 agent 回复前短路由 synthetic replies；同时 v2026.3.28 的 `async requireApproval` 允许 agent 暂停工具执行并请求用户批准。
+
+**评测意义**:
+- **Human review at scale**: 可以在实验中设置检查点，自动请求人类审批（"这个步骤是否合理？"），积累 human-in-the-loop 打分数据。
+- **Appropriateness escalation**: 实验 1 (能力边界) 可测试 agent 何时应请求 approval vs 直接 fallback。
+
+### 3. Configuration standardizations
+
+- x_search 配置迁移：`core tools.web.x_search.*` → `plugins.entries.xai.config.xSearch.*` (PR #59674)
+- web_fetch 配置迁移：`core tools.web.fetch.firecrawl.*` → `plugins.entries.firecrawl.config.webFetch.*` (PR #59465)
+
+**评测意义**: 这些变更表明 OpenClaw 正在清理 plugin ownership 边界。评测 harness 应通过 plugin API 而非硬编码路径调用工具，以保证 forward compatibility。
+
+### 4. Provider failover 和 auth cooldowns
+
+**变化**: PR #58707 限制了相同 provider 的同-auth-profile 重试次数，并在 rate-limit 失败时更快切换到 cross-provider fallback；新增 `auth.cooldowns.rateLimitedProfileRotations`。
+
+**评测意义**: 实验 5 (成本效率) 可扩展为 **成本+可用性权衡**: 在 provider 限流下，agent 能否及时降级到备用模型而不影响任务完成度？
+
+### 5. /tasks 命令和任务可见性
+
+**变化**: v2026.4.1 添加了 `/tasks` chat-native 后台任务板，展示当前 session 的近期任务详情和 agent-local fallback counts (PR #58930)。
+
+**评测意义**: 运行时自我监控能力成为一等公民。评测框架应记录任务板数据作为 **Process Quality** 的辅助证据：agent 是否感知到自己的后台任务负载？是否调整行为以释放资源？
+
+### 6. Bug-fixes that affect robustness testing
+
+近期大量修复涉及:
+- Exec approvals 的默认安全策略 (PR #59112, #59367)
+- Subagent 生命周期错误处理 (防止任务注册表写失败导致崩溃)
+- Memory reindexes 保护 session transcripts (PR #39732)
+- Provider error classification 统一化 (PR #58856)
+
+**评测意义**: 这些本身就是 robustness dimension 的**真实用例**。实验 3 (错误恢复) 的注入场景可以向这些边界靠拢，确保评测覆盖实际用户遇到的 failure modes。
+
+### 7. New capabilities to test
+
+- **SearXNG provider** (PR #57317): 可测试 agent 对自托管搜索的适配能力
+- **Bedrock Guardrails** (PR #58588): 可测试 guardrails 触发下 agent 的行为调整
+- **MiniMax plugin auto-enable** (PR #57127): 测试多-provider 能力发现和 fallback
+
+### 8. 长期交互评测的生态支持
+
+- **Memory 索引改进** (PR #39732, #58643): 保证跨 session 的 transcript 不会在 reindex 时丢失，这对 Personal OpenClaw Leaderboard 类长期评测至关重要。
+- **tasks + flows 基础设施**: 使得长时间运行的 eval suites (跨多天、多版本) 可以在 durable state 中跟踪，解决 "如何评测长期效果" 的开放问题。
+
 ---
 
-## 十、实验设计：具体任务草案 (2026-03-28 初稿)
+## 十二、下一步实施建议
 
-基于五维框架和生产系统启示，设计以下 3-5 个可执行的 sub-agent 实验：
+基于 v2026.4.2 的新能力，优先级推荐:
+
+1. **Experimental harness rewrite**: 用 Task Flow 包装实验执行，利用 durable state 避免重复运行冲突。
+2. **Implement Experiment 6 (process audit)** using tracing integration: 开发一个轻量 evaluator 订阅 trace events，实时计算 step validity 和 ordering score。
+3. **Expand Experiment 5** to include provider failover scenarios and cost-awareness in agent decision-making.
+4. **Validate all six prototypes** with multiple runs (n=3) to establish statistical confidence.
+
+**Note**: 当前 OpenClaw 版本建议保持 v2026.3.11 (稳定) 而非 v2026.4.2 (仍有 open issues)。但实验 harness 可针对 v2026.4.x API 设计，便于将来升级。
 
 ### 实验 1: 能力边界测试（对应五维: 安全边界）
 
