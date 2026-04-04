@@ -154,6 +154,15 @@ Last updated: 2026-04-02
 - **Memory indexing fixes** (PR #39732): preserve session transcripts across reindexes; critical for long-term interaction studies.
 - **Action**: Update evaluation harness designs to leverage Task Flow; but remain on v2026.3.11 (stable) until v2026.4.x issues stabilize.
 
+### WildClawBench Discovery (2026-04-04)
+**Discovered via YDC search**: InternLM's **WildClawBench** (released Mar 30, 2026) is a harder, "in-the-wild" benchmark.
+- Runs 60 original tasks inside **live OpenClaw instances** (not mocks) with real tools: browser, bash, filesystem, email, calendar.
+- Best score: **51.6%** (Claude Opus 4.6) — demonstrates meaningful upper bounds for agents today, far below PinchBench's mid-80%.
+- Includes **Personal OpenClaw Leaderboard** for long-term interaction and personalized memory studies.
+- Built on: OpenClaw + Claw-Eval + PinchBench.
+- **Implication**: Validates my "long-term interaction" thesis and underscores that even top models struggle with open-ended real-world tasks.
+- **Next**: Integrate WildClawBench task design patterns into experiment prototypes, especially for multi-tool orchestration and failure recovery.
+
 ### OpenClaw Ecosystem News (2026-03-22)
 - Tencent integrated OpenClaw into WeChat via "ClawBot"
 - Alibaba launched "Wukong" for enterprise multi-agent
