@@ -16,8 +16,8 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-03-31 | [CS 202 论文解读](cs202/paper_reviews_part1.md): CS 202 Paper Reviews (+4 more) |
 | 2026-03-31 | [Essays](essays/drafts/2026-03-11-vae-original.md): 深度理解 VAE |
 | 2026-03-31 | [Karpathy RSS](karpathy_rss/2026-03-24-karpathy-rss-digest.md): Karpathy RSS Digest - 2026-03-24 (+2 more) |
-| 2026-03-29 | [Hacker News](hackernews/2026-03-29.md): Hacker News AI/ML讨论 - 2026-03-29 (+1 more) |
-| 2026-03-29 | [Scholar Inbox](scholar_inbox/2026-03-29-daily-papers.md): 每日论文 - 2026-03-29 (+1 more) |
+| 2026-03-29 | [Hacker News](hackernews/2026-03-29.md): Hacker News AI/ML讨论 - 2026-03-29 |
+| 2026-03-29 | [Scholar Inbox](scholar_inbox/2026-03-29-daily-papers.md): 每日论文 - 2026-03-29 |
 
 ---
 
