@@ -46,6 +46,18 @@ Last updated: 2026-04-07
 - First research assignment: "如何评测好一个 Agent？"
 - Added self-improvement protocol to HEARTBEAT.md
 
+### dLLM + Planning Research (2026-04-07/08 - NEW FOCUS)
+- **Status**: Active, new direction from Yu discussion
+- **Hard/Soft Constraints Structural Analysis** (research/dllm-hard-soft-constraints.md):
+  - AR limitation: sequential commitment, no mechanism to differentiate hard/soft lock-in degree
+  - Diffusion structural advantages:
+    1. Iterative refinement → commitment hierarchy emerges naturally (early=soft, late=hard)
+    2. Bidirectional conditioning → global constraints satisfied end-to-end
+    3. Denoising trajectory ≈ HTN plan refinement (auto-learned hierarchy)
+  - Information-theoretic: hard constraints = noise-invariant (converge to attractor basin in early steps)
+  - Gated DeltaNet connection: gating = selective memory/forgetting, mirrors hard constraint locking
+- **Yu's research direction**: Linear State Memory for dLLM — Gated DeltaNet replaces MetaState's GRU
+
 ### Agent Evaluation Research (2026-03-21 - ongoing)
 - **Status**: Survey COMPLETE, framework designed, Experiment 1 validated, discovering OpenClaw-native benchmarks
 - **Deliverables** (research/agent-evaluation.md):
@@ -105,13 +117,21 @@ Last updated: 2026-04-07
   - L4 failed due to ecosystem, not technology
   - Beam search failed because of exposure bias + mode collapse
 
+### API Provider Migration (2026-04-08)
+- **yunyi**: expired (2026-03-25), removed from config
+- **MiniMax**: Primary provider now. sk-cp-..., baseUrl: `https://api.minimaxi.com/anthropic`
+  - M2.7 (default), M2.1 (fallback)
+  - Coding Plan: 3785/4500 used (~16% remaining, conservation mode)
+- **fucheers-claude**: fallback (opus-4-5, opus-4-6)
+- **stepfun**: free fallback
+
 ## Technical Setup
 
 ### OpenClaw
 - **Version**: v2026.3.11 (stable, running since 2026-03-12). **Do not upgrade to 4.x** — known issues:
   - v2026.4.2: ACP runtime broken (issue #60585) — `sessions_spawn runtime:"acp"` fails.
   - v2026.4.5: worker process plugin loading regression (issue #62051).
-- **Latest**: v2026.4.5 (monitoring for fixes). Stay pinned on 2026.3.11 until 4.x stable.
+  - v2026.4.8 (Apr 8): Fixed Telegram/bundled channels/Slack, but STILL NO fix for #60585 and #62051. Worker CPU issue mentioned but not confirmed fixed. Stay on 2026.3.11.
 - **Host**: AWS EC2 Ubuntu 24.04 (34.229.201.123)
 - **Update script**: `~/.openclaw/scripts/openclaw_update_safe.sh` (rollback: `openclaw_rollback.sh`)
 - **Tracing plugin**: Working! Web UI at `http://127.0.0.1:18789/plugins/tracing`. CLI: `openclaw traces`
@@ -226,15 +246,17 @@ Last updated: 2026-04-07
 ## TODOs
 
 ### Immediate
-- [ ] Update OpenClaw to v2026.4.x (v2026.4.2 released Apr 2; waiting for stability confirmation)
-- [ ] Complete National Social Science Fund application (waiting for Yu's info)
 - [ ] Sign Amazon NYC housing lease (362 Hoboken Ave, Jersey City — lease reviewed 4/2, ready to sign)
+- [ ] Complete National Social Science Fund application (waiting for Yu's info)
+- [ ] Clarify "puppygraph / iceberg" reference from Yu (2026-04-07 end of session)
+- [ ] Update OpenClaw to v2026.4.x (when #60585 and #62051 are fixed; v2026.4.8 still broken)
 
 ### Ongoing
 - [ ] 主动思考: daily proactive research + self-improvement (Yu's directive 3/21)
 - [ ] Daily 减肥 check-in (weight + meals)
 - [ ] Heartbeat checks (email, calendar, weather - rotate 2-4x/day)
 - [ ] Agent 手记 (daily at 06:00 UTC)
+- [ ] dLLM hard/soft constraint experiment design (toy experiment: AR vs diffusion on fixed constraint sets)
 - [ ] Subham Sekhar Sahoo paper survey write-up (research gathered 2026-03-23, doc pending)
 
 ### Future
