@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-04-02
+Last updated: 2026-04-07
 
 ## Yu's Preferences & Work Style
 
@@ -16,25 +16,10 @@ Last updated: 2026-04-02
 
 ## Active Projects
 
-### Buffett Analysis Project (2026-03-03 - 2026-03-05)
-- **Status**: 100% COMPLETE ✅
-- **Deliverables**:
-  - 49 annual analyses (1977-2025): ~200,000 words, all detailed versions
-  - 49 shareholder letters (Chinese): ~180,000 words
-  - Total: ~380,000 words
-- **Work duration**: ~13 hours (one continuous session)
-- **Repository**: fengsxy/paper_reading/buffett-analysis/
-- **Key lesson**: Continuous work without asking for breaks = fast completion
-
-### CS 202 Exam Prep (2026-02-27 - 2026-03-26) ✅ COMPLETE
-- **Exam**: March 20, 2026 (Friday 3-6pm) — DONE
-- **Grade**: **A-** confirmed (2026-03-26)
-- **Paper reviews**: 5/8 completed before deadline (Barrelfish, OCC, MCS Lock, SPIN, SFI)
-- **Deliverables**: 78 T/F questions, 20 blog posts, 5 review notes, mock exam, paper reviews
-- **Yu's approach**: Zero lectures attended, relied on PPT + AI tutoring
-
-### Deep Learning Course (2026-03-26) ✅ COMPLETE
-- **Grade**: **A** confirmed (2026-03-26)
+### Completed Courses & Projects (archived)
+- **Buffett Analysis** (3/3-3/5): 380K words (49 annual analyses + 49 letters), 13-hour continuous session. Repo: fengsxy/paper_reading/buffett-analysis/
+- **CS 202**: Grade **A-** (exam 3/20). Zero lectures, PPT + AI tutoring only.
+- **Deep Learning**: Grade **A** (confirmed 3/26).
 
 ### Amazon NYC Internship (2026-03-18 - 2026-03-24) ✅ HOUSING DECIDED
 - **Offer**: Amazon New York, summer internship
@@ -61,21 +46,25 @@ Last updated: 2026-04-02
 - First research assignment: "如何评测好一个 Agent？"
 - Added self-improvement protocol to HEARTBEAT.md
 
-### Agent Evaluation Research (2026-03-21 - 2026-03-28)
-- **Surveyed 5 benchmarks**: SWE-bench, AgentBench, WebArena, GAIA, τ-bench
-- **Ran Round 1 experiments**: tasks too easy for claude-opus-4-6 → need harder ones
-- **Yu's push**: "这几个好像都有人做了" → think harder about evaluation philosophy
-- **Evolved insight**: Benchmark paradigm itself is flawed → **real eval = long-term interaction**
-- **Newer benchmarks researched**: Terminal-Bench, Context-Bench, DPAI Arena, SWT-Bench
-- **Router research** (2026-03-21): RouterBench, RouterEval, RouterArena; SOTA = ETH Cascade Routing, Google Speculative Cascades, UIUC Router-R1/GraphRouter
-  - Key insight: routing evolved from "selection" to "orchestration"
-- **Production Insights** (2026-03-28) from OpenClaw GitHub PRs translated to evaluation design:
-  - **Phased Evaluation**: Declaration → Audit → Enforcement (mirrors plugin capabilities)
-  - **Starvation Prevention**: Track opportunity cost, guarantee critical checks run
-  - **Per-Test + Global Timeouts**: Prevent single test from blocking all
-  - **Fallback Testing**: Test behavior when powerful capabilities are disabled (feature flag approach)
-- **Five-Dimension Radar**: Correctness, Efficiency, Robustness, Process Quality, Safety — now has concrete implementation patterns
-- **Experimental designs drafted** (2026-03-28): 6 concrete task prototypes covering capability boundaries, starvation recovery, error recovery, multi-turn consistency, cost efficiency, and process quality auditing — ready for sub-agent prototyping
+### Agent Evaluation Research (2026-03-21 - ongoing)
+- **Status**: Survey COMPLETE, framework designed, Experiment 1 validated, discovering OpenClaw-native benchmarks
+- **Deliverables** (research/agent-evaluation.md):
+  - 5-dimension radar: Correctness, Efficiency, Robustness, Process Quality, Safety
+  - 6 experimental prototypes: capability boundaries, starvation recovery, error recovery, multi-turn consistency, cost efficiency, process auditing
+  - Production patterns integration: phased evaluation, starvation guarantees, timeouts, feature-flag testing
+  - Section 11-12: v2026.4.2 implications and implementation priorities
+- **Benchmarks surveyed**: SWE-bench, AgentBench, WebArena, GAIA, τ-bench, Terminal-Bench, Context-Bench, DPAI Arena, SWT-Bench
+- **OpenClaw-native benchmarks**:
+  - **PinchBench** (kilo.ai): Real-world tasks, LLM judge + automated grading. Top models mid-80%. Repo: pinchbench/skill.
+  - **WildClawBench** (InternLM, Mar 30): 60 tasks in live OpenClaw instances. Best: 51.6% (Claude Opus 4.6). Includes Personal OpenClaw Leaderboard. Validates "long-term interaction" thesis.
+  - **PASB** (arXiv 2602.08412): Security-focused, attack propagation across prompt/content/tools/memory.
+  - **AgentBench skill**: 40 real-world tasks (YAML). **ClawExam**: Community adversarial platform.
+- **Router research** (3/21): RouterBench, RouterEval, RouterArena; routing evolved from "selection" to "orchestration"
+- **Production insights** (3/28): Phased eval (declaration→audit→enforcement), starvation prevention, per-test+global timeouts, feature-flag fallback testing.
+- **Methodological insights** (4/6): DeepEval three-layer model (Reasoning→Plan Quality/Adherence, Action→Tool/Arg Correctness, Execution→Completion/Step Efficiency) validates our five-dimension mapping. TRACE (arXiv 2602.21230, WWW 2026) provides hierarchical trajectory utility with MIG and Evidence Grounding. Capability surface area (distinct tool count) explains performance non-monotonicity; wide surface (>10) tasks expose orchestration weaknesses.
+- **Experiment 1 results** (3/31): Tool Boundary Compliance — 3 variants (baseline + 2 disabled) all passed. Pipeline validated: sessions_spawn → transcript → evaluator. Agent adapted by falling back to `exec`.
+- **Key insight**: Eval target is the *agent system* (model+tools+memory+planning) in *real runtime*. WildClawBench's live-instance approach is gold standard.
+- **Next**: Experiment 6 harness design complete (4/6). Implementation: prototype tracing + code-based metrics (Week 1), then full suite (50 tasks, n=3). Integrate real tool enforcement, add statistical runs, leverage Task Flow from v2026.4.2 after stability confirmation.
 
 ### Research Discussions
 
@@ -116,52 +105,16 @@ Last updated: 2026-04-02
   - L4 failed due to ecosystem, not technology
   - Beam search failed because of exposure bias + mode collapse
 
-### Agent Evaluation Research (2026-03-21 - 2026-03-31)
-- **Status**: Survey phase COMPLETE, framework designed, discovering OpenClaw-native benchmarks
-- **Deliverables** (research/agent-evaluation.md):
-  - 5-dimension radar: Correctness, Efficiency, Robustness, Process Quality, Safety
-  - 6 experimental prototypes: capability boundaries, starvation recovery, error recovery, multi-turn consistency, cost efficiency, process auditing
-  - Production patterns integration: phased evaluation, starvation guarantees, timeouts, feature-flag testing
-- **Recent findings (3/30-3/31)**:
-  - **PinchBench**: OpenClaw's official eval benchmark (kilo.ai, Rust). Real-world tasks (scheduling, coding, email, files). LLM judge + automated grading. Top models mid-80% success. Leaderboard at pinchbench.com. Repo: pinchbench/skill.
-  - **WildClawBench** (InternLM, March 30): Harder, "in-the-wild" benchmark. 60 original tasks running inside **live OpenClaw instances** (not mocks). Covers browser, bash, filesystem, email, calendar. HuggingFace dataset available. Best score ~51% (Claude Opus 4.6). Demonstrates meaningful upper bounds for agents today.
-  - **PASB** (arXiv 2602.08412): Security-focused benchmark. Formalizes attacks on personalized agents. Evaluates OpenClaw across prompt processing, external content, tool invocation, memory. Highlights attack propagation across long-horizon interactions. Shows that risks go beyond unsafe text generation to system-level harms.
-  - **AgentBench skill**: OpenClaw skill for benchmarking 40 real-world tasks (YAML-defined). Tests tool efficiency, structural accuracy, methodology.
-  - **ClawExam**: Community benchmark platform; embeds prompt injection/leakage inside tasks to test adversarial robustness.
-  - **v2026.3.28 features**: async requireApproval (human-in-the-loop evaluation), ACP binds (multi-agent orchestration), x_search
-  - **Release issues**: memory-lancedb failures, bearer token errors, sharp breakage — inform robustness dimension
-  - **Capability layer taxonomy validation**: 5-layer model (Pure LLM → Tool selection → Orchestration → Memory → Multi-agent) aligns with PinchBench/WildClawBench task distributions. Highest failure rates in Memory-dependent and Multi-agent tasks.
-- **Key insight**: Evaluation target is the *agent system* (model + tools + memory + planning) in *real runtime*, not just the LLM. WildClawBench's "live instance" approach is the gold standard for ecological validity.
-- **Prototype status (2026-03-31)**: Experiment 1 (Tool Boundary Compliance) implemented and validated across 3 variants (baseline + 2 disabled). Pipeline confirmed: sessions_spawn → transcript capture → evaluator analysis. All runs passed (3/3), agent demonstrated adaptiveness (fallback to `exec`). Next steps: integrate system-level tool enforcement (feature flags), add statistical runs (n=3), and/or proceed to Experiment 6 (process quality audit).
-
 ## Technical Setup
 
 ### OpenClaw
-- **Version**: 2026.3.11 (updated 2026-03-12). Newer releases: v2026.3.13 (noticed 3/21), v2026.3.28 (29 Mar 2026, had open issues), **v2026.4.1 (1 Apr 2026)** fixes memory-lancedb failures, bearer token errors, sharp breakage, and many other improvements. Recommend update after validation.
+- **Version**: v2026.3.11 (stable, running since 2026-03-12). **Do not upgrade to 4.x** — known issues:
+  - v2026.4.2: ACP runtime broken (issue #60585) — `sessions_spawn runtime:"acp"` fails.
+  - v2026.4.5: worker process plugin loading regression (issue #62051).
+- **Latest**: v2026.4.5 (monitoring for fixes). Stay pinned on 2026.3.11 until 4.x stable.
 - **Host**: AWS EC2 Ubuntu 24.04 (34.229.201.123)
-- **Update script**: `~/.openclaw/scripts/openclaw_update_safe.sh` (with rollback: `openclaw_rollback.sh`)
-- **Backup**: `~/.openclaw/backups/openclaw-20260312-003427`
-- **Security**: yunyi token in `~/.openclaw/secrets/yunyi_token` (chmod 600)
-- **Tracing plugin**: Working! Web UI at `http://127.0.0.1:18789/plugins/tracing` (4 tabs: Call Tree, Entity Graph, Waterfall, Work Index). CLI: `openclaw traces`
-
-### OpenClaw v2026.4.2 Release Insights (2026-04-03)
-**Analyzed release notes (Apr 2, 2026)** and implications for agent evaluation:
-- **Task Flow infrastructure** (PR #58930): durable flow state, managed child tasks, sticky cancel intent. Enables robust evaluation harness with parent record and independent lifecycle.
-- **async requireApproval** + `before_agent_reply` hooks: support human-in-the-loop evaluation at scale; test agent escalation appropriateness.
-- **Plugin config migrations**: x_search and web_fetch moved to plugin-owned paths — test harness should use plugin APIs, not hardcoded legacy config.
-- **Provider failover improvements** (PR #58707): rate-limit cooldowns and cross-provider fallback caps; relevant for cost-efficiency + robustness experiments.
-- **/tasks chat-native board** (v2026.4.1): runtime self-monitoring; should be captured as Process Quality evidence.
-- **Memory indexing fixes** (PR #39732): preserve session transcripts across reindexes; critical for long-term interaction studies.
-- **Action**: Update evaluation harness designs to leverage Task Flow; but remain on v2026.3.11 (stable) until v2026.4.x issues stabilize.
-
-### WildClawBench Discovery (2026-04-04)
-**Discovered via YDC search**: InternLM's **WildClawBench** (released Mar 30, 2026) is a harder, "in-the-wild" benchmark.
-- Runs 60 original tasks inside **live OpenClaw instances** (not mocks) with real tools: browser, bash, filesystem, email, calendar.
-- Best score: **51.6%** (Claude Opus 4.6) — demonstrates meaningful upper bounds for agents today, far below PinchBench's mid-80%.
-- Includes **Personal OpenClaw Leaderboard** for long-term interaction and personalized memory studies.
-- Built on: OpenClaw + Claw-Eval + PinchBench.
-- **Implication**: Validates my "long-term interaction" thesis and underscores that even top models struggle with open-ended real-world tasks.
-- **Next**: Integrate WildClawBench task design patterns into experiment prototypes, especially for multi-tool orchestration and failure recovery.
+- **Update script**: `~/.openclaw/scripts/openclaw_update_safe.sh` (rollback: `openclaw_rollback.sh`)
+- **Tracing plugin**: Working! Web UI at `http://127.0.0.1:18789/plugins/tracing`. CLI: `openclaw traces`
 
 ### OpenClaw Ecosystem News (2026-03-22)
 - Tencent integrated OpenClaw into WeChat via "ClawBot"
@@ -233,12 +186,19 @@ Last updated: 2026-04-02
 - **Lesson**: Monitor model health; a single broken provider can cascade into full outage
 - **Lesson**: Don't use Chinese quotes in JSON config values
 
-### Memory Continuity (2026-03-11)
-- 6-day diary gap (3/5-3/11) — heartbeat was running but only doing mechanical checks, not writing daily logs
-- **Must write daily diary proactively**, not depend on cron
-- Yu notices and cares about continuity gaps
+### Diary Continuity (2026-03 - 2026-04)
+- Recurring problem: multiple diary gaps (3/5-3/11, 4/1-4/4) despite heartbeats running
+- Heartbeats do mechanical checks but don't always write daily logs
+- **Must write daily diary proactively** — Yu notices and cares about continuity
+- Lesson: even if no user interaction, log what happened (research, system checks, observations)
 
 ### Sub-agent Scoping (2026-03-12)
+
+### OpenClaw v2026.4.x Instability (2026-04-07)
+- **Issue #60585**: v2026.4.2 breaks ACP runtime — `sessions_spawn runtime:"acp"` fails with `acpx exited with code 1`.
+- **Issue #62051**: v2026.4.5 regression — worker processes load all plugins causing performance degradation.
+- **Conclusion**: 4.x series currently unstable for production use. Remaining on v2026.3.11 until hotfixes resolve.
+- **Evaluation lesson**: Robustness dimension must include *framework compatibility* testing — agent should survive minor OpenClaw version upgrades without behavioral changes or breakage.
 
 ## Important Context
 
@@ -263,18 +223,12 @@ Last updated: 2026-04-02
 - **MSFT**: 5 shares @ $403.21 cost basis; 2026-03-26: price ~$370 (underwater, discussed DCA/long hold vs short-term concerns)
 - **Tracking**: Daily via xueqiu_daily.py script
 
-### Current Events (2026-03-03)
-- **Iran War**: Major US-Israel conflict since Feb 28, Supreme Leader killed
-- **Market impact**: Stock markets down ~2%, oil prices surged
-- **Duration estimate**: 4-5 weeks expected
-
 ## TODOs
 
 ### Immediate
-- [x] ✅ Remove yunyi provider (deleted from openclaw.json, agents/main/agent/models.json, sessions.json; 2026-04-02)
-- [ ] Update OpenClaw to v2026.4.1 (released 2026-04-01; fixes known issues from v2026.3.28)
+- [ ] Update OpenClaw to v2026.4.x (v2026.4.2 released Apr 2; waiting for stability confirmation)
 - [ ] Complete National Social Science Fund application (waiting for Yu's info)
-- [x] ✅ Amazon NYC housing: decided on 362 Hoboken Ave, Jersey City (2026-03-24); lease review completed (2026-04-02) — ready to sign
+- [ ] Sign Amazon NYC housing lease (362 Hoboken Ave, Jersey City — lease reviewed 4/2, ready to sign)
 
 ### Ongoing
 - [ ] 主动思考: daily proactive research + self-improvement (Yu's directive 3/21)
@@ -290,7 +244,7 @@ Last updated: 2026-04-02
 ## Skills Installed
 - x-reader: Universal content reader
 - funding-proposal: Academic funding application framework
-- clawhub: Skill management
+- clawhub: Skill management (versioned registry at clawhub.com; install: `npx clawhub@latest install <skill>`)
 - coding-agent: Delegate to Codex/Claude Code
 - github: GitHub operations via gh CLI
 - healthcheck: Security auditing
