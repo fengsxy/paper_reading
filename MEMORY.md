@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-04-07
+Last updated: 2026-04-12
 
 ## Yu's Preferences & Work Style
 
@@ -74,9 +74,11 @@ Last updated: 2026-04-07
 - **Router research** (3/21): RouterBench, RouterEval, RouterArena; routing evolved from "selection" to "orchestration"
 - **Production insights** (3/28): Phased eval (declaration→audit→enforcement), starvation prevention, per-test+global timeouts, feature-flag fallback testing.
 - **Methodological insights** (4/6): DeepEval three-layer model (Reasoning→Plan Quality/Adherence, Action→Tool/Arg Correctness, Execution→Completion/Step Efficiency) validates our five-dimension mapping. TRACE (arXiv 2602.21230, WWW 2026) provides hierarchical trajectory utility with MIG and Evidence Grounding. Capability surface area (distinct tool count) explains performance non-monotonicity; wide surface (>10) tasks expose orchestration weaknesses.
+- **dLLM Hard/Soft Constraints Framework** (4/8): New research direction. AR models make sequential commitments with no mechanism to differentiate hard/soft lock-in. Diffusion structural advantages: iterative refinement (commitment hierarchy emerges naturally), bidirectional conditioning (global constraints end-to-end), denoising trajectory ≈ HTN plan refinement. Information-theoretic: hard constraints = noise-invariant attractor basin. Output: `research/dllm-hard-soft-constraints.md`. Next: minimal viable experiment (AR vs diffusion on fixed constraint sets).
 - **Experiment 1 results** (3/31): Tool Boundary Compliance — 3 variants (baseline + 2 disabled) all passed. Pipeline validated: sessions_spawn → transcript → evaluator. Agent adapted by falling back to `exec`.
 - **Key insight**: Eval target is the *agent system* (model+tools+memory+planning) in *real runtime*. WildClawBench's live-instance approach is gold standard.
 - **Next**: Experiment 6 harness design complete (4/6). Implementation: prototype tracing + code-based metrics (Week 1), then full suite (50 tasks, n=3). Integrate real tool enforcement, add statistical runs, leverage Task Flow from v2026.4.2 after stability confirmation.
+- **Experiment 6 status** (4/13): Design completed, awaiting implementation start.
 
 ### Research Discussions
 
@@ -99,6 +101,19 @@ Last updated: 2026-04-07
 - **Yu's research direction**: Linear State Memory for dLLM — 用 Gated DeltaNet 替换 MetaState 的 GRU
   - 三层贡献：信息论框架 + 方法（GRU→GDN）+ 系统（与 KV cache 统一）
 
+#### dLLM Hard/Soft Constraints Framework (2026-04-08 - NEW)
+- **Output**: research/dllm-hard-soft-constraints.md
+- **Core problem**: AR models make sequential commitments — each token decision locks in immediately, no mechanism to differentiate hard/soft lock-in degree
+- **Diffusion structural advantages**:
+  1. Iterative refinement → commitment hierarchy emerges naturally (early steps=soft, late steps=hard)
+  2. Bidirectional conditioning → global constraints satisfied end-to-end
+  3. Denoising trajectory ≈ HTN plan refinement (auto-learned hierarchy without explicit supervision)
+- **Information-theoretic view**: Hard constraints = noise-invariant attractor basin, diffuse to it in early steps; Soft constraints = adjustable
+- **Connection to Yu's Gated DeltaNet**: Gating = selective memory/forgetting, mirrors hard constraint locking vs soft adjustment
+- **DeepPlanning evidence** (Qwen benchmark, 4/8): Claude-4.6-Opus 58.9% avg on Travel+Shopping Planning; Global Optimization fails most (101/140 errors) — hard constraints are the bottleneck
+- **Research gap**: No systematic AR vs diffusion comparison from hard/soft structural separation perspective
+- **Next step**: Minimal viable experiment + tech memo for Yu
+
 #### Diffusion Optimal Path (2026-02-26)
 - **Key insights**:
   - Local Cost Theorem: ∂f/∂t is O(Δt³), lower order than Jacobian
@@ -117,21 +132,24 @@ Last updated: 2026-04-07
   - L4 failed due to ecosystem, not technology
   - Beam search failed because of exposure bias + mode collapse
 
-### API Provider Migration (2026-04-08)
+### API Provider Migration (2026-04-13)
 - **yunyi**: expired (2026-03-25), removed from config
-- **MiniMax**: Primary provider now. sk-cp-..., baseUrl: `https://api.minimaxi.com/anthropic`
+- **MiniMax**: Primary provider. Two keys exist:
+  - env section (old): `sk-cp-XBKgu...` — INVALID
+  - minimax-cn provider: `sk-cp-G7Qi6okX...` (125 chars) — VALID but overloaded (529 error)
+  - Status: Working but slow/heavy load, not down
   - M2.7 (default), M2.1 (fallback)
-  - Coding Plan: 3785/4500 used (~16% remaining, conservation mode)
-- **fucheers-claude**: fallback (opus-4-5, opus-4-6)
-- **stepfun**: free fallback
+- **fucheers-claude**: Primary working (opus-4-5, opus-4-6)
+- **OpenRouter**: Free tier fallback (`openrouter/auto` → mistral-7b via Cloudflare)
+- **stepfun**: Free fallback (sometimes 404 endpoint errors)
 
 ## Technical Setup
 
 ### OpenClaw
-- **Version**: v2026.3.11 (stable, running since 2026-03-12). **Do not upgrade to 4.x** — known issues:
-  - v2026.4.2: ACP runtime broken (issue #60585) — `sessions_spawn runtime:"acp"` fails.
-  - v2026.4.5: worker process plugin loading regression (issue #62051).
-  - v2026.4.8 (Apr 8): Fixed Telegram/bundled channels/Slack, but STILL NO fix for #60585 and #62051. Worker CPU issue mentioned but not confirmed fixed. Stay on 2026.3.11.
+- **Version**: v2026.3.11 (stable, running since 2026-03-12). **4.x upgrade candidates**: 
+  - v2026.4.12 (Apr 13): Plugin loading fix (#65120, #65259, #65298, #65429, #65459) — **likely fixes #62051**. Active Memory plugin added. ACP issue (#60585) still not addressed.
+  - v2026.4.8: Fixed Telegram/bundled channels/Slack, no fix for #60585 or #62051.
+  - **Recommendation**: Stay on 2026.3.11 until #60585 is fixed. Plugin loading fix promising but needs ACP confirmation.
 - **Host**: AWS EC2 Ubuntu 24.04 (34.229.201.123)
 - **Update script**: `~/.openclaw/scripts/openclaw_update_safe.sh` (rollback: `openclaw_rollback.sh`)
 - **Tracing plugin**: Working! Web UI at `http://127.0.0.1:18789/plugins/tracing`. CLI: `openclaw traces`
@@ -214,11 +232,14 @@ Last updated: 2026-04-07
 
 ### Sub-agent Scoping (2026-03-12)
 
-### OpenClaw v2026.4.x Instability (2026-04-07)
-- **Issue #60585**: v2026.4.2 breaks ACP runtime — `sessions_spawn runtime:"acp"` fails with `acpx exited with code 1`.
-- **Issue #62051**: v2026.4.5 regression — worker processes load all plugins causing performance degradation.
-- **Conclusion**: 4.x series currently unstable for production use. Remaining on v2026.3.11 until hotfixes resolve.
-- **Evaluation lesson**: Robustness dimension must include *framework compatibility* testing — agent should survive minor OpenClaw version upgrades without behavioral changes or breakage.
+### OpenClaw v2026.4.x Upgrade Status (2026-04-13)
+- **Issue #60585**: v2026.4.2 broke ACP runtime — `sessions_spawn runtime:"acp"` failed with `acpx exited with code 1`.
+- **Issue #62051**: v2026.4.5 regression — worker processes loaded all plugins causing performance degradation.
+- **v2026.4.12 (released 2026-04-13)**: Contains relevant fixes:
+  - "Plugins/loading: narrow CLI, provider, and channel activation to manifest-declared needs" (#65120, #65259, #65298, #65429, #65459) — likely addresses #62051 plugin loading issue
+  - "Gateway/plugins: always send a non-empty idempotencyKey for plugin subagent runs" (#65354) — may address ACP runtime issue
+- **Current version**: v2026.3.11 (staying put until v2026.4.12 is confirmed stable)
+- **Upgrade plan**: Test v2026.4.12 on a non-production run first (e.g., `sessions_spawn runtime:"acp"`), confirm ACP + plugin loading work before committing
 
 ## Important Context
 
