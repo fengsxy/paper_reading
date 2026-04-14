@@ -1,0 +1,60 @@
+Day 1:
+Current City: from Urumqi to Changsha
+Accommodation: Orange Hotel Changsha Lugu BBK New World, ¥308/room/night
+16:35-21:00 | travel_intercity_public | flight FU6594, Urumqi Tianshan International Airport - Huanghua Airport, ¥2250/person
+21:00-21:40 | buffer | Deplaning, baggage claim
+21:40-22:57 | travel_city | Huanghua Airport - Orange Hotel Changsha Lugu BBK New World, 51km, 77min, ¥201
+22:57-24:00 | hotel | Check-in, Orange Hotel Changsha Lugu BBK New World
+
+Day 2:
+Current City: Changsha
+Accommodation: Orange Hotel Changsha Lugu BBK New World, ¥308/room/night
+08:00-08:16 | travel_city | Orange Hotel Changsha Lugu BBK New World - Yuelu Mountain Scenic Area, 11km, 16min, ¥38
+08:16-11:16 | attraction | Yuelu Mountain Scenic Area, ¥0/person
+11:16-11:26 | travel_city | Yuelu Mountain Scenic Area - Yuelu Academy, 1km, 10min, ¥0
+11:26-13:26 | attraction | Yuelu Academy, ¥40/person
+13:26-13:38 | travel_city | Yuelu Academy - Xiangzhiwei Self-Service Restaurant (Four Twos and Two Kings Authorized Store), 5km, 12min, ¥38
+13:38-14:38 | meal | Lunch, Xiangzhiwei Self-Service Restaurant (Four Twos and Two Kings Authorized Store), ¥100/person
+14:38-14:51 | travel_city | Xiangzhiwei Self-Service Restaurant (Four Twos and Two Kings Authorized Store) - Du Fu Jiang Pavilion, 8km, 13min, ¥31
+14:51-17:51 | attraction | Du Fu Jiang Pavilion, ¥11/person
+17:51-18:13 | travel_city | Du Fu Jiang Pavilion - Orange Hotel Changsha Lugu BBK New World, 15km, 22min, ¥55
+18:13-19:30 | hotel | Rest, Orange Hotel Changsha Lugu BBK New World
+19:30-19:40 | travel_city | Orange Hotel Changsha Lugu BBK New World - Du Fu Jiang Pavilion, 15km, 22min, ¥55
+19:40-21:20 | meal | Dinner, Du Fu Jiang Pavilion, ¥100/person
+21:20-21:42 | travel_city | Du Fu Jiang Pavilion - Orange Hotel Changsha Lugu BBK New World, 15km, 22min, ¥55
+21:42-24:00 | hotel | Rest, Orange Hotel Changsha Lugu BBK New World
+
+Day 3:
+Current City: Changsha
+Accommodation: Orange Hotel Changsha Lugu BBK New World, ¥308/room/night
+08:00-08:28 | travel_city | Orange Hotel Changsha Lugu BBK New World - Hunan Martyrs' Park, 18km, 28min, ¥69
+08:28-10:28 | attraction | Hunan Martyrs' Park, ¥0/person
+10:28-10:45 | travel_city | Hunan Martyrs' Park - Hongyuan Tea House Club (Furong Middle Road Auxiliary Road Branch), 1km, 17min, ¥0
+10:45-11:45 | meal | Lunch, Hongyuan Tea House Club (Furong Middle Road Auxiliary Road Branch), ¥56/person
+11:45-12:00 | travel_city | Hongyuan Tea House Club (Furong Middle Road Auxiliary Road Branch) - Hunan Museum, 1km, 15min, ¥0
+12:00-15:00 | attraction | Hunan Museum, ¥0/person
+15:00-16:00 | meal | Dinner, Hunan Museum - Visitor Restaurant, ¥100/person
+16:00-16:16 | travel_city | Hunan Museum - Orange Hotel Changsha Lugu BBK New World, 18km, 16min, ¥67
+16:16-18:30 | hotel | Rest, Orange Hotel Changsha Lugu BBK New World
+18:30-18:52 | travel_city | Orange Hotel Changsha Lugu BBK New World - Du Fu Jiang Pavilion, 15km, 22min, ¥55
+18:52-20:52 | attraction | Du Fu Jiang Pavilion, ¥11/person
+20:52-21:14 | travel_city | Du Fu Jiang Pavilion - Orange Hotel Changsha Lugu BBK New World, 15km, 22min, ¥55
+21:14-24:00 | hotel | Rest, Orange Hotel Changsha Lugu BBK New World
+
+Day 4:
+Current City: from Changsha to Urumqi
+Accommodation: -
+08:00-08:10 | travel_city | Orange Hotel Changsha Lugu BBK New World - Hunan Martyrs' Park, 18km, 10min, ¥69
+08:10-10:10 | attraction | Hunan Martyrs' Park, ¥0/person
+10:10-10:27 | travel_city | Hunan Martyrs' Park - Xiangzhiwei Self-Service Restaurant (Four Twos and Two Kings Authorized Store), 11km, 17min, ¥41
+10:27-11:27 | meal | Lunch, Xiangzhiwei Self-Service Restaurant (Four Twos and Two Kings Authorized Store), ¥100/person
+11:27-12:34 | travel_city | Xiangzhiwei Self-Service Restaurant (Four Twos and Two Kings Authorized Store) - Huanghua Airport, 44km, 67min, ¥173
+12:34-13:19 | buffer | Security check, waiting for boarding
+13:19-15:35 | travel_intercity_public | flight FU6593, Huanghua Airport - Urumqi Tianshan International Airport, ¥1930/person
+
+**Budget Summary**:
+   **Transportation: 4180 RMB**. Flights: (2250+1930)×1=4180 RMB; Intracity transport: 1×(201+38+38+31+55+55+55+69+67+55+55+69+41+173)=957 RMB
+   **Accommodation: 924 RMB**. 1 room, 3 nights; 3×308=924 RMB
+   **Meals: 556 RMB**. 1 person × (100+100+56+100+100+100)=556 RMB
+   **Attractions & Tickets: 102 RMB**. (40+11+11)×1=102 RMB
+   **Total Estimated Budget: 5762 RMB**

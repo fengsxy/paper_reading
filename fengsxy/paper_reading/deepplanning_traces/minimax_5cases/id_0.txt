@@ -1,0 +1,39 @@
+Day 1:
+Current City: from Hefei to Nanjing
+Accommodation: Orange Hotel Nanjing Confucius Temple Scenic Area, ¥441/room/night
+07:59-08:53 | travel_intercity_public | highspeed G7262, Hefei Station - Nanjing South Station, ¥67/person
+08:53-09:05 | buffer | Deplaning, baggage claim
+09:05-09:17 | travel_city | Nanjing South Station - Orange Hotel Nanjing Confucius Temple Scenic Area, 8.32km, 12min, ¥31
+09:17-09:50 | hotel | Check-in, Orange Hotel Nanjing Confucius Temple Scenic Area
+09:50-10:02 | travel_city | Orange Hotel Nanjing Confucius Temple Scenic Area - Nanjing City Wall Taicheng Scenic Area, 7.76km, 12min, ¥29
+10:00-11:30 | attraction | Nanjing City Wall Taicheng Scenic Area, ¥30/person
+11:30-11:38 | travel_city | Nanjing City Wall Taicheng Scenic Area - Nanjing Deji Plaza, 5.39km, 8min, ¥22
+11:40-12:40 | meal | Lunch, Banquet Encounter (Deji Plaza Branch), ¥221/person
+12:45-15:05 | attraction | Nanjing Deji Plaza, ¥0
+15:05-15:13 | travel_city | Nanjing Deji Plaza - Laomendong, 5.06km, 8min, ¥21
+15:15-17:00 | attraction | Laomendong, ¥0
+17:00-19:30 | meal | Dinner, Six Dynasties Pine Teahouse, ¥294/person
+19:30-19:52 | travel_city | Six Dynasties Pine Teahouse - Orange Hotel Nanjing Confucius Temple Scenic Area, 1.85km, 22min, ¥0
+19:52-24:00 | hotel | Rest, Orange Hotel Nanjing Confucius Temple Scenic Area
+
+Day 2:
+Current City: from Nanjing to Hefei
+Accommodation: -
+07:00-07:22 | travel_city | Orange Hotel Nanjing Confucius Temple Scenic Area - Laomendong, 1.85km, 22min, ¥0
+07:22-09:30 | attraction | Laomendong, ¥0
+09:30-09:35 | travel_city | Laomendong - Jiming Soup Dumplings (Nanjing Flagship Store) Nanjing Cuisine, 0.13km, 5min, ¥0
+09:35-10:35 | meal | Lunch, Jiming Soup Dumplings (Nanjing Flagship Store) Nanjing Cuisine, ¥100/person
+10:35-10:45 | travel_city | Jiming Soup Dumplings (Nanjing Flagship Store) Nanjing Cuisine - Nanjing Museum, 6.77km, 10min, ¥26
+10:45-14:00 | attraction | Nanjing Museum, ¥0
+14:00-14:18 | travel_city | Nanjing Museum - Nanjing South Station, 11.77km, 18min, ¥43
+14:18-14:50 | buffer | Security check, waiting for boarding
+14:50-15:41 | travel_intercity_public | highspeed G3031, Nanjing South Station - Hefei South Station, ¥67/person
+
+**Budget Summary**:
+   **Transportation: 232 RMB**
+   - Intercity: (67+67)×3=402 RMB (2 train rides)
+   - Intracity: Day 1: 31+29+22+21=103 RMB; Day 2: 26+43=69 RMB; Total: 172 RMB
+   **Accommodation: 882 RMB**. 2 rooms × 1 night × ¥441/room/night = ¥882
+   **Meals: 1653 RMB**. Day 1 Lunch: 221×3=663 RMB; Day 1 Dinner (Birthday): 294×3=882 RMB; Day 2 Lunch: 100×3=300 RMB
+   **Attractions & Tickets: 90 RMB**. City Wall Taicheng: 30×3=90 RMB
+   **Total Estimated Budget: 2857 RMB**
