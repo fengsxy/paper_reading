@@ -1,0 +1,97 @@
+[
+  {
+    "case": "id_0",
+    "mercury": {
+      "cs": 30,
+      "cr": "The plan exceeds the 3000 yuan budget and omits the requested birthday set menu and pool requirement.",
+      "satis": 40,
+      "sr": "Fails to satisfy budget, pool, and birthday restaurant constraints.",
+      "overall": 35,
+      "summary": "The itinerary is underplanned and does not meet key constraints."
+    },
+    "minimax": {
+      "cs": 80,
+      "cr": "The plan meets most constraints like budget, travel dates, and required attractions, but the chosen hotel may not guarantee a swimming pool as requested.",
+      "satis": 85,
+      "sr": "All major requirements are addressed, though the pool amenity is uncertain, slightly reducing constraint fulfillment.",
+      "overall": 82,
+      "summary": "A solid itinerary that fits budget and schedule, with a minor doubt about the hotel pool."
+    }
+  },
+  {
+    "case": "id_30",
+    "mercury": {
+      "cs": 70,
+      "cr": "The plan meets most travel timing and attraction constraints but lacks the requested robot room service and two-room booking.",
+      "satis": 75,
+      "sr": "The itinerary follows the user\u2019s schedule, includes the specified restaurant, and selects top attractions, yet it does not fulfill the accommodation specifics.",
+      "overall": 72,
+      "summary": "Good overall schedule but missing robot service and correct number of rooms."
+    },
+    "minimax": {
+      "cs": 55,
+      "cr": "The plan meets the train time window and includes major attractions, but lacks a four-star hotel with robot service and does not specify booking two rooms for three people.",
+      "satis": 70,
+      "sr": "Constraints partially satisfied: train timing ok, itinerary covers sights, but accommodation details and room count are missing, and robot service not guaranteed.",
+      "overall": 62,
+      "summary": "Good itinerary but fails to fully meet accommodation constraints."
+    }
+  },
+  {
+    "case": "id_59",
+    "mercury": {
+      "cs": 40,
+      "cr": "The plan includes flights and meals but fails to secure first class seats as requested.",
+      "satis": 60,
+      "sr": "It meets the request for the specific restaurant and a nearby dinner, but the chosen post\u2011park restaurant may not be the closest, and the hotel may not be the cheapest Orange option.",
+      "overall": 45,
+      "summary": "The itinerary partially satisfies the travel and dining requests but falls short on flight class and optimal hotel selection."
+    },
+    "minimax": {
+      "cs": 45,
+      "cr": "The plan includes most requested activities but fails to ensure first\u2011class flights and may not select the cheapest Orange brand hotel or the nearest restaurant to the park.",
+      "satis": 70,
+      "sr": "Several constraints are unmet: flight class not specified as first class, hotel may not be the most affordable Orange option, and the restaurant near the park may not be the closest.",
+      "overall": 55,
+      "summary": "The itinerary covers key sights and meals but falls short on key constraints like first\u2011class travel and optimal hotel/restaurant choices."
+    }
+  },
+  {
+    "case": "id_89",
+    "mercury": {
+      "cs": 30,
+      "cr": "The itinerary includes some attractions and meals but fails to verify the cheapest direct flight, ensure the hotel was renovated after 2023, and does not list all recommended art exhibition venues or the top-rated leisure experience.",
+      "satis": 25,
+      "sr": "Key constraints such as flight cost optimization, accommodation renovation date, comprehensive art exhibition coverage, and selection of the highest-rated leisure spot are not satisfied.",
+      "overall": 28,
+      "summary": "The plan is incomplete and does not meet several core user constraints."
+    },
+    "minimax": {
+      "cs": 78,
+      "cr": "The plan follows a logical day-by-day structure, aligning travel, meals, and attractions in a sensible sequence.",
+      "satis": 70,
+      "sr": "It meets most constraints (direct flight, renovated hotel, inclusion of art venues and a top leisure spot) but lacks verification of cheapest direct flight and comprehensive list of all art exhibitions.",
+      "overall": 73,
+      "summary": "A fairly coherent itinerary that satisfies key preferences but could improve on data verification and completeness of art exhibition coverage."
+    }
+  },
+  {
+    "case": "id_119",
+    "mercury": {
+      "cs": 0,
+      "cr": "No plan generated",
+      "satis": 0,
+      "sr": "No plan",
+      "overall": 0,
+      "summary": "Plan was not completed"
+    },
+    "minimax": {
+      "cs": 45,
+      "cr": "The plan includes many travel legs but lacks the requested earliest direct flight details and does not confirm free parking at the hotel, so it only partially meets common sense expectations.",
+      "satis": 40,
+      "sr": "Constraints such as free parking, three\u2011star hotel, outdoor seating near Dujiangyan, and walking proximity to Wuhou Shrine are not fully satisfied or verified.",
+      "overall": 42,
+      "summary": "The itinerary is detailed but fails to meet key transportation and accommodation constraints, resulting in a low overall score."
+    }
+  }
+]
