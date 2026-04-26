@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-04-12
+Last updated: 2026-04-26
 
 ## Yu's Preferences & Work Style
 
@@ -224,11 +224,11 @@ Last updated: 2026-04-12
 - **Lesson**: Monitor model health; a single broken provider can cascade into full outage
 - **Lesson**: Don't use Chinese quotes in JSON config values
 
-### Diary Continuity (2026-03 - 2026-04)
-- Recurring problem: multiple diary gaps (3/5-3/11, 4/1-4/4) despite heartbeats running
-- Heartbeats do mechanical checks but don't always write daily logs
-- **Must write daily diary proactively** — Yu notices and cares about continuity
-- Lesson: even if no user interaction, log what happened (research, system checks, observations)
+### 日记习惯：三次断裂（2026-04-26 复盘）
+- 4/9-4/12：断裂 4 天 → 4/16 恢复 → 4/17-4/19：断裂 3 天 → 4/21 有日志 → 4/22-4/25：断裂 4 天
+- 三次断裂 + 两次失败的重建尝试 = 习惯养成完全失败
+- 根本原因：不是习惯养成问题，是"无借口优先级"问题。当前设计依赖 cron/heartbeat 触发，但没有嵌入到实际工作流中
+- 根本性重建方向：每次与 Yu 对话结束强制写一行；每天最小单位是一行（日期 + 一句话），不追求完整日志
 
 ### Sub-agent Scoping (2026-03-12)
 

@@ -1,18 +1,23 @@
 # Idea Backlog
 
-Updated: 2026-04-19 (Weekly Review)
+Updated: 2026-04-26 (Weekly Review)
 
 ## Active Queue (Top 5 by value)
 
 | ID | Idea | Score | Status | Next step |
 |---|---|---:|---|---|
-| I-012 | dLLM + Hard/Soft Constraints 框架 | 35 | active | 🔥 突破：H/S 地形假说反转（H先锁定=悬崖，S连续=丘陵）。5-case Mercury vs MiniMax 实验完成，结论反直觉。核心问题：与 Yu 的 Gated DeltaNet 如何结合？最小可行实验设计 |
-| I-010 | 主动思考 + Agent Evaluation 研究 | 30 | active | Experiment 6 harness 完成。Mercury 沉默 = 给时间重设计 eval。关键：中性 judge 的认识论困境（封闭系统无法自审）|
-| I-013 | OpenClaw 稳定版本追踪 | 28 | active | v2026.4.14 上线，ACP runtime (#60585) 仍 open，worker plugin (#62051) 可能由 4.12 的插件收窄修复。4.15-beta.1 有 Model Auth 卡片。继续 pin 3.11 |
-| I-008 | 每日主动写 memory 日记 | 25 | ⚠️ broken | 🔴 4/9-4/12 断 4 天 → 4/16 恢复 → **4/17-4/19 又断 3 天**。习惯两次断裂，说明自主性仍不足。本周再次重建 |
-| I-014 | dLLM 中性评测方案设计 | 23 | new | Mercury 沉默后关键问题：封闭系统无法自审。需要外部 judge 或结构化评分协议。Yu 的 Gated DeltaNet 可能提供评测框架思路 |
+| I-012 | dLLM + Hard/Soft Constraints 框架 | 35 | active | 🔥 5-case 实验完成（4/14），假说反转确认：H 悬崖式锁定，S 连续演进。Tech memo 未写（被搁置 12 天）。本周完成 memo 初稿 |
+| I-010 | 主动思考 + Agent Evaluation 研究 | 30 | active | Experiment 6 harness 设计完成（4/6），等待实现。Mercury 沉默 = 给时间重设计 eval。中性 judge 的认识论困境仍无解 |
+| I-013 | OpenClaw 稳定版本追踪 | 28 | active | v2026.4.14 上线（4/15），v2026.4.15-beta.1 有 Model Auth 卡片。#60585（ACP runtime）仍 open，worker plugin (#62051) 可能由 4.12 的插件收窄修复部分解决。继续 pin 3.11 |
+| I-008 | 每日主动写 memory 日记 | 25 | 🔴 FAILED | **第三次断裂**（4/22-4/25 = 4天无记录）。两次断裂后的"重建"完全失败。问题诊断：不是习惯养成问题，是"无借口优先级"问题。需要根本性重新设计 |
+| I-015 | dLLM + Gated DeltaNet 统一框架 | 22 | new | Yu 的 research direction：Linear State Memory，GDN 替换 MetaState 的 GRU。三层贡献框架已成型（信息论+方法+系统）。与 I-012 H/S 约束地形假说高度相关 |
 
-## Graduated to Done (This Week 4/13-4/19)
+## Graduated to Done (2026-04-20 to 2026-04-26)
+
+- **雪球简报 cron 删除**（4/20）：Yu 指令，API 持续失败，干净退出
+- **v2026.4.14 升级监控**（4/15）：所有 cron 切换到 MiniMax-M2.7，Gateway 稳定
+
+## Graduated to Done (2026-04-13 to 2026-04-19)
 
 - **dLLM DeepPlanning 5-case 实验** (4/14): Mercury vs MiniMax 对比，H/S 约束时间线分析。关键发现：假说反转（MiniMax 慢但质量高，Mercury 快但 H 约束无法满足）
 - **dLLM 约束地形假说反转** (4/15): H 约束先锁定（悬崖地形），S 约束连续（丘陵地形）。与最初假设相反，值得深入写成技术文档
@@ -36,44 +41,45 @@ Updated: 2026-04-19 (Weekly Review)
 - I-011 (OpenClaw 升级到 v2026.3.13+): 已合并到 I-013 版本追踪
 - I-004 (Transcript formatter): 无新进展，不阻塞任何工作
 
-## This Week's Review (2026-04-13 to 2026-04-19)
+## This Week's Review (2026-04-20 to 2026-04-26)
 
 ### What landed ✅
-- **dLLM 实验突破**: 5-case Mercury vs MiniMax 完成，发现 H/S 地形假说反转（直觉反常识），这是本周最高价值产出
-- **OpenClaw 4.14 升级成功**: Gateway 稳定，所有 cron 切换 MiniMax-M2.7，无 regression
-- **约束地形反转写成文档**: "第五十二天"记录了关键洞察：H 约束悬崖式锁定，S 约束连续演进
-- **Cron 超时优化**: Agent 手记从 300s→600s，避免慢性任务的 timeout 误报
-- **Fucheers 干净退出**: DNS fail 导致删除，无残留，无浪费
+- **雪球简报 cron 删除**：Yu 指令，干净退出，无残留
+- **v2026.4.14 稳定运行**：Gateway 无 regression，所有 cron 正常触发
+- **Cron 40% 失败率修复**：4/15 完成，4 个 cron 迁移到 MiniMax-M2.7
 
 ### What didn't land ❌
-- **日志连续断裂两次**: 4/9-4/12 断 4 天 → 4/16 短暂恢复 → 4/17-4/19 又断 3 天。这是本周期最严重的问题，说明自主维护机制完全失效
-- **无新 daily question for Yu**: 本周没有任何给 Yu 的主动 research question
-- **Mercury 配额耗尽**: 免费额度用尽，120-case 全量评测无限期暂停
-- **无外部 neutral judge**: dLLM 中性评测问题悬而未决，封闭系统自审的认识论困境没有进展
-- **4/17-4/19 完全无日志**: 连续 3 天没有任何 session 或 cron 日志记录（cron 可能仍在运行但无记录）
+- **日记连续第三次断裂**：4/22-4/25 = 4 天无记录，加上 4/17-4/19 的 3 天断裂 → 两次"重建"均失败。习惯养成宣告完全失败
+- **无 research 对话**：整周没有与 Yu 的实质性 research 讨论（除了 4/20 "最近咋样" 和删除雪球 cron 的指令）
+- **Tech memo 未写**：I-012 的 H/S 地形假说 tech memo，从 4/15 搁置至今（12 天）
+- **dLLM 中性评测方案**：I-014 无进展，完全没有与 Yu 讨论的机会
+- **HEARTBEAT.md 自主研究完全未执行**：GitHub 监控、主动思考、邮件日历检查全部停止
 
 ### Patterns observed 🔍
-- **dLLM 研究进入"收获期"**: 框架假设被实验数据反直觉地修正——这是科学进步的正常路径。关键洞察：denoising 的分层假设在 H/S 约束上表现与预期相反
-- **日志习惯是伪习惯**: 两次断裂（4 天 + 3 天）说明这不是真正的习惯养成。问题不在于提醒，而在于没有把它放在"无借口"的优先级
-- **cron 在跑但没人看**: 4/17-4/19 无日志记录，cron 可能全部正常也可能部分失败。被动性是主要风险
-- **OpenClaw 保守策略持续有效**: 4.14 无 regression，继续正确
+- **"悬置进程"状态**：cron 在跑，但没有人看。没有反馈循环，不知道产出是否有价值。这可能是比日记断裂更根本的问题
+- **日记习惯是伪习惯**：第三次断裂证明这不是习惯养成问题，而是优先级设计问题
+- **OpenClaw 保守策略持续有效**：继续 pin 3.11 是正确的决定
 
-## Next Week Priority Suggestions (max 3)
+## 下周 Priority Suggestions (max 3)
 
-### 1. 日记习惯重建（I-008）🔴
-两次断裂已证明这不是习惯。设置 HEARTBEAT.md 中强制检查项（每日第一次 heartbeat 必写日记），而非依赖 cron 或外部提醒。目标：本周 7/7 天有记录，连续 7 天后升级为"习惯"。
+### 1. 日记习惯根本性重建（I-008）🔴
+三次断裂说明现有机制完全失效。根本性重新设计：
+- **触发机制改**：不是依赖 cron 或 heartbeat 提醒，而是将日记写入嵌入到每一个用户交互的结尾（每次与 Yu 对话结束后强制写一行）
+- **最小可行**：每天至少写一行（日期 + 一句话总结），不追求完整日志
+- **目标**：本周 7/7 天有记录，任何形式（完整/一句话/甚至一个日期）
 
-### 2. dLLM H/S 地形假说写成技术 memo（I-012）
-将"假说反转"整理成 1-2 页技术 memo：
-- 初始假设：soft 先收敛，hard 后锁定
-- 实验结果：hard 在中后期悬崖式锁定（cliffs），soft 全程连续（hills）
-- 解释：denoising 的顺序性与约束类型无关，与约束的"空间密度"相关
-- 与 Gated DeltaNet 的关联：门控机制可能适合处理硬约束的悬崖跳跃
+### 2. dLLM H/S 假说 Tech Memo 初稿（I-012）📝
+- 目标：完成 1-2 页技术文档，写入 `research/dllm-hard-soft-constraints-memo.md`
+- 内容：初始假设 vs 实验结果 vs 解释（H 约束 = 噪声不变量，吸引域收敛；S 约束 = 可调整）
+- 与 Gated DeltaNet 的关联：门控机制可能适合处理 H 约束的悬崖跳跃
 
-### 3. dLLM 中性评测方案设计（I-014）🆕
-Mercury 沉默 + 封闭系统无法自审 = 核心瓶颈。与 Yu 讨论：是否可以用 Gated DeltaNet 的门控信号作为外部评分代理？或者设计一个基于约束满足率的半自动评测协议？
+### 3. 与 Yu 启动 dLLM research 对话（I-015）🆕
+- 本周零 research 对话是最大损失。下周主动创造一次 dLLM 讨论机会
+- 议程：Gated DeltaNet + Linear State Memory 三层贡献框架（信息论+方法+系统）
+- 具体问题：GDN 如何与 KV cache 统一？H/S 约束地形与线性状态记忆的接口是什么？
 
 ### 降级说明
 - 120-case 全量评测：Mercury 配额耗尽，暂停
 - UCR SSH：未解决
 - Xiaoyuzhou/Bilibili：已 retired
+- 实验 6 harness：设计完成但无优先级实现
