@@ -1,10 +1,129 @@
-# Daily Papers — 2026-05-02
+# Daily Papers — 2026-05-02 (Saturday)
 
-## 1. Sessa: Selective State Space Attention
-- **Link:** https://arxiv.org/abs/2604.18580
-- **Date:** 2026-04-21
-- **Abstract:** In parallel, structured recurrent sequence models, especially state space models (SSMs), which realize long-range dynamics through a latent state and an explicit feedback path, have re-emerged as a compelling alternative for long-context modeling (Gu et al., 2022a, b). SSMs can be interpreted as mod
+> 今日发现 25 篇相关新论文（arXiv 一周内），重点关注以下精选：
 
-## 2. Attention, State Space Models, and Recurrent Neural Networks
-- **Link:** https://proceedings.neurips.cc/paper_files/paper/2024/file/f271a36160097fbdb06a9adeb1605343-Paper-Conference.pdf
-- **Abstract:** State-space models emerged from the S4 architecture by Gu et al. [25], who developed a new theoreti- cally principled approach to sequence modeling rooted in polynomial approximation theory [26]. The · result is a transformer-like architecture [2], where attention is replaced by a linear recurrent n
+## 1. [2604.28178] LLM as Clinical Graph Structure Refiner: Enhancing ...
+- **Date:** 2026-05-01
+- **arXiv:** [2604.28178](https://arxiv.org/abs/2604.28178)
+- **Snippet:** Electroencephalogram (EEG) signals are vital for automated seizure detection, but their inherent noise makes robust representation learning challenging. Existing graph construction methods, whether co...
+
+## 2. HealthBench Professional: Evaluating Large Language Models on Real ...
+- **Date:** 2026-04-30
+- **arXiv:** [2604.27470](https://arxiv.org/html/2604.27470)
+- **Snippet:** Clinicians use models to reason through difficult patient cases in real time, draft documentation, and understand the latest medical evidence. The growing prevalence of clinical use suggests an opport...
+
+## 3. [2604.27277] BrainDINO: A Brain MRI Foundation Model for ...
+- **Date:** 2026-04-30
+- **arXiv:** [2604.27277](https://arxiv.org/abs/2604.27277)
+- **Snippet:** Our findings indicate that large-scale slice-wise self-supervised learning can yield a unified brain MRI representation that supports diverse neuroimaging tasks without volumetric pretraining or full-...
+
+## 4. Compliance versus Sensibility: On the Reasoning Controllability ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.27251](https://arxiv.org/html/2604.27251)
+- **Snippet:** Leveraging these insights, we steer ... while LLM reasoning is anchored to concrete instances, active mechanistic interventions can effectively decouple logical schemata from data, offering a path tow...
+
+## 5. Semantic Structure of Feature Space in Large Language Models
+- **Date:** 2026-04-29
+- **arXiv:** [2604.27169](https://arxiv.org/html/2604.27169)
+- **Snippet:** A growing literature shows that many features, such as deception, refusal, and sycophancy, are encoded as linear directions in large language models’ (LLMs) internal representations (Arditi et al., 20...
+
+## 6. LLM-Enhanced Topical Trend Detection at Snapchat
+- **Date:** 2026-04-29
+- **arXiv:** [2604.27131](https://arxiv.org/html/2604.27131)
+- **Snippet:** In this work, we present Snapchat’s large-scale topical trend detection system powered by Large Language Models (LLMs). We consider topical trends as time-sensitive emerging topics characterized by no...
+
+## 7. [2604.27082] When Your LLM Reaches End-of-Life: A Framework for ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.27082](https://arxiv.org/abs/2604.27082)
+- **Snippet:** We present a framework for migrating production Large Language Model (LLM) based systems when the underlying model reaches end-of-life or requires replacement. The key contribution is a Bayesian stati...
+
+## 8. [2604.27045] Detecting Clinical Discrepancies in Health Coaching ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.27045](https://arxiv.org/abs/2604.27045)
+- **Snippet:** As Large Language Model (LLM) agents transition from single-session tools to persistent systems managing longitudinal healthcare journeys, their memory architectures face a critical challenge: reconci...
+
+## 9. [2604.27040] Permutation Invariant Optimization Problems in Quantum ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.27040](https://arxiv.org/abs/2604.27040)
+- **Snippet:** Abstract page for arXiv paper 2604.27040: Permutation Invariant Optimization Problems in Quantum Information Theory: A Framework for Channel Fidelity and Beyond
+
+## 10. Turning the Tide: Cross-Architecture Distillation for Diffusion ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.26951](https://arxiv.org/html/2604.26951)
+- **Snippet:** Autoregressive language models dominate natural language generation (Vaswani et al., 2017; Yang et al., 2024; 2025), yet diffusion language models have gained traction as an alternative paradigm. Earl...
+
+## 11. [2604.26776] Conditional diffusion denoising probabilistic model ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.26776](https://arxiv.org/abs/2604.26776)
+- **Snippet:** The diffusion model is trained for super-resolution across different scale factors and evaluated under interpolation and extrapolation scenarios. Results show accurate recovery of fine-scale turbulent...
+
+## 12. [2604.26366] Probabilistic data quality assessment for structural ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.26366](https://arxiv.org/abs/2604.26366)
+- **Snippet:** The proposed conditional diffusion model (CDM) augments the standard diffusion model with a conditional embedding module to incorporate temporal context, quartile normalization to mitigate distributio...
+
+## 13. [2604.26197] Hierarchical Long-Term Semantic Memory for LinkedIn's ...
+- **Date:** 2026-04-29
+- **arXiv:** [2604.26197](https://arxiv.org/abs/2604.26197)
+- **Snippet:** Large Language Model (LLM) agents are increasingly used in real-world products, where personalized and context-aware user interactions are essential. A central enabler of such capabilities is the agen...
+
+## 14. [2604.26128] Robust Representation Learning through Explicit ...
+- **Date:** 2026-04-28
+- **arXiv:** [2604.26128](https://arxiv.org/abs/2604.26128)
+- **Snippet:** However, this framework assumes that the environment has no direct effect on the target. In contrast, we consider settings in which this assumption fails, but still aim to learn representations that s...
+
+## 15. Charge diffusion and modulation transfer function in a Nancy Grace ...
+- **Date:** 2026-04-28
+- **arXiv:** [2604.26114](https://arxiv.org/html/2604.26114)
+- **Snippet:** One feature is the modulation transfer ... charge diffusion in Roman’s infrared detector arrays. As part of the detector characterization effort, a detector from the flight lots (but ultimately not se...
+
+## 16. [2604.26093] Diffusion with conserved marginal distributions and ...
+- **Date:** 2026-04-28
+- **arXiv:** [2604.26093](https://arxiv.org/abs/2604.26093)
+- **Snippet:** Abstract page for arXiv paper 2604.26093: Diffusion with conserved marginal distributions and information theory in fracton hydrodynamics
+
+## 17. The Structured Output Benchmark: A Multi-Source Benchmark for ...
+- **Date:** 2026-04-28
+- **arXiv:** [2604.25359](https://arxiv.org/html/2604.25359)
+- **Snippet:** Most benchmarks for large language models (LLMs) evaluate reasoning, summarization, or code generation; the few that target structured output (JSONSchemaBench (Geng et al., 2025), StructEval (Li et al...
+
+## 18. Exploring Time Conditioning in Diffusion Generative Models from ...
+- **Date:** 2026-04-28
+- **arXiv:** [2604.25289](https://arxiv.org/html/2604.25289)
+- **Snippet:** Practically, training diffusion models typically requires explicit time conditioning to guide the network through the denoising sampling process. Especially in deterministic methods like DDIM, the abs...
+
+## 19. Large Language Models for Multilingual Code Intelligence: A Survey
+- **Date:** 2026-04-27
+- **arXiv:** [2604.25960](https://arxiv.org/html/2604.25960v1)
+- **Snippet:** Background. The advent of Large Language Models (LLMs)has fundamentally reshaped the landscape of Software Engineering (SE) [10, 32], particularly in the domain of AI-assisted programming. Models such...
+
+## 20. [2604.24640] DiffQEC: A versatile diffusion model for quantum error ...
+- **Date:** 2026-04-27
+- **arXiv:** [2604.24640](https://arxiv.org/abs/2604.24640)
+- **Snippet:** Abstract page for arXiv paper 2604.24640: DiffQEC: A versatile diffusion model for quantum error correction
+
+## 21. Diffusion Model as a Generalist Segmentation Learner
+- **Date:** 2026-04-27
+- **arXiv:** [2604.24575](https://arxiv.org/html/2604.24575)
+- **Snippet:** In this paper, we demonstrate that ... downstream tasks to make a general-purpose diffusion segmentation framework. Concretely, we introduce DiGSeg (Diffusion Models as a Generalist Segmentation Learn...
+
+## 22. DreamAudio: Customized Text-to-Audio Generation with Diffusion Models
+- **Date:** 2026-04-27
+- **arXiv:** [2509.06027](https://arxiv.org/html/2509.06027v3)
+- **Snippet:** For example, when provided with the text prompt dog barking, the model leverages this particular “semantic prior” to generate various audio clips depicting dog barking across varying species, emotions...
+
+## 23. 1 Introduction
+- **Date:** 2026-04-26
+- **arXiv:** [2604.23800](https://arxiv.org/html/2604.23800)
+- **Snippet:** Causal representation learning aims to recover the latent causal variables and their causal relations, typically represented by directed acyclic graphs (DAGs), from low-level observations such as imag...
+
+## 24. HeadRouter: Dynamic Head-Weight Routing for Task-Adaptive Audio ...
+- **Date:** 2026-04-26
+- **arXiv:** [2604.23717](https://arxiv.org/html/2604.23717v1)
+- **Snippet:** Extensive experiments on the ... the baseline model even when retaining 70% of the audio tokens, achieving 101.8% and 103.0% of the vanilla average on the Qwen2.5-Omni-3B and Qwen2.5-Omni-7B, respecti...
+
+## 25. Improving Music Source Separation with Diffusion and Consistency ...
+- **Date:** 2026-04-26
+- **arXiv:** [2412.06965](https://arxiv.org/html/2412.06965v2)
+- **Snippet:** In this work, we propose an approach to music source separation that uses a generative diffusion model as a last-stage refinement on top of a deterministic separator, progressively enhancing the separ...
+
