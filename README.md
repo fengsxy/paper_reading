@@ -6,6 +6,8 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-05-04 | [Hacker News](hackernews/2026-05-04.md): Hacker News AI/ML — 2026-05-04 |
+| 2026-05-04 | [Scholar Inbox](scholar_inbox/2026-05-04-daily-papers.md): Daily Papers — 2026-05-04 |
 | 2026-05-03 | [Hacker News](hackernews/2026-05-03.md): Hacker News AI/ML — 2026-05-03 |
 | 2026-05-03 | [Scholar Inbox](scholar_inbox/2026-05-03-daily-papers.md): Daily Papers — 2026-05-03 |
 | 2026-05-02 | [Hacker News](hackernews/2026-05-02.md): Hacker News — 2026-05-02 (+1 more) |
@@ -16,8 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-04-30 | [Scholar Inbox](scholar_inbox/2026-04-30-daily-papers.md): 每日论文 - 2026-04-30 (+1 more) |
 | 2026-04-29 | [Hacker News](hackernews/2026-04-29.md): Hacker News AI/ML — 2026-04-29 |
 | 2026-04-29 | [Scholar Inbox](scholar_inbox/2026-04-29-daily-papers.md): Daily Papers — 2026-04-29 |
-| 2026-04-28 | [Essays](essays/2026-04-28-dllm-decoding-survey.md): dLLM 论文综述：解码策略的理论与实践（2026.04） |
-| 2026-04-28 | [Hacker News](hackernews/2026-04-28.md): Hacker News AI/ML — 2026-04-28 |
 
 ---
 
