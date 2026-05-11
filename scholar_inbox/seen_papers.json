@@ -247,5 +247,8 @@
   "discretediffusionlanguagemodelforefficienttext": "2026-05-04",
   "reinforcementlearningviaselfdistillation": "2026-05-08",
   "agentsafetyalignmentviareinforcementlearningopenreview": "2026-05-08",
-  "attentionstatespacemodelsandrecurrentneural": "2026-05-09"
+  "attentionstatespacemodelsandrecurrentneural": "2026-05-09",
+  "2605.04291": "2026-05-11",
+  "leveragingpretrainedlanguagemodelsasenergy": "2026-05-11",
+  "scalingbehaviorofdiscretediffusionlanguagemodelsopenreview": "2026-05-11"
 }
