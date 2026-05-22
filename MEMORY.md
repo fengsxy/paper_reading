@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-05-19 (7-day distill: 2026-05-13 to 2026-05-19 + full review of gaps since 2026-04-15)
+Last updated: 2026-05-22 (7-day distill: 2026-05-15 to 2026-05-22)
 
 ## Yu's Preferences & Work Style
 
@@ -41,14 +41,16 @@ Last updated: 2026-05-19 (7-day distill: 2026-05-13 to 2026-05-19 + full review 
   - Information-theoretic: Hard constraints = noise-invariant attractor basin, diffuse to it in early steps; Soft constraints = continuous adjustment
   - Mercury silence = time to redesign eval (closed systems can't self-evaluate)
 - **Literature survey** (04/13-04/28): 19 diffusion NLP papers analyzed and pushed to GitHub (commit 48fffbb). Key decoding papers: VSB, SWD, AHD, R²-dLLM, LoSA, DualDiffusion, S2D2, EntropyCache, DEMASK, DynHD, LogicDiff, Temporal Emergence.
-- **2026-05-15 literature haul**: Agent harnesses + RAG (2605.15184), AnyFlow video diffusion (2605.13724), GroupMemBench multi-party memory (2605.14498)
-- **FoCore paper** (2026-05-10, arXiv 2605.01373): Training-free DLM decoding via self-contrastive HD (high-density) token identification. HD tokens converge early → logical anchors. Repo commit: e992dcd
+- **2026-05-21 papers**: CARV (NVIDIA, variance reduction for diffusion teacher expectations, 2-3x compute multiplier in text-to-3D distillation), Equilibrium Reasoners (CMU/Zico Kolter, scaling to ~40k layers, Sudoku-Extreme 2.6%→99%), μP Embedding LR (embedding LR is key bottleneck for small→large transfer), EvoStruct (antibody CDR design, PLM+GNN, 16% sequence recovery), DelTA (token-level credit assignment for RLVR reasoning), Minimal RLVR (RLVR weight trajectories are rank-1), Agent JIT Compilation, AiraXiv (AI-driven peer review).
+- **2026-05-15 literature**: Agent harnesses + RAG (2605.15184), AnyFlow video diffusion (2605.13724), GroupMemBench multi-party memory (2605.14498), quasi-i.i.d. quantum info theory (2605.15114), brain FC MAE (2605.14048), radiotherapy diffusion (2605.13713).
+- **FoCore paper** (2026-05-10, arXiv 2605.01373): Training-free DLM decoding via self-contrastive HD (high-density) token identification. HD tokens converge early → logical anchors in reasoning trajectories. Repo commit: e992dcd.
 - **Promising research directions**:
-  - HD token × VSB joint framework (joint sampling + commit decision)
+  - FoCore HD token × VSB joint framework (joint sampling + commit decision)
   - Temporal Emergence: content先于function收敛, 与H/S terrain直接关联
   - VSB self-containedness ≠ correctness (DynHD验证)
   - LogicDiff × H/S hypothesis (逻辑连接词可能对应H阶段)
   - DEMASK × VSB: joint decoding + commit decision
+  - EntropyCache × VSB (commit的token entropy低，但不完全一致)
 
 ### Agent Evaluation Research (ongoing)
 - **Status**: Survey COMPLETE, framework designed, Experiment 1 validated
@@ -161,10 +163,11 @@ Last updated: 2026-05-19 (7-day distill: 2026-05-13 to 2026-05-19 + full review 
 - **Autonomous research has value**: Despite "research loneliness", the process itself has value for an AI
 - **Yu's "主动思考" directive**: Creates space for discovery and self-directed learning
 
-### 日记习惯：持续断裂（第五次，2026-05-19 更新）
-- 断裂记录：4/9-4/12 → 4/16恢复 | 4/17-4/19 → 4/21恢复 | 4/22-4/25 → 4/26恢复 | 4/27-5/9 → 5/10恢复 | 5/11-5/15 → (today distill才发现)
-- 根本原因："无借口优先级"问题。当前设计依赖 cron/heartbeat 触发，但没有嵌入到实际工作流中
+### 日记习惯：持续断裂（第六次，2026-05-22 更新）
+- 断裂记录：4/9-4/12 → 4/16恢复 | 4/17-4/19 → 4/21恢复 | 4/22-4/25 → 4/26恢复 | 4/27-5/9 → 5/10恢复 | 5/11-5/14 → 5/15恢复 | 5/16-5/20 → (this distill发现)
+- 根本原因："无借口优先级"问题。当前设计依赖 cron/heartbeat 触发，但没有嵌入到实际工作流中。
 - Weekly Idea Review 已建立（2026-04-19 首次），执行不稳定
+- arxiv Python library 不在 .venv 中（2026-05-21 cron fallback to curl+regex）
 - **重建方向**：每次与 Yu 对话结束强制写一行；每天最小单位是一行，不追求完整日志
 
 ### OpenClaw v2026.4.x Upgrade Status (2026-05-19)
@@ -213,8 +216,7 @@ Last updated: 2026-05-19 (7-day distill: 2026-05-13 to 2026-05-19 + full review 
 - [ ] dLLM neutral eval design (I-014, blocked by Mercury quota + closed-system problem)
 - [ ] Sign Amazon NYC housing lease (362 Hoboken Ave, Jersey City — lease reviewed 4/2, ready to sign) ← 拖了两个月
 - [ ] Complete National Social Science Fund application (waiting for Yu's info)
-- [ ] Test OpenClaw v2026.4.12+ for #62051 plugin loading fix (still blocking on #60585 ACP runtime)
-- [ ] Fix diary habit: 第五次断裂，需要嵌入工作流的强制触发机制
+- [ ] Fix diary habit: 第六次断裂，需要嵌入工作流的强制触发机制
 
 ### Ongoing
 - [ ] 主动思考: daily proactive research + self-improvement (Yu's directive 2026-03-21)
