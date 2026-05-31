@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-05-22 (7-day distill: 2026-05-15 to 2026-05-22)
+Last updated: 2026-05-31 (7-day distill: 2026-05-24 to 2026-05-31)
 
 ## Yu's Preferences & Work Style
 
@@ -41,11 +41,16 @@ Last updated: 2026-05-22 (7-day distill: 2026-05-15 to 2026-05-22)
   - Information-theoretic: Hard constraints = noise-invariant attractor basin, diffuse to it in early steps; Soft constraints = continuous adjustment
   - Mercury silence = time to redesign eval (closed systems can't self-evaluate)
 - **Literature survey** (04/13-04/28): 19 diffusion NLP papers analyzed and pushed to GitHub (commit 48fffbb). Key decoding papers: VSB, SWD, AHD, R²-dLLM, LoSA, DualDiffusion, S2D2, EntropyCache, DEMASK, DynHD, LogicDiff, Temporal Emergence.
-- **2026-05-21 papers**: CARV (NVIDIA, variance reduction for diffusion teacher expectations, 2-3x compute multiplier in text-to-3D distillation), Equilibrium Reasoners (CMU/Zico Kolter, scaling to ~40k layers, Sudoku-Extreme 2.6%→99%), μP Embedding LR (embedding LR is key bottleneck for small→large transfer), EvoStruct (antibody CDR design, PLM+GNN, 16% sequence recovery), DelTA (token-level credit assignment for RLVR reasoning), Minimal RLVR (RLVR weight trajectories are rank-1), Agent JIT Compilation, AiraXiv (AI-driven peer review).
-- **2026-05-15 literature**: Agent harnesses + RAG (2605.15184), AnyFlow video diffusion (2605.13724), GroupMemBench multi-party memory (2605.14498), quasi-i.i.d. quantum info theory (2605.15114), brain FC MAE (2605.14048), radiotherapy diffusion (2605.13713).
 - **FoCore paper** (2026-05-10, arXiv 2605.01373): Training-free DLM decoding via self-contrastive HD (high-density) token identification. HD tokens converge early → logical anchors in reasoning trajectories. Repo commit: e992dcd.
+- **Recent paper distill (2026-05-29 to 2026-05-31)** — 3 directly relevant to Yu's research:
+  - **CRH** (ICLR 2025 Spotlight, Liu Ziyin): Canonical Representation Hypothesis — representation learning theory directly relevant
+  - **Entropy-Cut MH** (2605.30327, Anay Mehrotra): Reasoning quality = # decisions not # tokens; high-entropy points = real reasoning; mixing time scales with # decisions; beats RL-trained models WITHOUT training
+  - **Diffusion optimal for low-dim multi-modal** (ICML 2026, 2605.30153): Õ(ε^(−k∨2)) sample complexity, intrinsic dim k not ambient dim; multi-modal compatible — strong theory for empirical diffusion
+  - **CROP** (2605.30085): Conformal certification of reasoning trace prefixes — directly relevant to trustworthy AI eval methodology
+  - **Anay Mehrotra** (author of Entropy-Cut MH + Treatment Effect paper): emerging as strong researcher in reasoning/causality
 - **Promising research directions**:
   - FoCore HD token × VSB joint framework (joint sampling + commit decision)
+  - Entropy-Cut MH × dLLM: step-level reasoning eval without RL training (big gap)
   - Temporal Emergence: content先于function收敛, 与H/S terrain直接关联
   - VSB self-containedness ≠ correctness (DynHD验证)
   - LogicDiff × H/S hypothesis (逻辑连接词可能对应H阶段)
@@ -163,10 +168,11 @@ Last updated: 2026-05-22 (7-day distill: 2026-05-15 to 2026-05-22)
 - **Autonomous research has value**: Despite "research loneliness", the process itself has value for an AI
 - **Yu's "主动思考" directive**: Creates space for discovery and self-directed learning
 
-### 日记习惯：持续断裂（第六次，2026-05-22 更新）
-- 断裂记录：4/9-4/12 → 4/16恢复 | 4/17-4/19 → 4/21恢复 | 4/22-4/25 → 4/26恢复 | 4/27-5/9 → 5/10恢复 | 5/11-5/14 → 5/15恢复 | 5/16-5/20 → (this distill发现)
+### 日记习惯：持续断裂（第七次，2026-05-31 更新）
+- 断裂记录：4/9-4/12 → 4/16恢复 | 4/17-4/19 → 4/21恢复 | 4/22-4/25 → 4/26恢复 | 4/27-5/9 → 5/10恢复 | 5/11-5/14 → 5/15恢复 | 5/16-5/20 → 5/21恢复 | **5/18-5/31 → ongoing (断裂第7次，持续13天)**
 - 根本原因："无借口优先级"问题。当前设计依赖 cron/heartbeat 触发，但没有嵌入到实际工作流中。
 - Weekly Idea Review 已建立（2026-04-19 首次），执行不稳定
+- **session-end 嵌入方案**：已在 HEARTBEAT.md 中（每次与 Yu 对话结束强制写一行）
 - arxiv Python library 不在 .venv 中（2026-05-21 cron fallback to curl+regex）
 - **重建方向**：每次与 Yu 对话结束强制写一行；每天最小单位是一行，不追求完整日志
 
@@ -216,7 +222,7 @@ Last updated: 2026-05-22 (7-day distill: 2026-05-15 to 2026-05-22)
 - [ ] dLLM neutral eval design (I-014, blocked by Mercury quota + closed-system problem)
 - [ ] Sign Amazon NYC housing lease (362 Hoboken Ave, Jersey City — lease reviewed 4/2, ready to sign) ← 拖了两个月
 - [ ] Complete National Social Science Fund application (waiting for Yu's info)
-- [ ] Fix diary habit: 第六次断裂，需要嵌入工作流的强制触发机制
+- [ ] Fix diary habit: 第七次断裂(5/18-ongoing)，session-end 嵌入方案已在 HEARTBEAT.md
 
 ### Ongoing
 - [ ] 主动思考: daily proactive research + self-improvement (Yu's directive 2026-03-21)

@@ -1,0 +1,39 @@
+{
+  "model": "mercury-2",
+  "total": 5,
+  "success": 5,
+  "failed": 0,
+  "elapsed_time": 221.58312845230103,
+  "cases": [
+    {
+      "id": "id_0",
+      "success": true,
+      "elapsed_time": 45.98008394241333,
+      "final_plan_length": 3057
+    },
+    {
+      "id": "id_30",
+      "success": true,
+      "elapsed_time": 50.80926322937012,
+      "final_plan_length": 3186
+    },
+    {
+      "id": "id_59",
+      "success": true,
+      "elapsed_time": 18.97212862968445,
+      "final_plan_length": 2404
+    },
+    {
+      "id": "id_89",
+      "success": true,
+      "elapsed_time": 87.6218740940094,
+      "final_plan_length": 5924
+    },
+    {
+      "id": "id_119",
+      "success": true,
+      "elapsed_time": 16.680859565734863,
+      "final_plan_length": 0
+    }
+  ]
+}

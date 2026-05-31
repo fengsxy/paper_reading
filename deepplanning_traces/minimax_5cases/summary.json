@@ -1,0 +1,39 @@
+{
+  "model": "minimax-m2.7",
+  "total": 5,
+  "success": 5,
+  "failed": 0,
+  "elapsed_time": 2030.70219540596,
+  "cases": [
+    {
+      "id": "id_0",
+      "success": true,
+      "elapsed_time": 219.0998136997223,
+      "final_plan_length": 2691
+    },
+    {
+      "id": "id_30",
+      "success": true,
+      "elapsed_time": 197.6271481513977,
+      "final_plan_length": 3898
+    },
+    {
+      "id": "id_59",
+      "success": true,
+      "elapsed_time": 966.9987993240356,
+      "final_plan_length": 4400
+    },
+    {
+      "id": "id_89",
+      "success": true,
+      "elapsed_time": 201.3100950717926,
+      "final_plan_length": 8498
+    },
+    {
+      "id": "id_119",
+      "success": true,
+      "elapsed_time": 444.16520619392395,
+      "final_plan_length": 7628
+    }
+  ]
+}

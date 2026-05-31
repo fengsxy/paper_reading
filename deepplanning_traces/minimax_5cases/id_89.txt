@@ -1,0 +1,115 @@
+Day 1:
+Current City: from Chongqing to Xiamen
+Accommodation: Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, ¥395/room/night
+07:50-10:05 | travel_intercity_public | flight MF8414, Jiangbei International Airport - Gaoqi International Airport, ¥960/person
+10:05-10:26 | buffer | Deplaning, baggage claim
+10:26-10:47 | travel_city | Gaoqi International Airport - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 13.85km, 21min, ¥51
+10:47-11:02 | hotel | Check-in, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+11:02-11:08 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Mingyuan Restaurant (University Town Mall Branch), 3.7km, 6min, ¥17
+11:08-12:08 | meal | Lunch, Mingyuan Restaurant (University Town Mall Branch), ¥33/person
+12:08-12:14 | travel_city | Mingyuan Restaurant (University Town Mall Branch) - Shapowei Art West District, 2.52km, 6min, ¥13
+12:14-14:44 | attraction | Shapowei Art West District, ¥0/person
+14:44-14:49 | travel_city | Shapowei Art West District - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 3.7km, 5min, ¥17
+14:49-16:30 | hotel | Rest, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+16:30-16:36 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Chen's Hong Kong Nam Fung Tea Restaurant (Xiamen Flagship Store), 0.3km, 6min, ¥0
+16:36-17:36 | meal | Dinner, Chen's Hong Kong Nam Fung Tea Restaurant (Xiamen Flagship Store), ¥62/person
+17:36-17:42 | travel_city | Chen's Hong Kong Nam Fung Tea Restaurant (Xiamen Flagship Store) - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 0.3km, 6min, ¥0
+17:42-24:00 | hotel | Rest, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+
+Day 2:
+Current City: Xiamen
+Accommodation: Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, ¥395/room/night
+08:00-08:30 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Gulangyu Island Ferry Terminal, 5km, 30min, ¥30
+08:30-08:40 | buffer | Ferry transfer to Gulangyu Island
+08:40-08:48 | travel_city | Gulangyu Island Ferry Terminal - Gulangyu Piano Museum, 0.69km, 8min, ¥0
+08:48-10:18 | attraction | Gulangyu Piano Museum, ¥30/person
+10:18-10:26 | travel_city | Gulangyu Piano Museum - Sunlight Rock, 0.69km, 8min, ¥0
+10:26-12:26 | attraction | Sunlight Rock, ¥50/person
+12:26-12:41 | travel_city | Sunlight Rock - Fulinchun Restaurant, 0.5km, 15min, ¥0
+12:41-13:41 | meal | Lunch, Fulinchun Restaurant, ¥89/person
+13:41-13:56 | travel_city | Fulinchun Restaurant - Gulangyu Ferry Terminal, 0.5km, 15min, ¥0
+13:56-14:06 | buffer | Ferry transfer back to Xiamen Island
+14:06-14:26 | travel_city | Gulangyu Ferry Terminal - Huangcuo Beach, 13.43km, 20min, ¥49
+14:26-16:26 | attraction | Huangcuo Beach, ¥0/person
+16:26-16:46 | travel_city | Huangcuo Beach - Coconut Wind Village, 0.01km, 20min, ¥0
+16:46-18:16 | attraction | Coconut Wind Village, ¥0/person
+18:16-18:26 | travel_city | Coconut Wind Village - Lin's Minnan Cuisine (Huandao Road Branch), 0.5km, 10min, ¥0
+18:26-19:26 | meal | Dinner, Lin's Minnan Cuisine (Huandao Road Branch), ¥100/person
+19:26-19:37 | travel_city | Lin's Minnan Cuisine (Huandao Road Branch) - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 7.46km, 11min, ¥28
+19:37-24:00 | hotel | Rest, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+
+Day 3:
+Current City: Xiamen
+Accommodation: Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, ¥395/room/night
+08:00-08:25 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Jimei School Village, 16.36km, 25min, ¥61
+08:25-11:55 | attraction | Jimei School Village, ¥0/person
+11:55-12:00 | travel_city | Jimei School Village - Huaquan Restaurant, 0.4km, 5min, ¥0
+12:00-13:00 | meal | Lunch, Huaquan Restaurant, ¥30/person
+13:00-13:34 | travel_city | Huaquan Restaurant - Zengcuo'an, 22.43km, 34min, ¥85
+13:34-16:04 | attraction | Zengcuo'an, ¥0/person
+16:04-16:09 | travel_city | Zengcuo'an - Zhuming Seafood Affordable Fresh Seafood Seaview Restaurant (Zengcuo'an Branch), 0.2km, 5min, ¥0
+16:09-17:09 | meal | Dinner, Zhuming Seafood Affordable Fresh Seafood Seaview Restaurant (Zengcuo'an Branch), ¥85/person
+17:09-17:20 | travel_city | Zhuming Seafood Affordable Fresh Seafood Seaview Restaurant (Zengcuo'an Branch) - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 7.46km, 11min, ¥28
+17:20-24:00 | hotel | Rest, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+
+Day 4:
+Current City: Xiamen
+Accommodation: Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, ¥395/room/night
+08:00-08:29 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Xiamen Botanical Garden Expo Park, 19.06km, 29min, ¥72
+08:29-11:59 | attraction | Xiamen Botanical Garden Expo Park, ¥0/person
+11:59-12:04 | travel_city | Xiamen Botanical Garden Expo Park - Wanlifat Tea Restaurant (Garden Expo Branch), 1.5km, 5min, ¥0
+12:04-13:04 | meal | Lunch, Wanlifat Tea Restaurant (Garden Expo Branch), ¥36/person
+13:04-13:42 | travel_city | Wanlifat Tea Restaurant (Garden Expo Branch) - Coconut Wind Village, 25.16km, 38min, ¥96
+13:42-16:12 | attraction | Coconut Wind Village, ¥0/person
+16:12-16:28 | travel_city | Coconut Wind Village - Yu Yiqian Seaview Restaurant, 2km, 16min, ¥38
+16:28-17:28 | meal | Dinner, Yu Yiqian Seaview Restaurant, ¥78/person
+17:28-17:44 | travel_city | Yu Yiqian Seaview Restaurant - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 10.51km, 16min, ¥38
+17:44-24:00 | hotel | Rest, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+
+Day 5:
+Current City: Xiamen
+Accommodation: Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, ¥395/room/night
+08:30-08:36 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Jialan Thai Cuisine (Shimao Emall Branch), 3.9km, 6min, ¥17
+08:36-09:36 | meal | Lunch, Jialan Thai Cuisine (Shimao Emall Branch), ¥116/person
+09:36-09:47 | travel_city | Jialan Thai Cuisine (Shimao Emall Branch) - Shapowei Art West District, 0.3km, 11min, ¥0
+09:47-12:47 | attraction | Shapowei Art West District, ¥0/person
+12:47-13:02 | travel_city | Shapowei Art West District - Zengcuo'an, 2.5km, 15min, ¥13
+13:02-15:32 | attraction | Zengcuo'an, ¥0/person
+15:32-15:37 | travel_city | Zengcuo'an - Lin's Minnan Cuisine (Huandao Road Branch), 0.2km, 5min, ¥0
+15:37-16:37 | meal | Dinner, Lin's Minnan Cuisine (Huandao Road Branch), ¥100/person
+16:37-16:48 | travel_city | Lin's Minnan Cuisine (Huandao Road Branch) - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 7.46km, 11min, ¥28
+16:48-24:00 | hotel | Rest, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+
+Day 6:
+Current City: from Xiamen to Chongqing
+Accommodation: -
+08:30-09:15 | hotel | Check-out, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+09:15-09:36 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Xiamen Botanical Garden Expo Park, 19.06km, 21min, ¥72
+09:36-12:06 | attraction | Xiamen Botanical Garden Expo Park, ¥0/person
+12:06-12:11 | travel_city | Xiamen Botanical Garden Expo Park - Old Yan Restaurant, 1.5km, 5min, ¥0
+12:11-13:11 | meal | Lunch, Old Yan Restaurant, ¥100/person
+13:11-13:32 | travel_city | Old Yan Restaurant - Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel, 16.36km, 21min, ¥61
+13:32-18:00 | hotel | Rest, Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel
+18:00-18:21 | travel_city | Ji Hotel Xiamen Zhongshan Road Botanical Garden Hotel - Gaoqi International Airport, 13.85km, 21min, ¥51
+18:21-19:25 | buffer | Security check, waiting for boarding
+19:25-22:00 | travel_intercity_public | flight SC2141, Gaoqi International Airport - Jiangbei International Airport, ¥710/person
+
+**Budget Summary**:
+   **Transportation: 4,036 RMB**
+   - Intercity flights: (960+710)×2=3,340 RMB
+   - City transportation (taxi, ¥51×2 persons ÷ 4 capacity ≈ ¥13 per person × 24 rides ≈ ¥824, or ¥51 per vehicle): Total city transport = 51+17+17+30+49+28+61+85+28+72+96+38+38+17+13+28+72+61+51 = ¥842 RMB
+
+   **Accommodation: 1,975 RMB**. 1 room, 5 nights; 5×395=1,975 RMB
+
+   **Meals: 1,602 RMB**. 
+   - Day 1 Lunch: 33×2=66, Dinner: 62×2=124
+   - Day 2 Lunch: 89×2=178, Dinner: 100×2=200
+   - Day 3 Lunch: 30×2=60, Dinner: 85×2=170
+   - Day 4 Lunch: 36×2=72, Dinner: 78×2=156
+   - Day 5 Lunch: 116×2=232, Dinner: 100×2=200
+   - Day 6 Lunch: 100×2=200
+   - Total meals: 66+124+178+200+60+170+72+156+232+200+200 = 1,658 RMB
+
+   **Attractions & Tickets: 160 RMB**. Gulangyu Piano Museum: 30×2=60 RMB; Sunlight Rock: 50×2=100 RMB
+
+   **Total Estimated Budget: 9,631 RMB**

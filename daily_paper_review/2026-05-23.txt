@@ -1,0 +1,70 @@
+# 📄 Daily Paper Review — 2026-05-23
+
+**论文**: PulseCol: Periodically Refreshed Column-Sparse Attention for Accelerating Diffusion Language Models
+**arXiv ID**: 2605.20813
+**日期**: 2026-05-20
+**链接**: https://arxiv.org/abs/2605.20813v1
+
+---
+
+## 1. Task
+【形式化问题】
+
+在扩散大语言模型（dLLM）的推理阶段，由于去噪过程每一步都需要完整执行自注意力且无法复用 KV Cache，计算开销极大。PulseCol 的目标是在保持模型质量的前提下，通过更细粒度的稀疏注意力机制加速 dLLM 的端到端推理。
+
+---
+
+## 2. Challenge
+【传统方法的困境】
+
+现有 dLLM 稀疏注意力方法（如 block-sparse attention）存在两个根本性问题：
+1. **粒度粗糙**：以块（block）为单位进行稀疏化，无法精确保留重要的注意力交互；
+2. **时机受限**：只在去噪后期（模型对稀疏近似不敏感时）才应用稀疏性，导致可以卸载的计算量有限，最终加速效果不显著。
+
+---
+
+## 3. Insight & Novelty
+
+### 3.1 Insight
+- 作者发现，去噪过程中注意力模式的分布会随时间演化，但**在短时间窗口内具有 temporal stability**——即相邻步骤间的稀疏模式高度相似，可以跨步骤复用；
+- 粗粒度的 block sparsity 无法捕捉细粒度的重要注意力连接，而 column-sparse 结构可以更精确地定位关键交互。
+
+### 3.2 Novelty
+| 解决的问题 | 受启发的 insight | 具体设计 |
+|---|---|---|
+| 稀疏粒度太粗 | column-sparse 比 block 更细粒度 | 用列级（column-level）稀疏替代块级稀疏，精确保留重要 attention head |
+| 只在后期可用 | 去噪早期模式也有可复用的结构 | 在去噪早期（第 1~2 步）识别稀疏模式，提前启用稀疏 |
+| 稀疏模式需每步重算 | temporal stability 允许复用 | 以 periodic refresh 策略复用稀疏模式，仅在少数中间步刷新 |
+| GPU 高效执行 | 需要专用 kernel | 定制 column-sparse attention GPU kernel（类似 FlashAttention 的工程优化） |
+
+---
+
+## 4. Potential Flaw
+
+### 4.1 情境局限
+- **短序列表现不确定**：实验主要在较长上下文（如 512+ tokens）进行，短文本场景下稀疏收益可能小于开销；
+- **模型架构依赖**：方法针对 diffusion LLaM 类架构设计，对其他类型的 diffusion LM（如 continuous diffusion）迁移性未知；
+- **刷新频率需调参**：periodic refresh 的最优间隔是任务相关超参，需要 validation 集确定。
+
+### 4.2 数据问题
+- **高度动态的语义任务**：需要模型在每步都关注完全不同 token 的任务（如某些复杂推理），去噪过程中注意力模式剧烈变化，temporal stability 假设失效，column-sparse 模式可能错误保留不重要 head、遗漏关键连接。
+
+### 4.3 值得挖掘的方向
+**最值得挖掘**：将 PulseCol 的 refresh 策略从固定间隔扩展为 adaptive（基于注意力矩阵的 drift 程度动态决定何时刷新）——这和 TokenDrift（同期另一篇论文）的研究方向形成互补，可能联合优化训练与推理效率。
+
+---
+
+## 5. Motivation
+【第一性原理推导】
+
+问句形式：
+
+> "dLLM 推理时无法使用 KV Cache，所以每步都要算完整 attention——那能不能找到一种方式，识别出哪些 attention 连接是重要的然后只算那些？" → 是，但之前的 block-sparse 只能以粗糙块为单位，精度不够，且只在后期才能启用，说明早期的 attention pattern 也同样值得稀疏化，只是之前没找到方法。
+>
+> "如果我们在去噪早期就识别出重要连接，然后假设后续步骤这些连接依然重要，就能省去大量计算——但模式会漂移，那能不能设定一个周期，到点了再重新采样一次重要连接？"
+>
+> 这就是 PulseCol 的核心 insight：**temporal stability + periodic refresh = 在精度和效率之间找到甜点**。
+
+---
+
+*📌 评分关键词命中: dLLM, block diffusion, inference efficiency, parallel generation, sparse attention*

@@ -1,0 +1,64 @@
+Day 1:
+Current City: from Fuzhou to Hangzhou
+Accommodation: Hangzhou West Lake Yiting Garden Hotel, ¥211/room/night
+08:50-12:44 | travel_intercity_public | train G1634, Fuzhou South Station - Hangzhou East Station, ¥352/person
+12:44-13:30 | buffer | Deplaning, baggage claim
+13:30-13:45 | travel_city | Hangzhou East Station - Hangzhou West Lake Yiting Garden Hotel, 10.13km, 15min, ¥36
+13:45-14:15 | hotel | Check-in, Hangzhou West Lake Yiting Garden Hotel
+14:15-14:29 | travel_city | Hangzhou West Lake Yiting Garden Hotel - Green Tea Restaurant (Liugongyuan Branch), 1.21km, 14min, ¥0
+14:30-15:30 | meal | Lunch, Green Tea Restaurant (Liugongyuan Branch), ¥63/person
+15:30-15:36 | travel_city | Green Tea Restaurant (Liugongyuan Branch) - Bai Causeway, 1.21km, 6min, ¥0
+15:30-17:30 | attraction | Bai Causeway, ¥0/person
+17:30-17:36 | travel_city | Bai Causeway - Leifeng Pagoda Scenic Area, 3.86km, 6min, ¥17
+17:36-19:36 | attraction | Leifeng Pagoda Scenic Area, ¥40/person
+19:36-20:01 | travel_city | Leifeng Pagoda Scenic Area - Hangzhou West Lake Yiting Garden Hotel, 18.74km, 25min, ¥71
+20:01-24:00 | hotel | Rest, Hangzhou West Lake Yiting Garden Hotel
+
+Day 2:
+Current City: Hangzhou
+Accommodation: Hangzhou West Lake Yiting Garden Hotel, ¥211/room/night
+08:00-08:31 | travel_city | Hangzhou West Lake Yiting Garden Hotel - Jiuxi Smoke Tree, 20.55km, 31min, ¥78
+08:31-11:31 | attraction | Jiuxi Smoke Tree, ¥0/person
+11:31-11:51 | travel_city | Jiuxi Smoke Tree - Chalan Garden Restaurant (Jiuxi Branch), 1.7km, 20min, ¥0
+11:51-12:51 | meal | Lunch, Chalan Garden Restaurant (Jiuxi Branch), ¥92/person
+12:51-13:11 | travel_city | Chalan Garden Restaurant (Jiuxi Branch) - Jiuxi Smoke Tree, 1.7km, 20min, ¥0
+13:11-14:11 | buffer | Rest at Jiuxi Smoke Tree
+14:11-15:19 | travel_city | Jiuxi Smoke Tree - Hangzhou West Lake Yiting Garden Hotel, 20.55km, 31min, ¥78
+15:19-17:30 | hotel | Rest, Hangzhou West Lake Yiting Garden Hotel
+17:30-18:24 | travel_city | Hangzhou West Lake Yiting Garden Hotel - Yinhu Restaurant - Qiushan Branch, 36.24km, 54min, ¥141
+18:24-20:30 | meal | Dinner, Yinhu Restaurant - Qiushan Branch, ¥108/person
+20:30-21:24 | travel_city | Yinhu Restaurant - Qiushan Branch - Hangzhou West Lake Yiting Garden Hotel, 36.24km, 54min, ¥141
+21:24-24:00 | hotel | Rest, Hangzhou West Lake Yiting Garden Hotel
+
+Day 3:
+Current City: from Hangzhou to Fuzhou
+Accommodation: -
+08:00-08:24 | travel_city | Hangzhou West Lake Yiting Garden Hotel - Broken Bridge and Melting Snow, 15.77km, 24min, ¥59
+08:24-10:00 | attraction | Broken Bridge and Melting Snow, ¥0/person
+10:00-10:15 | travel_city | Broken Bridge and Melting Snow - Green Tea Restaurant (Liugongyuan Branch), 1.21km, 14min, ¥0
+10:15-11:15 | meal | Lunch, Green Tea Restaurant (Liugongyuan Branch), ¥63/person
+11:15-11:30 | travel_city | Green Tea Restaurant (Liugongyuan Branch) - Hangzhou East Station, 9.69km, 15min, ¥35
+11:30-12:20 | buffer | Security check, waiting for boarding
+12:20-12:48 | buffer | Boarding
+12:48-15:40 | travel_intercity_public | train G413, Hangzhou East Station - Fuzhou Station, ¥344/person
+
+**Budget Summary**:
+   **Transportation: 2074 RMB**
+      - Train (Fuzhou→Hangzhou): 3×¥352=1056 RMB
+      - Train (Hangzhou→Fuzhou): 3×¥344=1032 RMB
+      - City transportation: (36+17+71+78+78+141+141+59+35)×1 vehicle=656 RMB (taxi ≤4 passengers, 1 vehicle sufficient)
+   
+   **Accommodation: 844 RMB**
+      - 2 rooms × 2 nights × ¥211/room/night=844 RMB
+   
+   **Meals: 2529 RMB**
+      - Day 1 Lunch (Green Tea): 3×¥63=189 RMB
+      - Day 2 Lunch (Chalan Garden): 3×¥92=276 RMB
+      - Day 2 Dinner (Yinhu Restaurant): 3×¥108=324 RMB
+      - Day 3 Lunch (Green Tea): 3×¥63=189 RMB
+   
+   **Attractions & Tickets: 120 RMB**
+      - Leifeng Pagoda Scenic Area: 3×¥40=120 RMB
+      - Bai Causeway, Jiuxi Smoke Tree, Broken Bridge and Melting Snow: Free
+   
+   **Total Estimated Budget: 5567 RMB**

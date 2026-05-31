@@ -1,0 +1,109 @@
+Day 1:
+Current City: from Zhuhai to Chengdu
+Accommodation: Chengdu LOUIS Hotel, ¥262/room/night
+15:15-15:30 | buffer | Deplaning, baggage claim
+15:30-15:43 | travel_city | Shuangliu International Airport - Chengdu LOUIS Hotel, 8.87km, 13min, ¥32
+15:43-17:00 | hotel | Check-in, Chengdu LOUIS Hotel
+17:00-17:35 | travel_city | Chengdu LOUIS Hotel - Chunxi Road Pedestrian Street, 23.77km, 35min, ¥91
+17:35-19:00 | attraction | Chunxi Road Pedestrian Street, ¥0/person
+19:00-19:35 | travel_city | Chunxi Road Pedestrian Street - Long Chaoshou (Main Branch), 1.8km, 35min, ¥90
+19:35-20:45 | meal | Dinner, Long Chaoshou (Main Branch), ¥27/person
+20:45-21:20 | travel_city | Long Chaoshou (Main Branch) - Chengdu LOUIS Hotel, 23.6km, 35min, ¥90
+21:20-24:00 | hotel | Rest, Chengdu LOUIS Hotel
+
+Day 2:
+Current City: Chengdu
+Accommodation: Chengdu LOUIS Hotel, ¥262/room/night
+08:00-08:56 | travel_city | Chengdu LOUIS Hotel - Chengdu Research Base of Giant Panda Breeding, 37.61km, 56min, ¥146
+08:56-12:30 | attraction | Chengdu Research Base of Giant Panda Breeding, ¥55/person
+12:30-12:40 | travel_city | Chengdu Research Base of Giant Panda Breeding - Panda Theme Hotel - Chinese Restaurant, 1.5km, 10min, ¥0
+12:40-13:50 | meal | Lunch, Panda Theme Hotel - Chinese Restaurant, ¥100/person
+13:50-14:15 | travel_city | Panda Theme Hotel - Chinese Restaurant - Chengdu LOUIS Hotel, 38.81km, 58min, ¥151
+14:15-16:30 | hotel | Rest, Chengdu LOUIS Hotel
+16:30-17:05 | travel_city | Chengdu LOUIS Hotel - Chengdu Museum, 22.01km, 33min, ¥84
+17:05-18:30 | attraction | Chengdu Museum, ¥0/person
+18:30-18:38 | travel_city | Chengdu Museum - Zhong Dumplings (People's Park Branch), 0.64km, 8min, ¥0
+18:38-19:50 | meal | Dinner, Zhong Dumplings (People's Park Branch), ¥40/person
+19:50-20:22 | travel_city | Zhong Dumplings (People's Park Branch) - Chengdu LOUIS Hotel, 21.39km, 32min, ¥81
+20:22-24:00 | hotel | Rest, Chengdu LOUIS Hotel
+
+Day 3:
+Current City: Chengdu
+Accommodation: Chengdu LOUIS Hotel, ¥262/room/night
+08:00-09:38 | travel_city | Chengdu LOUIS Hotel - Qingcheng Mountain Front Range, 65.01km, 98min, ¥256
+09:38-13:00 | attraction | Qingcheng Mountain Front Range, ¥80/person
+13:00-13:25 | travel_city | Qingcheng Mountain Front Range - Dujiangyan Scenic Area, 16.46km, 25min, ¥61
+13:25-13:35 | travel_city | Dujiangyan Scenic Area - Dujiangyan Junshoufu Restaurant, 0.84km, 10min, ¥0
+13:35-14:35 | meal | Lunch, Dujiangyan Junshoufu Restaurant, ¥102/person
+14:35-14:45 | travel_city | Dujiangyan Junshoufu Restaurant - Dujiangyan Scenic Area, 0.4km, 10min, ¥0
+14:45-17:15 | attraction | Dujiangyan Scenic Area, ¥80/person
+17:15-18:43 | travel_city | Dujiangyan Scenic Area - Chengdu LOUIS Hotel, 72.02km, 108min, ¥284
+18:43-20:00 | hotel | Rest, Chengdu LOUIS Hotel
+20:00-20:32 | travel_city | Chengdu LOUIS Hotel - Yi Laoma Pig Trotter Soup Main Store (Dongchenggen Branch), 21.6km, 32min, ¥82
+20:32-21:30 | meal | Dinner, Yi Laoma Pig Trotter Soup Main Store (Dongchenggen Branch), ¥36/person
+21:30-22:02 | travel_city | Yi Laoma Pig Trotter Soup Main Store (Dongchenggen Branch) - Chengdu LOUIS Hotel, 21.6km, 32min, ¥82
+22:02-24:00 | hotel | Rest, Chengdu LOUIS Hotel
+
+Day 4:
+Current City: Chengdu
+Accommodation: Chengdu LOUIS Hotel, ¥262/room/night
+08:30-09:02 | travel_city | Chengdu LOUIS Hotel - Chengdu Museum, 21.6km, 32min, ¥82
+09:02-11:00 | attraction | Chengdu Museum, ¥0/person
+11:00-11:08 | travel_city | Chengdu Museum - People's Park, 0.43km, 8min, ¥0
+11:08-13:00 | attraction | People's Park, ¥0/person
+13:00-13:50 | meal | Lunch, Zhong Dumplings (People's Park Branch), ¥40/person
+13:50-14:22 | travel_city | Zhong Dumplings (People's Park Branch) - Chengdu LOUIS Hotel, 21.39km, 32min, ¥81
+14:22-16:30 | hotel | Rest, Chengdu LOUIS Hotel
+16:30-17:05 | travel_city | Chengdu LOUIS Hotel - Chunxi Road Pedestrian Street, 23.77km, 36min, ¥91
+17:05-19:00 | attraction | Chunxi Road Pedestrian Street, ¥0/person
+19:00-19:35 | travel_city | Chunxi Road Pedestrian Street - Long Chaoshou (Main Branch), 1.8km, 35min, ¥90
+19:35-20:45 | meal | Dinner, Long Chaoshou (Main Branch), ¥27/person
+20:45-21:20 | travel_city | Long Chaoshou (Main Branch) - Chengdu LOUIS Hotel, 23.6km, 35min, ¥90
+21:20-24:00 | hotel | Rest, Chengdu LOUIS Hotel
+
+Day 5:
+Current City: Chengdu
+Accommodation: Chengdu LOUIS Hotel, ¥262/room/night
+08:00-09:38 | travel_city | Chengdu LOUIS Hotel - Qingcheng Mountain Front Range, 65.01km, 98min, ¥256
+09:38-12:30 | attraction | Qingcheng Mountain Front Range, ¥80/person
+12:30-13:00 | travel_city | Qingcheng Mountain Front Range - Qingcheng Mountain 961 · Wuliuzhuang Restaurant, 2.5km, 30min, ¥0
+13:00-14:00 | meal | Lunch, Qingcheng Mountain 961 · Wuliuzhuang Restaurant, ¥100/person
+14:00-14:30 | travel_city | Qingcheng Mountain 961 · Wuliuzhuang Restaurant - Dujiangyan Scenic Area, 15km, 30min, ¥61
+14:30-17:00 | attraction | Dujiangyan Scenic Area, ¥80/person
+17:00-17:10 | travel_city | Dujiangyan Scenic Area - Dujiangyan Junshoufu Restaurant, 0.84km, 10min, ¥0
+17:10-18:20 | meal | Dinner, Dujiangyan Junshoufu Restaurant, ¥102/person
+18:20-19:58 | travel_city | Dujiangyan Junshoufu Restaurant - Chengdu LOUIS Hotel, 72.02km, 108min, ¥284
+19:58-24:00 | hotel | Rest, Chengdu LOUIS Hotel
+
+Day 6:
+Current City: Chengdu
+Accommodation: Chengdu LOUIS Hotel, ¥262/room/night
+08:30-09:00 | travel_city | Chengdu LOUIS Hotel - Jinli Ancient Street, 19.83km, 30min, ¥75
+09:00-11:30 | attraction | Jinli Ancient Street, ¥0/person
+11:30-11:40 | travel_city | Jinli Ancient Street - Chengdu Wuhou Shrine Museum, 0.3km, 10min, ¥0
+11:40-14:00 | attraction | Chengdu Wuhou Shrine Museum, ¥50/person
+14:00-14:05 | travel_city | Chengdu Wuhou Shrine Museum - Chengdu Impressions Sichuan Cuisine Restaurant (Narrow Alley Branch), 0.5km, 5min, ¥17
+14:05-15:05 | meal | Lunch, Chengdu Impressions Sichuan Cuisine Restaurant (Narrow Alley Branch), ¥109/person
+15:05-15:37 | travel_city | Chengdu Impressions Sichuan Cuisine Restaurant (Narrow Alley Branch) - Chengdu LOUIS Hotel, 21.2km, 32min, ¥80
+15:37-17:30 | hotel | Rest, Chengdu LOUIS Hotel
+17:30-17:40 | travel_city | Chengdu LOUIS Hotel - Jinli Ancient Street, 19.83km, 30min, ¥75
+17:40-19:00 | attraction | Jinli Ancient Street, ¥0/person
+19:00-19:10 | travel_city | Jinli Ancient Street - Chengdu Wuhou Shrine Museum, 0.3km, 10min, ¥0
+19:10-20:40 | attraction | Chengdu Wuhou Shrine Museum, ¥50/person
+20:40-20:50 | travel_city | Chengdu Wuhou Shrine Museum - Great Northeast Restaurant (Wuhouci Hengjie Branch), 0.4km, 10min, ¥0
+20:50-21:50 | meal | Dinner, Great Northeast Restaurant (Wuhouci Hengjie Branch), ¥39/person
+21:50-22:19 | travel_city | Great Northeast Restaurant (Wuhouci Hengjie Branch) - Chengdu LOUIS Hotel, 19.06km, 29min, ¥72
+22:19-24:00 | hotel | Rest, Chengdu LOUIS Hotel
+
+Day 7:
+Current City: from Chengdu to Zhuhai
+Accommodation: -
+08:00-08:13 | travel_city | Chengdu LOUIS Hotel - Shuangliu International Airport, 8.87km, 13min, ¥32
+08:50-11:15 | travel_intercity_public | flight TV9981, Shuangliu International Airport - Jinwan Airport, ¥812/person
+
+**Budget Summary**:
+   **Transportation: 3186 RMB**. Flights: (551+812)×1=1363 RMB; intercity transport: 1 car is enough for 1 person, taxi: 32+91+146+62+256+61+284+82+82+81+91+90+90+81+256+61+284+75+80+75+72+32=1815 RMB; walking: ¥8
+   **Accommodation: 1572 RMB**. 1 room, 6 nights; 1×262×6=1572 RMB
+   **Meals: 1023 RMB**. (27+100+40+36+102+100+102+40+27+109+39)×1=822 RMB (calculated per person for 1 person)
+   **Attractions & Tickets: 475 RMB**. (55+80+80+50+55+80+50+50)×1=475 RMB (calculated per person for 1 person)
+   **Total Estimated Budget: 6256 RMB**
