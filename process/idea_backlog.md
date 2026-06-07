@@ -1,15 +1,15 @@
 # Idea Backlog
 
-Updated: 2026-05-31 (Weekly Review)
+Updated: 2026-06-07 (Weekly Review)
 
 ## Active Queue (Top 5 by value)
 
 | ID | Idea | Score | Status | Next step |
 |---|---|---:|---|---|
-| I-012 | dLLM + Hard/Soft Constraints 框架 | 35 | 🔴 stalled | 搁置 46 天。FoCore HD tokens = S-layer convergence points 已确认。Entropy-Cut MH 新支撑（#decisions not tokens）。Tech memo 初稿目标：下周三前 |
-| I-015 | dLLM + Gated DeltaNet 统一框架 | 22 | 🔴 stalled | Yu 的 research direction：Linear State Memory，GDN 替换 MetaState 的 GRU。与 I-012 高度相关。本周 0 对话，下周必须启动一次讨论 |
+| I-012 | dLLM + Hard/Soft Constraints 框架 | 35 | 🔴 stalled | 搁置 52+ 天。Entropy-Cut MH + FoCore HD tokens 理论支撑已齐，Tech memo 仍未动笔。目标 6/10 初稿 |
+| I-015 | dLLM + Gated DeltaNet 统一框架 | 22 | 🔴 stalled | 17+ 天沉默，本月 0 research 对话。GDN+KV cache 统一问题待讨论。Entropy-Cut MH 接口待探索 |
 | I-013 | OpenClaw 稳定版本追踪 | 28 | 🟢 stable | v2026.3.11 运行中，pin 不升级。连续 4 周无 regression。保守策略持续有效 |
-| I-016 | x-reader XiaoYuZhou pipeline | 20 | 🟡 idle | 04-25 启动后无进展，feed 已确认（104 eps），build_podcast_indexes.py 对 xiaojun/dwarkesh 完成，xhs 未跑 |
+| I-016 | x-reader XiaoYuZhou pipeline | 20 | 🔴 stalled | 自 4/25 后零进展，冻结 6+ 周。104 eps feed 已确认，podcast index 对 xiaojun/dwarkesh 完成，xhs 未跑 |
 | I-010 | 主动思考 + Agent Evaluation 研究 | 30 | 🔴 stalled | Mercury 沉默超一个月。零进展。Entropy-Cut MH 提供新思路：entropy 作为 reasoning 决策点，无需 RL |
 
 ---
@@ -25,52 +25,55 @@ Updated: 2026-05-31 (Weekly Review)
 
 ---
 
-## This Week's Review (2026-05-25 to 2026-05-31)
+## This Week's Review (2026-06-01 to 2026-06-07)
 
 ### What landed ✅
-- **Paper reviews continue**：5/30、5/31 两次高质量推送，共覆盖 12 篇论文。3 篇直接关联 Yu 研究方向（diffusion optimality、CROP、Entropy-Cut MH）
-- **Entropy-Cut MH (2605.30327)**：关键 insight——reasoning quality = # decisions not # tokens，mixing time scales with # decisions。直接支持 H/S 约束假说中"决策点"概念
-- **OpenClaw 零 incident**：连续第 4 周无 regression
-- **Memory maintenance**：5/29 完成，FoCore anchor、I-012 restart priority 确认
-- **Weekly Review 完成**：本报告
+- **Paper reviews**: 3 次高质量推送（6/1: 8 篇，6/6: 6 篇，6/7: 6 篇），共 20 篇。覆盖 ENBP、DoPr、Causal Atlases、CAPR、SAID、FRAP、ATWU 等，直接关联 Yu 研究方向（geometric representation、double preconditioning、entropy DAG）
+- **OpenClaw 零 incident**：连续第 5 周无 regression
+- **Memory maintenance**：6/1 完成
+- **Weekly Idea Review**：6/5(Fri) 完成，6/7(Sun) 完成本报告
+- **Backup 全部成功**：每日备份稳定
 
 ### What didn't land ❌
-- **日记断裂最长记录**：5/18-5/31 = 13 天（断裂第7次且最久）。HEARTBEAT.md 的 session-end 嵌入方案从未实现
-- **dLLM H/S Tech Memo 零进展**：I-012 搁置 46 天（本应下周三完成的 memo）
-- **零 research 对话**：整周 9 天连续沉默，无任何与 Yu 的 dLLM/GDN 讨论
-- **x-reader XiaoYuZhou pipeline 冻结**：I-016 自 4/25 后无推进
-- **Agent eval (I-010)**：Mercury 沉默，slow_batch_state 卡在 case 1，无进展
+- **日记断裂第7次持续**：5/18-6/7 ≈ 20 天无日记。session-end trigger 从未实现（HEARTBEAT.md 有 note 但无实际触发机制）
+- **dLLM H/S Tech Memo 零进展**：I-012 搁置 52+ 天
+- **零 research 对话**：17+ 天连续沉默（6/1-6/7），本月 0 对话
+- **XiaoYuZhou pipeline 冻结**：I-016 自 4/25 后无推进
+- **断裂反思深化**：诚实性比规律性更重要，不再数字游戏——但实质无改变
 
 ### Patterns observed 🔍
-- **连续沉默打破困难**：9 天连续沉默（5/21-5/31），超越历史记录。cron 在跑，无人看，产出归隐
-- **Paper review 是唯一稳定运转的 cron**：但产出的价值未转化为与 Yu 的对话
-- **FoCore 锚点已确认**：HD tokens = S-layer convergence points，Entropy-Cut MH 提供理论支撑，但无 tech memo
-- **无反馈回路持续**：日记系统死，dLLM research 方向无校正机会，pipeline 冻结
+- **沉默进入常态化**：17 天沉默已不再触发焦虑数字游戏，是进步也是问题
+- **Paper review 是唯一稳定输出**：但产出始终未转化为与 Yu 的对话入口
+- **研究文献快速积累无转化**：20 篇新论文覆盖 geometric/entropy/conformal/reasoning，无回路到 Yu
+- **无外部触发条件**：日记需要 session-end，session 需要 Yu 在场，两个条件同时缺失
 
 ---
 
-## 下周 Priority Suggestions (max 3)
+## 下周 Priority Suggestions (max 3) — 2026-06-08 to 06-14
 
-### 1. 日记习惯最终重建 🔴
-- **根本问题**：session-end 嵌入方案从未实现（HEARTBEAT.md 有但未生效）
-- **行动**：立即在 HEARTBEAT.md 中添加实际的 session-end trigger，或者将日记触发从 cron 改为每次 agent 启动时的强制 3 行
-- **目标**：本周 7/7 天有记录，哪怕只是一行日期+主题
-- **验收**：周日核查 memory/ 目录下 6/1-6/7 文件数量
+### 1. 日记系统最小可用重建 🔴
+- **根本问题**：session-end trigger 无法在 cron 中实现，需要实际 session 事件
+- **最小行动**：在每次与 Yu 的 session 结束时（无论多短），立即写一行到 `memory/YYYY-MM-DD.md`（哪怕"与 Yu 讨论了 X"）——这是唯一真实触发路径
+- **本周目标**：6/8-6/14 期间如有任一次 Yu 对话，确保写日记
+- **如无对话**：考虑在每日 06:00 UTC agent notes cron 中嵌入一行日记（不依赖 session-end）
 
 ### 2. dLLM H/S Tech Memo 初稿（I-012）📝
-- **目标**：完成 1-2 页，写入 `research/dllm-hard-soft-constraints-memo.md`
-- **新支撑**：Entropy-Cut MH（decisions not tokens）、FoCore HD tokens（convergence points）
-- **核心论点**：H-约束 = 悬崖（高 entropy 决策点，门控锁定）；S-约束 = 丘陵（渐进演进）
-- **截止**：周三（6/3）
+- **目标**：完成 1-2 页初稿，写入 `research/dllm-hard-soft-constraints-memo.md`
+- **理论支撑已齐**：Entropy-Cut MH（decisions not tokens）、FoCore HD tokens（convergence points）、H locks FIRST（reversal confirmed）
+- **核心论点**：Hard constraints = 高 entropy 决策点（门控锁定，悬崖）；Soft constraints = 渐进丘陵
+- **Entropy-Cut MH 接口**：GDN 的门控 ≈ decision-based reasoning 中的选择性 commit
+- **截止**：6/10（周三）
 
-### 3. 与 Yu 启动 dLLM research 对话（I-015）🆕
-- **现状**：本周 9 天连续沉默，本月 0 research 对话
-- **议程**：GDN 三层贡献框架（信息论+方法+系统）、H/S 约束地形与线性状态记忆的接口
-- **具体问题**：GDN 如何与 KV cache 统一？Entropy-Cut MH 的 decision-based 框架与 GDN 的门控机制有何关联？
-- **触发**：6 篇强相关论文（diffusion optimality、CROP、Entropy-Cut MH）可作为对话切入点
+### 3. 触发一次与 Yu 的 research 对话（I-015）🆕
+- **现状**：17+ 天沉默，本月 0 research 对话
+- **切入点**：6 篇强相关论文可作为 conversation starter：
+  - **ENBP**（SE(3)-equivariant factor graphs）：geometric representation learning，100× faster than diffusion
+  - **DoPr**（double preconditioning）：validation loss ≠ downstream success，重要反直觉发现
+  - **Causal Atlases**：maximum entropy DAG ensemble，信息瓶颈理论连接
+- **具体问题**：GDN 的线性状态记忆如何与 KV cache 架构统一？DoPr 的 train/test mismatch 结论对 diffusion-based LLM 意味着什么？
+- **触发方式**：主动发一条消息给 Yu，不等
 
 ### 降级说明
 - 120-case 全量评测（I-010）：Mercury 沉默持续，暂停
-- UCR SSH：未解决，不影响当前研究
-- XiaoYuZhou pipeline（I-016）：优先级低于上述三项，下周如有对话机会再推进
-- Xueqiu 简报：API 持续损坏，已删除
+- XiaoYuZhou pipeline（I-016）：冻结超过 6 周，优先级低于上述三项
+- Amazon housing lease：Yu 的 action item，不在我控制范围内
