@@ -6,6 +6,8 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 
 | 日期 | 更新内容 |
 |------|----------|
+| 2026-06-08 | [Hacker News](hackernews/2026-06-08.md): Hacker News AI/ML — 2026-06-08 |
+| 2026-06-08 | [Scholar Inbox](scholar_inbox/2026-06-08-daily-papers.md): Daily Papers — 2026-06-08 |
 | 2026-06-07 | [Hacker News](hackernews/2026-06-07.md): Hacker News AI/ML — 2026-06-07 |
 | 2026-06-07 | [Scholar Inbox](scholar_inbox/2026-06-07-daily-papers.md): Daily Papers — 2026-06-07 |
 | 2026-06-06 | [Hacker News](hackernews/2026-06-06.md): Hacker News AI/ML — 2026-06-06 |
@@ -16,8 +18,6 @@ Personal paper reading notes by [Longxuan Yu](https://fengsxy.github.io) @ UC Ri
 | 2026-06-04 | [Scholar Inbox](scholar_inbox/2026-06-04-daily-papers.md): Daily Papers — 2026-06-04 |
 | 2026-06-03 | [Hacker News](hackernews/2026-06-03.md): Hacker News — 2026-06-03 (+1 more) |
 | 2026-06-03 | [Scholar Inbox](scholar_inbox/2026-06-03-daily-papers.md): Daily Papers — 2026-06-03 (Wednesday) (+1 more) |
-| 2026-06-02 | [Hacker News](hackernews/2026-06-02.md): Hacker News AI/ML — 2026-06-02 |
-| 2026-06-02 | [Scholar Inbox](scholar_inbox/2026-06-02-daily-papers.md): Daily Papers — 2026-06-02 |
 
 ---
 
