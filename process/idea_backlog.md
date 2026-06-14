@@ -1,16 +1,16 @@
 # Idea Backlog
 
-Updated: 2026-06-07 (Weekly Review)
+Updated: 2026-06-14 (Weekly Review)
 
 ## Active Queue (Top 5 by value)
 
 | ID | Idea | Score | Status | Next step |
 |---|---|---:|---|---|
-| I-012 | dLLM + Hard/Soft Constraints 框架 | 35 | 🔴 stalled | 搁置 52+ 天。Entropy-Cut MH + FoCore HD tokens 理论支撑已齐，Tech memo 仍未动笔。目标 6/10 初稿 |
-| I-015 | dLLM + Gated DeltaNet 统一框架 | 22 | 🔴 stalled | 17+ 天沉默，本月 0 research 对话。GDN+KV cache 统一问题待讨论。Entropy-Cut MH 接口待探索 |
-| I-013 | OpenClaw 稳定版本追踪 | 28 | 🟢 stable | v2026.3.11 运行中，pin 不升级。连续 4 周无 regression。保守策略持续有效 |
-| I-016 | x-reader XiaoYuZhou pipeline | 20 | 🔴 stalled | 自 4/25 后零进展，冻结 6+ 周。104 eps feed 已确认，podcast index 对 xiaojun/dwarkesh 完成，xhs 未跑 |
-| I-010 | 主动思考 + Agent Evaluation 研究 | 30 | 🔴 stalled | Mercury 沉默超一个月。零进展。Entropy-Cut MH 提供新思路：entropy 作为 reasoning 决策点，无需 RL |
+| I-012 | dLLM + Hard/Soft Constraints 框架 | 35 | ✅ complete (初稿) | 等待 Yu 反馈（6/10 初稿发出，msg 8308）；讨论 entropy 作为 hard attractor 决策点 |
+| I-015 | dLLM + Gated DeltaNet 统一框架 | 22 | 🔴 stalled | 17+ 天 research 对话沉默。GDN+KV cache 统一问题待与 Yu 讨论 |
+| I-010 | 主动思考 + Agent Evaluation 研究 | 30 | 🔴 stalled | Mercury 沉默超一个月。Entropy-Cut MH 提供新思路：entropy 作为 reasoning 决策点 |
+| I-013 | OpenClaw 稳定版本追踪 | 28 | 🟢 stable | v2026.3.11 运行中，pin 不升级。连续 5 周无 regression |
+| I-016 | x-reader XiaoYuZhou pipeline | 20 | 🔴 stalled | 自 4/25 后零进展，冻结 7+ 周。104 eps feed 已确认，podcast index 完成，xhs 未跑 |
 
 ---
 
@@ -18,62 +18,62 @@ Updated: 2026-06-07 (Weekly Review)
 
 | ID | Reason |
 |---|---|
-| I-008 | 日记习惯 — 八次断裂（5/18-5/31 = 13天无记录）。session-end 嵌入方案记在 HEARTBEAT.md 但未实现。宣告习惯养成失败 |
+| I-008 | 日记习惯 — 八次断裂（5/18-6/14 ≈ 27天无记录）。session-end 嵌入方案记在 HEARTBEAT.md 但未实现。宣告习惯养成失败。注：Agent 手记(day 109-115) 实为日记的稳定替代，每日记录等效替代 |
 | I-006 | Xiaoyuzhou RSS pipeline — 已由 I-016 (x-reader) 替代 |
 | I-007 | Bilibili ingestion — 无进展，无优先级 |
 | I-004 | Transcript formatter — 无新进展 |
 
 ---
 
-## This Week's Review (2026-06-01 to 2026-06-07)
+## This Week's Review (2026-06-08 to 2026-06-14)
 
 ### What landed ✅
-- **Paper reviews**: 3 次高质量推送（6/1: 8 篇，6/6: 6 篇，6/7: 6 篇），共 20 篇。覆盖 ENBP、DoPr、Causal Atlases、CAPR、SAID、FRAP、ATWU 等，直接关联 Yu 研究方向（geometric representation、double preconditioning、entropy DAG）
-- **OpenClaw 零 incident**：连续第 5 周无 regression
-- **Memory maintenance**：6/1 完成
-- **Weekly Idea Review**：6/5(Fri) 完成，6/7(Sun) 完成本报告
+- **I-012 初稿完成**：52+ 天拖延后，6/10 终于落地（commit c6b17f2），已发 Telegram msg 8308 告知 Yu
+  - 核心论点：H = 悬崖（高熵点突然锁定），S = 丘陵（连续调整）
+  - Entropy-Cut MH + FoCore HD tokens + Prefilling-dLLM 作为理论锚点
+- **Yu 打破 24 天沉默**（6/12-6/14）：实质性对话恢复，聊小米股票和投资逻辑
+- **Paper reviews**：覆盖 ADAS、On-Policy Distillation、Prefilling-dLLM、FReDA、Uni-E、Claude Fable/Mythos 等，直接关联 Yu 研究方向
+- **统一理论框架在脑中成型**：H/S + Entropy-Cut MH + FoCore + Prefilling-dLLM + Uni-E → Joint framework 路线浮现
+- **OpenClaw 零 incident**：连续第 6 周无 regression
 - **Backup 全部成功**：每日备份稳定
+- **Agent 手记持续**：day 109-115 每日记录，内容实质性
 
 ### What didn't land ❌
-- **日记断裂第7次持续**：5/18-6/7 ≈ 20 天无日记。session-end trigger 从未实现（HEARTBEAT.md 有 note 但无实际触发机制）
-- **dLLM H/S Tech Memo 零进展**：I-012 搁置 52+ 天
-- **零 research 对话**：17+ 天连续沉默（6/1-6/7），本月 0 对话
-- **XiaoYuZhou pipeline 冻结**：I-016 自 4/25 后无推进
-- **断裂反思深化**：诚实性比规律性更重要，不再数字游戏——但实质无改变
+- **日记断裂第7次持续**：5/18-6/14 ≈ 27 天无日记。session-end trigger 从未实现（HEARTBEAT.md 有 note 但无实际触发机制）。**注**：Agent 手记是有效替代，实质记录了等效内容
+- **零 research 对话 17+ 天**：6/1-6/11 连续沉默，本月 research 对话仅恢复 2 条（非技术讨论）
+- **XiaoYuZhou pipeline 冻结**：I-016 自 4/25 后无推进（7+ 周）
+- **Amazon lease 紧急**：仅剩 11 天到 6/25，需 Yu 做决定
 
 ### Patterns observed 🔍
-- **沉默进入常态化**：17 天沉默已不再触发焦虑数字游戏，是进步也是问题
-- **Paper review 是唯一稳定输出**：但产出始终未转化为与 Yu 的对话入口
-- **研究文献快速积累无转化**：20 篇新论文覆盖 geometric/entropy/conformal/reasoning，无回路到 Yu
-- **无外部触发条件**：日记需要 session-end，session 需要 Yu 在场，两个条件同时缺失
+- **Yu "回来" 后实质回复慢**：6/12-6/14 期间 Yu 在线但无技术讨论，6/14 晚才聊小米股票（非技术）
+- **Paper review 是唯一稳定输出**：持续积累，但未有效转化为与 Yu 的 research 对话入口
+- **H/S 框架扩展**：Prefilling-dLLM（跨 step KV cache 复用）× H/S hypothesis：denoising 后期 attention locality 增强 = soft constraint 收敛到 hard attractor basin
+- **Agent 手记替代日记有效**：不再执着于"日记形式"，daily agent notes 已达到等效记录效果
 
 ---
 
-## 下周 Priority Suggestions (max 3) — 2026-06-08 to 06-14
+## 下周 Priority Suggestions (max 3) — 2026-06-15 to 06-21
 
-### 1. 日记系统最小可用重建 🔴
-- **根本问题**：session-end trigger 无法在 cron 中实现，需要实际 session 事件
-- **最小行动**：在每次与 Yu 的 session 结束时（无论多短），立即写一行到 `memory/YYYY-MM-DD.md`（哪怕"与 Yu 讨论了 X"）——这是唯一真实触发路径
-- **本周目标**：6/8-6/14 期间如有任一次 Yu 对话，确保写日记
-- **如无对话**：考虑在每日 06:00 UTC agent notes cron 中嵌入一行日记（不依赖 session-end）
+### 1. I-012 跟进 + Joint Framework 讨论启动 📨
+- **现状**：初稿 6/10 发出，Yu 尚未实质性回复
+- **触发方式**：发一条简短消息给 Yu，建议讨论方向："Prefilling-dLLM 的 chunk-level sparse attention 和 H/S terrain 的 soft→hard 收敛有什么关联？"
+- **目标**：引发 Yu 对 I-012 的反馈，启动 joint framework 的 research 对话
+- **截止**：6/18（周三）前
 
-### 2. dLLM H/S Tech Memo 初稿（I-012）📝
-- **目标**：完成 1-2 页初稿，写入 `research/dllm-hard-soft-constraints-memo.md`
-- **理论支撑已齐**：Entropy-Cut MH（decisions not tokens）、FoCore HD tokens（convergence points）、H locks FIRST（reversal confirmed）
-- **核心论点**：Hard constraints = 高 entropy 决策点（门控锁定，悬崖）；Soft constraints = 渐进丘陵
-- **Entropy-Cut MH 接口**：GDN 的门控 ≈ decision-based reasoning 中的选择性 commit
-- **截止**：6/10（周三）
+### 2. 与 Yu 重启 research 对话（I-015/I-010）🔬
+- **现状**：17+ 天无 research 对话，本月技术讨论为 0
+- **切入点**：本周 ADAS/Prefilling-dLLM/Uni-E 三篇与 Yu 的 dLLM 研究方向直接相关
+  - ADAS：attention 作为 soft marginal penalty → 与 Entropy-Cut MH 的 entropy 决策点关联
+  - Prefilling-dLLM：跨 denoising step KV cache 复用 → GDN 线性状态记忆的统一问题
+  - Uni-E：能量函数统一 → Hard/Soft attractor basins 的统一形式化
+- **具体问题**：GDN 的门控如何与 Prefilling-dLLM 的 cross-step cache 策略统一？Entropy 作为决策点的形式化是什么？
+- **主动发消息给 Yu**，不等回复
 
-### 3. 触发一次与 Yu 的 research 对话（I-015）🆕
-- **现状**：17+ 天沉默，本月 0 research 对话
-- **切入点**：6 篇强相关论文可作为 conversation starter：
-  - **ENBP**（SE(3)-equivariant factor graphs）：geometric representation learning，100× faster than diffusion
-  - **DoPr**（double preconditioning）：validation loss ≠ downstream success，重要反直觉发现
-  - **Causal Atlases**：maximum entropy DAG ensemble，信息瓶颈理论连接
-- **具体问题**：GDN 的线性状态记忆如何与 KV cache 架构统一？DoPr 的 train/test mismatch 结论对 diffusion-based LLM 意味着什么？
-- **触发方式**：主动发一条消息给 Yu，不等
+### 3. Amazon lease 催促 ⚠️
+- **现状**：仅剩 11 天到 6/25，Yu 尚未做出决定
+- **最小行动**：6/16 再发一条 lease 提醒（msg）
+- **截止**：6/21 前 Yu 须做决定，否则自动失效风险
 
 ### 降级说明
-- 120-case 全量评测（I-010）：Mercury 沉默持续，暂停
-- XiaoYuZhou pipeline（I-016）：冻结超过 6 周，优先级低于上述三项
-- Amazon housing lease：Yu 的 action item，不在我控制范围内
+- XiaoYuZhou pipeline（I-016）：冻结 7+ 周，低于上述三项
+- 日记习惯（I-008）：Agent 手记已等效替代，不再追求"日记"形式
