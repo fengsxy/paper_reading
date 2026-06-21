@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-06-19 (7-day distill: 2026-06-13 to 2026-06-19)
+Last updated: 2026-06-21 (7-day distill: 2026-06-13 to 2026-06-19)
 
 ## Yu's Preferences & Work Style
 
@@ -25,17 +25,17 @@ Last updated: 2026-06-19 (7-day distill: 2026-06-13 to 2026-06-19)
 - **Deep Learning**: Grade **A** (confirmed 3/26).
 - **DeepPlanning 5-Case Experiment** (2026-04-14): Mercury vs MiniMax comparison. All traces pushed to GitHub: fengsxy/paper_reading/deepplanning_traces/
 
-### Amazon NYC Internship (2026-03-18 - 2026-03-24) ✅ HOUSING DECIDED — ⚠️ LEASE NOT SIGNED — 6 DAYS LEFT
+### Amazon NYC Internship (2026-03-18 - 2026-03-24) ✅ HOUSING DECIDED
 - **Offer**: Amazon New York, summer internship
 - **Dates**: June 25 – September 25, 2026 (3 months)
 - **Office**: **1440 Broadway, New York, NY 10018** (Times Square / 38th St, Garment District)
-- **✅ DECISION**: 362 Hoboken Ave, Jersey City, NJ 07306 (The Heights, near Journal Square)
-  - 2B2B 主卧带独卫, $1,900/month 包水电网
-  - 两人同住不加钱 (女朋友可同住)
-  - 通勤: 走路10min → JSQ PATH 20min → 33rd St → 走路10min → 1440 Broadway = ~40min door-to-door
-  - 押金 $1,000, 可 119 公交 ($123/month 月票)
-  - 正规 condo 楼，装修好，市场价对比划算（Heights 区 1BR 均价 $3,305）
-- **⚠️ URGENT (2026-06-19: 6 days to 6/25)**: Lease not yet signed. Yu is actively researching alternative housing options (3333 Broadway $2,200/mo; 425 Summit Ave $2,400-2,600/mo studio) but no decision yet. Multiple reminders sent since 6/13.
+- **✅ FINAL DECISION (2026-06-21)**: 3333 Broadway, Manhattan, NY 10027 (Manhattanville)
+  - 2B1B 中的 1B，$2,200/month（水电全包）
+  - 室友分摊约 $1,100（市场价整套 $3,200-3,400）
+  - 通勤: 1号线 137街 → Times Square，约 35min
+  - 位置: Upper Manhattan，135街，1975年老楼
+- **备选考虑**: 362 Hoboken Ave ($1,900)、425 Summit Ave ($2,400+ studio)
+- **状态**: Lease signed (2026-06-21), 3 days to 6/25
 
 ### dLLM + Planning Research (PAUSED — Mercury quota exhausted, hypothesis reversed)
 - **Mercury quota exhausted** (2026-04-14): Free tier depleted. 5-case experiment data pushed to GitHub (deepplanning_traces/). Full 120-case evaluation paused — awaiting quota or external judge.
