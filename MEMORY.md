@@ -1,6 +1,6 @@
 # MEMORY.md - Long-Term Memory
 
-Last updated: 2026-06-16 (7-day distill: 2026-06-10 to 2026-06-16)
+Last updated: 2026-06-19 (7-day distill: 2026-06-13 to 2026-06-19)
 
 ## Yu's Preferences & Work Style
 
@@ -14,7 +14,8 @@ Last updated: 2026-06-16 (7-day distill: 2026-06-10 to 2026-06-16)
 - **Don't fumble installs**: "能装明白嘛？" — understand requirements fully before executing
 - **Know where your own files are**: 自己写的文章都忘了在哪 — important docs should have locations noted in MEMORY.md
 - **Yu broke 24-day silence** (June 12-14, 2026): First message since ~May 18. Resumed investment discussions immediately.
-- **Paper reading prompt**: Yu has a preferred prompt for paper reading; it was lost during the break — awaiting resend.
+- **Paper reading prompt**: Yu has a preferred prompt for paper reading; it was lost during the break — still awaiting resend (as of 2026-06-19).
+- **Yu back for 7+ continuous days** (since 2026-06-12): Now actively discussing investments and Amazon internship housing — most engaged period since March 2026.
 
 ## Active Projects
 
@@ -24,7 +25,7 @@ Last updated: 2026-06-16 (7-day distill: 2026-06-10 to 2026-06-16)
 - **Deep Learning**: Grade **A** (confirmed 3/26).
 - **DeepPlanning 5-Case Experiment** (2026-04-14): Mercury vs MiniMax comparison. All traces pushed to GitHub: fengsxy/paper_reading/deepplanning_traces/
 
-### Amazon NYC Internship (2026-03-18 - 2026-03-24) ✅ HOUSING DECIDED — ⚠️ LEASE NOT SIGNED YET
+### Amazon NYC Internship (2026-03-18 - 2026-03-24) ✅ HOUSING DECIDED — ⚠️ LEASE NOT SIGNED — 6 DAYS LEFT
 - **Offer**: Amazon New York, summer internship
 - **Dates**: June 25 – September 25, 2026 (3 months)
 - **Office**: **1440 Broadway, New York, NY 10018** (Times Square / 38th St, Garment District)
@@ -34,7 +35,7 @@ Last updated: 2026-06-16 (7-day distill: 2026-06-10 to 2026-06-16)
   - 通勤: 走路10min → JSQ PATH 20min → 33rd St → 走路10min → 1440 Broadway = ~40min door-to-door
   - 押金 $1,000, 可 119 公交 ($123/month 月票)
   - 正规 condo 楼，装修好，市场价对比划算（Heights 区 1BR 均价 $3,305）
-- **⚠️ URGENT (2026-06-16: 9 days to 6/25)**: Lease not yet signed. Multiple reminders sent. Yu reviewed lease 4/2. 拖了两个月 — must resolve before 6/25.
+- **⚠️ URGENT (2026-06-19: 6 days to 6/25)**: Lease not yet signed. Yu is actively researching alternative housing options (3333 Broadway $2,200/mo; 425 Summit Ave $2,400-2,600/mo studio) but no decision yet. Multiple reminders sent since 6/13.
 
 ### dLLM + Planning Research (PAUSED — Mercury quota exhausted, hypothesis reversed)
 - **Mercury quota exhausted** (2026-04-14): Free tier depleted. 5-case experiment data pushed to GitHub (deepplanning_traces/). Full 120-case evaluation paused — awaiting quota or external judge.
@@ -45,7 +46,21 @@ Last updated: 2026-06-16 (7-day distill: 2026-06-10 to 2026-06-16)
   - Mercury silence = time to redesign eval (closed systems can't self-evaluate)
 - **Literature survey** (04/13-04/28): 19 diffusion NLP papers analyzed and pushed to GitHub (commit 48fffbb). Key decoding papers: VSB, SWD, AHD, R²-dLLM, LoSA, DualDiffusion, S2D2, EntropyCache, DEMASK, DynHD, LogicDiff, Temporal Emergence.
 - **FoCore paper** (2026-05-10, arXiv 2605.01373): Training-free DLM decoding via self-contrastive HD (high-density) token identification. HD tokens converge early → logical anchors in reasoning trajectories. Repo commit: e992dcd.
-- **Recent paper distill (2026-05-29 to 2026-05-31)** — 3 directly relevant to Yu's research:
+### Recent Paper Distillations
+
+- **This week (2026-06-13 to 2026-06-19)**:
+  - **LESS** (2606.xxxx): 72.1% step reduction via mutual-stability sampling (joint criteria: top-1 confidence + persistence + JS-divergence stability). Directly relates to FoCore HD token work.
+  - **Reflective Masking** (multi-turn MDM reasoning): History Reference leverages intermediate denoising states for local edits.
+  - **ADAS** (2606.10829): Attention as soft marginal penalty for joint vs marginal reliability. Pairwise attention: coupled 0.00726 vs independent 0.00192 (LLaDA-8B).
+  - **AGDO** (ACL 2026): Denoising order follows attention sparsity structure (hub tokens = most attended). AGDO-SFT上调hub tokens权重; AGDO-RL对attention-critical tokens的reward加权.
+  - **ERD** (2606.xxxx): Representation degradation at high noise levels; ERD stabilizes training.
+  - **Representation Guidance**: 23.3× faster training on ImageNet 256×256.
+  - **Werner Krauth Path Convergence**: 1/√(p) scaling to p=∞ (equilibrium path).
+  - **Unified research framework updated**: H/S terrain + Entropy-Cut MH + FoCore HD tokens + Prefilling-dLLM + Uni-E + ADAS + AGDO + LESS = joint framework for dLLM decoding + commit decisions.
+  - **ADAS × AGDO connection**: both use attention structure to guide generation — ADAS soft penalty vs AGDO hard ordering, potential joint framework.
+  - **LESS × FoCore**: both identify "stable" tokens via different criteria — LESS uses mutual-stability, FoCore uses HD density.
+
+- **Last distill (2026-05-29 to 2026-05-31)** — 3 directly relevant to Yu's research:
   - **CRH** (ICLR 2025 Spotlight, Liu Ziyin): Canonical Representation Hypothesis — representation learning theory directly relevant
   - **Entropy-Cut MH** (2605.30327, Anay Mehrotra): Reasoning quality = # decisions not # tokens; high-entropy points = real reasoning; mixing time scales with # decisions; beats RL-trained models WITHOUT training
   - **Diffusion optimal for low-dim multi-modal** (ICML 2026, 2605.30153): Õ(ε^(−k∨2)) sample complexity, intrinsic dim k not ambient dim; multi-modal compatible — strong theory for empirical diffusion
@@ -216,11 +231,8 @@ Last updated: 2026-06-16 (7-day distill: 2026-06-10 to 2026-06-16)
 ### Investment Portfolio
 - **PDD**: 50% position, cost ~$106 → now ~$81, down ~20%. Yu is holding.
 - **MSFT**: 20% position, cost $403.21, underwater.
-- **Xiaomi** (HK:1810): Under consideration. HKD 26.2 (距52周高点跌57%). Q1 EPS暴跌59%, EV亏损RMB 31亿. 史上最大回购HK$200亿. Yu's AI judgment: EV delivery 55万台 is inflection point. MiMo V2.5 coding model reportedly beats Claude Code.
-- **Amazon** (under consideration): "买亚马逊=买Anthropic" logic. Agent era = cloud compute demand explosion.
-- **Yu's investment logic**:
-  - Xiaomi: betting on EV+AI success; 期待值分析 HKD 26 → ~42% expected return
-  - Amazon: agent era "卖铲子" = cloud compute utilization demand spike
+- **Xiaomi** (HK:1810): Actively under discussion (HKD 26.2, 距52周高点跌57%). Q1 EPS暴跌59%, EV亏损RMB 31亿. 史上最大回购HK$200亿. MiMo V2.5 coding model reportedly beats Claude Code. Yu's AI judgment: EV delivery 55万台 is inflection point; 期待值分析 HKD 26 → ~42% expected return.
+- **Amazon** (under consideration): "买亚马逊≈买Anthropic" + Agent时代云计算逻辑. AWS+AI是真实增长驱动，Agent调用量指数级爆炸→云计算需求爆发。Yu认为"卖铲子"逻辑稳健。
 - **Tracking**: Daily via xueqiu_daily.py script (now abandoned)
 
 ## TODOs
@@ -228,9 +240,9 @@ Last updated: 2026-06-16 (7-day distill: 2026-06-10 to 2026-06-16)
 ### Immediate
 - [x] **I-012 tech memo on H/S constraint hypothesis reversal**: Completed 2026-06-10 (52+ day delay). Commit c6b17f2. Telegram msg 8308 sent to Yu.
 - [ ] dLLM neutral eval design (I-014, blocked by Mercury quota + closed-system problem)
-- [ ] **Sign Amazon NYC housing lease (362 Hoboken Ave, Jersey City) — URGENT: 9 days to 6/25**
+- [ ] **Sign Amazon NYC housing lease (362 Hoboken Ave, Jersey City) — URGENT: 6 days to 6/25 (2026-06-19)**
 - [ ] Complete National Social Science Fund application (waiting for Yu's info)
-- [ ] **Get paper reading prompt from Yu** (lost during 24-day silence break)
+- [ ] **Get paper reading prompt from Yu** (lost during 24-day silence break, still missing as of 2026-06-19)
 - [ ] Fix diary habit: session-end 嵌入方案已在 HEARTBEAT.md
 
 ### Ongoing
